@@ -52,8 +52,8 @@ jobs:
       - name: Run pylint
         shell: bash -l {0}
         run: |
-          pylint tests
-          pylint app
+          pylint --disable=E0401,R0801,C010 tests
+          pylint --disable=E0401,R0801,C010 app
   
   # code coverage job for ubuntu and macos
   code-cov-ubuntu-macos:

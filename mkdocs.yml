@@ -1,4 +1,4 @@
-site_name: Demo
+site_name: Literature Survey
 plugins:
   - mkdocstrings:
       paths: ["app", "tests"]  
@@ -6,5 +6,7 @@ theme:
   name: material
 nav:
   - Home: index.md
-  - class UniProt: uniprot.md
-  - methods in tests/uniprot: test_uniprot.md
+  - API Reference:
+    - Arxiv: literatureFetch.md
+    - Tests: test_literatureFetch.md
+  
