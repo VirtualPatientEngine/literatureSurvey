@@ -1,3 +1,3 @@
 ## class Arxiv
 
-:::app.test_literatureFetch
+:::tests.test_literatureFetch

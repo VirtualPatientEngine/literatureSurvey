@@ -9,14 +9,14 @@ from setuptools import setup
 # print ('new vesion', version)
 
 setup(
-    name='demo',
+    name='literatureSurvey',
     # version=str(version),
     # read the version from the file release-version.txt
     version=open('release_version.txt', encoding='utf-8').read().strip(),
     packages=['app'],
     author='Singh, Gurdeep',
     author_email='gsingh@bio.mx',
-    description='Demo template to write code for shareable package',
+    description='A template to develop a repo on literature survey',
     url='https://bio.mx/research-teams/artificial-intelligence/team-vpe/',
     license='MIT',
 )
