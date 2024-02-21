@@ -3,7 +3,7 @@
 
 <h1 align="center" style="border-bottom: none;">🚀 Literature Survey</h1>
 
-This repository serves as a template to develop a literature survey repository.
+This repository serves as a template to develop a repo on literature survey.
 View the documentation of the example code used in the repo @ https://virtualpatientengine.github.io/literatureSurvey
 
 >NOTE: Read more about these and other features in the CodeOps and DevOps documents available on the teams channel.
