@@ -1,0 +1,75 @@
+name: RELEASE
+
+on:
+  workflow_dispatch:
+  # Only trigger, when the TESTS workflow succeeded
+  # workflow_run:
+  #   workflows: ["TESTS"]
+  #   branches: [ main ]
+  #   types:
+  #     - completed
+  push:
+    branches: [ main ]
+
+jobs:
+  # Only trigger, when the TESTS workflow succeeded
+  on-success:
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+        matrix:
+            os: [ubuntu-latest]
+    # if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: npm ci
+      
+      # - name: run setup.py
+      #   run: |
+      #     python3 -m pip install --upgrade pip setuptools wheel
+      #     python3 setup.py bdist_wheel
+
+      - name: Get release version
+        run: |
+          RELEASE_OUTPUT=$(npx semantic-release)
+          RELEASE_VERSION=$(echo "$RELEASE_OUTPUT" | grep -oP 'Published release \K.*? ')
+          if [[ -z $RELEASE_VERSION ]]; then
+            echo "No release version found. Exiting..."
+            exit 1
+          fi
+          # cat the release version to the GITHUB_ENV so we can use it in the next step
+          # RELEASE_VERSION is read by the setup.py
+          # echo "RELEASE_VERSION=$RELEASE_VERSION" >> $GITHUB_ENV
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: save release version in a file
+      #   run: |
+      #     echo $RELEASE_VERSION > release_version.txt
+      # - name: Set RELEASE_VERSION
+      #   run: echo "RELEASE_VERSION=$(cat release_version.txt)" >> $GITHUB_ENV
+      
+      # - name: run setup.py
+      #   run: |
+      #     python3 -m pip install --upgrade pip setuptools wheel      
+      # commit
+      - name: commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git add -f dist/*
+          git commit -m "new release"
+
+      # push
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main

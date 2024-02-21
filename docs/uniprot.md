@@ -1,0 +1,3 @@
+## class UniProt
+
+:::app.uniprot
