@@ -73,7 +73,8 @@ if __name__ == "__main__":
     import markdownify
     import feedparser
     # Define the query
-    QUERY = 'stat.ML:causal+link+prediction'
+    # QUERY = 'stat.ML:causal+link+prediction'
+    QUERY = 'stat.ML:learned+differentiable+simulator'
     # Define the base url
     BASE_URL = 'http://export.arxiv.org/api/query?search_query='
     # Define the search parameters
@@ -107,7 +108,7 @@ if __name__ == "__main__":
         dic_arxiv_ids[arxiv_id].semantic_scholar_data = results[i]
         # Append the articles
         if dic_arxiv_ids[arxiv_id].semantic_scholar_data is not None:
-            if int(dic_arxiv_ids[arxiv_id].semantic_scholar_data['citationCount']) > 1000:
+            if int(dic_arxiv_ids[arxiv_id].semantic_scholar_data['citationCount']) > 200:
                 # Extract author names
                 authors = []
                 for author in dic_arxiv_ids[arxiv_id].semantic_scholar_data['authors']:
