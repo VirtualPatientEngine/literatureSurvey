@@ -1,7 +1,616 @@
----
-hide:
- - navigation
----
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Koopman_Theory/">
+      
+      
+        <link rel="next" href="../Neural_ODEs/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
+    
+    
+<title>Custom title goes here</title>
+
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+  <!-- Add scripts that need to run before here -->
+  <!-- Add jquery script -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <!-- Add data table libraries -->
+  <script src="https://cdn.datatables.net/2.0.1/js/dataTables.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.0.1/css/dataTables.dataTables.css">
+  <!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-2.29.1.min.js'></script>
+
+
+  <!-- 
+      
+     -->
+  <!-- Add scripts that need to run afterwards here -->
+
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Literature Survey (Simulator)" class="md-header__button md-logo" aria-label="Literature Survey (Simulator)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Literature Survey (Simulator)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Latent Space Simulator
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/VirtualPatientEngine/literatureSurvey" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    LiteratureSurvey
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../All/" class="md-tabs__link">
+        
+  
+    
+  
+  All
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Koopman_Theory/" class="md-tabs__link">
+        
+  
+    
+  
+  Koopman Theory
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Latent Space Simulator
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Neural_ODEs/" class="md-tabs__link">
+        
+  
+    
+  
+  Neural ODEs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../PINNs/" class="md-tabs__link">
+        
+  
+    
+  
+  PINNs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Physics-informed_GNNs/" class="md-tabs__link">
+        
+  
+    
+  
+  Physics informed GNNs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Symbolic_regression/" class="md-tabs__link">
+        
+  
+    
+  
+  Symbolic regression
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Literature Survey (Simulator)" class="md-nav__button md-logo" aria-label="Literature Survey (Simulator)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Literature Survey (Simulator)
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/VirtualPatientEngine/literatureSurvey" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    LiteratureSurvey
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../All/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    All
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Koopman_Theory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Koopman Theory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Latent Space Simulator
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Neural_ODEs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Neural ODEs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PINNs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PINNs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Physics-informed_GNNs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Physics informed GNNs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Symbolic_regression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Symbolic regression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Latent Space Simulator</h1>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +631,7 @@ hide:
   <h3 id="search_query">1. Search query</h3>
   <i>(VAMP) | (latent space simul*) | (decomposition of koopman operator) | (time-lagged autoencoder)</i>
   </p>
-  
+
   <p>
   <h3 id="plot">2. Latent Space Simulator articles and citations over time</h3>
     <div id='myDiv'>
@@ -43,7 +652,7 @@ hide:
     </tr>
   </thead>
   <tbody>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/014576b866078524286802b1d0e18628520aa886">Denoising Diffusion Implicit Models</a></td>
         <td>2020-10-06</td>
@@ -51,7 +660,7 @@ hide:
         <td>ArXiv</td>
         <td>International Conference on Learning Representations</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/2639515c248f220c73d44688c0097a99b01e1474">GTM: The Generative Topographic Mapping</a></td>
         <td>None</td>
@@ -59,7 +668,7 @@ hide:
         <td>Neural Computation</td>
         <td>Neural Computation</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/10cab2f43c29fe12e5a0d0718eb6e1ff8c9d4777">A Data–Driven Approximation of the Koopman Operator: Extending Dynamic Mode Decomposition</a></td>
         <td>2014-08-19</td>
@@ -67,7 +676,7 @@ hide:
         <td>Journal of Nonlinear Science</td>
         <td>Journal of nonlinear science</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/dbc7401e3e75c40d3c720e7db3c906d48bd742d7">Deep Autoencoding Gaussian Mixture Model for Unsupervised Anomaly Detection</a></td>
         <td>2018-02-15</td>
@@ -75,7 +684,7 @@ hide:
         <td></td>
         <td>International Conference on Learning Representations</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/8af762911107a585f12decd890c4bc5df67dc3fb">Botulinum neurotoxin A selectively cleaves the synaptic protein SNAP-25</a></td>
         <td>1993-09-09</td>
@@ -83,7 +692,7 @@ hide:
         <td>Nature</td>
         <td>Nature</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/1590bd1bca945fc6ff50b8cdf2da14ea2061c79a">Poincaré Embeddings for Learning Hierarchical Representations</a></td>
         <td>2017-05-22</td>
@@ -91,7 +700,7 @@ hide:
         <td>ArXiv</td>
         <td>Neural Information Processing Systems</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/66a626038ce5c68c0b28a1d6b74a3a135338a11e">Validation of information recorded on general practitioner based computerised data resource in the United Kingdom.</a></td>
         <td>1991-03-30</td>
@@ -99,7 +708,7 @@ hide:
         <td>British Medical Journal</td>
         <td>British medical journal</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/ca781a2fc31a28f653b222ca8afdedc90a009266">Cross-domain sentiment classification via spectral feature alignment</a></td>
         <td>2010-04-26</td>
@@ -107,7 +716,7 @@ hide:
         <td>{'pages': '751-760'}</td>
         <td>The Web Conference</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d0baba24df9807ea8fa812f477fc8cd57adfe116">Synaptic vesicle membrane fusion complex: action of clostridial neurotoxins on assembly.</a></td>
         <td>1994-11-01</td>
@@ -115,7 +724,7 @@ hide:
         <td>The EMBO Journal</td>
         <td>EMBO Journal</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/631755c88361cdf537bbe1eff8bdf18c52d6c962">VBF: Vector-Based Forwarding Protocol for Underwater Sensor Networks</a></td>
         <td>2006-05-15</td>
@@ -123,7 +732,7 @@ hide:
         <td>{'pages': '1216-1221'}</td>
         <td>NA</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/ca9f84c3922004ec6133aa9c2048ceeb17702fee">Towards K-means-friendly Spaces: Simultaneous Deep Learning and Clustering</a></td>
         <td>2016-10-15</td>
@@ -131,7 +740,7 @@ hide:
         <td>{'pages': '3861-3870'}</td>
         <td>International Conference on Machine Learning</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/54c4642d017830e1faddbb49f0377228d2b01493">HAQ: Hardware-Aware Automated Quantization With Mixed Precision</a></td>
         <td>2018-11-21</td>
@@ -139,7 +748,7 @@ hide:
         <td>2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</td>
         <td>Computer Vision and Pattern Recognition</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/4d3b69bdcd1d325d29badc6a38f2d6cc504fe7d1">Sim-to-Real: Learning Agile Locomotion For Quadruped Robots</a></td>
         <td>2018-04-27</td>
@@ -147,7 +756,7 @@ hide:
         <td>ArXiv</td>
         <td>NA</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d84812a75fe04352831056126e547f17e8c78ec4">SNARE Function Analyzed in Synaptobrevin/VAMP Knockout Mice</a></td>
         <td>2001-11-02</td>
@@ -155,7 +764,7 @@ hide:
         <td>Science</td>
         <td>Science</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/82e19123c7fdf1c047531eec5bce6f925dcc5ad5">Variants of Dynamic Mode Decomposition: Boundary Condition, Koopman, and Fourier Analyses</a></td>
         <td>2012-04-27</td>
@@ -163,7 +772,7 @@ hide:
         <td>Journal of Nonlinear Science</td>
         <td>Journal of nonlinear science</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/1e1bb19d8ae0735fb5f8d33e4417fcb11d2b9c73">Cholesterol sensor ORP1L contacts the ER protein VAP to control Rab7–RILP–p150Glued and late endosome positioning</a></td>
         <td>2009-06-29</td>
@@ -171,7 +780,7 @@ hide:
         <td>The Journal of Cell Biology</td>
         <td>Journal of Cell Biology</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/956141c32d97d339dad1378a844c0d34a25f1b8d">Assembly of presynaptic active zones from cytoplasmic transport packets</a></td>
         <td>2000-05-01</td>
@@ -179,7 +788,7 @@ hide:
         <td>Nature Neuroscience</td>
         <td>Nature Neuroscience</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/ae0853ea771b83d794a031814f9b8d1afb145958">Proxy prefix caching for multimedia streams</a></td>
         <td>1999-03-21</td>
@@ -187,7 +796,7 @@ hide:
         <td>IEEE INFOCOM '99. Conference on Computer Communications. Proceedings. Eighteenth Annual Joint Conference of the IEEE Computer and Communications Societies. The Future is Now (Cat. No.99CH36320)</td>
         <td>NA</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/20d117f0cccf4aaaeadfdeb58d7af0fc201f7a9a">Causal Effect Inference with Deep Latent-Variable Models</a></td>
         <td>2017-05-24</td>
@@ -195,7 +804,7 @@ hide:
         <td>{'pages': '6446-6456'}</td>
         <td>Neural Information Processing Systems</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d430141bbdfa74b3ab0960e543be4a2929e95e70">A conserved ER targeting motif in three families of lipid binding proteins and in Opi1p binds VAP</a></td>
         <td>2003-05-01</td>
@@ -203,7 +812,7 @@ hide:
         <td>The EMBO Journal</td>
         <td>EMBO Journal</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a40ff76cab63a0977b8486698a39fac0a598d63a">VAMP-1: a synaptic vesicle-associated integral membrane protein.</a></td>
         <td>1988-06-01</td>
@@ -211,7 +820,7 @@ hide:
         <td>Proceedings of the National Academy of Sciences of the United States of America</td>
         <td>Proceedings of the National Academy of Sciences of the United States of America</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f3bf07f222e91f9159774293f1c86eb3fcc828f8">Systematic analysis of SNARE molecules in Arabidopsis: dissection of the post-Golgi network in plant cells.</a></td>
         <td>2004-04-01</td>
@@ -219,7 +828,7 @@ hide:
         <td>Cell structure and function</td>
         <td>Cell Structure and Function</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a85285aba983ebeeeb61d0859103adb8116597e3">Latent Class Models for Collaborative Filtering</a></td>
         <td>1999-07-31</td>
@@ -227,7 +836,7 @@ hide:
         <td>{'pages': '688-693'}</td>
         <td>International Joint Conference on Artificial Intelligence</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/022177772a5b0beefb45839ce500549b0d488d25">Cellubrevin is a ubiquitous tetanus-toxin substrate homologous to a putative synaptic vesicle fusion protein</a></td>
         <td>1993-07-22</td>
@@ -235,7 +844,7 @@ hide:
         <td>Nature</td>
         <td>Nature</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/77a214b908cbaa871c0c841b8ad48aee19b4e020">Impairments in High-Frequency Transmission, Synaptic Vesicle Docking, and Synaptic Protein Distribution in the Hippocampus of BDNF Knockout Mice</a></td>
         <td>1999-06-15</td>
@@ -243,7 +852,7 @@ hide:
         <td>The Journal of Neuroscience</td>
         <td>Journal of Neuroscience</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/e003e75e25a4384dba55e1582b515553754e9ef9">Network-Aware Operator Placement for Stream-Processing Systems</a></td>
         <td>2006-04-03</td>
@@ -251,7 +860,7 @@ hide:
         <td>22nd International Conference on Data Engineering (ICDE'06)</td>
         <td>IEEE International Conference on Data Engineering</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/2eb1ed9d4baf548391d8220c0a8a3d0be79845ed">Boltzmann generators: Sampling equilibrium states of many-body systems with deep learning</a></td>
         <td>2019-09-05</td>
@@ -259,7 +868,7 @@ hide:
         <td>Science</td>
         <td>Science</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/87547c617cad4f524e501932b5e95d27c422503e">Synaptobrevin binding to synaptophysin: a potential mechanism for controlling the exocytotic fusion machine.</a></td>
         <td>1995-01-01</td>
@@ -267,7 +876,7 @@ hide:
         <td>The EMBO Journal</td>
         <td>EMBO Journal</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/c3932c6927cabfe535af6f30969af4bc10cd79a4">TI-VAMP/VAMP7 and VAMP3/cellubrevin: two v-SNARE proteins involved in specific steps of the autophagy/multivesicular body pathways.</a></td>
         <td>2009-12-01</td>
@@ -275,7 +884,7 @@ hide:
         <td>Biochimica et biophysica acta</td>
         <td>Biochimica et Biophysica Acta</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/76819e926c485020407aa40054d448276d44574c">Structure and function of tetanus and botulinum neurotoxins</a></td>
         <td>1995-11-01</td>
@@ -283,7 +892,7 @@ hide:
         <td>Quarterly Reviews of Biophysics</td>
         <td>NA</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/58912e2c2aaa77d1448d51e9d9460e06a5b924b9">VAMPnets for deep learning of molecular kinetics</a></td>
         <td>2017-10-16</td>
@@ -291,7 +900,7 @@ hide:
         <td>Nature Communications</td>
         <td>Nature Communications</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a3c279828af3621d2c16ac26e5900b970383f60e">Koopman Invariant Subspaces and Finite Linear Representations of Nonlinear Dynamical Systems for Control</a></td>
         <td>2015-10-11</td>
@@ -299,7 +908,7 @@ hide:
         <td>PLoS ONE</td>
         <td>PLoS ONE</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/844414c9a5df3cab6a3bb991e1d59acb2aada7f8">Co-option of a default secretory pathway for plant immune responses</a></td>
         <td>2008-02-14</td>
@@ -307,7 +916,7 @@ hide:
         <td>Nature</td>
         <td>Nature</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/50f3cd71a30ac6155e032c636d37d50e31cb09c2">Learning effective human pose estimation from inaccurate annotation</a></td>
         <td>2011-06-20</td>
@@ -315,7 +924,7 @@ hide:
         <td>CVPR 2011</td>
         <td>Computer Vision and Pattern Recognition</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/c7730f1a8f62a96ac74cce444c1cb543f2f17795">SNARE proteins are highly enriched in lipid rafts in PC12 cells: Implications for the spatial control of exocytosis</a></td>
         <td>2001-05-01</td>
@@ -323,7 +932,7 @@ hide:
         <td>Proceedings of the National Academy of Sciences of the United States of America</td>
         <td>Proceedings of the National Academy of Sciences of the United States of America</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3bd6e4f596d99a47e1e70504e0fc51267ab213e9">Triple Generative Adversarial Nets</a></td>
         <td>2017-03-07</td>
@@ -331,7 +940,7 @@ hide:
         <td>ArXiv</td>
         <td>Neural Information Processing Systems</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/ca75b89b67ab791d13106242fed6f25e8869abf7">Real-time measurements of vesicle-SNARE recycling in synapses of the central nervous system</a></td>
         <td>2000-04-01</td>
@@ -339,7 +948,7 @@ hide:
         <td>Nature Cell Biology</td>
         <td>Nature Cell Biology</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/1528015a80c41bdd3e0d1efcc90b12e744aa7540">Identification of the nerve terminal targets of botulinum neurotoxin serotypes A, D, and E.</a></td>
         <td>1993-11-15</td>
@@ -347,7 +956,7 @@ hide:
         <td>The Journal of biological chemistry</td>
         <td>Journal of Biological Chemistry</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/4349c739db9bd9ed948fc597995d6996627b4fbb">The membrane fusion enigma: SNAREs, Sec1/Munc18 proteins, and their accomplices--guilty as charged?</a></td>
         <td>2012-10-11</td>
@@ -355,7 +964,7 @@ hide:
         <td>Annual review of cell and developmental biology</td>
         <td>Annual Review of Cell and Developmental Biology</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/859c16c2414122a821cb3d753b84b7749f0cb882">Protein-protein interactions contributing to the specificity of intracellular vesicular trafficking.</a></td>
         <td>1994-02-25</td>
@@ -363,7 +972,7 @@ hide:
         <td>Science</td>
         <td>Science</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/9c01ebdf379be03f76b82a0ae96d9dea56cd4fd9">Estimating a State-Space Model from Point Process Observations</a></td>
         <td>2003-05-01</td>
@@ -371,7 +980,7 @@ hide:
         <td>Neural Computation</td>
         <td>Neural Computation</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/743818c2c34050e1c18c142c342411640dffe456">Endothelial Caveolae Have the Molecular Transport Machinery for Vesicle Budding, Docking, and Fusion Including VAMP, NSF, SNAP, Annexins, and GTPases (*)</a></td>
         <td>1995-06-16</td>
@@ -379,7 +988,7 @@ hide:
         <td>The Journal of Biological Chemistry</td>
         <td>Journal of Biological Chemistry</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/ff420b50bd68daa4cf76a9a9f921f0d0e7efaad3">Calcium-dependent interaction of N-type calcium channels with the synaptic core complex</a></td>
         <td>1996-02-01</td>
@@ -387,7 +996,7 @@ hide:
         <td>Nature</td>
         <td>Nature</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/ac9cec2c8e83d121f94e1d773305c53c7e34df3c">Identification of a Novel Syntaxin- and Synaptobrevin/VAMP-binding Protein, SNAP-23, Expressed in Non-neuronal Tissues*</a></td>
         <td>1996-06-07</td>
@@ -395,7 +1004,7 @@ hide:
         <td>The Journal of Biological Chemistry</td>
         <td>Journal of Biological Chemistry</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/c19d4d718ad9592e5b4212313591ecf59255d470">Mechanism of action of tetanus and botulinum neurotoxins</a></td>
         <td>1994-07-01</td>
@@ -403,7 +1012,7 @@ hide:
         <td>Molecular Microbiology</td>
         <td>Molecular Microbiology</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/38f0649864df62c1535e6b08dc637a1ad893475e">Complexin Controls the Force Transfer from SNARE Complexes to Membranes in Fusion</a></td>
         <td>2009-01-23</td>
@@ -411,7 +1020,7 @@ hide:
         <td>Science</td>
         <td>Science</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/84606a365a1172474997df474d5fd4dc4b217ff8">Ergodic Theory, Dynamic Mode Decomposition, and Computation of Spectral Properties of the Koopman Operator</a></td>
         <td>2016-11-21</td>
@@ -419,7 +1028,7 @@ hide:
         <td>SIAM J. Appl. Dyn. Syst.</td>
         <td>SIAM Journal on Applied Dynamical Systems</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/03142e119c20be0d52a4aaa29f3aa2abaf6410e6">Robust Structured Subspace Learning for Data Representation</a></td>
         <td>2015-10-01</td>
@@ -427,7 +1036,7 @@ hide:
         <td>IEEE Transactions on Pattern Analysis and Machine Intelligence</td>
         <td>IEEE Transactions on Pattern Analysis and Machine Intelligence</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/c791202344a72b50e5dba6f35cc830e29afe7e63">Deep Fluids: A Generative Network for Parameterized Fluid Simulations</a></td>
         <td>2018-06-06</td>
@@ -435,7 +1044,7 @@ hide:
         <td>Computer Graphics Forum</td>
         <td>NA</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/325f91e26b071f9f6d2518150d6cdfe6586482ef">Assessment: Botulinum neurotoxin for the treatment of spasticity (an evidence-based review): Report of the Therapeutics and Technology Assessment Subcommittee of the American Academy of NeurologySYMBOL</a></td>
         <td>2008-05-06</td>
@@ -443,7 +1052,7 @@ hide:
         <td>Neurology</td>
         <td>Neurology</td>
       </tr>
-    
+
   </tbody>
   </table>
   </p>
@@ -461,7 +1070,7 @@ hide:
     </tr>
   </thead>
   <tbody>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f8db237dfcbac885f750f86939ce006268519cca">Topic Modeling on Document Networks With Dirichlet Optimal Transport Barycenter</a></td>
         <td>2024-03-01</td>
@@ -469,7 +1078,7 @@ hide:
         <td>IEEE Transactions on Knowledge and Data Engineering</td>
         <td>IEEE Transactions on Knowledge and Data Engineering</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/bee3c8b32859202472c917dab5a4757afb46a79f">Multiclass and Multilabel Classifications by Consensus and Complementarity-Based Multiview Latent Space Projection</a></td>
         <td>2024-03-01</td>
@@ -477,7 +1086,7 @@ hide:
         <td>IEEE Transactions on Systems, Man, and Cybernetics: Systems</td>
         <td>NA</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/81cabd91414b487f021c110ba9c70311ad6636e9">Learning-Based Edge-Device Collaborative DNN Inference in IoVT Networks</a></td>
         <td>2024-03-01</td>
@@ -485,7 +1094,7 @@ hide:
         <td>IEEE Internet of Things Journal</td>
         <td>IEEE Internet of Things Journal</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/28c0ff11f5a18b051f591807d531429636fa8037">NeuralFloors: Conditional Street-Level Scene Generation From BEV Semantic Maps via Neural Fields</a></td>
         <td>2024-03-01</td>
@@ -493,7 +1102,7 @@ hide:
         <td>IEEE Robotics and Automation Letters</td>
         <td>IEEE Robotics and Automation Letters</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/1a279d90354755f741f45618a5673e220a715fc7">Robust Three-Stage Dynamic Mode Decomposition for Analysis of Power System Oscillations</a></td>
         <td>2024-03-01</td>
@@ -501,7 +1110,7 @@ hide:
         <td>IEEE Transactions on Power Systems</td>
         <td>IEEE Transactions on Power Systems</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/ad7af3dfb3aa9bf417a98e84fb3bab61f46fc04f">Vibration-based structural damage localization through a discriminant analysis strategy with cepstral coefficients</a></td>
         <td>2024-02-28</td>
@@ -509,7 +1118,7 @@ hide:
         <td>Structural Health Monitoring</td>
         <td>Structural Health Monitoring</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/8129bbd354a9694aa23224775d4b612e427aa529">Spectral Time-Varying Pattern Causality and Its Application.</a></td>
         <td>2024-02-28</td>
@@ -517,7 +1126,7 @@ hide:
         <td>IEEE journal of biomedical and health informatics</td>
         <td>IEEE journal of biomedical and health informatics</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/714a07ff77f81ded2fd359c97468890d12a3dad2">Big topic modeling based on a two-level hierarchical latent Beta-Liouville allocation for large-scale data and parameter streaming</a></td>
         <td>2024-02-28</td>
@@ -525,7 +1134,7 @@ hide:
         <td>Pattern Analysis and Applications</td>
         <td>Pattern Analysis and Applications</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/78b968af546e846d26bd851a619c438a70c6ce68">Sensor based Dance Coherent Action Generation Model using Deep Learning Framework</a></td>
         <td>2024-02-24</td>
@@ -533,7 +1142,7 @@ hide:
         <td>Scalable Computing: Practice and Experience</td>
         <td>NA</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/cb8bbf850e7e0eef682ed7d42e23606bfce01cdc">Monstrous Mushrooms, Toxic Love and Queer Utopias in Jenny Hval's Paradise Rot</a></td>
         <td>2024-02-21</td>
@@ -541,7 +1150,7 @@ hide:
         <td>Junctions: Graduate Journal of the Humanities</td>
         <td>Junctions: Graduate Journal of the Humanities</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/aca73ea55334d4f178c8018cdcd8c0215e479376">Amperometry and Electron Microscopy show Stress Granules Induce Homotypic Fusion of Catecholamine Vesicles.</a></td>
         <td>2024-02-21</td>
@@ -549,7 +1158,7 @@ hide:
         <td>Angewandte Chemie</td>
         <td>NA</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/68593daa74cfd88c19590e24e6d293089be590f2">A test of pre-exposure spacing and multiple context pre-exposure on the mechanisms of latent inhibition of dental fear: A study protocol</a></td>
         <td>2024-02-21</td>
@@ -557,7 +1166,7 @@ hide:
         <td>BMC Psychology</td>
         <td>BMC Psychology</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/2a3fe5d6b96c9c0fb224aa761c47a21ed6288b49">Women’s sexual health improvement: sexual quality of life and pelvic floor muscle assessment in asymptomatic women</a></td>
         <td>2024-02-21</td>
@@ -565,7 +1174,7 @@ hide:
         <td>Frontiers in Medicine</td>
         <td>Frontiers in Medicine</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f090e77e916fba1a8f28cd4c46a65b0f2c9ae494">Extraction of nonlinearity in neural networks and model compression with Koopman operator</a></td>
         <td>2024-02-18</td>
@@ -573,7 +1182,7 @@ hide:
         <td>ArXiv</td>
         <td>arXiv.org</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/01fd2da3cbb93d1435b50ca78f71b13e8930585b">GenAD: Generative End-to-End Autonomous Driving</a></td>
         <td>2024-02-18</td>
@@ -581,7 +1190,7 @@ hide:
         <td>ArXiv</td>
         <td>arXiv.org</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/975a32c29c3a4c48f636ca5915566891782916f9">Wasserstein GAN-based architecture to generate collaborative filtering synthetic datasets</a></td>
         <td>2024-02-17</td>
@@ -589,7 +1198,7 @@ hide:
         <td>Applied Intelligence</td>
         <td>NA</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/7903e4db530c19e2a581fd500099cc4230698615">Conditional Neural Expert Processes for Learning from Demonstration</a></td>
         <td>2024-02-13</td>
@@ -597,7 +1206,7 @@ hide:
         <td>ArXiv</td>
         <td>arXiv.org</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/807b295ccb96fbcac4b1598bb25ee3c3b2bf0743">DeformNet: Latent Space Modeling and Dynamics Prediction for Deformable Object Manipulation</a></td>
         <td>2024-02-12</td>
@@ -605,7 +1214,7 @@ hide:
         <td>ArXiv</td>
         <td>arXiv.org</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/61101ddbebcecaacdd80e3a8e7a4bd46b6e29190">Modeling and Simulating an Epidemic in Two Dimensions with an Application Regarding COVID-19</a></td>
         <td>2024-02-12</td>
@@ -613,7 +1222,7 @@ hide:
         <td>Computation</td>
         <td>Computation</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/9f3f7a5c252400504b380074d2c0f5527b2f6379">Large Language Model Meets Graph Neural Network in Knowledge Distillation</a></td>
         <td>2024-02-08</td>
@@ -621,7 +1230,7 @@ hide:
         <td>ArXiv</td>
         <td>arXiv.org</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/e128822efc190aa18c672c386b6f7e89e7820160">Language uncovers visuospatial dysfunction in posterior cortical atrophy: a natural language processing approach</a></td>
         <td>2024-02-06</td>
@@ -629,7 +1238,7 @@ hide:
         <td>Frontiers in Neuroscience</td>
         <td>Frontiers in Neuroscience</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a4daedf3e31d0962aefa233bc6b51d5553ccd4e0">Modeling Spatio-temporal Dynamical Systems with Neural Discrete Learning and Levels-of-Experts</a></td>
         <td>2024-02-06</td>
@@ -637,7 +1246,7 @@ hide:
         <td>ArXiv</td>
         <td>IEEE Transactions on Knowledge and Data Engineering</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/9d6933f6ffb9a0e3818f45bb51c1a685f5c757a3">Vector Approximate Message Passing With Arbitrary I.I.D. Noise Priors</a></td>
         <td>2024-02-06</td>
@@ -645,7 +1254,7 @@ hide:
         <td>ArXiv</td>
         <td>arXiv.org</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/8ab85a98ae0b3a60a0b87c32e558baa5d32c7c02">Reinforcement Learning for Collision-free Flight Exploiting Deep Collision Encoding</a></td>
         <td>2024-02-06</td>
@@ -653,7 +1262,7 @@ hide:
         <td>ArXiv</td>
         <td>arXiv.org</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/7fac0e8835f36148f02b0421fb4eae304288f31f">Bird's Nest-Shaped Sb2 WO6 /D-Fru Composite for Multi-Stage Evaporator and Tandem Solar Light-Heat-Electricity Generators.</a></td>
         <td>2024-02-06</td>
@@ -661,7 +1270,7 @@ hide:
         <td>Small</td>
         <td>Small</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3acc82d11d37d1764353d87f59635bf47560007b">Variational Shapley Network: A Probabilistic Approach to Self-Explaining Shapley values with Uncertainty Quantification</a></td>
         <td>2024-02-06</td>
@@ -669,7 +1278,7 @@ hide:
         <td>ArXiv</td>
         <td>arXiv.org</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/e811b50f83b0024151ab6b419b1c6ae1ff0a4879">SafEDMD: A certified learning architecture tailored to data-driven control of nonlinear dynamical systems</a></td>
         <td>2024-02-05</td>
@@ -677,7 +1286,7 @@ hide:
         <td>ArXiv</td>
         <td>arXiv.org</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d22a59a9afc6e99f90560c11d7b5a75ca6fbe0b7">Latent Graph Diffusion: A Unified Framework for Generation and Prediction on Graphs</a></td>
         <td>2024-02-04</td>
@@ -685,7 +1294,7 @@ hide:
         <td>ArXiv</td>
         <td>arXiv.org</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/78d759892358c977e74d3195737defb2561bbcfe">An integrated population model reveals source-sink dynamics for competitively subordinate African wild dogs linked to anthropogenic prey depletion.</a></td>
         <td>2024-02-04</td>
@@ -693,7 +1302,7 @@ hide:
         <td>The Journal of animal ecology</td>
         <td>Journal of Animal Ecology</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/2c13a7927260bfa6272c4b6d02c6f4841150e0b7">Multi-modal Causal Structure Learning and Root Cause Analysis</a></td>
         <td>2024-02-04</td>
@@ -701,7 +1310,7 @@ hide:
         <td>ArXiv</td>
         <td>arXiv.org</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/cc0014bfceb178685592df825da8e8b1c10ea2ea">A hybrid twin based on machine learning enhanced reduced order model for real-time simulation of magnetic bearings</a></td>
         <td>2024-02-03</td>
@@ -709,7 +1318,7 @@ hide:
         <td>Adv. Model. Simul. Eng. Sci.</td>
         <td>Advanced Modeling and Simulation in Engineering Sciences</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/9a447401a71c08c2f7c421c57a707ff5022bee42">Multimodal Co-orchestration for Exploring Structure-Property Relationships in Combinatorial Libraries via Multi-Task Bayesian Optimization</a></td>
         <td>2024-02-03</td>
@@ -717,7 +1326,7 @@ hide:
         <td>ArXiv</td>
         <td>arXiv.org</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/8323d45727cc3ec1f008fc0343ce628c13491874">Discovering optimal features for neuron-type identification from extracellular recordings</a></td>
         <td>2024-02-02</td>
@@ -725,7 +1334,7 @@ hide:
         <td>Frontiers in Neuroinformatics</td>
         <td>Frontiers in Neuroinformatics</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f2e386076a2bba4c7297414c4645c1bdd1adbd73">Differences in Supervision on Peer Learning Wards: A Pilot Survey of the Supervisor’s Perspective</a></td>
         <td>2024-02-01</td>
@@ -733,7 +1342,7 @@ hide:
         <td>Advances in Medical Education and Practice</td>
         <td>Advances in Medical Education and Practice</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d189e462f3a403c102d6fbb0e921867b66fa3dd5">Utility of a time-lagged autoencoder for calculating free energy by generating a large number of synthetic trajectories based on molecular dynamics</a></td>
         <td>2024-02-01</td>
@@ -741,7 +1350,7 @@ hide:
         <td>Biophysical Journal</td>
         <td>Biophysical Journal</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/cf383cc4496c79bf0b662f80b890c4fa7b11b904">Time domain turbo equalization based on vector approximate message passing for multiple-input multiple-output underwater acoustic communications.</a></td>
         <td>2024-02-01</td>
@@ -749,7 +1358,7 @@ hide:
         <td>The Journal of the Acoustical Society of America</td>
         <td>Journal of the Acoustical Society of America</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/787cb87874249d7e8712556b04a45d5c4be4b9f6">A deep clustering-based state-space model for improved disease risk prediction in personalized healthcare</a></td>
         <td>2024-02-01</td>
@@ -757,7 +1366,7 @@ hide:
         <td>Annals of Operations Research</td>
         <td>Annals of Operations Research</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/6831d3da784ceeb618c9f08018e85bb1ce9b6d18">On the Fine-Grained Distributed Routing and Data Scheduling for Interplanetary Data Transfers</a></td>
         <td>2024-02-01</td>
@@ -765,7 +1374,7 @@ hide:
         <td>IEEE Transactions on Network and Service Management</td>
         <td>IEEE Transactions on Network and Service Management</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/611c0700e7fddab911fb15891e0ffa6a76040f67">A Channel Perceiving-Based Handover Management in Space–Ground Integrated Information Network</a></td>
         <td>2024-02-01</td>
@@ -773,7 +1382,7 @@ hide:
         <td>IEEE Transactions on Network and Service Management</td>
         <td>IEEE Transactions on Network and Service Management</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/5ed45938785ddee58d1e13c13015a498d259597d">Joint Optimization of Server and Service Selection in Satellite-Terrestrial Integrated Edge Computing Networks</a></td>
         <td>2024-02-01</td>
@@ -781,7 +1390,7 @@ hide:
         <td>IEEE Transactions on Vehicular Technology</td>
         <td>IEEE Transactions on Vehicular Technology</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/5a3d965d525bc8a9962635995a0fe4e99030e7f9">Mechanism Design for Semantic Communication in UAV-Assisted Metaverse: A Combinatorial Auction Approach</a></td>
         <td>2024-02-01</td>
@@ -789,7 +1398,7 @@ hide:
         <td>IEEE Transactions on Vehicular Technology</td>
         <td>IEEE Transactions on Vehicular Technology</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3169a2478154e26fd7f63fdf43cf3a24f1007962">BlackMamba: Mixture of Experts for State-Space Models</a></td>
         <td>2024-02-01</td>
@@ -797,7 +1406,7 @@ hide:
         <td>ArXiv</td>
         <td>arXiv.org</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/c9a347d477b69f265c701c2e7cac13ea798b620e">Discriminative Action Snippet Propagation Network for Weakly Supervised Temporal Action Localization</a></td>
         <td>2024-01-31</td>
@@ -805,7 +1414,7 @@ hide:
         <td>ACM Transactions on Multimedia Computing, Communications, and Applications</td>
         <td>ACM Transactions on Multimedia Computing, Communications, and Applications (TOMCCAP)</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/4e6058646bab2ad0322953527b1528dd3de21060">Polynomial Chaos Expansions on Principal Geodesic Grassmannian Submanifolds for Surrogate Modeling and Uncertainty Quantification</a></td>
         <td>2024-01-30</td>
@@ -813,7 +1422,7 @@ hide:
         <td>ArXiv</td>
         <td>arXiv.org</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/49f4b52c7ab3464c9dc5c50f4d85a99b5dff5909">Dynamical Survival Analysis with Controlled Latent States</a></td>
         <td>2024-01-30</td>
@@ -821,7 +1430,7 @@ hide:
         <td>ArXiv</td>
         <td>arXiv.org</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/9873e1ee0ca576a1d78b6808fff7e546833d16f3">PICL: Physics Informed Contrastive Learning for Partial Differential Equations</a></td>
         <td>2024-01-29</td>
@@ -829,7 +1438,7 @@ hide:
         <td>ArXiv</td>
         <td>arXiv.org</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/101e08d3c9724743e42725884468572adb076c19">Routing of Kv7.1 to endoplasmic reticulum plasma membrane junctions.</a></td>
         <td>2024-01-29</td>
@@ -837,7 +1446,7 @@ hide:
         <td>Acta physiologica</td>
         <td>Acta Physiologica</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/58668b9af212442c8e02cc3614759f6152dbffb1">Ricci flow-guided autoencoders in learning time-dependent dynamics</a></td>
         <td>2024-01-26</td>
@@ -845,7 +1454,7 @@ hide:
         <td>ArXiv</td>
         <td>arXiv.org</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/b7be7c79cfe22c7157ef031c183ac44e182c952a">DRL-based Task and Computational Offloading for Internet of Vehicles in Decentralized Computing</a></td>
         <td>2024-01-25</td>
@@ -853,7 +1462,7 @@ hide:
         <td>Journal of Grid Computing</td>
         <td>Journal of Grid Computing</td>
       </tr>
-    
+
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/75803a889a9b35b899d65d0e8883edc84911b8e1">Domain-Based Address Configuration for Vehicular Networks</a></td>
         <td>2024-01-25</td>
@@ -861,7 +1470,7 @@ hide:
         <td>Wireless Personal Communications</td>
         <td>Wireless personal communications</td>
       </tr>
-    
+
   </tbody>
   </table>
   </p>
@@ -896,4 +1505,80 @@ hide:
   };
   Plotly.newPlot('myDiv', data, layout);
 </script>
+</html>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.tabs"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+
+      <script src="../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      
+    
+<script>
+  new DataTable('#table1', {
+    order: [[2, 'desc']]
+  });
+  new DataTable('#table2', {
+    order: [[1, 'desc']]
+  });
+</script>
+
+
+  </body>
 </html>
