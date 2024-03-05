@@ -8,8 +8,8 @@ on:
   #   branches: [ main ]
   #   types:
   #     - completed
-  push:
-    branches: [ main ]
+  # push:
+  #   branches: [ main ]
 
 jobs:
   # Only trigger, when the TESTS workflow succeeded
