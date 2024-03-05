@@ -301,17 +301,6 @@ hide:
       </tr>
     
       <tr>
-<<<<<<< HEAD
-=======
-        <td><a href="https://www.semanticscholar.org/paper/28dd40e544c8278299623682ad4daaa14241e09d">Physics-informed neural networks for solving forward and inverse problems in complex beam systems</a></td>
-        <td>2023-03-02</td>
-        <td>8</td>
-        <td>IEEE transactions on neural networks and learning systems</td>
-        <td>IEEE Transactions on Neural Networks and Learning Systems</td>
-      </tr>
-    
-      <tr>
->>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
         <td><a href="https://www.semanticscholar.org/paper/fcee055d1daa6794c6b290a642b8c6f727c27fa9">Physics-Informed Implicit Representations of Equilibrium Network Flows</a></td>
         <td>None</td>
         <td>7</td>
@@ -336,7 +325,6 @@ hide:
       </tr>
     
       <tr>
-<<<<<<< HEAD
         <td><a href="https://www.semanticscholar.org/paper/28dd40e544c8278299623682ad4daaa14241e09d">Physics-informed neural networks for solving forward and inverse problems in complex beam systems</a></td>
         <td>2023-03-02</td>
         <td>7</td>
@@ -345,8 +333,6 @@ hide:
       </tr>
     
       <tr>
-=======
->>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
         <td><a href="https://www.semanticscholar.org/paper/e141f14258bf5f575add3f54b0dcb6395dbba061">On physics-informed neural networks for quantum computers</a></td>
         <td>2022-09-28</td>
         <td>6</td>
@@ -458,7 +444,6 @@ hide:
         <td>arXiv.org</td>
       </tr>
     
-<<<<<<< HEAD
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/34a7e909cce77c863ac1ddb5fb1c893c667ce9b4">Magnetohydrodynamics with physics informed neural operators</a></td>
         <td>2023-02-13</td>
@@ -859,8 +844,6 @@ hide:
         <td>NA</td>
       </tr>
     
-=======
->>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
   </tbody>
   </table>
   </p>
@@ -1279,7 +1262,6 @@ hide:
         <td>arXiv.org</td>
       </tr>
     
-<<<<<<< HEAD
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/fae27b9a84f44acae904546063978481eaef167c">Evaluating magnetic fields using deep learning</a></td>
         <td>2023-08-11</td>
@@ -1680,8 +1662,6 @@ hide:
         <td>Journal of Computer Science</td>
       </tr>
     
-=======
->>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
   </tbody>
   </table>
   </p>

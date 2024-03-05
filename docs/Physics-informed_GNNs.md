@@ -175,11 +175,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/81a4fd3004df0eb05d6c1cef96ad33d5407820df">A Comprehensive Survey on Graph Neural Networks</a></td>
         <td>None</td>
-<<<<<<< HEAD
         <td>5936</td>
-=======
-        <td>5934</td>
->>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
         <td>IEEE Transactions on Neural Networks and Learning Systems</td>
         <td>IEEE Transactions on Neural Networks and Learning Systems</td>
       </tr>
@@ -433,19 +429,19 @@ hide:
       </tr>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/5d1bfeed240709725c78bc72ea40e55410b373dc">Convolutional Networks on Graphs for Learning Molecular Fingerprints</a></td>
-        <td>2015-09-30</td>
-        <td>2990</td>
-        <td>ArXiv</td>
-        <td>Neural Information Processing Systems</td>
-      </tr>
-    
-      <tr>
         <td><a href="https://www.semanticscholar.org/paper/efeaa6e3114d6d6ae5c3041b66ac9a9ae9bf52bf">Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action Recognition</a></td>
         <td>2018-01-23</td>
         <td>2989</td>
         <td>{'pages': '7444-7452'}</td>
         <td>AAAI Conference on Artificial Intelligence</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/5d1bfeed240709725c78bc72ea40e55410b373dc">Convolutional Networks on Graphs for Learning Molecular Fingerprints</a></td>
+        <td>2015-09-30</td>
+        <td>2990</td>
+        <td>ArXiv</td>
+        <td>Neural Information Processing Systems</td>
       </tr>
     
       <tr>
@@ -1682,11 +1678,7 @@ hide:
 
   var trace2 = {
     x: ['1968', '1974', '1975', '1978', '1981', '1982', '1983', '1984', '1985', '1986', '1987', '1988', '1989', '1990', '1991', '1992', '1993', '1994', '1995', '1996', '1997', '1998', '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
-<<<<<<< HEAD
     y: [817, 379, 575, 408, 1201, 429, 1876, 4191, 356, 4525, 3654, 1445, 1597, 2282, 1202, 3077, 4256, 2243, 2627, 4673, 4423, 42562, 19184, 20397, 53515, 22093, 54495, 39051, 42558, 39956, 41343, 35250, 53879, 35547, 25163, 21666, 29283, 26470, 38100, 72199, 65533, 89610, 46427, 29488, 4673, 1626, 1041],
-=======
-    y: [817, 379, 575, 408, 1201, 429, 1876, 4191, 357, 4525, 3655, 1445, 1597, 2282, 1202, 3077, 4255, 2243, 2627, 4674, 4423, 42556, 19184, 20398, 53513, 22086, 54494, 39048, 42561, 39953, 41342, 35245, 53870, 35541, 25162, 21666, 29282, 26469, 38098, 72187, 65521, 89599, 46423, 29486, 4674, 1629, 1041],
->>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
     name: 'Num of citations',
     yaxis: 'y2',
     type: 'scatter'

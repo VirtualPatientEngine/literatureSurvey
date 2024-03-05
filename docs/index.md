@@ -438,19 +438,19 @@ hide:
       </tr>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/5d1bfeed240709725c78bc72ea40e55410b373dc">Convolutional Networks on Graphs for Learning Molecular Fingerprints</a></td>
-        <td>2015-09-30</td>
-        <td>2990</td>
-        <td>ArXiv</td>
-        <td>Neural Information Processing Systems</td>
-      </tr>
-    
-      <tr>
         <td><a href="https://www.semanticscholar.org/paper/efeaa6e3114d6d6ae5c3041b66ac9a9ae9bf52bf">Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action Recognition</a></td>
         <td>2018-01-23</td>
         <td>2989</td>
         <td>{'pages': '7444-7452'}</td>
         <td>AAAI Conference on Artificial Intelligence</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/5d1bfeed240709725c78bc72ea40e55410b373dc">Convolutional Networks on Graphs for Learning Molecular Fingerprints</a></td>
+        <td>2015-09-30</td>
+        <td>2990</td>
+        <td>ArXiv</td>
+        <td>Neural Information Processing Systems</td>
       </tr>
     
       <tr>

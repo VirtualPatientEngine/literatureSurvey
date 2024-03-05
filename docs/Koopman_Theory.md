@@ -13,11 +13,7 @@ hide:
   <p>
   <h3>Table of Contents</h3>
     <li><a href="#search_query">1. Search Query</a></li>
-<<<<<<< HEAD
     <li><a href="#plot1">2. Koopman Theory articles and citations over time</a></li>
-=======
-    <li><a href="#plot">2. Koopman Theory articles and citations over time</a></li>
->>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
     <li><a href="#most_cited_articles">3. Most cited articles on Koopman Theory</a></li>
     <li><a href="#latest_articles">4. Latest articles on Koopman Theory</a></li>
   <p>
@@ -28,13 +24,8 @@ hide:
   </p>
   
   <p>
-<<<<<<< HEAD
   <h3 id="plot1">2. Koopman Theory articles and citations over time</h3>
     <div id='myDiv1'>
-=======
-  <h3 id="plot">2. Koopman Theory articles and citations over time</h3>
-    <div id='myDiv'>
->>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
       <!-- Plotly chart will be drawn inside this DIV -->
     </div>
   </p>
@@ -216,11 +207,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3c4372b125d0744bb68bfca9f5d6b0abb85dd182">Characterizing possible failure modes in physics-informed neural networks</a></td>
         <td>2021-09-02</td>
-<<<<<<< HEAD
         <td>331</td>
-=======
-        <td>332</td>
->>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
         <td>{'pages': '26548-26560'}</td>
         <td>Neural Information Processing Systems</td>
       </tr>
@@ -457,7 +444,6 @@ hide:
         <td>PLoS Pathogens</td>
       </tr>
     
-<<<<<<< HEAD
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/28d86293dc13ec0bae8f581068552b6f7d4bfda5">Linear Transformations in Hilbert Space: III. Operational Methods and Group Theory.</a></td>
         <td>1930-02-01</td>
@@ -858,8 +844,6 @@ hide:
         <td>Journal of Chemical Physics</td>
       </tr>
     
-=======
->>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
   </tbody>
   </table>
   </p>
@@ -1278,7 +1262,6 @@ hide:
         <td>NA</td>
       </tr>
     
-<<<<<<< HEAD
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/92fd959f255f93400a8bc9d26debf5a959ce2e42">Koopmon trajectories in nonadiabatic quantum-classical dynamics</a></td>
         <td>2023-12-21</td>
@@ -1679,8 +1662,6 @@ hide:
         <td>Chemical Communications</td>
       </tr>
     
-=======
->>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
   </tbody>
   </table>
   </p>
