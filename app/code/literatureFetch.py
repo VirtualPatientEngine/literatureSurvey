@@ -23,7 +23,7 @@ BASE_PARAMS = {
     # 'sort': 'citationCount:desc',
     'token': None
 }
-N = 50
+N = 100
 DIC = {}
 
 def fetch_articles(search_query,
@@ -57,8 +57,9 @@ def fetch_articles(search_query,
             # When the status code is 200, break the loop
             if search_response.status_code != 200:
                 print ('status code', search_response.status_code)
-                print ('Sleeping for 3 seconds....')
-                time.sleep(3)
+                print ('Retrying....')
+                # print ('Sleeping for 3 seconds....')
+                # time.sleep(3)
             else:
                 break
                 
@@ -90,14 +91,15 @@ def fetch_articles(search_query,
             paper['journal'] = journal['name']
     return fetched_data
 
-def create_template(template_file, category_name, df) -> str:
+def create_template(template_file, category_name, df, dic_all_citations=None) -> str:
     """
     Return the markdown content for a given template
 
     Args:
         template_file (str): template file
-        most_cited_articles (list): list of most cited articles
-        most_recent_articles (list): list of most recent articles
+        category_name (str): category name
+        df (pd.DataFrame): dataframe with the metrics over time
+        dic_all_citations (dict): dictionary with the number of citations for all categories
     Returns:
         str: markdown content
     """
@@ -105,6 +107,17 @@ def create_template(template_file, category_name, df) -> str:
     environment = Environment(loader=FileSystemLoader("../../templates/"))
     # Get the template
     template = environment.get_template(template_file)
+    if dic_all_citations is None:
+        categories = None
+        num_citations_across_categories = None
+    else:
+        categories = []
+        num_citations_across_categories = []
+        for category, num_citations_categories in dic_all_citations.items():
+            if category == category_name:
+                continue
+            categories.append(category)
+            num_citations_across_categories.append(num_citations_categories)
     # Render the template
     content = template.render(
         most_cited_articles=DIC[category_name]['most_cited_articles'][0:N],
@@ -114,7 +127,9 @@ def create_template(template_file, category_name, df) -> str:
         query=DIC[category_name]['query'],
         x_year=df['Year'].tolist(),
         y_num_articles=df['num_articles'].tolist(),
-        y_num_citations=df['num_citations'].tolist()
+        y_num_citations=df['num_citations'].tolist(),
+        categories=categories,
+        num_citations_across_categories=num_citations_across_categories
     )
     # return markdownify.markdownify(content)
     return content
@@ -177,29 +192,35 @@ def main():
     data = fetch_articles(query, sort = 'publicationDate:desc')
     DIC[category_name]['most_recent_articles'] = data
     # print (data[0])
-    markdown_text = create_template("category.txt", category_name, df)
+    # Make bar plot for the number of citations of top 100 articles
+    # in each category
+    dic_all_citations = utils.all_citations_js(DIC)
+    markdown_text = create_template("all.txt", category_name, df, dic_all_citations=dic_all_citations)
                                     # DIC[category_name]['most_cited_articles'][0:N],
                                     # DIC[category_name]['most_recent_articles'][0:N])
     # Add the hide navigation
     markdown_text = "---\nhide:\n - navigation\n---\n" + markdown_text
     # Write the markdown text to a file
-    with open(f'../../docs/{category_name}.md', 'w', encoding='utf-8') as file:
+    with open(f'../../docs/index.md', 'w', encoding='utf-8') as file:
         file.write(markdown_text)
     ################################
-        
     # Read YAML file
-    file_path = '../../mkdocs.yml'
+    file_path = '../../base.yml'
     data = utils.read_yaml(file_path)
-    print (data['nav'])
 
     # Add more stuff to the YAML data
     data['nav'] = []
     for category_name, category_items in DIC.items():
-        data['nav'].append({category_items['title']: category_name + '.md'})
+        if category_name == 'All':
+            data['nav'].append({category_items['title']: 'index.md'})
+        else:
+            data['nav'].append({category_items['title']: category_name + '.md'})
 
+    # reverser the order so that All appears first
+    data['nav'] = data['nav'][::-1]
     print (data['nav'])
     # Write modified YAML data back to file
-    # write_yaml(data, file_path)
+    utils.write_yaml(data, '../../mkdocs.yml')
 
 if __name__ == '__main__':
     # Run the main function

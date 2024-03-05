@@ -9,9 +9,10 @@
   <p>
   <h3>Table of Contents</h3>
     <li><a href="#search_query">1. Search Query</a></li>
-    <li><a href="#plot1">2. {{title}} articles and citations over time</a></li>
-    <li><a href="#most_cited_articles">3. Most cited articles on {{title}}</a></li>
-    <li><a href="#latest_articles">4. Latest articles on {{title}}</a></li>
+    <li><a href="#plot1">2. Number of articles and citations over time</a></li>
+    <li><a href="#most_cited_articles">3. Most cited articles</a></li>
+    <li><a href="#latest_articles">4. Latest articles</a></li>
+    <li><a href="#plot2">5. Comparison metrics</a></li>
   <p>
 
   <p>
@@ -20,14 +21,14 @@
   </p>
   
   <p>
-  <h3 id="plot1">2. {{title}} articles and citations over time</h3>
+  <h3 id="plot1">2. Number of articles and citations over time</h3>
     <div id='myDiv1'>
       <!-- Plotly chart will be drawn inside this DIV -->
     </div>
   </p>
 
   <p>
-  <h3 id="most_cited_articles">3. Most cited articles on {{title}}</h3>
+  <h3 id="most_cited_articles">3. Most cited articles</h3>
   <table id="table1" class="display" style="width:100%">
   <thead>
     <tr>
@@ -53,7 +54,7 @@
   </p>
 
   <p>
-  <h3 id="latest_articles">4. Latest articles on {{title}}</h3>
+  <h3 id="latest_articles">4. Latest articles</h3>
   <table id="table2" class="display" style="width:100%">
   <thead>
     <tr>
@@ -77,6 +78,14 @@
   </tbody>
   </table>
   </p>
+
+  <p>
+  <h3 id="plot2">5. Comparison metrics</h3>
+    <div id='myDiv2'>
+      <!-- Plotly chart will be drawn inside this DIV -->
+    </div>
+  </p>
+
 
 </body>
 
@@ -107,5 +116,18 @@
       }
   };
   Plotly.newPlot('myDiv1', data, layout);
+</script>
+
+<script>
+    var data = [
+    {
+      x: {{categories}},
+      y: {{num_citations_across_categories}},
+      type: 'bar'
+      }
+    ];
+
+    Plotly.newPlot('myDiv2', data);
+
 </script>
 </html>

@@ -1,49 +1,38 @@
-site_name: Literature Survey (Simulator)
+nav:
+- All: index.md
+- Koopman Theory: Koopman_Theory.md
+- Latent Space Simulator: Latent_Space_Simulator.md
+- PINNs: PINNs.md
+- Symbolic regression: Symbolic_regression.md
+- Physics-informed GNNs: Physics-informed_GNNs.md
+- Neural ODEs: Neural_ODEs.md
 plugins:
-  - mkdocstrings:
-      paths: ["app", "tests"]  
-  - search
+- mkdocstrings:
+    paths:
+    - app
+    - tests
+- search
+repo_name: LiteratureSurvey
+repo_url: https://github.com/VirtualPatientEngine/literatureSurvey
+site_name: Literature Survey (Simulator)
 theme:
-  name: material
-  # logo: assets/AI_Schwurbel_standard.jpg
   custom_dir: overrides/
   features:
-    - navigation.top
-    - navigation.tabs
-    # - navigation.tabs.sticky
+  - navigation.top
+  - navigation.tabs
   icon:
     repo: fontawesome/brands/github
+  name: material
   palette:
-    # primary: "red"
-    # accent: "light-blue"
-    - scheme: default
-      toggle:
-        icon: material/toggle-switch-off-outline 
-        name: Switch to dark mode
-      primary: red
-      accent: purple 
-    - scheme: slate 
-      toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode    
-      primary: red
-      accent: lime
-# extra_css:
-#   - custom.css
-# use_directory_urls: false
-  
-repo_url: https://github.com/VirtualPatientEngine/literatureSurvey
-repo_name: LiteratureSurvey
-
-nav:
-  # - Home: All.md
-  # - Neural ODEs: Neural_ODEs.md
-  # - Physics-informed GNNs: Physics-informed_GNNs.md
-  # - Symbolic regression: Symbolic_regression.md
-  # - PINNs: PINNs.md
-  # - Latent Space Simulator: Latent_Space_Simulator.md
-  # - Koopman Theory: Koopman_Theory.md
-  # - API Reference:
-  #   - Arxiv: literatureFetch.md
-  #   - Tests: test_literatureFetch.md
-  
+  - accent: purple
+    primary: red
+    scheme: default
+    toggle:
+      icon: material/toggle-switch-off-outline
+      name: Switch to dark mode
+  - accent: lime
+    primary: red
+    scheme: slate
+    toggle:
+      icon: material/toggle-switch
+      name: Switch to light mode

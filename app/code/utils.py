@@ -126,6 +126,30 @@ def metrics_over_time_js(data, category_name, title) -> plt:
     # print (df)
     return df
 
+def all_citations_js(dic) -> list:
+    """
+    Return the number of citations for all categories
+
+    Args:
+        dic (dict): dictionary of categories
+
+    Returns:
+        dic_all_citations (dict): dictionary with the number of citations for all categories
+    """
+    categories = []
+    num_citations = []
+    dic_all_citations = {}
+    for category_name, category_name_items in dic.items():
+        sum_citations = 0
+        # categories.append(category_name)
+        for item in category_name_items['most_cited_articles']:
+            if item['citationCount'] is None:
+                continue
+            sum_citations += int(item['citationCount'])
+        # num_citations.append(sum_citations)
+        dic_all_citations[category_name] = sum_citations
+    return dic_all_citations
+
 # Function to read YAML file
 def read_yaml(file_path):
     with open(file_path, 'r') as file:
