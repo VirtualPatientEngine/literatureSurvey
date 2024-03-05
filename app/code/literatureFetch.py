@@ -50,13 +50,13 @@ def fetch_articles(search_query,
             search_response = requests.get(URL, params=query_params, timeout=None)
             print ('status code', search_response.status_code)
             # WHen the status code is 429, sleep for 5 minutes
-            if search_response.status_code == 429:
-                status_code_429 += 1
-                if status_code_429 > 10:
-                    print ('Too many requests!')
-                    print ('Sleeping for 5 minutes and 10 seconds....')
-                    time.sleep(310)
-                    continue
+            # if search_response.status_code == 429:
+            #     status_code_429 += 1
+            #     if status_code_429 > 10:
+            #         print ('Too many requests!')
+            #         print ('Sleeping for 5 minutes and 10 seconds....')
+            #         time.sleep(310)
+            #         continue
             # When the status code is 200, break the loop
             if search_response.status_code == 200:
                 break
