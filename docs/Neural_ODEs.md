@@ -2,72 +2,898 @@
 hide:
  - navigation
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+</head>
 
+<body>
 
+  <p>
+  <h3>Table of Contents</h3>
+    <li><a href="#search_query">1. Search Query</a></li>
+    <li><a href="#plot">2. Neural ODEs articles and citations over time</a></li>
+    <li><a href="#most_cited_articles">3. Most cited articles on Neural ODEs</a></li>
+    <li><a href="#latest_articles">4. Latest articles on Neural ODEs</a></li>
+  <p>
 
+  <p>
+  <h3 id="search_query">1. Search query</h3>
+  <i>(neural ordinary differential equation) | (neural ODE) | (graph neural differential equation) | (graph neural diffusion) | (graph neural ODEs)</i>
+  </p>
+  
+  <p>
+  <h3 id="plot">2. Neural ODEs articles and citations over time</h3>
+    <div id='myDiv'>
+      <!-- Plotly chart will be drawn inside this DIV -->
+    </div>
+  </p>
 
+  <p>
+  <h3 id="most_cited_articles">3. Most cited articles on Neural ODEs</h3>
+  <table id="table1" class="display" style="width:100%">
+  <thead>
+    <tr>
+        <th>Title</th>
+        <th>PublicationDate</th>
+        <th>#Citations</th>
+        <th>Journal/Conference</th>
+        <th>publicationVenue</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/449310e3538b08b43227d660227dfd2875c3c3c1">Neural Ordinary Differential Equations</a></td>
+        <td>2018-06-19</td>
+        <td>3517</td>
+        <td>{'pages': '6572-6583'}</td>
+        <td>Neural Information Processing Systems</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/633e2fbfc0b21e959a244100937c5853afca4853">Score-Based Generative Modeling through Stochastic Differential Equations</a></td>
+        <td>2020-11-26</td>
+        <td>2600</td>
+        <td>ArXiv</td>
+        <td>International Conference on Learning Representations</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/9ba0186ed40656329c421f55ada7313293e13f17">Diffusion Convolutional Recurrent Neural Network: Data-Driven Traffic Forecasting</a></td>
+        <td>2017-07-06</td>
+        <td>2120</td>
+        <td>arXiv: Learning</td>
+        <td>International Conference on Learning Representations</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/5ebbe0b1a3d7a2431bbb25d6dfeec7ed6954d633">Artificial neural networks for solving ordinary and partial differential equations</a></td>
+        <td>1997-05-19</td>
+        <td>1721</td>
+        <td>IEEE transactions on neural networks</td>
+        <td>NA</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/18b47b83a373f33d6b902a3615f42c10f7600d72">Diffusion-Convolutional Neural Networks</a></td>
+        <td>2015-11-06</td>
+        <td>1084</td>
+        <td>{'pages': '1993-2001'}</td>
+        <td>Neural Information Processing Systems</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/1a39bb2caa151d15efd6718f3a80d9f4bff95af2">Dynamic Edge-Conditioned Filters in Convolutional Neural Networks on Graphs</a></td>
+        <td>2017-04-10</td>
+        <td>1071</td>
+        <td>2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</td>
+        <td>Computer Vision and Pattern Recognition</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/8afa6dd9f9ac46462a1fb70a757c4ae1cd45bbf6">FFJORD: Free-form Continuous Dynamics for Scalable Reversible Generative Models</a></td>
+        <td>2018-09-27</td>
+        <td>688</td>
+        <td>ArXiv</td>
+        <td>International Conference on Learning Representations</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/37be889f4654312109dc9c53395fe117adb0f72b">Stable architectures for deep neural networks</a></td>
+        <td>2017-05-09</td>
+        <td>591</td>
+        <td>Inverse Problems</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/aac882f968b720785613673508e7783f0efd7182">Brian: A Simulator for Spiking Neural Networks in Python</a></td>
+        <td>2008-07-11</td>
+        <td>526</td>
+        <td>Frontiers in Neuroinformatics</td>
+        <td>BMC Neuroscience</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/4530c25da949bb2185c50663158ef19d52e3c6b5">DPM-Solver: A Fast ODE Solver for Diffusion Probabilistic Model Sampling in Around 10 Steps</a></td>
+        <td>2022-06-02</td>
+        <td>494</td>
+        <td>ArXiv</td>
+        <td>Neural Information Processing Systems</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/31156009c49a88b5f0fb37437512eec570310d24">Augmented Neural ODEs</a></td>
+        <td>2019-04-02</td>
+        <td>492</td>
+        <td>ArXiv</td>
+        <td>Neural Information Processing Systems</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/2a6d160b529272964ce1a6707adf52f3d6ba4861">Diffusion Improves Graph Learning</a></td>
+        <td>2019-10-28</td>
+        <td>486</td>
+        <td>{'pages': '13333-13345'}</td>
+        <td>Neural Information Processing Systems</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/ace1059fd85bbb8b41874a47a029bba7899124a5">Geometric Matrix Completion with Recurrent Multi-Graph Neural Networks</a></td>
+        <td>2017-04-01</td>
+        <td>465</td>
+        <td>{'pages': '3697-3707'}</td>
+        <td>Neural Information Processing Systems</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/d407abcdf8b5ce6dbf9b9ab56357f4673676f951">Neural Operator: Graph Kernel Network for Partial Differential Equations</a></td>
+        <td>2020-02-26</td>
+        <td>443</td>
+        <td>ArXiv</td>
+        <td>International Conference on Learning Representations</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/3785b6336735e01631031e49d8429a245f0f674d">Simulation of chaotic EEG patterns with a dynamic model of the olfactory system</a></td>
+        <td>1987-05-01</td>
+        <td>439</td>
+        <td>Biological Cybernetics</td>
+        <td>Biological cybernetics</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/1cb7ea5de0f8f4d90e4369db4a161ca8594026dc">Beyond Finite Layer Neural Networks: Bridging Deep Architectures and Numerical Differential Equations</a></td>
+        <td>2017-10-27</td>
+        <td>429</td>
+        <td>ArXiv</td>
+        <td>International Conference on Machine Learning</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/d2eeec5bd43496c968f4b612cc3ede6d85c02a3d">Latent Ordinary Differential Equations for Irregularly-Sampled Time Series</a></td>
+        <td>None</td>
+        <td>409</td>
+        <td>{'pages': '5321-5331'}</td>
+        <td>Neural Information Processing Systems</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/76a2b61cf192e383a8e1e59bd3278923436aae88">Adaptive NN Backstepping Output-Feedback Control for Stochastic Nonlinear Strict-Feedback Systems With Time-Varying Delays</a></td>
+        <td>2010-06-01</td>
+        <td>403</td>
+        <td>IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics)</td>
+        <td>NA</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/a3bc7baa3f249185a5d69e7830c7cd61290c15cd">Rumor Detection on Social Media with Bi-Directional Graph Convolutional Networks</a></td>
+        <td>2020-01-17</td>
+        <td>379</td>
+        <td>{'pages': '549-556'}</td>
+        <td>AAAI Conference on Artificial Intelligence</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/09b781e63c52dd7a85fec382cc1832db8232f48c">A Deep Collocation Method for the Bending Analysis of Kirchhoff Plate</a></td>
+        <td>2021-02-04</td>
+        <td>365</td>
+        <td>ArXiv</td>
+        <td>Computers Materials & Continua</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/ace56d5c27c236bb2109ae7ce87e49c686ab77f5">Decoupling dynamical systems for pathway identification from metabolic profiles</a></td>
+        <td>2004-07-22</td>
+        <td>317</td>
+        <td>Bioinformatics</td>
+        <td>NA</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/8a40ee58cf7d6dd2e700b3aa6e8d30d190420f78">Neural Operator: Learning Maps Between Function Spaces</a></td>
+        <td>2021-08-19</td>
+        <td>317</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/31603b3339f4da5bdc6b7de4231bd1ddfb32a50a">Neural Controlled Differential Equations for Irregular Time Series</a></td>
+        <td>2020-05-18</td>
+        <td>302</td>
+        <td>ArXiv</td>
+        <td>Neural Information Processing Systems</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/993377a3fc8334558463b82053904e3d684f29c0">SIGN: Scalable Inception Graph Neural Networks</a></td>
+        <td>2020-04-23</td>
+        <td>286</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/3da4626411d83c19c9919bb41dba94fff88da90e">Scaling Graph Neural Networks with Approximate PageRank</a></td>
+        <td>2020-07-03</td>
+        <td>269</td>
+        <td>Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining</td>
+        <td>Knowledge Discovery and Data Mining</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/3c46fa25b0215678c62524a7a9a883bdc8a0c041">Multipole Graph Neural Operator for Parametric Partial Differential Equations</a></td>
+        <td>2020-06-16</td>
+        <td>248</td>
+        <td>ArXiv</td>
+        <td>Neural Information Processing Systems</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/03058f9a39d37a8bee635969eed227d59bbc8152">Scalable Gradients for Stochastic Differential Equations</a></td>
+        <td>2020-01-05</td>
+        <td>235</td>
+        <td>ArXiv</td>
+        <td>International Conference on Artificial Intelligence and Statistics</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/6a06a44dc8538a226df169e5a7ed659e5db3f9e4">Reversible Architectures for Arbitrarily Deep Residual Neural Networks</a></td>
+        <td>2017-09-12</td>
+        <td>234</td>
+        <td>{'pages': '2811-2818'}</td>
+        <td>AAAI Conference on Artificial Intelligence</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/4a617a7f27221666f778549d0c4c220ef536ea8a">Spina bifida</a></td>
+        <td>2018-07-09</td>
+        <td>223</td>
+        <td>Der Radiologe</td>
+        <td>NA</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/63c99c04869a52ac69850e21732b26d8633852ea">GRU-ODE-Bayes: Continuous modeling of sporadically-observed time series</a></td>
+        <td>2019-05-29</td>
+        <td>222</td>
+        <td>{'pages': '7377-7388'}</td>
+        <td>Neural Information Processing Systems</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/25bb538adb125803a6f3f5632f31720d657adb13">Latent ODEs for Irregularly-Sampled Time Series</a></td>
+        <td>2019-07-08</td>
+        <td>219</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/a4375125ee9900d1a5f090f433d5348601cb9989">How to train your neural ODE</a></td>
+        <td>2020-02-07</td>
+        <td>218</td>
+        <td>{'pages': '3154-3164'}</td>
+        <td>International Conference on Machine Learning</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/7f5ea861a57e14796f033fd0f5580dbc34ff88f2">Relational Pooling for Graph Representations</a></td>
+        <td>2019-03-06</td>
+        <td>213</td>
+        <td>ArXiv</td>
+        <td>International Conference on Machine Learning</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/b2c09a717fc2e37ff80085c53f186335ae859383">Models of the saccadic eye movement control system</a></td>
+        <td>1973-12-31</td>
+        <td>202</td>
+        <td>Kybernetik</td>
+        <td>Kybernetik</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/5d6563505d1da1dc4ae3b13e29fd77f03bd667be">Neural Jump Stochastic Differential Equations</a></td>
+        <td>2019-05-24</td>
+        <td>177</td>
+        <td>ArXiv</td>
+        <td>Neural Information Processing Systems</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/5ae1d33e36111eda24842bc3fa61ed1319c94da4">ODE-Inspired Network Design for Single Image Super-Resolution</a></td>
+        <td>2019-06-01</td>
+        <td>172</td>
+        <td>2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</td>
+        <td>Computer Vision and Pattern Recognition</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/e2c8a6b49cd999b16ac4dcfdc375563a6932b1c7">AntisymmetricRNN: A Dynamical System View on Recurrent Neural Networks</a></td>
+        <td>2019-02-26</td>
+        <td>169</td>
+        <td>ArXiv</td>
+        <td>International Conference on Learning Representations</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/abed09d4722b3259b68cb42141d532126076dab2">DiffNet++: A Neural Influence and Interest Diffusion Network for Social Recommendation</a></td>
+        <td>2020-01-15</td>
+        <td>168</td>
+        <td>IEEE Transactions on Knowledge and Data Engineering</td>
+        <td>IEEE Transactions on Knowledge and Data Engineering</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/33da5e93b3c9c02256c6a98f8a843ae62e27d436">Systems biology informed deep learning for inferring parameters and hidden dynamics</a></td>
+        <td>2019-12-04</td>
+        <td>168</td>
+        <td>PLoS Computational Biology</td>
+        <td>bioRxiv</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/0550df65305e0af3b2b20581163a8640b916957a">Error estimates for DeepOnets: A deep learning framework in infinite dimensions</a></td>
+        <td>2021-02-18</td>
+        <td>168</td>
+        <td>ArXiv</td>
+        <td>Transactions of Mathematics and Its Applications</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/017edc12a291aa4fa453817623df216a7edc9a15">Hibernation: neural aspects.</a></td>
+        <td>None</td>
+        <td>166</td>
+        <td>Annual review of physiology</td>
+        <td>Annual Review of Physiology</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/a5ab975ca850d9664753693939c2273480ec23b5">Annual Research Review: Growth connectomics – the organization and reorganization of brain networks during normal and abnormal development</a></td>
+        <td>2014-12-01</td>
+        <td>165</td>
+        <td>Journal of Child Psychology and Psychiatry, and Allied Disciplines</td>
+        <td>Journal of Child Psychology and Psychiatry and Allied Disciplines</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/95eee51c1cb1771e96cd182f47c90a7877461530">GRAND: Graph Neural Diffusion</a></td>
+        <td>2021-06-21</td>
+        <td>160</td>
+        <td>ArXiv</td>
+        <td>International Conference on Machine Learning</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/5b02e7459ba2f4d111f38cd627226a9109d9e054">Computer-Aided Detection and Diagnosis in Medical Imaging</a></td>
+        <td>2013-09-01</td>
+        <td>157</td>
+        <td>Computational and Mathematical Methods in Medicine</td>
+        <td>NA</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/36bf376a860883b4c5520c61a58185779ee0089d">Spectral-approximation-based intelligent modeling for distributed thermal processes</a></td>
+        <td>2005-08-29</td>
+        <td>153</td>
+        <td>IEEE Transactions on Control Systems Technology</td>
+        <td>IEEE Transactions on Control Systems Technology</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/0a3bf9ee0f618389e49927b437f74d4329587d45">Combining Differentiable PDE Solvers and Graph Neural Networks for Fluid Flow Prediction</a></td>
+        <td>2020-07-08</td>
+        <td>153</td>
+        <td>{'pages': '2402-2411'}</td>
+        <td>International Conference on Machine Learning</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/be8d39424a9010bfc0805385cc91edee383c2e24">Message Passing Neural PDE Solvers</a></td>
+        <td>2022-02-07</td>
+        <td>152</td>
+        <td>ArXiv</td>
+        <td>International Conference on Learning Representations</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/244054a4254a2147e43a3dad9c124b9b7eb4a04a">Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow</a></td>
+        <td>2022-09-07</td>
+        <td>152</td>
+        <td>ArXiv</td>
+        <td>International Conference on Learning Representations</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/b8db0d2a39ca356abe63a8eabbc5ed9c868f5907">Dissecting Neural ODEs</a></td>
+        <td>2020-02-19</td>
+        <td>151</td>
+        <td>ArXiv</td>
+        <td>Neural Information Processing Systems</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/1b50a4352c5b5e2b1bf98709f6cb97c9961be36c">Convergence of learning algorithms with constant learning rates</a></td>
+        <td>1991-09-01</td>
+        <td>149</td>
+        <td>IEEE transactions on neural networks</td>
+        <td>NA</td>
+      </tr>
+    
+  </tbody>
+  </table>
+  </p>
 
+  <p>
+  <h3 id="latest_articles">4. Latest articles on Neural ODEs</h3>
+  <table id="table2" class="display" style="width:100%">
+  <thead>
+    <tr>
+        <th>Title</th>
+        <th>PublicationDate</th>
+        <th>#Citations</th>
+        <th>Journal/Conference</th>
+        <th>publicationVenue</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/2566d035a3d7f12df59b7053a610fbd54161562b">Continuous Image Outpainting with Neural ODE</a></td>
+        <td>2024-03-02</td>
+        <td>0</td>
+        <td>SSRN Electronic Journal</td>
+        <td>Social Science Research Network</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/3779b87d10925ca2bf96c3b8b971330c8682e06e">Graph Convolutional Neural Networks for Automated Echocardiography View Recognition: A Holistic Approach</a></td>
+        <td>2024-02-29</td>
+        <td>0</td>
+        <td>{'pages': '44-54'}</td>
+        <td>NA</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/77308f9484b9c372ad028e04301c07f5e92c566b">Modelling and Distribution of Electricity Load Forecasting in Nigeria Power System (Olu-Ode Community)</a></td>
+        <td>2024-02-28</td>
+        <td>0</td>
+        <td>International Journal of Advanced Engineering and Nano Technology</td>
+        <td>International Journal of Advanced Engineering and Nano Technology</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/93a3bdec5c232a639d5cd0be5f7cb430caafdd2f">Changes in Structural Neural Networks in the Recovery Process of Motor Paralysis after Stroke</a></td>
+        <td>2024-02-21</td>
+        <td>0</td>
+        <td>Brain Sciences</td>
+        <td>Brain Science</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/d9b9e3efbe9528468442ca216a59223847d31fa4">Zhang neural networks: an introduction to predictive computations for discretized time-varying matrix problems</a></td>
+        <td>2024-02-19</td>
+        <td>0</td>
+        <td>Numerische Mathematik</td>
+        <td>Numerische Mathematik</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/5005529d4850a80e2234177e2a2625ed7ac60a68">Emulating the interstellar medium chemistry with neural operators</a></td>
+        <td>2024-02-19</td>
+        <td>0</td>
+        <td>Astronomy &amp; Astrophysics</td>
+        <td>NA</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/94e459909290d427dffaee3052a19ed32300b89a">Temporal Disentangled Contrastive Diffusion Model for Spatiotemporal Imputation</a></td>
+        <td>2024-02-18</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/3e64d1ecf181a7115d7f4a61834f1e7e7defc6bf">Uncertainty Quantification of Graph Convolution Neural Network Models of Evolving Processes</a></td>
+        <td>2024-02-17</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/5ee2008c1eab4545f1e001b2cf3c0578b7a1aafe">ContiFormer: Continuous-Time Transformer for Irregular Time Series Modeling</a></td>
+        <td>2024-02-16</td>
+        <td>1</td>
+        <td>ArXiv</td>
+        <td>Neural Information Processing Systems</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/dfb10dec07e4e45faec83014d0c6764bd5a0a588">Beyond Kalman Filters: Deep Learning-Based Filters for Improved Object Tracking</a></td>
+        <td>2024-02-15</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/a5805fc04ef9c6bd5534b36fbc2a6a1838c094d5">Multiscale graph neural networks with adaptive mesh refinement for accelerating mesh-based simulations</a></td>
+        <td>2024-02-14</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/6f0a629853c273cad9e01ebc481798dd1eadf329">A generative artificial intelligence framework based on a molecular diffusion model for the design of metal-organic frameworks for carbon capture.</a></td>
+        <td>2024-02-14</td>
+        <td>0</td>
+        <td>Communications chemistry</td>
+        <td>Communications Chemistry</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/70b807296c34454aaae114a75e19db3dfef795cf">Learning time-dependent PDE via graph neural networks and deep operator network for robust accuracy on irregular grids</a></td>
+        <td>2024-02-13</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/f5bcee3d194cd4b4a4191f0ddc269504f5d88f05">Score-Based Physics-Informed Neural Networks for High-Dimensional Fokker-Planck Equations</a></td>
+        <td>2024-02-12</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/93fce709c8b96fb8ae986983304cd9b98a07a4bb">Foundational Inference Models for Dynamical Systems</a></td>
+        <td>2024-02-12</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/7b53ca1a1b1fc801b1425d5c6c3e2c0482bc0cbf">Conditional Generative Models are Sufficient to Sample from Any Causal Effect Estimand</a></td>
+        <td>2024-02-12</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/77098aa6784407b36ac88f2728faf86d73c031f9">Nearest Neighbour Score Estimators for Diffusion Generative Models</a></td>
+        <td>2024-02-12</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/f9e2b4b3ab6edbcfd564d7f10741be236bc4ad7d">ANN model for magnetised Casson fluid flow under the influence of thermal radiation and temperature stratification: Comparative analysis</a></td>
+        <td>2024-02-11</td>
+        <td>0</td>
+        <td>ZAMM - Journal of Applied Mathematics and Mechanics / Zeitschrift für Angewandte Mathematik und Mechanik</td>
+        <td>NA</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/a757bfa279b5f257089be2bb56ee7ccb76fa0791">Artificial neural network of thermal Buoyancy and Fourier flux impact on suction/injection‐based Darcy medium surface filled with hybrid and ternary nanoparticles</a></td>
+        <td>2024-02-11</td>
+        <td>0</td>
+        <td>ZAMM - Journal of Applied Mathematics and Mechanics / Zeitschrift für Angewandte Mathematik und Mechanik</td>
+        <td>NA</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/8cb75dce0bc5d9c35cc1791f03f1a611cd963582">Inference of Gene Regulatory Networks Based on Multi-view Hierarchical Hypergraphs.</a></td>
+        <td>2024-02-11</td>
+        <td>0</td>
+        <td>Interdisciplinary sciences, computational life sciences</td>
+        <td>Interdisciplinary Sciences Computational Life Sciences</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/5764fd1a6f4d9c81095172c17c42452636ed905f">Integrated intelligence of inverse multiquadric radial base neuro‐evolution for radiative MHD Prandtl–Eyring fluid flow model with convective heating</a></td>
+        <td>2024-02-08</td>
+        <td>0</td>
+        <td>ZAMM - Journal of Applied Mathematics and Mechanics / Zeitschrift für Angewandte Mathematik und Mechanik</td>
+        <td>NA</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/8e78f6918ca102033f72d2fa69a957092645348b">PAC-Bayesian Adversarially Robust Generalization Bounds for Graph Neural Network</a></td>
+        <td>2024-02-06</td>
+        <td>1</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/4a457e605dbdf99e412bda846127c63febe64404">AirPhyNet: Harnessing Physics-Guided Neural Networks for Air Quality Prediction</a></td>
+        <td>2024-02-06</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/5a91d9d2be5be1c41455b39def036ce325902ce0">Path Signatures and Graph Neural Networks for Slow Earthquake Analysis: Better Together?</a></td>
+        <td>2024-02-05</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/3a6d0954edf0c8e7bb09a7f36706dbb318614e6f">HAMLET: Graph Transformer Neural Operator for Partial Differential Equations</a></td>
+        <td>2024-02-05</td>
+        <td>1</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/9b02efdbc0464d5b8f179d5b7369f47ce5c456b5">Unification of Symmetries Inside Neural Networks: Transformer, Feedforward and Neural ODE</a></td>
+        <td>2024-02-04</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/d3627d71cb18b583f742d6ea03bd3022a49eb6e5">Unveiling Delay Effects in Traffic Forecasting: A Perspective from Spatial-Temporal Delay Differential Equations</a></td>
+        <td>2024-02-02</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/91ee0fe388c892e6f5c89d88647591430d91284f">Deep Conditional Generative Learning: Model and Error Analysis</a></td>
+        <td>2024-02-02</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/4460b2949bff152998421cf9a88728098f203dae">Deep Continuous Networks</a></td>
+        <td>2024-02-02</td>
+        <td>11</td>
+        <td>{'pages': '10324-10335'}</td>
+        <td>International Conference on Machine Learning</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/d1f391c68e804665dbdf42c61b834373acca41fa">Solving spatiotemporal partial differential equations with Physics-informed Graph Neural Network</a></td>
+        <td>2024-02-01</td>
+        <td>0</td>
+        <td>Applied Soft Computing</td>
+        <td>Applied Soft Computing</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/b4d6e1de7f328a123a9fdbecde40b1d5603dcdf9">Learning systems of ordinary differential equations with Physics-Informed Neural Networks: the case study of enzyme kinetics</a></td>
+        <td>2024-02-01</td>
+        <td>0</td>
+        <td>Journal of Physics: Conference Series</td>
+        <td>NA</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/51ae1f5d620be75babfa5e738e7e92c77bc6c350">Vertical Symbolic Regression via Deep Policy Gradient</a></td>
+        <td>2024-02-01</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/402fc03a88869655f90c3f873d9b003d325f1366">On the feed-forward neural network for analyzing pantograph equations</a></td>
+        <td>2024-02-01</td>
+        <td>0</td>
+        <td>AIP Advances</td>
+        <td>AIP Advances</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/3cc479dac2afe5aef8b520f2fed11853bbee2b46">An effective wavelet neural network approach for solving first and second order ordinary differential equations</a></td>
+        <td>2024-02-01</td>
+        <td>0</td>
+        <td>Applied Soft Computing</td>
+        <td>Applied Soft Computing</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/3f737c1ab38aba6275f0f2968e544d1eb137cb6e">Neural Multivariate Grey Model and Its Applications</a></td>
+        <td>2024-01-31</td>
+        <td>0</td>
+        <td>Applied Sciences</td>
+        <td>Applied Sciences</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/d712d4e73a57ee9ca0f8e196a5073e7fac71f23f">Rademacher Complexity of Neural ODEs via Chen-Fliess Series</a></td>
+        <td>2024-01-30</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/ad79a8167991ad31dde261e33e76da7bd390577f">Continuously Evolving Graph Neural Controlled Differential Equations for Traffic Forecasting</a></td>
+        <td>2024-01-26</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/ed6e3428dea2bd0623d3f875deb7385f0b5f49d6">Manifold GCN: Diffusion-based Convolutional Neural Network for Manifold-valued Graphs</a></td>
+        <td>2024-01-25</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/e317bfa36cc46545fd859a8e37760778a686f940">Optimal Potential Shaping on SE(3) via Neural ODEs on Lie Groups</a></td>
+        <td>2024-01-25</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/5b65ce36a5988b687c9a123c0d0b009d9f770b53">Estimation of partially known Gaussian graphical models with score-based structural priors</a></td>
+        <td>2024-01-25</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/455cb4bd7f188d8a0b12c138d4192275987cded1">Equivariant Manifold Neural ODEs and Differential Invariants</a></td>
+        <td>2024-01-25</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/bba06ffc8ab4817e6190fd403ab49fbca16cad0b">NLBAC: A Neural Ordinary Differential Equations-based Framework for Stable and Safe Reinforcement Learning</a></td>
+        <td>2024-01-23</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/b6033b43d159a156dbeeae77c09b048234136686">Parallel Solution of Nonlinear Projection Equations in a Multitask Learning Framework.</a></td>
+        <td>2024-01-23</td>
+        <td>0</td>
+        <td>IEEE transactions on neural networks and learning systems</td>
+        <td>IEEE Transactions on Neural Networks and Learning Systems</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/2df8d9807bc09bcad6625b9dcb7f43db30e7dd8e">Learning to Approximate Adaptive Kernel Convolution on Graphs</a></td>
+        <td>2024-01-22</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/9a227e7014c89095b713bdd0263b13ec6d6256f4">On The Temporal Domain of Differential Equation Inspired Graph Neural Networks</a></td>
+        <td>2024-01-20</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/95e4cc9defc5301ccd7d51e26fef9551e6a77fd0">Remarks on the Mathematical Modeling of Gene and Neuronal Networks by Ordinary Differential Equations</a></td>
+        <td>2024-01-19</td>
+        <td>0</td>
+        <td>Axioms</td>
+        <td>Axioms</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/9d4a3985f01a77d7d3177712376c3d9fddb7f80a">Algebraic Dynamical Systems in Machine Learning</a></td>
+        <td>2024-01-18</td>
+        <td>0</td>
+        <td>Appl. Categorical Struct.</td>
+        <td>Applied Categorical Structures</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/670446f822e2e0708ac216ce20af5688a3909ca2">Interplay between depth and width for interpolation in neural ODEs</a></td>
+        <td>2024-01-18</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/1b94f60d94873cef94d66bfb3799f830ba88651a">Approximation of Solution Operators for High-dimensional PDEs</a></td>
+        <td>2024-01-18</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/f6f8602933d1fc2ddcf82ceba1971fc32303b67b">Port-Hamiltonian Neural ODE Networks on Lie Groups For Robot Dynamics Learning and Control</a></td>
+        <td>2024-01-17</td>
+        <td>0</td>
+        <td>ArXiv</td>
+        <td>arXiv.org</td>
+      </tr>
+    
+  </tbody>
+  </table>
+  </p>
 
+</body>
 
-### 1. Search query
+<script>
+  var trace1 = {
+  x: ['1938', '1962', '1964', '1965', '1967', '1969', '1970', '1972', '1973', '1975', '1977', '1978', '1980', '1983', '1987', '1989', '1990', '1991', '1992', '1993', '1994', '1996', '1997', '1998', '1999', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
+  y: [1, 1, 1, 3, 1, 2, 1, 1, 3, 3, 1, 1, 1, 1, 1, 1, 3, 2, 1, 2, 1, 4, 1, 2, 2, 2, 5, 2, 6, 4, 9, 6, 9, 7, 12, 10, 10, 19, 17, 23, 28, 39, 41, 106, 182, 178, 122, 45, 1],
+  name: 'Num of articles',
+  type: 'scatter'
+  };
 
+  var trace2 = {
+    x: ['1938', '1962', '1964', '1965', '1967', '1969', '1970', '1972', '1973', '1975', '1977', '1978', '1980', '1983', '1987', '1989', '1990', '1991', '1992', '1993', '1994', '1996', '1997', '1998', '1999', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
+    y: [8, 12, 5, 81, 26, 46, 16, 15, 218, 20, 19, 11, 7, 17, 439, 104, 251, 172, 104, 31, 46, 183, 1721, 190, 125, 41, 127, 51, 463, 233, 109, 172, 653, 133, 573, 379, 481, 520, 603, 1864, 864, 5824, 5954, 5924, 10146, 4725, 2810, 495, 11],
+    name: 'Num of citations',
+    yaxis: 'y2',
+    type: 'scatter'
+  };
 
-*(neural ordinary differential equation) | (neural ODE) | (graph neural differential equation) | (graph neural diffusion) | (graph neural ODEs)*
+  var data = [trace1, trace2];
 
-
-
-
-### 2. Neural ODEs articles and citations over time
-
-
-![Neural ODEs](assets/Neural_ODEs.png)
-
-
-
-
-### 3. Most cited articles on Neural ODEs
-
-
-
-
-| Title | PublicationDate | #Citations | Journal/Conference | publicationVenue |
-| --- | --- | --- | --- | --- |
-| [Neural Ordinary Differential Equations](https://www.semanticscholar.org/paper/449310e3538b08b43227d660227dfd2875c3c3c1) | 2018-06-19 | 3515 | {'pages': '6572-6583'} | {'id': 'd9720b90-d60b-48bc-9df8-87a30b9a60dd', 'name': 'Neural Information Processing Systems', 'type': 'conference', 'alternate\_names': ['Neural Inf Process Syst', 'NeurIPS', 'NIPS'], 'url': 'http://neurips.cc/'} |
-| [Score-Based Generative Modeling through Stochastic Differential Equations](https://www.semanticscholar.org/paper/633e2fbfc0b21e959a244100937c5853afca4853) | 2020-11-26 | 2596 | {'name': 'ArXiv', 'volume': 'abs/2011.13456'} | {'id': '939c6e1d-0d17-4d6e-8a82-66d960df0e40', 'name': 'International Conference on Learning Representations', 'type': 'conference', 'alternate\_names': ['Int Conf Learn Represent', 'ICLR'], 'url': 'https://iclr.cc/'} |
-| [Diffusion Convolutional Recurrent Neural Network: Data-Driven Traffic Forecasting](https://www.semanticscholar.org/paper/9ba0186ed40656329c421f55ada7313293e13f17) | 2017-07-06 | 2119 | {'name': 'arXiv: Learning', 'volume': ''} | {'id': '939c6e1d-0d17-4d6e-8a82-66d960df0e40', 'name': 'International Conference on Learning Representations', 'type': 'conference', 'alternate\_names': ['Int Conf Learn Represent', 'ICLR'], 'url': 'https://iclr.cc/'} |
-| [Artificial neural networks for solving ordinary and partial differential equations](https://www.semanticscholar.org/paper/5ebbe0b1a3d7a2431bbb25d6dfeec7ed6954d633) | 1997-05-19 | 1720 | {'name': 'IEEE transactions on neural networks', 'pages': '\n 987-1000\n ', 'volume': '9 5'} | None |
-| [Diffusion-Convolutional Neural Networks](https://www.semanticscholar.org/paper/18b47b83a373f33d6b902a3615f42c10f7600d72) | 2015-11-06 | 1082 | {'pages': '1993-2001'} | {'id': 'd9720b90-d60b-48bc-9df8-87a30b9a60dd', 'name': 'Neural Information Processing Systems', 'type': 'conference', 'alternate\_names': ['Neural Inf Process Syst', 'NeurIPS', 'NIPS'], 'url': 'http://neurips.cc/'} |
-| [Dynamic Edge-Conditioned Filters in Convolutional Neural Networks on Graphs](https://www.semanticscholar.org/paper/1a39bb2caa151d15efd6718f3a80d9f4bff95af2) | 2017-04-10 | 1071 | {'name': '2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)', 'pages': '29-38'} | {'id': '768b87bb-8a18-4d9c-a161-4d483c776bcf', 'name': 'Computer Vision and Pattern Recognition', 'type': 'conference', 'alternate\_names': ['CVPR', 'Comput Vis Pattern Recognit'], 'issn': '1063-6919', 'url': 'https://ieeexplore.ieee.org/xpl/conhome.jsp?punumber=1000147', 'alternate\_urls': ['https://en.wikipedia.org/wiki/Conference\_on\_Computer\_Vision\_and\_Pattern\_Recognition']} |
-| [FFJORD: Free-form Continuous Dynamics for Scalable Reversible Generative Models](https://www.semanticscholar.org/paper/8afa6dd9f9ac46462a1fb70a757c4ae1cd45bbf6) | 2018-09-27 | 688 | {'name': 'ArXiv', 'volume': 'abs/1810.01367'} | {'id': '939c6e1d-0d17-4d6e-8a82-66d960df0e40', 'name': 'International Conference on Learning Representations', 'type': 'conference', 'alternate\_names': ['Int Conf Learn Represent', 'ICLR'], 'url': 'https://iclr.cc/'} |
-| [Stable architectures for deep neural networks](https://www.semanticscholar.org/paper/37be889f4654312109dc9c53395fe117adb0f72b) | 2017-05-09 | 591 | {'name': 'Inverse Problems', 'volume': '34'} | {'id': '1901e811-ee72-4b20-8f7e-de08cd395a10', 'name': 'arXiv.org', 'alternate\_names': ['ArXiv'], 'issn': '2331-8422', 'url': 'https://arxiv.org'} |
-| [Brian: A Simulator for Spiking Neural Networks in Python](https://www.semanticscholar.org/paper/aac882f968b720785613673508e7783f0efd7182) | 2008-07-11 | 526 | {'name': 'Frontiers in Neuroinformatics', 'volume': '2'} | {'id': '8eabe4e5-3d91-4297-ab8f-475904598d30', 'name': 'BMC Neuroscience', 'type': 'journal', 'alternate\_names': ['BMC Neurosci'], 'issn': '1471-2202', 'url': 'http://www.biomedcentral.com/bmcneurosci/', 'alternate\_urls': ['https://bmcneurosci.biomedcentral.com/', 'http://www.pubmedcentral.nih.gov/tocrender.fcgi?journal=49', 'http://www.biomedcentral.com/bmcneurosci/archive/']} |
-| [DPM-Solver: A Fast ODE Solver for Diffusion Probabilistic Model Sampling in Around 10 Steps](https://www.semanticscholar.org/paper/4530c25da949bb2185c50663158ef19d52e3c6b5) | 2022-06-02 | 495 | {'name': 'ArXiv', 'volume': 'abs/2206.00927'} | {'id': 'd9720b90-d60b-48bc-9df8-87a30b9a60dd', 'name': 'Neural Information Processing Systems', 'type': 'conference', 'alternate\_names': ['Neural Inf Process Syst', 'NeurIPS', 'NIPS'], 'url': 'http://neurips.cc/'} |
-
-
-
-
-
-
-### 4. Latest articles on Neural ODEs
-
-
-
-
-| Title | PublicationDate | #Citations | Journal/Conference | publicationVenue |
-| --- | --- | --- | --- | --- |
-| [Continuous Image Outpainting with Neural ODE](https://www.semanticscholar.org/paper/2566d035a3d7f12df59b7053a610fbd54161562b) | 2024-03-02 | 0 | {'name': 'SSRN Electronic Journal'} | {'id': '75d7a8c1-d871-42db-a8e4-7cf5146fdb62', 'name': 'Social Science Research Network', 'type': 'journal', 'alternate\_names': ['SSRN, Social Science Research Network (SSRN) home page', 'SSRN Electronic Journal', 'Soc Sci Res Netw', 'SSRN', 'SSRN Home Page', 'SSRN Electron J', 'Social Science Electronic Publishing presents Social Science Research Network'], 'issn': '1556-5068', 'url': 'http://www.ssrn.com/', 'alternate\_urls': ['www.ssrn.com/', 'https://fatcat.wiki/container/tol7woxlqjeg5bmzadeg6qrg3e', 'https://www.wikidata.org/wiki/Q53949192', 'www.ssrn.com/en', 'http://www.ssrn.com/en/', 'http://umlib.nl/ssrn', 'umlib.nl/ssrn']} |
-| [Graph Convolutional Neural Networks for Automated Echocardiography View Recognition: A Holistic Approach](https://www.semanticscholar.org/paper/3779b87d10925ca2bf96c3b8b971330c8682e06e) | 2024-02-29 | 0 | {'pages': '44-54'} | None |
-| [Modelling and Distribution of Electricity Load Forecasting in Nigeria Power System (Olu-Ode Community)](https://www.semanticscholar.org/paper/77308f9484b9c372ad028e04301c07f5e92c566b) | 2024-02-28 | 0 | {'name': 'International Journal of Advanced Engineering and Nano Technology'} | {'id': 'b2a6f6aa-b866-4069-8e96-b765cd7776f9', 'name': 'International Journal of Advanced Engineering and Nano Technology', 'type': 'journal', 'alternate\_names': ['Int J Adv Eng Nano Technol'], 'issn': '2347-6389', 'url': 'https://www.ijaent.org/'} |
-| [Changes in Structural Neural Networks in the Recovery Process of Motor Paralysis after Stroke](https://www.semanticscholar.org/paper/93a3bdec5c232a639d5cd0be5f7cb430caafdd2f) | 2024-02-21 | 0 | {'name': 'Brain Sciences'} | {'id': '39058e09-c13a-4545-a8a3-a75581460bc2', 'name': 'Brain Science', 'type': 'journal', 'alternate\_names': ['Brain Sciences', 'Brain Sci'], 'issn': '2570-0197', 'alternate\_issns': ['2076-3425'], 'url': 'http://www.e-helvetica.nb.admin.ch/directAccess?callnumber=bel-217894', 'alternate\_urls': ['https://www.mdpi.com/journal/brainsci', 'https://epub.uni-regensburg.de/37319/', 'http://nbn-resolving.de/urn/resolver.pl?urn=urn:nbn:ch:bel-217894']} |
-| [Zhang neural networks: an introduction to predictive computations for discretized time-varying matrix problems](https://www.semanticscholar.org/paper/d9b9e3efbe9528468442ca216a59223847d31fa4) | 2024-02-19 | 0 | {'name': 'Numerische Mathematik'} | {'id': '23ed2049-ad4e-4e12-8e48-a4e55bc4e377', 'name': 'Numerische Mathematik', 'type': 'journal', 'alternate\_names': ['Numer Math'], 'issn': '0029-599X', 'url': 'http://www.springer.com/mathematics/numerical+and+computational+mathematics/journal/211', 'alternate\_urls': ['http://www.digizeitschriften.de/main/dms/toc/?PPN=PPN362160546', 'https://link.springer.com/journal/211']} |
-| [Emulating the interstellar medium chemistry with neural operators](https://www.semanticscholar.org/paper/5005529d4850a80e2234177e2a2625ed7ac60a68) | 2024-02-19 | 0 | {'name': 'Astronomy & Astrophysics'} | None |
-| [Temporal Disentangled Contrastive Diffusion Model for Spatiotemporal Imputation](https://www.semanticscholar.org/paper/94e459909290d427dffaee3052a19ed32300b89a) | 2024-02-18 | 0 | {'name': 'ArXiv', 'volume': 'abs/2402.11558'} | {'id': '1901e811-ee72-4b20-8f7e-de08cd395a10', 'name': 'arXiv.org', 'alternate\_names': ['ArXiv'], 'issn': '2331-8422', 'url': 'https://arxiv.org'} |
-| [Uncertainty Quantification of Graph Convolution Neural Network Models of Evolving Processes](https://www.semanticscholar.org/paper/3e64d1ecf181a7115d7f4a61834f1e7e7defc6bf) | 2024-02-17 | 0 | {'name': 'ArXiv', 'volume': 'abs/2402.11179'} | {'id': '1901e811-ee72-4b20-8f7e-de08cd395a10', 'name': 'arXiv.org', 'alternate\_names': ['ArXiv'], 'issn': '2331-8422', 'url': 'https://arxiv.org'} |
-| [ContiFormer: Continuous-Time Transformer for Irregular Time Series Modeling](https://www.semanticscholar.org/paper/5ee2008c1eab4545f1e001b2cf3c0578b7a1aafe) | 2024-02-16 | 1 | {'name': 'ArXiv', 'volume': 'abs/2402.10635'} | {'id': 'd9720b90-d60b-48bc-9df8-87a30b9a60dd', 'name': 'Neural Information Processing Systems', 'type': 'conference', 'alternate\_names': ['Neural Inf Process Syst', 'NeurIPS', 'NIPS'], 'url': 'http://neurips.cc/'} |
-| [Beyond Kalman Filters: Deep Learning-Based Filters for Improved Object Tracking](https://www.semanticscholar.org/paper/dfb10dec07e4e45faec83014d0c6764bd5a0a588) | 2024-02-15 | 0 | {'name': 'ArXiv', 'volume': 'abs/2402.09865'} | {'id': '1901e811-ee72-4b20-8f7e-de08cd395a10', 'name': 'arXiv.org', 'alternate\_names': ['ArXiv'], 'issn': '2331-8422', 'url': 'https://arxiv.org'} |
-
-
-
-
-
-
+  var layout = {
+    yaxis: {title: 'Num of articles'},
+    yaxis2: {
+      title: 'Num of citations',
+      overlaying: 'y',
+      side: 'right'
+      }
+  };
+  Plotly.newPlot('myDiv', data, layout);
+</script>
+</html>

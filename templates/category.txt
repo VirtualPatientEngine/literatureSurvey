@@ -5,19 +5,30 @@
 </head>
 
 <body>
+
   <p>
-  <h3>1. Search query</h3>
+  <h3>Table of Contents</h3>
+    <li><a href="#search_query">1. Search Query</a></li>
+    <li><a href="#plot">2. {{title}} articles and citations over time</a></li>
+    <li><a href="#most_cited_articles">3. Most cited articles on {{title}}</a></li>
+    <li><a href="#latest_articles">4. Latest articles on {{title}}</a></li>
+  <p>
+
+  <p>
+  <h3 id="search_query">1. Search query</h3>
   <i>{{query}}</i>
   </p>
   
   <p>
-  <h3>2. {{title}} articles and citations over time</h3>
-  <img src="assets/{{category_name}}.png" alt="{{title}}">
+  <h3 id="plot">2. {{title}} articles and citations over time</h3>
+    <div id='myDiv'>
+      <!-- Plotly chart will be drawn inside this DIV -->
+    </div>
   </p>
 
   <p>
-  <h3>3. Most cited articles on {{title}}</h3>
-  <table id="example" class="display" style="width:100%">
+  <h3 id="most_cited_articles">3. Most cited articles on {{title}}</h3>
+  <table id="table1" class="display" style="width:100%">
   <thead>
     <tr>
         <th>Title</th>
@@ -30,7 +41,7 @@
   <tbody>
     {% for article in most_cited_articles %}
       <tr>
-        <td>[{{ article.title}}]({{article.url}})</a></td>
+        <td><a href="{{article.url}}">{{article.title}}</a></td>
         <td>{{ article.publicationDate}}</td>
         <td>{{ article.citationCount}}</td>
         <td>{{ article.journal}}</td>
@@ -42,25 +53,59 @@
   </p>
 
   <p>
-  <h3>4. Latest articles on {{title}}</h3>
-  <table>
-  <tr>
-      <th>Title</th>
-      <th>PublicationDate</th>
-      <th>#Citations</th>
-      <th>Journal/Conference</th>
-      <th>publicationVenue</th>
-  </tr>
-  {% for article in most_recent_articles %}
+  <h3 id="latest_articles">4. Latest articles on {{title}}</h3>
+  <table id="table2" class="display" style="width:100%">
+  <thead>
     <tr>
-      <td>[{{ article.title}}]({{article.url}})</a></td>
-      <td>{{ article.publicationDate}}</td>
-      <td>{{ article.citationCount}}</td>
-      <td>{{ article.journal}}</td>
-      <td>{{ article.publicationVenue}}</td>
+        <th>Title</th>
+        <th>PublicationDate</th>
+        <th>#Citations</th>
+        <th>Journal/Conference</th>
+        <th>publicationVenue</th>
     </tr>
-  {% endfor %}
+  </thead>
+  <tbody>
+    {% for article in most_recent_articles %}
+      <tr>
+        <td><a href="{{article.url}}">{{article.title}}</a></td>
+        <td>{{ article.publicationDate}}</td>
+        <td>{{ article.citationCount}}</td>
+        <td>{{ article.journal}}</td>
+        <td>{{ article.publicationVenue}}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
   </table>
   </p>
+
 </body>
+
+<script>
+  var trace1 = {
+  x: {{x_year}},
+  y: {{y_num_articles}},
+  name: 'Num of articles',
+  type: 'scatter'
+  };
+
+  var trace2 = {
+    x: {{x_year}},
+    y: {{y_num_citations}},
+    name: 'Num of citations',
+    yaxis: 'y2',
+    type: 'scatter'
+  };
+
+  var data = [trace1, trace2];
+
+  var layout = {
+    yaxis: {title: 'Num of articles'},
+    yaxis2: {
+      title: 'Num of citations',
+      overlaying: 'y',
+      side: 'right'
+      }
+  };
+  Plotly.newPlot('myDiv', data, layout);
+</script>
 </html>

@@ -15,6 +15,8 @@
   <!-- Add data table libraries -->
   <script src="https://cdn.datatables.net/2.0.1/js/dataTables.js"></script>
   <link rel="stylesheet" href="https://cdn.datatables.net/2.0.1/css/dataTables.dataTables.css">
+  <!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-2.29.1.min.js'></script>
 
 
   <!-- {{ super() }} -->
@@ -23,7 +25,15 @@
 
 {% block scripts %}
 {{ super() }}
-<script>new DataTable('#example');</script>
+<script>
+  new DataTable('#table1', {
+    order: [[2, 'desc']]
+  });
+  new DataTable('#table2', {
+    order: [[1, 'desc']]
+  });
+</script>
+
 {% endblock %}
 
 </html>
