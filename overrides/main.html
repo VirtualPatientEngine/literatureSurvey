@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+{% extends "base.html" %}
+
+{% block htmltitle %}
+<title>Custom title goes here</title>
+{% endblock %}
+
+{% block libs %}
+  <!-- Add scripts that need to run before here -->
+  <!-- Add jquery script -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <!-- Add data table libraries -->
+  <script src="https://cdn.datatables.net/2.0.1/js/dataTables.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.0.1/css/dataTables.dataTables.css">
+
+
+  <!-- {{ super() }} -->
+  <!-- Add scripts that need to run afterwards here -->
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script>new DataTable('#example');</script>
+{% endblock %}
+
+</html>

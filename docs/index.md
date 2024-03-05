@@ -7,7 +7,7 @@
 ### Query: stat.ML:learned+differentiable+simulator
 
 
-
+![Neural ODEs](assets/Neural_ODEs.png)
 
 | Title | Authors | PublicationDate | #Citations | Journal/Conference |
 | --- | --- | --- | --- | --- |

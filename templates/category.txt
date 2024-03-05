@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <p>
+  <h3>1. Search query</h3>
+  <i>{{query}}</i>
+  </p>
+  
+  <p>
+  <h3>2. {{title}} articles and citations over time</h3>
+  <img src="assets/{{category_name}}.png" alt="{{title}}">
+  </p>
+
+  <p>
+  <h3>3. Most cited articles on {{title}}</h3>
+  <table id="example" class="display" style="width:100%">
+  <thead>
+    <tr>
+        <th>Title</th>
+        <th>PublicationDate</th>
+        <th>#Citations</th>
+        <th>Journal/Conference</th>
+        <th>publicationVenue</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for article in most_cited_articles %}
+      <tr>
+        <td>[{{ article.title}}]({{article.url}})</a></td>
+        <td>{{ article.publicationDate}}</td>
+        <td>{{ article.citationCount}}</td>
+        <td>{{ article.journal}}</td>
+        <td>{{ article.publicationVenue}}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+  </table>
+  </p>
+
+  <p>
+  <h3>4. Latest articles on {{title}}</h3>
+  <table>
+  <tr>
+      <th>Title</th>
+      <th>PublicationDate</th>
+      <th>#Citations</th>
+      <th>Journal/Conference</th>
+      <th>publicationVenue</th>
+  </tr>
+  {% for article in most_recent_articles %}
+    <tr>
+      <td>[{{ article.title}}]({{article.url}})</a></td>
+      <td>{{ article.publicationDate}}</td>
+      <td>{{ article.citationCount}}</td>
+      <td>{{ article.journal}}</td>
+      <td>{{ article.publicationVenue}}</td>
+    </tr>
+  {% endfor %}
+  </table>
+  </p>
+</body>
+</html>
