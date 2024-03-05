@@ -221,6 +221,7 @@ hide:
       </tr>
     
       <tr>
+<<<<<<< HEAD
         <td><a href="https://www.semanticscholar.org/paper/399c10fce4f698b405b6538a54a0a257662df6ec">Physics-infused Machine Learning for Crowd Simulation</a></td>
         <td>2022-08-14</td>
         <td>16</td>
@@ -229,6 +230,8 @@ hide:
       </tr>
     
       <tr>
+=======
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
         <td><a href="https://www.semanticscholar.org/paper/4624d1b02035ec479c0ce56ff7a3d1d264a6ebd7">Synchronization control of oscillator networks using symbolic regression</a></td>
         <td>2016-12-15</td>
         <td>15</td>
@@ -237,6 +240,17 @@ hide:
       </tr>
     
       <tr>
+<<<<<<< HEAD
+=======
+        <td><a href="https://www.semanticscholar.org/paper/399c10fce4f698b405b6538a54a0a257662df6ec">Physics-infused Machine Learning for Crowd Simulation</a></td>
+        <td>2022-08-14</td>
+        <td>15</td>
+        <td>Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</td>
+        <td>Knowledge Discovery and Data Mining</td>
+      </tr>
+    
+      <tr>
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
         <td><a href="https://www.semanticscholar.org/paper/9bf88fc233b49d4226c0b71f449861404f2f186c">Transfer entropy as a variable selection methodology of cryptocurrencies in the framework of a high dimensional predictive model</a></td>
         <td>2020-01-02</td>
         <td>13</td>
@@ -444,6 +458,7 @@ hide:
         <td>IEEE Conference on Computational Intelligence for Financial Engineering & Economics</td>
       </tr>
     
+<<<<<<< HEAD
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/2dae4707caad5e7fce39082481bc71ebf2d69846">Time series perturbation by genetic programming</a></td>
         <td>2001-05-27</td>
@@ -844,6 +859,8 @@ hide:
         <td>Applied Sciences</td>
       </tr>
     
+=======
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
   </tbody>
   </table>
   </p>
@@ -1073,7 +1090,11 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/399c10fce4f698b405b6538a54a0a257662df6ec">Physics-infused Machine Learning for Crowd Simulation</a></td>
         <td>2022-08-14</td>
+<<<<<<< HEAD
         <td>16</td>
+=======
+        <td>15</td>
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
         <td>Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</td>
         <td>Knowledge Discovery and Data Mining</td>
       </tr>
@@ -1262,6 +1283,7 @@ hide:
         <td>Parallel Problem Solving from Nature</td>
       </tr>
     
+<<<<<<< HEAD
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/818b7664dd9353fa9aed429a1f083a5e054f01f7">Fuzzy rule-based modeling for interval-valued time series prediction</a></td>
         <td>2018-07-01</td>
@@ -1662,6 +1684,8 @@ hide:
         <td>Australasian Computer Science Conference</td>
       </tr>
     
+=======
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
   </tbody>
   </table>
   </p>

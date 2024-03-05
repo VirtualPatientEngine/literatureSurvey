@@ -13,7 +13,11 @@ hide:
   <p>
   <h3>Table of Contents</h3>
     <li><a href="#search_query">1. Search Query</a></li>
+<<<<<<< HEAD
     <li><a href="#plot1">2. Latent Space Simulator articles and citations over time</a></li>
+=======
+    <li><a href="#plot">2. Latent Space Simulator articles and citations over time</a></li>
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
     <li><a href="#most_cited_articles">3. Most cited articles on Latent Space Simulator</a></li>
     <li><a href="#latest_articles">4. Latest articles on Latent Space Simulator</a></li>
   <p>
@@ -24,8 +28,13 @@ hide:
   </p>
   
   <p>
+<<<<<<< HEAD
   <h3 id="plot1">2. Latent Space Simulator articles and citations over time</h3>
     <div id='myDiv1'>
+=======
+  <h3 id="plot">2. Latent Space Simulator articles and citations over time</h3>
+    <div id='myDiv'>
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
       <!-- Plotly chart will be drawn inside this DIV -->
     </div>
   </p>
@@ -159,7 +168,11 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/82e19123c7fdf1c047531eec5bce6f925dcc5ad5">Variants of Dynamic Mode Decomposition: Boundary Condition, Koopman, and Fourier Analyses</a></td>
         <td>2012-04-27</td>
+<<<<<<< HEAD
         <td>643</td>
+=======
+        <td>642</td>
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
         <td>Journal of Nonlinear Science</td>
         <td>Journal of nonlinear science</td>
       </tr>
@@ -444,6 +457,7 @@ hide:
         <td>Neurology</td>
       </tr>
     
+<<<<<<< HEAD
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/bc9ab7c7e9c304c7835f6ffd9d6eea25d3caa422">Electrical stimulation of mammalian retinal ganglion cells with multielectrode arrays.</a></td>
         <td>2006-06-01</td>
@@ -844,6 +858,8 @@ hide:
         <td>Neural Information Processing Systems</td>
       </tr>
     
+=======
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
   </tbody>
   </table>
   </p>
@@ -1262,6 +1278,7 @@ hide:
         <td>Wireless personal communications</td>
       </tr>
     
+<<<<<<< HEAD
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/6f8fd860a42d81ca78f50adfb662824e8b98e323">Multicasting Optical Reconfigurable Switch</a></td>
         <td>2024-01-25</td>
@@ -1662,6 +1679,8 @@ hide:
         <td>arXiv.org</td>
       </tr>
     
+=======
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
   </tbody>
   </table>
   </p>
@@ -1678,7 +1697,11 @@ hide:
 
   var trace2 = {
     x: ['1965', '1974', '1983', '1985', '1986', '1987', '1988', '1990', '1991', '1992', '1993', '1994', '1995', '1996', '1997', '1998', '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+<<<<<<< HEAD
     y: [45, 46, 503, 50, 73, 157, 834, 233, 877, 827, 3795, 3885, 4279, 4530, 3191, 3497, 6804, 4171, 4185, 2931, 3753, 4471, 3084, 4612, 2358, 3436, 4199, 3084, 2938, 3719, 1867, 3674, 3268, 3971, 7326, 9415, 6045, 6346, 2211, 376, 415],
+=======
+    y: [45, 46, 503, 50, 73, 157, 834, 233, 877, 827, 3795, 3885, 4279, 4530, 3191, 3497, 6804, 4171, 4185, 2931, 3753, 4471, 3084, 4612, 2358, 3436, 4199, 3084, 2938, 3718, 1867, 3674, 3268, 3970, 7326, 9415, 6045, 6346, 2211, 375, 415],
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
     name: 'Num of citations',
     yaxis: 'y2',
     type: 'scatter'

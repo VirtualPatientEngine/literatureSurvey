@@ -13,10 +13,16 @@ hide:
   <p>
   <h3>Table of Contents</h3>
     <li><a href="#search_query">1. Search Query</a></li>
+<<<<<<< HEAD
     <li><a href="#plot1">2. Number of articles and citations over time</a></li>
     <li><a href="#most_cited_articles">3. Most cited articles</a></li>
     <li><a href="#latest_articles">4. Latest articles</a></li>
     <li><a href="#plot2">5. Comparison metrics</a></li>
+=======
+    <li><a href="#plot">2. All articles and citations over time</a></li>
+    <li><a href="#most_cited_articles">3. Most cited articles on All</a></li>
+    <li><a href="#latest_articles">4. Latest articles on All</a></li>
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
   <p>
 
   <p>
@@ -25,14 +31,23 @@ hide:
   </p>
   
   <p>
+<<<<<<< HEAD
   <h3 id="plot1">2. Number of articles and citations over time</h3>
     <div id='myDiv1'>
+=======
+  <h3 id="plot">2. All articles and citations over time</h3>
+    <div id='myDiv'>
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
       <!-- Plotly chart will be drawn inside this DIV -->
     </div>
   </p>
 
   <p>
+<<<<<<< HEAD
   <h3 id="most_cited_articles">3. Most cited articles</h3>
+=======
+  <h3 id="most_cited_articles">3. Most cited articles on All</h3>
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
   <table id="table1" class="display" style="width:100%">
   <thead>
     <tr>
@@ -88,7 +103,11 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/4954fa180728932959997a4768411ff9136aac81">TensorFlow: A system for large-scale machine learning</a></td>
         <td>2016-05-27</td>
+<<<<<<< HEAD
         <td>16716</td>
+=======
+        <td>16711</td>
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
         <td>{'pages': '265-283'}</td>
         <td>USENIX Symposium on Operating Systems Design and Implementation</td>
       </tr>
@@ -128,7 +147,11 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f1962baa356e10c4fd936b9e9f910869a5864a75">Authoritative sources in a hyperlinked environment</a></td>
         <td>1999-09-01</td>
+<<<<<<< HEAD
         <td>10816</td>
+=======
+        <td>10818</td>
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
         <td>{'pages': '668-677'}</td>
         <td>ACM-SIAM Symposium on Discrete Algorithms</td>
       </tr>
@@ -136,7 +159,11 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/59cdf849049627e4c30f3bd866e3a7e03e893251">Complex brain networks: graph theoretical analysis of structural and functional systems</a></td>
         <td>2009-03-01</td>
+<<<<<<< HEAD
         <td>9835</td>
+=======
+        <td>9834</td>
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
         <td>Nature Reviews Neuroscience</td>
         <td>Nature Reviews Neuroscience</td>
       </tr>
@@ -168,7 +195,11 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/c41eb895616e453dcba1a70c9b942c5063cc656c">Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering</a></td>
         <td>2016-06-30</td>
+<<<<<<< HEAD
         <td>6410</td>
+=======
+        <td>6409</td>
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
         <td>{'pages': '3837-3845'}</td>
         <td>Neural Information Processing Systems</td>
       </tr>
@@ -176,7 +207,11 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/81a4fd3004df0eb05d6c1cef96ad33d5407820df">A Comprehensive Survey on Graph Neural Networks</a></td>
         <td>None</td>
+<<<<<<< HEAD
         <td>5936</td>
+=======
+        <td>5934</td>
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
         <td>IEEE Transactions on Neural Networks and Learning Systems</td>
         <td>IEEE Transactions on Neural Networks and Learning Systems</td>
       </tr>
@@ -208,7 +243,11 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d1b4a4689a0288ccf36158ba5dfef724fd5a4ea5">Factor graphs and the sum-product algorithm</a></td>
         <td>2001-02-01</td>
+<<<<<<< HEAD
         <td>5263</td>
+=======
+        <td>5262</td>
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
         <td>IEEE Trans. Inf. Theory</td>
         <td>IEEE Transactions on Information Theory</td>
       </tr>
@@ -224,7 +263,11 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/0834e74304b547c9354b6d7da6fa78ef47a48fa8">LINE: Large-scale Information Network Embedding</a></td>
         <td>2015-03-11</td>
+<<<<<<< HEAD
         <td>4740</td>
+=======
+        <td>4739</td>
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
         <td>Proceedings of the 24th International Conference on World Wide Web</td>
         <td>The Web Conference</td>
       </tr>
@@ -240,7 +283,11 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/06aad24ac4ad4312ca190d0c16fe0df7f474844c">An automated method for finding molecular complexes in large protein interaction networks</a></td>
         <td>2003-01-13</td>
+<<<<<<< HEAD
         <td>4659</td>
+=======
+        <td>4657</td>
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
         <td>BMC Bioinformatics</td>
         <td>BMC Bioinformatics</td>
       </tr>
@@ -296,7 +343,11 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/2d867297dfe0d3ce2ed5b1d0f2dff88cac46ee94">Pregel: a system for large-scale graph processing</a></td>
         <td>2010-06-06</td>
+<<<<<<< HEAD
         <td>3878</td>
+=======
+        <td>3877</td>
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
         <td>Proceedings of the 2010 ACM SIGMOD International Conference on Management of data</td>
         <td>NA</td>
       </tr>
@@ -352,7 +403,11 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/4665f10ba0006df8d4fec85e368bcc503d57ce44">The architecture of complex weighted networks.</a></td>
         <td>2003-11-18</td>
+<<<<<<< HEAD
         <td>3522</td>
+=======
+        <td>3521</td>
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
         <td>Proceedings of the National Academy of Sciences of the United States of America</td>
         <td>Proceedings of the National Academy of Sciences of the United States of America</td>
       </tr>
@@ -376,7 +431,11 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/13bfdf45f347869eaeab73b80902a0c41f5913c2">Conn: A Functional Connectivity Toolbox for Correlated and Anticorrelated Brain Networks</a></td>
         <td>2012-08-06</td>
+<<<<<<< HEAD
         <td>3483</td>
+=======
+        <td>3482</td>
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
         <td>Brain connectivity</td>
         <td>Brain Connectivity</td>
       </tr>
@@ -416,7 +475,11 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a55df99552d6093b6150fe2ca79d017644b73935">BrainNet Viewer: A Network Visualization Tool for Human Brain Connectomics</a></td>
         <td>2013-07-04</td>
+<<<<<<< HEAD
         <td>3058</td>
+=======
+        <td>3057</td>
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
         <td>PLoS ONE</td>
         <td>PLoS ONE</td>
       </tr>
@@ -432,7 +495,11 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/779bc3570167c8251afb0a88ca355b596583caea">The human disease network</a></td>
         <td>2007-05-22</td>
+<<<<<<< HEAD
         <td>3029</td>
+=======
+        <td>3030</td>
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
         <td>Proceedings of the National Academy of Sciences</td>
         <td>Proceedings of the National Academy of Sciences of the United States of America</td>
       </tr>
@@ -445,6 +512,7 @@ hide:
         <td>AAAI Conference on Artificial Intelligence</td>
       </tr>
     
+<<<<<<< HEAD
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/5d1bfeed240709725c78bc72ea40e55410b373dc">Convolutional Networks on Graphs for Learning Molecular Fingerprints</a></td>
         <td>2015-09-30</td>
@@ -845,12 +913,18 @@ hide:
         <td>Acta Crystallographica Section B Structural Science</td>
       </tr>
     
+=======
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
   </tbody>
   </table>
   </p>
 
   <p>
+<<<<<<< HEAD
   <h3 id="latest_articles">4. Latest articles</h3>
+=======
+  <h3 id="latest_articles">4. Latest articles on All</h3>
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
   <table id="table2" class="display" style="width:100%">
   <thead>
     <tr>
@@ -1002,7 +1076,11 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a28afe1ae5d4ce72843f3e0e6a55eaf0395a0c43">Multi-hop graph pooling adversarial network for cross-domain remaining useful life prediction: A distributed federated learning perspective</a></td>
         <td>2024-04-01</td>
+<<<<<<< HEAD
         <td>2</td>
+=======
+        <td>1</td>
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
         <td>Reliability Engineering &amp; System Safety</td>
         <td>NA</td>
       </tr>
@@ -1263,6 +1341,7 @@ hide:
         <td>IEEE Transactions on Knowledge and Data Engineering</td>
       </tr>
     
+<<<<<<< HEAD
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/e1ce2d651f56bde0ed564c0ae252a82ae3e337b0">Improving chemical reaction yield prediction using pre-trained graph neural networks</a></td>
         <td>2024-03-01</td>
@@ -1663,6 +1742,8 @@ hide:
         <td>IEEE Transactions on Knowledge and Data Engineering</td>
       </tr>
     
+=======
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
   </tbody>
   </table>
   </p>
@@ -1687,7 +1768,11 @@ hide:
 
   var trace2 = {
     x: ['1931', '1968', '1974', '1975', '1978', '1981', '1982', '1983', '1984', '1986', '1987', '1988', '1989', '1990', '1991', '1992', '1993', '1994', '1995', '1996', '1997', '1998', '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+<<<<<<< HEAD
     y: [1558, 817, 379, 575, 408, 1201, 429, 1876, 4191, 4525, 4093, 1991, 1597, 2282, 2079, 3077, 6310, 3071, 3629, 5033, 6144, 42218, 21172, 20692, 54574, 21386, 54732, 38551, 42743, 39759, 39593, 34799, 54254, 36982, 23833, 23044, 28928, 27081, 38601, 72918, 68853, 94807, 44137, 33878, 4673, 2120, 1041],
+=======
+    y: [1558, 817, 379, 575, 408, 1201, 429, 1876, 4191, 4525, 4094, 1991, 1597, 2282, 2079, 3077, 6309, 3071, 3629, 5034, 6144, 42213, 21171, 20693, 54572, 21379, 54731, 38548, 42746, 39755, 39592, 34795, 54245, 36975, 23833, 23043, 28927, 27080, 38599, 72906, 68843, 94796, 44133, 33876, 4674, 2123, 1041],
+>>>>>>> 478cedf63dd1d481f3f35893ec0aad5c15a45ba6
     name: 'Num of citations',
     yaxis: 'y2',
     type: 'scatter'
