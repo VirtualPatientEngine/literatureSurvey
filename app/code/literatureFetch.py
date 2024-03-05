@@ -188,7 +188,7 @@ def main():
     ################################
         
     # Read YAML file
-    file_path = '../../base.yml'
+    file_path = '../../mkdocs.yml'
     data = utils.read_yaml(file_path)
     print (data['nav'])
 
