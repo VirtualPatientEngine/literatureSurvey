@@ -96,7 +96,8 @@ def create_template(template_file, category_name) -> str:
         query=DIC[category_name]['query'],
         hide_nav="---\nhide:\n\t- navigation---\n",
     )
-    return markdownify.markdownify(content)
+    # return markdownify.markdownify(content)
+    return content
 
 def main():
     """
