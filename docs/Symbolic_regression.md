@@ -47,7 +47,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/9d59f87b881017e6ef0198636a77ad04b7ebea7a">Symbolic Dynamic Programming for First-Order MDPs</a></td>
         <td>2001-08-04</td>
-        <td>277</td>
+        <td>278</td>
         <td>{'pages': '690-700'}</td>
         <td>International Joint Conference on Artificial Intelligence</td>
       </tr>
@@ -1553,7 +1553,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/9d59f87b881017e6ef0198636a77ad04b7ebea7a">Symbolic Dynamic Programming for First-Order MDPs</a></td>
         <td>2001-08-04</td>
-        <td>277</td>
+        <td>278</td>
         <td>{'pages': '690-700'}</td>
         <td>International Joint Conference on Artificial Intelligence</td>
       </tr>
@@ -1678,7 +1678,7 @@ hide:
 
   var trace2 = {
     x: ['1983', '1996', '1999', '2001', '2002', '2005', '2006', '2008', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
-    y: [7, 10, 6, 282, 111, 14, 11, 0, 59, 61, 63, 150, 25, 169, 159, 42, 10, 17, 68, 210, 13, 0],
+    y: [7, 10, 6, 283, 111, 14, 11, 0, 59, 61, 63, 150, 25, 169, 159, 42, 10, 17, 68, 210, 13, 0],
     name: 'Num of citations',
     yaxis: 'y2',
     type: 'scatter'

@@ -47,7 +47,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/449310e3538b08b43227d660227dfd2875c3c3c1">Neural Ordinary Differential Equations</a></td>
         <td>2018-06-19</td>
-        <td>3517</td>
+        <td>3518</td>
         <td>{'pages': '6572-6583'}</td>
         <td>Neural Information Processing Systems</td>
       </tr>
@@ -391,7 +391,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/5b02e7459ba2f4d111f38cd627226a9109d9e054">Computer-Aided Detection and Diagnosis in Medical Imaging</a></td>
         <td>2013-09-01</td>
-        <td>157</td>
+        <td>156</td>
         <td>Computational and Mathematical Methods in Medicine</td>
         <td>NA</td>
       </tr>
@@ -783,7 +783,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/1b9a07702cd346673b4c5e798d2256157fab1d3f">Liquid Time-constant Networks</a></td>
         <td>2020-06-08</td>
-        <td>94</td>
+        <td>95</td>
         <td>{'pages': '7657-7666'}</td>
         <td>AAAI Conference on Artificial Intelligence</td>
       </tr>
@@ -1678,7 +1678,7 @@ hide:
 
   var trace2 = {
     x: ['1938', '1962', '1964', '1965', '1967', '1969', '1970', '1972', '1973', '1975', '1977', '1978', '1980', '1983', '1987', '1989', '1990', '1991', '1992', '1993', '1994', '1996', '1997', '1998', '1999', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
-    y: [8, 12, 5, 81, 26, 46, 16, 15, 218, 20, 19, 11, 7, 17, 439, 104, 251, 172, 105, 31, 46, 183, 1721, 190, 125, 41, 127, 51, 463, 233, 109, 171, 653, 133, 573, 379, 481, 520, 603, 1864, 864, 5824, 5954, 5925, 10146, 4725, 2809, 495, 11],
+    y: [8, 12, 5, 81, 26, 46, 16, 15, 218, 20, 19, 11, 7, 17, 439, 104, 251, 172, 105, 31, 46, 183, 1721, 190, 125, 41, 127, 51, 463, 233, 109, 171, 653, 133, 573, 379, 481, 519, 603, 1864, 866, 5824, 5955, 5925, 10148, 4726, 2809, 495, 11],
     name: 'Num of citations',
     yaxis: 'y2',
     type: 'scatter'

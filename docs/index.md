@@ -48,7 +48,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/162d958ff885f1462aeda91cd72582323fd6a1f4">Gradient-based learning applied to document recognition</a></td>
         <td>None</td>
-        <td>46008</td>
+        <td>46018</td>
         <td>Proc. IEEE</td>
         <td>Proceedings of the IEEE</td>
       </tr>
@@ -56,7 +56,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d61031326150ba23f90e6587c13d99188209250e">Collective dynamics of ‘small-world’ networks</a></td>
         <td>1998-06-04</td>
-        <td>38494</td>
+        <td>38499</td>
         <td>Nature</td>
         <td>Nature</td>
       </tr>
@@ -64,7 +64,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/36eff562f65125511b5dfab68ce7f7a943c27478">Semi-Supervised Classification with Graph Convolutional Networks</a></td>
         <td>2016-09-09</td>
-        <td>22127</td>
+        <td>22128</td>
         <td>ArXiv</td>
         <td>International Conference on Learning Representations</td>
       </tr>
@@ -80,7 +80,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/e6c4925fb114d13a8568f88957c167c928f0c9f1">The Structure and Function of Complex Networks</a></td>
         <td>2003-03-25</td>
-        <td>16783</td>
+        <td>16786</td>
         <td>SIAM Rev.</td>
         <td>SIAM Review</td>
       </tr>
@@ -88,7 +88,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/4954fa180728932959997a4768411ff9136aac81">TensorFlow: A system for large-scale machine learning</a></td>
         <td>2016-05-27</td>
-        <td>16716</td>
+        <td>16720</td>
         <td>{'pages': '265-283'}</td>
         <td>USENIX Symposium on Operating Systems Design and Implementation</td>
       </tr>
@@ -96,7 +96,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/2a005868b79511cf8c924cd5990e2497527a0527">Community structure in social and biological networks</a></td>
         <td>2001-12-07</td>
-        <td>14281</td>
+        <td>14283</td>
         <td>Proceedings of the National Academy of Sciences of the United States of America</td>
         <td>Proceedings of the National Academy of Sciences of the United States of America</td>
       </tr>
@@ -104,7 +104,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/33998aff64ce51df8dee45989cdca4b6b1329ec4">Graph Attention Networks</a></td>
         <td>2017-10-30</td>
-        <td>13995</td>
+        <td>14001</td>
         <td>ArXiv</td>
         <td>International Conference on Learning Representations</td>
       </tr>
@@ -112,7 +112,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/450106c6c960424b365249f2a301ce0abe24e346">PRISMA Extension for Scoping Reviews (PRISMA-ScR): Checklist and Explanation</a></td>
         <td>2018-10-02</td>
-        <td>12794</td>
+        <td>12798</td>
         <td>Annals of Internal Medicine</td>
         <td>Annals of Internal Medicine</td>
       </tr>
@@ -120,7 +120,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/9839ed2281ba4b589bf88c7e4acc48c9fa6fb933">Consensus problems in networks of agents with switching topology and time-delays</a></td>
         <td>2004-09-13</td>
-        <td>11250</td>
+        <td>11251</td>
         <td>IEEE Transactions on Automatic Control</td>
         <td>IEEE Transactions on Automatic Control</td>
       </tr>
@@ -128,7 +128,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f1962baa356e10c4fd936b9e9f910869a5864a75">Authoritative sources in a hyperlinked environment</a></td>
         <td>1999-09-01</td>
-        <td>10816</td>
+        <td>10820</td>
         <td>{'pages': '668-677'}</td>
         <td>ACM-SIAM Symposium on Discrete Algorithms</td>
       </tr>
@@ -152,7 +152,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3149a915f738f044778e3decdb4278e2bad17808">Gephi: An Open Source Software for Exploring and Manipulating Networks</a></td>
         <td>2009-03-19</td>
-        <td>8729</td>
+        <td>8728</td>
         <td>Proceedings of the International AAAI Conference on Web and Social Media</td>
         <td>International Conference on Web and Social Media</td>
       </tr>
@@ -160,7 +160,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/fff114cbba4f3ba900f33da574283e3de7f26c83">DeepWalk: online learning of social representations</a></td>
         <td>2014-03-26</td>
-        <td>8216</td>
+        <td>8217</td>
         <td>Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining</td>
         <td>Knowledge Discovery and Data Mining</td>
       </tr>
@@ -168,7 +168,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/c41eb895616e453dcba1a70c9b942c5063cc656c">Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering</a></td>
         <td>2016-06-30</td>
-        <td>6410</td>
+        <td>6411</td>
         <td>{'pages': '3837-3845'}</td>
         <td>Neural Information Processing Systems</td>
       </tr>
@@ -192,7 +192,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3efd851140aa28e95221b55fcc5659eea97b172d">The Graph Neural Network Model</a></td>
         <td>None</td>
-        <td>5618</td>
+        <td>5619</td>
         <td>IEEE Transactions on Neural Networks</td>
         <td>IEEE Transactions on Neural Networks</td>
       </tr>
@@ -208,7 +208,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d1b4a4689a0288ccf36158ba5dfef724fd5a4ea5">Factor graphs and the sum-product algorithm</a></td>
         <td>2001-02-01</td>
-        <td>5263</td>
+        <td>5261</td>
         <td>IEEE Trans. Inf. Theory</td>
         <td>IEEE Transactions on Information Theory</td>
       </tr>
@@ -216,7 +216,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/afc3a4ce6f2aedfc91a0408547d894e3cf04e4d2">Uncovering the overlapping community structure of complex networks in nature and society</a></td>
         <td>2005-06-09</td>
-        <td>5068</td>
+        <td>5069</td>
         <td>Nature</td>
         <td>Nature</td>
       </tr>
@@ -240,7 +240,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/06aad24ac4ad4312ca190d0c16fe0df7f474844c">An automated method for finding molecular complexes in large protein interaction networks</a></td>
         <td>2003-01-13</td>
-        <td>4659</td>
+        <td>4660</td>
         <td>BMC Bioinformatics</td>
         <td>BMC Bioinformatics</td>
       </tr>
@@ -256,7 +256,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/0250b5c0f7a414dec8c7a0aa7be20c9637eeb6ec">Finding community structure in networks using the eigenvectors of matrices.</a></td>
         <td>2006-05-10</td>
-        <td>4342</td>
+        <td>4344</td>
         <td>Physical review. E, Statistical, nonlinear, and soft matter physics</td>
         <td>NA</td>
       </tr>
@@ -272,7 +272,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/4667ad4302254f67ef8c831ede8e4cd8d0709715">The KEGG resource for deciphering the genome</a></td>
         <td>None</td>
-        <td>4282</td>
+        <td>4283</td>
         <td>Nucleic acids research</td>
         <td>NA</td>
       </tr>
@@ -280,7 +280,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3fa1f9a88d140c66fec756ca8f8f4ecee15e7120">The PRISMA Extension Statement for Reporting of Systematic Reviews Incorporating Network Meta-analyses of Health Care Interventions: Checklist and Explanations</a></td>
         <td>2015-06-02</td>
-        <td>4250</td>
+        <td>4251</td>
         <td>Annals of Internal Medicine</td>
         <td>Annals of Internal Medicine</td>
       </tr>
@@ -288,7 +288,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/5e925a9f1e20df61d1e860a7aa71894b35a1c186">Spectral Networks and Locally Connected Networks on Graphs</a></td>
         <td>2013-12-20</td>
-        <td>4224</td>
+        <td>4225</td>
         <td>CoRR</td>
         <td>International Conference on Learning Representations</td>
       </tr>
@@ -296,7 +296,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/2d867297dfe0d3ce2ed5b1d0f2dff88cac46ee94">Pregel: a system for large-scale graph processing</a></td>
         <td>2010-06-06</td>
-        <td>3878</td>
+        <td>3877</td>
         <td>Proceedings of the 2010 ACM SIGMOD International Conference on Management of data</td>
         <td>NA</td>
       </tr>
@@ -320,7 +320,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/cd8a9914d50b0ac63315872530274d158d6aff09">Modeling Relational Data with Graph Convolutional Networks</a></td>
         <td>2017-03-17</td>
-        <td>3647</td>
+        <td>3648</td>
         <td>{'pages': '593-607'}</td>
         <td>Extended Semantic Web Conference</td>
       </tr>
@@ -328,7 +328,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/30b86960827597ab5509c575450953959dad1b54">Hierarchical Information Clustering by Means of Topologically Embedded Graphs</a></td>
         <td>2011-10-20</td>
-        <td>3629</td>
+        <td>3628</td>
         <td>PLoS ONE</td>
         <td>PLoS ONE</td>
       </tr>
@@ -360,7 +360,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/449310e3538b08b43227d660227dfd2875c3c3c1">Neural Ordinary Differential Equations</a></td>
         <td>2018-06-19</td>
-        <td>3517</td>
+        <td>3518</td>
         <td>{'pages': '6572-6583'}</td>
         <td>Neural Information Processing Systems</td>
       </tr>
@@ -384,7 +384,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/e8b8c5f4a81e11576ee2c74ab65c66a42bbad270">Random graphs with arbitrary degree distributions and their applications.</a></td>
         <td>2000-07-13</td>
-        <td>3408</td>
+        <td>3409</td>
         <td>Physical review. E, Statistical, nonlinear, and soft matter physics</td>
         <td>NA</td>
       </tr>
@@ -392,7 +392,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/27725a2d2a8cee9bf9fffc6c2167017103aba0fa">A Convolutional Neural Network for Modelling Sentences</a></td>
         <td>2014-04-08</td>
-        <td>3400</td>
+        <td>3401</td>
         <td>{'pages': '655-665'}</td>
         <td>Annual Meeting of the Association for Computational Linguistics</td>
       </tr>
@@ -408,7 +408,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/c416e0295fee5a4b4ded400f28c57aaf727f3651">Small worlds: the dynamics of networks between order and randomness</a></td>
         <td>2000-11-01</td>
-        <td>3236</td>
+        <td>3237</td>
         <td>SIGMOD Rec.</td>
         <td>NA</td>
       </tr>
@@ -416,7 +416,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a55df99552d6093b6150fe2ca79d017644b73935">BrainNet Viewer: A Network Visualization Tool for Human Brain Connectomics</a></td>
         <td>2013-07-04</td>
-        <td>3058</td>
+        <td>3059</td>
         <td>PLoS ONE</td>
         <td>PLoS ONE</td>
       </tr>
@@ -432,17 +432,9 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/779bc3570167c8251afb0a88ca355b596583caea">The human disease network</a></td>
         <td>2007-05-22</td>
-        <td>3029</td>
+        <td>3030</td>
         <td>Proceedings of the National Academy of Sciences</td>
         <td>Proceedings of the National Academy of Sciences of the United States of America</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/efeaa6e3114d6d6ae5c3041b66ac9a9ae9bf52bf">Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action Recognition</a></td>
-        <td>2018-01-23</td>
-        <td>2989</td>
-        <td>{'pages': '7444-7452'}</td>
-        <td>AAAI Conference on Artificial Intelligence</td>
       </tr>
     
       <tr>
@@ -451,6 +443,14 @@ hide:
         <td>2990</td>
         <td>ArXiv</td>
         <td>Neural Information Processing Systems</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/efeaa6e3114d6d6ae5c3041b66ac9a9ae9bf52bf">Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action Recognition</a></td>
+        <td>2018-01-23</td>
+        <td>2989</td>
+        <td>{'pages': '7444-7452'}</td>
+        <td>AAAI Conference on Artificial Intelligence</td>
       </tr>
     
       <tr>
@@ -504,7 +504,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/7fe0ef2ddacd193101dc5ba3df97b0241a5e8fc6">Stability of multiagent systems with time-dependent communication links</a></td>
         <td>2005-02-14</td>
-        <td>2683</td>
+        <td>2684</td>
         <td>IEEE Transactions on Automatic Control</td>
         <td>IEEE Transactions on Automatic Control</td>
       </tr>
@@ -512,7 +512,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/54906484f42e871f7c47bbfe784a358b1448231f">Variational Graph Auto-Encoders</a></td>
         <td>2016-11-21</td>
-        <td>2650</td>
+        <td>2651</td>
         <td>ArXiv</td>
         <td>arXiv.org</td>
       </tr>
@@ -520,7 +520,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3a58efcc4558727cc5c131c44923635da4524f33">Relational inductive biases, deep learning, and graph networks</a></td>
         <td>2018-06-04</td>
-        <td>2604</td>
+        <td>2606</td>
         <td>ArXiv</td>
         <td>arXiv.org</td>
       </tr>
@@ -536,7 +536,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3e0f02e92c6b148c45fc672095ac654000eec5e5">Benchmark graphs for testing community detection algorithms.</a></td>
         <td>2008-05-30</td>
-        <td>2585</td>
+        <td>2586</td>
         <td>Physical review. E, Statistical, nonlinear, and soft matter physics</td>
         <td>NA</td>
       </tr>
@@ -584,7 +584,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/62c76ca0b2790c34e85ba1cce09d47be317c7235">Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation</a></td>
         <td>2013-08-15</td>
-        <td>2407</td>
+        <td>2408</td>
         <td>ArXiv</td>
         <td>arXiv.org</td>
       </tr>
@@ -672,7 +672,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/448326de7b82c8ed10ad9ac89d1305bf2260cd5f">The Click modular router</a></td>
         <td>1999-12-12</td>
-        <td>2161</td>
+        <td>2160</td>
         <td>Proceedings of the seventeenth ACM symposium on Operating systems principles</td>
         <td>Symposium on Operating Systems Principles</td>
       </tr>
@@ -744,7 +744,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/847362ce2a49966bf759763d4d094055a94dd576">Efficient influence maximization in social networks</a></td>
         <td>2009-06-28</td>
-        <td>2083</td>
+        <td>2084</td>
         <td>{'pages': '199-208'}</td>
         <td>Knowledge Discovery and Data Mining</td>
       </tr>
@@ -752,7 +752,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f96f659ada20f35e9fce66306c8f8f6a471e592d">Graph theoretical analysis of magnetoencephalographic functional connectivity in Alzheimer's disease.</a></td>
         <td>None</td>
-        <td>2078</td>
+        <td>2077</td>
         <td>Brain : a journal of neurology</td>
         <td>NA</td>
       </tr>
@@ -832,7 +832,7 @@ hide:
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/fab4d19ed77dad7c437d885eceb8aa65fae5a783">Image-Based Recommendations on Styles and Substitutes</a></td>
         <td>2015-06-15</td>
-        <td>1907</td>
+        <td>1908</td>
         <td>Proceedings of the 38th International ACM SIGIR Conference on Research and Development in Information Retrieval</td>
         <td>Annual International ACM SIGIR Conference on Research and Development in Information Retrieval</td>
       </tr>
@@ -1104,10 +1104,66 @@ hide:
       </tr>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/a9c2e7cb0950bd7f922371422ebbc86d48020364">Bearing fault detection by using graph autoencoder and ensemble learning.</a></td>
-        <td>2024-03-03</td>
+        <td><a href="https://www.semanticscholar.org/paper/d49d562bdb4e862913f683e39de7c87647752345">DRGCL: Drug Repositioning via Semantic-enriched Graph Contrastive Learning.</a></td>
+        <td>2024-03-05</td>
+        <td>0</td>
+        <td>IEEE journal of biomedical and health informatics</td>
+        <td>IEEE journal of biomedical and health informatics</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/bf1a6cc1ae51e692506335b02e07d1c5d53d3117">Embedding-Alignment Fusion-Based Graph Convolution Network With Mixed Learning Strategy for 4D Medical Image Reconstruction.</a></td>
+        <td>2024-03-05</td>
+        <td>0</td>
+        <td>IEEE journal of biomedical and health informatics</td>
+        <td>IEEE journal of biomedical and health informatics</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/998d59613b971e2b1e1560d659d3664d8e09cc98">Enhancing Generalizability in Protein-Ligand Binding Affinity Prediction with Multimodal Contrastive Learning.</a></td>
+        <td>2024-03-05</td>
+        <td>0</td>
+        <td>Journal of chemical information and modeling</td>
+        <td>Journal of Chemical Information and Modeling</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/eefe296b823aaea7e46f1813fa4cd9fdabb6ea76">DER-GCN: Dialog and Event Relation-Aware Graph Convolutional Neural Network for Multimodal Dialog Emotion Recognition.</a></td>
+        <td>2024-03-04</td>
+        <td>0</td>
+        <td>IEEE transactions on neural networks and learning systems</td>
+        <td>IEEE Transactions on Neural Networks and Learning Systems</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/eafc2eed82c2b3a37d607310708401aa7a53c2d8">Graph Neural Network-Accelerated Multitasking Genetic Algorithm for Optimizing PdxTi1-xHy Surfaces under Various CO2 Reduction Reaction Conditions.</a></td>
+        <td>2024-03-04</td>
+        <td>0</td>
+        <td>ACS applied materials & interfaces</td>
+        <td>ACS Applied Materials and Interfaces</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/dfc0dfdfdc4ab462e00c33bc3a094e71a4ca3c83">A GAN-based anomaly detector using multi-feature fusion and selection.</a></td>
+        <td>2024-03-04</td>
         <td>0</td>
         <td>Scientific reports</td>
+        <td>Scientific Reports</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/c4bf0a3a623e5cf78206d4126abde07dc1ffdec7">Empowering Persons with Autism through Cross-Reality and Conversational Agents.</a></td>
+        <td>2024-03-04</td>
+        <td>0</td>
+        <td>IEEE transactions on visualization and computer graphics</td>
+        <td>IEEE Transactions on Visualization and Computer Graphics</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/a9c2e7cb0950bd7f922371422ebbc86d48020364">Bearing fault detection by using graph autoencoder and ensemble learning</a></td>
+        <td>2024-03-03</td>
+        <td>0</td>
+        <td>Scientific Reports</td>
         <td>Scientific Reports</td>
       </tr>
     
@@ -1607,62 +1663,6 @@ hide:
         <td>NA</td>
       </tr>
     
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/7644d9053eaa314dc5b439d15bb8a5cb1a393b79">Contrastive Hawkes graph neural networks with dynamic sampling for event prediction</a></td>
-        <td>2024-03-01</td>
-        <td>0</td>
-        <td>Neurocomputing</td>
-        <td>Neurocomputing</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/724aff7b0589471aab7747c883194b75b09ad4f6">Distance Information Improves Heterogeneous Graph Neural Networks</a></td>
-        <td>2024-03-01</td>
-        <td>0</td>
-        <td>IEEE Transactions on Knowledge and Data Engineering</td>
-        <td>IEEE Transactions on Knowledge and Data Engineering</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/6fb7438981a7a5f44ce6d99342957726387230bd">IoT Route Planning Based on Spatiotemporal Interactive Attention Neural Network</a></td>
-        <td>2024-03-01</td>
-        <td>0</td>
-        <td>IEEE Internet of Things Journal</td>
-        <td>IEEE Internet of Things Journal</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/6e94b003bac980cffbbb85fe87b455e7c9b4030f">Collaborative Delivery Optimization With Multiple Drones via Constrained Hybrid Pointer Network</a></td>
-        <td>2024-03-01</td>
-        <td>0</td>
-        <td>IEEE Internet of Things Journal</td>
-        <td>IEEE Internet of Things Journal</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/6ca81952baf01b654a96e54b6cca57811d20f733">Learn to Optimize the Constrained Shortest Path on Large Dynamic Graphs</a></td>
-        <td>2024-03-01</td>
-        <td>1</td>
-        <td>IEEE Transactions on Mobile Computing</td>
-        <td>IEEE Transactions on Mobile Computing</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/67ed106a564275e3c7161b50df48c2e79e4a8915">QKD Key Provisioning With Multi-Level Pool Slicing for End-to-End Security Services in Optical Networks</a></td>
-        <td>2024-03-01</td>
-        <td>0</td>
-        <td>IEEE Transactions on Network Science and Engineering</td>
-        <td>IEEE Transactions on Network Science and Engineering</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/663f1579eadc86497c2431f8e4bbcde9c7375e91">Boosting Subspace Co-Clustering via Bilateral Graph Convolution</a></td>
-        <td>2024-03-01</td>
-        <td>1</td>
-        <td>IEEE Transactions on Knowledge and Data Engineering</td>
-        <td>IEEE Transactions on Knowledge and Data Engineering</td>
-      </tr>
-    
   </tbody>
   </table>
   </p>
@@ -1687,7 +1687,7 @@ hide:
 
   var trace2 = {
     x: ['1931', '1968', '1974', '1975', '1978', '1981', '1982', '1983', '1984', '1986', '1987', '1988', '1989', '1990', '1991', '1992', '1993', '1994', '1995', '1996', '1997', '1998', '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
-    y: [1558, 817, 379, 575, 408, 1201, 429, 1876, 4191, 4525, 4093, 1991, 1597, 2282, 2079, 3077, 6310, 3071, 3629, 5033, 6144, 42219, 21171, 20692, 54574, 21386, 54732, 38551, 42743, 39759, 39593, 34799, 54254, 36982, 23833, 23044, 28928, 27081, 38601, 72918, 68853, 94807, 44137, 33878, 4673, 2120, 1041],
+    y: [1558, 817, 379, 575, 408, 1201, 429, 1876, 4191, 4525, 4093, 1992, 1597, 2282, 2079, 3077, 6310, 3071, 3629, 5033, 6144, 42222, 21180, 20695, 54575, 21395, 54733, 38548, 42750, 39764, 39595, 34803, 54257, 37487, 23832, 23040, 28931, 27084, 38604, 72925, 68864, 94817, 44138, 33878, 4672, 2116, 1041],
     name: 'Num of citations',
     yaxis: 'y2',
     type: 'scatter'
@@ -1710,7 +1710,7 @@ hide:
     var data = [
     {
       x: ['Neural_ODEs', 'Physics-informed_GNNs', 'Symbolic_regression', 'PINNs', 'Latent_Space_Simulator', 'Koopman_Theory'],
-      y: [49321, 1094957, 1567, 1496, 129595, 45299],
+      y: [49326, 1095558, 1568, 1496, 129599, 45300],
       type: 'bar'
       }
     ];
