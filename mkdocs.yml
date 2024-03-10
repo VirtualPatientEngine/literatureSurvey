@@ -1,5 +1,5 @@
 nav:
-- All: index.md
+- Overview: index.md
 - Koopman Theory: Koopman_Theory.md
 - Latent Space Simulator: Latent_Space_Simulator.md
 - PINNs: PINNs.md

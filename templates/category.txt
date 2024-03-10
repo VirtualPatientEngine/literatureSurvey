@@ -5,13 +5,16 @@
 </head>
 
 <body>
+  <p>
+  <i>This page was last updated on {{current_time}} CET/CEST</i>
+  </p>
 
   <p>
   <h3>Table of Contents</h3>
-    <li><a href="#search_query">1. Search Query</a></li>
-    <li><a href="#plot1">2. {{title}} articles and citations over time</a></li>
-    <li><a href="#most_cited_articles">3. Most cited articles on {{title}}</a></li>
-    <li><a href="#latest_articles">4. Latest articles on {{title}}</a></li>
+    <a href="#search_query">1. Search Query</a><br>
+    <a href="#plot1">2. {{title}} articles and citations over time</a><br>
+    <a href="#most_cited_articles">3. Most cited articles on {{title}}</a><br>
+    <a href="#latest_articles">4. Latest articles on {{title}}</a><br>
   <p>
 
   <p>
@@ -32,20 +35,23 @@
   <thead>
     <tr>
         <th>Title</th>
-        <th>PublicationDate</th>
-        <th>#Citations</th>
+        <th>Authors</th>
+        <th>Publication Date</th>
         <th>Journal/Conference</th>
-        <th>publicationVenue</th>
+        <th>Citation count</th>
     </tr>
   </thead>
   <tbody>
     {% for article in most_cited_articles %}
       <tr>
+      <script>
+      // alert ({{article.citationCount}})
+      </script>
         <td><a href="{{article.url}}">{{article.title}}</a></td>
+        <td>{{ article.authors}}</td>
         <td>{{ article.publicationDate}}</td>
-        <td>{{ article.citationCount}}</td>
         <td>{{ article.journal}}</td>
-        <td>{{ article.publicationVenue}}</td>
+        <td>{{ article.citationCount}}</td>
       </tr>
     {% endfor %}
   </tbody>
@@ -58,20 +64,20 @@
   <thead>
     <tr>
         <th>Title</th>
-        <th>PublicationDate</th>
-        <th>#Citations</th>
+        <th>Authors</th>
+        <th>Publication Date</th>
         <th>Journal/Conference</th>
-        <th>publicationVenue</th>
+        <th>Citation count</th>
     </tr>
   </thead>
   <tbody>
     {% for article in most_recent_articles %}
       <tr>
         <td><a href="{{article.url}}">{{article.title}}</a></td>
+        <td>{{ article.authors}}</td>
         <td>{{ article.publicationDate}}</td>
-        <td>{{ article.citationCount}}</td>
         <td>{{ article.journal}}</td>
-        <td>{{ article.publicationVenue}}</td>
+        <td>{{ article.citationCount}}</td>
       </tr>
     {% endfor %}
   </tbody>

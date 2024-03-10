@@ -8,14 +8,12 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import yaml
 
-def metrics_over_time(data, category_name, title) -> plt:
+def metrics_over_time(data) -> plt:
     """
     Return the metrics over time
 
     Args:
         data (list): list of dictionaries
-        category_name (str): category name
-        title (str): title of the graph
     
     Returns:
         None
@@ -74,11 +72,9 @@ def metrics_over_time(data, category_name, title) -> plt:
     plt.tight_layout()
     # Save the graph
     return plt
-    
-
     #A26, B1
 
-def metrics_over_time_js(data, category_name, title) -> plt:
+def metrics_over_time_js(data) -> plt:
     """
     Return the metrics over time
 
@@ -136,8 +132,6 @@ def all_citations_js(dic) -> list:
     Returns:
         dic_all_citations (dict): dictionary with the number of citations for all categories
     """
-    categories = []
-    num_citations = []
     dic_all_citations = {}
     for category_name, category_name_items in dic.items():
         sum_citations = 0
@@ -152,11 +146,36 @@ def all_citations_js(dic) -> list:
 
 # Function to read YAML file
 def read_yaml(file_path):
-    with open(file_path, 'r') as file:
+    '''
+    Function to read YAML file
+
+    Args:
+        file_path (str): path to the YAML file
+
+    Returns:
+        dict: data from the YAML file
+
+    Example:
+        data = read_yaml('data.yaml')
+    '''
+    with open(file_path, 'r', encoding='utf-8') as file:
         data = yaml.safe_load(file)
     return data
 
 # Function to write YAML file
 def write_yaml(data, file_path):
-    with open(file_path, 'w') as file:
+    '''
+    Function to write YAML file
+
+    Args:
+        data (dict): data to write to the YAML file
+        file_path (str): path to the YAML file
+
+    Returns:
+        None
+
+    Example:
+        write_yaml(data, 'data.yaml')
+    '''
+    with open(file_path, 'w', encoding='utf-8') as file:
         yaml.dump(data, file, default_flow_style=False)
