@@ -6,7 +6,7 @@
 
 <body>
   <p>
-  <i>This page was last updated on {{current_time}} CET/CEST</i>
+  <i>This page was last updated on {{current_time}} UTC</i>
   </p>
 
   <p>
