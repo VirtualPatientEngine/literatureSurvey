@@ -8,7 +8,6 @@ and retrieve their details.
 import time
 import requests
 from jinja2 import Environment, FileSystemLoader
-import utils
 
 # Define the paper search endpoint URL
 URL = 'https://api.semanticscholar.org/graph/v1/paper/search/bulk'
@@ -43,47 +42,29 @@ def fetch_articles(search_query,
     query_params['sort'] = sort
 
     fetched_data = []
-    while True:
-        while True:
+    status_code = 0
+    next_token = 0
+    while next_token is not None:
+        while status_code != 200:
             # Make the GET request to the paper search endpoint with the URL and query parameters
             search_response = requests.get(URL, params=query_params, timeout=None)
-            # When the status code is 200, break the loop
-            if search_response.status_code != 200:
-                print ('status code', search_response.status_code)
-                print ('Retrying....')
-            else:
-                break
+            status_code = search_response.status_code
         search_response_json = search_response.json()
         fetched_data += search_response_json['data']
+        # Update the token to fetch the next page of data
+        query_params['token'] = search_response_json['token']
+        next_token = search_response_json['token']
         # End the loop if we have fetched enough data
         # or if there is no more data to fetch
-        if len(fetched_data) >= N or search_response_json['token'] is None:
+        if len(fetched_data) >= N:
             break
-        # Update the token to fetch the next page of data
-        # if the token is not None
-        if search_response_json['token'] is not None:
-            query_params['token'] = search_response_json['token']
     # fix the publicationVenue and journal
     for paper in fetched_data:
-        # print (paper)
         publication_venue = paper['publicationVenue']
-        # if publication_venue is None:
-        #     paper['publicationVenue'] = 'NotAvbl'
-        # elif 'name' in publication_venue:
-        #     paper['publicationVenue'] = publication_venue['name']
-        # else:
-        #     paper['publicationVenue'] = 'NotAvbl'
         paper['publicationVenue'] = publication_venue.get('name', 'NotAvbl')\
                                     if publication_venue is not None else 'NotAvbl'
         journal = paper['journal']
         paper['journal'] = journal.get('name', 'NotAvbl') if journal is not None else 'NotAvbl'
-
-        # if journal is None:
-        #     paper['journal'] = 'NotAvbl'
-        # elif 'name' in journal:
-        #     paper['journal'] = journal['name']
-        # else:
-        #     paper['journal'] = 'NotAvbl'
         # Set journal to publicationVenue if journal is not available
         if paper['journal'] == 'NotAvbl':
             paper['journal'] = paper['publicationVenue']
@@ -96,20 +77,31 @@ def fetch_articles(search_query,
         paper['authors'] = ', '.join(authors)
     return fetched_data
 
-def create_template(template_file, category_name, df, dic_all_citations=None) -> str:
+def create_template(template_file, topic, dic, df, dic_all_citations=None) -> str:
     """
     Return the markdown content for a given template
 
     Args:
         template_file (str): template file
-        category_name (str): category name
+        topic (str): topic of the category
+        dic (dict): dictionary with the most cited and most recent articles
         df (pd.DataFrame): dataframe with the metrics over time
         dic_all_citations (dict): dictionary with the number of citations for all categories
     Returns:
         str: markdown content
+
+    Example:
+    category_name = "category1"
+    DF = pd.DataFrame({
+        'date': ['2020-01-01', '2019-01-01'],
+        'num_citations': [10, 20],
+        'num_articles': [10, 20]
+    })
+
+    markdown_text = create_template("category.txt", category_name, DF)
     """
     # Set the template environment
-    environment = Environment(loader=FileSystemLoader("../../templates/"))
+    environment = Environment(loader=FileSystemLoader('.'))
     # Get the template
     template = environment.get_template(template_file)
     if dic_all_citations is None:
@@ -119,20 +111,19 @@ def create_template(template_file, category_name, df, dic_all_citations=None) ->
         categories = []
         num_citations_across_categories = []
         for category, num_citations_categories in dic_all_citations.items():
-            if category == category_name:
+            if category == topic:
                 continue
             categories.append(category)
             num_citations_across_categories.append(num_citations_categories)
-    
     # Render the template
     content = template.render(
         # current time
         current_time=time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()),
-        most_cited_articles=DIC[category_name]['most_cited_articles'][0:N],
-        most_recent_articles=DIC[category_name]['most_recent_articles'][0:N],
-        category_name=category_name,
-        title=DIC[category_name]['title'],
-        query=DIC[category_name]['query'],
+        most_cited_articles=dic[topic]['most_cited_articles'][0:N],
+        most_recent_articles=dic[topic]['most_recent_articles'][0:N],
+        category_name=topic,
+        title=dic[topic]['title'],
+        query=dic[topic]['query'],
         x_year=df['Year'].tolist(),
         y_num_articles=df['num_articles'].tolist(),
         y_num_citations=df['num_citations'].tolist(),
@@ -142,69 +133,68 @@ def create_template(template_file, category_name, df, dic_all_citations=None) ->
     # return markdownify.markdownify(content)
     return content
 
-def main():
-    """
-    Main function
-
-    Args:
-        None
-
-    Returns:
-        None
-    """
-
+if __name__ == '__main__':
+    import utils
+    QUERY_FILE = '../data/query.tsv'
     # Work with all the categories in the file
-    with open('../data/query.tsv', 'r', encoding='utf-8') as f:
+    with open(QUERY_FILE, 'r', encoding='utf-8') as f:
         for line in f:
             if line.split('\t')[0] == 'Title':
                 continue
             title = line.split('\t')[0]
             query = line.split('\t')[1].rstrip()
             print (f'Title: {title}\nQuery: {query}')
-            category_name = title.replace(' ', '_')
+            TOPIC = title.replace(' ', '_')
             ################################
             ## Fetch the most cited articles
             data = fetch_articles(query)
-            DIC[category_name] = {'title': title, 'query': query, 'most_cited_articles': data}
+            DIC[TOPIC] = {'title': title, 'query': query, 'most_cited_articles': data}
             # plot = utils.metrics_over_time_js(data, category_name, title)
             # plot.savefig(f'../../docs/assets/{category_name}.png')
-            df = utils.metrics_over_time_js(data)
+            DF = utils.metrics_over_time_js(data)
             ################################
             ## Fetch the most recent articles
             data = fetch_articles(query, sort = 'publicationDate:desc')
-            DIC[category_name]['most_recent_articles'] = data
+            DIC[TOPIC]['most_recent_articles'] = data
             # print (data[0])
-            markdown_text = create_template("category.txt", category_name, df)
+            markdown_text = create_template("../../templates/category.txt",
+                                            TOPIC,
+                                            DIC,
+                                            DF)
                                             # DIC[category_name]['most_cited_articles'][0:N],
                                             # DIC[category_name]['most_recent_articles'][0:N])
             # Add the hide navigation
             markdown_text = "---\nhide:\n - navigation\n---\n" + markdown_text
             # Write the markdown text to a file
-            with open(f'../../docs/{category_name}.md', 'w', encoding='utf-8') as file:
+            with open(f'../../docs/{TOPIC}.md', 'w', encoding='utf-8') as file:
                 file.write(markdown_text)
             ################################
 
     # End of file
-    title = 'Overview'
-    query = ' | '.join([category_items['query'] for _, category_items in DIC.items()])
-    category_name = 'Overview'
+    TITLE = 'Overview'
+    QUERY = ' | '.join([category_items['query'] for _, category_items in DIC.items()])
+    TOPIC = 'Overview'
     ################################
     ## Fetch the most cited articles
-    data = fetch_articles(query)
+    data = fetch_articles(QUERY)
     # print (data)
-    DIC[category_name] = {'title': title, 'query': query, 'most_cited_articles': data}
+    DIC[TOPIC] = {'title': TITLE, 'query': QUERY, 'most_cited_articles': data}
     # plot = utils.metrics_over_time_js(data, category_name, title)
     # plot.savefig(f'../../docs/assets/{category_name}.png')
-    df = utils.metrics_over_time_js(data)
+    DF = utils.metrics_over_time_js(data)
     ################################
     ## Fetch the most recent articles
-    data = fetch_articles(query, sort = 'publicationDate:desc')
-    DIC[category_name]['most_recent_articles'] = data
+    data = fetch_articles(QUERY, sort = 'publicationDate:desc')
+    DIC[TOPIC]['most_recent_articles'] = data
     # print (data[6])
     # Make bar plot for the number of citations of top 100 articles
     # in each category
-    dic_all_citations = utils.all_citations_js(DIC)
-    markdown_text = create_template("overview.txt", category_name, df, dic_all_citations=dic_all_citations)
+    DIC_ALL_CITATIONS = utils.all_citations_js(DIC)
+    markdown_text = create_template("../../templates/overview.txt",
+                                    TOPIC,
+                                    DIC,
+                                    DF,
+                                    dic_all_citations=DIC_ALL_CITATIONS)
                                     # DIC[category_name]['most_cited_articles'][0:N],
                                     # DIC[category_name]['most_recent_articles'][0:N])
     # Add the hide navigation
@@ -214,8 +204,7 @@ def main():
         file.write(markdown_text)
     ################################
     # Read YAML file
-    file_path = '../../base.yml'
-    data = utils.read_yaml(file_path)
+    data = utils.read_yaml('../../base.yml')
 
     # Add more stuff to the YAML data
     data['nav'] = []
@@ -230,7 +219,3 @@ def main():
     # print (data['nav'])
     # Write modified YAML data back to file
     utils.write_yaml(data, '../../mkdocs.yml')
-
-if __name__ == '__main__':
-    # Run the main function
-    main()

@@ -4,7 +4,7 @@ on:
     branches:
       - main
   schedule:
-      - cron: '0 7 * * 3'  # Run every Wednesday at 7 AM
+      - cron: '0 6 * * 1'  # Runs every Monday at 6 AM
   workflow_dispatch:  # Manually trigger the workflow
 permissions:
   contents: write
@@ -25,11 +25,11 @@ jobs:
         run: |
           pip3 install mkdocs mkdocs-material mkdocs-material-extensions mkdocstrings mkdocstrings-python
           pip3 install -r requirements.txt
-      - name: Run literatureFetch
+      - name: Run literature_fetch
         shell: bash -l {0}
         run: |
           cd app/code
-          python3 literatureFetch.py
+          python3 literature_fetch.py
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
       - uses: actions/cache@v3
         with:
