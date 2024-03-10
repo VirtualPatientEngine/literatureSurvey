@@ -77,7 +77,7 @@ def fetch_articles(search_query,
         paper['authors'] = ', '.join(authors)
     return fetched_data
 
-def create_template(template_file, topic, dic, df, dic_all_citations=None) -> str:
+def create_template(template, topic, dic, df, dic_all_citations=None) -> str:
     """
     Return the markdown content for a given template
 
@@ -101,9 +101,9 @@ def create_template(template_file, topic, dic, df, dic_all_citations=None) -> st
     markdown_text = create_template("category.txt", category_name, DF)
     """
     # Set the template environment
-    environment = Environment(loader=FileSystemLoader('.'))
+    environment = Environment(loader=FileSystemLoader(template[0]))
     # Get the template
-    template = environment.get_template(template_file)
+    template = environment.get_template(template[1])
     if dic_all_citations is None:
         categories = None
         num_citations_across_categories = None
@@ -157,7 +157,8 @@ if __name__ == '__main__':
             data = fetch_articles(query, sort = 'publicationDate:desc')
             DIC[TOPIC]['most_recent_articles'] = data
             # print (data[0])
-            markdown_text = create_template("../../templates/category.txt",
+            markdown_text = create_template(
+                                            ("../../templates", "category.txt"),
                                             TOPIC,
                                             DIC,
                                             DF)
@@ -190,7 +191,8 @@ if __name__ == '__main__':
     # Make bar plot for the number of citations of top 100 articles
     # in each category
     DIC_ALL_CITATIONS = utils.all_citations_js(DIC)
-    markdown_text = create_template("../../templates/overview.txt",
+    markdown_text = create_template(
+                                    ("../../templates","overview.txt"),
                                     TOPIC,
                                     DIC,
                                     DF,

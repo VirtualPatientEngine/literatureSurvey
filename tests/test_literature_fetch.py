@@ -125,10 +125,11 @@ def test_create_template() -> None:
             'query': 'query1'
         }
     }
-    html = literature_fetch.create_template("templates/category.txt",
-                                                    "category1",
-                                                    dic,
-                                                    df)
+    html = literature_fetch.create_template(
+                                            ("templates/","category.txt"),
+                                            "category1",
+                                            dic,
+                                            df)
     occurrences = assert_keyword_in_html(html, "title1")
     assert occurrences
 
@@ -136,7 +137,8 @@ def test_create_template() -> None:
         'category1': 20,
         'category2': 30
     }
-    html = literature_fetch.create_template("templates/overview.txt",
+    html = literature_fetch.create_template(
+                                            ("templates/","overview.txt"),
                                             "category1",
                                             dic,
                                             df,
