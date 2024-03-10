@@ -19,7 +19,7 @@
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
     
     
-<title>Custom title goes here</title>
+<title>Literature Survey (VPE)</title>
 
     
       <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
@@ -40,6 +40,14 @@
   <link rel="stylesheet" href="https://cdn.datatables.net/2.0.1/css/dataTables.dataTables.css">
   <!-- Load plotly.js into the DOM -->
 	<script src='https://cdn.plot.ly/plotly-2.29.1.min.js'></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.0.1/css/buttons.dataTables.css">
+  <script src="https://cdn.datatables.net/buttons/3.0.1/js/dataTables.buttons.js"></script>
+  <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.dataTables.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+  <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.html5.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.print.min.js"></script>
 
 
   <!-- 
@@ -226,7 +234,7 @@
   
     
   
-  All
+  Overview
 
       </a>
     </li>
@@ -393,7 +401,7 @@
         
   
   <span class="md-ellipsis">
-    All
+    Overview
   </span>
   
 
@@ -2428,10 +2436,28 @@
     
 <script>
   new DataTable('#table1', {
-    order: [[2, 'desc']]
+    order: [[5, 'desc']],
+    "columnDefs": [
+        {"className": "dt-center", "targets": "_all"}
+      ],
+    pageLength: 5,
+    layout: {
+        topStart: {
+            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+        }
+    }
   });
   new DataTable('#table2', {
-    order: [[1, 'desc']]
+    order: [[3, 'desc']],
+    "columnDefs": [
+        {"className": "dt-center", "targets": "_all"}
+      ],
+    pageLength: 5,
+    layout: {
+        topStart: {
+            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+        }
+    }
   });
 </script>
 
