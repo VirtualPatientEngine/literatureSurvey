@@ -1,3 +1,5 @@
+extra_css:
+- custom.css
 nav:
 - Overview: index.md
 - Physics-informed GNNs: Physics-informed_GNNs.md
