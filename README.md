@@ -20,7 +20,7 @@ Follow these simple steps to set up your literature survey repository:
 
 1. Click on the ```Use this template``` button to create your own repository based on this template.
 
-2. Open up the ```app/data/query.tsv``` file in your favorite code editor oe Excel.
+2. Open up the ```app/data/query.tsv``` file in your favorite code editor or Excel.
 
 3. Get creative! Under the title columns, give catchy titles to your sections and under the Query column, define their correspondng queries. Need help? Check out Semantic Scholar's query [parameter definition](https://api.semanticscholar.org/api-docs/#tag/Paper-Data/operation/get_graph_paper_bulk_search).
 
