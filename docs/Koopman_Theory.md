@@ -10,7 +10,7 @@ hide:
 
 <body>
   <p>
-  <i>This page was last updated on 2024-03-11 08:47:46 UTC</i>
+  <i>This page was last updated on 2024-03-11 14:07:02 UTC</i>
   </p>
 
   <p>
@@ -1167,7 +1167,7 @@ hide:
     
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/dc1eff12b5626efed014650127b6ef5f5172d90f">A Koopman operator-based prediction algorithm and its application to COVID-19 pandemic and influenza cases.</a></td>
-        <td>Igor Mezić, Z. Drmač, Nelida Črnjarić, Senka Maćešić, M. Fonoberova, Ryan Mohr, Allan M Avila, Iva Manojlović, Aleksandr Andrejcuk</td>
+        <td>Igor Mezic, Z. Drmač, Nelida Črnjarić, S. Macesic, M. Fonoberova, Ryan Mohr, A. Avila, Iva Manojlovic, Aleksandr Andrejcuk</td>
         <td>2024-03-09</td>
         <td>Scientific reports</td>
         <td>0</td>

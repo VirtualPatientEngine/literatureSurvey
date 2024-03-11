@@ -10,7 +10,7 @@ hide:
 
 <body>
   <p>
-  <i>This page was last updated on 2024-03-11 08:47:29 UTC</i>
+  <i>This page was last updated on 2024-03-11 14:07:05 UTC</i>
   </p>
 
   <p>
@@ -23,7 +23,7 @@ hide:
 
   <p>
   <h3 id="search_query">1. Search query</h3>
-  <i>(neural ordinary differential equation) | (neural ODE) | (graph neural differential equation) | (graph neural diffusion) | (graph neural ODEs)</i>
+  <i>(neural ordinary differential equation) | (neural ODE) | (graph neural differential equation) | (graph neural diffusion) | (graph neural ODEs) | (neural ODE solvers)</i>
   </p>
   
   <p>
