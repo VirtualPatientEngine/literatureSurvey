@@ -24,7 +24,7 @@ BASE_PARAMS = {
     # 'sort': 'citationCount:desc',
     'token': None
 }
-N = 7
+N = 100
 DIC = {}
 
 def fetch_articles(search_query,
