@@ -10,7 +10,7 @@ hide:
 
 <body>
   <p>
-  <i>This page was last updated on 2024-03-10 13:33:35 CET/CEST</i>
+  <i>This page was last updated on 2024-03-18 06:04:25 CET/CEST</i>
   </p>
 
   <p>
@@ -49,79 +49,79 @@ hide:
     
       <tr>
       <script>
-      // alert (1562)
+      // alert (1572)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/bf657b5049c1a5c839369d3948ffb4c0584cd1d2">Hamiltonian Systems and Transformation in Hilbert Space.</a></td>
         <td>B. O. Koopman</td>
         <td>1931-05-01</td>
         <td>Proceedings of the National Academy of Sciences of the United States of America</td>
-        <td>1562</td>
+        <td>1572</td>
       </tr>
     
       <tr>
       <script>
-      // alert (1328)
+      // alert (1331)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/10cab2f43c29fe12e5a0d0718eb6e1ff8c9d4777">A Data–Driven Approximation of the Koopman Operator: Extending Dynamic Mode Decomposition</a></td>
         <td>Matthew O. Williams, I. Kevrekidis, C. Rowley</td>
         <td>2014-08-19</td>
         <td>Journal of Nonlinear Science</td>
-        <td>1328</td>
+        <td>1331</td>
       </tr>
     
       <tr>
       <script>
-      // alert (901)
+      // alert (909)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/6adeda1af8abc6bc3c17c0b39f635a845476cd9f">Deep learning for universal linear embeddings of nonlinear dynamics</a></td>
         <td>Bethany Lusch, J. Kutz, S. Brunton</td>
         <td>2017-12-27</td>
         <td>Nature Communications</td>
-        <td>901</td>
+        <td>909</td>
       </tr>
     
       <tr>
       <script>
-      // alert (785)
+      // alert (786)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/7e54d86fb36907b99ef0580bfaea9b43c5942ae7">Entanglement renormalization.</a></td>
         <td>G. Vidal</td>
         <td>2005-12-08</td>
         <td>Physical review letters</td>
-        <td>785</td>
+        <td>786</td>
       </tr>
     
       <tr>
       <script>
-      // alert (696)
+      // alert (697)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/2c9be1e38f978f43427ea5293b3138e0c4fede71">Applied Koopmanism.</a></td>
         <td>M. Budišić, Ryan Mohr, I. Mezić</td>
         <td>2012-06-14</td>
         <td>Chaos</td>
-        <td>696</td>
+        <td>697</td>
       </tr>
     
       <tr>
       <script>
-      // alert (658)
+      // alert (659)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/b90161898ff5ef4236f1c19a5c88138e1c80c5ea">CT Imaging of the 2019 Novel Coronavirus (2019-nCoV) Pneumonia</a></td>
         <td>J. Lei, Junfeng Li, Xun Li, X. Qi</td>
         <td>2020-01-31</td>
         <td>Radiology</td>
-        <td>658</td>
+        <td>659</td>
       </tr>
     
       <tr>
       <script>
-      // alert (643)
+      // alert (646)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/82e19123c7fdf1c047531eec5bce6f925dcc5ad5">Variants of Dynamic Mode Decomposition: Boundary Condition, Koopman, and Fourier Analyses</a></td>
         <td>Kevin K. Chen, Jonathan H. Tu, C. Rowley</td>
         <td>2012-04-27</td>
         <td>Journal of Nonlinear Science</td>
-        <td>643</td>
+        <td>646</td>
       </tr>
     
   </tbody>
@@ -143,6 +143,46 @@ hide:
   <tbody>
     
       <tr>
+        <td><a href="https://www.semanticscholar.org/paper/5d83d4ab8d2cc5a3c99e2feabb071411a85d2761">Deep bilinear Koopman realization for dynamics modeling and predictive control</a></td>
+        <td>Meixi Wang, Xuyang Lou, B. Cui</td>
+        <td>2024-03-15</td>
+        <td>International Journal of Machine Learning and Cybernetics</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/a1ae30a75837899772d9938abeabed72a5dd0ace">The Infopolitics of feeling: How race and disability are configured in Emotion Recognition Technology</a></td>
+        <td>Kerry McInerney, Os Keyes</td>
+        <td>2024-03-14</td>
+        <td>New Media &amp; Society</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/cdaefc5c58eef9baf908ef65fa810410363f1d64">Beyond trade statistics: how much do exports actually contribute to domestic value added?</a></td>
+        <td>Maria Llop</td>
+        <td>2024-03-13</td>
+        <td>Humanities and Social Sciences Communications</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/169c1192ebc64fd1c975b5b8f48b562cf4576207">Determination of dynamic characteristics of lattice structure using dynamic mode decomposition</a></td>
+        <td>Nary Savoeurn, Chettapong Janya-anurak, V. Uthaisangsuk</td>
+        <td>2024-03-13</td>
+        <td>Journal of Applied Mechanics</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/869bcb3dafc7188b38d5c2c614b4cb2f9fdd6d71">Model-Based Linear Control of Nonlinear Pneumatic Soft Bending Actuators</a></td>
+        <td>Jiajin Wang, Baoguo Xu, Jian-yang Lai, Xin Wang, Ye Lu, Cong Hu, Huijun Li, Aiguo Song</td>
+        <td>2024-03-07</td>
+        <td>Smart Materials and Structures</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
         <td><a href="https://www.semanticscholar.org/paper/cf4e03fdbc78190194b74a5e1ad20465c5dd6463">A Data-Driven Koopman Approach for Power System Nonlinear Dynamic Observability Analysis</a></td>
         <td>Yijun Xu, Qinling Wang, L. Mili, Zongsheng Zheng, W. Gu, Shuai Lu, Zhi Wu</td>
         <td>2024-03-01</td>
@@ -158,46 +198,6 @@ hide:
         <td>0</td>
       </tr>
     
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/c4f4b51173b5a3c6f49076b4a769324ac305da7c">Robust Learning and Control of Time-Delay Nonlinear Systems With Deep Recurrent Koopman Operators</a></td>
-        <td>Minghao Han, Zhaojian Li, Xiang Yin, Xunyuan Yin</td>
-        <td>2024-03-01</td>
-        <td>IEEE Transactions on Industrial Informatics</td>
-        <td>1</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/b5f96d19a20f448255c0e361b01caf9aeff87938">Improving potential energy surfaces using measured Feshbach resonance states</a></td>
-        <td>Karl P. Horn, Luis Itza Vazquez-Salazar, Christiane P. Koch, Markus Meuwly</td>
-        <td>2024-03-01</td>
-        <td>Science Advances</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/1a279d90354755f741f45618a5673e220a715fc7">Robust Three-Stage Dynamic Mode Decomposition for Analysis of Power System Oscillations</a></td>
-        <td>R. D. Rodriguez-Soto, E. Barocio, F. Gonzalez-Longatt, F. R. Segundo Sevilla, P. Korba</td>
-        <td>2024-03-01</td>
-        <td>IEEE Transactions on Power Systems</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/15757b898cf9ba88030c73486a039b5b296a118b">Data-Driven Transient Stability Evaluation of Electric Distribution Networks Dominated by EV Supercharging Stations</a></td>
-        <td>Jimiao Zhang, Jie Li</td>
-        <td>2024-03-01</td>
-        <td>IEEE Transactions on Smart Grid</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/1d4ea3a7943c108bee09f107e42ffdf0fd3cfde3">Approximation of discrete and orbital Koopman operators over subsets and manifolds</a></td>
-        <td>Andrew J. Kurdila, S. Paruchuri, Nathan Powell, Jia Guo, Parag Bobade, Boone Estes, Haoran Wang</td>
-        <td>2024-02-22</td>
-        <td>Nonlinear Dynamics</td>
-        <td>0</td>
-      </tr>
-    
   </tbody>
   </table>
   </p>
@@ -207,14 +207,14 @@ hide:
 <script>
   var trace1 = {
   x: ['1927', '1929', '1930', '1931', '1932', '1933', '1938', '1942', '1951', '1953', '1954', '1955', '1958', '1959', '1962', '1963', '1965', '1966', '1967', '1968', '1969', '1970', '1971', '1972', '1973', '1974', '1975', '1977', '1979', '1980', '1981', '1982', '1983', '1984', '1986', '1987', '1988', '1989', '1990', '1991', '1992', '1993', '1994', '1995', '1996', '1997', '1998', '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
-  y: [1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1, 1, 2, 1, 1, 2, 1, 3, 2, 1, 1, 1, 2, 1, 3, 2, 1, 3, 1, 2, 1, 1, 2, 3, 2, 5, 2, 4, 3, 11, 3, 6, 8, 3, 6, 7, 4, 5, 10, 11, 11, 17, 17, 17, 20, 18, 18, 24, 20, 28, 31, 45, 47, 72, 65, 81, 95, 93, 56, 26, 1],
+  y: [1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1, 1, 2, 1, 1, 2, 1, 3, 2, 1, 1, 1, 2, 1, 3, 2, 1, 3, 1, 2, 1, 1, 2, 3, 2, 5, 2, 4, 3, 11, 3, 6, 8, 3, 6, 7, 4, 5, 10, 11, 11, 17, 17, 17, 20, 18, 18, 24, 20, 28, 31, 45, 47, 72, 65, 81, 95, 92, 58, 25, 1],
   name: 'Num of articles',
   type: 'scatter'
   };
 
   var trace2 = {
     x: ['1927', '1929', '1930', '1931', '1932', '1933', '1938', '1942', '1951', '1953', '1954', '1955', '1958', '1959', '1962', '1963', '1965', '1966', '1967', '1968', '1969', '1970', '1971', '1972', '1973', '1974', '1975', '1977', '1979', '1980', '1981', '1982', '1983', '1984', '1986', '1987', '1988', '1989', '1990', '1991', '1992', '1993', '1994', '1995', '1996', '1997', '1998', '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
-    y: [8, 27, 187, 1562, 5, 11, 10, 18, 27, 26, 39, 19, 9, 51, 80, 22, 30, 74, 12, 88, 232, 19, 11, 58, 38, 60, 37, 188, 31, 252, 11, 33, 45, 42, 53, 51, 230, 157, 19, 80, 49, 278, 73, 468, 453, 108, 485, 810, 144, 255, 547, 617, 337, 2363, 806, 651, 772, 669, 1947, 746, 1830, 1652, 2732, 2141, 3031, 5015, 2327, 2302, 2736, 2101, 791, 238, 6],
+    y: [8, 27, 188, 1572, 5, 11, 10, 18, 27, 26, 39, 19, 9, 51, 80, 22, 30, 74, 12, 88, 232, 19, 11, 58, 38, 60, 37, 187, 31, 252, 11, 33, 45, 43, 53, 51, 231, 157, 19, 80, 49, 278, 73, 468, 453, 109, 485, 811, 144, 255, 548, 617, 337, 2364, 809, 650, 772, 668, 1951, 746, 1833, 1654, 2739, 2147, 3043, 5035, 2340, 2313, 2748, 2112, 817, 235, 6],
     name: 'Num of citations',
     yaxis: 'y2',
     type: 'scatter'

@@ -10,7 +10,7 @@ hide:
 
 <body>
   <p>
-  <i>This page was last updated on 2024-03-10 13:33:38 CET/CEST</i>
+  <i>This page was last updated on 2024-03-18 06:04:27 CET/CEST</i>
   </p>
 
   <p>
@@ -60,7 +60,7 @@ hide:
         <td>Yann LeCun, L. Bottou, Yoshua Bengio, P. Haffner</td>
         <td></td>
         <td>Proc. IEEE</td>
-        <td>46107</td>
+        <td>46228</td>
       </tr>
     
       <tr>
@@ -68,7 +68,7 @@ hide:
         <td>D. Watts, S. Strogatz</td>
         <td></td>
         <td>Nature</td>
-        <td>38536</td>
+        <td>38560</td>
       </tr>
     
       <tr>
@@ -76,7 +76,7 @@ hide:
         <td>Thomas Kipf, M. Welling</td>
         <td></td>
         <td>ArXiv</td>
-        <td>22197</td>
+        <td>22282</td>
       </tr>
     
       <tr>
@@ -84,15 +84,7 @@ hide:
         <td>R. Albert, A. Barabási</td>
         <td></td>
         <td>ArXiv</td>
-        <td>18835</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/e6c4925fb114d13a8568f88957c167c928f0c9f1">The Structure and Function of Complex Networks</a><br></td>
-        <td>M. Newman</td>
-        <td></td>
-        <td>SIAM Rev.</td>
-        <td>16802</td>
+        <td>18843</td>
       </tr>
     
       <tr>
@@ -100,7 +92,15 @@ hide:
         <td>Martín Abadi, P. Barham, Jianmin Chen, Z. Chen, Andy Davis, J. Dean, M. Devin, Sanjay Ghemawat, G. Irving, M. Isard, M. Kudlur, J. Levenberg, R. Monga, Sherry Moore, D. Murray, Benoit Steiner, P. Tucker, Vijay Vasudevan, P. Warden, M. Wicke, Yuan Yu, Xiaoqiang Zhang</td>
         <td></td>
         <td>USENIX Symposium on Operating Systems Design and Implementation</td>
-        <td>16788</td>
+        <td>16806</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/e6c4925fb114d13a8568f88957c167c928f0c9f1">The Structure and Function of Complex Networks</a><br></td>
+        <td>M. Newman</td>
+        <td></td>
+        <td>SIAM Rev.</td>
+        <td>16797</td>
       </tr>
     
       <tr>
@@ -108,7 +108,7 @@ hide:
         <td>M. Girvan, M. Newman</td>
         <td></td>
         <td>Proceedings of the National Academy of Sciences of the United States of America</td>
-        <td>14283</td>
+        <td>14293</td>
       </tr>
     
   </tbody>
@@ -130,10 +130,26 @@ hide:
   <tbody>
     
       <tr>
+        <td><a href="https://www.semanticscholar.org/paper/c65a28e3cf3af4a7094eeea1ef0d1fe6883f78ce">A graph-based neural network approach to integrate multi-source data for urban building function classification</a><br></td>
+        <td>Bo Kong, Tinghua Ai, Xinyan Zou, Xiongfeng Yan, Min Yang</td>
+        <td></td>
+        <td>Computers, Environment and Urban Systems</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
         <td><a href="https://www.semanticscholar.org/paper/04744b6893487a608e3726fb4542e2a7f9e81a5b">Hierarchical spatio-temporal graph convolutional neural networks for traffic data imputation</a><br></td>
         <td>Dongwei Xu, Hang Peng, Yufu Tang, Haifeng Guo</td>
         <td></td>
         <td>Information Fusion</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/de686e7dd8943d86284a23094ad178e072549695">Graph Convolutional Networks based short-term load forecasting: Leveraging spatial information for improved accuracy</a><br></td>
+        <td>Haris Mansoor, M. S. Gull, Huzaifa Rauf, I. Shaikh, Muhammad Khalid, Naveed Arshad</td>
+        <td></td>
+        <td>Electric Power Systems Research</td>
         <td>0</td>
       </tr>
     
@@ -146,6 +162,14 @@ hide:
       </tr>
     
       <tr>
+        <td><a href="https://www.semanticscholar.org/paper/b4adcfa29630ee236cedc87b85cbbeefe31ad040">Node classification oriented Adaptive Multichannel Heterogeneous Graph Neural Network</a><br></td>
+        <td>Yuqi Li, Chuanfeng Jian, Guosheng Zang, Chunyao Song, Xiaojie Yuan</td>
+        <td></td>
+        <td>Knowledge-Based Systems</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
         <td><a href="https://www.semanticscholar.org/paper/a1a503c7c23502bebe94eb042b0ce9f8bdbb6504">MACNS: A generic graph neural network integrated deep reinforcement learning based multi-agent collaborative navigation system for dynamic trajectory planning</a><br></td>
         <td>Ziren Xiao, Peisong Li, Chang Liu, Honghao Gao, Xinheng Wang</td>
         <td></td>
@@ -154,35 +178,11 @@ hide:
       </tr>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/45cb2614652147789e18f1bc15d665977d2d1ee9">DawnGNN: Documentation augmented windows malware detection using graph neural network</a><br></td>
-        <td>Pengbin Feng, Le Gai, Li Yang, Qin Wang, Teng Li, Ning Xi, Jianfeng Ma</td>
+        <td><a href="https://www.semanticscholar.org/paper/801bad647949a5893847755a4e372a2f170bc178">A motion-aware and temporal-enhanced Spatial–Temporal Graph Convolutional Network for skeleton-based human action segmentation</a><br></td>
+        <td>Shurong Chai, Rahul Kumar Jain, Jiaqing Liu, Shiyu Teng, T. Tateyama, Yinhao Li, Yen-wei Chen</td>
         <td></td>
-        <td>Computers &amp; Security</td>
+        <td>Neurocomputing</td>
         <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/357677ec8b2223f049c45c7330633a5b85c2bc95">Multi-level Graph Memory Network Cluster Convolutional Recurrent Network for traffic forecasting</a><br></td>
-        <td>Le Sun, Wenzhang Dai, Muhammad Ghulam</td>
-        <td></td>
-        <td>Inf. Fusion</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/3383c82d39b88e5349d345e32e879806bd72d435">FairCare: Adversarial training of a heterogeneous graph neural network with attention mechanism to learn fair representations of electronic health records</a><br></td>
-        <td>Yan Wang, Ruochi Zhang, Qian Yang, Qiong Zhou, Shengde Zhang, Yusi Fan, Lan Huang, Kewei Li, Fengfeng Zhou</td>
-        <td></td>
-        <td>Information Processing &amp; Management</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/13a50769f110029fcb3390956789aec236071c53">Multi-criteria group decision making based on graph neural networks in Pythagorean fuzzy environment</a><br></td>
-        <td>Zhenhua Meng, Rongheng Lin, Budan Wu</td>
-        <td></td>
-        <td>Expert Systems with Applications</td>
-        <td>1</td>
       </tr>
     
   </tbody>
@@ -202,14 +202,14 @@ hide:
 <script>
   var trace1 = {
   x: ['1931', '1968', '1974', '1975', '1978', '1981', '1982', '1983', '1984', '1986', '1987', '1988', '1989', '1990', '1991', '1992', '1993', '1994', '1995', '1996', '1997', '1998', '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
-  y: [1, 1, 1, 1, 1, 1, 1, 2, 4, 3, 4, 3, 3, 2, 3, 4, 7, 6, 7, 6, 7, 7, 14, 17, 26, 25, 42, 28, 45, 43, 35, 47, 51, 54, 33, 27, 30, 23, 32, 38, 62, 80, 62, 51, 9, 2, 1],
+  y: [1, 1, 1, 1, 1, 1, 1, 2, 4, 3, 4, 3, 3, 2, 3, 4, 7, 6, 7, 5, 7, 7, 14, 17, 26, 25, 42, 27, 44, 43, 35, 48, 51, 54, 34, 27, 30, 23, 32, 38, 62, 80, 63, 51, 9, 2, 1],
   name: 'Num of articles',
   type: 'scatter'
   };
 
   var trace2 = {
     x: ['1931', '1968', '1974', '1975', '1978', '1981', '1982', '1983', '1984', '1986', '1987', '1988', '1989', '1990', '1991', '1992', '1993', '1994', '1995', '1996', '1997', '1998', '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
-    y: [1562, 817, 380, 575, 408, 1203, 430, 1876, 4186, 4528, 4095, 1996, 1599, 2288, 2079, 3077, 6311, 3070, 3633, 5033, 6148, 42248, 21212, 20703, 54596, 21506, 54733, 42836, 42771, 39443, 39605, 34466, 54299, 37491, 23836, 23019, 28965, 27122, 38649, 73511, 69151, 95171, 44366, 34107, 4699, 2086, 1034],
+    y: [1572, 818, 380, 575, 408, 1204, 429, 1876, 4188, 4531, 4095, 1996, 1601, 2286, 2079, 3079, 6313, 3069, 3638, 4676, 6154, 42274, 21213, 20724, 54628, 21527, 55034, 39865, 42475, 39473, 39624, 34853, 54371, 37540, 24216, 23065, 29035, 27190, 38724, 73725, 69450, 95660, 45001, 34423, 4745, 2091, 1029],
     name: 'Num of citations',
     yaxis: 'y2',
     type: 'scatter'
@@ -232,7 +232,7 @@ hide:
     var data = [
     {
       y: ['Neural_ODEs', 'Physics-informed_GNNs', 'Symbolic_regression', 'PINNs', 'Latent_Space_Simulator', 'Koopman_Theory'],
-      x: [49539, 1101318, 1576, 1501, 129884, 45411],
+      x: [49797, 1101407, 1579, 1515, 130148, 45555],
       type: 'bar',
       orientation: 'h'
       }
