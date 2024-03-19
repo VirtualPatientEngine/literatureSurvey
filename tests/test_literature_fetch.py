@@ -11,6 +11,12 @@ def test_fetch_articles() -> None:
     articles = literature_fetch.fetch_articles(search_query)
     assert articles[0]['title'] == "Attention is All you Need"
 
+def test_manually_curated_articles() -> None:
+    """Test fetch_manually_curates_articles function"""
+    curated_file = 'app/data/manually_curated_articles.tsv'
+    articles = literature_fetch.fetch_manually_curated_articles(curated_file)
+    assert len(articles) > 0
+
 def test_metrics_over_time_js() -> pd.DataFrame:
     """Test metrics_over_time function"""
     data = [
@@ -119,6 +125,18 @@ def test_create_template() -> None:
                     'title': 'title2',
                     'publicationDate': '2019-01-01',
                     'citationCount': 20
+                }
+            ],
+            'manually_curated_articles': [
+                {
+                    'title': 'title1',
+                    'publicationDate': '2019-03-01',
+                    'citationCount': 1
+                },
+                {
+                    'title': 'title2',
+                    'publicationDate': '2015-10-01',
+                    'citationCount': 0
                 }
             ],
             'title': 'title1',
