@@ -1,591 +1,7 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-      
-      
-      
-        <link rel="prev" href="../Neural_ODEs/">
-      
-      
-        <link rel="next" href="../Latent_Space_Simulator/">
-      
-      
-      <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
-    
-    
-<title>Literature Survey (VPE)</title>
-
-    
-      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
-      
-        
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
-      
-      
-
-
-    
-    
-  <!-- Add scripts that need to run before here -->
-  <!-- Add jquery script -->
-  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-  <!-- Add data table libraries -->
-  <script src="https://cdn.datatables.net/2.0.1/js/dataTables.js"></script>
-  <link rel="stylesheet" href="https://cdn.datatables.net/2.0.1/css/dataTables.dataTables.css">
-  <!-- Load plotly.js into the DOM -->
-	<script src='https://cdn.plot.ly/plotly-2.29.1.min.js'></script>
-  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.0.1/css/buttons.dataTables.css">
-  <!-- Already specified in mkdocs.yml -->
-  <!-- <link rel="stylesheet" href="../docs/custom.css"> -->
-  <script src="https://cdn.datatables.net/buttons/3.0.1/js/dataTables.buttons.js"></script>
-  <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.dataTables.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
-  <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.html5.min.js"></script>
-  <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.print.min.js"></script>
-
-
-  <!-- 
-      
-     -->
-  <!-- Add scripts that need to run afterwards here -->
-
-    
-      
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-      
-    
-    
-      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
-    
-      <link rel="stylesheet" href="../custom.css">
-    
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
-      
-
-    
-    
-    
-  </head>
-  
-  
-    
-    
-      
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="purple">
-  
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-    
-      
-
-<header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Literature Survey (Simulator)" class="md-header__button md-logo" aria-label="Literature Survey (Simulator)" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
-
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
-            Literature Survey (Simulator)
-          </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
-            
-              Koopman Theory
-            
-          </span>
-        </div>
-      </div>
-    </div>
-    
-      
-        <form class="md-header__option" data-md-component="palette">
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
-    
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
-    
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
-      </label>
-    
-  
-</form>
-      
-    
-    
-      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
-    
-      <div class="md-header__source">
-        <a href="https://github.com/VirtualPatientEngine/literatureSurvey" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-  </div>
-  <div class="md-source__repository">
-    LiteratureSurvey
-  </div>
-</a>
-      </div>
-    
-  </nav>
-  
-</header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-          
-            
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
-        
-  
-    
-  
-  Overview
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../Physics-informed_GNNs/" class="md-tabs__link">
-        
-  
-    
-  
-  Physics-informed GNNs
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../Neural_ODEs/" class="md-tabs__link">
-        
-  
-    
-  
-  Neural ODEs
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-    
-  
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
-        
-  
-    
-  
-  Koopman Theory
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../Latent_Space_Simulator/" class="md-tabs__link">
-        
-  
-    
-  
-  Latent Space Simulator
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../PINNs/" class="md-tabs__link">
-        
-  
-    
-  
-  PINNs
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../Symbolic_regression/" class="md-tabs__link">
-        
-  
-    
-  
-  Symbolic regression
-
-      </a>
-    </li>
-  
-
-      
-    </ul>
-  </div>
-</nav>
-          
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-  
-
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Literature Survey (Simulator)" class="md-nav__button md-logo" aria-label="Literature Survey (Simulator)" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
-
-    </a>
-    Literature Survey (Simulator)
-  </label>
-  
-    <div class="md-nav__source">
-      <a href="https://github.com/VirtualPatientEngine/literatureSurvey" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-  </div>
-  <div class="md-source__repository">
-    LiteratureSurvey
-  </div>
-</a>
-    </div>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Overview
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Physics-informed_GNNs/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Physics-informed GNNs
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Neural_ODEs/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Neural ODEs
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Koopman Theory
-  </span>
-  
-
-      </a>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Latent_Space_Simulator/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Latent Space Simulator
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../PINNs/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    PINNs
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Symbolic_regression/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Symbolic regression
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-  </ul>
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-                
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-  
-  
-
-
-  <h1>Koopman Theory</h1>
-
+---
+hide:
+ - navigation
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -609,7 +25,7 @@
   <h3 id="search_query">1. Search query</h3>
   <i>(koopman*) | (transformations in hilbert space) | (linear transformation of PDEs) | (regularization of physics-informed machine learning)</i>
   </p>
-
+  
   <p>
   <h3 id="plot1">2. Koopman Theory articles and citations over time</h3>
     <div id='myDiv1'>
@@ -630,7 +46,7 @@
     </tr>
   </thead>
   <tbody>
-
+    
       <tr>
       <script>
       // alert (1575)
@@ -641,7 +57,7 @@
         <td>Proceedings of the National Academy of Sciences of the United States of America</td>
         <td>1575</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (1334)
@@ -652,7 +68,7 @@
         <td>Journal of Nonlinear Science</td>
         <td>1334</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (912)
@@ -663,7 +79,7 @@
         <td>Nature Communications</td>
         <td>912</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (786)
@@ -674,7 +90,7 @@
         <td>Physical review letters</td>
         <td>786</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (698)
@@ -685,7 +101,7 @@
         <td>Chaos</td>
         <td>698</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (659)
@@ -696,7 +112,7 @@
         <td>Radiology</td>
         <td>659</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (646)
@@ -707,7 +123,7 @@
         <td>Journal of Nonlinear Science</td>
         <td>646</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (641)
@@ -718,7 +134,7 @@
         <td>Autom.</td>
         <td>641</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (596)
@@ -729,7 +145,7 @@
         <td>Numerical Algorithms</td>
         <td>596</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (486)
@@ -740,7 +156,7 @@
         <td>Proceedings of the 51st Annual ACM SIGACT Symposium on Theory of Computing</td>
         <td>486</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (455)
@@ -751,7 +167,7 @@
         <td>Information processing in medical imaging : proceedings of the ... conference</td>
         <td>455</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (434)
@@ -762,7 +178,7 @@
         <td>PLoS ONE</td>
         <td>434</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (421)
@@ -773,7 +189,7 @@
         <td>IEEE Transactions on Geoscience and Remote Sensing</td>
         <td>421</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (418)
@@ -784,7 +200,7 @@
         <td>Physical review. A, Atomic, molecular, and optical physics</td>
         <td>418</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (416)
@@ -795,7 +211,7 @@
         <td>Nature Communications</td>
         <td>416</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (404)
@@ -806,7 +222,7 @@
         <td>Proc. IEEE</td>
         <td>404</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (362)
@@ -817,7 +233,7 @@
         <td>Genes & development</td>
         <td>362</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (353)
@@ -828,7 +244,7 @@
         <td>The Journal of chemical physics</td>
         <td>353</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (339)
@@ -839,7 +255,7 @@
         <td>Proceedings of the National Academy of Sciences of the United States of America</td>
         <td>339</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (339)
@@ -850,7 +266,7 @@
         <td>SIAM J. Appl. Dyn. Syst.</td>
         <td>339</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (337)
@@ -861,7 +277,7 @@
         <td>Neural Information Processing Systems</td>
         <td>337</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (326)
@@ -872,7 +288,7 @@
         <td>Physical chemistry chemical physics : PCCP</td>
         <td>326</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (324)
@@ -883,7 +299,7 @@
         <td>International Symposium on Spatial and Temporal Databases</td>
         <td>324</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (323)
@@ -894,7 +310,7 @@
         <td>Genes & Development</td>
         <td>323</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (321)
@@ -905,7 +321,7 @@
         <td>Chaos</td>
         <td>321</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (315)
@@ -916,7 +332,7 @@
         <td>Physical review letters</td>
         <td>315</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (315)
@@ -927,7 +343,7 @@
         <td>ArXiv</td>
         <td>315</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (312)
@@ -938,7 +354,7 @@
         <td>Journal of the American Chemical Society</td>
         <td>312</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (303)
@@ -949,7 +365,7 @@
         <td>2019 American Control Conference (ACC)</td>
         <td>303</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (297)
@@ -960,7 +376,7 @@
         <td>IEEE Transactions on Image Processing</td>
         <td>297</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (297)
@@ -971,7 +387,7 @@
         <td>Nature</td>
         <td>297</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (294)
@@ -982,7 +398,7 @@
         <td>International Conference on Machine Learning</td>
         <td>294</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (289)
@@ -993,7 +409,7 @@
         <td>Journal of Nonlinear Science</td>
         <td>289</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (268)
@@ -1004,7 +420,7 @@
         <td>Nature</td>
         <td>268</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (262)
@@ -1015,7 +431,7 @@
         <td>SIAM J. Optim.</td>
         <td>262</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (255)
@@ -1026,7 +442,7 @@
         <td>Machine Learning: Science and Technology</td>
         <td>255</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (255)
@@ -1037,7 +453,7 @@
         <td>ArXiv</td>
         <td>255</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (254)
@@ -1048,7 +464,7 @@
         <td>SIAM J. Appl. Dyn. Syst.</td>
         <td>254</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (251)
@@ -1059,7 +475,7 @@
         <td>Physical review letters</td>
         <td>251</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (250)
@@ -1070,7 +486,7 @@
         <td>Physical review. B, Condensed matter</td>
         <td>250</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (232)
@@ -1081,7 +497,7 @@
         <td>SIAM Rev.</td>
         <td>232</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (228)
@@ -1092,7 +508,7 @@
         <td>SIAM J. Appl. Dyn. Syst.</td>
         <td>228</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (218)
@@ -1103,7 +519,7 @@
         <td>International Journal of Computer Vision</td>
         <td>218</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (215)
@@ -1114,7 +530,7 @@
         <td>Proceedings of the National Academy of Sciences of the United States of America</td>
         <td>215</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (212)
@@ -1125,7 +541,7 @@
         <td>Journal of chemical theory and computation</td>
         <td>212</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (211)
@@ -1136,7 +552,7 @@
         <td>IEEE Transactions on Automatic Control</td>
         <td>211</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (207)
@@ -1147,7 +563,7 @@
         <td>IEEE Transactions on Image Processing</td>
         <td>207</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (197)
@@ -1158,7 +574,7 @@
         <td>Journal of Nonlinear Science</td>
         <td>197</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (197)
@@ -1169,7 +585,7 @@
         <td>PLoS Pathogens</td>
         <td>197</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (196)
@@ -1180,7 +596,7 @@
         <td>IEEE Concurrency</td>
         <td>196</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (188)
@@ -1191,7 +607,7 @@
         <td>Proceedings of the National Academy of Sciences of the United States of America</td>
         <td>188</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (181)
@@ -1202,7 +618,7 @@
         <td>Biometrics</td>
         <td>181</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (181)
@@ -1213,7 +629,7 @@
         <td>Entropy</td>
         <td>181</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (173)
@@ -1224,7 +640,7 @@
         <td>Physical chemistry chemical physics : PCCP</td>
         <td>173</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (171)
@@ -1235,7 +651,7 @@
         <td>2013 IEEE Conference on Computer Vision and Pattern Recognition</td>
         <td>171</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (171)
@@ -1246,7 +662,7 @@
         <td>The journal of physical chemistry. A</td>
         <td>171</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (170)
@@ -1257,7 +673,7 @@
         <td>The Journal of chemical physics</td>
         <td>170</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (167)
@@ -1268,7 +684,7 @@
         <td>Constructive Approximation</td>
         <td>167</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (166)
@@ -1279,7 +695,7 @@
         <td>Brain : a journal of neurology</td>
         <td>166</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (166)
@@ -1290,7 +706,7 @@
         <td>Physical review letters</td>
         <td>166</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (163)
@@ -1301,7 +717,7 @@
         <td>Journal of Internal Medicine</td>
         <td>163</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (157)
@@ -1312,7 +728,7 @@
         <td>Obesity Surgery</td>
         <td>157</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (151)
@@ -1323,7 +739,7 @@
         <td>Autom.</td>
         <td>151</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (134)
@@ -1334,7 +750,7 @@
         <td>ArXiv</td>
         <td>134</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (129)
@@ -1345,7 +761,7 @@
         <td>Journal of the American Society of Nephrology : JASN</td>
         <td>129</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (127)
@@ -1356,7 +772,7 @@
         <td>Journal of Nonlinear Science</td>
         <td>127</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (127)
@@ -1367,7 +783,7 @@
         <td>Evolution</td>
         <td>127</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (124)
@@ -1378,7 +794,7 @@
         <td>IEEE Transactions on Neural Networks and Learning Systems</td>
         <td>124</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (123)
@@ -1389,7 +805,7 @@
         <td>The FASEB Journal</td>
         <td>123</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (118)
@@ -1400,7 +816,7 @@
         <td>The journal of physical chemistry. A</td>
         <td>118</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (115)
@@ -1411,7 +827,7 @@
         <td>Scientific Reports</td>
         <td>115</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (114)
@@ -1422,7 +838,7 @@
         <td>ArXiv</td>
         <td>114</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (114)
@@ -1433,7 +849,7 @@
         <td>Physical review letters</td>
         <td>114</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (114)
@@ -1444,7 +860,7 @@
         <td>SIAM J. Appl. Dyn. Syst.</td>
         <td>114</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (111)
@@ -1455,7 +871,7 @@
         <td>IEEE Transactions on Robotics</td>
         <td>111</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (108)
@@ -1466,7 +882,7 @@
         <td>Chaos</td>
         <td>108</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (104)
@@ -1477,7 +893,7 @@
         <td>The Journal of chemical physics</td>
         <td>104</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (103)
@@ -1488,7 +904,7 @@
         <td>Eur. J. Control</td>
         <td>103</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (102)
@@ -1499,7 +915,7 @@
         <td>IEEE Transactions on Robotics</td>
         <td>102</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (101)
@@ -1510,7 +926,7 @@
         <td>2016 IEEE 55th Conference on Decision and Control (CDC)</td>
         <td>101</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (99)
@@ -1521,7 +937,7 @@
         <td>Journal of Nonlinear Science</td>
         <td>99</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (99)
@@ -1532,7 +948,7 @@
         <td>Journal of the American Chemical Society</td>
         <td>99</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (99)
@@ -1543,7 +959,7 @@
         <td>IEEE Transactions on Automatic Control</td>
         <td>99</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (98)
@@ -1554,7 +970,7 @@
         <td>Physical review. D, Particles and fields</td>
         <td>98</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (97)
@@ -1565,7 +981,7 @@
         <td>ArXiv</td>
         <td>97</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (95)
@@ -1576,7 +992,7 @@
         <td>The Journal of chemical physics</td>
         <td>95</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (95)
@@ -1587,7 +1003,7 @@
         <td>Journal of chemical theory and computation</td>
         <td>95</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (94)
@@ -1598,7 +1014,7 @@
         <td>Journal of Intelligent Manufacturing</td>
         <td>94</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (94)
@@ -1609,7 +1025,7 @@
         <td>The Journal of organic chemistry</td>
         <td>94</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (94)
@@ -1620,7 +1036,7 @@
         <td>IEEE Transactions on Audio, Speech, and Language Processing</td>
         <td>94</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (94)
@@ -1631,7 +1047,7 @@
         <td>2016 IEEE 55th Conference on Decision and Control (CDC)</td>
         <td>94</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (93)
@@ -1642,7 +1058,7 @@
         <td>The Journal of chemical physics</td>
         <td>93</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (93)
@@ -1653,7 +1069,7 @@
         <td>ArXiv</td>
         <td>93</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (92)
@@ -1664,7 +1080,7 @@
         <td>Synthese</td>
         <td>92</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (91)
@@ -1675,7 +1091,7 @@
         <td>Numer. Linear Algebra Appl.</td>
         <td>91</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (90)
@@ -1686,7 +1102,7 @@
         <td>Journal of Optimization Theory and Applications</td>
         <td>90</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (90)
@@ -1697,7 +1113,7 @@
         <td>The FASEB Journal</td>
         <td>90</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (90)
@@ -1708,7 +1124,7 @@
         <td>Mammalian Genome</td>
         <td>90</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (88)
@@ -1719,7 +1135,7 @@
         <td>Reports on Progress in Physics</td>
         <td>88</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (88)
@@ -1730,7 +1146,7 @@
         <td>The Journal of chemical physics</td>
         <td>88</td>
       </tr>
-
+    
   </tbody>
   </table>
   </p>
@@ -1748,7 +1164,7 @@
     </tr>
   </thead>
   <tbody>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/5d83d4ab8d2cc5a3c99e2feabb071411a85d2761">Deep bilinear Koopman realization for dynamics modeling and predictive control</a></td>
         <td>Meixi Wang, X. Lou, B. Cui</td>
@@ -1756,7 +1172,7 @@
         <td>International Journal of Machine Learning and Cybernetics</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a1ae30a75837899772d9938abeabed72a5dd0ace">The Infopolitics of feeling: How race and disability are configured in Emotion Recognition Technology</a></td>
         <td>Kerry McInerney, O. Keyes</td>
@@ -1764,7 +1180,7 @@
         <td>New Media &amp; Society</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/cdaefc5c58eef9baf908ef65fa810410363f1d64">Beyond trade statistics: how much do exports actually contribute to domestic value added?</a></td>
         <td>Maria Llop</td>
@@ -1772,7 +1188,7 @@
         <td>Humanities and Social Sciences Communications</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/169c1192ebc64fd1c975b5b8f48b562cf4576207">Determination of dynamic characteristics of lattice structure using dynamic mode decomposition</a></td>
         <td>Nary Savoeurn, Chettapong Janya-anurak, V. Uthaisangsuk</td>
@@ -1780,7 +1196,7 @@
         <td>Journal of Applied Mechanics</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/869bcb3dafc7188b38d5c2c614b4cb2f9fdd6d71">Model-Based Linear Control of Nonlinear Pneumatic Soft Bending Actuators</a></td>
         <td>Jiajin Wang, Baoguo Xu, Jian-yang Lai, Xin Wang, Ye Lu, Cong Hu, Huijun Li, Aiguo Song</td>
@@ -1788,7 +1204,7 @@
         <td>Smart Materials and Structures</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/cf4e03fdbc78190194b74a5e1ad20465c5dd6463">A Data-Driven Koopman Approach for Power System Nonlinear Dynamic Observability Analysis</a></td>
         <td>Yijun Xu, Qinling Wang, L. Mili, Zongsheng Zheng, W. Gu, Shuai Lu, Zhi Wu</td>
@@ -1796,7 +1212,7 @@
         <td>IEEE Transactions on Power Systems</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/cabacb5b65447bbb8ef5f0f82c37cd1a66cf2282">A Monte Carlo Approach to Koopman Direct Encoding and Its Application to the Learning of Neural-Network Observables</a></td>
         <td>Itta Nozawa, Emily Kamienski, Cormac O’Neill, H. H. Asada</td>
@@ -1804,7 +1220,7 @@
         <td>IEEE Robotics and Automation Letters</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/c4f4b51173b5a3c6f49076b4a769324ac305da7c">Robust Learning and Control of Time-Delay Nonlinear Systems With Deep Recurrent Koopman Operators</a></td>
         <td>Minghao Han, Zhaojian Li, Xiang Yin, Xunyuan Yin</td>
@@ -1812,7 +1228,7 @@
         <td>IEEE Transactions on Industrial Informatics</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/b5f96d19a20f448255c0e361b01caf9aeff87938">Improving potential energy surfaces using measured Feshbach resonance states</a></td>
         <td>Karl P. Horn, Luis Itza Vazquez-Salazar, Christiane P. Koch, Markus Meuwly</td>
@@ -1820,7 +1236,7 @@
         <td>Science Advances</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/7b13153162fb6627d232cd11512a5b8875287fd9">Koopman Operator theory applied to Lambert’s problem with a spectral behavior analysis</a></td>
         <td>Julia Pasiecznik, Simone Servadio, Richard Linares</td>
@@ -1828,7 +1244,7 @@
         <td>Acta Astronautica</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/1a279d90354755f741f45618a5673e220a715fc7">Robust Three-Stage Dynamic Mode Decomposition for Analysis of Power System Oscillations</a></td>
         <td>R. D. Rodriguez-Soto, E. Barocio, F. Gonzalez-Longatt, F. R. Segundo Sevilla, P. Korba</td>
@@ -1836,7 +1252,7 @@
         <td>IEEE Transactions on Power Systems</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/15757b898cf9ba88030c73486a039b5b296a118b">Data-Driven Transient Stability Evaluation of Electric Distribution Networks Dominated by EV Supercharging Stations</a></td>
         <td>Jimiao Zhang, Jie Li</td>
@@ -1844,7 +1260,7 @@
         <td>IEEE Transactions on Smart Grid</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/0f9b984c9aadd0f47c91f89041ca45fbfd9d6642">Taxonomical and distributional considerations for the Artibeus species (Chiroptera: Phyllostomidae) from the Tres Marias Islands, Mexico</a></td>
         <td>Issachar L. López-Cuamatzi, M. MacSwiney G., Sandra Milena Ospina-Garcés, Jorge Ortega</td>
@@ -1852,7 +1268,7 @@
         <td>Barbastella</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/1d4ea3a7943c108bee09f107e42ffdf0fd3cfde3">Approximation of discrete and orbital Koopman operators over subsets and manifolds</a></td>
         <td>Andrew J. Kurdila, S. Paruchuri, Nathan Powell, Jia Guo, Parag Bobade, Boone Estes, Haoran Wang</td>
@@ -1860,7 +1276,7 @@
         <td>Nonlinear Dynamics</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/8fc588323ba32123f635b9c7f7c1568a3f09ab38">Learning Hamiltonian neural Koopman operator and simultaneously sustaining and discovering conservation laws</a></td>
         <td>Jingdong Zhang, Qunxi Zhu, Wei Lin</td>
@@ -1868,7 +1284,7 @@
         <td>Physical Review Research</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f090e77e916fba1a8f28cd4c46a65b0f2c9ae494">Extraction of nonlinearity in neural networks and model compression with Koopman operator</a></td>
         <td>Naoki Sugishita, Kayo Kinjo, Jun Ohkubo</td>
@@ -1876,7 +1292,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a9b0c07ab4fc0a5a345be123a46ca00aa0118277">Kolmogorov n-Widths for Multitask Physics-Informed Machine Learning (PIML) Methods: Towards Robust Metrics</a></td>
         <td>Michael Penwarden, H. Owhadi, Robert M. Kirby</td>
@@ -1884,7 +1300,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/9424d83c2b06971eff0b21cbc50f8f5ae9f4c727">Machine Learning based Prediction of Ditching Loads</a></td>
         <td>Henning Schwarz, Micha Überrück, J. Zemke, Thomas Rung</td>
@@ -1892,7 +1308,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/5ad2d57fc06ca8f41ddc32c6c5717d88c4bcb76f">A243 BONE MINERAL DENSITY AND DIETARY BONE NUTRIENTS DIFFER IN PATIENTS WITH CROHN'S DISEASE STRICTURES</a></td>
         <td>A. Macci, J. Basit, R. Klassen, R. E. Rosentreter, K. Bindra, B. Lethebe, S. Boyd, E. Billington, M. Raman, L. Burt, C. Lu</td>
@@ -1900,7 +1316,7 @@
         <td>Journal of the Canadian Association of Gastroenterology</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d4681d4d963b743936aa0aaa7a5e3fb360b6b156">On a modified Hilbert transformation, the discrete inf-sup condition, and error estimates</a></td>
         <td>Richard Löscher, Olaf Steinbach, Marco Zank</td>
@@ -1908,7 +1324,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/e72ca908463c75bb3ac32329b3f9e0b7c40e4d41">Physics-informed machine learning as a kernel method</a></td>
         <td>Nathan Doumèche, Francis Bach, Claire Boyer, G'erard Biau</td>
@@ -1916,7 +1332,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/8f72ce63b9bd3addb39c1ee3c76b14d69b12bd38">Generalizing across Temporal Domains with Koopman Operators</a></td>
         <td>Qiuhao Zeng, Wei Wang, Fan Zhou, Gezheng Xu, Ruizhi Pu, Changjian Shui, Christian Gagné, Shichun Yang, Boyu Wang, C. Ling</td>
@@ -1924,7 +1340,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a757bfa279b5f257089be2bb56ee7ccb76fa0791">Artificial neural network of thermal Buoyancy and Fourier flux impact on suction/injection‐based Darcy medium surface filled with hybrid and ternary nanoparticles</a></td>
         <td>M. Dinesh Kumar, Chakravarthula Siva Krishnam Raju, Essam R. El-Zahar, N. A. Shah, S. Yook</td>
@@ -1932,7 +1348,7 @@
         <td>ZAMM - Journal of Applied Mathematics and Mechanics / Zeitschrift für Angewandte Mathematik und Mechanik</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/5da858df96b64f939190fb2a50612f9806891afe">Koopman fault‐tolerant model predictive control</a></td>
         <td>Mohammadhosein Bakhtiaridoust, Meysam Yadegar, Fatemeh Jahangiri</td>
@@ -1940,7 +1356,7 @@
         <td>IET Control Theory &amp; Applications</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/632f8136655d2e381172dc26b759a8727e885a8c">Radiative MHD Boundary Layer Flow and Heat Transfer Characteristics of Fe-Casson Base Nanofluid over Stretching/Shrinking Surface</a></td>
         <td>M. A. Memon, Kavikumar Jacob, H. B. Lanjwani, A. Obalalu, D. Nagarajan</td>
@@ -1948,7 +1364,7 @@
         <td>Defect and Diffusion Forum</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/e811b50f83b0024151ab6b419b1c6ae1ff0a4879">SafEDMD: A certified learning architecture tailored to data-driven control of nonlinear dynamical systems</a></td>
         <td>Robin Strässer, M. Schaller, K. Worthmann, J. Berberich, Frank Allgöwer</td>
@@ -1956,7 +1372,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/9c13e954ae81d12176ad3877a2d718e807f3b2c0">Glocal Hypergradient Estimation with Koopman Operator</a></td>
         <td>Ryuichiro Hataya, Yoshinobu Kawahara</td>
@@ -1964,7 +1380,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/ff1e7069b9967c8a67f1bd5378bb73b34617f041">Real-Time Constrained Tracking Control of Redundant Manipulators Using a Koopman-Zeroing Neural Network Framework</a></td>
         <td>Chandan Kumar Sah, Rajpal Singh, J. Keshavan</td>
@@ -1972,7 +1388,7 @@
         <td>IEEE Robotics and Automation Letters</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/8bb33f43f19ea9ce297da9843ab6cc3f6e2f0c27">Constructing polynomial libraries for reservoir computing in nonlinear dynamical system forecasting.</a></td>
         <td>Hu-Hu Ren, Yulong Bai, M. Fan, Lin Ding, Xiao-Xin Yue, Q. Yu</td>
@@ -1980,7 +1396,7 @@
         <td>Physical review. E</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/6a4ea3c36f7b3063b705fa79ffaaeae64b51c74f">Acoustic metamaterials for realizing a scalable multiple phi-bit unitary transformation</a></td>
         <td>K. Runge, P. A. Deymier, M. A. Hasan, T. Lata, J. Levine</td>
@@ -1988,7 +1404,7 @@
         <td>AIP Advances</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/5fd8a88bd962e7d33e2424756c07e53bf9e471f9">Uco Koopmans, je hebt gewoon een punt!</a></td>
         <td>Sjacko Sobczak</td>
@@ -1996,7 +1412,7 @@
         <td>De Psychiater</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/c09a3c39893961cdbd69aceb8b03bc43730a99e8">A Simulation Preorder for Koopman-like Lifted Control Systems</a></td>
         <td>A. Aspeel, N. Ozay</td>
@@ -2004,7 +1420,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/fc00873015d2dbee17446f0f6e059f83d46b734a">Koopman-based model predictive control with morphing surface: Regulating the flutter response of a foil with an active flap</a></td>
         <td>Tso-Kang Wang, K. Shoele</td>
@@ -2012,7 +1428,7 @@
         <td>Physical Review Fluids</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a6998a58725cbc04372137a8bd23f301aa0f43fc">Graph Koopman Autoencoder for Predictive Covert Communication Against UAV Surveillance</a></td>
         <td>S. Krishnan, Jihong Park, Gregory Sherman, Benjamin Campbell, Jinho Choi</td>
@@ -2020,7 +1436,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/20976df09f06e66b065c769b2b53d0d0c207c2ad">MHD Flow Darcy Forchheimeter of Jeffrey Nanofluid over a Stretching Sheet Considering Melting Heat Transfer and Viscous Dissipation heat transfe</a></td>
         <td>Naresh Kumar, Gandrakota Srinivasu, Balagnoor Srikantha setty, Mani Ramanuja</td>
@@ -2028,7 +1444,7 @@
         <td>CFD Letters</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d8bc5d8083f6675f7b05ee0e2308906975bd93f5">A multi-modality and multi-dyad approach to measuring flexibility in psychotherapy.</a></td>
         <td>Timur Guralnik, Robert G. Moulder, Daniel Merom, S. Zilcha-Mano</td>
@@ -2036,7 +1452,7 @@
         <td>Psychotherapy research : journal of the Society for Psychotherapy Research</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/edba0e52a6b3af758095d7fc40ac64985c63a2de">A LAPACK implementation of the Dynamic Mode Decomposition</a></td>
         <td>Z. Drmač</td>
@@ -2044,7 +1460,7 @@
         <td>ACM Transactions on Mathematical Software</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/c68e5a32783a623d36fa85ecdd2dea98d9256e7a">Dual-Loop Robust Control of Biased Koopman Operator Model by Noisy Data of Nonlinear Systems</a></td>
         <td>Anuj Pal, Tianyi He, Xiang Chen</td>
@@ -2052,7 +1468,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/0c2073f406aa934658b851e66db1c49b138e5af9">Learning Stable Koopman Embeddings for Identification and Control</a></td>
         <td>Fletcher Fan, Bowen Yi, David Rye, Guodong Shi, I. Manchester</td>
@@ -2060,7 +1476,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/bca721df670a45e1195e230fd5cd35d8a626008f">Time-certified Input-constrained NMPC via Koopman Operator</a></td>
         <td>Liang Wu, Krystian Ganko, Richard D. Braatz</td>
@@ -2068,7 +1484,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3dc1b2b319931bfad944f8ac1e53bf031e7e2fb7">Data-Driven Nonlinear Model Reduction Using Koopman Theory: Integrated Control Form and NMPC Case Study</a></td>
         <td>Jan C. Schulze, A. Mitsos</td>
@@ -2076,7 +1492,7 @@
         <td>IEEE Control Systems Letters</td>
         <td>6</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/455744009920dcc1b31aa37616484dece432b6ed">On the Convergence of Hermitian Dynamic Mode Decomposition</a></td>
         <td>Nicolas Boull'e, Matthew J. Colbrook</td>
@@ -2084,7 +1500,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/8e5cf1dc902b4abe3516a1f27c9d526dbc8c98fc">Significance of mixed convective double diffusive MHD stagnation point flow of nanofluid over a vertical surface with heat generation</a></td>
         <td>Ammara Islam, Zafar Mahmood, U. Khan</td>
@@ -2092,7 +1508,7 @@
         <td>Proceedings of the Institution of Mechanical Engineers, Part N: Journal of Nanomaterials, Nanoengineering and Nanosystems</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/0fb8e5ecd59acd713f61cc1b5534be9f5d996306">Heisenberg versus the Covariant String</a></td>
         <td>N. Dragon, F. Oppermann</td>
@@ -2100,7 +1516,7 @@
         <td>International Journal of Theoretical Physics</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/11219172cc9f4ad38137c98a7227b755790f18a4">Achieving Accuracy and Economy for Calculating Vertical Detachment Energies of Molecular Anions: A Model Chemistry Composite Methods.</a></td>
         <td>Xiaojuan Wang, Yi-hong Ding, Xiao Tian</td>
@@ -2108,7 +1524,7 @@
         <td>Chemphyschem : a European journal of chemical physics and physical chemistry</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/9bd35e932c7b368f1b792f3bf0b932e845aee0a5">Adaptive Boundary Observers for Hyperbolic PDEs With Application to Traffic Flow Estimation</a></td>
         <td>Jiahao Wu, Jingyuan Zhan, Liguo Zhang</td>
@@ -2116,7 +1532,7 @@
         <td>IEEE Transactions on Automatic Control</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/7f383ffc59a0706cb440304255b6babbef1dbdfc">Robust deep Koopman model predictive load frequency control of interconnected power systems</a></td>
         <td>Jun Zhou, Yubin Jia, Panxiao Yong, Zhimin Liu, Changyin Sun</td>
@@ -2124,7 +1540,7 @@
         <td>Electric Power Systems Research</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/6cb65d1b4f0ccec6e5f0cca28726442d50450e25">Data-driven modelling of brain activity using neural networks, diffusion maps, and the Koopman operator.</a></td>
         <td>I. Gallos, Daniel Lehmberg, Felix Dietrich, Constantinos Siettos</td>
@@ -2132,7 +1548,7 @@
         <td>Chaos</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/29121285c3ca1ce59f8be25687e4c28617f4d595">Koopman-based deep iISS bilinear parity approach for data-driven fault diagnosis: Experimental demonstration using three-tank system</a></td>
         <td>Fatemeh Negar Irani, Meysam Yadegar, N. Meskin</td>
@@ -2140,7 +1556,7 @@
         <td>Control Engineering Practice</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/0194529921b325e6b5a5ef924f99a69f26ff7a1b">Aspects of chemical reaction and mixed convection in ternary hybrid nanofluid with Marangoni convection and heat source</a></td>
         <td>M. Abbas, Nargis Khan, M. S. Hashmi, Mostafa Inc</td>
@@ -2148,7 +1564,7 @@
         <td>Modern Physics Letters B</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/fa273cfc9a69f0a476dc19f1f64187f32d84c9b8">Liberdade de expressão, discurso de ódio e mídia:</a></td>
         <td>Geziela Iensue, Gabrielly Alves Carvalho</td>
@@ -2156,7 +1572,7 @@
         <td>Revista Thesis Juris</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f7418bb3c8b094d86f862c7b88f1c9e8447e2fcd">Data-Driven Model Predictive Control for Uncalibrated Visual Servoing</a></td>
         <td>Tianjiao Han, Hongyu Zhu, Dan Yu</td>
@@ -2164,7 +1580,7 @@
         <td>Symmetry</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/dbe1c765c83d5026a933c2f138a7a534463b09d1">Estimation and Prediction of the Polymers’ Physical Characteristics Using the Machine Learning Models</a></td>
         <td>I. Malashin, V. Tynchenko, V.A. Nelyub, Aleksei Borodulin, Andrei P. Gantimurov</td>
@@ -2172,7 +1588,7 @@
         <td>Polymers</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/b2696edde0df597deece80dbd3c6ddc250976740">A randomized algorithm to solve reduced rank operator regression</a></td>
         <td>G. Turri, Vladimir Kostic, P. Novelli, M. Pontil</td>
@@ -2180,7 +1596,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/0145f9017cca288cd8e6c3c75238a32f23e47c01">Properties of Immersions for Systems with Multiple Limit Sets with Implications to Learning Koopman Embeddings</a></td>
         <td>Zexiang Liu, N. Ozay, E.D. Sontag</td>
@@ -2188,7 +1604,7 @@
         <td>ArXiv</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a09ca77f550c24ef83b8fe7571a3a0b2722e4baf">A data driven Koopman-Schur decomposition for computational analysis of nonlinear dynamics</a></td>
         <td>Z. Drmač, Igor Mezi'c</td>
@@ -2196,7 +1612,7 @@
         <td>ArXiv</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/53478fb641426b5b86233839193fe6cfea9cec5b">Uncertainty goes mainstream: Savage, Koopmans and the measurability of uncertainty at the Cowles Commission</a></td>
         <td>Carlo Zappia</td>
@@ -2204,7 +1620,7 @@
         <td>The European Journal of the History of Economic Thought</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/55500680ec76dcaf976e51e3c70bc6fa360a2f20">Engineering Gas Diffusion Electrode Microstructures for the Electrochemical Reduction of CO2</a></td>
         <td>Senan F. Amireh, R. Jacquemond, Antoni Forner-Cuenca</td>
@@ -2212,7 +1628,7 @@
         <td>ECS Meeting Abstracts</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f804421aaf3961e37b6487202cf8c6ecf0612b0e">MHD Casson Flow over a Non-Linear Convective Inclined Plate with Chemical Reaction and Arrhenius Activation Energy</a></td>
         <td>A. Akindele, A. Obalalu, A. Ogunsola, O. Ajala, Oladapo Olayinka Akeem</td>
@@ -2220,7 +1636,7 @@
         <td>Diffusion Foundations and Materials Applications</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/92fd959f255f93400a8bc9d26debf5a959ce2e42">Koopmon trajectories in nonadiabatic quantum-classical dynamics</a></td>
         <td>Werner Bauer, Paul Bergold, F. Gay-balmaz, C. Tronci</td>
@@ -2228,7 +1644,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/6bd0baa7c1b4d851b8654eade805ce3184dedd58">Consistent Long-Term Forecasting of Ergodic Dynamical Systems</a></td>
         <td>Prune Inzerilli, Vladimir Kostic, Karim Lounici, P. Novelli, M. Pontil</td>
@@ -2236,7 +1652,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/625b61d727488e670d9b80b82a1a8de430a78892">Effect of Forchheimer on Hydromagnetic Flow Inspired by Chemical Reaction Over an Accelerating Surface</a></td>
         <td>M. Girinath Reddy, P. A. Dinesh, A. S. Reddy, Uma Raju</td>
@@ -2244,7 +1660,7 @@
         <td>Journal of Mines, Metals and Fuels</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/5a22a15bb670131d74c298d8169ef94aadf1d418">Mixed Convection of a Hybrid Nanofluid Flow with Variable Thickness Sheet</a></td>
         <td>S. Sushma, M. Uma, B. N. Veena, N. Srikanth</td>
@@ -2252,7 +1668,7 @@
         <td>Journal of Mines, Metals and Fuels</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f9bb7373693e2cca576f45114cf2b026aa9cd6b3">On the Ramsey–Cass–Koopmans Problem for Consumer Choice</a></td>
         <td>A. I. Kozko, L. M. Luzhina, A. Y. Popov, V. Chirskii</td>
@@ -2260,7 +1676,7 @@
         <td>Journal of Mathematical Sciences</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/979fd535e7f64d36946e19d79121031c38a07195">Data-driven discovery with Limited Data Acquisition for fluid flow across cylinder</a></td>
         <td>Himanshu Singh</td>
@@ -2268,7 +1684,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d35dd9e435b86850e53d33512ccab76018376854">Robust Learning-Based Control for Uncertain Nonlinear Systems With Validation on a Soft Robot.</a></td>
         <td>Minghao Han, Kiwan Wong, Jacob Euler-Rolle, Lixian Zhang, Robert K. Katzschmann</td>
@@ -2276,7 +1692,7 @@
         <td>IEEE transactions on neural networks and learning systems</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/c9e443977b7b186676b5845208aebbf43b4fde47">Data‐driven parallel Koopman subsystem modeling and distributed moving horizon state estimation for large‐scale nonlinear processes</a></td>
         <td>Xiaojie Li, Song Bo, Xuewen Zhang, Yan Qin, Xunyuan Yin</td>
@@ -2284,7 +1700,7 @@
         <td>AIChE Journal</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a69c40726d453a79edf99965f8a7f73daa6a3808">Employee Performance in Aviation Industry Based on Koopman’s Individual Work Performance Questionnaire (IWPQ)</a></td>
         <td>L. Juariyah, Dimas Syah Putra, Syihabudhin</td>
@@ -2292,7 +1708,7 @@
         <td>INTERNATIONAL JOURNAL OF MULTIDISCIPLINARY RESEARCH AND ANALYSIS</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/89fffb56622b2ca454f76edb5aff2fdf23a57393">Numerical Investigation of Diffusion Thermo, Hall Current, Activation Energy and Soret of MHD Darcy-Forchheimer Casson Fluid Flow with Inclined Plates</a></td>
         <td>Gangadhar Goddubarla, Sharath Babu Kanday Rao, Srinivasa Kumar Vajha</td>
@@ -2300,7 +1716,7 @@
         <td>Journal of Advanced Research in Fluid Mechanics and Thermal Sciences</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/e18c2f25042a6f851297000b595238e758ecf36f">Convergent Dynamic Mode Decomposition</a></td>
         <td>Joel A. Rosenfeld, R. Kamalapurkar</td>
@@ -2308,7 +1724,7 @@
         <td>2023 62nd IEEE Conference on Decision and Control (CDC)</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a13d4fd970bfcc47f89c35f19cf9a80c7e8a493a">A Koopman Operator-Based Finite Impulse Response Filter for Nonlinear Systems</a></td>
         <td>Zhichao Pan, Biao Huang, Fei Liu</td>
@@ -2316,7 +1732,7 @@
         <td>2023 62nd IEEE Conference on Decision and Control (CDC)</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/7e3f6c94a974d08aa95b8dd1ce245aa520e4556b">Estimation of Regions of Attraction with Formal Certificates in a Purely Data-Driven Setting</a></td>
         <td>A. Mauroy, Aivar Sootla</td>
@@ -2324,7 +1740,7 @@
         <td>2023 62nd IEEE Conference on Decision and Control (CDC)</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/7694047f058186ea19164e6ecbb4341a5b1a6ebe">Learning Switched Koopman Models for Control of Entity-Based Systems</a></td>
         <td>Madeline Blischke, J. Hespanha</td>
@@ -2332,7 +1748,7 @@
         <td>2023 62nd IEEE Conference on Decision and Control (CDC)</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/03b23f84bea340a43c62e15fa38fc01e8c5cfb1e">Convergence Rates for Approximations of Deterministic Koopman Operators via Inverse Problems</a></td>
         <td>Nathan Powell, Ali Bouland, John A. Burns, Andrew J. Kurdila</td>
@@ -2340,7 +1756,7 @@
         <td>2023 62nd IEEE Conference on Decision and Control (CDC)</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/e8df03e592dcc080a79195b30d43333b4ddbfebc">Dynamics Harmonic Analysis of Robotic Systems: Application in Data-Driven Koopman Modelling</a></td>
         <td>Daniel Felipe Ordoñez Apraez, Vladimir Kostic, Giulio Turrisi, P. Novelli, Carlos Mastalli, Claudio Semini, M. Pontil</td>
@@ -2348,7 +1764,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/ec5914bd436c565740d18c604e3eca9b42ef99b2">Data-Driven Bifurcation Analysis via Learning of Homeomorphism</a></td>
         <td>Wentao Tang</td>
@@ -2356,7 +1772,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/7f5e93a0b329c691c15c9e82c541627d69df1fee">Spectral Koopman Method for Identifying Stability Boundary</a></td>
         <td>Bhagyashree Umathe, Umesh Vaidya</td>
@@ -2364,7 +1780,7 @@
         <td>IEEE Control Systems Letters</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/32a4a1f68e10300155d56575e646783c48d915e9">Randomized Physics-Informed Machine Learning for Uncertainty Quantification in High-Dimensional Inverse Problems</a></td>
         <td>Yifei Zong, D. Barajas-Solano, A. Tartakovsky</td>
@@ -2372,7 +1788,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/e09561994999b5922eee19fe45e0ce560045a046">Fusion of Ultrasound and Magnetic Resonance Images for Endometriosis Diagnosis: A Non-Parametric Approach</a></td>
         <td>Youssra El Bennioui, Alexandre Bruguier, Fabien Vidal, Adrian Basarab, J. Tourneret</td>
@@ -2380,7 +1796,7 @@
         <td>2023 IEEE 9th International Workshop on Computational Advances in Multi-Sensor Adaptive Processing (CAMSAP)</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3ae3935e806a93dc5864936d65281b1bf2a39244">Enhancing interpretability and generalizability of deep learning-based emulator in three-dimensional lake hydrodynamics using Koopman operator and transfer learning: Demonstrated on the example of lake Zurich.</a></td>
         <td>Wenchong Tian, Zhiyu Zhang, D. Bouffard, Hao Wu, K. Xin, Xianyong Gu, Z. Liao</td>
@@ -2388,7 +1804,7 @@
         <td>Water research</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/9cf5dea83bfec64c42cc7e72735990b2b4516add">Utrecht bouwt 1945-1975 | Post 65 - Een turbulente tijd | Experimentele woningbouw in Nederland 1968-1980</a></td>
         <td>Marie-Thérèse Van Thoor</td>
@@ -2396,7 +1812,7 @@
         <td>Bulletin KNOB</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/22d89df4d8c1b5eeed3ed86352cc561c9228d7b7">Trajectory Estimation in Unknown Nonlinear Manifold Using Koopman Operator Theory</a></td>
         <td>Yanran Wang, Michael J. Banks, Igor Mezic, Takashi Hikihara</td>
@@ -2404,7 +1820,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/e1b3d46dfb64d9a7daac3ff5547ae2f1409102f5">Deep Learning for Koopman-based Dynamic Movement Primitives</a></td>
         <td>Tyler Han, Carl Glen Henshaw</td>
@@ -2412,7 +1828,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/034f925c4d1981db6a604d0a0073c0ea77acf547">Koopman model predictive control based load modulation for primary frequency regulation</a></td>
         <td>A. Husham, Innocent Kamwa, Hussein Suprême</td>
@@ -2420,7 +1836,7 @@
         <td>IET Generation, Transmission &amp; Distribution</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f607ede48794a31e6a9750cb671959124552f972">Dynamic mode decomposition for Koopman spectral analysis of elementary cellular automata.</a></td>
         <td>Keisuke Taga, Yuzuru Kato, Yoshihiro Yamazaki, Y. Kawahara, H. Nakao</td>
@@ -2428,7 +1844,7 @@
         <td>Chaos</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d075135efb78b67028796b6a38123be7fdea5639">KEEC: Embed to Control on An Equivariant Geometry</a></td>
         <td>Xiaoyuan Cheng, Yiming Yang, Wei Jiang, Yukun Hu</td>
@@ -2436,7 +1852,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/09a73c75981958faf245dbbc8c52312ebdc554ee">General Numerical Framework to Derive Structure Preserving Reduced Order Models for Thermodynamically Consistent Reversible-Irreversible PDEs</a></td>
         <td>Zengyan Zhang, Jia Zhao</td>
@@ -2444,7 +1860,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a95271b9c863b74aff78741338677d709fc0120c">Koopman-based feedback design with stability guarantees</a></td>
         <td>Robin Strässer, M. Schaller, K. Worthmann, J. Berberich, Frank Allgöwer</td>
@@ -2452,7 +1868,7 @@
         <td>ArXiv</td>
         <td>4</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d7510d878228ce996d2865d6dd064de08dd1a5e4">Abstract IA004: Preclinical development of DuoBody®-CD3xB7H4, a novel CD3 bispecific antibody for the treatment of solid cancers</a></td>
         <td>Louise A. Koopman, Farshid Alemdehy, M. Paauwe, Laura Smits-de Vries, Frosso Karaiskaki, Marcel Brandhorst, Patrick Franken, Theo S Plantinga, M. Houtkamp, Stefanie A.H. de Poot, E. Breij</td>
@@ -2460,7 +1876,7 @@
         <td>Molecular Cancer Therapeutics</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/aaf47a1c27cd7fe7051b63f3635ed18a437e14ee">Significance of Chemical Reaction Under the Influence of Joule Heating for Walters’ B Fluid Flow towards an Extending Sheet</a></td>
         <td>Pooja Soni, Kalpna Sharma, H. Berrehal, Kavita Jat</td>
@@ -2468,7 +1884,7 @@
         <td>International Journal of Applied and Computational Mathematics</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/818603ce1682f182397d8deff322a7600f78febd">Corrigendum to “Stable deep Koopman model predictive control for solar parabolic-trough collector field” [Renew. Energy 198 (October 2022) 492–504]</a></td>
         <td>Tahereh Gholaminejad, Ali Khaki-Sedigh</td>
@@ -2476,7 +1892,7 @@
         <td>Renewable Energy</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/76dfab3176aa1808838062854d0ec8db1981d17e">Validation of genetic stratification for risk of Alzheimer’s disease using UK Biobank</a></td>
         <td>V. Escott-Price</td>
@@ -2484,7 +1900,7 @@
         <td>Alzheimer's & Dementia</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/71684f2fdc0dfc12597f7f46876e19a586eb6eac">Machine Learning Study through Physics-Informed Neural Networks: Analysis of the Stable Vortices in Quasi-Integrable Systems</a></td>
         <td>A. Nakamula, K. Obuse, N. Sawado, Kohei Shimasaki, Kouichi Toda</td>
@@ -2492,7 +1908,7 @@
         <td>Journal of Physics: Conference Series</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/4cc4111953559e29417f0e2c5b740979d3f8fdc1">Data-driven identification and fast model predictive control of the ORC waste heat recovery system by using Koopman operator</a></td>
         <td>Yao Shi, Xiao-Min Hu, Zhiming Zhang, Qiming Chen, Lei Xie, Hongye Su</td>
@@ -2500,7 +1916,7 @@
         <td>Control Engineering Practice</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/1cb1fa56ffa3db55f17b5bdabc630798462fad21">Adaptive Stabilization for ODE–PDE–ODE Cascade Systems With Parameter Uncertainty</a></td>
         <td>Chunting Ji, Zhengqiang Zhang, Xue‐Jun Xie, S. Ge</td>
@@ -2508,7 +1924,7 @@
         <td>IEEE Transactions on Systems, Man, and Cybernetics: Systems</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f370d80e1f5c0b1f3cd524eed72906b5ec9a32ac">Analysis of Forchheimer Effect for Double Diffusive Convection With Dusty Fluids and MHD</a></td>
         <td>S. Kavitha, N. Nalinakshi, P. A. Dinesh, Brijesh</td>
@@ -2516,7 +1932,7 @@
         <td>Journal of Mines, Metals and Fuels</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/01a801bc028296db03dde8896a18d4f9bdde073a">The Multiverse of Dynamic Mode Decomposition Algorithms</a></td>
         <td>Matthew J. Colbrook</td>
@@ -2524,7 +1940,7 @@
         <td>ArXiv</td>
         <td>3</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/7b5049a0ae3a1e1a81c2aa5e742eaa5f1acda57f">Stability control for USVs with SINDY-based online dynamic model update</a></td>
         <td>Zong Chen</td>
@@ -2532,7 +1948,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/2695bf02464df772f59b6df3e591a9a85a0eb8da">El camino de la geopolítica crítica en América del Sur: entre la estructura y el individuo</a></td>
         <td>Alejandro Rascovan</td>
@@ -2540,7 +1956,7 @@
         <td>Punto sur</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/89b418af559976fc0c97cfcba66795177ae113fe">State Prediction of Small Signal Synchronous Stability of Converter Interfaced Generation System Based on Koopman Operator and Time Delay Embedding</a></td>
         <td>Xin Liu, Le Zheng, Zheng Wang, Yingyun Sun</td>
@@ -2548,7 +1964,7 @@
         <td>2023 IEEE Sustainable Power and Energy Conference (iSPEC)</td>
         <td>0</td>
       </tr>
-
+    
   </tbody>
   </table>
   </p>
@@ -2583,98 +1999,4 @@
   };
   Plotly.newPlot('myDiv1', data, layout);
 </script>
-</html>
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-  
-
-
-
-                
-              </article>
-            </div>
-          
-          
-<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
-        </div>
-        
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
-  Back to top
-</button>
-        
-      </main>
-      
-        <footer class="md-footer">
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
-  
-</div>
-      
-    </div>
-  </div>
-</footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    
-    
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.tabs"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-    
-    
-
-      <script src="../assets/javascripts/bundle.c8d2eff1.min.js"></script>
-      
-    
-<script>
-  new DataTable('#table1', {
-    order: [[5, 'desc']],
-    "columnDefs": [
-        {"className": "dt-center", "targets": "_all"}
-      ],
-    pageLength: 5,
-    layout: {
-        topStart: {
-            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
-        }
-    }
-  });
-  new DataTable('#table2', {
-    order: [[3, 'desc']],
-    "columnDefs": [
-        {"className": "dt-center", "targets": "_all"}
-      ],
-    pageLength: 5,
-    layout: {
-        topStart: {
-            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
-        }
-    }
-  });
-</script>
-
-
-  </body>
 </html>

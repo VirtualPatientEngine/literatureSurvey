@@ -1,589 +1,7 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-      
-      
-      
-        <link rel="prev" href="../PINNs/">
-      
-      
-      
-      <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
-    
-    
-<title>Literature Survey (VPE)</title>
-
-    
-      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
-      
-        
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
-      
-      
-
-
-    
-    
-  <!-- Add scripts that need to run before here -->
-  <!-- Add jquery script -->
-  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-  <!-- Add data table libraries -->
-  <script src="https://cdn.datatables.net/2.0.1/js/dataTables.js"></script>
-  <link rel="stylesheet" href="https://cdn.datatables.net/2.0.1/css/dataTables.dataTables.css">
-  <!-- Load plotly.js into the DOM -->
-	<script src='https://cdn.plot.ly/plotly-2.29.1.min.js'></script>
-  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.0.1/css/buttons.dataTables.css">
-  <!-- Already specified in mkdocs.yml -->
-  <!-- <link rel="stylesheet" href="../docs/custom.css"> -->
-  <script src="https://cdn.datatables.net/buttons/3.0.1/js/dataTables.buttons.js"></script>
-  <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.dataTables.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
-  <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.html5.min.js"></script>
-  <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.print.min.js"></script>
-
-
-  <!-- 
-      
-     -->
-  <!-- Add scripts that need to run afterwards here -->
-
-    
-      
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-      
-    
-    
-      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
-    
-      <link rel="stylesheet" href="../custom.css">
-    
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
-      
-
-    
-    
-    
-  </head>
-  
-  
-    
-    
-      
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="purple">
-  
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-    
-      
-
-<header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Literature Survey (Simulator)" class="md-header__button md-logo" aria-label="Literature Survey (Simulator)" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
-
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
-            Literature Survey (Simulator)
-          </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
-            
-              Symbolic regression
-            
-          </span>
-        </div>
-      </div>
-    </div>
-    
-      
-        <form class="md-header__option" data-md-component="palette">
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
-    
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
-    
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
-      </label>
-    
-  
-</form>
-      
-    
-    
-      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
-    
-      <div class="md-header__source">
-        <a href="https://github.com/VirtualPatientEngine/literatureSurvey" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-  </div>
-  <div class="md-source__repository">
-    LiteratureSurvey
-  </div>
-</a>
-      </div>
-    
-  </nav>
-  
-</header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-          
-            
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
-        
-  
-    
-  
-  Overview
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../Physics-informed_GNNs/" class="md-tabs__link">
-        
-  
-    
-  
-  Physics-informed GNNs
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../Neural_ODEs/" class="md-tabs__link">
-        
-  
-    
-  
-  Neural ODEs
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../Koopman_Theory/" class="md-tabs__link">
-        
-  
-    
-  
-  Koopman Theory
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../Latent_Space_Simulator/" class="md-tabs__link">
-        
-  
-    
-  
-  Latent Space Simulator
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../PINNs/" class="md-tabs__link">
-        
-  
-    
-  
-  PINNs
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-    
-  
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
-        
-  
-    
-  
-  Symbolic regression
-
-      </a>
-    </li>
-  
-
-      
-    </ul>
-  </div>
-</nav>
-          
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-  
-
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Literature Survey (Simulator)" class="md-nav__button md-logo" aria-label="Literature Survey (Simulator)" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
-
-    </a>
-    Literature Survey (Simulator)
-  </label>
-  
-    <div class="md-nav__source">
-      <a href="https://github.com/VirtualPatientEngine/literatureSurvey" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-  </div>
-  <div class="md-source__repository">
-    LiteratureSurvey
-  </div>
-</a>
-    </div>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Overview
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Physics-informed_GNNs/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Physics-informed GNNs
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Neural_ODEs/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Neural ODEs
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Koopman_Theory/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Koopman Theory
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Latent_Space_Simulator/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Latent Space Simulator
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../PINNs/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    PINNs
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Symbolic regression
-  </span>
-  
-
-      </a>
-      
-    </li>
-  
-
-    
-  </ul>
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-                
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-  
-  
-
-
-  <h1>Symbolic regression</h1>
-
+---
+hide:
+ - navigation
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -607,7 +25,7 @@
   <h3 id="search_query">1. Search query</h3>
   <i>((symbolic regression) + dynamics)</i>
   </p>
-
+  
   <p>
   <h3 id="plot1">2. Symbolic regression articles and citations over time</h3>
     <div id='myDiv1'>
@@ -628,7 +46,7 @@
     </tr>
   </thead>
   <tbody>
-
+    
       <tr>
       <script>
       // alert (278)
@@ -639,7 +57,7 @@
         <td>International Joint Conference on Artificial Intelligence</td>
         <td>278</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (131)
@@ -650,7 +68,7 @@
         <td>ArXiv</td>
         <td>131</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (104)
@@ -661,7 +79,7 @@
         <td>Annual Conference on Genetic and Evolutionary Computation</td>
         <td>104</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (92)
@@ -672,7 +90,7 @@
         <td>Physical review. E</td>
         <td>92</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (70)
@@ -683,7 +101,7 @@
         <td>MIS Q.</td>
         <td>70</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (68)
@@ -694,7 +112,7 @@
         <td>Journal of Medical Systems</td>
         <td>68</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (61)
@@ -705,7 +123,7 @@
         <td>Political Research Quarterly</td>
         <td>61</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (55)
@@ -716,7 +134,7 @@
         <td>2013 IEEE/RSJ International Conference on Intelligent Robots and Systems</td>
         <td>55</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (49)
@@ -727,7 +145,7 @@
         <td>Adaptive Agents and Multi-Agent Systems</td>
         <td>49</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (46)
@@ -738,7 +156,7 @@
         <td>Machine Learning: Science and Technology</td>
         <td>46</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (41)
@@ -749,7 +167,7 @@
         <td>ArXiv</td>
         <td>41</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (32)
@@ -760,7 +178,7 @@
         <td>Chaos</td>
         <td>32</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (31)
@@ -771,7 +189,7 @@
         <td>Frontiers in Human Neuroscience</td>
         <td>31</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (29)
@@ -782,7 +200,7 @@
         <td>NotAvbl</td>
         <td>29</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (29)
@@ -793,7 +211,7 @@
         <td>IEEE Transactions on Pattern Analysis and Machine Intelligence</td>
         <td>29</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (28)
@@ -804,7 +222,7 @@
         <td>2012 IEEE International Conference on Robotics and Biomimetics (ROBIO)</td>
         <td>28</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (26)
@@ -815,7 +233,7 @@
         <td>The International Journal of Robotics Research</td>
         <td>26</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (25)
@@ -826,7 +244,7 @@
         <td>Mathematical biosciences and engineering : MBE</td>
         <td>25</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (22)
@@ -837,7 +255,7 @@
         <td>Proceedings of the Royal Society B: Biological Sciences</td>
         <td>22</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (21)
@@ -848,7 +266,7 @@
         <td>bioRxiv</td>
         <td>21</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (17)
@@ -859,7 +277,7 @@
         <td>IEEE Transactions on Biomedical Engineering</td>
         <td>17</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (17)
@@ -870,7 +288,7 @@
         <td>PLoS ONE</td>
         <td>17</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (16)
@@ -881,7 +299,7 @@
         <td>Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</td>
         <td>16</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (15)
@@ -892,7 +310,7 @@
         <td>Nonlinear Dynamics</td>
         <td>15</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (13)
@@ -903,7 +321,7 @@
         <td>PLoS ONE</td>
         <td>13</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (12)
@@ -914,7 +332,7 @@
         <td>Psychiatric medicine</td>
         <td>12</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (12)
@@ -925,7 +343,7 @@
         <td>Annual Conference on Genetic and Evolutionary Computation</td>
         <td>12</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (11)
@@ -936,7 +354,7 @@
         <td>Proceedings of the 8th annual conference on Genetic and evolutionary computation</td>
         <td>11</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (11)
@@ -947,7 +365,7 @@
         <td>Australasian Computer Science Conference</td>
         <td>11</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (10)
@@ -958,7 +376,7 @@
         <td>Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</td>
         <td>10</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (10)
@@ -969,7 +387,7 @@
         <td>Genetic Programming Theory and Practice</td>
         <td>10</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (10)
@@ -980,7 +398,7 @@
         <td>Proceedings of IEEE International Conference on Robotics and Automation</td>
         <td>10</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (9)
@@ -991,7 +409,7 @@
         <td>2005 IEEE Congress on Evolutionary Computation</td>
         <td>9</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (8)
@@ -1002,7 +420,7 @@
         <td>Evolutionary Intelligence</td>
         <td>8</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (8)
@@ -1013,7 +431,7 @@
         <td>Proceedings of the Institution of Mechanical Engineers, Part H: Journal of Engineering in Medicine</td>
         <td>8</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (8)
@@ -1024,7 +442,7 @@
         <td>2018 IEEE International Conference on Robotics and Automation (ICRA)</td>
         <td>8</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (8)
@@ -1035,7 +453,7 @@
         <td>ArXiv</td>
         <td>8</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (7)
@@ -1046,7 +464,7 @@
         <td>Journal of the American Veterinary Medical Association</td>
         <td>7</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (7)
@@ -1057,7 +475,7 @@
         <td>IEEE Robotics and Automation Letters</td>
         <td>7</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (7)
@@ -1068,7 +486,7 @@
         <td>European Conference on Genetic Programming</td>
         <td>7</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (6)
@@ -1079,7 +497,7 @@
         <td>European Conference on Artificial Life</td>
         <td>6</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (6)
@@ -1090,7 +508,7 @@
         <td>European Conference on Artificial Life</td>
         <td>6</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (6)
@@ -1101,7 +519,7 @@
         <td>2023 IEEE International Conference on Robotics and Automation (ICRA)</td>
         <td>6</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (6)
@@ -1112,7 +530,7 @@
         <td>Physiological Measurement</td>
         <td>6</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (6)
@@ -1123,7 +541,7 @@
         <td>Workshop on the Algorithmic Foundations of Robotics</td>
         <td>6</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (6)
@@ -1134,7 +552,7 @@
         <td>Physiological Measurement</td>
         <td>6</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (6)
@@ -1145,7 +563,7 @@
         <td>2013 35th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)</td>
         <td>6</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (5)
@@ -1156,7 +574,7 @@
         <td>2005 IEEE Congress on Evolutionary Computation</td>
         <td>5</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (5)
@@ -1167,7 +585,7 @@
         <td>Genetic Programming Theory and Practice</td>
         <td>5</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (5)
@@ -1178,7 +596,7 @@
         <td>2022 IEEE Symposium on Computational Intelligence for Financial Engineering and Economics (CIFEr)</td>
         <td>5</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (5)
@@ -1189,7 +607,7 @@
         <td>Proceedings of the 2001 Congress on Evolutionary Computation (IEEE Cat. No.01TH8546)</td>
         <td>5</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (5)
@@ -1200,7 +618,7 @@
         <td>Proceedings of the 8th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation</td>
         <td>5</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (4)
@@ -1211,7 +629,7 @@
         <td>Proceedings of the 36th Annual ACM Symposium on Applied Computing</td>
         <td>4</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (4)
@@ -1222,7 +640,7 @@
         <td>2020 IEEE Congress on Evolutionary Computation (CEC)</td>
         <td>4</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (4)
@@ -1233,7 +651,7 @@
         <td>ArXiv</td>
         <td>4</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (4)
@@ -1244,7 +662,7 @@
         <td>2012 Sixth International Conference on Genetic and Evolutionary Computing</td>
         <td>4</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (3)
@@ -1255,7 +673,7 @@
         <td>Journal of Marine Science and Engineering</td>
         <td>3</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (3)
@@ -1266,7 +684,7 @@
         <td>ArXiv</td>
         <td>3</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (3)
@@ -1277,7 +695,7 @@
         <td>ArXiv</td>
         <td>3</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (3)
@@ -1288,7 +706,7 @@
         <td>Genetic Programming Theory and Practice</td>
         <td>3</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (2)
@@ -1299,7 +717,7 @@
         <td>Chaos</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (2)
@@ -1310,7 +728,7 @@
         <td>ArXiv</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (2)
@@ -1321,7 +739,7 @@
         <td>2015 37th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (2)
@@ -1332,7 +750,7 @@
         <td>Genetic Programming and Evolvable Machines</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (2)
@@ -1343,7 +761,7 @@
         <td>Multibody System Dynamics</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (2)
@@ -1354,7 +772,7 @@
         <td>2022 IEEE Congress on Evolutionary Computation (CEC)</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (2)
@@ -1365,7 +783,7 @@
         <td>2019 IEEE 4th International Conference on Advanced Robotics and Mechatronics (ICARM)</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (2)
@@ -1376,7 +794,7 @@
         <td>Int. J. Comput. Intell. Appl.</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (2)
@@ -1387,7 +805,7 @@
         <td>NotAvbl</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (1)
@@ -1398,7 +816,7 @@
         <td>Annual Conference on Genetic and Evolutionary Computation</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (1)
@@ -1409,7 +827,7 @@
         <td>ACM Communications in Computer Algebra</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (1)
@@ -1420,7 +838,7 @@
         <td>2022 IEEE Congress on Evolutionary Computation (CEC)</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (1)
@@ -1431,7 +849,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (1)
@@ -1442,7 +860,7 @@
         <td>Micromachines</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (1)
@@ -1453,7 +871,7 @@
         <td>2022 IEEE Congress on Evolutionary Computation (CEC)</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (1)
@@ -1464,7 +882,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (1)
@@ -1475,7 +893,7 @@
         <td>International Conference on Machine Learning</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (1)
@@ -1486,7 +904,7 @@
         <td>2022 17th International Conference on Control, Automation, Robotics and Vision (ICARCV)</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (1)
@@ -1497,7 +915,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (1)
@@ -1508,7 +926,7 @@
         <td>International Conference on Knowledge Discovery and Information Retrieval</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (1)
@@ -1519,7 +937,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (1)
@@ -1530,7 +948,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (0)
@@ -1541,7 +959,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (0)
@@ -1552,7 +970,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (0)
@@ -1563,7 +981,7 @@
         <td>2022 24th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing (SYNASC)</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (0)
@@ -1574,7 +992,7 @@
         <td>Environment and Planning B: Urban Analytics and City Science</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (0)
@@ -1585,7 +1003,7 @@
         <td>ECS Meeting Abstracts</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (0)
@@ -1596,7 +1014,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (0)
@@ -1607,7 +1025,7 @@
         <td>Parallel Problem Solving from Nature</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (0)
@@ -1618,7 +1036,7 @@
         <td>Annual Conference on Genetic and Evolutionary Computation</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (0)
@@ -1629,7 +1047,7 @@
         <td>2023 45th Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC)</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (0)
@@ -1640,7 +1058,7 @@
         <td>2018 IEEE International Conference on Fuzzy Systems (FUZZ-IEEE)</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (0)
@@ -1651,7 +1069,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (0)
@@ -1662,7 +1080,7 @@
         <td>The International Journal of Psychoanalysis</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (0)
@@ -1673,7 +1091,7 @@
         <td>Physical review. E</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (0)
@@ -1684,7 +1102,7 @@
         <td>Socius: Sociological Research for a Dynamic World</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (0)
@@ -1695,7 +1113,7 @@
         <td>Cognitive Neurodynamics</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (0)
@@ -1706,7 +1124,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (0)
@@ -1717,7 +1135,7 @@
         <td>International Journal of Public Sector Management</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (0)
@@ -1728,7 +1146,7 @@
         <td>Applied Sciences</td>
         <td>0</td>
       </tr>
-
+    
   </tbody>
   </table>
   </p>
@@ -1746,7 +1164,7 @@
     </tr>
   </thead>
   <tbody>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3c2bc03831c40da210da5f02806386981973ba48">Shared professional logics amongst managers and bureaucrats in Brazilian social security: a street-level mixed-methods study</a></td>
         <td>Luiz Henrique Alonso de Andrade, E. Pekkola</td>
@@ -1754,7 +1172,7 @@
         <td>International Journal of Public Sector Management</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f5c21a0dd557e33b683cab99268d37b04cc912bd">Excitation Trajectory Optimization for Dynamic Parameter Identification Using Virtual Constraints in Hands-on Robotic System</a></td>
         <td>Huanyu Tian, Martin Huber, Christopher E. Mower, Zhe Han, Changsheng Li, Xingguang Duan, Christos Bergeles</td>
@@ -1762,7 +1180,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/0fa5509ee2975b72c8a47ba5f0a60b84774cfd80">Population Dynamics in Genetic Programming for Dynamic Symbolic Regression</a></td>
         <td>Philipp Fleck, Bernhard Werth, M. Affenzeller</td>
@@ -1770,7 +1188,7 @@
         <td>Applied Sciences</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/7864dd40fc44eb8517ef0e87b7f9e965772ece9d">Reassessing the transport properties of fluids: A symbolic regression approach.</a></td>
         <td>Dimitrios Angelis, F. Sofos, T. Karakasidis</td>
@@ -1778,7 +1196,7 @@
         <td>Physical review. E</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d97335e9ed5301ea056f8957faa5f5b7ef105fac">(Invited) Electrochemical Interfaces in Energy Storage: Theory Meets Experiment</a></td>
         <td>T. Vegge</td>
@@ -1786,7 +1204,7 @@
         <td>ECS Meeting Abstracts</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f5cccd316e70bd2366e67260e1f691761bd512d3">AI-Lorenz: A physics-data-driven framework for black-box and gray-box identification of chaotic systems with symbolic regression</a></td>
         <td>Mario De Florio, I. Kevrekidis, G. Karniadakis</td>
@@ -1794,7 +1212,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/ef9533aa3205d0fc999fa12e703d43899f09191b">Machine Learning-Based Approach to Wind Turbine Wake Prediction under Yawed Conditions</a></td>
         <td>M. Gajendran, Ijaz Fazil Syed Ahmed Kabir, S. Vadivelu, E. Ng</td>
@@ -1802,7 +1220,7 @@
         <td>Journal of Marine Science and Engineering</td>
         <td>3</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/ca6fb9d804aa339c0ba686545ddb78d4c5e45e02">Boolformer: Symbolic Regression of Logic Functions with Transformers</a></td>
         <td>Stéphane d'Ascoli, Samy Bengio, Josh Susskind, Emmanuel Abb'e</td>
@@ -1810,7 +1228,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/7aa4950045a9a790857d169f999a479da147a3f3">GPSINDy: Data-Driven Discovery of Equations of Motion</a></td>
         <td>Junette Hsin, Shubhankar Agarwal, Adam Thorpe, David Fridovich-Keil</td>
@@ -1818,7 +1236,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/eddffa1f2cf18c7ca4edbdaf01fd805f415aa4b8">Symbolic regression via neural networks.</a></td>
         <td>N. Boddupalli, T. Matchen, J. Moehlis</td>
@@ -1826,7 +1244,7 @@
         <td>Chaos</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/e9cd99703996a88b0f224d81a33654938a3e0593">The conflicting geographies of social frontiers: Exploring the asymmetric impacts of social frontiers on household mobility in Rotterdam</a></td>
         <td>Dan Olner, G. Pryce, M. van Ham, H. Janssen</td>
@@ -1834,7 +1252,7 @@
         <td>Environment and Planning B: Urban Analytics and City Science</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d4e12cf06968baa0c8f2f3ac8f34987b52ab8965">Characterization of partial wetting by CMAS droplets using multiphase many-body dissipative particle dynamics and data-driven discovery based on PINNs</a></td>
         <td>Elham Kiyani, M. Kooshkbaghi, K. Shukla, R. Koneru, Zhen Li, L. Bravo, A. Ghoshal, G. Karniadakis, M. Karttunen</td>
@@ -1842,7 +1260,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/5155214bbf623d05dc180c0d9f01e2c579ab3c0d">Discovering Symbolic Laws Directly from Trajectories with Hamiltonian Graph Neural Networks</a></td>
         <td>S. Bishnoi, Ravinder Bhattoo, Jayadeva, Sayan Ranu, N. Krishnan</td>
@@ -1850,7 +1268,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/78ec3d267e00712cfea7ab5d32bc5d8d09821f40">Affect, representation and language. Between the silence and the cry</a></td>
         <td>E. Koritar</td>
@@ -1858,7 +1276,7 @@
         <td>The International Journal of Psychoanalysis</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/b58368ca2c9e9168a739c0800e8da632a9ac1f74">Symbolic dynamics of sleep heart rate variability is associated with cognitive decline in older men</a></td>
         <td>S. Immanuel, S. Shahrbabaki, Mathias Baumert</td>
@@ -1866,7 +1284,7 @@
         <td>2023 45th Annual International Conference of the IEEE Engineering in Medicine & Biology Society (EMBC)</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/b494b82f4abce4711bc2cc3fa2a0bff6f58a25b0">Fluid Properties Extraction in Confined Nanochannels with Molecular Dynamics and Symbolic Regression Methods</a></td>
         <td>D. Angelis, F. Sofos, Konstantinos Papastamatiou, T. Karakasidis</td>
@@ -1874,7 +1292,7 @@
         <td>Micromachines</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/795327aed3176b40ec4855fcfaf33b37dbe891ca">Physics-Informed and Data-Driven Discovery of Governing Equations for Complex Phenomena in Heterogeneous Media</a></td>
         <td>M. Sahimi</td>
@@ -1882,7 +1300,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/5b51a136b31a60cf65459f26b98494cf74b77950">Invariants for neural automata</a></td>
         <td>Jone Uria-Albizuri, G. S. Carmantini, P. B. Graben, S. Rodrigues</td>
@@ -1890,7 +1308,7 @@
         <td>Cognitive Neurodynamics</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/43dfd6923d90d8a2943bcaf28bea041a0ed6d19e">The Automated Discovery of Kinetic Rate Models - Methodological Frameworks</a></td>
         <td>Miguel 'Angel de Carvalho Servia, I. Sandoval, K. Hellgardt, K. K. Hii, Dongda Zhang, E. A. Rio-Chanona</td>
@@ -1898,7 +1316,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/98da0afeeb2f966269eee26e167c184a02a22585">On the functional form of the radial acceleration relation</a></td>
         <td>H. Desmond, D. Bartlett, P. Ferreira</td>
@@ -1906,7 +1324,7 @@
         <td>ArXiv</td>
         <td>4</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/6751816434f8b46208d456bdf790174ba766e0b5">How Symbols Influence Social Media Discourse: An Embedding Regression Analysis of Trump’s Return to Twitter</a></td>
         <td>Daniel Karell, Jeffrey Sachs</td>
@@ -1914,7 +1332,7 @@
         <td>Socius: Sociological Research for a Dynamic World</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/69e9abc0a3af7c24dc7b86019aee2b43c158ceb4">A Comparative Study on Machine Learning algorithms for Knowledge Discovery</a></td>
         <td>Siddesh Sambasivam Suseela, Feng Yang, K. Mao</td>
@@ -1922,7 +1340,7 @@
         <td>2022 17th International Conference on Control, Automation, Robotics and Vision (ICARCV)</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/ed41dbd857ae125bffc3ac03aea26d803fdd955c">A PINN Approach to Symbolic Differential Operator Discovery with Sparse Data</a></td>
         <td>Lena Podina, Brydon Eastman, M. Kohandel</td>
@@ -1930,7 +1348,7 @@
         <td>ArXiv</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/9c693a57c772ff8c1eafececa5a530d177a2c330">Evolutionary sparse data-driven discovery of multibody system dynamics</a></td>
         <td>E. Askari, G. Crevecoeur</td>
@@ -1938,7 +1356,7 @@
         <td>Multibody System Dynamics</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d9c67fae3cdc029362bb0f83743bea89866a4909">RAMP-Net: A Robust Adaptive MPC for Quadrotors via Physics-informed Neural Network</a></td>
         <td>Sourav Sanyal, Kaushik Roy</td>
@@ -1946,7 +1364,7 @@
         <td>2023 IEEE International Conference on Robotics and Automation (ICRA)</td>
         <td>6</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f06c8d4d4adb5a89621b173cc99dbeee185c580c">Identification of Discrete Non-Linear Dynamics of a Radio-Frequency Power Amplifier Circuit using Symbolic Regression</a></td>
         <td>M. Steiger, H. Brachtendorf, G. Kronberger</td>
@@ -1954,7 +1372,7 @@
         <td>2022 24th International Symposium on Symbolic and Numeric Algorithms for Scientific Computing (SYNASC)</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/399c10fce4f698b405b6538a54a0a257662df6ec">Physics-infused Machine Learning for Crowd Simulation</a></td>
         <td>Guozhen Zhang, Zihan Yu, Depeng Jin, Yong Li</td>
@@ -1962,7 +1380,7 @@
         <td>Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</td>
         <td>16</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/dd06118ca4e3700f295fd8bbf3aca7472dd0dbe5">Stabilization of Higher Periodic Orbits of the Duffing Map using Meta-evolutionary Approaches: A Preliminary Study</a></td>
         <td>R. Matousek, T. Hulka</td>
@@ -1970,7 +1388,7 @@
         <td>2022 IEEE Congress on Evolutionary Computation (CEC)</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a2b0c992af12971f90eaeb892802330e89355afa">A replacement scheme based on dynamic penalization for controlling the diversity of the population in Genetic Programming</a></td>
         <td>R. Nieto-Fuentes, C. Segura</td>
@@ -1978,7 +1396,7 @@
         <td>2022 IEEE Congress on Evolutionary Computation (CEC)</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/27f8719cc91fa664d74a6ccbc2151000ff608d86">Towards Improving Simulations of Flows around Spherical Particles Using Genetic Programming</a></td>
         <td>J. Reuter, Manoj Cendrollu, Fabien Evrard, Sanaz Mostaghim, B. Wachem</td>
@@ -1986,7 +1404,7 @@
         <td>2022 IEEE Congress on Evolutionary Computation (CEC)</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a0c0717461e5555da9e7e262c66de38d22f78555">Understanding Physical Effects for Effective Tool-Use</a></td>
         <td>Zeyu Zhang, Ziyuan Jiao, Weiqi Wang, Yixin Zhu, Song-Chun Zhu, Hangxin Liu</td>
@@ -1994,7 +1412,7 @@
         <td>IEEE Robotics and Automation Letters</td>
         <td>7</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/33e65bda86fbf02f3555517b1bf653a26c1add6f">Identification of Friction Models for MPC-based Control of a PowerCube Serial Robot</a></td>
         <td>J. Fehr, Arnim Kargl, Hannes Eschmann</td>
@@ -2002,7 +1420,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/1f7ba0832203ab808fc8d6706836c591754b79da">On Neural Differential Equations</a></td>
         <td>Patrick Kidger</td>
@@ -2010,7 +1428,7 @@
         <td>ArXiv</td>
         <td>131</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/0d774d92c9c03648a213e5dc416065b0b72d894e">Rediscovering orbital mechanics with machine learning</a></td>
         <td>P. Lemos, N. Jeffrey, M. Cranmer, S. Ho, P. Battaglia</td>
@@ -2018,7 +1436,7 @@
         <td>Machine Learning: Science and Technology</td>
         <td>46</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/e8293cfeb8bbed861461d92f2613379fba1e8890">Symbolic-numeric integration of univariate expressions based on sparse regression</a></td>
         <td>Shahriar Iravanian, Carl Martensen, Alessandro Cheli, Shashi Gowda, Anand Jain, Yingbo Ma, Chris Rackauckas</td>
@@ -2026,7 +1444,7 @@
         <td>ACM Communications in Computer Algebra</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/122ead4425cea8d8da1307820a84cbce65ff61fb">Fifty shades of black: uncovering physical models from symbolic regressions for scalable building heat dynamics identification</a></td>
         <td>J. Leprince, Clayton Miller, Mario Frei, H. Madsen, W. Zeiler</td>
@@ -2034,7 +1452,7 @@
         <td>Proceedings of the 8th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation</td>
         <td>5</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/9c1ceb96ef4b0cbf46d01b89d40da0c9ff52c675">Chaos as an interpretable benchmark for forecasting and data-driven modelling</a></td>
         <td>W. Gilpin</td>
@@ -2042,7 +1460,7 @@
         <td>ArXiv</td>
         <td>41</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/8846512094fed887f7ac9eeae6fea51fb10fe2a7">Understanding Spending Behavior: Recurrent Neural Network Explanation and Interpretation</a></td>
         <td>Charl Maree, C. Omlin</td>
@@ -2050,7 +1468,7 @@
         <td>2022 IEEE Symposium on Computational Intelligence for Financial Engineering and Economics (CIFEr)</td>
         <td>5</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/bed4578e030b83886843d3d4b8287747276d5a5e">The effect of principal component analysis in the diagnosis of congestive heart failure via heart rate variability analysis</a></td>
         <td>M. B. Selek, Bartu Yesilkaya, S. S. Egeli, Y. Isler</td>
@@ -2058,7 +1476,7 @@
         <td>Proceedings of the Institution of Mechanical Engineers, Part H: Journal of Engineering in Medicine</td>
         <td>8</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d52cbc0dd49cf97a6b7b9937b08165c4fd347a33">Inferring the Structure of Ordinary Differential Equations</a></td>
         <td>J. Weilbach, S. Gerwinn, Christian Weilbach, M. Kandemir</td>
@@ -2066,7 +1484,7 @@
         <td>ArXiv</td>
         <td>3</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d6ee6d0530361aa10cee992133a3f57a64d67aa4">On-the-fly simplification of genetic programming models</a></td>
         <td>Noman Javed, F. Gobet</td>
@@ -2074,7 +1492,7 @@
         <td>Proceedings of the 36th Annual ACM Symposium on Applied Computing</td>
         <td>4</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/c2eae8ccb933da69dacf5170e3aac5d7ac0dcc56">GP-DMD: a genetic programming variant with dynamic management of diversity</a></td>
         <td>R. Nieto-Fuentes, C. Segura</td>
@@ -2082,7 +1500,7 @@
         <td>Genetic Programming and Evolvable Machines</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d201b43533bbfdcfe0895e55395827824ac0ce4f">Discovering Unmodeled Components in Astrodynamics with Symbolic Regression</a></td>
         <td>M. Manzi, M. Vasile</td>
@@ -2090,7 +1508,7 @@
         <td>2020 IEEE Congress on Evolutionary Computation (CEC)</td>
         <td>4</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/9bf88fc233b49d4226c0b71f449861404f2f186c">Transfer entropy as a variable selection methodology of cryptocurrencies in the framework of a high dimensional predictive model</a></td>
         <td>A. García-Medina, Graciela González Farías</td>
@@ -2098,7 +1516,7 @@
         <td>PLoS ONE</td>
         <td>13</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/535bcdf8d9be9f84f691a062269f4516c09f9acc">A Search for the Underlying Equation Governing Similar Systems</a></td>
         <td>Cha-Liang Loh, Daniel Schneegaß, Pengwei Tian</td>
@@ -2106,7 +1524,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/114d648542bc0d65a50fb37c81b4ea9dddad774b">Multi-region System Modelling by using Genetic Programming to Extract Rule Consequent Functions in a TSK Fuzzy System</a></td>
         <td>Yu Zhang, Miguel Martínez-García, José R. Serrano-Cruz, A. Latimer</td>
@@ -2114,7 +1532,7 @@
         <td>2019 IEEE 4th International Conference on Advanced Robotics and Mechatronics (ICARM)</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/795e462fddde28ca1c571577a108bb3e9ae5cc7c">Symbolic Regression for Constructing Analytic Models in Reinforcement Learning</a></td>
         <td>Erik Derner, Jiří Kubalík, N. Ancona, Robert Babuška</td>
@@ -2122,7 +1540,7 @@
         <td>ArXiv</td>
         <td>8</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/aec65a14fde7ec289afcb7b8b036596ce6fa5304">On the relevance of symbolizing heart rate variability by means of a percentile-based coarse graining approach</a></td>
         <td>D. Cysarz, F. Edelhäuser, M. Javorka, N. Montano, A. Porta</td>
@@ -2130,7 +1548,7 @@
         <td>Physiological Measurement</td>
         <td>6</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/48e174bb9522f4f1712d75159ab6ec3e8e4afaf0">Symbolic dynamics to enhance diagnostic ability of portable oximetry from the Phone Oximeter in the detection of paediatric sleep apnoea</a></td>
         <td>D. Álvarez, A. Crespo, F. Vaquerizo-Villar, G. Gutiérrez-Tobal, Ana Cerezo-Hernández, V. Barroso-García, , J Mark Ansermino, G. Dumont, R. Hornero, F. del Campo, A. Garde</td>
@@ -2138,7 +1556,7 @@
         <td>Physiological Measurement</td>
         <td>6</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d4488a9f5f8e8fc7794485ffbc97b407c9763c93">Understanding Climate-Vegetation Interactions in Global Rainforests Through a GP-Tree Analysis</a></td>
         <td>A. Kodali, M. Szubert, K. Das, S. Ganguly, J. Bongard</td>
@@ -2146,7 +1564,7 @@
         <td>Parallel Problem Solving from Nature</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/818b7664dd9353fa9aed429a1f083a5e054f01f7">Fuzzy rule-based modeling for interval-valued time series prediction</a></td>
         <td>Leandro Maciel, R. Ballini</td>
@@ -2154,7 +1572,7 @@
         <td>2018 IEEE International Conference on Fuzzy Systems (FUZZ-IEEE)</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/86653f88138b1903237fcb04dc1b68d488d8ce2b">Data-driven Construction of Symbolic Process Models for Reinforcement Learning</a></td>
         <td>Erik Derner, Jiří Kubalík, Robert Babuška</td>
@@ -2162,7 +1580,7 @@
         <td>2018 IEEE International Conference on Robotics and Automation (ICRA)</td>
         <td>8</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/12a72695850be7b506c86547d00641ea9bbbff2b">Reverse-engineering ecological theory from data</a></td>
         <td>B. Martin, S. Munch, Andrew M. Hein</td>
@@ -2170,7 +1588,7 @@
         <td>Proceedings of the Royal Society B: Biological Sciences</td>
         <td>22</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/0b5bf64fcd6c87cea74066601efe500e68aa92c4">Mining Time-Resolved Functional Brain Graphs to an EEG-Based Chronnectomic Brain Aged Index (CBAI)</a></td>
         <td>S. Dimitriadis, Christos I. Salis</td>
@@ -2178,7 +1596,7 @@
         <td>Frontiers in Human Neuroscience</td>
         <td>31</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/8c44933472c5f6e871197be88ba9477ac577ebc6">Data Based Prediction of Blood Glucose Concentrations Using Evolutionary Methods</a></td>
         <td>J. Hidalgo, J. Colmenar, G. Kronberger, Stephan M. Winkler, Oscar Garnica, J. Lanchares</td>
@@ -2186,7 +1604,7 @@
         <td>Journal of Medical Systems</td>
         <td>68</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/ea19352c48d8e1f514ed04c87262c6e2f2069616">Who Is Responsible for the Gender Gap? The Dynamics of Men’s and Women’s Democratic Macropartisanship, 1950–2012</a></td>
         <td>Heather L. Ondercin</td>
@@ -2194,7 +1612,7 @@
         <td>Political Research Quarterly</td>
         <td>61</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/6632b97d8374ff47d2ef3f22e4142013dc02e558">New Insights into Tree Height Distribution Based on Mixed Effects Univariate Diffusion Processes</a></td>
         <td>P. Rupšys</td>
@@ -2202,7 +1620,7 @@
         <td>PLoS ONE</td>
         <td>17</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/4624d1b02035ec479c0ce56ff7a3d1d264a6ebd7">Synchronization control of oscillator networks using symbolic regression</a></td>
         <td>Julien Gout, M. Quade, Kamran Shafi, R. Niven, Markus Abel</td>
@@ -2210,7 +1628,7 @@
         <td>Nonlinear Dynamics</td>
         <td>15</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/b5c0490503d1aaa75eecea5b780bf8eefc2df8f8">REVEALING COMPLEX ECOLOGICAL DYNAMICS VIA SYMBOLIC REGRESSION</a></td>
         <td>Yize Chen, M. T. Angulo, Yang‐Yu Liu</td>
@@ -2218,7 +1636,7 @@
         <td>bioRxiv</td>
         <td>21</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3170b3a47bdc421b666a49ecb93e8ed0f71ae906">Online task planning and control for fuel-constrained aerial robots in wind fields</a></td>
         <td>C. Yoo, R. Fitch, S. Sukkarieh</td>
@@ -2226,7 +1644,7 @@
         <td>The International Journal of Robotics Research</td>
         <td>26</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/99c7d71317f3532cdcf83f072d644c236610221d">Prediction of dynamical systems by symbolic regression.</a></td>
         <td>M. Quade, Markus Abel, Kamran Shafi, R. Niven, B. R. Noack</td>
@@ -2234,7 +1652,7 @@
         <td>Physical review. E</td>
         <td>92</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/0d4d582fd34ede7e76912e8f8e4d1ba6641cfcba">Hebbian Network of Self-Organizing Receptive Field Neurons as Associative Incremental Learner</a></td>
         <td>Tarek Najjar, O. Hasegawa</td>
@@ -2242,7 +1660,7 @@
         <td>Int. J. Comput. Intell. Appl.</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/def7c4b14563968eaac3519598b6a493b224c753">A percentile-based coarse graining approach is helpful in symbolizing heart rate variability during graded head-up tilt</a></td>
         <td>D. Cysarz, F. Edelhauser, M. Javorka, Nicola Montano, Alberto Porta</td>
@@ -2250,7 +1668,7 @@
         <td>2015 37th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/cab96cd48d11e536eadff6d38dc0ce5a5d5f96f4">Strategies of symbolization in cardiovascular time series to test individual gestational development in the fetus</a></td>
         <td>D. Cysarz, F. Edelhäuser, P. van Leeuwen</td>
@@ -2258,7 +1676,7 @@
         <td>Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</td>
         <td>10</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a8f8818251280e195fd8cc94aca6cec1d4f70f1e">On the Effectiveness of Genetic Operations in Symbolic Regression</a></td>
         <td>Bogdan Burlacu, M. Affenzeller, M. Kommenda</td>
@@ -2266,7 +1684,7 @@
         <td>ArXiv</td>
         <td>3</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/fdddc5915049ebf9a4ca63197b181bca24e0ec1f">A hybrid evolutionary algorithm for the symbolic modeling of multiple-time-scale dynamical systems</a></td>
         <td>Theodore W. Cornforth, Hod Lipson</td>
@@ -2274,7 +1692,7 @@
         <td>Evolutionary Intelligence</td>
         <td>8</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/7f701c60d0b73af3ad2b70c6303e0cac18fc47a4">Take Their Word for It: The Symbolic Role of Linguistic Style Matches in User Communities</a></td>
         <td>S. Ludwig, K. Ruyter, D. Mahr, Martin Wetzels, E. Brüggen, Tom de Ruyck</td>
@@ -2282,7 +1700,7 @@
         <td>MIS Q.</td>
         <td>70</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/6e4abe45f2981c8e0dc0cc2e2615f7b1bb1fcd68">Automatic rule identification for agent-based crowd models through gene expression programming</a></td>
         <td>J. Zhong, Linbo Luo, Wentong Cai, M. Lees</td>
@@ -2290,7 +1708,7 @@
         <td>Adaptive Agents and Multi-Agent Systems</td>
         <td>49</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/628426bb499d88b13dcbc96423fab0243a007cee">Symbolic dynamics marker of heart rate variability combined with clinical variables enhance obstructive sleep apnea screening.</a></td>
         <td>A. Ravelo-García, P. Saavedra-Santana, G. Juliá-Serdá, J. L. Navarro-Mesa, J. Navarro-Esteva, X. Álvarez-López, A. Gapelyuk, Thomas Penzel, Niels Wessel</td>
@@ -2298,7 +1716,7 @@
         <td>Chaos</td>
         <td>32</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/ef2824bb7e720bc6448d7e8e4496a49f9a5d2717">On the closed form computation of the dynamic matrices and their differentiations</a></td>
         <td>Gianluca Garofalo, C. Ott, A. Albu-Schäffer</td>
@@ -2306,7 +1724,7 @@
         <td>2013 IEEE/RSJ International Conference on Intelligent Robots and Systems</td>
         <td>55</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/33748695edd472b40b0cacba8a9a93fdd9d00de0">Different approaches of symbolic dynamics to quantify heart rate complexity</a></td>
         <td>D. Cysarz, A. Porta, N. Montano, P. Leeuwen, J. Kurths, N. Wessel</td>
@@ -2314,7 +1732,7 @@
         <td>2013 35th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)</td>
         <td>6</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/05e6f348a7e00c188bd395ff671bf9463d1fa377">Introducing graphical models to analyze genetic programming dynamics</a></td>
         <td>Erik Hemberg, Constantin Berzan, K. Veeramachaneni, Una-May O’Reilly</td>
@@ -2322,7 +1740,7 @@
         <td>NotAvbl</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/c4ccad8d3487fb9ebd53fe9040d75ffa5cceaaa0">User friendly Matlab-toolbox for symbolic robot dynamic modeling used for control design</a></td>
         <td>E. Dean-León, Suraj Nair, A. Knoll</td>
@@ -2330,7 +1748,7 @@
         <td>2012 IEEE International Conference on Robotics and Biomimetics (ROBIO)</td>
         <td>28</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/4cf24892edba086353f2ee919b9ea8f46ac6f875">Improving Expert Knowledge in Dynamic Process Monitoring by Symbolic Regression</a></td>
         <td>Ingo Schwab, M. Senn, N. Link</td>
@@ -2338,7 +1756,7 @@
         <td>2012 Sixth International Conference on Genetic and Evolutionary Computing</td>
         <td>4</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f0473cf742d1a0fd140fe662b61d08ada62271c8">Graphical models and what they reveal about GP when it solves a symbolic regression problem</a></td>
         <td>Erik Hemberg, K. Veeramachaneni, Una-May O’Reilly</td>
@@ -2346,7 +1764,7 @@
         <td>Annual Conference on Genetic and Evolutionary Computation</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/ba55f09aa0e8543d288da44838d76609b54f3d2a">Robust function discovery and feature selection for life sciences and engineering</a></td>
         <td>M. Kotanchek</td>
@@ -2354,7 +1772,7 @@
         <td>Annual Conference on Genetic and Evolutionary Computation</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/62dc6b5c85d194459353c6e2634cc430a2bfdfb9">Symbolic regression of multiple-time-scale dynamical systems</a></td>
         <td>Theodore W. Cornforth, Hod Lipson</td>
@@ -2362,7 +1780,7 @@
         <td>Annual Conference on Genetic and Evolutionary Computation</td>
         <td>12</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/78e89405d16f44b5cc6cd96a656ef85ecacacbef">Extrapolatable Analytical Functions for Tendon Excursions and Moment Arms From Sparse Datasets</a></td>
         <td>M. U. Kurse, Hod Lipson, F. Cuevas</td>
@@ -2370,7 +1788,7 @@
         <td>IEEE Transactions on Biomedical Engineering</td>
         <td>17</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/664d5d6f68b9f921a07b3b406dde8ef5fb868fac">Self-Adaptive Induction of Regression Trees</a></td>
         <td>Raul Fidalgo-Merino, Marlon Núñez</td>
@@ -2378,7 +1796,7 @@
         <td>IEEE Transactions on Pattern Analysis and Machine Intelligence</td>
         <td>29</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/da7d0b4adfd716d2376efbb785aa1706e20707d0">Macro-economic Time Series Modeling and Interaction Networks</a></td>
         <td>G. Kronberger, S. Fink, M. Kommenda, M. Affenzeller</td>
@@ -2386,7 +1804,7 @@
         <td>NotAvbl</td>
         <td>29</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/0b0497bd46bbe18fc10f7ea06893bf7a1bb52b26">Cars, Compositionality, and Consciousness</a></td>
         <td>F. Kaplan</td>
@@ -2394,7 +1812,7 @@
         <td>Frontiers in Neuroscience</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a706a87e5b683f4439cf1d26109f00ee844359e1">Dynamics of evolutionary robustness</a></td>
         <td>Alan Piszcz, T. Soule</td>
@@ -2402,7 +1820,7 @@
         <td>Proceedings of the 8th annual conference on Genetic and evolutionary computation</td>
         <td>11</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f5b4a164b36503bc32645b62757473aba1ed63ed">Graph composition in a graph grammar-based method for automata network evolution</a></td>
         <td>Martin H. Luerssen, D. Powers</td>
@@ -2410,7 +1828,7 @@
         <td>2005 IEEE Congress on Evolutionary Computation</td>
         <td>5</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/71ef68facfbb46e3980fcfb98dbeb5ef86f99618">Comparing tree depth limits and resource-limited GP</a></td>
         <td>Sara Silva, E. Costa</td>
@@ -2418,7 +1836,7 @@
         <td>2005 IEEE Congress on Evolutionary Computation</td>
         <td>9</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a164d4e754c8ef81b9e56a3aefcfbe92a06af9b2">A Survey And Analysis Of Diversity Measures In Genetic Programming</a></td>
         <td>Raymond Burke, Steven M. Gustafson, G. Kendall</td>
@@ -2426,7 +1844,7 @@
         <td>Annual Conference on Genetic and Evolutionary Computation</td>
         <td>104</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3638a5e1b28d94773082e57a298bf09dba91888e">A New View on Symbolic Regression</a></td>
         <td>K. Weinert, M. Stautner</td>
@@ -2434,7 +1852,7 @@
         <td>European Conference on Genetic Programming</td>
         <td>7</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/9d59f87b881017e6ef0198636a77ad04b7ebea7a">Symbolic Dynamic Programming for First-Order MDPs</a></td>
         <td>Craig Boutilier, R. Reiter, Bob Price</td>
@@ -2442,7 +1860,7 @@
         <td>International Joint Conference on Artificial Intelligence</td>
         <td>278</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/2dae4707caad5e7fce39082481bc71ebf2d69846">Time series perturbation by genetic programming</a></td>
         <td>G. Y. Lee</td>
@@ -2450,7 +1868,7 @@
         <td>Proceedings of the 2001 Congress on Evolutionary Computation (IEEE Cat. No.01TH8546)</td>
         <td>5</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/e1045bec4bc93ac30b83c33d6e5fa4eb70b3591b">Coevolutionary Dynamics of a Multi-population Genetic Programming System</a></td>
         <td>J. Bongard</td>
@@ -2458,7 +1876,7 @@
         <td>European Conference on Artificial Life</td>
         <td>6</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/2ae175d42f2895feb1cf919070a407df2f4779b0">Symbolic analysis of the base parameters for closed-chain robots based on the completion procedure</a></td>
         <td>H. Kawasaki, Toshimi Shimizu, K. Kanzaki</td>
@@ -2466,7 +1884,7 @@
         <td>Proceedings of IEEE International Conference on Robotics and Automation</td>
         <td>10</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d29e37d86b80b2b92df943a01181acac64dfa901">A computer based decision-making model for poultry inspection.</a></td>
         <td>T. Habtemariam, Y. Cho</td>
@@ -2474,7 +1892,7 @@
         <td>Journal of the American Veterinary Medical Association</td>
         <td>7</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/7037a512831e99b03ad9b54786888a54514810dc">Universal Physics-Informed Neural Networks: Symbolic Differential Operator Discovery with Sparse Data</a></td>
         <td>Lena Podina, Brydon Eastman, M. Kohandel</td>
@@ -2482,7 +1900,7 @@
         <td>International Conference on Machine Learning</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/52438e92b8c26dbd7c55e8044d445f1e4e6e7a2d">Schema Analysis in Tree-Based Genetic Programming</a></td>
         <td>Bogdan Burlacu, M. Affenzeller, M. Kommenda, G. Kronberger, Stephan M. Winkler</td>
@@ -2490,7 +1908,7 @@
         <td>Genetic Programming Theory and Practice</td>
         <td>3</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/49f80f5d7c580783b03f49c410bc37f76bd47fb9">Deriving Realistic Mathematical Models from Support Vector Machines for Scientific Applications</a></td>
         <td>A. Murari, E. Peluso, S. Talebzadeh, P. Gaudio, M. Lungaroni, O. Mikulin, J. Vega, M. Gelfusa</td>
@@ -2498,7 +1916,7 @@
         <td>International Conference on Knowledge Discovery and Information Retrieval</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/96bf32e9500c473e8b8071911151f841df35c3f7">Similarity-Based Analysis of Population Dynamics in Genetic Programming Performing Symbolic Regression</a></td>
         <td>Stephan M. Winkler, M. Affenzeller, Bogdan Burlacu, G. Kronberger, M. Kommenda, Philipp Fleck</td>
@@ -2506,7 +1924,7 @@
         <td>Genetic Programming Theory and Practice</td>
         <td>5</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/705eda061cd815d6a2754a22acba930bd05eec98">Online Task Planning and Control for Aerial Robots with Fuel Constraints in Winds</a></td>
         <td>C. Yoo, R. Fitch, S. Sukkarieh</td>
@@ -2514,7 +1932,7 @@
         <td>Workshop on the Algorithmic Foundations of Robotics</td>
         <td>6</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/4e7fe122102d0d87dfba7993976fe1543c74951b">Sliding Window Symbolic Regression for Detecting Changes of System Dynamics</a></td>
         <td>Stephan M. Winkler, M. Affenzeller, G. Kronberger, M. Kommenda, Bogdan Burlacu, Stefan Wagner</td>
@@ -2522,7 +1940,7 @@
         <td>Genetic Programming Theory and Practice</td>
         <td>10</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/57ffa4334c29d3110b406ca97c123e798975480f">An extension of Gompertzian growth dynamics: Weibull and Frechet models.</a></td>
         <td>J. Rocha, Sandra M. Aleixo</td>
@@ -2530,7 +1948,7 @@
         <td>Mathematical biosciences and engineering : MBE</td>
         <td>25</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/e11a0ec003b57bd8f00dddc7b89ecce63616d6ae">Learning symbolic forward models for robotic motion planning and control</a></td>
         <td>Hirotaka Moriguchi, Hod Lipson</td>
@@ -2538,7 +1956,7 @@
         <td>European Conference on Artificial Life</td>
         <td>6</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/6b24db359838e5a8ac5609b674396eaf62174e2b">Graph Grammar Encoding and Evolution of Automata Networks</a></td>
         <td>Martin H. Luerssen</td>
@@ -2546,7 +1964,7 @@
         <td>Australasian Computer Science Conference</td>
         <td>11</td>
       </tr>
-
+    
   </tbody>
   </table>
   </p>
@@ -2581,98 +1999,4 @@
   };
   Plotly.newPlot('myDiv1', data, layout);
 </script>
-</html>
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-  
-
-
-
-                
-              </article>
-            </div>
-          
-          
-<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
-        </div>
-        
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
-  Back to top
-</button>
-        
-      </main>
-      
-        <footer class="md-footer">
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
-  
-</div>
-      
-    </div>
-  </div>
-</footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    
-    
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.tabs"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-    
-    
-
-      <script src="../assets/javascripts/bundle.c8d2eff1.min.js"></script>
-      
-    
-<script>
-  new DataTable('#table1', {
-    order: [[5, 'desc']],
-    "columnDefs": [
-        {"className": "dt-center", "targets": "_all"}
-      ],
-    pageLength: 5,
-    layout: {
-        topStart: {
-            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
-        }
-    }
-  });
-  new DataTable('#table2', {
-    order: [[3, 'desc']],
-    "columnDefs": [
-        {"className": "dt-center", "targets": "_all"}
-      ],
-    pageLength: 5,
-    layout: {
-        topStart: {
-            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
-        }
-    }
-  });
-</script>
-
-
-  </body>
 </html>

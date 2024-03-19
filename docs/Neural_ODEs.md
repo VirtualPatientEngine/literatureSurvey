@@ -1,591 +1,7 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-      
-      
-      
-        <link rel="prev" href="../Physics-informed_GNNs/">
-      
-      
-        <link rel="next" href="../Koopman_Theory/">
-      
-      
-      <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
-    
-    
-<title>Literature Survey (VPE)</title>
-
-    
-      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
-      
-        
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
-      
-      
-
-
-    
-    
-  <!-- Add scripts that need to run before here -->
-  <!-- Add jquery script -->
-  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-  <!-- Add data table libraries -->
-  <script src="https://cdn.datatables.net/2.0.1/js/dataTables.js"></script>
-  <link rel="stylesheet" href="https://cdn.datatables.net/2.0.1/css/dataTables.dataTables.css">
-  <!-- Load plotly.js into the DOM -->
-	<script src='https://cdn.plot.ly/plotly-2.29.1.min.js'></script>
-  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.0.1/css/buttons.dataTables.css">
-  <!-- Already specified in mkdocs.yml -->
-  <!-- <link rel="stylesheet" href="../docs/custom.css"> -->
-  <script src="https://cdn.datatables.net/buttons/3.0.1/js/dataTables.buttons.js"></script>
-  <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.dataTables.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
-  <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.html5.min.js"></script>
-  <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.print.min.js"></script>
-
-
-  <!-- 
-      
-     -->
-  <!-- Add scripts that need to run afterwards here -->
-
-    
-      
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-      
-    
-    
-      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
-    
-      <link rel="stylesheet" href="../custom.css">
-    
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
-      
-
-    
-    
-    
-  </head>
-  
-  
-    
-    
-      
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="purple">
-  
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-    
-      
-
-<header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Literature Survey (Simulator)" class="md-header__button md-logo" aria-label="Literature Survey (Simulator)" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
-
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
-            Literature Survey (Simulator)
-          </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
-            
-              Neural ODEs
-            
-          </span>
-        </div>
-      </div>
-    </div>
-    
-      
-        <form class="md-header__option" data-md-component="palette">
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
-    
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
-    
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
-      </label>
-    
-  
-</form>
-      
-    
-    
-      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
-    
-      <div class="md-header__source">
-        <a href="https://github.com/VirtualPatientEngine/literatureSurvey" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-  </div>
-  <div class="md-source__repository">
-    LiteratureSurvey
-  </div>
-</a>
-      </div>
-    
-  </nav>
-  
-</header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-          
-            
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
-        
-  
-    
-  
-  Overview
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../Physics-informed_GNNs/" class="md-tabs__link">
-        
-  
-    
-  
-  Physics-informed GNNs
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-    
-  
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
-        
-  
-    
-  
-  Neural ODEs
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../Koopman_Theory/" class="md-tabs__link">
-        
-  
-    
-  
-  Koopman Theory
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../Latent_Space_Simulator/" class="md-tabs__link">
-        
-  
-    
-  
-  Latent Space Simulator
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../PINNs/" class="md-tabs__link">
-        
-  
-    
-  
-  PINNs
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../Symbolic_regression/" class="md-tabs__link">
-        
-  
-    
-  
-  Symbolic regression
-
-      </a>
-    </li>
-  
-
-      
-    </ul>
-  </div>
-</nav>
-          
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-  
-
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Literature Survey (Simulator)" class="md-nav__button md-logo" aria-label="Literature Survey (Simulator)" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
-
-    </a>
-    Literature Survey (Simulator)
-  </label>
-  
-    <div class="md-nav__source">
-      <a href="https://github.com/VirtualPatientEngine/literatureSurvey" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-  </div>
-  <div class="md-source__repository">
-    LiteratureSurvey
-  </div>
-</a>
-    </div>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Overview
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Physics-informed_GNNs/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Physics-informed GNNs
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Neural ODEs
-  </span>
-  
-
-      </a>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Koopman_Theory/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Koopman Theory
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Latent_Space_Simulator/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Latent Space Simulator
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../PINNs/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    PINNs
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Symbolic_regression/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Symbolic regression
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-  </ul>
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-                
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-  
-  
-
-
-  <h1>Neural ODEs</h1>
-
+---
+hide:
+ - navigation
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -609,7 +25,7 @@
   <h3 id="search_query">1. Search query</h3>
   <i>(neural ordinary differential equation) | (neural ODE) | (graph neural differential equation) | (graph neural diffusion) | (graph neural ODEs) | (neural ODE solvers)</i>
   </p>
-
+  
   <p>
   <h3 id="plot1">2. Neural ODEs articles and citations over time</h3>
     <div id='myDiv1'>
@@ -630,7 +46,7 @@
     </tr>
   </thead>
   <tbody>
-
+    
       <tr>
       <script>
       // alert (3554)
@@ -641,7 +57,7 @@
         <td>Neural Information Processing Systems</td>
         <td>3554</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (2698)
@@ -652,7 +68,7 @@
         <td>ArXiv</td>
         <td>2698</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (2145)
@@ -663,7 +79,7 @@
         <td>arXiv: Learning</td>
         <td>2145</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (1732)
@@ -674,7 +90,7 @@
         <td>IEEE transactions on neural networks</td>
         <td>1732</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (1090)
@@ -685,7 +101,7 @@
         <td>Neural Information Processing Systems</td>
         <td>1090</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (1077)
@@ -696,7 +112,7 @@
         <td>2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</td>
         <td>1077</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (692)
@@ -707,7 +123,7 @@
         <td>ArXiv</td>
         <td>692</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (597)
@@ -718,7 +134,7 @@
         <td>Inverse Problems</td>
         <td>597</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (526)
@@ -729,7 +145,7 @@
         <td>Frontiers in Neuroinformatics</td>
         <td>526</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (518)
@@ -740,7 +156,7 @@
         <td>ArXiv</td>
         <td>518</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (496)
@@ -751,7 +167,7 @@
         <td>ArXiv</td>
         <td>496</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (493)
@@ -762,7 +178,7 @@
         <td>Neural Information Processing Systems</td>
         <td>493</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (466)
@@ -773,7 +189,7 @@
         <td>Neural Information Processing Systems</td>
         <td>466</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (453)
@@ -784,7 +200,7 @@
         <td>ArXiv</td>
         <td>453</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (439)
@@ -795,7 +211,7 @@
         <td>Biological Cybernetics</td>
         <td>439</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (431)
@@ -806,7 +222,7 @@
         <td>ArXiv</td>
         <td>431</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (416)
@@ -817,7 +233,7 @@
         <td>Neural Information Processing Systems</td>
         <td>416</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (404)
@@ -828,7 +244,7 @@
         <td>IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics)</td>
         <td>404</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (382)
@@ -839,7 +255,7 @@
         <td>AAAI Conference on Artificial Intelligence</td>
         <td>382</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (366)
@@ -850,7 +266,7 @@
         <td>ArXiv</td>
         <td>366</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (321)
@@ -861,7 +277,7 @@
         <td>ArXiv</td>
         <td>321</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (318)
@@ -872,7 +288,7 @@
         <td>Bioinformatics</td>
         <td>318</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (307)
@@ -883,7 +299,7 @@
         <td>ArXiv</td>
         <td>307</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (289)
@@ -894,7 +310,7 @@
         <td>ArXiv</td>
         <td>289</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (275)
@@ -905,7 +321,7 @@
         <td>Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining</td>
         <td>275</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (252)
@@ -916,7 +332,7 @@
         <td>ArXiv</td>
         <td>252</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (235)
@@ -927,7 +343,7 @@
         <td>AAAI Conference on Artificial Intelligence</td>
         <td>235</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (235)
@@ -938,7 +354,7 @@
         <td>ArXiv</td>
         <td>235</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (225)
@@ -949,7 +365,7 @@
         <td>Der Radiologe</td>
         <td>225</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (222)
@@ -960,7 +376,7 @@
         <td>Neural Information Processing Systems</td>
         <td>222</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (219)
@@ -971,7 +387,7 @@
         <td>ArXiv</td>
         <td>219</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (218)
@@ -982,7 +398,7 @@
         <td>International Conference on Machine Learning</td>
         <td>218</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (213)
@@ -993,7 +409,7 @@
         <td>ArXiv</td>
         <td>213</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (202)
@@ -1004,7 +420,7 @@
         <td>Kybernetik</td>
         <td>202</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (180)
@@ -1015,7 +431,7 @@
         <td>ArXiv</td>
         <td>180</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (177)
@@ -1026,7 +442,7 @@
         <td>2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</td>
         <td>177</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (171)
@@ -1037,7 +453,7 @@
         <td>PLoS Computational Biology</td>
         <td>171</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (170)
@@ -1048,7 +464,7 @@
         <td>ArXiv</td>
         <td>170</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (170)
@@ -1059,7 +475,7 @@
         <td>ArXiv</td>
         <td>170</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (169)
@@ -1070,7 +486,7 @@
         <td>IEEE Transactions on Knowledge and Data Engineering</td>
         <td>169</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (166)
@@ -1081,7 +497,7 @@
         <td>Annual review of physiology</td>
         <td>166</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (165)
@@ -1092,7 +508,7 @@
         <td>Journal of Child Psychology and Psychiatry, and Allied Disciplines</td>
         <td>165</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (165)
@@ -1103,7 +519,7 @@
         <td>ArXiv</td>
         <td>165</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (158)
@@ -1114,7 +530,7 @@
         <td>ArXiv</td>
         <td>158</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (157)
@@ -1125,7 +541,7 @@
         <td>Computational and Mathematical Methods in Medicine</td>
         <td>157</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (156)
@@ -1136,7 +552,7 @@
         <td>ArXiv</td>
         <td>156</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (155)
@@ -1147,7 +563,7 @@
         <td>International Conference on Machine Learning</td>
         <td>155</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (153)
@@ -1158,7 +574,7 @@
         <td>IEEE Transactions on Control Systems Technology</td>
         <td>153</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (152)
@@ -1169,7 +585,7 @@
         <td>ArXiv</td>
         <td>152</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (149)
@@ -1180,7 +596,7 @@
         <td>Brain Structure and Function</td>
         <td>149</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (149)
@@ -1191,7 +607,7 @@
         <td>ArXiv</td>
         <td>149</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (148)
@@ -1202,7 +618,7 @@
         <td>IEEE transactions on neural networks</td>
         <td>148</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (144)
@@ -1213,7 +629,7 @@
         <td>ArXiv</td>
         <td>144</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (140)
@@ -1224,7 +640,7 @@
         <td>Anatomy and Embryology</td>
         <td>140</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (135)
@@ -1235,7 +651,7 @@
         <td>ArXiv</td>
         <td>135</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (132)
@@ -1246,7 +662,7 @@
         <td>IEEE transactions on neural networks</td>
         <td>132</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (131)
@@ -1257,7 +673,7 @@
         <td>ArXiv</td>
         <td>131</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (130)
@@ -1268,7 +684,7 @@
         <td>ArXiv</td>
         <td>130</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (130)
@@ -1279,7 +695,7 @@
         <td>IEEE International Symposium on Circuits and Systems</td>
         <td>130</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (129)
@@ -1290,7 +706,7 @@
         <td>2017 IEEE International Conference on Data Mining (ICDM)</td>
         <td>129</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (128)
@@ -1301,7 +717,7 @@
         <td>Brain : a journal of neurology</td>
         <td>128</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (124)
@@ -1312,7 +728,7 @@
         <td>Neural Information Processing Systems</td>
         <td>124</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (121)
@@ -1323,7 +739,7 @@
         <td>ArXiv</td>
         <td>121</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (121)
@@ -1334,7 +750,7 @@
         <td>IEEE transactions on neural networks</td>
         <td>121</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (119)
@@ -1345,7 +761,7 @@
         <td>IEEE Transactions on Neural Networks and Learning Systems</td>
         <td>119</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (118)
@@ -1356,7 +772,7 @@
         <td>AAAI Conference on Artificial Intelligence</td>
         <td>118</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (114)
@@ -1367,7 +783,7 @@
         <td>The journal of physical chemistry. A</td>
         <td>114</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (114)
@@ -1378,7 +794,7 @@
         <td>Neuropsychopharmacology</td>
         <td>114</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (113)
@@ -1389,7 +805,7 @@
         <td>ArXiv</td>
         <td>113</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (112)
@@ -1400,7 +816,7 @@
         <td>2021 IEEE High Performance Extreme Computing Conference (HPEC)</td>
         <td>112</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (107)
@@ -1411,7 +827,7 @@
         <td>Neural Computing and Applications</td>
         <td>107</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (107)
@@ -1422,7 +838,7 @@
         <td>Neural Information Processing Systems</td>
         <td>107</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (106)
@@ -1433,7 +849,7 @@
         <td>ArXiv</td>
         <td>106</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (106)
@@ -1444,7 +860,7 @@
         <td>AAAI Conference on Artificial Intelligence</td>
         <td>106</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (105)
@@ -1455,7 +871,7 @@
         <td>International Conference on Machine Learning</td>
         <td>105</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (105)
@@ -1466,7 +882,7 @@
         <td>Biological Cybernetics</td>
         <td>105</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (104)
@@ -1477,7 +893,7 @@
         <td>INFORMS J. Comput.</td>
         <td>104</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (104)
@@ -1488,7 +904,7 @@
         <td>2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition</td>
         <td>104</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (104)
@@ -1499,7 +915,7 @@
         <td>Proceedings of the 26th ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems</td>
         <td>104</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (103)
@@ -1510,7 +926,7 @@
         <td>ArXiv</td>
         <td>103</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (103)
@@ -1521,7 +937,7 @@
         <td>SIAM J. Appl. Dyn. Syst.</td>
         <td>103</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (101)
@@ -1532,7 +948,7 @@
         <td>Neural Computation</td>
         <td>101</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (101)
@@ -1543,7 +959,7 @@
         <td>ArXiv</td>
         <td>101</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (101)
@@ -1554,7 +970,7 @@
         <td>ArXiv</td>
         <td>101</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (101)
@@ -1565,7 +981,7 @@
         <td>ArXiv</td>
         <td>101</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (101)
@@ -1576,7 +992,7 @@
         <td>1990 IJCNN International Joint Conference on Neural Networks</td>
         <td>101</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (99)
@@ -1587,7 +1003,7 @@
         <td>AAAI Conference on Artificial Intelligence</td>
         <td>99</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (99)
@@ -1598,7 +1014,7 @@
         <td>Frontiers in Psychiatry</td>
         <td>99</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (99)
@@ -1609,7 +1025,7 @@
         <td>AAAI Conference on Artificial Intelligence</td>
         <td>99</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (99)
@@ -1620,7 +1036,7 @@
         <td>2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</td>
         <td>99</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (98)
@@ -1631,7 +1047,7 @@
         <td>Int. J. Bifurc. Chaos</td>
         <td>98</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (95)
@@ -1642,7 +1058,7 @@
         <td>Proceedings of the 13th International Conference on Web Search and Data Mining</td>
         <td>95</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (93)
@@ -1653,7 +1069,7 @@
         <td>ArXiv</td>
         <td>93</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (93)
@@ -1664,7 +1080,7 @@
         <td>ArXiv</td>
         <td>93</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (93)
@@ -1675,7 +1091,7 @@
         <td>ArXiv</td>
         <td>93</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (92)
@@ -1686,7 +1102,7 @@
         <td>European Physical Journal plus</td>
         <td>92</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (90)
@@ -1697,7 +1113,7 @@
         <td>Proceedings of machine learning research</td>
         <td>90</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (88)
@@ -1708,7 +1124,7 @@
         <td>Chaos</td>
         <td>88</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (87)
@@ -1719,7 +1135,7 @@
         <td>Neural Computation</td>
         <td>87</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (86)
@@ -1730,7 +1146,7 @@
         <td>Mathematical biosciences and engineering : MBE</td>
         <td>86</td>
       </tr>
-
+    
   </tbody>
   </table>
   </p>
@@ -1748,7 +1164,7 @@
     </tr>
   </thead>
   <tbody>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/bc600a506b27401dc48633b816a12259a2e9243b">Electroosmotic microchannel flow of blood conveying copper and cupric nanoparticles: Ciliary motion experiencing entropy generation using backpropagated networks</a></td>
         <td>Parikshit Sharma, B. K. Sharma, N.K. Mishra, Bandar Almohsen, M. Bhatti</td>
@@ -1756,7 +1172,7 @@
         <td>ZAMM - Journal of Applied Mathematics and Mechanics / Zeitschrift für Angewandte Mathematik und Mechanik</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/309482aa565db5766096865ab7d4d45b4aea49fc">HiDeS: a higher-order-derivative-supervised neural ordinary differential equation for multi-robot systems and opinion dynamics</a></td>
         <td>Meng Li, Wenyu Bian, Liangxiong Chen, Mei Liu</td>
@@ -1764,7 +1180,7 @@
         <td>Frontiers in Neurorobotics</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/2566d035a3d7f12df59b7053a610fbd54161562b">Continuous Image Outpainting with Neural ODE</a></td>
         <td>Penglei Gao, Xi Yang, Rui Zhang, Kaizhu Huang</td>
@@ -1772,7 +1188,7 @@
         <td>SSRN Electronic Journal</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/aca1b3ae304242d4b86940d1fb6ce0b4272c8c93">Probabilistic locked mode predictor in the presence of a resistive wall and finite island saturation in tokamaks</a></td>
         <td>C. Akçay, John M. Finn, Dylan P. Brennan, K. E. J. Olofsson, A. J. Cole</td>
@@ -1780,7 +1196,7 @@
         <td>Physics of Plasmas</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3779b87d10925ca2bf96c3b8b971330c8682e06e">Graph Convolutional Neural Networks for Automated Echocardiography View Recognition: A Holistic Approach</a></td>
         <td>Sarina Thomas, Cristiana Tiago, Børge Solli Andreassen, S. Aase, Jurica Šprem, Erik Normann Steen, Anne H. Schistad Solberg, Guy Ben-Yosef</td>
@@ -1788,7 +1204,7 @@
         <td>NotAvbl</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/77308f9484b9c372ad028e04301c07f5e92c566b">Modelling and Distribution of Electricity Load Forecasting in Nigeria Power System (Olu-Ode Community)</a></td>
         <td>Ogunwuyi, Ogunmakinde Jimoh, Lawal Akeem Olaide, Omotayo Mayowa Emmanuel</td>
@@ -1796,7 +1212,7 @@
         <td>International Journal of Advanced Engineering and Nano Technology</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/93a3bdec5c232a639d5cd0be5f7cb430caafdd2f">Changes in Structural Neural Networks in the Recovery Process of Motor Paralysis after Stroke</a></td>
         <td>I. Kimura, Atsushi Senoo, M. Abo</td>
@@ -1804,7 +1220,7 @@
         <td>Brain Sciences</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d9b9e3efbe9528468442ca216a59223847d31fa4">Zhang neural networks: an introduction to predictive computations for discretized time-varying matrix problems</a></td>
         <td>Frank Uhlig</td>
@@ -1812,7 +1228,7 @@
         <td>Numerische Mathematik</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/5005529d4850a80e2234177e2a2625ed7ac60a68">Emulating the interstellar medium chemistry with neural operators</a></td>
         <td>Lorenzo Branca, Andrea Pallottini</td>
@@ -1820,7 +1236,7 @@
         <td>Astronomy &amp; Astrophysics</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/94e459909290d427dffaee3052a19ed32300b89a">Temporal Disentangled Contrastive Diffusion Model for Spatiotemporal Imputation</a></td>
         <td>Yakun Chen, Kaize Shi, Zhangkai Wu, Juan Chen, Xianzhi Wang, Julian McAuley, Guandong Xu, Shui Yu</td>
@@ -1828,7 +1244,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3e64d1ecf181a7115d7f4a61834f1e7e7defc6bf">Uncertainty Quantification of Graph Convolution Neural Network Models of Evolving Processes</a></td>
         <td>J. Hauth, C. Safta, Xun Huan, Ravi G. Patel, Reese Jones</td>
@@ -1836,7 +1252,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/5ee2008c1eab4545f1e001b2cf3c0578b7a1aafe">ContiFormer: Continuous-Time Transformer for Irregular Time Series Modeling</a></td>
         <td>Yuqi Chen, Kan Ren, Yansen Wang, Yuchen Fang, Weiwei Sun, Dongsheng Li</td>
@@ -1844,7 +1260,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/dfb10dec07e4e45faec83014d0c6764bd5a0a588">Beyond Kalman Filters: Deep Learning-Based Filters for Improved Object Tracking</a></td>
         <td>Momir Adzemovic, Predrag Tadi'c, Andrija Petrovi'c, Mladen Nikolic</td>
@@ -1852,7 +1268,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a5805fc04ef9c6bd5534b36fbc2a6a1838c094d5">Multiscale graph neural networks with adaptive mesh refinement for accelerating mesh-based simulations</a></td>
         <td>Roberto Perera, V. Agrawal</td>
@@ -1860,7 +1276,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/70b807296c34454aaae114a75e19db3dfef795cf">Learning time-dependent PDE via graph neural networks and deep operator network for robust accuracy on irregular grids</a></td>
         <td>S. Cho, Jae Yong Lee, Hyung Ju Hwang</td>
@@ -1868,7 +1284,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f5bcee3d194cd4b4a4191f0ddc269504f5d88f05">Score-Based Physics-Informed Neural Networks for High-Dimensional Fokker-Planck Equations</a></td>
         <td>Zheyuan Hu, Zhongqiang Zhang, G. Karniadakis, Kenji Kawaguchi</td>
@@ -1876,7 +1292,7 @@
         <td>ArXiv</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/93fce709c8b96fb8ae986983304cd9b98a07a4bb">Foundational Inference Models for Dynamical Systems</a></td>
         <td>Patrick Seifner, K. Cvejoski, Ramses J. Sanchez</td>
@@ -1884,7 +1300,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/7b53ca1a1b1fc801b1425d5c6c3e2c0482bc0cbf">Conditional Generative Models are Sufficient to Sample from Any Causal Effect Estimand</a></td>
         <td>Md Musfiqur Rahman, Matt Jordan, Murat Kocaoglu</td>
@@ -1892,7 +1308,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/77098aa6784407b36ac88f2728faf86d73c031f9">Nearest Neighbour Score Estimators for Diffusion Generative Models</a></td>
         <td>Matthew Niedoba, Dylan Green, Saeid Naderiparizi, Vasileios Lioutas, J. W. Lavington, Xiaoxuan Liang, Yunpeng Liu, Ke Zhang, Setareh Dabiri, Adam Scibior, Berend Zwartsenberg, Frank Wood</td>
@@ -1900,7 +1316,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f9e2b4b3ab6edbcfd564d7f10741be236bc4ad7d">ANN model for magnetised Casson fluid flow under the influence of thermal radiation and temperature stratification: Comparative analysis</a></td>
         <td>Arooj Tanveer, Muhammad Bilal Ashraf</td>
@@ -1908,7 +1324,7 @@
         <td>ZAMM - Journal of Applied Mathematics and Mechanics / Zeitschrift für Angewandte Mathematik und Mechanik</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a757bfa279b5f257089be2bb56ee7ccb76fa0791">Artificial neural network of thermal Buoyancy and Fourier flux impact on suction/injection‐based Darcy medium surface filled with hybrid and ternary nanoparticles</a></td>
         <td>M. Dinesh Kumar, Chakravarthula Siva Krishnam Raju, Essam R. El-Zahar, N. A. Shah, S. Yook</td>
@@ -1916,7 +1332,7 @@
         <td>ZAMM - Journal of Applied Mathematics and Mechanics / Zeitschrift für Angewandte Mathematik und Mechanik</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/8cb75dce0bc5d9c35cc1791f03f1a611cd963582">Inference of Gene Regulatory Networks Based on Multi-view Hierarchical Hypergraphs.</a></td>
         <td>Songyang Wu, Kui Jin, Mingjing Tang, Yuelong Xia, Wei Gao</td>
@@ -1924,7 +1340,7 @@
         <td>Interdisciplinary sciences, computational life sciences</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/5764fd1a6f4d9c81095172c17c42452636ed905f">Integrated intelligence of inverse multiquadric radial base neuro‐evolution for radiative MHD Prandtl–Eyring fluid flow model with convective heating</a></td>
         <td>Zeeshan Ikram Butt, Iftikhar Ahmad, Muhammad Shoaib, Hira Ilyas, A. Kiani, Muhammad Asif Zahoor Raja</td>
@@ -1932,7 +1348,7 @@
         <td>ZAMM - Journal of Applied Mathematics and Mechanics / Zeitschrift für Angewandte Mathematik und Mechanik</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/8e78f6918ca102033f72d2fa69a957092645348b">PAC-Bayesian Adversarially Robust Generalization Bounds for Graph Neural Network</a></td>
         <td>Tan Sun, Junhong Lin</td>
@@ -1940,7 +1356,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/4a457e605dbdf99e412bda846127c63febe64404">AirPhyNet: Harnessing Physics-Guided Neural Networks for Air Quality Prediction</a></td>
         <td>Kethmi Hirushini Hettige, Jiahao Ji, Shili Xiang, Cheng Long, Gao Cong, Jingyuan Wang</td>
@@ -1948,7 +1364,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/5a91d9d2be5be1c41455b39def036ce325902ce0">Path Signatures and Graph Neural Networks for Slow Earthquake Analysis: Better Together?</a></td>
         <td>Hans Riess, M. Veveakis, M. Zavlanos</td>
@@ -1956,7 +1372,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3a6d0954edf0c8e7bb09a7f36706dbb318614e6f">HAMLET: Graph Transformer Neural Operator for Partial Differential Equations</a></td>
         <td>Andrey Bryutkin, Jiahao Huang, Zhongying Deng, Guang Yang, C. Schönlieb, Angelica I. Avilés-Rivero</td>
@@ -1964,7 +1380,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/9b02efdbc0464d5b8f179d5b7369f47ce5c456b5">Unification of Symmetries Inside Neural Networks: Transformer, Feedforward and Neural ODE</a></td>
         <td>Koji Hashimoto, Yuji Hirono, Akiyoshi Sannai</td>
@@ -1972,7 +1388,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d3627d71cb18b583f742d6ea03bd3022a49eb6e5">Unveiling Delay Effects in Traffic Forecasting: A Perspective from Spatial-Temporal Delay Differential Equations</a></td>
         <td>Qingqing Long, Zheng Fang, Chen Fang, Chong Chen, Pengfei Wang, Yuanchun Zhou</td>
@@ -1980,7 +1396,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/91ee0fe388c892e6f5c89d88647591430d91284f">Deep Conditional Generative Learning: Model and Error Analysis</a></td>
         <td>Jinyuan Chang, Zhao Ding, Yuling Jiao, Ruoxuan Li, Jerry Zhijian Yang</td>
@@ -1988,7 +1404,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/4460b2949bff152998421cf9a88728098f203dae">Deep Continuous Networks</a></td>
         <td>Nergis Tomen, S. Pintea, J. V. Gemert</td>
@@ -1996,7 +1412,7 @@
         <td>International Conference on Machine Learning</td>
         <td>12</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d1f391c68e804665dbdf42c61b834373acca41fa">Solving spatiotemporal partial differential equations with Physics-informed Graph Neural Network</a></td>
         <td>Zixue Xiang, Wei Peng, Wenyan Yao, Xu Liu, Xiaoya Zhang</td>
@@ -2004,7 +1420,7 @@
         <td>Applied Soft Computing</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/b4d6e1de7f328a123a9fdbecde40b1d5603dcdf9">Learning systems of ordinary differential equations with Physics-Informed Neural Networks: the case study of enzyme kinetics</a></td>
         <td>Paola Lecca</td>
@@ -2012,7 +1428,7 @@
         <td>Journal of Physics: Conference Series</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/51ae1f5d620be75babfa5e738e7e92c77bc6c350">Vertical Symbolic Regression via Deep Policy Gradient</a></td>
         <td>Nan Jiang, Md Nasim, Yexiang Xue</td>
@@ -2020,7 +1436,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/402fc03a88869655f90c3f873d9b003d325f1366">On the feed-forward neural network for analyzing pantograph equations</a></td>
         <td>E. Az-Zo’bi, Rasool Shah, Haifa A. Alyousef, C. Tiofack, S. El-Tantawy</td>
@@ -2028,7 +1444,7 @@
         <td>AIP Advances</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3cc479dac2afe5aef8b520f2fed11853bbee2b46">An effective wavelet neural network approach for solving first and second order ordinary differential equations</a></td>
         <td>Lee Sen Tan, Z. Zainuddin, Pauline Ong, Farah Aini Abdullah</td>
@@ -2036,7 +1452,7 @@
         <td>Applied Soft Computing</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3f737c1ab38aba6275f0f2968e544d1eb137cb6e">Neural Multivariate Grey Model and Its Applications</a></td>
         <td>Qianyang Li, Xingjun Zhang</td>
@@ -2044,7 +1460,7 @@
         <td>Applied Sciences</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d712d4e73a57ee9ca0f8e196a5073e7fac71f23f">Rademacher Complexity of Neural ODEs via Chen-Fliess Series</a></td>
         <td>Joshua Hanson, M. Raginsky</td>
@@ -2052,7 +1468,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/ad79a8167991ad31dde261e33e76da7bd390577f">Continuously Evolving Graph Neural Controlled Differential Equations for Traffic Forecasting</a></td>
         <td>Jiajia Wu, Ling Chen</td>
@@ -2060,7 +1476,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/ed6e3428dea2bd0623d3f875deb7385f0b5f49d6">Manifold GCN: Diffusion-based Convolutional Neural Network for Manifold-valued Graphs</a></td>
         <td>M. Hanik, Gabriele Steidl, C. V. Tycowicz</td>
@@ -2068,7 +1484,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/e317bfa36cc46545fd859a8e37760778a686f940">Optimal Potential Shaping on SE(3) via Neural ODEs on Lie Groups</a></td>
         <td>Yannik Wotte, Federico Califano, Stefano Stramigioli</td>
@@ -2076,7 +1492,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/5b65ce36a5988b687c9a123c0d0b009d9f770b53">Estimation of partially known Gaussian graphical models with score-based structural priors</a></td>
         <td>Mart'in Sevilla, Antonio G. Marques, Santiago Segarra</td>
@@ -2084,7 +1500,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/455cb4bd7f188d8a0b12c138d4192275987cded1">Equivariant Manifold Neural ODEs and Differential Invariants</a></td>
         <td>Emma Andersdotter, Fredrik Ohlsson</td>
@@ -2092,7 +1508,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/bba06ffc8ab4817e6190fd403ab49fbca16cad0b">NLBAC: A Neural Ordinary Differential Equations-based Framework for Stable and Safe Reinforcement Learning</a></td>
         <td>Liqun Zhao, Keyan Miao, Konstantinos Gatsis, A. Papachristodoulou</td>
@@ -2100,7 +1516,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/b6033b43d159a156dbeeae77c09b048234136686">Parallel Solution of Nonlinear Projection Equations in a Multitask Learning Framework.</a></td>
         <td>Da-Lin Wu, Abdel Lisser</td>
@@ -2108,7 +1524,7 @@
         <td>IEEE transactions on neural networks and learning systems</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/2df8d9807bc09bcad6625b9dcb7f43db30e7dd8e">Learning to Approximate Adaptive Kernel Convolution on Graphs</a></td>
         <td>Jaeyoon Sim, Sooyeon Jeon, Injun Choi, Guorong Wu, Won Hwa Kim</td>
@@ -2116,7 +1532,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/9a227e7014c89095b713bdd0263b13ec6d6256f4">On The Temporal Domain of Differential Equation Inspired Graph Neural Networks</a></td>
         <td>Moshe Eliasof, E. Haber, Eran Treister, C. Schönlieb</td>
@@ -2124,7 +1540,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/95e4cc9defc5301ccd7d51e26fef9551e6a77fd0">Remarks on the Mathematical Modeling of Gene and Neuronal Networks by Ordinary Differential Equations</a></td>
         <td>D. Ogorelova, F. Sadyrbaev</td>
@@ -2132,7 +1548,7 @@
         <td>Axioms</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/9d4a3985f01a77d7d3177712376c3d9fddb7f80a">Algebraic Dynamical Systems in Machine Learning</a></td>
         <td>Iolo Jones, Jerry Swan, Jeffrey Giansiracusa</td>
@@ -2140,7 +1556,7 @@
         <td>Appl. Categorical Struct.</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/670446f822e2e0708ac216ce20af5688a3909ca2">Interplay between depth and width for interpolation in neural ODEs</a></td>
         <td>Antonio 'Alvarez-L'opez, Arselane Hadj Slimane, Enrique Zuazua</td>
@@ -2148,7 +1564,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/1b94f60d94873cef94d66bfb3799f830ba88651a">Approximation of Solution Operators for High-dimensional PDEs</a></td>
         <td>Nathan Gaby, Xiaojing Ye</td>
@@ -2156,7 +1572,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f6f8602933d1fc2ddcf82ceba1971fc32303b67b">Port-Hamiltonian Neural ODE Networks on Lie Groups For Robot Dynamics Learning and Control</a></td>
         <td>T. Duong, Abdullah Altawaitan, Jason Stanley, Nikolay Atanasov</td>
@@ -2164,7 +1580,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/df7b8ab343611c92751b64dc644089d4923c7346">BENO: Boundary-embedded Neural Operators for Elliptic PDEs</a></td>
         <td>Haixin Wang, Jiaxin Li, Anubhav Dwivedi, Kentaro Hara, Tailin Wu</td>
@@ -2172,7 +1588,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/383af25cc27fc7bd1142be2106eef1432212767b">Enhancing Dynamical System Modeling through Interpretable Machine Learning Augmentations: A Case Study in Cathodic Electrophoretic Deposition</a></td>
         <td>Christian Jacobsen, Jiayuan Dong, Mehdi Khalloufi, Xun Huan, Karthik Duraisamy, Maryam Akram, Wanjiao Liu</td>
@@ -2180,7 +1596,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/1d792ae8209f2fb95d6a44dfd54e54517f1b52bf">Rapid Estimation of Left Ventricular Contractility with a Physics-Informed Neural Network Inverse Modeling Approach</a></td>
         <td>Ehsan Naghavi, Haifeng Wang, Lei Fan, J. Choy, Ghassan S Kassab, Seungik Baek, Lik-Chuan Lee</td>
@@ -2188,7 +1604,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/699fd5886a10e02b3720034df3e8130f9b33b48c">A Neural ODE and Transformer-based Model for Temporal Understanding and Dense Video Captioning</a></td>
         <td>Sainithin Artham, S. Shaikh</td>
@@ -2196,7 +1612,7 @@
         <td>Multimedia Tools and Applications</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/7100447fee1e90d44840ce774207e14ef81a95bf">TO‐NODE: Topology optimization with neural ordinary differential equation</a></td>
         <td>Qiaochu Ma, Edward C. De Meter, Saurabh Basu</td>
@@ -2204,7 +1620,7 @@
         <td>International Journal for Numerical Methods in Engineering</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/eb43e619ac5bf6cc41285a5c875168c5790e134f">Coupling Graph Neural Networks with Fractional Order Continuous Dynamics: A Robustness Study</a></td>
         <td>Qiyu Kang, Kai Zhao, Yang Song, Yihang Xie, Yanan Zhao, Sijie Wang, Rui She, Wee Peng Tay</td>
@@ -2212,7 +1628,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/99d23aa713ad4f2f9db1f3804c23e7b04b62e2bf">GrainGNN: A dynamic graph neural network for predicting 3D grain microstructure</a></td>
         <td>Yigong Qin, Stephen DeWitt, Balasubramanian Radhakrishnan, G. Biros</td>
@@ -2220,7 +1636,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/6439594c447eeea7fce63f057489e915c6fc94a9">Addiction-related brain networks identification via Graph Diffusion Reconstruction Network</a></td>
         <td>Changhong Jing, Hongzhi Kuai, Hiroki Matsumoto, Tomoharu Yamaguchi, Iman Yi Liao, Shuqiang Wang</td>
@@ -2228,7 +1644,7 @@
         <td>Brain informatics</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3579984410df7b486c162597584cc5179b9d3343">Differential Equations for Continuous-Time Deep Learning</a></td>
         <td>Lars Ruthotto</td>
@@ -2236,7 +1652,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/1e60424a4afe71c09cb6f6635ba782a5f7bb0d63">Generalized Lagrangian Neural Networks</a></td>
         <td>Shanshan Xiao, Jiawei Zhang, Yifa Tang</td>
@@ -2244,7 +1660,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/1d20871f0fef2354fd30bb069d2ce0be1dd895b1">Inverse Nonlinearity Compensation of Hyperelastic Deformation in Dielectric Elastomer for Acoustic Actuation</a></td>
         <td>J. Lee, G. An, Jeong-Yun Sun, Kyogu Lee</td>
@@ -2252,7 +1668,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f2b0748a078578c89e6d34c681c494960adf9200">PosDiffNet: Positional Neural Diffusion for Point Cloud Registration in a Large Field of View with Perturbations</a></td>
         <td>Rui She, Sijie Wang, Qiyu Kang, Kai Zhao, Yang Song, Wee Peng Tay, Tianyu Geng, Xingchao Jian</td>
@@ -2260,7 +1676,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d79f93583ff65d3dd1fa5de5ce6457d039ccb4d0">A Bidirectional Feedforward Neural Network Architecture Using the Discretized Neural Memory Ordinary Differential Equation.</a></td>
         <td>Hao Niu, Zhang Yi, Tao He</td>
@@ -2268,7 +1684,7 @@
         <td>International journal of neural systems</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/cb5af772ea66ff572db4a35c0dc86b26d81acf4d">Geometric-Facilitated Denoising Diffusion Model for 3D Molecule Generation</a></td>
         <td>Can Xu, Haosen Wang, Weigang Wang, Pengfei Zheng, Hongyang Chen</td>
@@ -2276,7 +1692,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/b71683cab90279be4b9f965a9b04e10b96017f65">Multi-relational Graph Diffusion Neural Network with Parallel Retention for Stock Trends Classification</a></td>
         <td>Zinuo You, Pengju Zhang, Jin Zheng, John Cartlidge</td>
@@ -2284,7 +1700,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/2abed230856db7a7f7080d551c784286baf4bb85">A Cost-Efficient FPGA Implementation of Tiny Transformer Model using Neural ODE</a></td>
         <td>Ikumi Okubo, Keisuke Sugiura, Hiroki Matsutani</td>
@@ -2292,7 +1708,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/213a51f8bcc0c5628f1151a819f24309f0e7ed72">Physics-Informed Neural Networks for High-Frequency and Multi-Scale Problems using Transfer Learning</a></td>
         <td>Abdul Hannan Mustajab, Hao Lyu, Z. Rizvi, Frank Wuttke</td>
@@ -2300,7 +1716,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/43ab8aa08287136f9a8a35f244558d15931a8372">Neural ordinary differential grey algorithm to forecasting MEVW systems</a></td>
         <td>Z. Chen, Y. Meng, Ruei-Yuan Wang, Timothy Chen</td>
@@ -2308,7 +1724,7 @@
         <td>INTERNATIONAL JOURNAL OF COMPUTERS  COMMUNICATIONS &amp; CONTROL</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3e452b5a79d6e6e831bce85d38a21548d5b9257d">Information Cascade Prediction of complex networks based on Physics-informed Graph Convolutional Network</a></td>
         <td>Dingguo Yu, Yijie Zhou, Suiyu Zhang, Wenbing Li, Michael Small, Ke-ke Shang</td>
@@ -2316,7 +1732,7 @@
         <td>New Journal of Physics</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/35937554116145d1e3fe014df07242ccb8626248">Gain Scheduling with a Neural Operator for a Transport PDE with Nonlinear Recirculation</a></td>
         <td>Maxence Lamarque, Luke Bhan, R. Vázquez, Miroslav Krstic</td>
@@ -2324,7 +1740,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/870e55a6b76ca7a2c466dbef669c0d0401872b63">DGDNN: Decoupled Graph Diffusion Neural Network for Stock Movement Prediction</a></td>
         <td>Zinuo You, Zijian Shi, Hongbo Bo, John Cartlidge, Li Zhang, Yan Ge</td>
@@ -2332,7 +1748,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/84e7808989ea25b15ab754e78dc86c4acf4cd1c3">Dynamics of a random Hopfield neural lattice model with adaptive synapses and delayed Hebbian learning</a></td>
         <td>Xiaoying Han, P. Kloeden</td>
@@ -2340,7 +1756,7 @@
         <td>Ukrains’kyi Matematychnyi Zhurnal</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/5a13d1179a4978cd7a933329d922430cdb736e6d">Solving multiscale dynamical systems by deep learning</a></td>
         <td>Z. Xu, Junjie Yao, Yuxiao Yi, Liangkai Hang, E. Weinan, Yaoyu Zhang, Tianhan Zhang</td>
@@ -2348,7 +1764,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/11989629b5aa551fcce60769c5efd6e5d0c73f86">nmODE-Unet: A Novel Network for Semantic Segmentation of Medical Images</a></td>
         <td>Shubin Wang, Yuanyuan Chen, Zhang Yi</td>
@@ -2356,7 +1772,7 @@
         <td>Applied Sciences</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/4fd47d4e1f2db727a52eaab37e38f82bff653646">ML-Based Spectral Power Profiles Prediction in Presence of ISRS for Ultra-Wideband Transmission</a></td>
         <td>A. M. Rosa Brusin, A. Nespola, M. R. Zefreh, S. Piciaccia, P. Poggiolini, F. Forghieri, A. Carena</td>
@@ -2364,7 +1780,7 @@
         <td>Journal of Lightwave Technology</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/41a3e6d4678f3adadb93dcd706586b939f2a3ab9">Numerical analysis of thermophoretic particle deposition on 3D Casson nanofluid: Artificial neural networks-based Levenberg–Marquardt algorithm</a></td>
         <td>Amna Khan, Fahad Aljuaydi, Zeeshan Khan, Saeed Islam</td>
@@ -2372,7 +1788,7 @@
         <td>Open Physics</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3683983c076604f821028ca9a5be1607be2c4745">Physics-Informed Neural Networks for 2nd order ODEs with sharp gradients</a></td>
         <td>Mario De Florio, E. Schiassi, F. Calabrò, R. Furfaro</td>
@@ -2380,7 +1796,7 @@
         <td>J. Comput. Appl. Math.</td>
         <td>7</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/0ca5668a18e789a6b2ce773290bc432f003d0c16">Variational Bayesian Learning With Reliable Likelihood Approximation for Accurate Process Quality Evaluation</a></td>
         <td>Shilong Wang, Yu Wang, Bo Yang, Fan Mo, Zhengping Zhang</td>
@@ -2388,7 +1804,7 @@
         <td>IEEE Transactions on Industrial Informatics</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/6b15280f3bd4f4cb09be3101aff5201bae519313">Data Augmentation for Supervised Graph Outlier Detection with Latent Diffusion Models</a></td>
         <td>Kay Liu, Hengrui Zhang, Ziqing Hu, Fangxin Wang, Philip S. Yu</td>
@@ -2396,7 +1812,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/20a9a10b2a14a65c92b1b668ddeed11653ff0926">Math‐based reinforcement learning for the adaptive budgeted influence maximization problem</a></td>
         <td>Edoardo Fadda, Evelina Di Corso, Davide Brusco, Vlad Stefan Aelenei, Alexandru Balan Rares</td>
@@ -2404,7 +1820,7 @@
         <td>Networks</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/110287ed846c65945452175d3adfe5edcc978529">MAGCDA: A Multi-Hop Attention Graph Neural Networks Method for CircRNA-Disease Association Prediction</a></td>
         <td>Lei Wang, Zhengwei Li, Zhu-Hong You, De-Shuang Huang, Leon Wong</td>
@@ -2412,7 +1828,7 @@
         <td>IEEE Journal of Biomedical and Health Informatics</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f4b49ba0b8cf0a827a74813b1d58b09c234b4429">NEURAL ORDINARY DIFFERENTIAL EQUATIONS FOR TIME SERIES RECONSTRUCTION</a></td>
         <td>D. V. Androsov</td>
@@ -2420,7 +1836,7 @@
         <td>Radio Electronics, Computer Science, Control</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/c64821cf5bc0363c0585812c55390d9d35053ae9">Development and Implementation of Physics-informed Neural ODE to Dynamics Modeling of a Fixed-wing Aircraft under Icing/Fault</a></td>
         <td>Jinyi Ma, Yiyang Li, Jingqi Tu, Yiming Zhang, J. Ai, Yiqun Dong</td>
@@ -2428,7 +1844,7 @@
         <td>Guidance, Navigation and Control</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/cfc500330471feed131e523215686d1e9895aead">Optimized classification with neural ODEs via separability</a></td>
         <td>Antonio 'Alvarez-L'opez, Rafael Orive-Illera, Enrique Zuazua</td>
@@ -2436,7 +1852,7 @@
         <td>ArXiv</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/ca31edac44040d7833607d38d69cc40025abe359">Improving the Expressive Power of Deep Neural Networks through Integral Activation Transform</a></td>
         <td>Zezhong Zhang, Feng Bao, Guannan Zhang</td>
@@ -2444,7 +1860,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/66f5af551fbb4a9c481e0cc512c1d419e5895739">Implementation of Physics Informed Neural Networks on Edge Device</a></td>
         <td>Xuezhi Zhang, I-Chyn Wey, Maoyang Xiang, T. H. Teo</td>
@@ -2452,7 +1868,7 @@
         <td>2023 IEEE 16th International Symposium on Embedded Multicore/Many-core Systems-on-Chip (MCSoC)</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/45ece02ea82f79c4c678c8de8e95cd0dfbe5a37d">Signed Graph Neural Ordinary Differential Equation for Modeling Continuous-time Dynamics</a></td>
         <td>Lanlan Chen, K. Wu, Jian Lou, Jing Liu</td>
@@ -2460,7 +1876,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3e3487150b48ed8ccf14aef586b1f230b9b31e6d">Robust Node Representation Learning via Graph Variational Diffusion Networks</a></td>
         <td>Jun Zhuang, M. A. Hasan</td>
@@ -2468,7 +1884,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/4d03765e239e1b0343078c31e7b499d587e63c44">Monitoring robot machine tool sate via neural ODE and BP-GA</a></td>
         <td>Guangyi Zhu, Xi Zeng, Zheng Gong, Zhuohan Gao, Renquan Ji, Yisen Zeng, Pei Wang, Congda Lu</td>
@@ -2476,7 +1892,7 @@
         <td>Measurement Science and Technology</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/0d3fd5a1b54fb8dbc2d8f876cca960d6ed2ac301">Neural network design for cubic autocatalysis chemical processes, the flow of a Darcy‐Forchheimer viscous fluid is optimized for entropy</a></td>
         <td>Farooq Ahmed Shah, Muhammad Asif Zahoor Raja, Muhammad Shoaib, Tayyab Zamir, Adil Ihsan</td>
@@ -2484,7 +1900,7 @@
         <td>ZAMM - Journal of Applied Mathematics and Mechanics / Zeitschrift für Angewandte Mathematik und Mechanik</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/faafdf4508c20b39fd6a4392a2ac02c2e202f82f">A charge-preserving method for solving graph neural diffusion networks</a></td>
         <td>Lidia Aceto, Pietro Antonio Grassi</td>
@@ -2492,7 +1908,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/b1910cdb7343ed46d690f64387d17ddc9ef07ce2">Neuro-Heuristic Computational Intelligence Approach for Optimization of Electro-Magneto-Hydrodynamic Influence on a Nano Viscous Fluid Flow</a></td>
         <td>Zeeshan Ikram Butt, Iftikhar Ahmad, Muhammad Asif Zahoor Raja, Syed Ibrar Hussain, Muhammad Shoaib, Hira Ilyas</td>
@@ -2500,7 +1916,7 @@
         <td>International Journal of Intelligent Systems</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/b138810be1eae411e776c72298d98ab06a4af669">Operator-learning-inspired Modeling of Neural Ordinary Differential Equations</a></td>
         <td>Woojin Cho, Seunghyeon Cho, Hyundong Jin, Jinsung Jeon, Kookjin Lee, Sanghyun Hong, Dongeun Lee, Jonghyun Choi, Noseong Park</td>
@@ -2508,7 +1924,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/220a28e3d40508e5d30be3940a218254f35547fa">A neural network kernel decomposition for learning multiple steady states in parameterized dynamical systems</a></td>
         <td>Yimeng Zhang, Alexander Cloninger, Bo Li, Xiaochuan Tian</td>
@@ -2516,7 +1932,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/e86050ad8e850e4397f2a7ded5edfb5c846029a7">Intelligent computing technique to study heat and mass transport of Casson nanofluidic flow model on a nonlinear slanted extending sheet</a></td>
         <td>Saddiqa Hussain, Saeed Islam, Muhammad Asif Zahoor Raja, K. S. Nisar, Muhammad Shoaib</td>
@@ -2524,7 +1940,7 @@
         <td>ZAMM - Journal of Applied Mathematics and Mechanics / Zeitschrift für Angewandte Mathematik und Mechanik</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/5219020dae24dd5e00760fd38837798b3c9bf628">Data-driven Closures & Assimilation for Stiff Multiscale Random Dynamics</a></td>
         <td>Tyler E. Maltba, Hongli Zhao, D. A. Maldonado</td>
@@ -2532,7 +1948,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/4ede6a2b518879c1d889ccde90e849cbc6682922">Building symmetries into data-driven manifold dynamics models for complex flows</a></td>
         <td>Carlos E. P'erez De Jes'us, Alec J. Linot, Michael D. Graham</td>
@@ -2540,7 +1956,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3a3d302fa0c31ee40887af3f5fcde281f2e0ff47">Ordinary Differential Equation and Its Application</a></td>
         <td>Bohong Zheng</td>
@@ -2548,7 +1964,7 @@
         <td>Highlights in Science, Engineering and Technology</td>
         <td>0</td>
       </tr>
-
+    
   </tbody>
   </table>
   </p>
@@ -2583,98 +1999,4 @@
   };
   Plotly.newPlot('myDiv1', data, layout);
 </script>
-</html>
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-  
-
-
-
-                
-              </article>
-            </div>
-          
-          
-<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
-        </div>
-        
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
-  Back to top
-</button>
-        
-      </main>
-      
-        <footer class="md-footer">
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
-  
-</div>
-      
-    </div>
-  </div>
-</footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    
-    
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.tabs"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-    
-    
-
-      <script src="../assets/javascripts/bundle.c8d2eff1.min.js"></script>
-      
-    
-<script>
-  new DataTable('#table1', {
-    order: [[5, 'desc']],
-    "columnDefs": [
-        {"className": "dt-center", "targets": "_all"}
-      ],
-    pageLength: 5,
-    layout: {
-        topStart: {
-            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
-        }
-    }
-  });
-  new DataTable('#table2', {
-    order: [[3, 'desc']],
-    "columnDefs": [
-        {"className": "dt-center", "targets": "_all"}
-      ],
-    pageLength: 5,
-    layout: {
-        topStart: {
-            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
-        }
-    }
-  });
-</script>
-
-
-  </body>
 </html>

@@ -1,591 +1,7 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-      
-      
-      
-        <link rel="prev" href="../Latent_Space_Simulator/">
-      
-      
-        <link rel="next" href="../Symbolic_regression/">
-      
-      
-      <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
-    
-    
-<title>Literature Survey (VPE)</title>
-
-    
-      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
-      
-        
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
-      
-      
-
-
-    
-    
-  <!-- Add scripts that need to run before here -->
-  <!-- Add jquery script -->
-  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-  <!-- Add data table libraries -->
-  <script src="https://cdn.datatables.net/2.0.1/js/dataTables.js"></script>
-  <link rel="stylesheet" href="https://cdn.datatables.net/2.0.1/css/dataTables.dataTables.css">
-  <!-- Load plotly.js into the DOM -->
-	<script src='https://cdn.plot.ly/plotly-2.29.1.min.js'></script>
-  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.0.1/css/buttons.dataTables.css">
-  <!-- Already specified in mkdocs.yml -->
-  <!-- <link rel="stylesheet" href="../docs/custom.css"> -->
-  <script src="https://cdn.datatables.net/buttons/3.0.1/js/dataTables.buttons.js"></script>
-  <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.dataTables.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
-  <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.html5.min.js"></script>
-  <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.print.min.js"></script>
-
-
-  <!-- 
-      
-     -->
-  <!-- Add scripts that need to run afterwards here -->
-
-    
-      
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-      
-    
-    
-      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
-    
-      <link rel="stylesheet" href="../custom.css">
-    
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
-      
-
-    
-    
-    
-  </head>
-  
-  
-    
-    
-      
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="purple">
-  
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-    
-      
-
-<header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Literature Survey (Simulator)" class="md-header__button md-logo" aria-label="Literature Survey (Simulator)" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
-
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
-            Literature Survey (Simulator)
-          </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
-            
-              PINNs
-            
-          </span>
-        </div>
-      </div>
-    </div>
-    
-      
-        <form class="md-header__option" data-md-component="palette">
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
-    
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
-    
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
-      </label>
-    
-  
-</form>
-      
-    
-    
-      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    
-    
-      <div class="md-header__source">
-        <a href="https://github.com/VirtualPatientEngine/literatureSurvey" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-  </div>
-  <div class="md-source__repository">
-    LiteratureSurvey
-  </div>
-</a>
-      </div>
-    
-  </nav>
-  
-</header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-          
-            
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
-        
-  
-    
-  
-  Overview
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../Physics-informed_GNNs/" class="md-tabs__link">
-        
-  
-    
-  
-  Physics-informed GNNs
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../Neural_ODEs/" class="md-tabs__link">
-        
-  
-    
-  
-  Neural ODEs
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../Koopman_Theory/" class="md-tabs__link">
-        
-  
-    
-  
-  Koopman Theory
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../Latent_Space_Simulator/" class="md-tabs__link">
-        
-  
-    
-  
-  Latent Space Simulator
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-    
-  
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
-        
-  
-    
-  
-  PINNs
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../Symbolic_regression/" class="md-tabs__link">
-        
-  
-    
-  
-  Symbolic regression
-
-      </a>
-    </li>
-  
-
-      
-    </ul>
-  </div>
-</nav>
-          
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-  
-
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Literature Survey (Simulator)" class="md-nav__button md-logo" aria-label="Literature Survey (Simulator)" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
-
-    </a>
-    Literature Survey (Simulator)
-  </label>
-  
-    <div class="md-nav__source">
-      <a href="https://github.com/VirtualPatientEngine/literatureSurvey" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-  </div>
-  <div class="md-source__repository">
-    LiteratureSurvey
-  </div>
-</a>
-    </div>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Overview
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Physics-informed_GNNs/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Physics-informed GNNs
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Neural_ODEs/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Neural ODEs
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Koopman_Theory/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Koopman Theory
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Latent_Space_Simulator/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Latent Space Simulator
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    PINNs
-  </span>
-  
-
-      </a>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Symbolic_regression/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Symbolic regression
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-  </ul>
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-                
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-  
-  
-
-
-  <h1>PINNs</h1>
-
+---
+hide:
+ - navigation
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -609,7 +25,7 @@
   <h3 id="search_query">1. Search query</h3>
   <i>("physics-informed neural computing") | ("physics-informed neural networks") | ("physics-informed deep learning")</i>
   </p>
-
+  
   <p>
   <h3 id="plot1">2. PINNs articles and citations over time</h3>
     <div id='myDiv1'>
@@ -630,7 +46,7 @@
     </tr>
   </thead>
   <tbody>
-
+    
       <tr>
       <script>
       // alert (6262)
@@ -641,7 +57,7 @@
         <td>J. Comput. Phys.</td>
         <td>6262</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (1030)
@@ -652,7 +68,7 @@
         <td>Science</td>
         <td>1030</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (976)
@@ -663,7 +79,7 @@
         <td>ArXiv</td>
         <td>976</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (695)
@@ -674,7 +90,7 @@
         <td>ArXiv</td>
         <td>695</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (528)
@@ -685,7 +101,7 @@
         <td>ArXiv</td>
         <td>528</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (525)
@@ -696,7 +112,7 @@
         <td>J. Comput. Phys.</td>
         <td>525</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (511)
@@ -707,7 +123,7 @@
         <td>Acta Mechanica Sinica</td>
         <td>511</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (502)
@@ -718,7 +134,7 @@
         <td>ArXiv</td>
         <td>502</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (491)
@@ -729,7 +145,7 @@
         <td>J. Comput. Phys.</td>
         <td>491</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (485)
@@ -740,7 +156,7 @@
         <td>Journal of Scientific Computing</td>
         <td>485</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (438)
@@ -751,7 +167,7 @@
         <td>SIAM J. Sci. Comput.</td>
         <td>438</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (435)
@@ -762,7 +178,7 @@
         <td>ArXiv</td>
         <td>435</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (367)
@@ -773,7 +189,7 @@
         <td>ArXiv</td>
         <td>367</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (354)
@@ -784,7 +200,7 @@
         <td>Communications in Computational Physics</td>
         <td>354</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (337)
@@ -795,7 +211,7 @@
         <td>Neural Information Processing Systems</td>
         <td>337</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (324)
@@ -806,7 +222,7 @@
         <td>SIAM J. Sci. Comput.</td>
         <td>324</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (311)
@@ -817,7 +233,7 @@
         <td>ArXiv</td>
         <td>311</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (308)
@@ -828,7 +244,7 @@
         <td>Optics express</td>
         <td>308</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (301)
@@ -839,7 +255,7 @@
         <td>J. Comput. Phys.</td>
         <td>301</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (289)
@@ -850,7 +266,7 @@
         <td>ArXiv</td>
         <td>289</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (280)
@@ -861,7 +277,7 @@
         <td>ArXiv</td>
         <td>280</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (267)
@@ -872,7 +288,7 @@
         <td>Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining</td>
         <td>267</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (259)
@@ -883,7 +299,7 @@
         <td>ArXiv</td>
         <td>259</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (256)
@@ -894,7 +310,7 @@
         <td>ArXiv</td>
         <td>256</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (255)
@@ -905,7 +321,7 @@
         <td>ArXiv</td>
         <td>255</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (239)
@@ -916,7 +332,7 @@
         <td>ArXiv</td>
         <td>239</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (221)
@@ -927,7 +343,7 @@
         <td>ArXiv</td>
         <td>221</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (219)
@@ -938,7 +354,7 @@
         <td>J. Comput. Phys.</td>
         <td>219</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (179)
@@ -949,7 +365,7 @@
         <td>Nature Communications</td>
         <td>179</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (173)
@@ -960,7 +376,7 @@
         <td>Computational Mechanics</td>
         <td>173</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (167)
@@ -971,7 +387,7 @@
         <td>ArXiv</td>
         <td>167</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (166)
@@ -982,7 +398,7 @@
         <td>ArXiv</td>
         <td>166</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (165)
@@ -993,7 +409,7 @@
         <td>ArXiv</td>
         <td>165</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (163)
@@ -1004,7 +420,7 @@
         <td>ArXiv</td>
         <td>163</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (162)
@@ -1015,7 +431,7 @@
         <td>ArXiv</td>
         <td>162</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (150)
@@ -1026,7 +442,7 @@
         <td>Journal of Nondestructive Evaluation</td>
         <td>150</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (147)
@@ -1037,7 +453,7 @@
         <td>ArXiv</td>
         <td>147</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (144)
@@ -1048,7 +464,7 @@
         <td>ArXiv</td>
         <td>144</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (142)
@@ -1059,7 +475,7 @@
         <td>ArXiv</td>
         <td>142</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (136)
@@ -1070,7 +486,7 @@
         <td>ArXiv</td>
         <td>136</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (134)
@@ -1081,7 +497,7 @@
         <td>ArXiv</td>
         <td>134</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (128)
@@ -1092,7 +508,7 @@
         <td>ArXiv</td>
         <td>128</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (128)
@@ -1103,7 +519,7 @@
         <td>ArXiv</td>
         <td>128</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (125)
@@ -1114,7 +530,7 @@
         <td>ArXiv</td>
         <td>125</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (125)
@@ -1125,7 +541,7 @@
         <td>2020 IEEE Power & Energy Society General Meeting (PESGM)</td>
         <td>125</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (125)
@@ -1136,7 +552,7 @@
         <td>ArXiv</td>
         <td>125</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (115)
@@ -1147,7 +563,7 @@
         <td>Computer‐Aided Civil and Infrastructure Engineering</td>
         <td>115</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (114)
@@ -1158,7 +574,7 @@
         <td>The journal of physical chemistry. A</td>
         <td>114</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (113)
@@ -1169,7 +585,7 @@
         <td>GAMM‐Mitteilungen</td>
         <td>113</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (113)
@@ -1180,7 +596,7 @@
         <td>ArXiv</td>
         <td>113</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (112)
@@ -1191,7 +607,7 @@
         <td>Proceedings of the Royal Society A</td>
         <td>112</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (111)
@@ -1202,7 +618,7 @@
         <td>Science Advances</td>
         <td>111</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (111)
@@ -1213,7 +629,7 @@
         <td>Frontiers in Big Data</td>
         <td>111</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (109)
@@ -1224,7 +640,7 @@
         <td>ArXiv</td>
         <td>109</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (107)
@@ -1235,7 +651,7 @@
         <td>J. Comput. Phys.</td>
         <td>107</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (101)
@@ -1246,7 +662,7 @@
         <td>Computer methods in applied mechanics and engineering</td>
         <td>101</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (94)
@@ -1257,7 +673,7 @@
         <td>Eng. Appl. Artif. Intell.</td>
         <td>94</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (93)
@@ -1268,7 +684,7 @@
         <td>ArXiv</td>
         <td>93</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (93)
@@ -1279,7 +695,7 @@
         <td>Journal of Big Data</td>
         <td>93</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (91)
@@ -1290,7 +706,7 @@
         <td>J. Comput. Phys.</td>
         <td>91</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (90)
@@ -1301,7 +717,7 @@
         <td>ArXiv</td>
         <td>90</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (89)
@@ -1312,7 +728,7 @@
         <td>PLoS ONE</td>
         <td>89</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (87)
@@ -1323,7 +739,7 @@
         <td>Advances in Computational Mathematics</td>
         <td>87</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (86)
@@ -1334,7 +750,7 @@
         <td>Neurocomputing</td>
         <td>86</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (82)
@@ -1345,7 +761,7 @@
         <td>IEEE Transactions on Neural Systems and Rehabilitation Engineering</td>
         <td>82</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (80)
@@ -1356,7 +772,7 @@
         <td>J. Comput. Phys.</td>
         <td>80</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (78)
@@ -1367,7 +783,7 @@
         <td>ArXiv</td>
         <td>78</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (77)
@@ -1378,7 +794,7 @@
         <td>J. Comput. Phys.</td>
         <td>77</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (76)
@@ -1389,7 +805,7 @@
         <td>Neurocomputing</td>
         <td>76</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (75)
@@ -1400,7 +816,7 @@
         <td>ArXiv</td>
         <td>75</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (75)
@@ -1411,7 +827,7 @@
         <td>Comput. Geosci.</td>
         <td>75</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (74)
@@ -1422,7 +838,7 @@
         <td>PAMM</td>
         <td>74</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (74)
@@ -1433,7 +849,7 @@
         <td>ArXiv</td>
         <td>74</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (73)
@@ -1444,7 +860,7 @@
         <td>ArXiv</td>
         <td>73</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (70)
@@ -1455,7 +871,7 @@
         <td>ArXiv</td>
         <td>70</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (70)
@@ -1466,7 +882,7 @@
         <td>Computer methods in applied mechanics and engineering</td>
         <td>70</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (67)
@@ -1477,7 +893,7 @@
         <td>Eng. Appl. Artif. Intell.</td>
         <td>67</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (67)
@@ -1488,7 +904,7 @@
         <td>IEEE Transactions on Neural Networks and Learning Systems</td>
         <td>67</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (66)
@@ -1499,7 +915,7 @@
         <td>ArXiv</td>
         <td>66</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (66)
@@ -1510,7 +926,7 @@
         <td>PLoS Computational Biology</td>
         <td>66</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (64)
@@ -1521,7 +937,7 @@
         <td>J. Comput. Phys.</td>
         <td>64</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (64)
@@ -1532,7 +948,7 @@
         <td>J. Comput. Inf. Sci. Eng.</td>
         <td>64</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (61)
@@ -1543,7 +959,7 @@
         <td>ArXiv</td>
         <td>61</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (61)
@@ -1554,7 +970,7 @@
         <td>ArXiv</td>
         <td>61</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (60)
@@ -1565,7 +981,7 @@
         <td>ArXiv</td>
         <td>60</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (60)
@@ -1576,7 +992,7 @@
         <td>Chemical Science</td>
         <td>60</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (59)
@@ -1587,7 +1003,7 @@
         <td>ArXiv</td>
         <td>59</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (58)
@@ -1598,7 +1014,7 @@
         <td>ArXiv</td>
         <td>58</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (58)
@@ -1609,7 +1025,7 @@
         <td>ArXiv</td>
         <td>58</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (57)
@@ -1620,7 +1036,7 @@
         <td>Proceedings of the National Academy of Sciences of the United States of America</td>
         <td>57</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (56)
@@ -1631,7 +1047,7 @@
         <td>International Journal of Prognostics and Health Management</td>
         <td>56</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (56)
@@ -1642,7 +1058,7 @@
         <td>ArXiv</td>
         <td>56</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (56)
@@ -1653,7 +1069,7 @@
         <td>IEEE Transactions on Intelligent Transportation Systems</td>
         <td>56</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (52)
@@ -1664,7 +1080,7 @@
         <td>ArXiv</td>
         <td>52</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (52)
@@ -1675,7 +1091,7 @@
         <td>IEEE Signal Processing Magazine</td>
         <td>52</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (51)
@@ -1686,7 +1102,7 @@
         <td>ArXiv</td>
         <td>51</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (51)
@@ -1697,7 +1113,7 @@
         <td>Nature Computational Science</td>
         <td>51</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (51)
@@ -1708,7 +1124,7 @@
         <td>ArXiv</td>
         <td>51</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (50)
@@ -1719,7 +1135,7 @@
         <td>ArXiv</td>
         <td>50</td>
       </tr>
-
+    
       <tr>
       <script>
       // alert (49)
@@ -1730,7 +1146,7 @@
         <td>ArXiv</td>
         <td>49</td>
       </tr>
-
+    
   </tbody>
   </table>
   </p>
@@ -1748,7 +1164,7 @@
     </tr>
   </thead>
   <tbody>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/c0317c393ecb41c45db0fbca5028c635dd9d3c91">Inverse physics–informed neural networks for digital twin–based bearing fault diagnosis under imbalanced samples</a></td>
         <td>Yi Qin, Hongyu Liu, Yi Wang, Yongfang Mao</td>
@@ -1756,7 +1172,7 @@
         <td>Knowledge-Based Systems</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/53d87f618b16894d91587e6b442268890833eb04">A physics-informed neural network that considers monotonic relationships for predicting NO emissions from coal-fired boilers</a></td>
         <td>Baoyu Zhu, Shaojun Ren, Qihang Weng, Fengqi Si</td>
@@ -1764,7 +1180,7 @@
         <td>Fuel</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/45a84f53ce0ff896e6c6ef976e2485e1acf4d2dc">A method for estimating the state of health of lithium-ion batteries based on physics-informed neural network</a></td>
         <td>Jinhua Ye, Quan Xie, Mingqiang Lin, Ji Wu</td>
@@ -1772,7 +1188,7 @@
         <td>Energy</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/0fe950da1e8f5454ee3c646d6711284471a7f2a9">Two-stage initial-value iterative physics-informed neural networks for simulating solitary waves of nonlinear wave equations</a></td>
         <td>Jin Song, Ming Zhong, G. Karniadakis, Zhenya Yan</td>
@@ -1780,7 +1196,7 @@
         <td>Journal of Computational Physics</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f74a5062c1a1e6c7fc1ac5ce29de680042669ee7">Reconstructing unsaturated infiltration behavior with sparse data via physics-informed deep learning</a></td>
         <td>Peng Lan, Jingjing Su, Shuairun Zhu, Jinsong Huang, Sheng Zhang</td>
@@ -1788,7 +1204,7 @@
         <td>Computers and Geotechnics</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/857e448ddb13b24f840876ad3c369a80dec34b5d">226 Advancing Neurovascular Diagnostics for Abnormal Hemodynamic Conditions Through AI-Driven Physics-informed Neural Networks</a></td>
         <td>Kyle Williams, Stephen Rudin, D. Bednarek, A. Baig, Adnan H. Siddiqui, E. Levy, C. Ionita</td>
@@ -1796,7 +1212,7 @@
         <td>Neurosurgery</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/64cd21269ca6d3abe61a7d7ef86b14ded2c23db4">A hybrid model-data-driven framework for inverse load identification of interval structures based on physics-informed neural network and improved Kalman filter algorithm</a></td>
         <td>Yaru Liu, Lei Wang, Bing Feng Ng</td>
@@ -1804,7 +1220,7 @@
         <td>Applied Energy</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/8d02fbf4336400f64e6562963c92493acbd3970e">Learning Fuel-Optimal Trajectories for Space Applications via Pontryagin Neural Networks</a></td>
         <td>Andrea D’Ambrosio, Roberto Furfaro</td>
@@ -1812,7 +1228,7 @@
         <td>Aerospace</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/5d3b64228126c5f69ba04376ad527b892085b645">wPINNs: Weak Physics Informed Neural Networks for Approximating Entropy Solutions of Hyperbolic Conservation Laws</a></td>
         <td>Tim De Ryck, Siddhartha Mishra, Roberto Molinaro</td>
@@ -1820,7 +1236,7 @@
         <td>SIAM Journal on Numerical Analysis</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/55b6bd1dec8a5b427ddc1da5474d0aeb2e62fa0f">DF-ParPINN: parallel PINN based on velocity potential field division and single time slice focus</a></td>
         <td>Jingjian Chen, Chunxin Yuan, Jiali Xu, Pengfei Bie, Zhiqiang Wei</td>
@@ -1828,7 +1244,7 @@
         <td>Frontiers in Marine Science</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/de3220caa7a3b34225930c597bf4f1d532eac567">A physics-informed deep learning liquid crystal camera with data-driven diffractive guidance</a></td>
         <td>Jiashuo Shi, Taige Liu, Liang Zhou, Pei Yan, Zhe Wang, Xinyu Zhang</td>
@@ -1836,7 +1252,7 @@
         <td>Communications Engineering</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/4fcd37e2a8e1c28fe756dcc9815c91a8da3e7bae">Neural network analysis of S2-star dynamics: extended mass</a></td>
         <td>N. Galikyan, Sh. Khlghatyan, Armen Kocharyan, V. Gurzadyan</td>
@@ -1844,7 +1260,7 @@
         <td>The European Physical Journal Plus</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/2fc778066c0b01ff7c84ab244d17a01dc9728862">HxPINN: A hypernetwork-based physics-informed neural network for real-time monitoring of an industrial heat exchanger</a></td>
         <td>Ritam Majumdar, Vishal Jadhav, A. Deodhar, S. Karande, L. Vig, Venkataramana Runkana</td>
@@ -1852,7 +1268,7 @@
         <td>Numerical Heat Transfer, Part B: Fundamentals</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/1ced2af3a8eac0711004136fbabc56455833430f">Temporal and Spatial Flow Field Reconstruction from Low-Resolution PIV Data and Pressure Probes Using Physics-Informed Neural Networks</a></td>
         <td>Bozhen Lai, Yingzheng Liu, X. Wen</td>
@@ -1860,7 +1276,7 @@
         <td>Measurement Science and Technology</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/b093fea18914e3c3582db463d14b3cdd6e35a549">Microstructure-Sensitive Deformation Modeling and Materials Design with Physics-Informed Neural Networks</a></td>
         <td>Mahmudul Hasan, Zekeriya Ender Eger, Arulmurugan Senthilnathan, Pınar Acar</td>
@@ -1868,7 +1284,7 @@
         <td>AIAA Journal</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/30ad5d2311464c2900b336d056846fc620142c79">Physics-informed Deep Learning for Muscle Force Prediction with Unlabeled sEMG Signals.</a></td>
         <td>Shuhao Ma, Jie Zhang, Chaoyang Shi, Pei Di, Ian D Robertson, Zhiqiang Zhang</td>
@@ -1876,7 +1292,7 @@
         <td>IEEE transactions on neural systems and rehabilitation engineering : a publication of the IEEE Engineering in Medicine and Biology Society</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/29dbd4894d039e7dc4bfb1da41e97ab132e902ef">A Physics-Informed Neural Network model combined Pell–Lucas polynomials for solving the Lane–Emden type equation</a></td>
         <td>Zhoushun Zheng, Haolan Yuan, Jilong He</td>
@@ -1884,7 +1300,7 @@
         <td>The European Physical Journal Plus</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/fd18a9f7218627f5c8d51aeb994be497ebe79ec6">Residual-connected physics-informed neural network for anti-noise wind field reconstruction</a></td>
         <td>Runze Tian, Peng Kou, Yuanhang Zhang, Mingyang Mei, Zhihao Zhang, Deliang Liang</td>
@@ -1892,7 +1308,7 @@
         <td>Applied Energy</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f1b9ad7ed61f33ee9000ef91862d28eea574eabc">Predicting ocean pressure field with a physics-informed neural network.</a></td>
         <td>Seung-Jun Yoon, Yongsung Park, P. Gerstoft, Woojae Seong</td>
@@ -1900,7 +1316,7 @@
         <td>The Journal of the Acoustical Society of America</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/ece78f7621aa8b1e0e0560959258f128a901855c">Predicting Ultrafast Nonlinear Dynamics in Fiber Optics by Enhanced Physics-Informed Neural Network</a></td>
         <td>Xiaotian Jiang, Min Zhang, Yuchen Song, Hongjie Chen, Dongmei Huang, Danshi Wang</td>
@@ -1908,7 +1324,7 @@
         <td>Journal of Lightwave Technology</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/e768b9c26497f03631d217b05d2f399853ff3f36">Two-dimensional temperature field inversion of turbine blade based on physics-informed neural networks</a></td>
         <td>Jieai Mai, Yang Li, Lian Long, Yue Huang, Huiliu Zhang, Yancheng You</td>
@@ -1916,7 +1332,7 @@
         <td>Physics of Fluids</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d9baee6f60d5208e2e6ff7e104d378f24b55a451">Damage identification for plate structures using physics-informed neural networks</a></td>
         <td>Wei Zhou, Y.F. Xu</td>
@@ -1924,7 +1340,7 @@
         <td>Mechanical Systems and Signal Processing</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d796d3f49825b447fd29dfe58418f619474cde1c">Numerical Simulation of Streamer Discharge Using Physics-Informed Neural Networks</a></td>
         <td>Changzhi Peng, R. Sabariego, Xuzhu Dong, J. Ruan</td>
@@ -1932,7 +1348,7 @@
         <td>IEEE Transactions on Magnetics</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d531fb8dd11d46cbdce6593da54be6729cabd0e0">Simulation-free Reliability Analysis with Importance Sampling-based Adaptive Training Physics-informed Neural Networks: Method and Application to Chloride Penetration</a></td>
         <td>Chaolin Song, Rucheng Xiao, Chi Zhang, Xinwei Zhao, Bo Sun</td>
@@ -1940,7 +1356,7 @@
         <td>Reliability Engineering &amp; System Safety</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/c6d963c3c9dd6c55981bb55aa5e85b69f6cd9356">Learning scattering waves via coupling physics-informed neural networks and their convergence analysis</a></td>
         <td>Rui Zhang, Yushan Gao</td>
@@ -1948,7 +1364,7 @@
         <td>Journal of Computational and Applied Mathematics</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/9d119030c061a1ca74d80b4532d8c413a8f74669">Storm surge forecasting based on physics-informed neural networks in the Bohai Sea</a></td>
         <td>Cifu Fu, Jie Xiong, Fujiang Yu</td>
@@ -1956,7 +1372,7 @@
         <td>Journal of Physics: Conference Series</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/82a4569f2a0be5e66cfdc409258cc74287f858de">Residual-based attention in physics-informed neural networks</a></td>
         <td>Sokratis J. Anagnostopoulos, Juan Diego Toscano, Nikolaos Stergiopulos, G. Karniadakis</td>
@@ -1964,7 +1380,7 @@
         <td>Computer Methods in Applied Mechanics and Engineering</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/769f34c31a192feb3db93ca7c3abe519ab7c8c9c">A novel physics-informed deep learning strategy with local time-updating discrete scheme for multi-dimensional forward and inverse consolidation problems</a></td>
         <td>Hongwei Guo, Zhen-Yu Yin</td>
@@ -1972,7 +1388,7 @@
         <td>Computer Methods in Applied Mechanics and Engineering</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/71722cf333771761577079686012c62b372ab8fa">Dynamic wake field reconstruction of wind turbine through Physics-Informed Neural Network and Sparse LiDAR data</a></td>
         <td>Longyan Wang, Meng Chen, Zhaohui Luo, Bowen Zhang, Jian Xu, Zilu Wang, A. C. Tan</td>
@@ -1980,7 +1396,7 @@
         <td>Energy</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/711ffcaf38f8ce1ef86684f31f2c138d8b425c8b">Solving Euler equations with gradient-weighted multi-input high-dimensional feature neural network</a></td>
         <td>Jiebin Zhao, Wei Wu, Xinlong Feng, Hui Xu</td>
@@ -1988,7 +1404,7 @@
         <td>Physics of Fluids</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/62c3221add54dabed8489392ae8aad8879516058">Physics-Informed Deep Learning Approach for Reintroducing Atomic Detail in Coarse-Grained Configurations of Multiple Poly(lactic acid) Stereoisomers.</a></td>
         <td>E. Christofi, P. Bačová, V. Harmandaris</td>
@@ -1996,7 +1412,7 @@
         <td>Journal of chemical information and modeling</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/47835734bfd88386cb928c4c32eab4478e224cf5">Exploring two-dimensional internal waves: A new three-coupled Davey–Stewartson system and physics-informed neural networks with weight assignment methods</a></td>
         <td>Junchao Sun, Xiao-Min Tang, Yong Chen</td>
@@ -2004,7 +1420,7 @@
         <td>Physica D: Nonlinear Phenomena</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/34cbf7532fab328b46381dfea6b69f7b5e3d5c24">Parametric investigation and optimization of phase change material-based thermal energy storage integrated desiccant coated energy exchanger through physics informed neural networks oriented deep learning approach</a></td>
         <td>Gaurav Priyadarshi, Cheepurupalli Murali, S. Agarwal, B. K. Naik</td>
@@ -2012,7 +1428,7 @@
         <td>Journal of Energy Storage</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/1ed76bc84e76955d92c90fadfe92d9b4848db51f">Loss-attentional physics-informed neural networks</a></td>
         <td>Yanjie Song, He Wang, He Yang, M. L. Taccari, Xiaohui Chen</td>
@@ -2020,7 +1436,7 @@
         <td>J. Comput. Phys.</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/0c834d3e7dff6228abdd78f7dc4c2fd1887e5e7f">Data-driven discovery of turbulent flow equations using physics-informed neural networks</a></td>
         <td>Shirindokht Yazdani, Mojtaba Tahani</td>
@@ -2028,7 +1444,7 @@
         <td>Physics of Fluids</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/05f5d8953e574e6c545c6d35d6f0a38e7575d0e7">Respecting causality for training physics-informed neural networks</a></td>
         <td>Sifan Wang, Shyam Sankaran, P. Perdikaris</td>
@@ -2036,7 +1452,7 @@
         <td>Computer Methods in Applied Mechanics and Engineering</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/b044fdf418817c6317b77adfcac48739363b8c25">Multiscale Physics-Informed Neural Network Framework to Capture Stochastic Thin-Film Deposition</a></td>
         <td>Donovan Chaffart, Yue Yuan, Luis A. Ricardez-Sandoval</td>
@@ -2044,7 +1460,7 @@
         <td>The Journal of Physical Chemistry C</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/dd0c65d633de2c6e70fee64c6977b898c6a50c65">Physically Informed Deep Learning Technique for Estimating Blood Flow Parameters in Four-Vessel Junction after the Fontan Procedure</a></td>
         <td>Alexander Isaev, T. Dobroserdova, Alexander Danilov, Sergey Simakov</td>
@@ -2052,7 +1468,7 @@
         <td>Computation</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/55f66c4639902b7bdca1ec3db18e08cf98bcd301">New insights into experimental stratified flows obtained through physics-informed neural networks</a></td>
         <td>Lu Zhu, Xianyang Jiang, A. Lefauve, R. Kerswell, P. Linden</td>
@@ -2060,7 +1476,7 @@
         <td>Journal of Fluid Mechanics</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/26cfa88611ebaa4e3361c3636f6e0185a5653357">WaveNets: physics-informed neural networks for full-field recovery of rotational flow beneath large-amplitude periodic water waves</a></td>
         <td>Lin Chen, Ben Li, Chenyi Luo, Xiao-Yong Lei</td>
@@ -2068,7 +1484,7 @@
         <td>Engineering with Computers</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/106124faf3f4d5d5fc5e94e399bfd5da8deecf6f">Physics-Informed neural network solver for numerical analysis in geoengineering</a></td>
         <td>Xiao-Xuan Chen, Pin Zhang, Zhen-Yu Yin</td>
@@ -2076,7 +1492,7 @@
         <td>Georisk: Assessment and Management of Risk for Engineered Systems and Geohazards</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/36c9fd256775ae1572b4e4a65b5ea76cc4fe3628">Physics-informed Deep Learning to Solve 2D Electromagnetic Scattering Problems</a></td>
         <td>Ji-Yuan Wang, Xiao-Min Pan</td>
@@ -2084,7 +1500,7 @@
         <td>The Applied Computational Electromagnetics Society Journal (ACES)</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/4432bf9febb11447bce132508cf61c8cf4b28b5d">Option Pricing and Local Volatility Surface by Physics-Informed Neural Network</a></td>
         <td>Hyeong‐Ohk Bae, Seunggu Kang, Muhyun Lee</td>
@@ -2092,7 +1508,7 @@
         <td>Computational Economics</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/2ebc79d9a2bd6729f3c66b0ff4930cf109ffddc2">Physics-Informed Neural Network (PINN) for Solving Frictional Contact Temperature and Inversely Evaluating Relevant Input Parameters</a></td>
         <td>Yichun Xia, Yonggang Meng</td>
@@ -2100,7 +1516,7 @@
         <td>Lubricants</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/1c7f7c05e3729dfbd07e1ac5296cf47302c64895">Deep adaptive sampling for surrogate modeling without labeled data</a></td>
         <td>Xili Wang, Keju Tang, Jiayu Zhai, Xiaoliang Wan, Chao Yang</td>
@@ -2108,7 +1524,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f9194d4475618148991bce214a8cbe270fad3780">Identifying heterogeneous micromechanical properties of biological tissues via physics-informed neural networks</a></td>
         <td>Wensi Wu, Michael D. Daneker, Kevin T. Turner, M. Jolley, Lu Lu</td>
@@ -2116,7 +1532,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/c380b117f618b02c19a8144d8fddfc21807031c1">Hermite Neural Network Simulation for Solving the 2D Schrodinger Equation</a></td>
         <td>K. Parand, Aida Pakniyat</td>
@@ -2124,7 +1540,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/82ebba0998116d7eb6a989e1ab4994a5a874aab2">Physics-informed MeshGraphNets (PI-MGNs): Neural finite element solvers for non-stationary and nonlinear simulations on arbitrary meshes</a></td>
         <td>Tobias Würth, Niklas Freymuth, C. Zimmerling, Gerhard Neumann, L. Kärger</td>
@@ -2132,7 +1548,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/493bbbee35c4fa04da243f494c19023c79063bab">Virtual draw of microstructured optical fiber based on physics-informed neural networks</a></td>
         <td>Jinmin Ding, Chenyang Hou, Yiming Zhao, Hongwei Liu, Zixia Hu, Fanchao Meng, Sheng Liang</td>
@@ -2140,7 +1556,7 @@
         <td>Optics Express</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a344e8bcc44996d228fd591ad6f9267c0ca89558">Physics-Informed Neural Network Policy Iteration: Algorithms, Convergence, and Verification</a></td>
         <td>Yiming Meng, Rui Zhou, Amartya Mukherjee, Maxwell Fitzsimmons, Christopher Song, Jun Liu</td>
@@ -2148,7 +1564,7 @@
         <td>ArXiv</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/86b2e7f19a6aec002993b5c26419d5b33e6184e5">DOF: Accelerating High-order Differential Operators with Forward Propagation</a></td>
         <td>Ruichen Li, Chuwei Wang, Haotian Ye, Di He, Liwei Wang</td>
@@ -2156,7 +1572,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/690deb4c3f1d3b24697f578b9c96d01f643be632">Continuous and discontinuous compressible flows in a converging-diverging channel solved by physics-informed neural networks without exogenous data.</a></td>
         <td>Hong Liang, Zilong Song, Chong Zhao, Xin Bian</td>
@@ -2164,7 +1580,7 @@
         <td>Scientific reports</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/043675aed01841c86c684457b8e88066f6094bc3">Regression Transients Modeling of Solid Rocket Motor Burning Surfaces with Physics-guided Neural Network</a></td>
         <td>Xueqin Sun, Yu Li, Yihong Li, SuKai Wang, Xuan Li, Ming Lu, Ping Chen</td>
@@ -2172,7 +1588,7 @@
         <td>Machine Learning: Science and Technology</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/ea24e94f06daed9e115b32a935bb24eb053361f3">A Review of Physics Informed Neural Networks for Multiscale Analysis and Inverse Problems</a></td>
         <td>Dongjin Kim, Jaewook Lee</td>
@@ -2180,7 +1596,7 @@
         <td>Multiscale Science and Engineering</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/9bf1c214acf599a49964c883be08096e512e8469">Physics-informed neural networks to advance pavement engineering and management</a></td>
         <td>Nima Kargah-Ostadi, K. Vasylevskyi, A. Ablets, A. Drach</td>
@@ -2188,7 +1604,7 @@
         <td>Road Materials and Pavement Design</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/90ba80489e5723c521b8f97e9716b1d9110b4d89">RBF-PINN: Non-Fourier Positional Embedding in Physics-Informed Neural Networks</a></td>
         <td>Chengxi Zeng, T. Burghardt, A. Gambaruto</td>
@@ -2196,7 +1612,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/8eaf1fdb090519031a08be413d4eb66a53f57f24">Approximating Families of Sharp Solutions to Fisher's Equation with Physics-Informed Neural Networks</a></td>
         <td>Franz M. Rohrhofer, S. Posch, C. Gößnitzer, Bernhard C. Geiger</td>
@@ -2204,7 +1620,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f5bcee3d194cd4b4a4191f0ddc269504f5d88f05">Score-Based Physics-Informed Neural Networks for High-Dimensional Fokker-Planck Equations</a></td>
         <td>Zheyuan Hu, Zhongqiang Zhang, G. Karniadakis, Kenji Kawaguchi</td>
@@ -2212,7 +1628,7 @@
         <td>ArXiv</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3bcdca3d938f28f0e3d8779eefbe88a3329adb6f">Explicit Physics-Informed Deep Learning for Computer-Aided Diagnostic Tasks in Medical Imaging</a></td>
         <td>Shira Nemirovsky-Rotman, Eyal Bercovich</td>
@@ -2220,7 +1636,7 @@
         <td>Machine Learning and Knowledge Extraction</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/342f71736fd77342462d6edc1a0363a8d3f74900">Physics-Informed Neural Networks with Hard Linear Equality Constraints</a></td>
         <td>Hao Chen, Gonzalo E. Constante-Flores, Canzhou Li</td>
@@ -2228,7 +1644,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/1f46cb8f8a3594a167839b230a4e2af4bf0eda67">Error Estimation for Physics-informed Neural Networks Approximating Semilinear Wave Equations</a></td>
         <td>Beatrice Lorenz, Aras Bacho, Gitta Kutyniok</td>
@@ -2236,7 +1652,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/aca2d31bd6f8cc038e04962fd4ad906355d45b82">Training dynamics in Physics-Informed Neural Networks with feature mapping</a></td>
         <td>Chengxi Zeng, T. Burghardt, A. Gambaruto</td>
@@ -2244,7 +1660,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/ef075b48d91065ab5ae322514d0856ac99cdb98d">A Physics-Informed Neural Network for the Nonlinear Damage Identification in a Reinforced Concrete Bridge Pier Using Seismic Responses</a></td>
         <td>Takahiro Yamaguchi, Tsukasa Mizutani</td>
@@ -2252,7 +1668,7 @@
         <td>Structural Control and Health Monitoring</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/66e041931213526b7169168a009dba63bc109f19">Optimization of Physics-Informed Neural Networks for Solving the Nolinear Schrödinger Equation</a></td>
         <td>I. Chuprov, Jiexing Gao, D. Efremenko, E. Kazakov, F. Buzaev, V. Zemlyakov</td>
@@ -2260,7 +1676,7 @@
         <td>Doklady Mathematics</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/6620d79b3603639d1a1d4054de4e09c2c977b7f0">Energy-based PINNs for solving coupled field problems: concepts and application to the optimal design of an induction heater</a></td>
         <td>Marco Baldan, Paolo Di Barba</td>
@@ -2268,7 +1684,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/2be3af6cd92f9145e55fc6d59b1c2972a2f77dfb">M‐PINN: A mesh‐based physics‐informed neural network for linear elastic problems in solid mechanics</a></td>
         <td>Lu Wang, Guangyan Liu, Guanglun Wang, Kai Zhang</td>
@@ -2276,7 +1692,7 @@
         <td>International Journal for Numerical Methods in Engineering</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/10e570e3e0485fdac0b92dcbc703b515b9b479c4">Neural functional a posteriori error estimates</a></td>
         <td>V. Fanaskov, A. Rudikov, I. Oseledets</td>
@@ -2284,7 +1700,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a8f7336c4ed91ee5fa6c249154c9f9a5cd8834fd">Densely Multiplied Physics Informed Neural Networks</a></td>
         <td>Feilong Jiang, Xiaonan Hou, Min Xia</td>
@@ -2292,7 +1708,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/843bc1ed6f791af1fc53b0b2178af1632e41e8fa">The Challenges of the Nonlinear Regime for Physics-Informed Neural Networks</a></td>
         <td>Andrea Bonfanti, Giuseppe Bruno, Cristina Cipriani</td>
@@ -2300,7 +1716,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/92a7b724d7d6ef7df031b13db10b20e221f6a2e2">Architectural Strategies for the optimization of Physics-Informed Neural Networks</a></td>
         <td>Hemanth Saratchandran, Shin-Fang Chng, Simon Lucey</td>
@@ -2308,7 +1724,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/4c1b90dd217281d77cda248c2f1d0b104df41d72">A Priori Error Estimation of Physics-Informed Neural Networks Solving Allen-Cahn and Cahn-Hilliard Equations</a></td>
         <td>Guangtao Zhang, Jiani Lin, Qijia Zhai, Huiyu Yang, Xujun Chen, Xiaoning Zheng, Ieng Tak Leong</td>
@@ -2316,7 +1732,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/40f4e8a93d9e4a20656c7ef851f2e780dc54346d">Learning solutions of parametric Navier-Stokes with physics-informed neural networks</a></td>
         <td>M. Naderibeni, Marcel J. T. Reinders, L. Wu, David Tax</td>
@@ -2324,7 +1740,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/1ceb9507272bb7d9e52a811bbc795da608259720">PINN-BO: A Black-box Optimization Algorithm using Physics-Informed Neural Networks</a></td>
         <td>Dat Phan-Trong, Hung The Tran, A. Shilton, Sunil Gupta</td>
@@ -2332,7 +1748,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/cb73afcae057386cf07390befcf3510101a15464">Data-driven Ai- and Bi-soliton of the cylindrical Korteweg-de Vries (cKdV) equation via prior information PINNs (PIPINNs)</a></td>
         <td>Shi-fang Tian, Biao Li, Zhao Zhang</td>
@@ -2340,7 +1756,7 @@
         <td>Chinese Physics Letters</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/658c5711c6d07bfe2b9514ce22411e57a8a0ff1a">Challenges in Training PINNs: A Loss Landscape Perspective</a></td>
         <td>Pratik Rathore, Weimu Lei, Zachary Frangella, Lu Lu, Madeleine Udell</td>
@@ -2348,7 +1764,7 @@
         <td>ArXiv</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/fdf40d6904c0d40578c8edfe92a7b4e921688fa4">Phase-resolved wave prediction with linear wave theory and physics-informed neural networks</a></td>
         <td>Yue Liu, Xiantao Zhang, Qing Dong, Gang Chen, Xin Li</td>
@@ -2356,7 +1772,7 @@
         <td>Applied Energy</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/fde667b6d81a9621212d96b59729aafb2dff2f51">Complete flow characterization from snapshot PIV, fast probes and physics-informed neural networks</a></td>
         <td>Álvaro Moreno Soto, A. Güemes, S. Discetti</td>
@@ -2364,7 +1780,7 @@
         <td>Computer Methods in Applied Mechanics and Engineering</td>
         <td>2</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/f842df2d012ce1da511b694089a4446fdbf098c6">Physics-informed neural network for solution of forward and inverse kinematic wave problems</a></td>
         <td>Q. Hou, Yixin Li, Vijay P. Singh, Zewei Sun, J. Wei</td>
@@ -2372,7 +1788,7 @@
         <td>Journal of Hydrology</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/e81a08dd5f30d21cdc544203564e8e05ac5c70cb">A practical existence theorem for reduced order models based on convolutional autoencoders</a></td>
         <td>Nicola Rares Franco, Simone Brugiapaglia</td>
@@ -2380,7 +1796,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/e2b306c96200b86002db25f6395739fd09342590">Rapidly Exploring Random Trees with Physics-Informed Neural Networks for Constrained Energy-Optimal Rendezvous Problems</a></td>
         <td>K. Drozd, Roberto Furfaro, Daniele Mortari</td>
@@ -2388,7 +1804,7 @@
         <td>The Journal of the Astronautical Sciences</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/de8f2df2386c5d734a937570c7dcb3c3f94e50b5">Accelerated modelling of moisture diffusion controlled drying using coupled physics informed neural network</a></td>
         <td>Publisher Rights, Jonathan E. Barnard, Y. M. J. Chew, Semali Perera, Özgür ¸Sim¸sek, Kamel Balquis, John Barker</td>
@@ -2396,7 +1812,7 @@
         <td>Food and Bioproducts Processing</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/d5aa02bcdbb5d2b39cfd9440fe0cdb6932737ee3">PirateNets: Physics-informed Deep Learning with Residual Adaptive Networks</a></td>
         <td>Sifan Wang, Bowen Li, Yuhan Chen, P. Perdikaris</td>
@@ -2404,7 +1820,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/c84d0d919fb29f62679002338b00eea1175f7ef3">Modeling the anaerobic digestion of palm oil mill effluent via Physics-Informed deep learning</a></td>
         <td>Kar Ming Shaw, P. E. Poh, Yong Kuen Ho, Zhi Yuan Chen, Irene Mei Leng Chew</td>
@@ -2412,7 +1828,7 @@
         <td>Chemical Engineering Journal</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/bc3d14c809e0a8da182bcb2f30797c5edaa3fd48">Enriched Physics-informed Neural Networks for Dynamic Poisson-Nernst-Planck Systems</a></td>
         <td>Xujia Huang, Fajie Wang, Benrong Zhang, Hanqing Liu</td>
@@ -2420,7 +1836,7 @@
         <td>ArXiv</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/b4d6e1de7f328a123a9fdbecde40b1d5603dcdf9">Learning systems of ordinary differential equations with Physics-Informed Neural Networks: the case study of enzyme kinetics</a></td>
         <td>Paola Lecca</td>
@@ -2428,7 +1844,7 @@
         <td>Journal of Physics: Conference Series</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/b2869fcc471f0bd96997b4fd2b089604cd6351d8">High-resolution reconstruction of turbulent flames from sparse data with physics-informed neural networks</a></td>
         <td>Shiyu Liu, Haiou Wang, Jackie Chen, Kun Luo, Jianren Fan</td>
@@ -2436,7 +1852,7 @@
         <td>Combustion and Flame</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/9713d9204b74c13997201dee44ff15e47f265b6e">Impact of uncertainty in the physics-informed neural network on pressure prediction for water hammer in pressurized pipelines</a></td>
         <td>Hai Huang, Pengcheng Guo, Jianguo Yan, Bo Zhang, Zhenkai Mao</td>
@@ -2444,7 +1860,7 @@
         <td>Journal of Physics: Conference Series</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/8bc75aa7a8f2e02e20f40dc2b0113a14b3c2f6b9">Stable and accurate representation of species diffusion in multilayer composite electrodes using physics-informed neural networks</a></td>
         <td>Qiang Wang, Pengfei Zhang, Wei Qiu, Luman Feng</td>
@@ -2452,7 +1868,7 @@
         <td>Journal of Energy Storage</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/8ba8473ab5ee73c00b26536f412541db5377ed98">Physics-informed neural network for predicting hot-rolled steel temperatures during heating process</a></td>
         <td>Yao Sun, Qianyue Zhang, S. Raffoul</td>
@@ -2460,7 +1876,7 @@
         <td>Journal of Engineering Research</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/856edb7e5c88951629f62c406e3d1bff0ab76567">Physics-informed deep learning for multi-species membrane separations</a></td>
         <td>Danyal Rehman, J. Lienhard</td>
@@ -2468,7 +1884,7 @@
         <td>Chemical Engineering Journal</td>
         <td>1</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/7810fbd7fc4a948d69d65a349899e99c5cd136ac">PINN-AFP: A novel C-S curve estimation method for asphalt mixtures fatigue prediction based on physics-informed neural network</a></td>
         <td>Chengjia Han, Jinglin Zhang, Zhijia Tu, Tao Ma</td>
@@ -2476,7 +1892,7 @@
         <td>Construction and Building Materials</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/74de56878d0f46795da2b7b93b2241f81fb5bfd7">A physics-informed deep learning framework for spacecraft pursuit-evasion task assessment</a></td>
         <td>Fuyunxiang Yang, Leping Yang, Yanwei Zhu</td>
@@ -2484,7 +1900,7 @@
         <td>Chinese Journal of Aeronautics</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/702d343feebca3460f6bfe51daeb4bd25403f170">A physics-informed neural network for Kresling origami structures</a></td>
         <td>Chen-Xu Liu, Xinghao Wang, Weiming Liu, Yi-Fan Yang, Gui-Lan Yu, Zhanli Liu</td>
@@ -2492,7 +1908,7 @@
         <td>International Journal of Mechanical Sciences</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/6b9cb33610d66128c0c66f4a3cd849db9a1d62a7">Physics-Informed Neural Network surrogate model for bypassing Blade Element Momentum theory in wind turbine aerodynamic load estimation</a></td>
         <td>Shubham Baisthakur, B. Fitzgerald</td>
@@ -2500,7 +1916,7 @@
         <td>Renewable Energy</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/6ab365eb128bf97c7779805806184c8d2a0f0ec1">Physics-informed neural networks with domain decomposition for the incompressible Navier–Stokes equations</a></td>
         <td>Linyan Gu, Shanlin Qin, Lei Xu, Rongliang Chen</td>
@@ -2508,7 +1924,7 @@
         <td>Physics of Fluids</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/55f16028b6b9d65ca3fafe67ac554b1f78e0ecd9">A Compact Memristor Model Based on Physics-Informed Neural Networks</a></td>
         <td>Younghyun Lee, Kyeongmin Kim, Jonghwan Lee</td>
@@ -2516,7 +1932,7 @@
         <td>Micromachines</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/4d9269b1468be383200bf688f7525c31a3a5f14b">Physics-informed neural network for solving Young–Laplace equation and identifying parameters</a></td>
         <td>Cunliang Pan, Shi Feng, Shengyang Tao, Hongwu Zhang, Yonggang Zheng, H. Ye</td>
@@ -2524,7 +1940,7 @@
         <td>Physics of Fluids</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/40107cd1ccc6109b6a382b550d0e3f732aefaced">An analysis of functionally graded thin-walled beams using physics-informed neural networks</a></td>
         <td>D. T. Trinh, Khang A. Luong, Jaehong Lee</td>
@@ -2532,7 +1948,7 @@
         <td>Engineering Structures</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/3a2749d9b8cb222b40e54b9f95f3a4a14d768995">Performance of Fourier-based activation function in physics-informed neural networks for patient-specific cardiovascular flows.</a></td>
         <td>Arman Aghaee, M. O. Khan</td>
@@ -2540,7 +1956,7 @@
         <td>Computer methods and programs in biomedicine</td>
         <td>0</td>
       </tr>
-
+    
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/30ab3fadefa882f29a92ff5178b83212cc8734c0">A Novel Governing Equation for Shale Gas Production Prediction via Physics-informed Neural Networks</a></td>
         <td>Hai Wang, Muming Wang, Shengnan Chen, Gang Hui, Yu Pang</td>
@@ -2548,7 +1964,7 @@
         <td>Expert Systems with Applications</td>
         <td>0</td>
       </tr>
-
+    
   </tbody>
   </table>
   </p>
@@ -2583,98 +1999,4 @@
   };
   Plotly.newPlot('myDiv1', data, layout);
 </script>
-</html>
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-  
-
-
-
-                
-              </article>
-            </div>
-          
-          
-<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
-        </div>
-        
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
-  Back to top
-</button>
-        
-      </main>
-      
-        <footer class="md-footer">
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
-  
-</div>
-      
-    </div>
-  </div>
-</footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    
-    
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.tabs"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-    
-    
-
-      <script src="../assets/javascripts/bundle.c8d2eff1.min.js"></script>
-      
-    
-<script>
-  new DataTable('#table1', {
-    order: [[5, 'desc']],
-    "columnDefs": [
-        {"className": "dt-center", "targets": "_all"}
-      ],
-    pageLength: 5,
-    layout: {
-        topStart: {
-            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
-        }
-    }
-  });
-  new DataTable('#table2', {
-    order: [[3, 'desc']],
-    "columnDefs": [
-        {"className": "dt-center", "targets": "_all"}
-      ],
-    pageLength: 5,
-    layout: {
-        topStart: {
-            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
-        }
-    }
-  });
-</script>
-
-
-  </body>
 </html>
