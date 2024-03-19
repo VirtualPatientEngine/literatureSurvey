@@ -1,12 +1,28 @@
-h1 {
-  color: red;
-  } 
-
-h2 {
-  color: rgb(253,174,97);
-}
-
 h3 {
     color: rgb(44,123,182);
   }
 
+p {
+  color: rgb(0,0,0);
+  font-size: small;
+}
+
+i {
+  color: rgb(0,0,0);
+  font-size: small;
+}
+
+table{
+  table-layout: fixed;
+  width: 100%;
+  font-size: small;
+}
+
+
+thead tr th:first-child,
+tbody tr td:first-child {
+  width: 400px;
+  min-width: 300px;
+  max-width: 400px;
+  word-break: break-all;
+}
