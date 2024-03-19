@@ -100,8 +100,9 @@ def fetch_manually_curated_articles(curated_file) -> list:
         list: list of articles
     """
     # Read the manually curated articles
+    s2_ids = {}
+    fetched_data = []
     with open(curated_file, 'r', encoding='utf-8') as manual_f:
-        fetched_data = []
         for manual_line in manual_f:
             if 'category' in manual_line.split('\t')[0].lstrip().rstrip():
                 continue
@@ -112,20 +113,24 @@ def fetch_manually_curated_articles(curated_file) -> list:
             paper_id = link.split('/')[-1]
             if '?' in paper_id:
                 paper_id = paper_id.split('?')[0]
-            endpoint = f'https://api.semanticscholar.org/graph/v1/paper/{paper_id}'
-            params = f'?fields={FIELDS}'
-            status_code = 0
-            while status_code != 200:
-                # Make the GET request to the paper search
-                # endpoint with the URL and query parameters
-                search_response = requests.get(endpoint + params, timeout=None)
-                status_code = search_response.status_code
-            search_response_json = search_response.json()
-            search_response_json['topic'] = topic
-            fetched_data.append(search_response_json)
-
+            if paper_id not in s2_ids:
+                s2_ids[paper_id] = topic
+    endpoint = 'https://api.semanticscholar.org/graph/v1/paper/batch'
+    params = {'fields': FIELDS}
+    json = {'ids': list(s2_ids.keys())}
+    status_code = 0
+    while status_code != 200:
+        # Make a POST request to the paper search batch
+        # endpoint with the URL
+        search_response = requests.post(endpoint, params=params, json=json, timeout=None)
+        status_code = search_response.status_code
+    search_response_json = search_response.json()
+    fetched_data += search_response_json
+    # Add the topic to the fetched data
+    for paper in fetched_data:
+        paper['topic'] = s2_ids[paper['paperId']]
+    # fix the publicationVenue and journal
     fetched_data = fix_publication_venue(fetched_data)
-    # print (fetched_data)
     return fetched_data
 
 def create_template(template, topic, dic, df, dic_all_citations=None) -> str:
