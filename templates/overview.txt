@@ -6,7 +6,7 @@
 
 <body>
   <p>
-  <i>This page was last updated on {{current_time}} CET/CEST</i>
+  <i>This page was last updated on {{current_time}} UTC</i>
   </p>
 
   <p>
@@ -44,7 +44,7 @@
     <tr>
         <th>Title</th>
         <th>Authors</th>
-        <th>Puation Date</th>
+        <th>Publication Date</th>
         <th>Journal/Conference</th>
         <th>Citation count</th>
     </tr>
@@ -54,7 +54,7 @@
       <tr>
         <td><a href="{{article.url}}">{{article.title}}</a><br></td>
         <td>{{ article.authors}}</td>
-        <td>{{ article.puationDate}}</td>
+        <td>{{ article.publicationDate}}</td>
         <td>{{ article.journal}}</td>
         <td>{{ article.citationCount}}</td>
       </tr>
@@ -70,7 +70,7 @@
     <tr>
         <th>Title</th>
         <th>Authors</th>
-        <th>Puation Date</th>
+        <th>Publication Date</th>
         <th>Journal/Conference</th>
         <th>Citation count</th>
     </tr>
@@ -80,7 +80,7 @@
       <tr>
         <td><a href="{{article.url}}">{{article.title}}</a><br></td>
         <td>{{ article.authors}}</td>
-        <td>{{ article.puationDate}}</td>
+        <td>{{ article.publicationDate}}</td>
         <td>{{ article.journal}}</td>
         <td>{{ article.citationCount}}</td>
       </tr>
