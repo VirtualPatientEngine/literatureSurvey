@@ -1,3 +1,4 @@
+/* headings */
 h3 {
     color: rgb(44,123,182);
   }
@@ -12,13 +13,14 @@ i {
   font-size: small;
 }
 
+/*Table width and font size*/
 table{
   table-layout: fixed;
   width: 100%;
   font-size: small;
 }
 
-
+/* change the with of first column */
 thead tr th:first-child,
 tbody tr td:first-child {
   width: 400px;
