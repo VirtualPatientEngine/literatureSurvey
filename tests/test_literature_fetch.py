@@ -13,7 +13,7 @@ def test_fetch_articles() -> None:
 
 def test_manually_curated_articles() -> None:
     """Test fetch_manually_curates_articles function"""
-    curated_file = 'app/data/manually_curated_articles.tsv'
+    curated_file = 'tests/test_manually_curated_articles.tsv'
     articles = literature_fetch.fetch_manually_curated_articles(curated_file)
     assert len(articles) > 0
 
