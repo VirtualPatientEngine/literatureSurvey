@@ -17,6 +17,12 @@ def test_manually_curated_articles() -> None:
     articles = literature_fetch.fetch_manually_curated_articles(curated_file)
     assert len(articles) > 0
 
+def test_additiopn_reading() -> None:
+    """Test fetch_additional_reading function"""
+    additional_reading_file = 'app/data/additional_reading.tsv'
+    articles = literature_fetch.fetch_additional_reading(additional_reading_file)
+    assert len(articles) > 1
+
 def test_metrics_over_time_js() -> pd.DataFrame:
     """Test metrics_over_time function"""
     data = [
@@ -137,6 +143,18 @@ def test_create_template() -> None:
                     'title': 'title2',
                     'publicationDate': '2015-10-01',
                     'citationCount': 0
+                }
+            ],
+            'additional_reading': [
+                {
+                    'title': 'title1',
+                    'name': 'name1',
+                    'link': 'link1'
+                },
+                {
+                    'title': 'title2',
+                    'name': 'name2',
+                    'link': 'link2'
                 }
             ],
             'title': 'title1',
