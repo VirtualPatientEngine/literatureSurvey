@@ -22,7 +22,9 @@
     <a href="#plot1">2. Number of articles and citations over time</a><br>
     <a href="#most_cited_articles">3. Most cited articles</a><br>
     <a href="#latest_articles">4. Latest articles</a><br>
-    <a href="#plot2">5. Comparison metrics</a><br>
+    <a href="#manually_curated_articles">5. Manually curated articles</a><br>
+    <a href="#addiitional_reading_list">6. Additional reading</a><br>
+    <a href="#plot2">7. Comparison metrics</a><br>
   </p>
 
   <p>
@@ -90,7 +92,55 @@
   </p>
 
   <p>
-  <h3 id="plot2">5. Comparison metrics</h3>
+  <h3 id="manually_curated_articles">5. Manually curated articles</h3>
+  <table id="table3" class="display" style="width:100%">
+  <thead>
+    <tr>
+        <th>Topic</th>
+        <th>Title</th>
+        <th>Authors</th>
+        <th>Publication Date</th>
+        <th>Journal/Conference</th>
+        <th>Citation count</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for article in manually_curated_articles %}
+      <tr>
+        <td>{{ article.topic}}</td>
+        <td><a href="{{article.url}}">{{article.title}}</a><br></td>
+        <td>{{ article.authors}}</td>
+        <td>{{ article.publicationDate}}</td>
+        <td>{{ article.journal}}</td>
+        <td>{{ article.citationCount}}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+  </table>
+  </p>
+
+  <p>
+  <h3 id="addiitional_reading_list">6. Additional reading</h3>
+  <table id="table4" class="display" style="width:100%">
+  <thead>
+    <tr>
+        <th>Topic</th>
+        <th>Title</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for article in additional_reading %}
+      <tr>
+        <td>{{ article.topic}}</td>
+        <td><a href="{{article.link}}">{{article.name}}</a><br></td>
+      </tr>
+    {% endfor %}
+  </tbody>
+  </table>
+  </p>
+
+  <p>
+  <h3 id="plot2">7. Comparison metrics</h3>
     <div id='myDiv2'>
       <!-- Plotly chart will be drawn inside this DIV -->
     </div>

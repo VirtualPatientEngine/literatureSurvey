@@ -46,7 +46,7 @@ jobs:
       - name: Run pytest
         shell: bash -l {0}
         run: |
-          pytest
+          pytest --cache-clear
       
       # pylint
       - name: Run pylint
@@ -76,7 +76,7 @@ jobs:
       run: pip3 install -r requirements.txt  # Adjust this according to your project
 
     - name: Run tests with coverage
-      run: coverage run -m pytest
+      run: coverage run -m pytest --cache-clear
       continue-on-error: true
 
     - name: Check coverage

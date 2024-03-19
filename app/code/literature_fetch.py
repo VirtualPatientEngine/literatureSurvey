@@ -27,6 +27,35 @@ BASE_PARAMS = {
 N = 100
 DIC = {}
 
+def fix_publication_venue(artciles_data) -> list:
+    """
+    Fix the publication venue and journal
+
+    Args:
+        data (list): list of articles
+    Returns:
+        list: list of articles
+    """
+    # fix the publicationVenue and journal
+    for paper in artciles_data:
+        publication_venue = paper['publicationVenue']
+        paper['publicationVenue'] = publication_venue.get('name', 'NotAvbl')\
+                                    if publication_venue is not None else 'NotAvbl'
+        journal = paper['journal']
+        paper['journal'] = journal.get('name', 'NotAvbl') if journal is not None else 'NotAvbl'
+        # Set journal to publicationVenue if journal is not available
+        if paper['journal'] == 'NotAvbl':
+            paper['journal'] = paper['publicationVenue']
+        # Set authors to NotAvbl if authors are not available
+        authors = []
+        for author in paper['authors']:
+            authors.append(author['name'])
+        if len(authors) == 0:
+            authors = ['NotAvbl']
+        paper['authors'] = ', '.join(authors)
+
+    return artciles_data
+
 def fetch_articles(search_query,
                    sort='citationCount:desc') -> list:
     """
@@ -58,23 +87,73 @@ def fetch_articles(search_query,
         # or if there is no more data to fetch
         if len(fetched_data) >= N:
             break
+
     # fix the publicationVenue and journal
+    fetched_data = fix_publication_venue(fetched_data)
+    return fetched_data
+
+def fetch_manually_curated_articles(curated_file) -> list:
+    """
+    Return the manually curated articles
+
+    Returns:
+        list: list of articles
+    """
+    # Read the manually curated articles
+    s2_ids = {}
+    fetched_data = []
+    with open(curated_file, 'r', encoding='utf-8') as manual_f:
+        for manual_line in manual_f:
+            if 'category' in manual_line.split('\t')[0].lstrip().rstrip():
+                continue
+            if manual_line.split('\t')[2].lstrip().rstrip() == 'NA':
+                continue
+            topic = manual_line.split('\t')[0].lstrip().rstrip()
+            link = manual_line.split('\t')[3].lstrip().rstrip()
+            paper_id = link.split('/')[-1]
+            if '?' in paper_id:
+                paper_id = paper_id.split('?')[0]
+            if paper_id not in s2_ids:
+                s2_ids[paper_id] = topic
+    endpoint = 'https://api.semanticscholar.org/graph/v1/paper/batch'
+    params = {'fields': FIELDS}
+    json = {'ids': list(s2_ids.keys())}
+    status_code = 0
+    while status_code != 200:
+        # Make a POST request to the paper search batch
+        # endpoint with the URL
+        search_response = requests.post(endpoint, params=params, json=json, timeout=None)
+        status_code = search_response.status_code
+    search_response_json = search_response.json()
+    fetched_data += search_response_json
+    # Add the topic to the fetched data
     for paper in fetched_data:
-        publication_venue = paper['publicationVenue']
-        paper['publicationVenue'] = publication_venue.get('name', 'NotAvbl')\
-                                    if publication_venue is not None else 'NotAvbl'
-        journal = paper['journal']
-        paper['journal'] = journal.get('name', 'NotAvbl') if journal is not None else 'NotAvbl'
-        # Set journal to publicationVenue if journal is not available
-        if paper['journal'] == 'NotAvbl':
-            paper['journal'] = paper['publicationVenue']
-        # Set authors to NotAvbl if authors are not available
-        authors = []
-        for author in paper['authors']:
-            authors.append(author['name'])
-        if len(authors) == 0:
-            authors = ['NotAvbl']
-        paper['authors'] = ', '.join(authors)
+        paper['topic'] = s2_ids[paper['paperId']]
+    # fix the publicationVenue and journal
+    fetched_data = fix_publication_venue(fetched_data)
+    return fetched_data
+
+def fetch_additional_reading(additional_reading_file) -> list:
+    """
+    Fetch the additional reading list
+
+    Args:
+        additional_reading_file (str): file with the additional reading list
+    
+    Returns:
+        list: list of articles
+    """
+    # Read the addiitional reading list
+    fetched_data = []
+    with open(additional_reading_file, 'r', encoding='utf-8') as manual_f:
+        for additional_reading_line in manual_f:
+            if 'Category' in additional_reading_line.split('\t')[0].lstrip().rstrip():
+                continue
+            topic = additional_reading_line.split('\t')[0].lstrip().rstrip()
+            name = additional_reading_line.split('\t')[1].lstrip().rstrip()
+            link = additional_reading_line.split('\t')[2].lstrip().rstrip()
+            fetched_data.append({'topic': topic, 'name': name, 'link': link})
+
     return fetched_data
 
 def create_template(template, topic, dic, df, dic_all_citations=None) -> str:
@@ -107,7 +186,11 @@ def create_template(template, topic, dic, df, dic_all_citations=None) -> str:
     if dic_all_citations is None:
         categories = None
         num_citations_across_categories = None
+        manually_curated_articles = None
+        additional_reading = None
     else:
+        manually_curated_articles = dic[topic]['manually_curated_articles']
+        additional_reading = dic[topic]['additional_reading']
         categories = []
         num_citations_across_categories = []
         for category, num_citations_categories in dic_all_citations.items():
@@ -121,6 +204,8 @@ def create_template(template, topic, dic, df, dic_all_citations=None) -> str:
         current_time=time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()),
         most_cited_articles=dic[topic]['most_cited_articles'][0:N],
         most_recent_articles=dic[topic]['most_recent_articles'][0:N],
+        manually_curated_articles=manually_curated_articles,
+        additional_reading=additional_reading,
         category_name=topic,
         title=dic[topic]['title'],
         query=dic[topic]['query'],
@@ -187,7 +272,16 @@ if __name__ == '__main__':
     ## Fetch the most recent articles
     data = fetch_articles(QUERY, sort = 'publicationDate:desc')
     DIC[TOPIC]['most_recent_articles'] = data
-    # print (data[6])
+    ################################
+    ## Fetch the manually curated articles
+    MANUALLY_CURATED_FILE = '../data/manually_curated_articles.tsv'
+    data = fetch_manually_curated_articles(MANUALLY_CURATED_FILE)
+    DIC[TOPIC]['manually_curated_articles'] = data
+    ################################
+    ## Fetch the additional reading list
+    ADDITIONAL_READING_FILE = '../data/additional_reading.tsv'
+    data = fetch_additional_reading(ADDITIONAL_READING_FILE)
+    DIC[TOPIC]['additional_reading'] = data
     # Make bar plot for the number of citations of top 100 articles
     # in each category
     DIC_ALL_CITATIONS = utils.all_citations_js(DIC)
