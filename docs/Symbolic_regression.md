@@ -10,7 +10,7 @@ hide:
 
 <body>
   <p>
-  <i>This page was last updated on 2024-03-19 12:32:20 UTC</i>
+  <i>This page was last updated on 2024-03-19 15:02:16 UTC</i>
   </p>
 
   <p>
@@ -82,13 +82,13 @@ hide:
     
       <tr>
       <script>
-      // alert (92)
+      // alert (91)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/99c7d71317f3532cdcf83f072d644c236610221d">Prediction of dynamical systems by symbolic regression.</a></td>
         <td>M. Quade, Markus Abel, Kamran Shafi, R. Niven, B. R. Noack</td>
         <td>2016-02-15</td>
         <td>Physical review. E</td>
-        <td>92</td>
+        <td>91</td>
       </tr>
     
       <tr>
@@ -258,13 +258,13 @@ hide:
     
       <tr>
       <script>
-      // alert (21)
+      // alert (20)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/b5c0490503d1aaa75eecea5b780bf8eefc2df8f8">REVEALING COMPLEX ECOLOGICAL DYNAMICS VIA SYMBOLIC REGRESSION</a></td>
         <td>Yize Chen, M. T. Angulo, Yang‐Yu Liu</td>
         <td>2016-09-11</td>
         <td>bioRxiv</td>
-        <td>21</td>
+        <td>20</td>
       </tr>
     
       <tr>
@@ -1634,7 +1634,7 @@ hide:
         <td>Yize Chen, M. T. Angulo, Yang‐Yu Liu</td>
         <td>2016-09-11</td>
         <td>bioRxiv</td>
-        <td>21</td>
+        <td>20</td>
       </tr>
     
       <tr>
@@ -1650,7 +1650,7 @@ hide:
         <td>M. Quade, Markus Abel, Kamran Shafi, R. Niven, B. R. Noack</td>
         <td>2016-02-15</td>
         <td>Physical review. E</td>
-        <td>92</td>
+        <td>91</td>
       </tr>
     
       <tr>
@@ -1981,7 +1981,7 @@ hide:
 
   var trace2 = {
     x: ['1983', '1996', '1999', '2001', '2002', '2005', '2006', '2008', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
-    y: [7, 10, 6, 283, 111, 14, 11, 0, 58, 62, 63, 151, 25, 171, 160, 42, 10, 17, 68, 217, 14, 0],
+    y: [7, 10, 6, 283, 111, 14, 11, 0, 58, 62, 63, 151, 25, 169, 160, 42, 10, 17, 68, 217, 14, 0],
     name: 'Num of citations',
     yaxis: 'y2',
     type: 'scatter'

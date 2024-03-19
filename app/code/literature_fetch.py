@@ -133,6 +133,29 @@ def fetch_manually_curated_articles(curated_file) -> list:
     fetched_data = fix_publication_venue(fetched_data)
     return fetched_data
 
+def fetch_additional_reading(additional_reading_file) -> list:
+    """
+    Fetch the additional reading list
+
+    Args:
+        additional_reading_file (str): file with the additional reading list
+    
+    Returns:
+        list: list of articles
+    """
+    # Read the addiitional reading list
+    fetched_data = []
+    with open(additional_reading_file, 'r', encoding='utf-8') as manual_f:
+        for additional_reading_line in manual_f:
+            if 'Category' in additional_reading_line.split('\t')[0].lstrip().rstrip():
+                continue
+            topic = additional_reading_line.split('\t')[0].lstrip().rstrip()
+            name = additional_reading_line.split('\t')[1].lstrip().rstrip()
+            link = additional_reading_line.split('\t')[2].lstrip().rstrip()
+            fetched_data.append({'topic': topic, 'name': name, 'link': link})
+
+    return fetched_data
+
 def create_template(template, topic, dic, df, dic_all_citations=None) -> str:
     """
     Return the markdown content for a given template
@@ -164,8 +187,10 @@ def create_template(template, topic, dic, df, dic_all_citations=None) -> str:
         categories = None
         num_citations_across_categories = None
         manually_curated_articles = None
+        additional_reading = None
     else:
         manually_curated_articles = dic[topic]['manually_curated_articles']
+        additional_reading = dic[topic]['additional_reading']
         categories = []
         num_citations_across_categories = []
         for category, num_citations_categories in dic_all_citations.items():
@@ -180,6 +205,7 @@ def create_template(template, topic, dic, df, dic_all_citations=None) -> str:
         most_cited_articles=dic[topic]['most_cited_articles'][0:N],
         most_recent_articles=dic[topic]['most_recent_articles'][0:N],
         manually_curated_articles=manually_curated_articles,
+        additional_reading=additional_reading,
         category_name=topic,
         title=dic[topic]['title'],
         query=dic[topic]['query'],
@@ -251,7 +277,11 @@ if __name__ == '__main__':
     MANUALLY_CURATED_FILE = '../data/manually_curated_articles.tsv'
     data = fetch_manually_curated_articles(MANUALLY_CURATED_FILE)
     DIC[TOPIC]['manually_curated_articles'] = data
-    # print (data[6])
+    ################################
+    ## Fetch the additional reading list
+    ADDITIONAL_READING_FILE = '../data/additional_reading.tsv'
+    data = fetch_additional_reading(ADDITIONAL_READING_FILE)
+    DIC[TOPIC]['additional_reading'] = data
     # Make bar plot for the number of citations of top 100 articles
     # in each category
     DIC_ALL_CITATIONS = utils.all_citations_js(DIC)

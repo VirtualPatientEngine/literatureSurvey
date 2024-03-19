@@ -10,7 +10,7 @@ hide:
 
 <body>
   <p>
-  <i>This page was last updated on 2024-03-19 12:32:23 UTC</i>
+  <i>This page was last updated on 2024-03-19 15:02:19 UTC</i>
   </p>
 
   <p>
@@ -49,13 +49,13 @@ hide:
     
       <tr>
       <script>
-      // alert (6262)
+      // alert (6266)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/d86084808994ac54ef4840ae65295f3c0ec4decd">Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations</a></td>
         <td>M. Raissi, P. Perdikaris, G. Karniadakis</td>
         <td>2019-02-01</td>
         <td>J. Comput. Phys.</td>
-        <td>6262</td>
+        <td>6266</td>
       </tr>
     
       <tr>
@@ -148,13 +148,13 @@ hide:
     
       <tr>
       <script>
-      // alert (485)
+      // alert (486)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/e916f69e70a4321f21356f7ce360e380dd976a43">Scientific Machine Learning Through Physics–Informed Neural Networks: Where we are and What’s Next</a></td>
         <td>S. Cuomo, Vincenzo Schiano Di Cola, F. Giampaolo, G. Rozza, Maizar Raissi, F. Piccialli</td>
         <td>2022-01-14</td>
         <td>Journal of Scientific Computing</td>
-        <td>485</td>
+        <td>486</td>
       </tr>
     
       <tr>
@@ -203,13 +203,13 @@ hide:
     
       <tr>
       <script>
-      // alert (337)
+      // alert (338)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/3c4372b125d0744bb68bfca9f5d6b0abb85dd182">Characterizing possible failure modes in physics-informed neural networks</a></td>
         <td>A. Krishnapriyan, A. Gholami, Shandian Zhe, Robert M. Kirby, Michael W. Mahoney</td>
         <td>2021-09-02</td>
         <td>Neural Information Processing Systems</td>
-        <td>337</td>
+        <td>338</td>
       </tr>
     
       <tr>
@@ -357,13 +357,13 @@ hide:
     
       <tr>
       <script>
-      // alert (179)
+      // alert (180)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/e596988b1df3a0bc78bf72c0bfdb21c85eaab6c9">Physics-informed learning of governing equations from scarce data</a></td>
         <td>Zhao Chen, Yang Liu, Hao Sun</td>
         <td>2020-05-05</td>
         <td>Nature Communications</td>
-        <td>179</td>
+        <td>180</td>
       </tr>
     
       <tr>
@@ -379,6 +379,17 @@ hide:
     
       <tr>
       <script>
+      // alert (168)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/319d0aea3b8d5500ea01d722bf9deaf776915634">Physics-Informed Neural Operator for Learning Partial Differential Equations</a></td>
+        <td>Zong-Yi Li, Hongkai Zheng, Nikola B. Kovachki, David Jin, Haoxuan Chen, Burigede Liu, K. Azizzadenesheli, Anima Anandkumar</td>
+        <td>2021-11-06</td>
+        <td>ArXiv</td>
+        <td>168</td>
+      </tr>
+    
+      <tr>
+      <script>
       // alert (167)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/487829e767d7a06fc1e727587846f31800591c43">Physics-Informed Neural Networks for Multiphysics Data Assimilation with Application to Subsurface Transport</a></td>
@@ -386,17 +397,6 @@ hide:
         <td>2019-12-06</td>
         <td>ArXiv</td>
         <td>167</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (166)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/319d0aea3b8d5500ea01d722bf9deaf776915634">Physics-Informed Neural Operator for Learning Partial Differential Equations</a></td>
-        <td>Zong-Yi Li, Hongkai Zheng, Nikola B. Kovachki, David Jin, Haoxuan Chen, Burigede Liu, K. Azizzadenesheli, Anima Anandkumar</td>
-        <td>2021-11-06</td>
-        <td>ArXiv</td>
-        <td>166</td>
       </tr>
     
       <tr>
@@ -434,13 +434,13 @@ hide:
     
       <tr>
       <script>
-      // alert (150)
+      // alert (151)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/678f3815eec41961dc174abfc00b0557ed348f90">Physics-Informed Neural Network for Ultrasound Nondestructive Quantification of Surface Breaking Cracks</a></td>
         <td>K. Shukla, P. C. D. Leoni, J. Blackshire, D. Sparkman, G. Karniadakis</td>
         <td>2020-05-07</td>
         <td>Journal of Nondestructive Evaluation</td>
-        <td>150</td>
+        <td>151</td>
       </tr>
     
       <tr>
@@ -500,22 +500,22 @@ hide:
     
       <tr>
       <script>
-      // alert (128)
+      // alert (129)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/eb56aaadb392044fc5264b109b5b298e10a39b95">Respecting causality is all you need for training physics-informed neural networks</a></td>
-        <td>Sifan Wang, Shyam Sankaran, P. Perdikaris</td>
-        <td>2022-03-14</td>
+        <td><a href="https://www.semanticscholar.org/paper/691c6922e74c65a5fe627ba330fbf6f73076f49d">A fast and accurate physics-informed neural network reduced order model with shallow masked autoencoder</a></td>
+        <td>Youngkyu Kim, Youngsoo Choi, D. Widemann, T. Zohdi</td>
+        <td>2020-09-25</td>
         <td>ArXiv</td>
-        <td>128</td>
+        <td>129</td>
       </tr>
     
       <tr>
       <script>
       // alert (128)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/691c6922e74c65a5fe627ba330fbf6f73076f49d">A fast and accurate physics-informed neural network reduced order model with shallow masked autoencoder</a></td>
-        <td>Youngkyu Kim, Youngsoo Choi, D. Widemann, T. Zohdi</td>
-        <td>2020-09-25</td>
+        <td><a href="https://www.semanticscholar.org/paper/eb56aaadb392044fc5264b109b5b298e10a39b95">Respecting causality is all you need for training physics-informed neural networks</a></td>
+        <td>Sifan Wang, Shyam Sankaran, P. Perdikaris</td>
+        <td>2022-03-14</td>
         <td>ArXiv</td>
         <td>128</td>
       </tr>
@@ -577,13 +577,13 @@ hide:
     
       <tr>
       <script>
-      // alert (113)
+      // alert (114)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/9f8ff6d6886f2897d4b6c60ae8612f2a33d01ffa">Three ways to solve partial differential equations with neural networks — A review</a></td>
         <td>J. Blechschmidt, O. Ernst</td>
         <td>2021-02-23</td>
         <td>GAMM‐Mitteilungen</td>
-        <td>113</td>
+        <td>114</td>
       </tr>
     
       <tr>
@@ -753,13 +753,13 @@ hide:
     
       <tr>
       <script>
-      // alert (82)
+      // alert (83)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/c048ab2ec64b3cd1a55d08c8156f4863e8faff0d">Physics-Informed Deep Learning for Musculoskeletal Modeling: Predicting Muscle Forces and Joint Kinematics From Surface EMG</a></td>
         <td>Jie Zhang, Yihui Zhao, Fergus Shone, Zhenhong Li, Alejandro F Frangi, Shengquan Xie, Zhi-Li Zhang</td>
         <td>2022-07-04</td>
         <td>IEEE Transactions on Neural Systems and Rehabilitation Engineering</td>
-        <td>82</td>
+        <td>83</td>
       </tr>
     
       <tr>
@@ -1981,7 +1981,7 @@ hide:
 
   var trace2 = {
     x: ['2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
-    y: [1223, 1231, 10139, 7586, 5277, 3315, 1488, 51],
+    y: [1223, 1231, 10143, 7589, 5283, 3317, 1492, 52],
     name: 'Num of citations',
     yaxis: 'y2',
     type: 'scatter'

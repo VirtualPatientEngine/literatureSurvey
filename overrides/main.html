@@ -72,6 +72,18 @@
         }
     }
   });
+  new DataTable('#table4', {
+    // order: [[3, 'desc']],
+    "columnDefs": [
+        {"className": "dt-center", "targets": "_all"}
+      ],
+    pageLength: 5,
+    layout: {
+        topStart: {
+            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+        }
+    }
+  });
 </script>
 
 {% endblock %}
