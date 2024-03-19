@@ -10,7 +10,7 @@ hide:
 
 <body>
   <p>
-  <i>This page was last updated on 2024-03-11 08:47:34 UTC</i>
+  <i>This page was last updated on 2024-03-19 09:23:11 UTC</i>
   </p>
 
   <p>
@@ -23,7 +23,7 @@ hide:
 
   <p>
   <h3 id="search_query">1. Search query</h3>
-  <i>(graph networks) | (physics constrain) | (learned simulator) | (learned simulation)</i>
+  <i>((graph networks) + (physics constrain*)) | ("learned simulator"~1) | ("learned simulation"~1)</i>
   </p>
   
   <p>
@@ -49,1102 +49,1102 @@ hide:
     
       <tr>
       <script>
-      // alert (46110)
+      // alert (753)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/162d958ff885f1462aeda91cd72582323fd6a1f4">Gradient-based learning applied to document recognition</a></td>
-        <td>Yann LeCun, L. Bottou, Yoshua Bengio, P. Haffner</td>
-        <td>None</td>
-        <td>Proc. IEEE</td>
-        <td>46110</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (38534)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/d61031326150ba23f90e6587c13d99188209250e">Collective dynamics of ‘small-world’ networks</a></td>
-        <td>D. Watts, S. Strogatz</td>
-        <td>1998-06-04</td>
-        <td>Nature</td>
-        <td>38534</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (22199)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/36eff562f65125511b5dfab68ce7f7a943c27478">Semi-Supervised Classification with Graph Convolutional Networks</a></td>
-        <td>Thomas Kipf, M. Welling</td>
-        <td>2016-09-09</td>
+        <td><a href="https://www.semanticscholar.org/paper/c529f5b08675f787cdcc094ee495239592339f82">Learning to Simulate Complex Physics with Graph Networks</a></td>
+        <td>Alvaro Sanchez-Gonzalez, Jonathan Godwin, T. Pfaff, Rex Ying, J. Leskovec, P. Battaglia</td>
+        <td>2020-02-21</td>
         <td>ArXiv</td>
-        <td>22199</td>
+        <td>753</td>
       </tr>
     
       <tr>
       <script>
-      // alert (18834)
+      // alert (733)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/dce8146987557735a19771aefa1f027211a2c275">Statistical mechanics of complex networks</a></td>
-        <td>R. Albert, A. Barabási</td>
-        <td>2001-06-06</td>
+        <td><a href="https://www.semanticscholar.org/paper/1c8aa5b42e0945eb7fc12b7ed976ad909887fb62">Whole-Genome Regression and Prediction Methods Applied to Plant and Animal Breeding</a></td>
+        <td>G. de los Campos, J. Hickey, R. Pong-Wong, H. Daetwyler, M. Calus</td>
+        <td>2013-02-01</td>
+        <td>Genetics</td>
+        <td>733</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (288)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/d40531ed81859ce40f119c1bbc1d1cb50af498fd">Learning Particle Dynamics for Manipulating Rigid Bodies, Deformable Objects, and Fluids</a></td>
+        <td>Yunzhu Li, Jiajun Wu, Russ Tedrake, J. Tenenbaum, A. Torralba</td>
+        <td>2018-09-27</td>
         <td>ArXiv</td>
-        <td>18834</td>
+        <td>288</td>
       </tr>
     
       <tr>
       <script>
-      // alert (16801)
+      // alert (264)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/e6c4925fb114d13a8568f88957c167c928f0c9f1">The Structure and Function of Complex Networks</a></td>
-        <td>M. Newman</td>
-        <td>2003-03-25</td>
-        <td>SIAM Rev.</td>
-        <td>16801</td>
+        <td><a href="https://www.semanticscholar.org/paper/335cd2dcee412edafe60ed25868ae7c8cdda6ece">Multistationarity, the basis of cell differentiation and memory. II. Logical analysis of regulatory networks in terms of feedback circuits.</a></td>
+        <td>René Thomas, M. Kaufman</td>
+        <td>2001-03-05</td>
+        <td>Chaos</td>
+        <td>264</td>
       </tr>
     
       <tr>
       <script>
-      // alert (16789)
+      // alert (237)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/4954fa180728932959997a4768411ff9136aac81">TensorFlow: A system for large-scale machine learning</a></td>
-        <td>Martín Abadi, P. Barham, Jianmin Chen, Z. Chen, Andy Davis, J. Dean, M. Devin, Sanjay Ghemawat, G. Irving, M. Isard, M. Kudlur, J. Levenberg, R. Monga, Sherry Moore, D. Murray, Benoit Steiner, P. Tucker, Vijay Vasudevan, P. Warden, M. Wicke, Yuan Yu, Xiaoqiang Zhang</td>
-        <td>2016-05-27</td>
-        <td>USENIX Symposium on Operating Systems Design and Implementation</td>
-        <td>16789</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (14286)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/2a005868b79511cf8c924cd5990e2497527a0527">Community structure in social and biological networks</a></td>
-        <td>M. Girvan, M. Newman</td>
-        <td>2001-12-07</td>
-        <td>Proceedings of the National Academy of Sciences of the United States of America</td>
-        <td>14286</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (14146)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/33998aff64ce51df8dee45989cdca4b6b1329ec4">Graph Attention Networks</a></td>
-        <td>Petar Velickovic, Guillem Cucurull, Arantxa Casanova, Adriana Romero, P. Lio’, Yoshua Bengio</td>
-        <td>2017-10-30</td>
+        <td><a href="https://www.semanticscholar.org/paper/d0edf834c1d86aac1835e23c11b23b8723b65136">Learning how to Active Learn: A Deep Reinforcement Learning Approach</a></td>
+        <td>Meng Fang, Yuan Li, Trevor Cohn</td>
+        <td>2017-08-01</td>
         <td>ArXiv</td>
-        <td>14146</td>
+        <td>237</td>
       </tr>
     
       <tr>
       <script>
-      // alert (12836)
+      // alert (153)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/450106c6c960424b365249f2a301ce0abe24e346">PRISMA Extension for Scoping Reviews (PRISMA-ScR): Checklist and Explanation</a></td>
-        <td>A. Tricco, Erin Lillie, W. Zarin, K. O’Brien, H. Colquhoun, D. Levac, D. Moher, M. Peters, T. Horsley, L. Weeks, S. Hempel, E. Akl, Christine Chang, J. McGowan, L. Stewart, L. Hartling, Adrian Aldcroft, Michael Wilson, C. Garritty, S. Lewin, C. Godfrey, M. Macdonald, Etienne V. Langlois, K. Soares-Weiser, J. Moriarty, T. Clifford, zge Tunalp, S. Straus</td>
-        <td>2018-10-02</td>
-        <td>Annals of Internal Medicine</td>
-        <td>12836</td>
+        <td><a href="https://www.semanticscholar.org/paper/57784e5db3504d549d16382de8f7f4ad222b3d71">Hamiltonian Graph Networks with ODE Integrators</a></td>
+        <td>Alvaro Sanchez-Gonzalez, V. Bapst, Kyle Cranmer, P. Battaglia</td>
+        <td>2019-09-27</td>
+        <td>ArXiv</td>
+        <td>153</td>
       </tr>
     
       <tr>
       <script>
-      // alert (11257)
+      // alert (124)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/9839ed2281ba4b589bf88c7e4acc48c9fa6fb933">Consensus problems in networks of agents with switching topology and time-delays</a></td>
-        <td>R. Olfati-Saber, R. Murray</td>
-        <td>2004-09-13</td>
-        <td>IEEE Transactions on Automatic Control</td>
-        <td>11257</td>
+        <td><a href="https://www.semanticscholar.org/paper/3193e23e9b94eef1fae83f3c87769f56c0a4952f">Phase transitions in semidefinite relaxations</a></td>
+        <td>Adel Javanmard, A. Montanari, F. Ricci-Tersenghi</td>
+        <td>2015-11-27</td>
+        <td>Proceedings of the National Academy of Sciences</td>
+        <td>124</td>
       </tr>
     
       <tr>
       <script>
-      // alert (10824)
+      // alert (115)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/f1962baa356e10c4fd936b9e9f910869a5864a75">Authoritative sources in a hyperlinked environment</a></td>
-        <td>J. Kleinberg</td>
-        <td>1999-09-01</td>
-        <td>ACM-SIAM Symposium on Discrete Algorithms</td>
-        <td>10824</td>
+        <td><a href="https://www.semanticscholar.org/paper/7dca6b3d7b4113d0ce121bcfc81dbe82e38151fa">Turning simulation into reality: increasing student competence and confidence.</a></td>
+        <td>D. Wagner, M. Bear, J. Sander</td>
+        <td>2009-08-01</td>
+        <td>The Journal of nursing education</td>
+        <td>115</td>
       </tr>
     
       <tr>
       <script>
-      // alert (9844)
+      // alert (113)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/59cdf849049627e4c30f3bd866e3a7e03e893251">Complex brain networks: graph theoretical analysis of structural and functional systems</a></td>
-        <td>E. Bullmore, O. Sporns</td>
-        <td>2009-03-01</td>
-        <td>Nature Reviews Neuroscience</td>
-        <td>9844</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (9267)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/aa6be519b394b44ab24c6ad964f8a2c6a9b23571">Consensus and Cooperation in Networked Multi-Agent Systems</a></td>
-        <td>R. Olfati-Saber, J. Alex Fax, R. Murray</td>
-        <td>2007-03-05</td>
-        <td>Proceedings of the IEEE</td>
-        <td>9267</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (8743)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/3149a915f738f044778e3decdb4278e2bad17808">Gephi: An Open Source Software for Exploring and Manipulating Networks</a></td>
-        <td>Mathieu Bastian, Sebastien Heymann, Mathieu Jacomy</td>
-        <td>2009-03-19</td>
-        <td>Proceedings of the International AAAI Conference on Web and Social Media</td>
-        <td>8743</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (8225)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/fff114cbba4f3ba900f33da574283e3de7f26c83">DeepWalk: online learning of social representations</a></td>
-        <td>Bryan Perozzi, Rami Al-Rfou, S. Skiena</td>
-        <td>2014-03-26</td>
-        <td>Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining</td>
-        <td>8225</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (6429)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/c41eb895616e453dcba1a70c9b942c5063cc656c">Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering</a></td>
-        <td>M. Defferrard, X. Bresson, P. Vandergheynst</td>
-        <td>2016-06-30</td>
-        <td>Neural Information Processing Systems</td>
-        <td>6429</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (5960)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/81a4fd3004df0eb05d6c1cef96ad33d5407820df">A Comprehensive Survey on Graph Neural Networks</a></td>
-        <td>Zonghan Wu, Shirui Pan, Fengwen Chen, Guodong Long, Chengqi Zhang, Philip S. Yu</td>
+        <td><a href="https://www.semanticscholar.org/paper/719068eb8b8c9ab8552ec3e82c1b1088a9eacdce">Learning Locomotion Skills for Cassie: Iterative Design and Sim-to-Real</a></td>
+        <td>Zhaoming Xie, Patrick Clary, Jeremy Dao, Pedro Morais, Jonanthan Hurst, M. V. D. Panne</td>
         <td>None</td>
-        <td>IEEE Transactions on Neural Networks and Learning Systems</td>
-        <td>5960</td>
+        <td>Conference on Robot Learning</td>
+        <td>113</td>
       </tr>
     
       <tr>
       <script>
-      // alert (5764)
+      // alert (106)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/e24cdf73b3e7e590c2fe5ecac9ae8aa983801367">Neural Message Passing for Quantum Chemistry</a></td>
-        <td>J. Gilmer, S. Schoenholz, Patrick F. Riley, O. Vinyals, George E. Dahl</td>
-        <td>2017-04-04</td>
-        <td>International Conference on Machine Learning</td>
-        <td>5764</td>
+        <td><a href="https://www.semanticscholar.org/paper/d6185579e90e689add399beb769aeeff8afe3c69">Teaching and assessing procedural skills using simulation: metrics and methodology.</a></td>
+        <td>R. Lammers, Moira Davenport, F. Korley, Sharon Griswold-Theodorson, M. Fitch, Aneesh T. Narang, L. Evans, Amy C. Gross, Elliot Rodriguez, Kelly L. Dodge, C. Hamann, W. Robey</td>
+        <td>2008-11-01</td>
+        <td>Academic emergency medicine : official journal of the Society for Academic Emergency Medicine</td>
+        <td>106</td>
       </tr>
     
       <tr>
       <script>
-      // alert (5637)
+      // alert (99)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/3efd851140aa28e95221b55fcc5659eea97b172d">The Graph Neural Network Model</a></td>
-        <td>F. Scarselli, M. Gori, A. Tsoi, M. Hagenbuchner, G. Monfardini</td>
+        <td><a href="https://www.semanticscholar.org/paper/b757cf27d27e2a723a104ee8069f7556c49c18dc">Estimation of Distribution Algorithms with Kikuchi Approximations</a></td>
+        <td>Roberto Santana</td>
         <td>None</td>
-        <td>IEEE Transactions on Neural Networks</td>
-        <td>5637</td>
+        <td>Evolutionary Computation</td>
+        <td>99</td>
       </tr>
     
       <tr>
       <script>
-      // alert (5355)
+      // alert (99)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/62ed9bf1d83c8db1f9cbf92ea2f57ea90ef683d9">How Powerful are Graph Neural Networks?</a></td>
-        <td>Keyulu Xu, Weihua Hu, J. Leskovec, S. Jegelka</td>
+        <td><a href="https://www.semanticscholar.org/paper/33eb00ccc80b3f8a40c0261437b13604069de963">Augmenting Physical Simulators with Stochastic Neural Networks: Case Study of Planar Pushing and Bouncing</a></td>
+        <td>Anurag Ajay, Jiajun Wu, Nima Fazeli, Maria Bauzá, L. Kaelbling, J. Tenenbaum, Alberto Rodriguez</td>
+        <td>2018-08-09</td>
+        <td>IEEE/RJS International Conference on Intelligent RObots and Systems</td>
+        <td>99</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (97)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/2466af67f3d5d5815feb4331d61741d9658c5b96">RadioUNet: Fast Radio Map Estimation With Convolutional Neural Networks</a></td>
+        <td>R. Levie, cCaugkan Yapar, Gitta Kutyniok, G. Caire</td>
+        <td>2019-11-17</td>
+        <td>IEEE Transactions on Wireless Communications</td>
+        <td>97</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (96)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/dc4b654b1a9688ead7ae67f02afe9d22be4a43d3">Grounded Action Transformation for Robot Learning in Simulation</a></td>
+        <td>Josiah P. Hanna, P. Stone</td>
+        <td>2017-02-12</td>
+        <td>AAAI Conference on Artificial Intelligence</td>
+        <td>96</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (94)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/2d48c903c37cd0776e8b1defb8ec108ce3276aac">Self-Imitation Learning by Planning</a></td>
+        <td>Junhyuk Oh, Yijie Guo, Satinder Singh, Honglak Lee</td>
+        <td>2021-03-25</td>
+        <td>2021 IEEE International Conference on Robotics and Automation (ICRA)</td>
+        <td>94</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (88)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/efe92b6d9fce4d0f3686f4e08efe0ee6952590af">Humanoid robots learning to walk faster: from the real world to simulation and back</a></td>
+        <td>Alon Farchy, Samuel Barrett, Patrick MacAlpine, P. Stone</td>
+        <td>2013-05-06</td>
+        <td>Adaptive Agents and Multi-Agent Systems</td>
+        <td>88</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (72)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/b886797dc34c91f186629403d7c7e2092fc25083">TANKBind: Trigonometry-Aware Neural NetworKs for Drug-Protein Binding Structure Prediction</a></td>
+        <td>Wei Lu, Qifeng Wu, Jixian Zhang, Jiahua Rao, Chengtao Li, Shuangjia Zheng</td>
+        <td>2022-10-25</td>
+        <td>bioRxiv</td>
+        <td>72</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (69)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/f4fe5015303fc20fd9ae1bb5b7dd647dab2178bf">Human factors in resuscitation: Lessons learned from simulator studies</a></td>
+        <td>Sabrina Hunziker, F. Tschan, N. Semmer, Michael D. Howell, Stephan Marsch</td>
+        <td>2010-10-01</td>
+        <td>Journal of Emergencies, Trauma and Shock</td>
+        <td>69</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (65)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/759be72ae3df7fe00ed5a02b85a4b03179ea6e10">Join-Graph Propagation Algorithms</a></td>
+        <td>R. Mateescu, Kalev Kask, Vibhav Gogate, R. Dechter</td>
+        <td>2010-03-17</td>
+        <td>The journal of artificial intelligence research</td>
+        <td>65</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (64)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/27c2c58bab12896406f6500889f274e356ab26c2">Bayesian Optimization Using Domain Knowledge on the ATRIAS Biped</a></td>
+        <td>Akshara Rai, Rika Antonova, Seungmoon Song, William C. Martin, H. Geyer, C. Atkeson</td>
+        <td>2017-09-18</td>
+        <td>2018 IEEE International Conference on Robotics and Automation (ICRA)</td>
+        <td>64</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (64)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/08a82b3865ba09c457ad525449eb0c7691479574">Forces are not Enough: Benchmark and Critical Evaluation for Machine Learning Force Fields with Molecular Simulations</a></td>
+        <td>Xiang Fu, Zhenghao Wu, Wujie Wang, T. Xie, S. Keten, Rafael Gómez-Bombarelli, T. Jaakkola</td>
+        <td>2022-10-13</td>
+        <td>ArXiv</td>
+        <td>64</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (62)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/e9b3c086bdd4135453394e8c61d21e7f7841a31e">Iterative Reinforcement Learning Based Design of Dynamic Locomotion Skills for Cassie</a></td>
+        <td>Zhaoming Xie, Patrick Clary, Jeremy Dao, Pedro Morais, J. Hurst, M. V. D. Panne</td>
+        <td>2019-03-22</td>
+        <td>ArXiv</td>
+        <td>62</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (62)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/646f038cd55c7d5266750067df8d87dc326f8c83">Subspace Based Network Community Detection Using Sparse Linear Coding</a></td>
+        <td>A. Mahmood, M. Small</td>
+        <td>2016-03-01</td>
+        <td>IEEE Transactions on Knowledge and Data Engineering</td>
+        <td>62</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (62)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/2340e5b64224b66c10e603898c0cc24c8e2793c3">Understanding Domain Randomization for Sim-to-real Transfer</a></td>
+        <td>Xiaoyu Chen, Jiachen Hu, Chi Jin, Lihong Li, Liwei Wang</td>
+        <td>2021-10-07</td>
+        <td>ArXiv</td>
+        <td>62</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (58)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/684ffdd47b978dc6374c2c89e8e22e4d11fb57d3">A Distributed Algorithm to Enumerate All Maximal Cliques in MapReduce</a></td>
+        <td>Bin Wu, Shengqi Yang, Haizhou Zhao, Bai Wang</td>
+        <td>2009-12-17</td>
+        <td>2009 Fourth International Conference on Frontier of Computer Science and Technology</td>
+        <td>58</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (58)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/6699820c72b15f615e77e5ddbecf1db2523828a6">Simulation data driven weakly supervised adversarial domain adaptation approach for intelligent cross-machine fault diagnosis</a></td>
+        <td>Kun Yu, Qiang Fu, Hui Ma, T. Lin, Xiang Li</td>
+        <td>2020-12-31</td>
+        <td>Structural Health Monitoring</td>
+        <td>58</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (53)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/aab037c6e8ea13f3d307fbf45605d9b6a23351b5">Reinforcement learning for non-prehensile manipulation: Transfer from simulation to physical system</a></td>
+        <td>Kendall Lowrey, S. Kolev, Jeremy Dao, A. Rajeswaran, E. Todorov</td>
+        <td>2018-03-28</td>
+        <td>2018 IEEE International Conference on Simulation, Modeling, and Programming for Autonomous Robots (SIMPAR)</td>
+        <td>53</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (52)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/e5b632f995560562450f4fd5ce5afdb5cb22e0e2">Elucidating protein thermodynamics from the three-dimensional structure of the native state using network rigidity.</a></td>
+        <td>D. Jacobs, S. Dallakyan</td>
+        <td>2005-02-01</td>
+        <td>Biophysical journal</td>
+        <td>52</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (52)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/e3ad8d41b830b8685021069fd153692bedc9ed1e">Distance-Weighted Graph Neural Networks on FPGAs for Real-Time Particle Reconstruction in High Energy Physics</a></td>
+        <td>Y. Iiyama, G. Cerminara, Abhijay Gupta, J. Kieseler, V. Loncar, M. Pierini, S. Qasim, M. Rieger, S. Summers, G. Onsem, K. Wozniak, J. Ngadiuba, G. D. Guglielmo, Javier Mauricio Duarte, P. Harris, D. Rankin, S. Jindariani, Miaoyuan Liu, K. Pedro, N. Tran, E. Kreinar, Zhenbin Wu</td>
+        <td>2020-08-08</td>
+        <td>Frontiers in Big Data</td>
+        <td>52</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (52)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/8c8c0ab2a419105a37c1c43386ce9463802817b3">Learned Coarse Models for Efficient Turbulence Simulation</a></td>
+        <td>Kimberly L. Stachenfeld, D. Fielding, Dmitrii Kochkov, M. Cranmer, T. Pfaff, Jonathan Godwin, Can Cui, S. Ho, P. Battaglia, Alvaro Sanchez-Gonzalez</td>
+        <td>2021-12-31</td>
+        <td>ArXiv</td>
+        <td>52</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (51)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/ea368ba44f7f126e7ff0bc7e4e25d7f18a326fed">Improved mixing condition on the grid for counting and sampling independent sets</a></td>
+        <td>R. Restrepo, Jinwoo Shin, P. Tetali, Eric Vigoda, Linji Yang</td>
+        <td>2011-05-04</td>
+        <td>Probability Theory and Related Fields</td>
+        <td>51</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (51)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/a2aeccebe1e594d02611aa43f2eb9a0508ed98ad">Abstract of: "Fast Damage Recovery in Robotics with the T-Resilience Algorithm"</a></td>
+        <td>Sylvain Koos, Antoine Cully, Jean-Baptiste Mouret</td>
+        <td>2014-07-30</td>
+        <td>IEEE Symposium on Artificial Life</td>
+        <td>51</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (50)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/67486abff454f47350e875271057eee04b2f4693">Retention of Skills After Simulation-based Training in Orthopaedic Surgery.</a></td>
+        <td>K. Atesok, R. Satava, Ann E. Van Heest, M. Hogan, R. Pedowitz, F. Fu, I. Sitnikov, Mn, J. Marsh, S. Hurwitz</td>
+        <td>2016-08-01</td>
+        <td>The Journal of the American Academy of Orthopaedic Surgeons</td>
+        <td>50</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (49)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/b77b20880d73fd54204b1987a889187113121dc0">ForceNet: A Graph Neural Network for Large-Scale Quantum Calculations</a></td>
+        <td>Weihua Hu, Muhammed Shuaibi, Abhishek Das, Siddharth Goyal, Anuroop Sriram, J. Leskovec, Devi Parikh, C. L. Zitnick</td>
+        <td>2021-03-02</td>
+        <td>ArXiv</td>
+        <td>49</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (44)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/18ab703c9959fbea7ad253a4062eb705b245552c">Efficient trajectory extraction and parameter learning for data-driven crowd simulation</a></td>
+        <td>Aniket Bera, Sujeong Kim, Dinesh Manocha</td>
+        <td>2015-06-03</td>
+        <td>Graphics Interface</td>
+        <td>44</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (43)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/616da79290f81e21e1834a84604c809f8cc0e768">Benchmarking Energy-Conserving Neural Networks for Learning Dynamics from Data</a></td>
+        <td>Yaofeng Desmond Zhong, Biswadip Dey, Amit Chakraborty</td>
+        <td>2020-12-03</td>
+        <td>Conference on Learning for Dynamics & Control</td>
+        <td>43</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (42)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/d5372a947f67be78fa2a8d74d6e2816d6bb574f8">Using Deep Reinforcement Learning to Learn High-Level Policies on the ATRIAS Biped</a></td>
+        <td>Tianyu Li, Akshara Rai, H. Geyer, C. Atkeson</td>
+        <td>2018-09-28</td>
+        <td>2019 International Conference on Robotics and Automation (ICRA)</td>
+        <td>42</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (39)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/6b7f9d3aeb37b77569099d3c0f6fa9e8f17f412f">Learning to Augment Synthetic Images for Sim2Real Policy Transfer</a></td>
+        <td>Alexander Pashevich, Robin Strudel, Igor Kalevatykh, I. Laptev, C. Schmid</td>
+        <td>2019-03-18</td>
+        <td>2019 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</td>
+        <td>39</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (38)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/68ee363dd0ab8f4909d12e8a9bd7fdf7198ee2a5">Temporal coherence and the streaming of complex sounds.</a></td>
+        <td>S. Shamma, Mounya Elhilali, Ling Ma, C. Micheyl, A. Oxenham, D. Pressnitzer, Pingbo Yin, Yanbo Xu</td>
+        <td>None</td>
+        <td>Advances in experimental medicine and biology</td>
+        <td>38</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (38)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/54d8323db21a3a31aa0ffaeae18bb583b256a28e">MCS-GPM: Multi-Constrained Simulation Based Graph Pattern Matching in Contextual Social Graphs</a></td>
+        <td>Guanfeng Liu, Yi Liu, Kai Zheng, An Liu, Zhixu Li, Yang Wang, Xiaofang Zhou</td>
+        <td>2018-06-01</td>
+        <td>IEEE Transactions on Knowledge and Data Engineering</td>
+        <td>38</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (36)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/e87359341403e45dc506455c9d434bf192d3bd07">Snapshot Hyperspectral Light Field Imaging</a></td>
+        <td>Zhiwei Xiong, Lizhi Wang, Huiqun Li, Dong Liu, Feng Wu</td>
+        <td>2017-07-21</td>
+        <td>2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</td>
+        <td>36</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (35)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/e7e46d7ee42f27b1a5a78fda105305f157b04b3d">Graph matching by graduated assignment</a></td>
+        <td>Steven Gold, Anand Rangarajan</td>
+        <td>1996-06-18</td>
+        <td>Proceedings CVPR IEEE Computer Society Conference on Computer Vision and Pattern Recognition</td>
+        <td>35</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (34)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/efaeb788f167f7da696b0ba7e4436638c80698f4">A Deep Reinforcement Learning Technique for Vision-Based Autonomous Multirotor Landing on a Moving Platform</a></td>
+        <td>Alejandro Rodriguez-Ramos, Carlos Sampedro, Hriday Bavle, Ignacio Gil Moreno, P. Campoy</td>
         <td>2018-10-01</td>
-        <td>ArXiv</td>
-        <td>5355</td>
+        <td>2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</td>
+        <td>34</td>
       </tr>
     
       <tr>
       <script>
-      // alert (5268)
+      // alert (33)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/d1b4a4689a0288ccf36158ba5dfef724fd5a4ea5">Factor graphs and the sum-product algorithm</a></td>
-        <td>F. Kschischang, B. Frey, Hans-Andrea Loeliger</td>
-        <td>2001-02-01</td>
-        <td>IEEE Trans. Inf. Theory</td>
-        <td>5268</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (5068)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/afc3a4ce6f2aedfc91a0408547d894e3cf04e4d2">Uncovering the overlapping community structure of complex networks in nature and society</a></td>
-        <td>G. Palla, I. Derényi, I. Farkas, T. Vicsek</td>
-        <td>2005-06-09</td>
-        <td>Nature</td>
-        <td>5068</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (4743)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/0834e74304b547c9354b6d7da6fa78ef47a48fa8">LINE: Large-scale Information Network Embedding</a></td>
-        <td>Jian Tang, Meng Qu, Mingzhe Wang, Ming Zhang, Jun Yan, Qiaozhu Mei</td>
-        <td>2015-03-11</td>
-        <td>Proceedings of the 24th International Conference on World Wide Web</td>
-        <td>4743</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (4684)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/d115adcbf63e989804912db1e656ec8debd1f040">Tabu Search - Part I</a></td>
-        <td>F. Glover</td>
+        <td><a href="https://www.semanticscholar.org/paper/7906c718ea2620c983275c5de5305e12887b1567">Graph Neural Networks as Gradient Flows</a></td>
+        <td>Francesco Di Giovanni, J. Rowbottom, B. Chamberlain, Thomas Markovich, Michael M. Bronstein</td>
         <td>None</td>
-        <td>INFORMS J. Comput.</td>
-        <td>4684</td>
+        <td>ArXiv</td>
+        <td>33</td>
       </tr>
     
       <tr>
       <script>
-      // alert (4676)
+      // alert (32)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/06aad24ac4ad4312ca190d0c16fe0df7f474844c">An automated method for finding molecular complexes in large protein interaction networks</a></td>
-        <td>Gary D. Bader, Christopher W. V. Hogue</td>
-        <td>2003-01-13</td>
-        <td>BMC Bioinformatics</td>
-        <td>4676</td>
+        <td><a href="https://www.semanticscholar.org/paper/ef7a1bbf01178054fd9ece23dd7b0dccaa156458">Personality Recognition by Modelling Person-specific Cognitive Processes using Graph Representation</a></td>
+        <td>Z. Shao, Siyang Song, S. Jaiswal, Linlin Shen, M. Valstar, Hatice Gunes</td>
+        <td>2021-07-30</td>
+        <td>Proceedings of the 29th ACM International Conference on Multimedia</td>
+        <td>32</td>
       </tr>
     
       <tr>
       <script>
-      // alert (4547)
+      // alert (32)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/88496bd36dd61ca42dbd5020d23e76ebeaa994a4">Information flow and cooperative control of vehicle formations</a></td>
-        <td>J. A. Fax, R. Murray</td>
-        <td>2004-09-13</td>
-        <td>IEEE Transactions on Automatic Control</td>
-        <td>4547</td>
+        <td><a href="https://www.semanticscholar.org/paper/7c51f2610fc0bce21e03cc47a6b61a60de546c2a">Quantitative evaluation of retention of surgical skills learned in simulation.</a></td>
+        <td>K. Kahol, A. Ashby, Marshall L. Smith, J. Ferrara</td>
+        <td>2010-11-01</td>
+        <td>Journal of surgical education</td>
+        <td>32</td>
       </tr>
     
       <tr>
       <script>
-      // alert (4346)
+      // alert (31)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/0250b5c0f7a414dec8c7a0aa7be20c9637eeb6ec">Finding community structure in networks using the eigenvectors of matrices.</a></td>
-        <td>M. Newman</td>
-        <td>2006-05-10</td>
+        <td><a href="https://www.semanticscholar.org/paper/e1ed60d585a5ef43c0eb99346f86e3ff4fe69754">Generative Tweening: Long-term Inbetweening of 3D Human Motions</a></td>
+        <td>Yi Zhou, Jingwan Lu, Connelly Barnes, Jimei Yang, Sitao Xiang, Hao Li</td>
+        <td>2020-05-18</td>
+        <td>ArXiv</td>
+        <td>31</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (31)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/4665bfa01b64882c53d19b9887c456d1863960a2">Charged Particle Tracking via Edge-Classifying Interaction Networks</a></td>
+        <td>G. Dezoort, S. Thais, I. Ojalvo, P. Elmer, Vesal Razavimaleki, Javier Mauricio Duarte, M. Atkinson, M. Neubauer</td>
+        <td>2021-03-30</td>
+        <td>Computing and Software for Big Science</td>
+        <td>31</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (31)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/3cac7af83d24b0635707447c612591c95eb5380e">Translational simulation for rapid transformation of health services, using the example of the COVID-19 pandemic preparation</a></td>
+        <td>V. Brazil, Belinda Lowe, Leanne Ryan, Rachel Bourke, Clare Scott, Simone Myers, Hellen Kaneko, J. Schweitzer, Brenton Shanahan</td>
+        <td>2020-06-03</td>
+        <td>Advances in Simulation</td>
+        <td>31</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (29)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/40d51726b01262ddcae296ebc1f53814d8e03699">Surgical simulation training in orthopedics: current insights</a></td>
+        <td>Portia Kalun, N. Wagner, James R Yan, M. Nousiainen, R. Sonnadara</td>
+        <td>2018-02-21</td>
+        <td>Advances in Medical Education and Practice</td>
+        <td>29</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (29)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/1f4cb71b70a74ca37c55bae600ae827a21025a87">Adaptive Prior Selection for Repertoire-Based Online Adaptation in Robotics</a></td>
+        <td>Rituraj Kaushik, P. Desreumaux, Jean-Baptiste Mouret</td>
+        <td>2019-07-16</td>
+        <td>Frontiers in Robotics and AI</td>
+        <td>29</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (28)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/55ea2e6d434dccfd35b1027632be8a688be1a3e5">Handover decision for small cells: Algorithms, lessons learned and simulation study</a></td>
+        <td>Dionysis Xenakis, N. Passas, L. Merakos, C. Verikoukis</td>
+        <td>2016-05-08</td>
+        <td>Comput. Networks</td>
+        <td>28</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (28)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/2dd068c0e6353cb9a7b035bbedc1956cb4936240">Fast and scalable likelihood maximization for Exponential Random Graph Models with local constraints</a></td>
+        <td>Nicoló Vallarano, Matteo Bruno, Emiliano Marchese, G. Trapani, F. Saracco, G. Cimini, Mario Zanon, Tiziano Squartini</td>
+        <td>2021-01-29</td>
+        <td>Scientific Reports</td>
+        <td>28</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (27)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/aabf481edcb9fe42045f2d911ef2ab0e523868e5">Distributed Learning for Low Latency Machine Type Communication in a Massive Internet of Things</a></td>
+        <td>Taehyeun Park, W. Saad</td>
+        <td>2017-10-24</td>
+        <td>IEEE Internet of Things Journal</td>
+        <td>27</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (27)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/90cc86274f947b15ec3cc8c1dcfe1fc8db608e03">Physical Design using Differentiable Learned Simulators</a></td>
+        <td>Kelsey R. Allen, Tatiana Lopez-Guevara, Kimberly L. Stachenfeld, Alvaro Sanchez-Gonzalez, P. Battaglia, Jessica B. Hamrick, T. Pfaff</td>
+        <td>2022-02-01</td>
+        <td>ArXiv</td>
+        <td>27</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (26)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/20bfe3395521630b60dcb72cdd5defd85fdbb077">Efficient Dense Structure Mining Using MapReduce</a></td>
+        <td>Shengqi Yang, Bai Wang, Haizhou Zhao, Bin Wu</td>
+        <td>2009-12-06</td>
+        <td>2009 IEEE International Conference on Data Mining Workshops</td>
+        <td>26</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (25)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/dfb8cb9d7af8c1a01f834695bbf8527bddcd8044">MAMPS: Safe Multi-Agent Reinforcement Learning via Model Predictive Shielding</a></td>
+        <td>Wenbo Zhang, O. Bastani</td>
+        <td>2019-10-25</td>
+        <td>ArXiv</td>
+        <td>25</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (25)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/792feaae0bf1cbde9497e77e094bca7b8bc4b45b">Statistical mechanics of maximal independent sets.</a></td>
+        <td>L. Dall’Asta, P. Pin, A. Ramezanpour</td>
+        <td>2009-07-19</td>
         <td>Physical review. E, Statistical, nonlinear, and soft matter physics</td>
-        <td>4346</td>
+        <td>25</td>
       </tr>
     
       <tr>
       <script>
-      // alert (4339)
+      // alert (24)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/e1799aaf23c12af6932dc0ef3dfb1638f01413d1">Dynamic Graph CNN for Learning on Point Clouds</a></td>
-        <td>Yue Wang, Yongbin Sun, Ziwei Liu, S. Sarma, M. Bronstein, J. Solomon</td>
-        <td>2018-01-24</td>
-        <td>ACM Transactions on Graphics (TOG)</td>
-        <td>4339</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (4287)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/4667ad4302254f67ef8c831ede8e4cd8d0709715">The KEGG resource for deciphering the genome</a></td>
-        <td>M. Kanehisa, S. Goto, S. Kawashima, Y. Okuno, M. Hattori</td>
+        <td><a href="https://www.semanticscholar.org/paper/8049cb71b76be847c1c4886a79a9cbd4d9b1d821">Learned Simulators for Turbulence</a></td>
+        <td>Kimberly L. Stachenfeld, D. Fielding, Dmitrii Kochkov, M. Cranmer, T. Pfaff, Jonathan Godwin, Can Cui, S. Ho, P. Battaglia, Alvaro Sanchez-Gonzalez</td>
         <td>None</td>
-        <td>Nucleic acids research</td>
-        <td>4287</td>
+        <td>International Conference on Learning Representations</td>
+        <td>24</td>
       </tr>
     
       <tr>
       <script>
-      // alert (4280)
+      // alert (24)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/462808d3a0fa52ab7dbde74cac80260297f1026a">Discriminative topological features reveal biological network mechanisms</a></td>
-        <td>Manuel Middendorf, Etay Ziv, Carter Adams, Jen Hom, Robin Koytcheff, Chaya Levovitz, Gregory Woods, Linda Chen, Chris Wiggins</td>
-        <td>2004-02-09</td>
-        <td>BMC Bioinformatics</td>
-        <td>4280</td>
+        <td><a href="https://www.semanticscholar.org/paper/267abe99874a5ba61910c6ab3a7d8667d7b81af2">Inferring Halo Masses with Graph Neural Networks</a></td>
+        <td>Pablo Villanueva-Domingo, F. Villaescusa-Navarro, D. Angl'es-Alc'azar, S. Genel, F. Marinacci, D. Spergel, L. Hernquist, M. Vogelsberger, R. Davé, D. Narayanan</td>
+        <td>2021-11-16</td>
+        <td>The Astrophysical Journal</td>
+        <td>24</td>
       </tr>
     
       <tr>
       <script>
-      // alert (4253)
+      // alert (24)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/3fa1f9a88d140c66fec756ca8f8f4ecee15e7120">The PRISMA Extension Statement for Reporting of Systematic Reviews Incorporating Network Meta-analyses of Health Care Interventions: Checklist and Explanations</a></td>
-        <td>B. Hutton, G. Salanti, D. Caldwell, A. Chaimani, C. Schmid, C. Cameron, J. Ioannidis, S. Straus, K. Thorlund, J. Jansen, C. Mulrow, Ferrn Catal-Lpez, Peter C. Gtzsche, K. Dickersin, I. Boutron, D. Altman, D. Moher</td>
-        <td>2015-06-02</td>
-        <td>Annals of Internal Medicine</td>
-        <td>4253</td>
+        <td><a href="https://www.semanticscholar.org/paper/064bbace1d1ce11787975c59f8209ea6306f261e">Search-Based Task Planning with Learned Skill Effect Models for Lifelong Robotic Manipulation</a></td>
+        <td>Jacky Liang, Mohit Sharma, A. LaGrassa, Shivam Vats, Saumya Saxena, Oliver Kroemer</td>
+        <td>2021-09-17</td>
+        <td>2022 International Conference on Robotics and Automation (ICRA)</td>
+        <td>24</td>
       </tr>
     
       <tr>
       <script>
-      // alert (4234)
+      // alert (23)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/5e925a9f1e20df61d1e860a7aa71894b35a1c186">Spectral Networks and Locally Connected Networks on Graphs</a></td>
-        <td>Joan Bruna, Wojciech Zaremba, Arthur Szlam, Yann LeCun</td>
-        <td>2013-12-20</td>
-        <td>CoRR</td>
-        <td>4234</td>
+        <td><a href="https://www.semanticscholar.org/paper/eeb66c3463857244d8e8efff8922757ea509de63">Decentralized Control of Quadrotor Swarms with End-to-end Deep Reinforcement Learning</a></td>
+        <td>S. Batra, Zhehui Huang, Aleksei Petrenko, T. Kumar, Artem Molchanov, G. Sukhatme</td>
+        <td>2021-09-16</td>
+        <td>Conference on Robot Learning</td>
+        <td>23</td>
       </tr>
     
       <tr>
       <script>
-      // alert (3880)
+      // alert (22)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/2d867297dfe0d3ce2ed5b1d0f2dff88cac46ee94">Pregel: a system for large-scale graph processing</a></td>
-        <td>G. Malewicz, Matthew H. Austern, Aart J. C. Bik, James C. Dehnert, I. Horn, Naty Leiser, G. Czajkowski</td>
-        <td>2010-06-06</td>
-        <td>Proceedings of the 2010 ACM SIGMOD International Conference on Management of data</td>
-        <td>3880</td>
+        <td><a href="https://www.semanticscholar.org/paper/0afb5d43a16fc1b90d813cfe81ef7f80e997f0fc">Making a Robot Learn to Play Soccer Using Reward and Punishment</a></td>
+        <td>Heiko Müller, M. Lauer, Roland Hafner, S. Lange, A. Merke, Martin A. Riedmiller</td>
+        <td>2007-09-10</td>
+        <td>Deutsche Jahrestagung für Künstliche Intelligenz</td>
+        <td>22</td>
       </tr>
     
       <tr>
       <script>
-      // alert (3754)
+      // alert (21)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/ea5dd6a3d8f210d05e53a7b6fa5e16f1b115f693">Graph Neural Networks: A Review of Methods and Applications</a></td>
-        <td>Jie Zhou, Ganqu Cui, Zhengyan Zhang, Cheng Yang, Zhiyuan Liu, Maosong Sun</td>
-        <td>2018-12-20</td>
-        <td>ArXiv</td>
-        <td>3754</td>
+        <td><a href="https://www.semanticscholar.org/paper/ef719cad3befb526168183148bec918349a00d02">Dictionary Learning With Optimized Projection Design for Compressive Sensing Applications</a></td>
+        <td>Wei Chen, M. Rodrigues</td>
+        <td>2013-08-22</td>
+        <td>IEEE Signal Processing Letters</td>
+        <td>21</td>
       </tr>
     
       <tr>
       <script>
-      // alert (3715)
+      // alert (21)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/f44ff0677dd1fc960f5cdf9d2ef4f8a5a56ba77d">BioGRID: a general repository for interaction datasets</a></td>
-        <td>Chris Stark, Bobby-Joe Breitkreutz, T. Reguly, Lorrie Boucher, A. Breitkreutz, M. Tyers</td>
-        <td>2005-12-28</td>
-        <td>Nucleic Acids Research</td>
-        <td>3715</td>
+        <td><a href="https://www.semanticscholar.org/paper/edf4b267e7a3eb77eb0921918553d9032d50c7d8">Learning garment manipulation policies toward robot-assisted dressing</a></td>
+        <td>Fan Zhang, Y. Demiris</td>
+        <td>2022-04-06</td>
+        <td>Science Robotics</td>
+        <td>21</td>
       </tr>
     
       <tr>
       <script>
-      // alert (3662)
+      // alert (21)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/cd8a9914d50b0ac63315872530274d158d6aff09">Modeling Relational Data with Graph Convolutional Networks</a></td>
-        <td>M. Schlichtkrull, Thomas Kipf, Peter Bloem, Rianne van den Berg, Ivan Titov, M. Welling</td>
-        <td>2017-03-17</td>
-        <td>Extended Semantic Web Conference</td>
-        <td>3662</td>
+        <td><a href="https://www.semanticscholar.org/paper/5c9126c2f3407fd12f9c9478024705a2a0a8ca09">Grounded action transformation for sim-to-real reinforcement learning</a></td>
+        <td>Josiah P. Hanna, Siddharth Desai, Haresh Karnan, Garrett A. Warnell, P. Stone</td>
+        <td>2021-05-13</td>
+        <td>Machine Learning</td>
+        <td>21</td>
       </tr>
     
       <tr>
       <script>
-      // alert (3621)
+      // alert (21)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/30b86960827597ab5509c575450953959dad1b54">Hierarchical Information Clustering by Means of Topologically Embedded Graphs</a></td>
-        <td>Won-Min Song, T. D. Matteo, T. Aste</td>
-        <td>2011-10-20</td>
-        <td>PLoS ONE</td>
-        <td>3621</td>
+        <td><a href="https://www.semanticscholar.org/paper/570c21e7b074edf5083c3029c50aa8cbec4c329c">Intention Aware Robot Crowd Navigation with Attention-Based Interaction Graph</a></td>
+        <td>Shuijing Liu, Peixin Chang, Zhe Huang, Neeloy Chakraborty, Kaiwen Hong, Weihang Liang, D. McPherson, Junyi Geng, K. Driggs-Campbell</td>
+        <td>2022-03-03</td>
+        <td>2023 IEEE International Conference on Robotics and Automation (ICRA)</td>
+        <td>21</td>
       </tr>
     
       <tr>
       <script>
-      // alert (3563)
+      // alert (20)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/c84539a89bc0a2a2425ca1b0046833f57d86e7b0">Using Bayesian networks to analyze expression data</a></td>
-        <td>N. Friedman, M. Linial, I. Nachman, D. Pe’er</td>
-        <td>2000-04-08</td>
-        <td>Annual International Conference on Research in Computational Molecular Biology</td>
-        <td>3563</td>
+        <td><a href="https://www.semanticscholar.org/paper/cdef33aab88772ec36744a297759e15370b0e308">Impact of Using a Robot Patient for Nursing Skill Training in Patient Transfer</a></td>
+        <td>Zhifeng Huang, Chingszu Lin, M. Kanai-Pak, J. Maeda, Y. Kitajima, Mitsuhiro Nakamura, N. Kuwahara, T. Ogata, J. Ota</td>
+        <td>2017-07-01</td>
+        <td>IEEE Transactions on Learning Technologies</td>
+        <td>20</td>
       </tr>
     
       <tr>
       <script>
-      // alert (3531)
+      // alert (20)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/e464550cdc5bfe80900afb8df94066c7ddb6b14d">The university of Florida sparse matrix collection</a></td>
-        <td>T. Davis, Yifan Hu</td>
-        <td>2011-11-01</td>
-        <td>ACM Trans. Math. Softw.</td>
-        <td>3531</td>
+        <td><a href="https://www.semanticscholar.org/paper/40c40b4e53e893709f2e4ec71d5fedcf84e09a84">Learning Sequences of Manipulation Primitives for Robotic Assembly</a></td>
+        <td>N. Vuong, H. Pham, Quang-Cuong Pham</td>
+        <td>2020-11-02</td>
+        <td>2021 IEEE International Conference on Robotics and Automation (ICRA)</td>
+        <td>20</td>
       </tr>
     
       <tr>
       <script>
-      // alert (3522)
+      // alert (19)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/4665f10ba0006df8d4fec85e368bcc503d57ce44">The architecture of complex weighted networks.</a></td>
-        <td>A. Barrat, M. Barthelemy, R. Pastor-Satorras, Alessandro Vespignani</td>
-        <td>2003-11-18</td>
-        <td>Proceedings of the National Academy of Sciences of the United States of America</td>
-        <td>3522</td>
+        <td><a href="https://www.semanticscholar.org/paper/7a9bc083fce0b927be27e680598794547773f90f">Realtime Simulation of Thin-Shell Deformable Materials Using CNN-Based Mesh Embedding</a></td>
+        <td>Qingyang Tan, Zherong Pan, Lin Gao, Dinesh Manocha</td>
+        <td>2019-09-26</td>
+        <td>IEEE Robotics and Automation Letters</td>
+        <td>19</td>
       </tr>
     
       <tr>
       <script>
-      // alert (3496)
+      // alert (18)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/39e223e6b5a6f8727e9f60b8b7c7720dc40a5dbc">The emerging field of signal processing on graphs: Extending high-dimensional data analysis to networks and other irregular domains</a></td>
-        <td>D. Shuman, S. K. Narang, P. Frossard, Antonio Ortega, P. Vandergheynst</td>
-        <td>2012-10-31</td>
-        <td>IEEE Signal Processing Magazine</td>
-        <td>3496</td>
+        <td><a href="https://www.semanticscholar.org/paper/f96d711bbbe22361ddb63e6b6727f40bc800f162">Simulation Devices in Interventional Radiology: Caveat Emptor</a></td>
+        <td>D. Gould, J. Reekers, D. Kessel, N. Chalmers, M. Sapoval, Aalpen A. Patel, G. Becker, Mick J. Lee, L. Stockx</td>
+        <td>2006-05-23</td>
+        <td>CardioVascular and Interventional Radiology</td>
+        <td>18</td>
       </tr>
     
       <tr>
       <script>
-      // alert (3486)
+      // alert (18)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/13bfdf45f347869eaeab73b80902a0c41f5913c2">Conn: A Functional Connectivity Toolbox for Correlated and Anticorrelated Brain Networks</a></td>
-        <td>S. Whitfield-Gabrieli, Alfonso Nieto-Castanon</td>
-        <td>2012-08-06</td>
-        <td>Brain connectivity</td>
-        <td>3486</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (3410)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/e8b8c5f4a81e11576ee2c74ab65c66a42bbad270">Random graphs with arbitrary degree distributions and their applications.</a></td>
-        <td>M. Newman, M. Newman, S. Strogatz, D. Watts, D. Watts</td>
-        <td>2000-07-13</td>
-        <td>Physical review. E, Statistical, nonlinear, and soft matter physics</td>
-        <td>3410</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (3405)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/27725a2d2a8cee9bf9fffc6c2167017103aba0fa">A Convolutional Neural Network for Modelling Sentences</a></td>
-        <td>Nal Kalchbrenner, Edward Grefenstette, Phil Blunsom</td>
-        <td>2014-04-08</td>
-        <td>Annual Meeting of the Association for Computational Linguistics</td>
-        <td>3405</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (3253)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/7631c91b69c6ec58a352bf7c3121282770fdbe20">Measurement and analysis of online social networks</a></td>
-        <td>A. Mislove, M. Marcon, K. Gummadi, P. Druschel, Bobby Bhattacharjee</td>
-        <td>2007-10-24</td>
-        <td>ACM/SIGCOMM Internet Measurement Conference</td>
-        <td>3253</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (3236)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/c416e0295fee5a4b4ded400f28c57aaf727f3651">Small worlds: the dynamics of networks between order and randomness</a></td>
-        <td>Jie Wu</td>
-        <td>2000-11-01</td>
-        <td>SIGMOD Rec.</td>
-        <td>3236</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (3067)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/a55df99552d6093b6150fe2ca79d017644b73935">BrainNet Viewer: A Network Visualization Tool for Human Brain Connectomics</a></td>
-        <td>Mingrui Xia, Jinhui Wang, Yong He</td>
-        <td>2013-07-04</td>
-        <td>PLoS ONE</td>
-        <td>3067</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (3035)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/93e12a891485806085ad95d4144a21a55d7fc996">Fibonacci heaps and their uses in improved network optimization algorithms</a></td>
-        <td>M. Fredman, R. Tarjan</td>
-        <td>1984-10-24</td>
-        <td>NotAvbl</td>
-        <td>3035</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (3033)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/779bc3570167c8251afb0a88ca355b596583caea">The human disease network</a></td>
-        <td>K. Goh, M. Cusick, D. Valle, B. Childs, M. Vidal, A. Barabási</td>
-        <td>2007-05-22</td>
-        <td>Proceedings of the National Academy of Sciences</td>
-        <td>3033</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (3003)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/efeaa6e3114d6d6ae5c3041b66ac9a9ae9bf52bf">Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action Recognition</a></td>
-        <td>Sijie Yan, Yuanjun Xiong, Dahua Lin</td>
-        <td>2018-01-23</td>
-        <td>AAAI Conference on Artificial Intelligence</td>
-        <td>3003</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2999)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/5d1bfeed240709725c78bc72ea40e55410b373dc">Convolutional Networks on Graphs for Learning Molecular Fingerprints</a></td>
-        <td>D. Duvenaud, D. Maclaurin, J. Aguilera-Iparraguirre, Rafael Gómez-Bombarelli, Timothy D. Hirzel, Alán Aspuru-Guzik, Ryan P. Adams</td>
-        <td>2015-09-30</td>
-        <td>ArXiv</td>
-        <td>2999</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2985)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/51e4f920c54cc8794f0fe68f0bfe1d6e122c19ff">Computing Communities in Large Networks Using Random Walks</a></td>
-        <td>P. Pons, Matthieu Latapy</td>
-        <td>2004-12-14</td>
-        <td>NotAvbl</td>
-        <td>2985</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2862)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/492f57ee9ceb61fb5a47ad7aebfec1121887a175">Gated Graph Sequence Neural Networks</a></td>
-        <td>Yujia Li, Daniel Tarlow, Marc Brockschmidt, R. Zemel</td>
-        <td>2015-11-17</td>
-        <td>arXiv: Learning</td>
-        <td>2862</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2745)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/0ed877bab75b32042a887715380c84ac27e64a8b">Mixing patterns in networks.</a></td>
-        <td>M. Newman, M. Newman</td>
-        <td>2002-09-19</td>
-        <td>Physical review. E, Statistical, nonlinear, and soft matter physics</td>
-        <td>2745</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2738)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/aee9709704f84defcf97d622b490eb662593d026">Modeling and Simulation of Genetic Regulatory Systems: A Literature Review</a></td>
-        <td>H. Jong</td>
-        <td>None</td>
-        <td>J. Comput. Biol.</td>
-        <td>2738</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2719)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/48372b9fdbe64ec8d619babaf7f7ee734b00127c">Fast linear iterations for distributed averaging</a></td>
-        <td>Lin Xiao, Stephen P. Boyd</td>
-        <td>2003-12-09</td>
-        <td>42nd IEEE International Conference on Decision and Control (IEEE Cat. No.03CH37475)</td>
-        <td>2719</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2714)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/6c96c2d4a3fbd572fef2d59cb856521ee1746789">Graph Convolutional Neural Networks for Web-Scale Recommender Systems</a></td>
-        <td>Rex Ying, Ruining He, Kaifeng Chen, Pong Eksombatchai, William L. Hamilton, J. Leskovec</td>
-        <td>2018-06-06</td>
-        <td>Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining</td>
-        <td>2714</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2684)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/7fe0ef2ddacd193101dc5ba3df97b0241a5e8fc6">Stability of multiagent systems with time-dependent communication links</a></td>
-        <td>L. Moreau</td>
-        <td>2005-02-14</td>
-        <td>IEEE Transactions on Automatic Control</td>
-        <td>2684</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2673)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/54906484f42e871f7c47bbfe784a358b1448231f">Variational Graph Auto-Encoders</a></td>
-        <td>Thomas Kipf, M. Welling</td>
-        <td>2016-11-21</td>
-        <td>ArXiv</td>
-        <td>2673</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2621)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/3a58efcc4558727cc5c131c44923635da4524f33">Relational inductive biases, deep learning, and graph networks</a></td>
-        <td>P. Battaglia, Jessica B. Hamrick, V. Bapst, Alvaro Sanchez-Gonzalez, V. Zambaldi, Mateusz Malinowski, A. Tacchetti, David Raposo, Adam Santoro, Ryan Faulkner, Çaglar Gülçehre, H. F. Song, A. J. Ballard, J. Gilmer, George E. Dahl, Ashish Vaswani, Kelsey R. Allen, C. Nash, Victoria Langston, Chris Dyer, N. Heess, Daan Wierstra, Pushmeet Kohli, M. Botvinick, O. Vinyals, Yujia Li, Razvan Pascanu</td>
-        <td>2018-06-04</td>
-        <td>ArXiv</td>
-        <td>2621</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2586)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/3e0f02e92c6b148c45fc672095ac654000eec5e5">Benchmark graphs for testing community detection algorithms.</a></td>
-        <td>Andrea Lancichinetti, S. Fortunato, F. Radicchi</td>
-        <td>2008-05-30</td>
-        <td>Physical review. E, Statistical, nonlinear, and soft matter physics</td>
-        <td>2586</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2534)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/29752f2f4a40df45a6eb61afb7c347f1799b1f45">Graph evolution: Densification and shrinking diameters</a></td>
-        <td>J. Leskovec, J. Kleinberg, C. Faloutsos</td>
-        <td>2006-03-27</td>
-        <td>ACM Trans. Knowl. Discov. Data</td>
-        <td>2534</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2512)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/788b6f36a2b7cab86a5a29000e8b7cde25b85e73">Graphs over time: densification laws, shrinking diameters and possible explanations</a></td>
-        <td>J. Leskovec, J. Kleinberg, C. Faloutsos</td>
-        <td>2005-08-21</td>
-        <td>Knowledge Discovery and Data Mining</td>
-        <td>2512</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2508)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/72edcb3788f9c141a3ed28e6d36f75ca4977d27e">Spatio-temporal Graph Convolutional Neural Network: A Deep Learning Framework for Traffic Forecasting</a></td>
-        <td>Ting Yu, Haoteng Yin, Zhanxing Zhu</td>
-        <td>2017-09-14</td>
-        <td>ArXiv</td>
-        <td>2508</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2421)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/fe9b8aac9fa3bfd9724db5a881a578e471e612d7">Efficient Neural Architecture Search via Parameter Sharing</a></td>
-        <td>Hieu Pham, M. Guan, Barret Zoph, Quoc V. Le, J. Dean</td>
-        <td>2018-02-09</td>
-        <td>ArXiv</td>
-        <td>2421</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2411)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/62c76ca0b2790c34e85ba1cce09d47be317c7235">Estimating or Propagating Gradients Through Stochastic Neurons for Conditional Computation</a></td>
-        <td>Yoshua Bengio, Nicholas Léonard, Aaron C. Courville</td>
-        <td>2013-08-15</td>
-        <td>ArXiv</td>
-        <td>2411</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2403)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/54d96ab8cd2102319faf26750c63d74b4f2852cf">Randomized gossip algorithms</a></td>
-        <td>Stephen P. Boyd, Arpita Ghosh, B. Prabhakar, Devavrat Shah</td>
-        <td>2006-06-01</td>
-        <td>IEEE Transactions on Information Theory</td>
-        <td>2403</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2400)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/42f27102d03c7bbd4a7676a1832c96d24ef6e37c">Distinct brain networks for adaptive and stable task control in humans</a></td>
-        <td>N. Dosenbach, D. Fair, F. Miezin, A. Cohen, Kristin K. Wenger, Ronny A. T. Dosenbach, M. Fox, A. Snyder, Justin L. Vincent, M. Raichle, B. Schlaggar, S. Petersen</td>
-        <td>2007-06-26</td>
-        <td>Proceedings of the National Academy of Sciences</td>
-        <td>2400</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2314)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/7e71eedb078181873a56f2adcfef9dddaeb95602">Simplifying Graph Convolutional Networks</a></td>
-        <td>Felix Wu, Tianyi Zhang, A. Souza, Christopher Fifty, Tao Yu, Kilian Q. Weinberger</td>
-        <td>2019-02-19</td>
+        <td><a href="https://www.semanticscholar.org/paper/e0ee02a573b3d83fec55ed5d7c80f1afa055a7b4">Constraint-based graph network simulator</a></td>
+        <td>Yulia Rubanova, Alvaro Sanchez-Gonzalez, T. Pfaff, P. Battaglia</td>
+        <td>2021-12-16</td>
         <td>International Conference on Machine Learning</td>
-        <td>2314</td>
+        <td>18</td>
       </tr>
     
       <tr>
       <script>
-      // alert (2292)
+      // alert (18)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/b0e9ea2ce2ea9713c128f47db3f1aaf0c5c2f175">Small-World Brain Networks</a></td>
-        <td>D. Bassett, E. Bullmore</td>
-        <td>2006-12-01</td>
-        <td>The Neuroscientist</td>
-        <td>2292</td>
+        <td><a href="https://www.semanticscholar.org/paper/9302b6380800c60ac745c91e8d4b442ad4b6bf21">The Multistate Hard Core Model on a Regular Tree</a></td>
+        <td>David J. Galvin, F. Martinelli, K. Ramanan, P. Tetali</td>
+        <td>2010-07-27</td>
+        <td>SIAM J. Discret. Math.</td>
+        <td>18</td>
       </tr>
     
       <tr>
       <script>
-      // alert (2291)
+      // alert (17)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/409d0886811a7c645ece8dc8e95ce1bc0edff3b0">A Resilient, Low-Frequency, Small-World Human Brain Functional Network with Highly Connected Association Cortical Hubs</a></td>
-        <td>S. Achard, R. Salvador, Brandon Whitcher, J. Suckling, E. Bullmore</td>
-        <td>2006-01-04</td>
-        <td>The Journal of Neuroscience</td>
-        <td>2291</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2281)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/a2b2a5d3d4c8d35663236a9548076327cfc685ca">Defining and identifying communities in networks.</a></td>
-        <td>F. Radicchi, C. Castellano, F. Cecconi, V. Loreto, D. Parisi</td>
-        <td>2003-09-21</td>
-        <td>Proceedings of the National Academy of Sciences of the United States of America</td>
-        <td>2281</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2271)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/328a20bbd29cf42771125a21c6f66d093e5dd74e">Analysis of weighted networks.</a></td>
-        <td>M. Newman</td>
-        <td>2004-07-20</td>
-        <td>Physical review. E, Statistical, nonlinear, and soft matter physics</td>
-        <td>2271</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2267)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/5b4623d4a2b9fe0604a11a401ca19f852a2e891c">Deadlock-Free Message Routing in Multiprocessor Interconnection Networks</a></td>
-        <td>W. Dally, C. Seitz</td>
-        <td>1987-05-01</td>
-        <td>IEEE Transactions on Computers</td>
-        <td>2267</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2237)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/bb0419bccc2244ed33c9c42341f342511262daa3">Fusion, Propagation, and Structuring in Belief Networks</a></td>
-        <td>J. Pearl</td>
-        <td>1986-09-01</td>
-        <td>Probabilistic and Causal Inference</td>
-        <td>2237</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2186)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/b55dfb180030e51e280c5660e7351bbaee7d2d19">Efficiency and Cost of Economical Brain Functional Networks</a></td>
-        <td>S. Achard, E. Bullmore</td>
-        <td>2007-02-01</td>
-        <td>PLoS Computational Biology</td>
-        <td>2186</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2165)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/448326de7b82c8ed10ad9ac89d1305bf2260cd5f">The Click modular router</a></td>
-        <td>E. Kohler</td>
-        <td>1999-12-12</td>
-        <td>Proceedings of the seventeenth ACM symposium on Operating systems principles</td>
-        <td>2165</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2158)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/515a21e90117941150923e559729c59f5fdade1c">The Concrete Distribution: A Continuous Relaxation of Discrete Random Variables</a></td>
-        <td>Chris J. Maddison, A. Mnih, Y. Teh</td>
-        <td>2016-11-02</td>
+        <td><a href="https://www.semanticscholar.org/paper/fcb6adc39423dc11b098ed7a587bf16e4dc39487">ADCME: Learning Spatially-varying Physical Fields using Deep Neural Networks</a></td>
+        <td>Kailai Xu, Eric F Darve</td>
+        <td>2020-11-24</td>
         <td>ArXiv</td>
-        <td>2158</td>
+        <td>17</td>
       </tr>
     
       <tr>
       <script>
-      // alert (2154)
+      // alert (17)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/443ee74236492a8863eacaf9fabbedf30827cc55">ForceAtlas2, a Continuous Graph Layout Algorithm for Handy Network Visualization Designed for the Gephi Software</a></td>
-        <td>Mathieu Jacomy, T. Venturini, Sebastien Heymann, Mathieu Bastian</td>
-        <td>2014-06-10</td>
-        <td>PLoS ONE</td>
-        <td>2154</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2154)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/256ddfa66789c70da2860b8c354a3d9c661274a6">The human factor: the critical importance of effective teamwork and communication in providing safe care</a></td>
-        <td>M. Leonard, S. Graham, D. Bonacum</td>
-        <td>2004-10-01</td>
-        <td>Quality and Safety in Health Care</td>
-        <td>2154</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2150)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/36652428740cd30d245d55889f01a7fb04a91c93">Deeper Insights into Graph Convolutional Networks for Semi-Supervised Learning</a></td>
-        <td>Qimai Li, Zhichao Han, Xiao-Ming Wu</td>
-        <td>2018-01-22</td>
-        <td>ArXiv</td>
-        <td>2150</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2143)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/52eb4ea8a683ac2b6ae2f61e69a68f12a14c15a4">Network robustness and fragility: percolation on random graphs.</a></td>
-        <td>D. Callaway, M. Newman, M. Newman, S. Strogatz, D. Watts, D. Watts</td>
-        <td>2000-07-18</td>
-        <td>Physical review letters</td>
-        <td>2143</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2133)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/9ba0186ed40656329c421f55ada7313293e13f17">Diffusion Convolutional Recurrent Neural Network: Data-Driven Traffic Forecasting</a></td>
-        <td>Yaguang Li, Rose Yu, C. Shahabi, Yan Liu</td>
-        <td>2017-07-06</td>
-        <td>arXiv: Learning</td>
-        <td>2133</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2089)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/4fb52984078d75ec5655962dc94dc7848182286b">Distortion Invariant Object Recognition in the Dynamic Link Architecture</a></td>
-        <td>M. Lades, J. Vorbrüggen, J. Buhmann, J. Lange, C. Malsburg, R. Würtz, W. Konen</td>
-        <td>1993-03-01</td>
-        <td>IEEE Trans. Computers</td>
-        <td>2089</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2088)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/847362ce2a49966bf759763d4d094055a94dd576">Efficient influence maximization in social networks</a></td>
-        <td>Wei Chen, Yajun Wang, Siyu Yang</td>
-        <td>2009-06-28</td>
-        <td>Knowledge Discovery and Data Mining</td>
-        <td>2088</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2087)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/a641960669100a3de0b1dfc80b34dbdfc951d023">Community detection algorithms: a comparative analysis: invited presentation, extended abstract</a></td>
-        <td>S. Fortunato, Andrea Lancichinetti</td>
-        <td>2009-08-07</td>
-        <td>Physical review. E, Statistical, nonlinear, and soft matter physics</td>
-        <td>2087</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (2074)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/f96f659ada20f35e9fce66306c8f8f6a471e592d">Graph theoretical analysis of magnetoencephalographic functional connectivity in Alzheimer's disease.</a></td>
-        <td>R. Helmich, M. Hallett, G. Deuschl, I. Toni, B. Bloem, N. Granger, H. Blamires, R. J. M. Franklin, N. D. Jeffery, V. Failli, M. A. Kopp, C. Gericke, P. Martus, S. Klingbeil, B. Brommer, I. Laginha, Y. Chen, M. DeVivo, U. Dirnagl, J. M. Schwab, M. Sashindranath, E. Sales, M. Daglas, R. Freeman, A. L. Samson, E. Cops, S. Beckham, A. Galle, C. Mclean, C. Morganti-Kossmann, J. V. Rosenfeld, R. Madani, J. Vassalli, Enming J Su, D. A. Lawrence, R. Medcalf, M. Starkey, C. Bleul, B. Zörner, N. T. Lindau, T. Mueggler, M. Rudin, M. Schwab, T. Doeppner, I. Młynarczuk-Biały, U. Kuckelkorn, B. Kaltwasser, J. Herz, M. R. Hasan, D. Hermann, M. Bähr, H. Sakata, P. Narasimhan, K. Niizuma, C. Maier, T. Wakai, P. H. Chan, M. M. Helmy, E. Ruusuvuori, P. V. Watkins, J. Voipio, P. Kanold, K. Kaila, E. Butti, M. Bacigaluppi, S. Rossi, M. Cambiaghi, M. Bari, A. C. Silla, E. Brambilla, A. Musella, R. de Ceglia, L. Teneud, V. De Chiara, P. D 'adamo, J. García-Verdugo, G. Comi, L. Muzio, A. Quattrini, L. Leocani, M. Maccarrone, D. Centonze, G. Martino, K. Sathe, W. Maetzler, J. D. Lang, R. B. Mounsey, C. Fleckenstein, H. L. Martin, C. Schulte, S. Mustafa, M. Synofzik, Z. Vukovic, S. Itohara, D. Berg, P. Teismann, C. Scherfler, K. Seppi, K. J. Mair, E. Donnemiller, I. Virgolini, G. Wenning, W. Poewe, L. Tönges, T. Frank, L. Tatenhorst, K. Saal, J. Koch, É. Szegõ, Jochen H Weishaupt, P. Lingor, J. Kończak, A. Sciutti, L. Avanzino, V. Squeri, M. Gori, L. Masia, G. Abbruzzese, G. Sandini, H. Tsuji, T. Arai, F. Kametani, T. Nonaka, M. Yamashita, M. Suzukake, M. Hosokawa, M. Yoshida, H. Hatsuta, M. Takao, Y. Saito, S. Murayama, H. Akiyama, M. Hasegawa, D. M. A. Mann, A. Tamaoka, D. S. Pitceathly, C. Smith, C. Fratter, C. Alston, L. He, K. Craig, E. Blakely, J. Evans, J. Taylor, Z. Shabbir, M. Deschauer, U. Pohl, M. Roberts, M. C. Jackson, C. Halfpenny, P. Turnpenny, P. W. Lunt, M. Hanna, A. Schaefer, R. Mcfarland, R. Horvath, P. Chinnery, D. Turnbull, J. Poulton, R. Taylor, G. Gorman, D. Ronchi, C. Garone, A. Bordoni, P. G. Rios, S. E. Calvo, M. Ripolone, M. Ranieri, M. Rizzuti, L. Villa, F. Magri, S. Corti, N. Bresolin, V. Mootha, M. Moggio, S. Dimauro, G. Comi, M. Sciacco, D. Cazzoli, R. Müri, R. Schumacher, S. von Arx, S. Chaves, K. Gutbrod, S. Bohlhalter, D. Bauer, T. Vanbellingen, M. Bertschi, S. Kipfer, C. R. Rosenthal, C. Kennard, C. Bassetti, T. Nyffeler, Brain</td>
+        <td><a href="https://www.semanticscholar.org/paper/5a7c442d0fee7bd583a022be94bf63fb13be4032">M-ROSE: A Multi Robot Simulation Environment for Learning Cooperative Behavior</a></td>
+        <td>Sebastian Buck, M. Beetz, Thorsten Schmitt</td>
         <td>None</td>
-        <td>Brain : a journal of neurology</td>
-        <td>2074</td>
+        <td>International Symposium on Distributed Autonomous Robotic Systems</td>
+        <td>17</td>
       </tr>
     
       <tr>
       <script>
-      // alert (2059)
+      // alert (17)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/9a8661ad9dcf12430bc5e9600853cb3b3fe50564">Search and replication in unstructured peer-to-peer networks</a></td>
-        <td>Qin Lv, P. Cao, E. Cohen, Kai Li, S. Shenker</td>
-        <td>2002-06-01</td>
-        <td>International Conference on Supercomputing</td>
-        <td>2059</td>
+        <td><a href="https://www.semanticscholar.org/paper/4346a5b7b19cc5fb420dd7b6318952014a09fa92">A Reinforcement Learning Approach for Enacting Cautious Behaviours in Autonomous Driving System: Safe Speed Choice in the Interaction With Distracted Pedestrians</a></td>
+        <td>Gastone Pietro Rosati Papini, Alice Plebe, M. Lio, R. Donà</td>
+        <td>2021-06-16</td>
+        <td>IEEE Transactions on Intelligent Transportation Systems</td>
+        <td>17</td>
       </tr>
     
       <tr>
       <script>
-      // alert (2032)
+      // alert (17)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/3024f58826a5bce3378af94f677e8fb90cbb49e0">LightGCN: Simplifying and Powering Graph Convolution Network for Recommendation</a></td>
-        <td>Xiangnan He, Kuan Deng, Xiang Wang, Yan Li, Yongdong Zhang, Meng Wang</td>
-        <td>2020-02-06</td>
-        <td>Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval</td>
-        <td>2032</td>
+        <td><a href="https://www.semanticscholar.org/paper/165570c20f4741265cce1844a1bc20feb1b26c94">Differentiable molecular simulation can learn all the parameters in a coarse-grained force field for proteins</a></td>
+        <td>Joe G. Greener, David T. Jones</td>
+        <td>2021-02-07</td>
+        <td>PLoS ONE</td>
+        <td>17</td>
       </tr>
     
       <tr>
       <script>
-      // alert (2028)
+      // alert (16)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/1413dbfbbae1b59d52656db3dc48a4ee278e082f">Modelling disease outbreaks in realistic urban social networks</a></td>
-        <td>S. Eubank, H. Guclu, V. S. A. Kumar, M. Marathe, A. Srinivasan, Z. Toroczkai, Nan Wang</td>
-        <td>2004-05-13</td>
-        <td>Nature</td>
-        <td>2028</td>
+        <td><a href="https://www.semanticscholar.org/paper/98c0ce74e6891945487204a0c44162ec3bc6210a">Learning Robust Policies for Object Manipulation with Robot Swarms</a></td>
+        <td>Gregor H. W. Gebhardt, Kevin Daun, Marius Schnaubelt, G. Neumann</td>
+        <td>2018-05-21</td>
+        <td>2018 IEEE International Conference on Robotics and Automation (ICRA)</td>
+        <td>16</td>
       </tr>
     
       <tr>
       <script>
-      // alert (2022)
+      // alert (16)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/1c0953e6a20b2f388216e0dfb714690c1e3d78f3">Poppr: an R package for genetic analysis of populations with clonal, partially clonal, and/or sexual reproduction</a></td>
-        <td>Zhian N. Kamvar, Javier F. Tabima, N. Grünwald</td>
-        <td>2014-03-04</td>
-        <td>PeerJ</td>
-        <td>2022</td>
+        <td><a href="https://www.semanticscholar.org/paper/3e5fdfa2f01b3ee0ba84f76cabce4ea3e9fc2aad">Online Time-Varying Topology Identification Via Prediction-Correction Algorithms</a></td>
+        <td>Alberto Natali, M. Coutiño, E. Isufi, G. Leus</td>
+        <td>2020-10-22</td>
+        <td>ICASSP 2021 - 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</td>
+        <td>16</td>
       </tr>
     
       <tr>
       <script>
-      // alert (2000)
+      // alert (16)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/461774072256ba290b9d432715b5233d3687ccad">Routing with Guaranteed Delivery in Ad Hoc Wireless Networks</a></td>
-        <td>P. Bose, Pat Morin, I. Stojmenovic, J. Urrutia</td>
-        <td>1999-08-01</td>
-        <td>Wireless Networks</td>
-        <td>2000</td>
+        <td><a href="https://www.semanticscholar.org/paper/2b45b49624aad340f185babe7857410bc1a3b6fa">Softassign versus Softmax: Benchmarks in Combinatorial Optimization</a></td>
+        <td>Steven Gold, Anand Rangarajan</td>
+        <td>1995-11-27</td>
+        <td>Neural Information Processing Systems</td>
+        <td>16</td>
       </tr>
     
       <tr>
       <script>
-      // alert (1963)
+      // alert (16)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/c5f5f179d80a3bf9b4f29750283a87eaca42e91b">Neural Graph Collaborative Filtering</a></td>
-        <td>Xiang Wang, Xiangnan He, Meng Wang, Fuli Feng, Tat-Seng Chua</td>
-        <td>2019-05-20</td>
-        <td>Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval</td>
-        <td>1963</td>
+        <td><a href="https://www.semanticscholar.org/paper/153b175fa99c96b9eebe0967653abc15842f5939">Learning Skill-based Industrial Robot Tasks with User Priors</a></td>
+        <td>Matthias Mayr, Carl Hvarfner, Konstantinos Chatzilygeroudis, Luigi Nardi, Volker Krueger</td>
+        <td>2022-08-02</td>
+        <td>2022 IEEE 18th International Conference on Automation Science and Engineering (CASE)</td>
+        <td>16</td>
       </tr>
     
       <tr>
       <script>
-      // alert (1933)
+      // alert (15)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/7c6de5a9e02a779e24504619050c6118f4eac181">Learning Convolutional Neural Networks for Graphs</a></td>
-        <td>Mathias Niepert, Mohamed Ahmed, Konstantin Kutzkov</td>
-        <td>2016-05-17</td>
-        <td>International Conference on Machine Learning</td>
-        <td>1933</td>
+        <td><a href="https://www.semanticscholar.org/paper/ef15ebe3a5b4965e207278c33b0f915f614b2865">ATLAS: A Geometric Approach to Learning High-Dimensional Stochastic Systems Near Manifolds</a></td>
+        <td>M. Crosskey, M. Maggioni</td>
+        <td>2014-04-02</td>
+        <td>Multiscale Model. Simul.</td>
+        <td>15</td>
       </tr>
     
       <tr>
       <script>
-      // alert (1920)
+      // alert (15)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/bfa48f2c858526f7888b20ad22f38424ae84f71c">Impact of Interference on Multi-Hop Wireless Network Performance</a></td>
-        <td>K. Jain, J. Padhye, V. Padmanabhan, L. Qiu</td>
-        <td>2003-09-14</td>
-        <td>Wireless Networks</td>
-        <td>1920</td>
+        <td><a href="https://www.semanticscholar.org/paper/d6fdd8fc0c5fc052d040687e72638fb4297661cc">Learning rigid dynamics with face interaction graph networks</a></td>
+        <td>Kelsey R. Allen, Yulia Rubanova, Tatiana Lopez-Guevara, William F. Whitney, Alvaro Sanchez-Gonzalez, P. Battaglia, T. Pfaff</td>
+        <td>2022-12-07</td>
+        <td>ArXiv</td>
+        <td>15</td>
       </tr>
     
       <tr>
       <script>
-      // alert (1917)
+      // alert (15)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/fab4d19ed77dad7c437d885eceb8aa65fae5a783">Image-Based Recommendations on Styles and Substitutes</a></td>
-        <td>Julian McAuley, C. Targett, Javen Qinfeng Shi, A. Hengel</td>
-        <td>2015-06-15</td>
-        <td>Proceedings of the 38th International ACM SIGIR Conference on Research and Development in Information Retrieval</td>
-        <td>1917</td>
+        <td><a href="https://www.semanticscholar.org/paper/9bca9158db732373608dd3e3e53deb3288968c2f">JET-Net: Real-Time Object Detection for Mobile Robots</a></td>
+        <td>Bernd Poppinga, Tim Laue</td>
+        <td>2019-07-02</td>
+        <td>Robot Soccer World Cup</td>
+        <td>15</td>
       </tr>
     
       <tr>
       <script>
-      // alert (1916)
+      // alert (15)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/9697d32ed0a16da167f2bdba05ef96d0da066eb5">Convolutional 2D Knowledge Graph Embeddings</a></td>
-        <td>Tim Dettmers, Pasquale Minervini, Pontus Stenetorp, S. Riedel</td>
-        <td>2017-07-05</td>
-        <td>AAAI Conference on Artificial Intelligence</td>
-        <td>1916</td>
+        <td><a href="https://www.semanticscholar.org/paper/72baea28026468a0162f750052052b0c6fae7630">Cavity method for force transmission in jammed disordered packings of hard particles.</a></td>
+        <td>Lin Bo, R. Mari, Chaoming Song, H. Makse</td>
+        <td>2013-10-29</td>
+        <td>Soft matter</td>
+        <td>15</td>
       </tr>
     
       <tr>
       <script>
-      // alert (1907)
+      // alert (15)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/a38faf02b193d8d121fc9946d5e7c53b13bd9d57">Graph-set analysis of hydrogen-bond patterns in organic crystals.</a></td>
-        <td>M. C. Etter, J. MacDonald, J. Bernstein</td>
-        <td>1990-04-01</td>
-        <td>Acta crystallographica. Section B, Structural science</td>
-        <td>1907</td>
+        <td><a href="https://www.semanticscholar.org/paper/71051452a7c56ab9cea59cafe6ef0cd9ffdc5ffa">SofaGym: An Open Platform for Reinforcement Learning Based on Soft Robot Simulations.</a></td>
+        <td>Pierre Schegg, Etienne Ménager, Elie Khairallah, Damien Marchal, Jérémie Dequidt, P. Preux, Christian Duriez</td>
+        <td>2022-12-07</td>
+        <td>Soft robotics</td>
+        <td>15</td>
       </tr>
     
       <tr>
       <script>
-      // alert (1878)
+      // alert (14)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/93ee8e1c05d11d63aa3d61653b2c8bae75e0aecd">The Network Data Repository with Interactive Graph Analytics and Visualization</a></td>
-        <td>Ryan A. Rossi, Nesreen Ahmed</td>
-        <td>2015-01-25</td>
-        <td>AAAI Conference on Artificial Intelligence</td>
-        <td>1878</td>
+        <td><a href="https://www.semanticscholar.org/paper/ee41f39d27639dd7aeca1d5328b5fcf29f263a55">Beyond non-backtracking: non-cycling network centrality measures</a></td>
+        <td>F. Arrigo, D. Higham, V. Noferini</td>
+        <td>2020-03-01</td>
+        <td>Proceedings. Mathematical, Physical, and Engineering Sciences</td>
+        <td>14</td>
       </tr>
     
       <tr>
       <script>
-      // alert (1873)
+      // alert (14)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/db05bce6bf68d6b61f008150667bcaf1a514e64a">An introduction to exponential random graph (p*) models for social networks</a></td>
-        <td>G. Robins, P. Pattison, Y. Kalish, D. Lusher</td>
-        <td>2007-05-01</td>
-        <td>Soc. Networks</td>
-        <td>1873</td>
+        <td><a href="https://www.semanticscholar.org/paper/a3e650964ead5af2fbb91a4480eb9af2e34c79fd">Learning Navigation Skills for Legged Robots with Learned Robot Embeddings</a></td>
+        <td>Joanne Truong, Denis Yarats, Tianyu Li, Franziska Meier, S. Chernova, Dhruv Batra, Akshara Rai</td>
+        <td>2020-11-24</td>
+        <td>2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</td>
+        <td>14</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (14)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/3f1521a24ed47385a7cf6bfe4e206376025bc68d">Dextrous Tactile In-Hand Manipulation Using a Modular Reinforcement Learning Architecture</a></td>
+        <td>Johannes Pitz, Lennart Rostel, Leon Sievers, Berthold Bauml</td>
+        <td>2023-03-08</td>
+        <td>2023 IEEE International Conference on Robotics and Automation (ICRA)</td>
+        <td>14</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (14)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/157a211d76534a021a244415cdaf7b3714e63e1a">Stochastic Grounded Action Transformation for Robot Learning in Simulation</a></td>
+        <td>Siddharth Desai, Haresh Karnan, Josiah P. Hanna, Garrett Warnell, Peter Stone</td>
+        <td>2020-08-04</td>
+        <td>2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</td>
+        <td>14</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (13)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/eb1f59babda1ada853a41aba9a924c58daf57226">Improving probabilistic inference in graphical models with determinism and cycles</a></td>
+        <td>M. Ibrahim, C. Pal, G. Pesant</td>
+        <td>None</td>
+        <td>Machine Learning</td>
+        <td>13</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (13)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/250be20cbe2653eba41fea7bf9300e475d63aced">Guaranteed Conservation of Momentum for Learning Particle-based Fluid Dynamics</a></td>
+        <td>L. Prantl, Benjamin Ummenhofer, V. Koltun, Nils Thuerey</td>
+        <td>2022-10-12</td>
+        <td>ArXiv</td>
+        <td>13</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (13)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/24b30c18faf866ef85aa5624de559a0d3cef13fb">Computer science revisited</a></td>
+        <td>V. Cerf</td>
+        <td>2012-12-01</td>
+        <td>Commun. ACM</td>
+        <td>13</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (11)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/e8c204684964433a81abab5e201af78c3c70417d">Kinematically optimised predictions of object motion</a></td>
+        <td>D. Belter, Marek Kopicki, Sebastian Zurek, J. Wyatt</td>
+        <td>2014-11-06</td>
+        <td>2014 IEEE/RSJ International Conference on Intelligent Robots and Systems</td>
+        <td>11</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (11)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/d7952de05e25e90a08b79431116ca6d2ec85e710">Unravelling the Performance of Physics-informed Graph Neural Networks for Dynamical Systems</a></td>
+        <td>A. Thangamuthu, Gunjan Kumar, S. Bishnoi, Ravinder Bhattoo, N. Krishnan, Sayan Ranu</td>
+        <td>2022-11-10</td>
+        <td>ArXiv</td>
+        <td>11</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (11)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/a4c34406632a741f22f2e6766589eabe6ea0e865">Knowledge- and Data-driven Services for Energy Systems using Graph Neural Networks</a></td>
+        <td>F. Fusco, Bradley Eck, Robert Gormally, M. Purcell, S. Tirupathi</td>
+        <td>2020-12-10</td>
+        <td>2020 IEEE International Conference on Big Data (Big Data)</td>
+        <td>11</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (11)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/90571da45af13997a3457057c1e40328f9554c1d">Use of neonatal simulation models to assess competency in bag-mask ventilation</a></td>
+        <td>Stephen A. Pearlman, Stephen A. Pearlman, S. Zern, T. Blackson, J. Ciarlo, A. Mackley, A. Mackley, R. G. Locke, R. G. Locke</td>
+        <td>2016-03-01</td>
+        <td>Journal of Perinatology</td>
+        <td>11</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (11)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/521e45bed5410b41eece700cb89614270a81412e">Enhancing the Inductive Biases of Graph Neural ODE for Modeling Dynamical Systems</a></td>
+        <td>S. Bishnoi, Ravinder Bhattoo, Sayan Ranu, N. Krishnan</td>
+        <td>2022-09-22</td>
+        <td>ArXiv</td>
+        <td>11</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (11)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/41cda486227b941a85fa65f00d93121aca250714">Variational integrator graph networks for learning energy-conserving dynamical systems.</a></td>
+        <td>Shaan Desai, M. Mattheakis, Stephen J. Roberts</td>
+        <td>2020-04-28</td>
+        <td>Physical review. E</td>
+        <td>11</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (10)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/a2f86b1dad15dc9ba5c366ae821f47b1d4d05a9e">Reactive Long Horizon Task Execution via Visual Skill and Precondition Models</a></td>
+        <td>Shohin Mukherjee, Chris Paxton, Arsalan Mousavian, Adam Fishman, M. Likhachev, D. Fox</td>
+        <td>2020-11-17</td>
+        <td>2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</td>
+        <td>10</td>
       </tr>
     
   </tbody>
@@ -1166,804 +1166,803 @@ hide:
   <tbody>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/04744b6893487a608e3726fb4542e2a7f9e81a5b">Hierarchical spatio-temporal graph convolutional neural networks for traffic data imputation</a></td>
-        <td>Dongwei Xu, Hang Peng, Yufu Tang, Haifeng Guo</td>
-        <td>2024-06-01</td>
-        <td>Information Fusion</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/ba23319a62da63ec3b664f6452bb7a9aee8a46dc">Reagent dosage inference based on graph convolutional memory perception network for zinc roughing flotation</a></td>
-        <td>Can Tian, Zhaohui Tang, Hu Zhang, Yongfang Xie, Zhien Dai</td>
-        <td>2024-05-01</td>
-        <td>Control Engineering Practice</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/a1a503c7c23502bebe94eb042b0ce9f8bdbb6504">MACNS: A generic graph neural network integrated deep reinforcement learning based multi-agent collaborative navigation system for dynamic trajectory planning</a></td>
-        <td>Ziren Xiao, Peisong Li, Chang Liu, Honghao Gao, Xinheng Wang</td>
-        <td>2024-05-01</td>
-        <td>Inf. Fusion</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/45cb2614652147789e18f1bc15d665977d2d1ee9">DawnGNN: Documentation augmented windows malware detection using graph neural network</a></td>
-        <td>Pengbin Feng, Le Gai, Li Yang, Qin Wang, Teng Li, Ning Xi, Jianfeng Ma</td>
-        <td>2024-05-01</td>
-        <td>Computers &amp; Security</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/357677ec8b2223f049c45c7330633a5b85c2bc95">Multi-level Graph Memory Network Cluster Convolutional Recurrent Network for traffic forecasting</a></td>
-        <td>Le Sun, Wenzhang Dai, Muhammad Ghulam</td>
-        <td>2024-05-01</td>
-        <td>Inf. Fusion</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/3383c82d39b88e5349d345e32e879806bd72d435">FairCare: Adversarial training of a heterogeneous graph neural network with attention mechanism to learn fair representations of electronic health records</a></td>
-        <td>Yan Wang, Ruochi Zhang, Qian Yang, Qiong Zhou, Shengde Zhang, Yusi Fan, Lan Huang, Kewei Li, Fengfeng Zhou</td>
-        <td>2024-05-01</td>
-        <td>Information Processing &amp; Management</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/13a50769f110029fcb3390956789aec236071c53">Multi-criteria group decision making based on graph neural networks in Pythagorean fuzzy environment</a></td>
-        <td>Zhenhua Meng, Rongheng Lin, Budan Wu</td>
-        <td>2024-05-01</td>
-        <td>Expert Systems with Applications</td>
-        <td>1</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/0cfd9a1774cf41ff07e957bbc25d14596d529c4f">POI recommendation for random groups based on cooperative graph neural networks</a></td>
-        <td>Zhizhong Liu, Lingqiang Meng, Qaun Z. Sheng, Dianhui Chu, Jian Yu, Xiaoyu Song</td>
-        <td>2024-05-01</td>
-        <td>Information Processing &amp; Management</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/fc5ee86473fd698e3f4405b51bdfe0575304a30d">Attention based multi-task interpretable graph convolutional network for Alzheimer’s disease analysis</a></td>
-        <td>Shunqin Jiang, Qiyuan Feng, Hengxin Li, Zhenyun Deng, Qinghong Jiang</td>
-        <td>2024-04-01</td>
-        <td>Pattern Recognition Letters</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/f56be81f12e0c0bdf632d5feeaf028dfb791223a">A coarse-to-fine adaptive spatial–temporal graph convolution network with residuals for motor imagery decoding from the same limb</a></td>
-        <td>Lei Zhu, Jie Yuan, Aiai Huang, Jianhai Zhang</td>
-        <td>2024-04-01</td>
-        <td>Biomedical Signal Processing and Control</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/ec1e36f1253ff09e85e42b4ed6149ea5aa2c931e">FFLDGA-Net: Image retrieval method based on Feature Fusion Learnable Descriptor Graph Attention Network</a></td>
-        <td>Xiaoyu Hu, Xingmei Wang, Dongmei Yang, Wei Ren, Jinli Wang, Bo Liu</td>
-        <td>2024-04-01</td>
-        <td>Journal of Visual Communication and Image Representation</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/ead5e48c9d47021b2dd31349facb77357377e086">Tradeoff Between Age of Information and Operation Time for UAV Sensing Over Multi-Cell Cellular Networks</a></td>
-        <td>Cheng Zhan, Han Hu, Jing Wang, Zhi Liu, Shiwen Mao</td>
-        <td>2024-04-01</td>
-        <td>IEEE Transactions on Mobile Computing</td>
-        <td>2</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/df2701c0fabf50b511182a287d112dfcc84c59b3">Effective Fault Scenario Identification for Communication Networks via Knowledge-Enhanced Graph Neural Networks</a></td>
-        <td>Haihong Zhao, Bo Yang, Jiaxu Cui, Qianli Xing, Jiaxing Shen, Fujin Zhu, Jiannong Cao</td>
-        <td>2024-04-01</td>
-        <td>IEEE Transactions on Mobile Computing</td>
-        <td>1</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/dcf119bfb26a77869c48a1fdf95542f382e9641e">A new programmed method for retrofitting heat exchanger networks using graph machine learning</a></td>
-        <td>Xin Chen, JiangBo Huang, Lin Zhang</td>
-        <td>2024-04-01</td>
-        <td>Applied Thermal Engineering</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/daff8cbabbc10b462488610d244e13628f1d79b8">AAGNet: A graph neural network towards multi-task machining feature recognition</a></td>
-        <td>Hongjin Wu, Ruoshan Lei, Yibing Peng, Liang Gao</td>
-        <td>2024-04-01</td>
-        <td>Robotics Comput. Integr. Manuf.</td>
-        <td>1</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/da62325ae1fdb2a5b77cdfa70bb90908f28ff7d3">AKGNN-PC: An assembly knowledge graph neural network model with predictive value calibration module for refrigeration compressor performance prediction with assembly error propagation and data imbalance scenarios</a></td>
-        <td>Qiuhao Xu, Pengjie Gao, Junliang Wang, Jie Zhang, Andrew Ip, Chris Zhang</td>
-        <td>2024-04-01</td>
-        <td>Advanced Engineering Informatics</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/d74b4006ebfb6f0f93fc396160f69d54aa6aac17">GREASE: Graph Imbalance Reduction by Adding Sets of Edges</a></td>
-        <td>Yoosof Mashayekhi, Bo Kang, Jefrey Lijffijt, T. D. Bie</td>
-        <td>2024-04-01</td>
-        <td>IEEE Transactions on Knowledge and Data Engineering</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/cdde5c802c555cec7d83e53d59625c7ece7a6b37">Vessel trajectory prediction based on spatio-temporal graph convolutional network for complex and crowded sea areas</a></td>
-        <td>Siwen Wang, Ying Li, Hu Xing, Zhaoyi Zhang</td>
-        <td>2024-04-01</td>
-        <td>Ocean Engineering</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/bf6028091110f44f13025fbd700131f05de35068">GCNGAT: Drug–disease association prediction based on graph convolution neural network and graph attention network</a></td>
-        <td>Runtao Yang, Yao Fu, Qian Zhang, Lina Zhang</td>
-        <td>2024-04-01</td>
-        <td>Artificial Intelligence in Medicine</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/bd43736b199abf059c4c9a0170a756343a684b19">KAGNN: Graph neural network with kernel alignment for heterogeneous graph learning</a></td>
-        <td>Mingjing Han, Hang Zhang</td>
-        <td>2024-04-01</td>
-        <td>Knowledge-Based Systems</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/a6fd60386cf0716f255f2bc2aafd8537fd594d68">ASSL-HGAT: Active semi-supervised learning empowered heterogeneous graph attention network</a></td>
-        <td>Zhenyan Ji, Deyan Kong, Yanyan Yang, Jiqiang Liu, Zhao Li</td>
-        <td>2024-04-01</td>
-        <td>Knowledge-Based Systems</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/a28afe1ae5d4ce72843f3e0e6a55eaf0395a0c43">Multi-hop graph pooling adversarial network for cross-domain remaining useful life prediction: A distributed federated learning perspective</a></td>
-        <td>Jiusi Zhang, Jilun Tian, Pengfei Yan, Shimeng Wu, Hao Luo, Shen Yin</td>
-        <td>2024-04-01</td>
-        <td>Reliability Engineering &amp; System Safety</td>
-        <td>2</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/842b7d5185792d2d26cb8e21219a73a48183735a">Agriculture crop yield prediction using inertia based cat swarm optimization</a></td>
-        <td>Dwaram Jayanarayana Reddy, Rudra Kumar Madapuri</td>
-        <td>2024-04-01</td>
-        <td>International Journal of Electrical and Computer Engineering (IJECE)</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/838920a4cd43b808492515445cc183f686c15c42">Graph attention Network-Based model for multiple fault detection and identification of sensors in nuclear power plant</a></td>
-        <td>Shuqi Liu, Xinzhi Zhou, Junhui Yu, Yan Wang, Tao Xu, Hailin Wang</td>
-        <td>2024-04-01</td>
-        <td>Nuclear Engineering and Design</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/7f22cfa4efb5d2b6a4bb8b585c144215ff69f6f0">A pruned-optimized weighted graph convolutional network for axial flow pump fault diagnosis with hydrophone signals</a></td>
-        <td>Xin Zhang, Li Jiang, Lei Wang, Tianao Zhang, Fan Zhang</td>
-        <td>2024-04-01</td>
-        <td>Advanced Engineering Informatics</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/7e8690b9793033955efe7a5f897e4cd3eaf2805a">Stage-Aware Hierarchical Attentive Relational Network for Diagnosis Prediction</a></td>
-        <td>Liping Wang, Q. Liu, Mengqi Zhang, Yaxuan Hu, Shu Wu, Liang Wang</td>
-        <td>2024-04-01</td>
-        <td>IEEE Transactions on Knowledge and Data Engineering</td>
-        <td>1</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/773e1d4e0588e4efc0bd7210a54229e583c1a410">Explainable train delay propagation: A graph attention network approach</a></td>
-        <td>Ping Huang, Jingwei Guo, Shu Liu, Francesco Corman</td>
-        <td>2024-04-01</td>
-        <td>Transportation Research Part E: Logistics and Transportation Review</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/5a148e08836ba3a206ad689f494b421277f07fd4">Graph neural networks based framework to analyze social media platforms for malicious user detection</a></td>
-        <td>Zafran Khan, Zeeshan Khan, Byung-geun Lee, Hong Kook Kim, Moongu Jeon</td>
-        <td>2024-04-01</td>
-        <td>Applied Soft Computing</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/4294186dd2b56c2bdc19e8e9cd027382ca41af31">Digital twin modeling for stress prediction of single-crystal turbine blades based on graph convolutional network</a></td>
-        <td>Sheng Mou, Kun Bu, Shengjie Ren, Jun Liu, Haoyu Zhao, Zhexu Li</td>
-        <td>2024-04-01</td>
-        <td>Journal of Manufacturing Processes</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/35153c1e9fd08510335dd82ca8cd23e2cbaa4772">Efficient <inline-formula><tex-math notation="LaTeX">$k$</tex-math><alternatives><mml:math><mml:mi>k</mml:mi></mml:math><inline-graphic xlink:href="li-ieq1-3314643.gif"/></alternatives></inline-formula>-Clique Counting on Large Graphs: The Power of Color-Based Sampling Approaches</a></td>
-        <td>Xiaowei Ye, Ronghua Li, Qiangqiang Dai, Hongzhi Chen, Guoren Wang</td>
-        <td>2024-04-01</td>
-        <td>IEEE Transactions on Knowledge and Data Engineering</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/2ce808cb2206effe5d56909322deea685141e33b">Design information-assisted graph neural network for modeling central air conditioning systems</a></td>
-        <td>Ao Li, Jing Zhang, Fu Xiao, Cheng Fan, Yantao Yu, Zhe Chen</td>
-        <td>2024-04-01</td>
-        <td>Advanced Engineering Informatics</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/2bab84da470c8cd4a589423b80ff0b66d6373e19">Unveiling community structures in static networks through graph variational Bayes with evolution information</a></td>
-        <td>Junwei Cheng, Chaobo He, Kunlin Han, Gangbin Chen, Wanyig Liang, Yong-Hong Tang</td>
-        <td>2024-04-01</td>
-        <td>Neurocomputing</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/2aec352861799112c1b117e95c6e380a10beb6e1">Control Laws for Partially Observable Min-Plus Systems Networks With Disturbances and Under Mutual Exclusion Constraints</a></td>
-        <td>Syrine Bouazza, Said Amari, H. Hassine</td>
-        <td>2024-04-01</td>
+        <td><a href="https://www.semanticscholar.org/paper/51073cb61b40bb1ba2ceb8d25f7afd263a01f905">Pre-Grasp Approaching on Mobile Robots: A Pre-Active Layered Approach</a></td>
+        <td>Lakshadeep Naik, Sinan Kalkan, Norbert Krüger</td>
+        <td>2024-03-01</td>
         <td>IEEE Robotics and Automation Letters</td>
         <td>0</td>
       </tr>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/1c4c22242213adec3fff8b12d20ccbb5dab3aa00">Multi-satellite cooperative scheduling method for large-scale tasks based on hybrid graph neural network and metaheuristic algorithm</a></td>
-        <td>Xiaoen Feng, Yuqing Li, Minqiang Xu</td>
-        <td>2024-04-01</td>
-        <td>Advanced Engineering Informatics</td>
+        <td><a href="https://www.semanticscholar.org/paper/4d2bb060349472f31dd8a6c05ae55852c77d27d9">Scaling Face Interaction Graph Networks to Real World Scenes</a></td>
+        <td>Tatiana Lopez-Guevara, Yulia Rubanova, William F. Whitney, Tobias Pfaff, Kimberly L. Stachenfeld, Kelsey R. Allen</td>
+        <td>2024-01-22</td>
+        <td>ArXiv</td>
         <td>0</td>
       </tr>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/166e192d8a2f0aaf7abb3d2da464c698c26f5815">AI-Enabled Spatial-Temporal Mobility Awareness Service Migration for Connected Vehicles</a></td>
-        <td>Chenglong Wang, Jun Peng, Lin Cai, Hui Peng, Weirong Liu, Xin Gu, Zhiwu Huang</td>
-        <td>2024-04-01</td>
-        <td>IEEE Transactions on Mobile Computing</td>
+        <td><a href="https://www.semanticscholar.org/paper/c6ff30ccdb3b64bca41b600b5cb56de8dff8072b">Coupling Physical Factors for Precipitation Forecast in China With Graph Neural Network</a></td>
+        <td>Yutong Chen, Ya Wang, Gang Huang, Qun Tian</td>
+        <td>2024-01-18</td>
+        <td>Geophysical Research Letters</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/cb5e961570370ad295eb6373a44e6436c51320a5">Scaffolding competence-based learning design in the dental simulation curriculum.</a></td>
+        <td>Richard Foxton, J. S. San Diego, Emily Lu, Anitha Bartlett, Clare McIlwane, R. Austin, Pinsuda Srisontisuk, Anika K Sagoo, Kim Piper</td>
+        <td>2023-12-26</td>
+        <td>European journal of dental education : official journal of the Association for Dental Education in Europe</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/5a9a53f08f5da1c10f829561d60bc0a458545726">Predicting Maps Using In-Vehicle Cameras for Data-Driven Intelligent Transport</a></td>
+        <td>Zhiguo Ma, Yutong Zhang, Meng Han</td>
+        <td>2023-12-15</td>
+        <td>Electronics</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/3212d2fc6783a3f93ef910fb5496618a57e150c1">Causal Dynamic Bayesian Networks for Simulation Metamodeling</a></td>
+        <td>Pracheta Amaranath, Peter J. Haas, David D. Jensen, Sam Witty</td>
+        <td>2023-12-10</td>
+        <td>2023 Winter Simulation Conference (WSC)</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/4fd23f18cfb2105ccadda5a51fed13063d611fff">Learning 3D Particle-based Simulators from RGB-D Videos</a></td>
+        <td>William F. Whitney, Tatiana Lopez-Guevara, Tobias Pfaff, Yulia Rubanova, Thomas Kipf, Kimberly L. Stachenfeld, Kelsey R. Allen</td>
+        <td>2023-12-08</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/18c179362bb14bd8b9be5258fa99bb61ff5cf887">Geometric Deep Learning Towards the Iterative Classification of Graph-Based Aircraft Thermal Management Systems</a></td>
+        <td>Anthony Sirico, Daniel R. Herber</td>
+        <td>2023-12-06</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/cd32b2b454811d658c422dd4b86a9cd222de9808">Model-Driven Deep Learning-Based Sparse Channel Representation and Recovery for Wideband mmWave Massive MIMO Systems</a></td>
+        <td>Jianqiao Chen, Fanyan Meng, Nan Ma, Xiaodong Xu, Ping Zhang</td>
+        <td>2023-12-01</td>
+        <td>IEEE Transactions on Vehicular Technology</td>
         <td>1</td>
       </tr>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/0f8c27a11a63f1d5b586aa6d2c4bec78978e113a">Optimizing Job Offloading Schedule for Collaborative DNN Inference</a></td>
-        <td>Yubin Duan, Jie Wu</td>
-        <td>2024-04-01</td>
-        <td>IEEE Transactions on Mobile Computing</td>
+        <td><a href="https://www.semanticscholar.org/paper/38554ad006b8ede64e30a5cf68be2a29be54828d">Enhancing Data-Assimilation in CFD using Graph Neural Networks</a></td>
+        <td>M. Quattromini, M. Bucci, Stefania Cherubini, Onofrio Semeraro</td>
+        <td>2023-11-29</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/f6c87f60f55a5f94986b194ca3ec38c4fd81cfdc">Teaching Robots to Build Simulations of Themselves</a></td>
+        <td>Yuhang Hu, Jiong Lin, Hod Lipson</td>
+        <td>2023-11-20</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/efae5535ea93208c4bd6d79de8e15848e85c1d17">Three-dimensional granular flow simulation using graph neural network-based learned simulator</a></td>
+        <td>Yongjin Choi, Krishna Kumar</td>
+        <td>2023-11-13</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/ee86bb6911e63dc53d3c84208c919907864fac66">Contagion Process Guided Cross-scale Spatio-Temporal Graph Neural Network for Traffic Congestion Prediction</a></td>
+        <td>Mudan Wang, Huan Yan, Huandong Wang, Yong Li, Depeng Jin</td>
+        <td>2023-11-13</td>
+        <td>Proceedings of the 31st ACM International Conference on Advances in Geographic Information Systems</td>
         <td>1</td>
       </tr>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/09edf2e982b4145ced9b7c29a24b5955957116f7">Identification of chronic obstructive pulmonary disease using graph convolutional network in electronic nose</a></td>
-        <td>Dava Aulia, R. Sarno, S. Hidayati, A. Rosyid, Muhammad Rivai</td>
-        <td>2024-04-01</td>
-        <td>Indonesian Journal of Electrical Engineering and Computer Science</td>
+        <td><a href="https://www.semanticscholar.org/paper/ab6fb0ecf53a0dba559c979f3f0d29ba28859e11">Domain Adaptive Graph Neural Networks for Constraining Cosmological Parameters Across Multiple Data Sets</a></td>
+        <td>Andrea Roncoli, A. 'Ciprijanovi'c, M. Voetberg, F. Villaescusa-Navarro, Brian Nord</td>
+        <td>2023-11-02</td>
+        <td>ArXiv</td>
         <td>0</td>
       </tr>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/02d17d02005ff3455484f55c7312033af92470cf">Network traffic prediction with Attention-based Spatial–Temporal Graph Network</a></td>
-        <td>Yufei Peng, Yingya Guo, Run Hao, Chengzhe Xu</td>
-        <td>2024-04-01</td>
-        <td>Computer Networks</td>
+        <td><a href="https://www.semanticscholar.org/paper/cc967af2440b2f282c26868f43968fd51e2f4186">The Role of Reference Points in Machine-Learned Atomistic Simulation Models</a></td>
+        <td>Xiangyun Lei, Weike Ye, Joseph Montoya, Tim Mueller, Linda Hung, Jens Hummelshoej</td>
+        <td>2023-10-28</td>
+        <td>ArXiv</td>
         <td>0</td>
       </tr>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/d943807d09bc2a1c1da1f1823bbcf5f6904af764">On the Survivable Multilayer Planning of Filterless Optical Networks With P2MP Transceivers</a></td>
-        <td>Qian Lv, Ruoxing Li, Zuqing Zhu</td>
-        <td>2024-03-15</td>
-        <td>Journal of Lightwave Technology</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/aa7a46965e6100e8e0af76279c2e6a98561c86d9">Energy Minimization Partial Task Offloading With Joint Dynamic Voltage Scaling and Transmission Power Control in Fog Computing</a></td>
-        <td>Hao Zhao, Jiahui Xu, Pei Li, Wei Feng, Xin Xu, Yingbiao Yao</td>
-        <td>2024-03-15</td>
-        <td>IEEE Internet of Things Journal</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/a2e4acb56191f0e7114271f468a7f2da09d18717">Locational Detection of False Data Injection Attacks in Smart Grids: A Graph Convolutional Attention Network Approach</a></td>
-        <td>Wei Xia, Deming He, Lisha Yu</td>
-        <td>2024-03-15</td>
-        <td>IEEE Internet of Things Journal</td>
+        <td><a href="https://www.semanticscholar.org/paper/72c1df1f0881875bf4490f3464d24cc0bc5b2cb2">TANGO: Time-Reversal Latent GraphODE for Multi-Agent Dynamical Systems</a></td>
+        <td>Zijie Huang, Wanjia Zhao, Jingdong Gao, Ziniu Hu, Xiao Luo, Yadi Cao, Yuanzhou Chen, Yizhou Sun, Wei Wang</td>
+        <td>2023-10-10</td>
+        <td>ArXiv</td>
         <td>1</td>
       </tr>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/4906709c0d7b591498a09719e00ada9a26eb5dcb">PDD: Partitioning DAG-Topology DNNs for Streaming Tasks</a></td>
-        <td>Liantao Wu, Guoliang Gao, Jing Yu, Fangtong Zhou, Yang Yang, Tengfei Wang</td>
-        <td>2024-03-15</td>
-        <td>IEEE Internet of Things Journal</td>
+        <td><a href="https://www.semanticscholar.org/paper/3cd380e4913c67319842bc31a8f6f1b75b14c482">Physics-Informed Graph Neural Network for Dynamic Reconfiguration of Power Systems</a></td>
+        <td>Jules Authier, R. Haider, Anuradha M. Annaswamy, Florian Dörfler</td>
+        <td>2023-10-01</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/fc50157529068d08c896ffe7a4af6aa7bc54ac65">Neural Lithography: Close the Design-to-Manufacturing Gap in Computational Optics with a 'Real2Sim' Learned Photolithography Simulator</a></td>
+        <td>Cheng Zheng, Guangyuan Zhao, Peter T C So</td>
+        <td>2023-09-29</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/1570d67aa660c255d32a1860e03e0aed361878fa">Physics-constrained robust learning of open-form PDEs from limited and noisy data</a></td>
+        <td>Mengge Du, Longfeng Nie, Siyu Lou, Yuntian Chen, Dong-juan Zhang</td>
+        <td>2023-09-14</td>
+        <td>ArXiv</td>
+        <td>1</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/c5a2065f04c3454094b6ede05f41cd7ad2e76373">Diffusion Generative Inverse Design</a></td>
+        <td>Marin Vlastelica, Tatiana L'opez-Guevara, Kelsey Allen, Peter Battaglia, Arnaud Doucet, Kimberley L. Stachenfeld</td>
+        <td>2023-09-05</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/29d54bfd3defbb6cecade6a98c78e89e8b8a8bab">Graphical neural networks based on physical information constraints for solving the eikonal equation</a></td>
+        <td>Kai Zhan, Xiaotao Wen, Xuben Wang, Ping Song, Chao Kong, Atao Li</td>
+        <td>2023-08-25</td>
+        <td>Journal of Geophysics and Engineering</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/50a78e6c4389414dae7eb1cc99ff524ed806421e">Hydrogen jet diffusion modeling by using physics-informed graph neural network and sparsely-distributed sensor data</a></td>
+        <td>Xinqi Zhang, Jihao Shi, Jun Yu Li, Guoming Chen</td>
+        <td>2023-08-24</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/0c601da18b340b4a4101102707c58a5001afa969">Inference of Infrastructure Network Flows via Physics-Inspired Implicit Neural Networks</a></td>
+        <td>Francesco Seccamonte, Ambuj K. Singh, Francesco Bullo</td>
+        <td>2023-08-16</td>
+        <td>2023 IEEE Conference on Control Technology and Applications (CCTA)</td>
+        <td>1</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/8f7916e5371cf8bed91a3db8e73328529636e753">Physics-informed graph convolutional neural network for modeling fluid flow and heat convection</a></td>
+        <td>Jiang-Zhou Peng, Yue Hua, Yu-Bai Li, Zhi-Hua Chen, Wei-Tao Wu, N. Aubry</td>
+        <td>2023-08-01</td>
+        <td>Physics of Fluids</td>
+        <td>5</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/059897dc803f87b374013c8ea4f3768bb3e55695">simPLE: a visuotactile method learned in simulation to precisely pick, localize, regrasp, and place objects</a></td>
+        <td>Maria Bauzá, Antonia Bronars, Yifan Hou, Ian H. Taylor, Nikhil Chavan Dafle, Alberto Rodriguez</td>
+        <td>2023-07-24</td>
+        <td>ArXiv</td>
+        <td>3</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/3ce9456c0989d7c365fbc8739b737364d68ecb2c">(Empirical) Gramian-based dimension reduction for stochastic differential equations driven by fractional Brownian motion</a></td>
+        <td>N. Jamshidi, Martin Redmann</td>
+        <td>2023-07-10</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/56ab19e70ea7c45d2a8e5b3226a20cb5088815a9">Extending a Physics-informed Machine-learning Network for Superresolution Studies of Rayleigh–Bénard Convection</a></td>
+        <td>Diane M. Salim, B. Burkhart, David Sondak</td>
+        <td>2023-07-05</td>
+        <td>The Astrophysical Journal</td>
+        <td>1</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/ba7f3685834c219e3ab4ac4f9fbd0cd8de27e86e">Preface: machine-learning approaches for computational mechanics</a></td>
+        <td>LI Z., G. Hu, Zhiliang Wang, G. Karniadakis</td>
+        <td>2023-07-01</td>
+        <td>Applied Mathematics and Mechanics</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/c5190554d9d124de8c12640d368548bef0d74578">Learning molecular dynamics: predicting the dynamics of glasses by a machine learning simulator.</a></td>
+        <td>Han Liu, Zijie Huang, S. Schoenholz, E. D. Cubuk, M. Smedskjaer, Yizhou Sun, W. Wang, M. Bauchy</td>
+        <td>2023-06-29</td>
+        <td>Materials horizons</td>
+        <td>2</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/d906651c705fc281f360ad2688cb7a8e369b50db">QuadSwarm: A Modular Multi-Quadrotor Simulator for Deep Reinforcement Learning with Direct Thrust Control</a></td>
+        <td>Zhehui Huang, S. Batra, Tao Chen, Rahul Krupani, T. Kumar, Artem Molchanov, Aleksei Petrenko, James A. Preiss, Zhaojing Yang, G. Sukhatme</td>
+        <td>2023-06-15</td>
+        <td>ArXiv</td>
+        <td>3</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/1be84207a9d546fb7ed8732f7bb902aba7dcebd7">SMUG Planner: A Safe Multi-Goal Planner for Mobile Robots in Challenging Environments</a></td>
+        <td>Chang-Min Chen, Jonas Frey, Philip Arm, Marco Hutter</td>
+        <td>2023-06-08</td>
+        <td>IEEE Robotics and Automation Letters</td>
+        <td>1</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/a2ba7e777833ebf4866d3bc2da5963179378423b">Simulatoren und andere Hilfsmittel in der orthopädisch-unfallchirurgischen Weiterbildung</a></td>
+        <td>Yannik P. Morscheid, Florian Pouessel</td>
+        <td>2023-06-07</td>
+        <td>Orthopadie (Heidelberg, Germany)</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/5ff0f19ee87c4170613e3787da7fc87e2f07714a">Deformation Modeling for the Robotic Manipulation of 3D Elastic Objects using Physics-Informed Graph Neural Networks</a></td>
+        <td>Angel J. Valencia, P. Payeur</td>
+        <td>2023-06-01</td>
+        <td>2023 20th Conference on Robots and Vision (CRV)</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/e987e9fe1aa2d9eabc10d7ee2666b38fee44baad">Precise prediction of launch speed for athletes in the aerials event of freestyle skiing based on deep transfer learning</a></td>
+        <td>Daqi Jiang, Hong Wang, Jichi Chen, Chuansheng Dong</td>
+        <td>2023-03-15</td>
+        <td>Scientific Reports</td>
+        <td>1</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/3f1521a24ed47385a7cf6bfe4e206376025bc68d">Dextrous Tactile In-Hand Manipulation Using a Modular Reinforcement Learning Architecture</a></td>
+        <td>Johannes Pitz, Lennart Rostel, Leon Sievers, Berthold Bauml</td>
+        <td>2023-03-08</td>
+        <td>2023 IEEE International Conference on Robotics and Automation (ICRA)</td>
+        <td>14</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/564c10232f544ed46d7dd6d324278598662b4c44">TrafficBots: Towards World Models for Autonomous Driving Simulation and Motion Prediction</a></td>
+        <td>Zhejun Zhang, Alexander Liniger, Dengxin Dai, F. Yu, L. Gool</td>
+        <td>2023-03-07</td>
+        <td>2023 IEEE International Conference on Robotics and Automation (ICRA)</td>
+        <td>10</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/71c6b01eeda3603b3af6eaa74e057f1b7a1ef792">BioNAR: an integrated biological network analysis package in bioconductor</a></td>
+        <td>Colin Mclean, A. Sorokin, Ian Simpson, J. Armstrong, Oksana Sorokina</td>
+        <td>2023-02-10</td>
+        <td>Bioinformatics Advances</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/f7e7f83b0287ab3cf2f6151a8a37f903f3ca4e7f">Learning Vortex Dynamics for Fluid Inference and Prediction</a></td>
+        <td>Yitong Deng, Hong-Xing Yu, Jiajun Wu, Bo Zhu</td>
+        <td>2023-01-27</td>
+        <td>ArXiv</td>
+        <td>7</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/04c0f597413aeaecd930f84906a0731932b4244f">A Learned Simulation Environment to Model Student Engagement and Retention in Automated Online Courses</a></td>
+        <td>N. Imstepf, S. Senn, A. Fortin, B. Russell, C. Horn</td>
+        <td>2022-12-22</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/d6fdd8fc0c5fc052d040687e72638fb4297661cc">Learning rigid dynamics with face interaction graph networks</a></td>
+        <td>Kelsey R. Allen, Yulia Rubanova, Tatiana Lopez-Guevara, William F. Whitney, Alvaro Sanchez-Gonzalez, P. Battaglia, T. Pfaff</td>
+        <td>2022-12-07</td>
+        <td>ArXiv</td>
+        <td>15</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/71051452a7c56ab9cea59cafe6ef0cd9ffdc5ffa">SofaGym: An Open Platform for Reinforcement Learning Based on Soft Robot Simulations.</a></td>
+        <td>Pierre Schegg, Etienne Ménager, Elie Khairallah, Damien Marchal, Jérémie Dequidt, P. Preux, Christian Duriez</td>
+        <td>2022-12-07</td>
+        <td>Soft robotics</td>
+        <td>15</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/3a2a44df36f36f2b1c75ce1c2db428cb2d5a321d">A Learned Simulation Environment to Model Plant Growth in Indoor Farming</a></td>
+        <td>J. Amacker, T. Kleiven, M. Grigore, P. Albrecht, C. Horn</td>
+        <td>2022-12-06</td>
+        <td>ArXiv</td>
+        <td>1</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/f77128747418c02074f05cc87e230f8f1228035c">Learning Integrable Dynamics with Action-Angle Networks</a></td>
+        <td>Ameya Daigavane, Arthur Kosmala, M. Cranmer, T. Smidt, S. Ho</td>
+        <td>2022-11-24</td>
+        <td>ArXiv</td>
+        <td>1</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/e22f34630c2e545573bd8f700f07ea97a9696a18">A geometry-enhanced graph neural network for learning the smoothness of glassy dynamics from static structure.</a></td>
+        <td>Xiao Jiang, Zean Tian, KenLi Li</td>
+        <td>2022-11-23</td>
+        <td>The Journal of chemical physics</td>
+        <td>3</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/d7952de05e25e90a08b79431116ca6d2ec85e710">Unravelling the Performance of Physics-informed Graph Neural Networks for Dynamical Systems</a></td>
+        <td>A. Thangamuthu, Gunjan Kumar, S. Bishnoi, Ravinder Bhattoo, N. Krishnan, Sayan Ranu</td>
+        <td>2022-11-10</td>
+        <td>ArXiv</td>
+        <td>11</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/b886797dc34c91f186629403d7c7e2092fc25083">TANKBind: Trigonometry-Aware Neural NetworKs for Drug-Protein Binding Structure Prediction</a></td>
+        <td>Wei Lu, Qifeng Wu, Jixian Zhang, Jiahua Rao, Chengtao Li, Shuangjia Zheng</td>
+        <td>2022-10-25</td>
+        <td>bioRxiv</td>
+        <td>72</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/08a82b3865ba09c457ad525449eb0c7691479574">Forces are not Enough: Benchmark and Critical Evaluation for Machine Learning Force Fields with Molecular Simulations</a></td>
+        <td>Xiang Fu, Zhenghao Wu, Wujie Wang, T. Xie, S. Keten, Rafael Gómez-Bombarelli, T. Jaakkola</td>
+        <td>2022-10-13</td>
+        <td>ArXiv</td>
+        <td>64</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/250be20cbe2653eba41fea7bf9300e475d63aced">Guaranteed Conservation of Momentum for Learning Particle-based Fluid Dynamics</a></td>
+        <td>L. Prantl, Benjamin Ummenhofer, V. Koltun, Nils Thuerey</td>
+        <td>2022-10-12</td>
+        <td>ArXiv</td>
+        <td>13</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/23fac15728aa94d250bbaaedd4839ff309042091">Towards Learned Simulators for Cell Migration</a></td>
+        <td>Koen Minartz, Y. Poels, Vlado Menkovski</td>
+        <td>2022-10-02</td>
+        <td>ArXiv</td>
+        <td>1</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/7597dade5d7b8602287245ad50b1d75fe414f097">What We Learned About Simulation in the COVID-19 Era</a></td>
+        <td>Elaheh Mohammadi, Maryam Karbasi Motlagh, Elizabeth Kachur, A. Sohrabpour, M. Shirazi</td>
+        <td>2022-10-01</td>
+        <td>Simulation in Healthcare</td>
+        <td>1</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/b9592ce44aa3268882572c86d740b3d5450ba7b5">LL-GNN: Low Latency Graph Neural Networks on FPGAs for High Energy Physics</a></td>
+        <td>Zhiqiang Que, Hongxiang Fan, Marcus Loo, He Li, Michaela Blott, M. Pierini, A. Tapper, W. Luk</td>
+        <td>2022-09-28</td>
+        <td>ACM Transactions on Embedded Computing Systems</td>
+        <td>1</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/12622a0c518f647f863c9fda749eb4c4a1a07855">Physics-Informed Graph Neural Network for Spatial-temporal Production Forecasting</a></td>
+        <td>Wendi Liu, M. Pyrcz</td>
+        <td>2022-09-23</td>
+        <td>ArXiv</td>
+        <td>3</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/521e45bed5410b41eece700cb89614270a81412e">Enhancing the Inductive Biases of Graph Neural ODE for Modeling Dynamical Systems</a></td>
+        <td>S. Bishnoi, Ravinder Bhattoo, Sayan Ranu, N. Krishnan</td>
+        <td>2022-09-22</td>
+        <td>ArXiv</td>
+        <td>11</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/a0f6868dd37a44a952708f8171f9aee1d9be4c84">Seq2Seq Surrogates of Epidemic Models to Facilitate Bayesian Inference</a></td>
+        <td>G. Charles, Timothy M Wolock, P. Winskill, A. Ghani, S. Bhatt, S. Flaxman</td>
+        <td>2022-09-20</td>
+        <td>AAAI Conference on Artificial Intelligence</td>
+        <td>2</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/a52923875fee84473d3c89d117cc841a1c44a2dc">Controlling patterns of synchrony</a></td>
+        <td>I. Omelchenko</td>
+        <td>2022-09-01</td>
+        <td>Nature Computational Science</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/4e03d8cb296c10f741eceb42b0b4875384ed28c0">PhyGNNet: Solving spatiotemporal PDEs with Physics-informed Graph Neural Network</a></td>
+        <td>Longxiang Jiang, Liyuan Wang, Xinkun Chu, Yonghao Xiao, Hao Zhang</td>
+        <td>2022-08-07</td>
+        <td>Proceedings of the 2023 2nd Asia Conference on Algorithms, Computing and Machine Learning</td>
+        <td>6</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/bc3f8542151d6b8ffd7221ecad3acc84488ee89b">GNN4REL: Graph Neural Networks for Predicting Circuit Reliability Degradation</a></td>
+        <td>Lilas Alrahis, J. Knechtel, F. Klemme, H. Amrouch, O. Sinanoglu</td>
+        <td>2022-08-04</td>
+        <td>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</td>
+        <td>9</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/153b175fa99c96b9eebe0967653abc15842f5939">Learning Skill-based Industrial Robot Tasks with User Priors</a></td>
+        <td>Matthias Mayr, Carl Hvarfner, Konstantinos Chatzilygeroudis, Luigi Nardi, Volker Krueger</td>
+        <td>2022-08-02</td>
+        <td>2022 IEEE 18th International Conference on Automation Science and Engineering (CASE)</td>
+        <td>16</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/8f3166a321dfd629379bb7359898783e800211c2">Graph-Structured Policy Learning for Multi-Goal Manipulation Tasks</a></td>
+        <td>David Klee, Ondrej Biza, Robert W. Platt</td>
+        <td>2022-07-22</td>
+        <td>2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</td>
+        <td>1</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/f0a6a9a2aba8d307beed1d581e0f54c033b2ea67">Further development of crew resource management training</a></td>
+        <td>H. Eismann, G. Breuer, M. Flentje</td>
+        <td>2022-07-08</td>
+        <td>Die Anaesthesiologie</td>
         <td>4</td>
       </tr>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/2279aa4619105f004edbb43c545dbab3357e9dc7">Fast Anomaly Detection for IoT Services Based on Multisource Log Fusion</a></td>
-        <td>Xingguo Jiang, Hong Luo, Y. Sun, Mohsen Guizani</td>
-        <td>2024-03-15</td>
-        <td>IEEE Internet of Things Journal</td>
-        <td>0</td>
+        <td><a href="https://www.semanticscholar.org/paper/f58b33711f8963746d47a039d096dedaf3131171">Randomized-to-Canonical Model Predictive Control for Real-World Visual Robotic Manipulation</a></td>
+        <td>Tomoya Yamanokuchi, Yuhwan Kwon, Yoshihisa Tsurumine, E. Uchibe, J. Morimoto, Takamitsu Matsubara</td>
+        <td>2022-07-05</td>
+        <td>IEEE Robotics and Automation Letters</td>
+        <td>2</td>
       </tr>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/b09bd7d51f5ba4eda429a8b8ba920cd208bbd801">DeepAEG: a model for predicting cancer drug response based on data enhancement and edge-collaborative update strategies</a></td>
-        <td>Chuanqi Lao, Pengfei Zheng, Hongyang Chen, Qiao Liu, Feng An, Zhao Li</td>
-        <td>2024-03-09</td>
-        <td>BMC Bioinformatics</td>
-        <td>0</td>
+        <td><a href="https://www.semanticscholar.org/paper/227a2b2fa916e995c054e5c3961b2501b8486911">Bridging Sim2Real Gap Using Image Gradients for the Task of End-to-End Autonomous Driving</a></td>
+        <td>U. R. Nair, Sarthak Sharma, Udit Singh Parihar, M. S. Menon, Srikanth Vidapanakal</td>
+        <td>2022-05-16</td>
+        <td>ArXiv</td>
+        <td>2</td>
       </tr>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/69a7ffabecf20f8fcc9b31ea7783d4bff0036464">A graph convolutional network with dynamic weight fusion of multi-scale local features for diabetic retinopathy grading.</a></td>
-        <td>Yipeng Wang, Liejun Wang, Zhiqing Guo, Shiji Song, Yanhong Li</td>
-        <td>2024-03-09</td>
-        <td>Scientific reports</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/fa1355d020fc8e395f3d9097133303fbe197fb57">BINDTI: A bi-directional Intention network for drug-target interaction identification based on attention mechanisms.</a></td>
-        <td>Lihong Peng, Xin Liu, Long Yang, Longlong Liu, Zongzheng Bai, Min Chen, Xu Lu, Libo Nie</td>
-        <td>2024-03-08</td>
-        <td>IEEE journal of biomedical and health informatics</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/c3cd2ca544a6b64c5156b97b46d2ffdccf1915d8">Fuzzy State-Driven Cross-Time Spatial Dependence Learning for Multivariate Time-Series Anomaly Detection.</a></td>
-        <td>Kun Zhu, Pengyu Song, Chunhui Zhao</td>
-        <td>2024-03-08</td>
-        <td>IEEE transactions on neural networks and learning systems</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/b20f833ca2f646b88bd05998827d651b9afc6b5e">Demeter - a Risk Mitigation Tool for Agriculture Workers.</a></td>
-        <td>Joshua Martin, Tyler Seward, Dino Mintas, Russell Wanke</td>
-        <td>2024-03-08</td>
-        <td>Journal of agromedicine</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/b04db8b65cf017ddc1206bb5d86a6adaa770a377">Identification of autism spectrum disorder using multiple functional connectivity-based graph convolutional network.</a></td>
-        <td>Chaoran Ma, Wenjie Li, Sheng Ke, Jidong Lv, Tiantong Zhou, Ling Zou</td>
-        <td>2024-03-08</td>
-        <td>Medical & biological engineering & computing</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/803bb4d15c7d9ab8e675b50bc478c3daa6637d51">A hybrid modeling framework for generalizable and interpretable predictions of ICU mortality across multiple hospitals</a></td>
-        <td>Moein E. Samadi, Jorge Guzman-Maldonado, Kateryna Nikulina, Hedieh Mirzaieazar, K. Sharafutdinov, Sebastian Johannes Fritsch, Andreas Schuppert</td>
-        <td>2024-03-08</td>
-        <td>Scientific Reports</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/7c4865342cf019a633be26a2f33d026667620715">Direct lingam and visibility graphs for analyzing brain connectivity in BCI.</a></td>
-        <td>Hoda Majdi, M. Azarnoosh, Majid Ghoshuni, VahidReza Sabzevari</td>
-        <td>2024-03-08</td>
-        <td>Medical & biological engineering & computing</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/4861758d8923e26c139c77fe6e3c031839897929">Applications and Learning Outcomes of Game Based Learning in Education</a></td>
-        <td>Paraskevi Mikrouli, Katerina Tzafilkou, N. Protogeros</td>
-        <td>2024-03-08</td>
-        <td>International Educational Review</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/e26e86f25efd7d8692251f82c63ff8c15d3b525a">Predicting Lewis Acidity: Machine-Learning the Fluoride Ion Affinity of p-Block-Atom-based Molecules.</a></td>
-        <td>L. Sigmund, S. Sowndarya, Andreas Albers, P. Erdmann, Robert S Paton, L. Greb</td>
-        <td>2024-03-07</td>
-        <td>Angewandte Chemie</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/d64ad81e36097ebff977edb205399a5ba2c423b6">Ground air pollutants explanation based on multiple visibility graph of complex network by temporal community division</a></td>
-        <td>Chubing Guo, Jian Wang, Yongping Zhang, Haozhe Zhang, Haochun Yang</td>
-        <td>2024-03-07</td>
-        <td>PLOS ONE</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/a7ceb8870776204a05a11294e05192745f334a37">Neural basis underlying the association between thought control ability and happiness: The moderating role of the amygdala.</a></td>
-        <td>Min Li, Yuchi Yan, Hui Jia, Yixin Gao, Jiang Qiu, Wenjing Yang</td>
-        <td>2024-03-07</td>
-        <td>PsyCh journal</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/9a878e3957707691789bbfcdff8ea0ab76af92ad">PPRTGI: A Personalized PageRank Graph Neural Network for TF-target Gene Interaction Detection.</a></td>
-        <td>Ke Ma, Jiawei Li, Mengyuan Zhao, Ibrahim Zamit, Bin Lin, Fei Guo, Jijun Tang</td>
-        <td>2024-03-07</td>
-        <td>IEEE/ACM transactions on computational biology and bioinformatics</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/7f84a25997e270373eb42196b97febda8e0bb432">Distributed State Estimation for Linear Systems in Networks With Antagonistic Interactions.</a></td>
-        <td>Rui Gao, Guang-Hong Yang</td>
-        <td>2024-03-07</td>
-        <td>IEEE transactions on cybernetics</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/533ce2d5ac791f24a2ca20d56b236e01d7884f9c">A coupled generative graph convolution network by capturing dynamic relationship of regional flow for traffic prediction</a></td>
-        <td>Jiayang Xu, Xiaohui Huang, Ge Song, Zu Gong</td>
-        <td>2024-03-07</td>
-        <td>Cluster Computing</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/3e64508b64d207419536b5e2c38b7dffc26480d6">iNGNN-DTI: Prediction of Drug - Target Interaction with Interpretable Nested Graph Neural Network and Pretrained Molecule Models.</a></td>
-        <td>Y. Sun, Yan Yi Li, C. K. Leung, Pingzhao Hu</td>
-        <td>2024-03-07</td>
-        <td>Bioinformatics</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/3c727f2b5e248896ee671ec2c17bf097f3f77847">EEG-Based Brain Functional Network Analysis for Differential Identification of Dementia-Related Disorders and Their Onset.</a></td>
-        <td>A. T. Adebisi, Ho-Won Lee, K. Veluvolu</td>
-        <td>2024-03-07</td>
-        <td>IEEE transactions on neural systems and rehabilitation engineering : a publication of the IEEE Engineering in Medicine and Biology Society</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/2ac95dc1a4cbae71805481ac4e2d20fe611d4a24">Graph Attention Site Prediction (GrASP): Identifying Druggable Binding Sites Using Graph Neural Networks with Attention.</a></td>
-        <td>Zachary Smith, Michael Strobel, Bodhi P Vani, P. Tiwary</td>
-        <td>2024-03-07</td>
-        <td>Journal of chemical information and modeling</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/07f466907aed2907daba611a45db39a3bf2fcc5f">Embedding Hamiltonian Paths with Prescribed Linear Forests into k-ary n-Cube Networks</a></td>
-        <td>Kaiyue Meng, Yuxing Yang</td>
-        <td>2024-03-07</td>
-        <td>Journal of Interconnection Networks</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/e490121ddd76ccf8871b69c31407c045ff7c313b">SleepNet</a></td>
-        <td>Maryam Khalid, E. Klerman, A. McHill, A. Phillips, Akane Sano</td>
-        <td>2024-03-06</td>
-        <td>Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies</td>
+        <td><a href="https://www.semanticscholar.org/paper/00744f790f0ad415260bbc4a7e42b504f3135064">A comparison of PINN approaches for drift-diffusion equations on metric graphs</a></td>
+        <td>J. Blechschmidt, Jan-Frederik Pietschman, Tom-Christian Riemer, M. Stoll, M. Winkler</td>
+        <td>2022-05-15</td>
+        <td>ArXiv</td>
         <td>1</td>
       </tr>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/dac5a11688c8fc46f58499a65ce269defe0fe40f">SsAG
- : Summarization and Sparsification of Attributed Graphs</a></td>
-        <td>Sarwan Ali, Muhammad Ahmad, Maham Anwer Beg, Imdad Ullah Khan, S. Faizullah, Muhammad Asad Khan</td>
-        <td>2024-03-06</td>
-        <td>ACM Transactions on Knowledge Discovery from Data</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/c9845a625e2dac5e32db172d353f81d377760a5f">Learning Invariant Representations of Graph Neural Networks via Cluster Generalization</a></td>
-        <td>Donglin Xia, Xiao Wang, Nian Liu, Chuan Shi</td>
-        <td>2024-03-06</td>
-        <td>Neural Information Processing Systems</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/a3c029c8217880278277ac472daed8f77c04afbf">Spectrotemporal cues and attention jointly modulate fMRI network topology for sentence and melody perception</a></td>
-        <td>Felix Haiduk, Robert J Zatorre, Lucas Benjamin, Benjamin Morillon, Philippe Albouy</td>
-        <td>2024-03-06</td>
-        <td>Scientific Reports</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/90a018b4caa43262d5f06a46bb5c54e90d7dbed5">SGLMDA: A Subgraph Learning-based Method for miRNA-disease Association Prediction.</a></td>
-        <td>Cunmei Ji, Ning Yu, Yutian Wang, Jiancheng Ni, Chunhou Zheng</td>
-        <td>2024-03-06</td>
-        <td>IEEE/ACM transactions on computational biology and bioinformatics</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/8940f23cd010eb4b10f4cf2d24037407ac4501f7">Uncertainty-aware deep learning for trustworthy prediction of long-term outcome after endovascular thrombectomy</a></td>
-        <td>Celia Martín Vicario, Dalia Rodríguez Salas, Andreas Maier, Stefan Hock, Joji B. Kuramatsu, B. Kallmuenzer, Florian Thamm, O. Taubmann, Hendrik Ditt, Stefan Schwab, Arnd Dörfler, Iris Muehlen</td>
-        <td>2024-03-06</td>
-        <td>Scientific Reports</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/86b4826a4063d86cf69bbf31a6ff23a42124220f">Indoor point cloud semantic segmentation based on direction perception and hole sampling</a></td>
-        <td>Xijiang Chen, Peng Li, Bufan Zhao, Tieding Lu, Xunqiang Gong, Hui Deng</td>
-        <td>2024-03-06</td>
-        <td>The Photogrammetric Record</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/80df88e7216e002a4484e135335aea741a5c496f">SimpleNMR: An interactive graph network approach to aid constitutional isomer verification using standard 1D and 2D NMR experiments.</a></td>
-        <td>Eric Hughes, A. Kenwright</td>
-        <td>2024-03-06</td>
-        <td>Magnetic resonance in chemistry : MRC</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/7ea2b8794f2609b53b6d8f15ad8f1b9ceedf539e">Artificial intelligence enabled spatially resolved transcriptomics reveal spatial tissue organization of multiple tumors</a></td>
-        <td>Teng Liu, Jinxin Ye, Chunnan Hu, Zongbo Zhang, Zhuomiao Ye, Jiangnan Liao, Mingzhu Yin</td>
-        <td>2024-03-06</td>
-        <td>Tumor Discovery</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/7653e9d303d72918109999c5b940d66c7b069c80">Topological features of functional brain networks and subclinical impulsivity: an investigation in younger and older adults.</a></td>
-        <td>S. Fornaro, A. Menardi, A. Vallesi</td>
-        <td>2024-03-06</td>
-        <td>Brain structure & function</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/68eb32177cbf15ecef65df3eacf00bd38ed4214d">AbFlex: Designing antibody complementarity determining regions with flexible CDR definition.</a></td>
-        <td>Woosung Jeon, Dongsup Kim</td>
-        <td>2024-03-06</td>
-        <td>Bioinformatics</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/4e93bb1a6b21bb8a47ebf6b5ec66ba1759ec14ec">DNA Methylation Analysis Reveals Potential Mechanism in Takifugu rubripes Against Cryptocaryon irritans Infection.</a></td>
-        <td>Yu-qing Xia, Yi Yang, Yan-Yun Liu, Jian‐xin Cheng, Ying Liu, Cheng-Hua Li, Pengfei Liu</td>
-        <td>2024-03-06</td>
-        <td>Marine biotechnology</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/423a5b26e6adcf67e9969e39370942dc98cf5eb4">DVA: predicting the functional impact of single nucleotide missense variants</a></td>
-        <td>Dong Wang, Jie Li, Edwin Wang, Yadong Wang</td>
-        <td>2024-03-06</td>
-        <td>BMC Bioinformatics</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/25e191b4929919f4bd84103600d2642aa1ea17fe">Jointly constrained group sparse connectivity representation improves early diagnosis of Alzheimer’s disease on routinely acquired T1-weighted imaging-based brain network</a></td>
-        <td>Chuanzhen Zhu, Honglun Li, Zhiwei Song, Minbo Jiang, Limei Song, Lin Li, Xuan Wang, Qiang Zheng</td>
-        <td>2024-03-06</td>
-        <td>Health Information Science and Systems</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/1880aaf1551f80fe73c769de26c2a1a11993852c">High-order spatial connectivity mining over neural graph collaborative filtering for POI recommendation in location-based social networks</a></td>
-        <td>Malika Acharya, K. Mohbey</td>
-        <td>2024-03-06</td>
-        <td>Evolving Systems</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/f2a0504125de9dbbd0947dbc13be34fb52d14c2e">W-WaveNet: A multi-site water quality prediction model incorporating adaptive graph convolution and CNN-LSTM</a></td>
-        <td>Shaojun Yang, Shangping Zhong, Kaizhi Chen</td>
-        <td>2024-03-05</td>
-        <td>PLOS ONE</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/eefb77c16283643b713471009477e1ce753e1af6">Large-Scale Pretraining Improves Sample Efficiency of Active Learning-Based Virtual Screening.</a></td>
-        <td>Zhonglin Cao, Simone Sciabola, Ye Wang</td>
-        <td>2024-03-05</td>
-        <td>Journal of chemical information and modeling</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/e1a5465987aa3bd37211e14b5e4c3f0ded471c07">Incorporating high-frequency information into edge convolution for link prediction in complex networks</a></td>
-        <td>Zhiwei Zhang, Haifeng Xu, Guangliang Zhu</td>
-        <td>2024-03-05</td>
-        <td>Scientific Reports</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/d49d562bdb4e862913f683e39de7c87647752345">DRGCL: Drug Repositioning via Semantic-enriched Graph Contrastive Learning.</a></td>
-        <td>Xiao Jia, Xinliang Sun, Kaili Wang, Min Li</td>
-        <td>2024-03-05</td>
-        <td>IEEE journal of biomedical and health informatics</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/cce575f7a14fec555494ccb047f814dd28aaad46">Dynamic Spatiotemporal Correlation Graph Convolutional Network for Traffic Speed Prediction</a></td>
-        <td>Chenyang Cao, Yinxin Bao, Quan Shi, Qinqin Shen</td>
-        <td>2024-03-05</td>
-        <td>Symmetry</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/bf1a6cc1ae51e692506335b02e07d1c5d53d3117">Embedding-Alignment Fusion-Based Graph Convolution Network With Mixed Learning Strategy for 4D Medical Image Reconstruction.</a></td>
-        <td>Jingshu Li, Tianyu Fu, Hong Song, Jingfan Fan, Deqiang Xiao, Yucong Lin, Ying Gu, Jian Yang</td>
-        <td>2024-03-05</td>
-        <td>IEEE journal of biomedical and health informatics</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/998d59613b971e2b1e1560d659d3664d8e09cc98">Enhancing Generalizability in Protein-Ligand Binding Affinity Prediction with Multimodal Contrastive Learning.</a></td>
-        <td>Ding Luo, Dandan Liu, Xiaoyang Qu, Lina Dong, Binju Wang</td>
-        <td>2024-03-05</td>
-        <td>Journal of chemical information and modeling</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/757e8df8e2320e34b496b827d0c51e5aba08528f">Multifactor optimized mobile sink data collection framework for hybrid wireless sensor network‐long term evolution‐assisted Internet of Things network</a></td>
-        <td>Saranga Mohan, Sunita Panda</td>
-        <td>2024-03-05</td>
-        <td>International Journal of Communication Systems</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/eefe296b823aaea7e46f1813fa4cd9fdabb6ea76">DER-GCN: Dialog and Event Relation-Aware Graph Convolutional Neural Network for Multimodal Dialog Emotion Recognition.</a></td>
-        <td>Wei Ai, Yuntao Shou, Tao Meng, Keqin Li</td>
-        <td>2024-03-04</td>
-        <td>IEEE transactions on neural networks and learning systems</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/eafc2eed82c2b3a37d607310708401aa7a53c2d8">Graph Neural Network-Accelerated Multitasking Genetic Algorithm for Optimizing PdxTi1-xHy Surfaces under Various CO2 Reduction Reaction Conditions.</a></td>
-        <td>Changzhi Ai, Shuang Han, Xin Yang, T. Vegge, H. Hansen</td>
-        <td>2024-03-04</td>
-        <td>ACS applied materials & interfaces</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/ce098a77259ee4250bf61ea91dd6d662ddaa4a64">Payment Scheduling in the Interval Debt Model</a></td>
-        <td>T. Friedetzky, David C. Kutner, G. B. Mertzios, I. A. Stewart, Amitabh Trehan</td>
-        <td>2024-03-04</td>
-        <td>Conference on Current Trends in Theory and Practice of Informatics</td>
+        <td><a href="https://www.semanticscholar.org/paper/81abb14b5fb3908b227f4480deef481511d9bb75">Advances in Computing in High Energy and Nuclear Physics—Invited Papers from vCHEP 2021</a></td>
+        <td>I. Bird, S. Campana, G. A. Stewart</td>
+        <td>2022-05-10</td>
+        <td>Computing and Software for Big Science</td>
         <td>1</td>
       </tr>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/c4bf0a3a623e5cf78206d4126abde07dc1ffdec7">Empowering Persons with Autism through Cross-Reality and Conversational Agents.</a></td>
-        <td>F. Garzotto, Mattia Gianotti, Alberto Patti, Francesca Pentimalli, Francesco Vona</td>
-        <td>2024-03-04</td>
-        <td>IEEE transactions on visualization and computer graphics</td>
+        <td><a href="https://www.semanticscholar.org/paper/4fbc862321db4a4fb078829778985c939b66f1ed">Fixing Malfunctional Objects With Learned Physical Simulation and Functional Prediction</a></td>
+        <td>Yining Hong, Kaichun Mo, L. Yi, L. Guibas, A. Torralba, J. Tenenbaum, Chuang Gan</td>
+        <td>2022-05-05</td>
+        <td>2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</td>
+        <td>4</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/5e1a1c975545955316188907028e634b2b07d7d4">Towards Optimal Kron-based Reduction Of Networks (Opti-KRON) for the Electric Power Grid</a></td>
+        <td>Samuel C. Chevalier, M. Almassalkhi</td>
+        <td>2022-04-12</td>
+        <td>2022 IEEE 61st Conference on Decision and Control (CDC)</td>
+        <td>1</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/846f3d51c0ecc6791ebfd589c24a4fd014dcb8f3">Estimation and Exploitation of Multidimensional Sparsity for MIMO-OFDM Channel Estimation</a></td>
+        <td>M. Nazzal, M. A. Aygül, H. Arslan</td>
+        <td>2022-04-10</td>
+        <td>2022 IEEE Wireless Communications and Networking Conference (WCNC)</td>
+        <td>2</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/edf4b267e7a3eb77eb0921918553d9032d50c7d8">Learning garment manipulation policies toward robot-assisted dressing</a></td>
+        <td>Fan Zhang, Y. Demiris</td>
+        <td>2022-04-06</td>
+        <td>Science Robotics</td>
+        <td>21</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/78e6d8cf2069bf786348b0b53a41208fc12b169b">Hierarchical Reinforcement Learning under Mixed Observability</a></td>
+        <td>Hai V. Nguyen, Zhihan Yang, Andrea Baisero, Xiao Ma, Robert W. Platt, Chris Amato</td>
+        <td>2022-04-02</td>
+        <td>Workshop on the Algorithmic Foundations of Robotics</td>
+        <td>3</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/2fd83fb400258aff4dd4b9b2a67e9e8c8b7ba474">Physics-constrained Unsupervised Learning of Partial Differential Equations using Meshes</a></td>
+        <td>M. Michelis, Robert K. Katzschmann</td>
+        <td>2022-03-30</td>
+        <td>ArXiv</td>
+        <td>1</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/7897f6de20c69d566e280f2c43351dc6b9af1720">Control-Oriented Modeling of Pipe Flow in Gas Processing Facilities</a></td>
+        <td>Sven Brüggemann, Robert H. Moroto, R. Bitmead</td>
+        <td>2022-03-27</td>
+        <td>IEEE Transactions on Control Systems Technology</td>
+        <td>3</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/d11bfe66311f2be2c96e42ac4495deceedfade78">Simplifying the Process of Going From Cells to Tissues Using Statistical Mechanics</a></td>
+        <td>J. Hussan, M. Trew, Peter J. Hunter</td>
+        <td>2022-03-25</td>
+        <td>Frontiers in Physiology</td>
+        <td>1</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/7971035fc7279ecddfc3c08dbc5b666d0559fd05">Virtual Healthcare Simulation</a></td>
+        <td>G. Hoelscher, D. Morton, Brittney N. Sanderson, Jennifer F Noble, M. Bullard, Dawn Swiderski</td>
+        <td>2022-03-23</td>
+        <td>Simulation in Healthcare: The Journal of the Society for Simulation in Healthcare</td>
+        <td>2</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/503488a1f824e354df6722915d4a4538239d483d">Real-Robot Deep Reinforcement Learning: Improving Trajectory Tracking of Flexible-Joint Manipulator with Reference Correction</a></td>
+        <td>D. Pavlichenko, Sven Behnke</td>
+        <td>2022-03-14</td>
+        <td>2022 International Conference on Robotics and Automation (ICRA)</td>
+        <td>2</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/5d6e6ab09ee3532d4cc16388c0ad1e828f0f6cbd">Bayesian Optimization Meets Hybrid Zero Dynamics: Safe Parameter Learning for Bipedal Locomotion Control</a></td>
+        <td>Lizhi Yang, Zhongyu Li, Jun Zeng, K. Sreenath</td>
+        <td>2022-03-04</td>
+        <td>2022 International Conference on Robotics and Automation (ICRA)</td>
+        <td>9</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/570c21e7b074edf5083c3029c50aa8cbec4c329c">Intention Aware Robot Crowd Navigation with Attention-Based Interaction Graph</a></td>
+        <td>Shuijing Liu, Peixin Chang, Zhe Huang, Neeloy Chakraborty, Kaiwen Hong, Weihang Liang, D. McPherson, Junyi Geng, K. Driggs-Campbell</td>
+        <td>2022-03-03</td>
+        <td>2023 IEEE International Conference on Robotics and Automation (ICRA)</td>
+        <td>21</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/1b12126543d93451871245e3dc6e4067350c3e86">Semi-Equivariant GNN Architectures for Jet Tagging</a></td>
+        <td>D. Murnane, S. Thais, Jason D. Wong</td>
+        <td>2022-02-14</td>
+        <td>Journal of Physics: Conference Series</td>
+        <td>5</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/7909887769bab8a87c1d9ecba942e7016f776281">Fast Model-based Policy Search for Universal Policy Networks</a></td>
+        <td>B. L. Semage, T. G. Karimpanal, Santu Rana, S. Venkatesh</td>
+        <td>2022-02-11</td>
+        <td>2022 26th International Conference on Pattern Recognition (ICPR)</td>
         <td>0</td>
       </tr>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/a0469f51ae6e37b2e5e44ecc06ea8887d2f067c4">Machine Learning-Based Traffic Flow Prediction and Intelligent Traffic Management</a></td>
-        <td>Zheng Xu, Jiaqiang Yuan, Liqiang Yu, Guanghui Wang, Mingwei Zhu</td>
-        <td>2024-03-04</td>
-        <td>International Journal of Computer Science and Information Technology</td>
+        <td><a href="https://www.semanticscholar.org/paper/90cc86274f947b15ec3cc8c1dcfe1fc8db608e03">Physical Design using Differentiable Learned Simulators</a></td>
+        <td>Kelsey R. Allen, Tatiana Lopez-Guevara, Kimberly L. Stachenfeld, Alvaro Sanchez-Gonzalez, P. Battaglia, Jessica B. Hamrick, T. Pfaff</td>
+        <td>2022-02-01</td>
+        <td>ArXiv</td>
+        <td>27</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/83ae74c763499d8bd1e425d006f411c23e0c6c07">SafeAPT: Safe Simulation-to-Real Robot Learning Using Diverse Policies Learned in Simulation</a></td>
+        <td>Rituraj Kaushik, Karol Arndt, V. Kyrki</td>
+        <td>2022-01-27</td>
+        <td>IEEE Robotics and Automation Letters</td>
+        <td>8</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/632c6221df4cafe1e787e0926372318e278ffe2f">Inference and uncertainty quantification of stochastic gene expression via synthetic models</a></td>
+        <td>Kaan Öcal, Michael U Gutmann, G. Sanguinetti, R. Grima</td>
+        <td>2022-01-25</td>
+        <td>Journal of the Royal Society Interface</td>
+        <td>6</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/f354ceedbd0e8ca94e9ff32845805cc92d5475d8">Safe Deep RL in 3D Environments using Human Feedback</a></td>
+        <td>Matthew Rahtz, Vikrant Varma, Ramana Kumar, Z. Kenton, S. Legg, J. Leike</td>
+        <td>2022-01-20</td>
+        <td>ArXiv</td>
+        <td>4</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/814aa80c36e5bceef6e58edcff87932610e0c09e">Earth Imagery Segmentation on Terrain Surface with Limited Training Labels: A Semi-supervised Approach based on Physics-Guided Graph Co-Training</a></td>
+        <td>Wenchong He, Arpan Man Sainju, Zhe Jiang, Da Yan, Yang Zhou</td>
+        <td>2022-01-05</td>
+        <td>ACM Transactions on Intelligent Systems and Technology (TIST)</td>
+        <td>4</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/8c8c0ab2a419105a37c1c43386ce9463802817b3">Learned Coarse Models for Efficient Turbulence Simulation</a></td>
+        <td>Kimberly L. Stachenfeld, D. Fielding, Dmitrii Kochkov, M. Cranmer, T. Pfaff, Jonathan Godwin, Can Cui, S. Ho, P. Battaglia, Alvaro Sanchez-Gonzalez</td>
+        <td>2021-12-31</td>
+        <td>ArXiv</td>
+        <td>52</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/e0ee02a573b3d83fec55ed5d7c80f1afa055a7b4">Constraint-based graph network simulator</a></td>
+        <td>Yulia Rubanova, Alvaro Sanchez-Gonzalez, T. Pfaff, P. Battaglia</td>
+        <td>2021-12-16</td>
+        <td>International Conference on Machine Learning</td>
+        <td>18</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/a59a4df30f47e4b9debc15f3f688d0db040ee5fd">Reinforcement Learning Based, Staircase Negotiation Learning: Simulation and Transfer to Reality for Articulated Tracked Robots</a></td>
+        <td>Andrei Mitriakov, P. Papadakis, Jérôme Kerdreux, S. Garlatti</td>
+        <td>2021-12-01</td>
+        <td>IEEE Robotics & Automation Magazine</td>
+        <td>6</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/8a452bf3ab00cdecefa9b3b15c2d6d12fe819d1f">tgEDMD: Approximation of the Kolmogorov Operator in Tensor Train Format</a></td>
+        <td>Marvin Lücke, F. Nüske</td>
+        <td>2021-11-18</td>
+        <td>Journal of Nonlinear Science</td>
+        <td>4</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/267abe99874a5ba61910c6ab3a7d8667d7b81af2">Inferring Halo Masses with Graph Neural Networks</a></td>
+        <td>Pablo Villanueva-Domingo, F. Villaescusa-Navarro, D. Angl'es-Alc'azar, S. Genel, F. Marinacci, D. Spergel, L. Hernquist, M. Vogelsberger, R. Davé, D. Narayanan</td>
+        <td>2021-11-16</td>
+        <td>The Astrophysical Journal</td>
+        <td>24</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/e9432517460c291db2d784b27f3a49298692db00">Statistical physics of exchangeable sparse simple networks, multiplex networks, and simplicial complexes.</a></td>
+        <td>G. Bianconi</td>
+        <td>2021-11-07</td>
+        <td>Physical review. E</td>
+        <td>4</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/2340e5b64224b66c10e603898c0cc24c8e2793c3">Understanding Domain Randomization for Sim-to-real Transfer</a></td>
+        <td>Xiaoyu Chen, Jiachen Hu, Chi Jin, Lihong Li, Liwei Wang</td>
+        <td>2021-10-07</td>
+        <td>ArXiv</td>
+        <td>62</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/729d3b366404a1c7d4f57ed3b3b328ef96e1f3a5">Learning Contact-Rich Assembly Skills Using Residual Admittance Policy*</a></td>
+        <td>Oren Spector, M. Zacksenhouse</td>
+        <td>2021-09-27</td>
+        <td>2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</td>
+        <td>3</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/064bbace1d1ce11787975c59f8209ea6306f261e">Search-Based Task Planning with Learned Skill Effect Models for Lifelong Robotic Manipulation</a></td>
+        <td>Jacky Liang, Mohit Sharma, A. LaGrassa, Shivam Vats, Saumya Saxena, Oliver Kroemer</td>
+        <td>2021-09-17</td>
+        <td>2022 International Conference on Robotics and Automation (ICRA)</td>
+        <td>24</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/00c4ece4c672e417822cf29547da980533e385c0">Dropout's Dream Land: Generalization from Learned Simulators to Reality</a></td>
+        <td>Zac Wellmer, J. Kwok</td>
+        <td>2021-09-17</td>
+        <td>NotAvbl</td>
+        <td>5</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/eeb66c3463857244d8e8efff8922757ea509de63">Decentralized Control of Quadrotor Swarms with End-to-end Deep Reinforcement Learning</a></td>
+        <td>S. Batra, Zhehui Huang, Aleksei Petrenko, T. Kumar, Artem Molchanov, G. Sukhatme</td>
+        <td>2021-09-16</td>
+        <td>Conference on Robot Learning</td>
+        <td>23</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/e5b2a3f9bbab2fb41fe70fbc0fb9e539273bf966">OHPL: One-shot Hand-eye Policy Learner</a></td>
+        <td>Changjae Oh, Yik Lung Pang, A. Cavallaro</td>
+        <td>2021-08-06</td>
+        <td>2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</td>
         <td>0</td>
       </tr>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/7b40447c5acab7a7bf9a3a94dc0dfc05097de70f">Predicting Cardiotoxicity of Molecules Using Attention-Based Graph Neural Networks.</a></td>
-        <td>Tuan Vinh, Loc Nguyen, Quang H. Trinh, T. Nguyen-Vo, Binh P. Nguyen</td>
-        <td>2024-03-04</td>
-        <td>Journal of chemical information and modeling</td>
-        <td>0</td>
+        <td><a href="https://www.semanticscholar.org/paper/ef7a1bbf01178054fd9ece23dd7b0dccaa156458">Personality Recognition by Modelling Person-specific Cognitive Processes using Graph Representation</a></td>
+        <td>Z. Shao, Siyang Song, S. Jaiswal, Linlin Shen, M. Valstar, Hatice Gunes</td>
+        <td>2021-07-30</td>
+        <td>Proceedings of the 29th ACM International Conference on Multimedia</td>
+        <td>32</td>
       </tr>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/7396fe6d977f2f67f7a6e29e5f256e9709549937">Solving quantum many-particle models with graph attention network</a></td>
-        <td>Qi-Hang Yu, Zi-Jing Lin</td>
-        <td>2024-03-04</td>
-        <td>Chinese Physics Letters</td>
-        <td>0</td>
+        <td><a href="https://www.semanticscholar.org/paper/3ec347bbc0cfa91bc14b114faf40993d62930197">Deep Stochastic Optimization for Algorithm-Specific Pilot Design in Massive MIMO</a></td>
+        <td>Zhe Huang, An Liu, Yunlong Cai, Min-Jian Zhao</td>
+        <td>2021-07-11</td>
+        <td>2021 IEEE Statistical Signal Processing Workshop (SSP)</td>
+        <td>2</td>
       </tr>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/555914ce3da42967939198d2403dd20a004c1286">Routing in quantum communication networks using reinforcement machine learning</a></td>
-        <td>J. Roik, Karol Bartkiewicz, A. Černoch, K. Lemr</td>
-        <td>2024-03-04</td>
-        <td>Quantum Information Processing</td>
-        <td>0</td>
+        <td><a href="https://www.semanticscholar.org/paper/9ff99a127d3736106ad3c9bea698305cae0e44b6">Unsupervised Resource Allocation with Graph Neural Networks</a></td>
+        <td>M. Cranmer, Peter Melchior, B. Nord</td>
+        <td>2021-06-17</td>
+        <td>ArXiv</td>
+        <td>10</td>
       </tr>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/4c3445f58d2d60c80832986986ee2e79f54c138d">Beyond the standard coalescent: demographic inference with complete genomes and graph neural networks under the beta coalescent</a></td>
-        <td>Julien Y Dutheil</td>
-        <td>2024-03-04</td>
-        <td>Peer Community in Evolutionary Biology</td>
-        <td>0</td>
+        <td><a href="https://www.semanticscholar.org/paper/4346a5b7b19cc5fb420dd7b6318952014a09fa92">A Reinforcement Learning Approach for Enacting Cautious Behaviours in Autonomous Driving System: Safe Speed Choice in the Interaction With Distracted Pedestrians</a></td>
+        <td>Gastone Pietro Rosati Papini, Alice Plebe, M. Lio, R. Donà</td>
+        <td>2021-06-16</td>
+        <td>IEEE Transactions on Intelligent Transportation Systems</td>
+        <td>17</td>
       </tr>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/47a6d70ac38c6092604c3f92a093173009eafb5f">PENGARUH VARIASI EMITTER PADA JARINGAN IRIGASI TETES PIPA PVC BERTINGKAT TERHADAP DISTRIBUSI DAN KESERAGAMANAN IRIGASI</a></td>
-        <td>I. J. Negara, Anid Supriyadi, Eko Pradjok, Atas Pracoyo, Yusron Saadi, I. W. Yasa</td>
-        <td>2024-03-04</td>
-        <td>GANEC SWARA</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/2f68e9d3ea9a5f2891e291932351880b9c9e685b">Feasibility and evaluation of high-fidelity simulation education for acute clinical toxicology.</a></td>
-        <td>D. Brinkman, Nella S Wackwitz, E. Donker, J. Tichelaar</td>
-        <td>2024-03-04</td>
-        <td>British journal of clinical pharmacology</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/00ffcf266403ba1ce8e28bff0fa025f62f9c3dde">Hierarchical graph contrastive learning of local and global presentation for multimodal sentiment analysis.</a></td>
-        <td>Jun Du, Jianhang Jin, Zhuang Jian, Cheng Zhang</td>
-        <td>2024-03-04</td>
-        <td>Scientific reports</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/a9c2e7cb0950bd7f922371422ebbc86d48020364">Bearing fault detection by using graph autoencoder and ensemble learning</a></td>
-        <td>Meng Wang, Jiong Yu, Hongyong Leng, Xusheng Du, Yiran Liu</td>
-        <td>2024-03-03</td>
-        <td>Scientific Reports</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/690e83aad319b4a3b71996c25bd3c005ca5653de">Successful Implementation of the AIUM Standardized 4-Year Residency Ultrasound Curriculum in Obstetrics and Gynecology: Lessons Learned and Way Forward.</a></td>
-        <td>R. Abu-Rustum, Margarita Berwick, J. Heft</td>
-        <td>2024-03-03</td>
-        <td>Journal of ultrasound in medicine : official journal of the American Institute of Ultrasound in Medicine</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/063c5c9de1e28c4ee2c708993aa7000af4d84fc9">An Urban Built Environment Analysis Approach for Street View Images Based on Graph Convolutional Neural Networks</a></td>
-        <td>Changmin Liu, Yang Wang, Weikang Li, Liufeng Tao, Sheng Hu, Mengqi Hao</td>
-        <td>2024-03-03</td>
-        <td>Applied Sciences</td>
-        <td>0</td>
+        <td><a href="https://www.semanticscholar.org/paper/b4183a2c30a78b7af46aa131bbc59fc419013962">Trust Region Method for Coupled Systems of PDE Solvers and Deep Neural Networks</a></td>
+        <td>Kailai Xu, Eric F Darve</td>
+        <td>2021-05-17</td>
+        <td>ArXiv</td>
+        <td>1</td>
       </tr>
     
   </tbody>
@@ -1974,15 +1973,15 @@ hide:
 
 <script>
   var trace1 = {
-  x: ['1968', '1974', '1975', '1978', '1981', '1982', '1983', '1984', '1985', '1986', '1987', '1988', '1989', '1990', '1991', '1992', '1993', '1994', '1995', '1996', '1997', '1998', '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
-  y: [1, 1, 1, 1, 1, 1, 2, 4, 1, 3, 3, 2, 3, 2, 2, 4, 4, 5, 5, 5, 6, 8, 10, 17, 24, 27, 42, 30, 46, 46, 40, 49, 51, 53, 37, 25, 31, 24, 31, 36, 58, 79, 69, 52, 9, 1, 1],
+  x: ['1992', '1995', '1996', '1998', '2001', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
+  y: [1, 1, 2, 1, 1, 2, 2, 1, 2, 6, 6, 4, 3, 4, 8, 4, 9, 10, 16, 20, 29, 30, 45, 35, 3],
   name: 'Num of articles',
   type: 'scatter'
   };
 
   var trace2 = {
-    x: ['1968', '1974', '1975', '1978', '1981', '1982', '1983', '1984', '1985', '1986', '1987', '1988', '1989', '1990', '1991', '1992', '1993', '1994', '1995', '1996', '1997', '1998', '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
-    y: [817, 380, 575, 408, 1203, 430, 1876, 4187, 357, 4528, 3655, 1450, 1599, 2288, 1202, 3077, 4257, 2243, 2633, 4675, 4425, 42591, 19225, 20411, 53538, 22215, 54493, 43336, 42585, 39996, 41349, 34935, 53923, 36412, 25168, 21641, 29321, 26506, 38153, 72071, 65833, 89612, 46671, 29652, 4700, 1581, 1034],
+    x: ['1992', '1995', '1996', '1998', '2001', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
+    y: [0, 16, 44, 8, 264, 59, 18, 22, 106, 231, 194, 77, 26, 857, 100, 172, 161, 502, 633, 505, 1156, 567, 380, 52, 0],
     name: 'Num of citations',
     yaxis: 'y2',
     type: 'scatter'

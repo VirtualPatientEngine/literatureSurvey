@@ -10,7 +10,7 @@ hide:
 
 <body>
   <p>
-  <i>This page was last updated on 2024-03-11 08:47:46 UTC</i>
+  <i>This page was last updated on 2024-03-19 09:23:05 UTC</i>
   </p>
 
   <p>
@@ -49,90 +49,90 @@ hide:
     
       <tr>
       <script>
-      // alert (1563)
+      // alert (1575)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/bf657b5049c1a5c839369d3948ffb4c0584cd1d2">Hamiltonian Systems and Transformation in Hilbert Space.</a></td>
         <td>B. O. Koopman</td>
         <td>1931-05-01</td>
         <td>Proceedings of the National Academy of Sciences of the United States of America</td>
-        <td>1563</td>
+        <td>1575</td>
       </tr>
     
       <tr>
       <script>
-      // alert (1328)
+      // alert (1334)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/10cab2f43c29fe12e5a0d0718eb6e1ff8c9d4777">A Data–Driven Approximation of the Koopman Operator: Extending Dynamic Mode Decomposition</a></td>
         <td>Matthew O. Williams, I. Kevrekidis, C. Rowley</td>
         <td>2014-08-19</td>
         <td>Journal of Nonlinear Science</td>
-        <td>1328</td>
+        <td>1334</td>
       </tr>
     
       <tr>
       <script>
-      // alert (901)
+      // alert (912)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/6adeda1af8abc6bc3c17c0b39f635a845476cd9f">Deep learning for universal linear embeddings of nonlinear dynamics</a></td>
         <td>Bethany Lusch, J. Kutz, S. Brunton</td>
         <td>2017-12-27</td>
         <td>Nature Communications</td>
-        <td>901</td>
+        <td>912</td>
       </tr>
     
       <tr>
       <script>
-      // alert (785)
+      // alert (786)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/7e54d86fb36907b99ef0580bfaea9b43c5942ae7">Entanglement renormalization.</a></td>
         <td>G. Vidal</td>
         <td>2005-12-08</td>
         <td>Physical review letters</td>
-        <td>785</td>
+        <td>786</td>
       </tr>
     
       <tr>
       <script>
-      // alert (696)
+      // alert (698)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/2c9be1e38f978f43427ea5293b3138e0c4fede71">Applied Koopmanism.</a></td>
         <td>M. Budišić, Ryan Mohr, I. Mezić</td>
         <td>2012-06-14</td>
         <td>Chaos</td>
-        <td>696</td>
+        <td>698</td>
       </tr>
     
       <tr>
       <script>
-      // alert (658)
+      // alert (659)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/b90161898ff5ef4236f1c19a5c88138e1c80c5ea">CT Imaging of the 2019 Novel Coronavirus (2019-nCoV) Pneumonia</a></td>
         <td>J. Lei, Junfeng Li, Xun Li, X. Qi</td>
         <td>2020-01-31</td>
         <td>Radiology</td>
-        <td>658</td>
+        <td>659</td>
       </tr>
     
       <tr>
       <script>
-      // alert (643)
+      // alert (646)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/82e19123c7fdf1c047531eec5bce6f925dcc5ad5">Variants of Dynamic Mode Decomposition: Boundary Condition, Koopman, and Fourier Analyses</a></td>
         <td>Kevin K. Chen, Jonathan H. Tu, C. Rowley</td>
         <td>2012-04-27</td>
         <td>Journal of Nonlinear Science</td>
-        <td>643</td>
+        <td>646</td>
       </tr>
     
       <tr>
       <script>
-      // alert (639)
+      // alert (641)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/dbb73c3f14600e3a746c643c2e8bece117de6be4">Linear predictors for nonlinear dynamical systems: Koopman operator meets model predictive control</a></td>
         <td>Milan Korda, I. Mezić</td>
         <td>2016-11-10</td>
         <td>Autom.</td>
-        <td>639</td>
+        <td>641</td>
       </tr>
     
       <tr>
@@ -148,13 +148,13 @@ hide:
     
       <tr>
       <script>
-      // alert (476)
+      // alert (486)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/fa00b2c3d2fe8326470c47a3e5f5d1e716e58cb3">Quantum singular value transformation and beyond: exponential improvements for quantum matrix arithmetics</a></td>
         <td>A. Gilyén, Yuan Su, G. Low, N. Wiebe</td>
         <td>2018-06-05</td>
         <td>Proceedings of the 51st Annual ACM SIGACT Symposium on Theory of Computing</td>
-        <td>476</td>
+        <td>486</td>
       </tr>
     
       <tr>
@@ -170,24 +170,24 @@ hide:
     
       <tr>
       <script>
-      // alert (433)
+      // alert (434)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/a3c279828af3621d2c16ac26e5900b970383f60e">Koopman Invariant Subspaces and Finite Linear Representations of Nonlinear Dynamical Systems for Control</a></td>
         <td>S. Brunton, Bingni W. Brunton, J. Proctor, J. Kutz</td>
         <td>2015-10-11</td>
         <td>PLoS ONE</td>
-        <td>433</td>
+        <td>434</td>
       </tr>
     
       <tr>
       <script>
-      // alert (420)
+      // alert (421)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/f2374add6087ad4509b670f1e2b056ddecaa33e7">Robust Feature Matching for Remote Sensing Image Registration via Locally Linear Transforming</a></td>
         <td>Jiayi Ma, Huabing Zhou, Ji Zhao, Yuan Gao, Junjun Jiang, J. Tian</td>
         <td>2015-06-19</td>
         <td>IEEE Transactions on Geoscience and Remote Sensing</td>
-        <td>420</td>
+        <td>421</td>
       </tr>
     
       <tr>
@@ -203,13 +203,13 @@ hide:
     
       <tr>
       <script>
-      // alert (414)
+      // alert (416)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/3df50e9b73cc2937dfd651f4c3344bc99b7ed3f2">Chaos as an intermittently forced linear system</a></td>
         <td>S. Brunton, Bingni W. Brunton, J. Proctor, E. Kaiser, J. Kutz</td>
         <td>2016-08-18</td>
         <td>Nature Communications</td>
-        <td>414</td>
+        <td>416</td>
       </tr>
     
       <tr>
@@ -236,13 +236,13 @@ hide:
     
       <tr>
       <script>
-      // alert (349)
+      // alert (353)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/80124cdbaae5a8a896e81cb7ed7e131f0dd6d78b">On Koopmans' theorem in density functional theory.</a></td>
         <td>T. Tsuneda, Jong-Won Song, Satoshi Suzuki, K. Hirao</td>
         <td>2010-11-01</td>
         <td>The Journal of chemical physics</td>
-        <td>349</td>
+        <td>353</td>
       </tr>
     
       <tr>
@@ -258,35 +258,35 @@ hide:
     
       <tr>
       <script>
-      // alert (338)
+      // alert (339)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/84606a365a1172474997df474d5fd4dc4b217ff8">Ergodic Theory, Dynamic Mode Decomposition, and Computation of Spectral Properties of the Koopman Operator</a></td>
         <td>Hassan Arbabi, I. Mezić</td>
         <td>2016-11-21</td>
         <td>SIAM J. Appl. Dyn. Syst.</td>
-        <td>338</td>
+        <td>339</td>
       </tr>
     
       <tr>
       <script>
-      // alert (333)
+      // alert (337)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/3c4372b125d0744bb68bfca9f5d6b0abb85dd182">Characterizing possible failure modes in physics-informed neural networks</a></td>
         <td>A. Krishnapriyan, A. Gholami, Shandian Zhe, Robert M. Kirby, Michael W. Mahoney</td>
         <td>2021-09-02</td>
         <td>Neural Information Processing Systems</td>
-        <td>333</td>
+        <td>337</td>
       </tr>
     
       <tr>
       <script>
-      // alert (324)
+      // alert (326)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/e542e5ecf3e5e98eb686f847ed1246eebadfd4bb">The Kohn-Sham gap, the fundamental gap and the optical gap: the physical meaning of occupied and virtual Kohn-Sham orbital energies.</a></td>
         <td>E. Baerends, E. Baerends, E. Baerends, O. Gritsenko, O. Gritsenko, R. V. D. Meer, R. V. D. Meer</td>
         <td>2013-09-17</td>
         <td>Physical chemistry chemical physics : PCCP</td>
-        <td>324</td>
+        <td>326</td>
       </tr>
     
       <tr>
@@ -302,13 +302,13 @@ hide:
     
       <tr>
       <script>
-      // alert (324)
+      // alert (323)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/04748ba2d37e77f34712217798ce8322ffef9f96">Building the mammalian testis: origins, differentiation, and assembly of the component cell populations</a></td>
         <td>T. Svingen, P. Koopman</td>
         <td>2013-11-15</td>
         <td>Genes & Development</td>
-        <td>324</td>
+        <td>323</td>
       </tr>
     
       <tr>
@@ -324,24 +324,24 @@ hide:
     
       <tr>
       <script>
-      // alert (314)
+      // alert (315)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/f0c1a72acc03972ab5e172025029c09b92241cf3">Fundamental gaps in finite systems from eigenvalues of a generalized Kohn-Sham method.</a></td>
         <td>T. Stein, Helen R. Eisenberg, L. Kronik, R. Baer</td>
         <td>2010-06-28</td>
         <td>Physical review letters</td>
-        <td>314</td>
+        <td>315</td>
       </tr>
     
       <tr>
       <script>
-      // alert (313)
+      // alert (315)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/49ee811e5c7af5980d3dfe791f6b18e0080ad566">Learning Koopman Invariant Subspaces for Dynamic Mode Decomposition</a></td>
         <td>Naoya Takeishi, Y. Kawahara, T. Yairi</td>
         <td>2017-10-12</td>
         <td>ArXiv</td>
-        <td>313</td>
+        <td>315</td>
       </tr>
     
       <tr>
@@ -357,13 +357,13 @@ hide:
     
       <tr>
       <script>
-      // alert (301)
+      // alert (303)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/a02e0608b79a4b3670324839160073a8f49d77f9">Learning Deep Neural Network Representations for Koopman Operators of Nonlinear Dynamical Systems</a></td>
         <td>Enoch Yeung, Soumya Kundu, Nathan Oken Hodas</td>
         <td>2017-08-22</td>
         <td>2019 American Control Conference (ACC)</td>
-        <td>301</td>
+        <td>303</td>
       </tr>
     
       <tr>
@@ -379,13 +379,13 @@ hide:
     
       <tr>
       <script>
-      // alert (296)
+      // alert (297)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/826b6ef09d19f7abd803ffb3353e794e83f65dc1">Experimental realization of universal geometric quantum gates with solid-state spins</a></td>
         <td>C. Zu, Wenhe Wang, L. He, Wenhao Zhang, Chengyu Dai, Feida Wang, Luming Duan</td>
         <td>2014-10-01</td>
         <td>Nature</td>
-        <td>296</td>
+        <td>297</td>
       </tr>
     
       <tr>
@@ -401,13 +401,13 @@ hide:
     
       <tr>
       <script>
-      // alert (288)
+      // alert (289)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/3c7c84c2e25bf92c25cfae93490dadf20ac68d41">On Convergence of Extended Dynamic Mode Decomposition to the Koopman Operator</a></td>
         <td>Milan Korda, I. Mezić</td>
         <td>2017-03-14</td>
         <td>Journal of Nonlinear Science</td>
-        <td>288</td>
+        <td>289</td>
       </tr>
     
       <tr>
@@ -423,46 +423,46 @@ hide:
     
       <tr>
       <script>
-      // alert (263)
+      // alert (262)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/26d67b9b9f07e408379489e0eeb63ec9006d7f9f">A Monotone+Skew Splitting Model for Composite Monotone Inclusions in Duality</a></td>
-        <td>L. Briceño-Arias, P. L. Combettes</td>
+        <td>L. Briceño-Arias, P. Combettes</td>
         <td>2010-11-24</td>
         <td>SIAM J. Optim.</td>
-        <td>263</td>
+        <td>262</td>
       </tr>
     
       <tr>
       <script>
-      // alert (256)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/9667d9889b79db0cd0cadf9d7ba560bceb924b48">Understanding and mitigating gradient pathologies in physics-informed neural networks</a></td>
-        <td>Sifan Wang, Yujun Teng, P. Perdikaris</td>
-        <td>2020-01-13</td>
-        <td>ArXiv</td>
-        <td>256</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (253)
+      // alert (255)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/b6030388f7bfb6dec208db9b08e80a6c3e968e79">Data-driven discovery of Koopman eigenfunctions for control</a></td>
         <td>E. Kaiser, J. Kutz, S. Brunton</td>
         <td>2017-07-04</td>
         <td>Machine Learning: Science and Technology</td>
-        <td>253</td>
+        <td>255</td>
       </tr>
     
       <tr>
       <script>
-      // alert (251)
+      // alert (255)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/9667d9889b79db0cd0cadf9d7ba560bceb924b48">Understanding and mitigating gradient pathologies in physics-informed neural networks</a></td>
+        <td>Sifan Wang, Yujun Teng, P. Perdikaris</td>
+        <td>2020-01-13</td>
+        <td>ArXiv</td>
+        <td>255</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (254)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/4b85b36a81518c981421b032045a6804c923447f">Linearly-Recurrent Autoencoder Networks for Learning Dynamics</a></td>
         <td>Samuel E. Otto, C. Rowley</td>
         <td>2017-12-04</td>
         <td>SIAM J. Appl. Dyn. Syst.</td>
-        <td>251</td>
+        <td>254</td>
       </tr>
     
       <tr>
@@ -489,24 +489,24 @@ hide:
     
       <tr>
       <script>
-      // alert (229)
+      // alert (232)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/68b6ca45a588d538b36335b23f6969c960cf2e6e">Modern Koopman Theory for Dynamical Systems</a></td>
         <td>S. Brunton, M. Budišić, E. Kaiser, J. Kutz</td>
         <td>2021-02-24</td>
         <td>SIAM Rev.</td>
-        <td>229</td>
+        <td>232</td>
       </tr>
     
       <tr>
       <script>
-      // alert (226)
+      // alert (228)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/9d6fe89150401d69a90ae10dc9c4135ab406903c">Generalizing Koopman Theory to Allow for Inputs and Control</a></td>
         <td>J. Proctor, S. Brunton, J. Kutz</td>
         <td>2016-02-24</td>
         <td>SIAM J. Appl. Dyn. Syst.</td>
-        <td>226</td>
+        <td>228</td>
       </tr>
     
       <tr>
@@ -544,13 +544,13 @@ hide:
     
       <tr>
       <script>
-      // alert (210)
+      // alert (211)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/5d87c585c8099951d31cdc659dd4787cd3ae93a7">Global Stability Analysis Using the Eigenfunctions of the Koopman Operator</a></td>
         <td>A. Mauroy, I. Mezić</td>
         <td>2014-08-06</td>
         <td>IEEE Transactions on Automatic Control</td>
-        <td>210</td>
+        <td>211</td>
       </tr>
     
       <tr>
@@ -577,6 +577,17 @@ hide:
     
       <tr>
       <script>
+      // alert (197)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/7b4b87b9405655a2c89000e19f0d5be52dcde496">One Health: A new definition for a sustainable and healthy future</a></td>
+        <td>W. Adisasmito, Salama Almuhairi, C. B. Behravesh, P. Bilivogui, S. Bukachi, N. Casas, Natalia Margarita Cediel Becerra, D. Charron, A. Chaudhary, Janice R. Ciacci Zanella, A. Cunningham, Osman Dar, Nitish Debnath, Baptiste Dungu, E. Farag, George F. Gao, D. Hayman, M. Khaitsa, M. Koopmans, C. Machalaba, J. Mackenzie, W. Markotter, T. Mettenleiter, Serge Morand, V. Smolenskiy, Lei Zhou</td>
+        <td>2022-06-01</td>
+        <td>PLoS Pathogens</td>
+        <td>197</td>
+      </tr>
+    
+      <tr>
+      <script>
       // alert (196)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/5c944ea65065c58ac66aec482ee59de409ec0861">Numerical Recipes In Fortran 90: The Art Of Parallel Scientific Computing</a></td>
@@ -588,24 +599,24 @@ hide:
     
       <tr>
       <script>
-      // alert (192)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/7b4b87b9405655a2c89000e19f0d5be52dcde496">One Health: A new definition for a sustainable and healthy future</a></td>
-        <td>W. Adisasmito, Salama Almuhairi, C. B. Behravesh, P. Bilivogui, S. Bukachi, N. Casas, Natalia Margarita Cediel Becerra, D. Charron, A. Chaudhary, Janice R. Ciacci Zanella, A. Cunningham, Osman Dar, Nitish Debnath, Baptiste Dungu, E. Farag, George F. Gao, D. Hayman, M. Khaitsa, M. Koopmans, C. Machalaba, J. Mackenzie, W. Markotter, T. Mettenleiter, Serge Morand, V. Smolenskiy, Lei Zhou</td>
-        <td>2022-06-01</td>
-        <td>PLoS Pathogens</td>
-        <td>192</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (187)
+      // alert (188)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/28d86293dc13ec0bae8f581068552b6f7d4bfda5">Linear Transformations in Hilbert Space: III. Operational Methods and Group Theory.</a></td>
         <td>M. Stone</td>
         <td>1930-02-01</td>
         <td>Proceedings of the National Academy of Sciences of the United States of America</td>
-        <td>187</td>
+        <td>188</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (181)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/d941c52dab569daf57b8e4da8a96d3ce166a1539">Approximate interval estimation of the ratio of binomial parameters: a review and corrections for skewness.</a></td>
+        <td>J. Gart, J. Nam</td>
+        <td>1988-06-01</td>
+        <td>Biometrics</td>
+        <td>181</td>
       </tr>
     
       <tr>
@@ -621,24 +632,13 @@ hide:
     
       <tr>
       <script>
-      // alert (180)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/d941c52dab569daf57b8e4da8a96d3ce166a1539">Approximate interval estimation of the ratio of binomial parameters: a review and corrections for skewness.</a></td>
-        <td>J. Gart, J. Nam</td>
-        <td>1988-06-01</td>
-        <td>Biometrics</td>
-        <td>180</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (172)
+      // alert (173)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/1c4ac6eeba4e40bf9e0b547356a361ac0410460c">Ab initio calculations of the O1s XPS spectra of ZnO and Zn oxo compounds.</a></td>
         <td>K. Kotsis, V. Staemmler</td>
         <td>2006-03-24</td>
         <td>Physical chemistry chemical physics : PCCP</td>
-        <td>172</td>
+        <td>173</td>
       </tr>
     
       <tr>
@@ -676,6 +676,17 @@ hide:
     
       <tr>
       <script>
+      // alert (167)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/7484cce4b20c43debd6fc5f993b539001c47a97e">Universal Approximations of Invariant Maps by Neural Networks</a></td>
+        <td>D. Yarotsky</td>
+        <td>2018-04-26</td>
+        <td>Constructive Approximation</td>
+        <td>167</td>
+      </tr>
+    
+      <tr>
+      <script>
       // alert (166)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/f07c116f183f723bc03e3066781d0f3fae3b50f8">Recurrent and chronic relapsing Guillain-Barré polyneuritis.</a></td>
@@ -689,33 +700,22 @@ hide:
       <script>
       // alert (166)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/7484cce4b20c43debd6fc5f993b539001c47a97e">Universal Approximations of Invariant Maps by Neural Networks</a></td>
-        <td>D. Yarotsky</td>
-        <td>2018-04-26</td>
-        <td>Constructive Approximation</td>
+        <td><a href="https://www.semanticscholar.org/paper/21f5651e1f59cb821d440cf521520cad014d595e">Fixed-point quantum search.</a></td>
+        <td>Lov K. Grover</td>
+        <td>2005-03-28</td>
+        <td>Physical review letters</td>
         <td>166</td>
       </tr>
     
       <tr>
       <script>
-      // alert (165)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/21f5651e1f59cb821d440cf521520cad014d595e">Fixed-point quantum search.</a></td>
-        <td>Lov K. Grover</td>
-        <td>2005-03-28</td>
-        <td>Physical review letters</td>
-        <td>165</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (162)
+      // alert (163)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/3db3c31dc3142638f64c548ebcff906e0c108d82">A rise in plasma creatinine that is not a sign of renal failure: which drugs can be responsible?</a></td>
         <td>E. Andreev, M. Koopman, L. Arisz</td>
         <td>1999-09-01</td>
         <td>Journal of Internal Medicine</td>
-        <td>162</td>
+        <td>163</td>
       </tr>
     
       <tr>
@@ -731,13 +731,13 @@ hide:
     
       <tr>
       <script>
-      // alert (149)
+      // alert (151)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/92008282b1e496cb92a16abc7b3cc30230fe5405">Koopman operator-based model reduction for switched-system control of PDEs</a></td>
         <td>Sebastian Peitz, Stefan Klus</td>
         <td>2017-10-18</td>
         <td>Autom.</td>
-        <td>149</td>
+        <td>151</td>
       </tr>
     
       <tr>
@@ -766,22 +766,22 @@ hide:
       <script>
       // alert (127)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/20d976c80962f5ed40f4ccba92a7585d674138a0">CHARACTER DISPLACEMENT FOR SEXUAL ISOLATION BETWEEN DROSOPHILA MOJAVENSIS AND DROSOPHILA ARIZONENSIS</a></td>
-        <td>M. Wasserman, H. R. Koepfer</td>
-        <td>1977-12-01</td>
-        <td>Evolution</td>
+        <td><a href="https://www.semanticscholar.org/paper/ceafb0d1a69052a961b5250a5aeffdb3b659e42c">Spectrum of the Koopman Operator, Spectral Expansions in Functional Spaces, and State-Space Geometry</a></td>
+        <td>I. Mezić</td>
+        <td>2017-02-22</td>
+        <td>Journal of Nonlinear Science</td>
         <td>127</td>
       </tr>
     
       <tr>
       <script>
-      // alert (126)
+      // alert (127)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/ceafb0d1a69052a961b5250a5aeffdb3b659e42c">Spectrum of the Koopman Operator, Spectral Expansions in Functional Spaces, and State-Space Geometry</a></td>
-        <td>I. Mezić</td>
-        <td>2017-02-22</td>
-        <td>Journal of Nonlinear Science</td>
-        <td>126</td>
+        <td><a href="https://www.semanticscholar.org/paper/20d976c80962f5ed40f4ccba92a7585d674138a0">CHARACTER DISPLACEMENT FOR SEXUAL ISOLATION BETWEEN DROSOPHILA MOJAVENSIS AND DROSOPHILA ARIZONENSIS</a></td>
+        <td>M. Wasserman, H. R. Koepfer</td>
+        <td>1977-12-01</td>
+        <td>Evolution</td>
+        <td>127</td>
       </tr>
     
       <tr>
@@ -808,13 +808,24 @@ hide:
     
       <tr>
       <script>
-      // alert (117)
+      // alert (118)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/671181c7fb06efcbef944133cbf9ea67a28e27ae">Koopmans' theorem for large molecular systems within density functional theory.</a></td>
         <td>Ji Luo, Zengquan Xue, W. Liu, J. Wu, Z. Yang</td>
         <td>2006-10-10</td>
         <td>The journal of physical chemistry. A</td>
-        <td>117</td>
+        <td>118</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (115)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/221cb8384f17f1484a7f282b63ea408baa0e0952">Simultaneous solutions for first order and second order slips on micropolar fluid flow across a convective surface in the presence of Lorentz force and variable heat source/sink</a></td>
+        <td>K. Kumar, V. Sugunamma, N. Sandeep, M. T. Mustafa</td>
+        <td>2019-10-11</td>
+        <td>Scientific Reports</td>
+        <td>115</td>
       </tr>
     
       <tr>
@@ -841,24 +852,13 @@ hide:
     
       <tr>
       <script>
-      // alert (113)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/221cb8384f17f1484a7f282b63ea408baa0e0952">Simultaneous solutions for first order and second order slips on micropolar fluid flow across a convective surface in the presence of Lorentz force and variable heat source/sink</a></td>
-        <td>K. Kumar, V. Sugunamma, N. Sandeep, M. T. Mustafa</td>
-        <td>2019-10-11</td>
-        <td>Scientific Reports</td>
-        <td>113</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (113)
+      // alert (114)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/102d97c378a0c6eaaa172598a391577ee20d0ac3">Physics-Informed Probabilistic Learning of Linear Embeddings of Nonlinear Dynamics with Guaranteed Stability</a></td>
         <td>Shaowu Pan, K. Duraisamy</td>
         <td>2019-06-09</td>
         <td>SIAM J. Appl. Dyn. Syst.</td>
-        <td>113</td>
+        <td>114</td>
       </tr>
     
       <tr>
@@ -885,23 +885,23 @@ hide:
     
       <tr>
       <script>
-      // alert (103)
+      // alert (104)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/b5b20c08d9c2e4eb79f8db2d01e01d9d6718003b">Infinite Dimensional Backstepping-Style Feedback Transformations for a Heat Equation with an Arbitrary Level of Instability</a></td>
-        <td>A. Balogh, M. Krstić</td>
-        <td>None</td>
-        <td>Eur. J. Control</td>
-        <td>103</td>
+        <td><a href="https://www.semanticscholar.org/paper/97219e65f8cb1e36bb8fdbf715cb2b271cac7562">Variational Koopman models: Slow collective variables and molecular kinetics from short off-equilibrium simulations.</a></td>
+        <td>Hao Wu, F. Nüske, Fabian Paul, Stefan Klus, P. Koltai, F. Noé</td>
+        <td>2016-10-20</td>
+        <td>The Journal of chemical physics</td>
+        <td>104</td>
       </tr>
     
       <tr>
       <script>
       // alert (103)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/97219e65f8cb1e36bb8fdbf715cb2b271cac7562">Variational Koopman models: Slow collective variables and molecular kinetics from short off-equilibrium simulations.</a></td>
-        <td>Hao Wu, F. Nüske, Fabian Paul, Stefan Klus, P. Koltai, F. Noé</td>
-        <td>2016-10-20</td>
-        <td>The Journal of chemical physics</td>
+        <td><a href="https://www.semanticscholar.org/paper/b5b20c08d9c2e4eb79f8db2d01e01d9d6718003b">Infinite Dimensional Backstepping-Style Feedback Transformations for a Heat Equation with an Arbitrary Level of Instability</a></td>
+        <td>A. Balogh, M. Krstić</td>
+        <td>None</td>
+        <td>Eur. J. Control</td>
         <td>103</td>
       </tr>
     
@@ -942,22 +942,22 @@ hide:
       <script>
       // alert (99)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/8f3d28be5557a1c87a80c3242d68bddb331b0cbc">Optimal Construction of Koopman Eigenfunctions for Prediction and Control</a></td>
-        <td>Milan Korda, I. Mezić</td>
-        <td>2018-10-20</td>
-        <td>IEEE Transactions on Automatic Control</td>
+        <td><a href="https://www.semanticscholar.org/paper/fcd91f3a6cda5ea65ce79dce6c4f250dfbb26b2d">Probing ultrafast internal conversion through conical intersection via time-energy map of photoelectron angular anisotropy.</a></td>
+        <td>T. Horio, T. Fuji, Yoshi-ichi Suzuki, Toshinori Suzuki</td>
+        <td>2009-08-05</td>
+        <td>Journal of the American Chemical Society</td>
         <td>99</td>
       </tr>
     
       <tr>
       <script>
-      // alert (98)
+      // alert (99)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/fcd91f3a6cda5ea65ce79dce6c4f250dfbb26b2d">Probing ultrafast internal conversion through conical intersection via time-energy map of photoelectron angular anisotropy.</a></td>
-        <td>T. Horio, T. Fuji, Yoshi-ichi Suzuki, Toshinori Suzuki</td>
-        <td>2009-08-05</td>
-        <td>Journal of the American Chemical Society</td>
-        <td>98</td>
+        <td><a href="https://www.semanticscholar.org/paper/8f3d28be5557a1c87a80c3242d68bddb331b0cbc">Optimal Construction of Koopman Eigenfunctions for Prediction and Control</a></td>
+        <td>Milan Korda, I. Mezić</td>
+        <td>2018-10-20</td>
+        <td>IEEE Transactions on Automatic Control</td>
+        <td>99</td>
       </tr>
     
       <tr>
@@ -973,13 +973,24 @@ hide:
     
       <tr>
       <script>
-      // alert (96)
+      // alert (97)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/6d72353f63dbc9c056deaae8353240d8f2f49c78">Learning Compositional Koopman Operators for Model-Based Control</a></td>
         <td>Yunzhu Li, Hao He, Jiajun Wu, D. Katabi, A. Torralba</td>
         <td>2019-10-18</td>
         <td>ArXiv</td>
-        <td>96</td>
+        <td>97</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (95)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/d54866274c5f0e611a3824df0045fe2cfeea1ba1">Seniority-based coupled cluster theory.</a></td>
+        <td>T. M. Henderson, Ireneusz W. Bulik, T. Stein, G. Scuseria</td>
+        <td>2014-10-24</td>
+        <td>The Journal of chemical physics</td>
+        <td>95</td>
       </tr>
     
       <tr>
@@ -991,28 +1002,6 @@ hide:
         <td>2014-08-25</td>
         <td>Journal of chemical theory and computation</td>
         <td>95</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (95)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/4229412ee666f68522dd72ce5f956311a0de4f59">Linear identification of nonlinear systems: A lifting technique based on the Koopman operator</a></td>
-        <td>A. Mauroy, Jorge M. Gonçalves</td>
-        <td>2016-05-14</td>
-        <td>2016 IEEE 55th Conference on Decision and Control (CDC)</td>
-        <td>95</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (94)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/d54866274c5f0e611a3824df0045fe2cfeea1ba1">Seniority-based coupled cluster theory.</a></td>
-        <td>T. M. Henderson, Ireneusz W. Bulik, T. Stein, G. Scuseria</td>
-        <td>2014-10-24</td>
-        <td>The Journal of chemical physics</td>
-        <td>94</td>
       </tr>
     
       <tr>
@@ -1050,12 +1039,34 @@ hide:
     
       <tr>
       <script>
+      // alert (94)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/4229412ee666f68522dd72ce5f956311a0de4f59">Linear identification of nonlinear systems: A lifting technique based on the Koopman operator</a></td>
+        <td>A. Mauroy, Jorge M. Gonçalves</td>
+        <td>2016-05-14</td>
+        <td>2016 IEEE 55th Conference on Decision and Control (CDC)</td>
+        <td>94</td>
+      </tr>
+    
+      <tr>
+      <script>
       // alert (93)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/384d047a7690c1e0d49f6b8693adc6c31206d1bc">Higher-order equation-of-motion coupled-cluster methods for ionization processes.</a></td>
         <td>Muneaki Kamiya, S. Hirata</td>
         <td>2006-08-21</td>
         <td>The Journal of chemical physics</td>
+        <td>93</td>
+      </tr>
+    
+      <tr>
+      <script>
+      // alert (93)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/0872dfacadb282200f909e167e34dd9a7d9f27cd">Forecasting Sequential Data using Consistent Koopman Autoencoders</a></td>
+        <td>Omri Azencot, N. Benjamin Erichson, Vanessa Lin, Michael W. Mahoney</td>
+        <td>2020-03-04</td>
+        <td>ArXiv</td>
         <td>93</td>
       </tr>
     
@@ -1083,13 +1094,13 @@ hide:
     
       <tr>
       <script>
-      // alert (91)
+      // alert (90)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/0872dfacadb282200f909e167e34dd9a7d9f27cd">Forecasting Sequential Data using Consistent Koopman Autoencoders</a></td>
-        <td>Omri Azencot, N. Benjamin Erichson, Vanessa Lin, Michael W. Mahoney</td>
-        <td>2020-03-04</td>
-        <td>ArXiv</td>
-        <td>91</td>
+        <td><a href="https://www.semanticscholar.org/paper/ae3e140d20c0a3582cd74ac2c724b1050668205b">General Method for Solving the Split Common Fixed Point Problem</a></td>
+        <td>A. Cegielski</td>
+        <td>2015-05-01</td>
+        <td>Journal of Optimization Theory and Applications</td>
+        <td>90</td>
       </tr>
     
       <tr>
@@ -1112,17 +1123,6 @@ hide:
         <td>1998-07-01</td>
         <td>Mammalian Genome</td>
         <td>90</td>
-      </tr>
-    
-      <tr>
-      <script>
-      // alert (89)
-      </script>
-        <td><a href="https://www.semanticscholar.org/paper/ae3e140d20c0a3582cd74ac2c724b1050668205b">General Method for Solving the Split Common Fixed Point Problem</a></td>
-        <td>A. Cegielski</td>
-        <td>2015-05-01</td>
-        <td>Journal of Optimization Theory and Applications</td>
-        <td>89</td>
       </tr>
     
       <tr>
@@ -1166,10 +1166,42 @@ hide:
   <tbody>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/dc1eff12b5626efed014650127b6ef5f5172d90f">A Koopman operator-based prediction algorithm and its application to COVID-19 pandemic and influenza cases.</a></td>
-        <td>Igor Mezić, Z. Drmač, Nelida Črnjarić, Senka Maćešić, M. Fonoberova, Ryan Mohr, Allan M Avila, Iva Manojlović, Aleksandr Andrejcuk</td>
-        <td>2024-03-09</td>
-        <td>Scientific reports</td>
+        <td><a href="https://www.semanticscholar.org/paper/5d83d4ab8d2cc5a3c99e2feabb071411a85d2761">Deep bilinear Koopman realization for dynamics modeling and predictive control</a></td>
+        <td>Meixi Wang, X. Lou, B. Cui</td>
+        <td>2024-03-15</td>
+        <td>International Journal of Machine Learning and Cybernetics</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/a1ae30a75837899772d9938abeabed72a5dd0ace">The Infopolitics of feeling: How race and disability are configured in Emotion Recognition Technology</a></td>
+        <td>Kerry McInerney, O. Keyes</td>
+        <td>2024-03-14</td>
+        <td>New Media &amp; Society</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/cdaefc5c58eef9baf908ef65fa810410363f1d64">Beyond trade statistics: how much do exports actually contribute to domestic value added?</a></td>
+        <td>Maria Llop</td>
+        <td>2024-03-13</td>
+        <td>Humanities and Social Sciences Communications</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/169c1192ebc64fd1c975b5b8f48b562cf4576207">Determination of dynamic characteristics of lattice structure using dynamic mode decomposition</a></td>
+        <td>Nary Savoeurn, Chettapong Janya-anurak, V. Uthaisangsuk</td>
+        <td>2024-03-13</td>
+        <td>Journal of Applied Mechanics</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/869bcb3dafc7188b38d5c2c614b4cb2f9fdd6d71">Model-Based Linear Control of Nonlinear Pneumatic Soft Bending Actuators</a></td>
+        <td>Jiajin Wang, Baoguo Xu, Jian-yang Lai, Xin Wang, Ye Lu, Cong Hu, Huijun Li, Aiguo Song</td>
+        <td>2024-03-07</td>
+        <td>Smart Materials and Structures</td>
         <td>0</td>
       </tr>
     
@@ -1206,6 +1238,14 @@ hide:
       </tr>
     
       <tr>
+        <td><a href="https://www.semanticscholar.org/paper/7b13153162fb6627d232cd11512a5b8875287fd9">Koopman Operator theory applied to Lambert’s problem with a spectral behavior analysis</a></td>
+        <td>Julia Pasiecznik, Simone Servadio, Richard Linares</td>
+        <td>2024-03-01</td>
+        <td>Acta Astronautica</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
         <td><a href="https://www.semanticscholar.org/paper/1a279d90354755f741f45618a5673e220a715fc7">Robust Three-Stage Dynamic Mode Decomposition for Analysis of Power System Oscillations</a></td>
         <td>R. D. Rodriguez-Soto, E. Barocio, F. Gonzalez-Longatt, F. R. Segundo Sevilla, P. Korba</td>
         <td>2024-03-01</td>
@@ -1218,6 +1258,14 @@ hide:
         <td>Jimiao Zhang, Jie Li</td>
         <td>2024-03-01</td>
         <td>IEEE Transactions on Smart Grid</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/0f9b984c9aadd0f47c91f89041ca45fbfd9d6642">Taxonomical and distributional considerations for the Artibeus species (Chiroptera: Phyllostomidae) from the Tres Marias Islands, Mexico</a></td>
+        <td>Issachar L. López-Cuamatzi, M. MacSwiney G., Sandra Milena Ospina-Garcés, Jorge Ortega</td>
+        <td>2024-03-01</td>
+        <td>Barbastella</td>
         <td>0</td>
       </tr>
     
@@ -1246,16 +1294,16 @@ hide:
       </tr>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/cb1cf69a67974f03796db6657e21635ea6832285">Machine Learning based Prediction of Ditching Loads</a></td>
-        <td>Henning Schwarz, Micha Überrück, J. Zemke, Thomas Rung</td>
+        <td><a href="https://www.semanticscholar.org/paper/a9b0c07ab4fc0a5a345be123a46ca00aa0118277">Kolmogorov n-Widths for Multitask Physics-Informed Machine Learning (PIML) Methods: Towards Robust Metrics</a></td>
+        <td>Michael Penwarden, H. Owhadi, Robert M. Kirby</td>
         <td>2024-02-16</td>
         <td>ArXiv</td>
         <td>0</td>
       </tr>
     
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/4e9fbef5c8daddbad96e50c3e1da8614d7772a75">Kolmogorov n-Widths for Multitask Physics-Informed Machine Learning (PIML) Methods: Towards Robust Metrics</a></td>
-        <td>Michael Penwarden, H. Owhadi, Robert M. Kirby</td>
+        <td><a href="https://www.semanticscholar.org/paper/9424d83c2b06971eff0b21cbc50f8f5ae9f4c727">Machine Learning based Prediction of Ditching Loads</a></td>
+        <td>Henning Schwarz, Micha Überrück, J. Zemke, Thomas Rung</td>
         <td>2024-02-16</td>
         <td>ArXiv</td>
         <td>0</td>
@@ -1295,7 +1343,7 @@ hide:
     
       <tr>
         <td><a href="https://www.semanticscholar.org/paper/a757bfa279b5f257089be2bb56ee7ccb76fa0791">Artificial neural network of thermal Buoyancy and Fourier flux impact on suction/injection‐based Darcy medium surface filled with hybrid and ternary nanoparticles</a></td>
-        <td>M. Dinesh Kumar, Chakravarthula Siva Krishnam Raju, Essam R. El-Zahar, Nehad Ali Shah, S. Yook</td>
+        <td>M. Dinesh Kumar, Chakravarthula Siva Krishnam Raju, Essam R. El-Zahar, N. A. Shah, S. Yook</td>
         <td>2024-02-11</td>
         <td>ZAMM - Journal of Applied Mathematics and Mechanics / Zeitschrift für Angewandte Mathematik und Mechanik</td>
         <td>0</td>
@@ -1322,7 +1370,7 @@ hide:
         <td>Robin Strässer, M. Schaller, K. Worthmann, J. Berberich, Frank Allgöwer</td>
         <td>2024-02-05</td>
         <td>ArXiv</td>
-        <td>0</td>
+        <td>1</td>
       </tr>
     
       <tr>
@@ -1338,6 +1386,14 @@ hide:
         <td>Chandan Kumar Sah, Rajpal Singh, J. Keshavan</td>
         <td>2024-02-01</td>
         <td>IEEE Robotics and Automation Letters</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/8bb33f43f19ea9ce297da9843ab6cc3f6e2f0c27">Constructing polynomial libraries for reservoir computing in nonlinear dynamical system forecasting.</a></td>
+        <td>Hu-Hu Ren, Yulong Bai, M. Fan, Lin Ding, Xiao-Xin Yue, Q. Yu</td>
+        <td>2024-02-01</td>
+        <td>Physical review. E</td>
         <td>0</td>
       </tr>
     
@@ -1450,7 +1506,7 @@ hide:
         <td>Ammara Islam, Zafar Mahmood, U. Khan</td>
         <td>2024-01-04</td>
         <td>Proceedings of the Institution of Mechanical Engineers, Part N: Journal of Nanomaterials, Nanoengineering and Nanosystems</td>
-        <td>0</td>
+        <td>1</td>
       </tr>
     
       <tr>
@@ -1490,7 +1546,7 @@ hide:
         <td>I. Gallos, Daniel Lehmberg, Felix Dietrich, Constantinos Siettos</td>
         <td>2024-01-01</td>
         <td>Chaos</td>
-        <td>0</td>
+        <td>1</td>
       </tr>
     
       <tr>
@@ -1506,7 +1562,7 @@ hide:
         <td>M. Abbas, Nargis Khan, M. S. Hashmi, Mostafa Inc</td>
         <td>2023-12-30</td>
         <td>Modern Physics Letters B</td>
-        <td>0</td>
+        <td>1</td>
       </tr>
     
       <tr>
@@ -1554,7 +1610,7 @@ hide:
         <td>Z. Drmač, Igor Mezi'c</td>
         <td>2023-12-26</td>
         <td>ArXiv</td>
-        <td>1</td>
+        <td>2</td>
       </tr>
     
       <tr>
@@ -1634,7 +1690,7 @@ hide:
         <td>Minghao Han, Kiwan Wong, Jacob Euler-Rolle, Lixian Zhang, Robert K. Katzschmann</td>
         <td>2023-12-18</td>
         <td>IEEE transactions on neural networks and learning systems</td>
-        <td>0</td>
+        <td>1</td>
       </tr>
     
       <tr>
@@ -1690,7 +1746,7 @@ hide:
         <td>Madeline Blischke, J. Hespanha</td>
         <td>2023-12-13</td>
         <td>2023 62nd IEEE Conference on Decision and Control (CDC)</td>
-        <td>1</td>
+        <td>2</td>
       </tr>
     
       <tr>
@@ -1706,7 +1762,7 @@ hide:
         <td>Daniel Felipe Ordoñez Apraez, Vladimir Kostic, Giulio Turrisi, P. Novelli, Carlos Mastalli, Claudio Semini, M. Pontil</td>
         <td>2023-12-12</td>
         <td>ArXiv</td>
-        <td>0</td>
+        <td>1</td>
       </tr>
     
       <tr>
@@ -1810,7 +1866,7 @@ hide:
         <td>Robin Strässer, M. Schaller, K. Worthmann, J. Berberich, Frank Allgöwer</td>
         <td>2023-12-03</td>
         <td>ArXiv</td>
-        <td>3</td>
+        <td>4</td>
       </tr>
     
       <tr>
@@ -1870,11 +1926,19 @@ hide:
       </tr>
     
       <tr>
+        <td><a href="https://www.semanticscholar.org/paper/f370d80e1f5c0b1f3cd524eed72906b5ec9a32ac">Analysis of Forchheimer Effect for Double Diffusive Convection With Dusty Fluids and MHD</a></td>
+        <td>S. Kavitha, N. Nalinakshi, P. A. Dinesh, Brijesh</td>
+        <td>2023-11-30</td>
+        <td>Journal of Mines, Metals and Fuels</td>
+        <td>0</td>
+      </tr>
+    
+      <tr>
         <td><a href="https://www.semanticscholar.org/paper/01a801bc028296db03dde8896a18d4f9bdde073a">The Multiverse of Dynamic Mode Decomposition Algorithms</a></td>
         <td>Matthew J. Colbrook</td>
         <td>2023-11-30</td>
         <td>ArXiv</td>
-        <td>2</td>
+        <td>3</td>
       </tr>
     
       <tr>
@@ -1901,70 +1965,6 @@ hide:
         <td>0</td>
       </tr>
     
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/ae6266dedfe1e8a38e2fd4dbe073aa09e40efb5f">Reparameterized multiobjective control of BCG immunotherapy</a></td>
-        <td>Rongting Yue, Abhishek Dutta</td>
-        <td>2023-11-27</td>
-        <td>Scientific Reports</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/cff1e971fb2d7c7376fa39eaa9101d9b7c8a2889">Decrypting Nonlinearity: Koopman Interpretation and Analysis of Cryptosystems</a></td>
-        <td>Robin Strässer, Sebastian Schlor, Frank Allgöwer</td>
-        <td>2023-11-21</td>
-        <td>ArXiv</td>
-        <td>1</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/4535e553630ef1fac717b881bf119ae4c9e2267c">Control-Oriented Modeling of a Soft Manipulator Using the Learning-Based Koopman Operator</a></td>
-        <td>Jie Chen, Yu Dang, Weiguang Huo, Ningbo Yu, Jianda Han</td>
-        <td>2023-11-21</td>
-        <td>2023 29th International Conference on Mechatronics and Machine Vision in Practice (M2VIP)</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/095b04b655cac467d391b39c59a16537f1304126">Koopman Learning with Episodic Memory</a></td>
-        <td>William T. Redman, Dean Huang, M. Fonoberova, Igor Mezi'c</td>
-        <td>2023-11-21</td>
-        <td>ArXiv</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/a7a90583096202bbf70a5d52ed12f1d9fa48a210">Closed-Form Information-Theoretic Roughness Measures for Mixture Densities</a></td>
-        <td>U. Hanebeck</td>
-        <td>2023-11-16</td>
-        <td>ArXiv</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/fc2228b051978c527a030647dd8216293715bfa3">K-BMPC: Derivative-based Koopman Bilinear Model Predictive Control For Tractor-trailer Trajectory Tracking With Unknown Parameters</a></td>
-        <td>Zehao Wang, Han Zhang, Jingchuan Wang</td>
-        <td>2023-11-15</td>
-        <td>ArXiv</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/afc039404fd3fbf23b953aeca1fde280b9111fa6">Data-Driven Modeling for Pneumatic Muscle Using Koopman-Based Kalman Filter</a></td>
-        <td>Yu Cao, Mengshi Zhang, Bo Yang, Jian Huang</td>
-        <td>2023-11-09</td>
-        <td>2023 IEEE International Conference on Development and Learning (ICDL)</td>
-        <td>0</td>
-      </tr>
-    
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/1324571d81965e4b9400f14cf3dbbd7a5ec1d2be">Basis functions nonlinear data-enabled predictive control: Consistent and computationally efficient formulations</a></td>
-        <td>Mircea Lazar</td>
-        <td>2023-11-09</td>
-        <td>ArXiv</td>
-        <td>0</td>
-      </tr>
-    
   </tbody>
   </table>
   </p>
@@ -1974,14 +1974,14 @@ hide:
 <script>
   var trace1 = {
   x: ['1927', '1929', '1930', '1931', '1932', '1933', '1938', '1942', '1951', '1953', '1954', '1955', '1958', '1959', '1962', '1963', '1965', '1966', '1967', '1968', '1969', '1970', '1971', '1972', '1973', '1974', '1975', '1977', '1979', '1980', '1981', '1982', '1983', '1984', '1986', '1987', '1988', '1989', '1990', '1991', '1992', '1993', '1994', '1995', '1996', '1997', '1998', '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
-  y: [1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1, 1, 2, 1, 1, 2, 1, 3, 2, 1, 1, 1, 2, 1, 3, 2, 1, 3, 1, 2, 1, 1, 2, 3, 2, 5, 2, 4, 3, 11, 3, 6, 8, 3, 6, 7, 4, 5, 10, 11, 11, 17, 17, 17, 20, 18, 18, 24, 20, 28, 31, 45, 47, 72, 65, 81, 95, 93, 56, 26, 1],
+  y: [1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1, 1, 2, 1, 1, 2, 1, 3, 2, 1, 1, 1, 2, 1, 3, 2, 1, 3, 1, 2, 1, 1, 2, 3, 2, 5, 2, 4, 3, 11, 3, 6, 8, 3, 6, 7, 4, 5, 10, 11, 11, 17, 17, 17, 20, 18, 18, 24, 20, 28, 31, 45, 47, 72, 65, 81, 95, 92, 58, 25, 1],
   name: 'Num of articles',
   type: 'scatter'
   };
 
   var trace2 = {
     x: ['1927', '1929', '1930', '1931', '1932', '1933', '1938', '1942', '1951', '1953', '1954', '1955', '1958', '1959', '1962', '1963', '1965', '1966', '1967', '1968', '1969', '1970', '1971', '1972', '1973', '1974', '1975', '1977', '1979', '1980', '1981', '1982', '1983', '1984', '1986', '1987', '1988', '1989', '1990', '1991', '1992', '1993', '1994', '1995', '1996', '1997', '1998', '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
-    y: [8, 27, 187, 1563, 5, 11, 10, 18, 27, 26, 39, 19, 9, 51, 80, 22, 30, 74, 12, 88, 232, 19, 11, 58, 38, 60, 37, 188, 31, 252, 11, 33, 45, 42, 53, 51, 230, 157, 19, 80, 49, 278, 73, 468, 453, 108, 485, 810, 144, 255, 547, 617, 337, 2364, 806, 650, 772, 668, 1947, 746, 1830, 1652, 2732, 2142, 3033, 5015, 2326, 2302, 2738, 2103, 792, 238, 6],
+    y: [8, 27, 188, 1575, 5, 11, 10, 18, 27, 26, 39, 19, 9, 50, 80, 22, 30, 74, 12, 88, 232, 19, 11, 58, 38, 60, 37, 188, 31, 252, 11, 33, 45, 43, 53, 51, 231, 157, 19, 80, 49, 278, 73, 468, 453, 109, 485, 811, 144, 255, 548, 617, 337, 2366, 809, 650, 772, 669, 1951, 746, 1834, 1653, 2743, 2147, 3043, 5045, 2351, 2317, 2751, 2118, 820, 237, 6],
     name: 'Num of citations',
     yaxis: 'y2',
     type: 'scatter'

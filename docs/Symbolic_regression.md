@@ -10,7 +10,7 @@ hide:
 
 <body>
   <p>
-  <i>This page was last updated on 2024-03-11 08:47:36 UTC</i>
+  <i>This page was last updated on 2024-03-19 09:22:54 UTC</i>
   </p>
 
   <p>
@@ -60,13 +60,13 @@ hide:
     
       <tr>
       <script>
-      // alert (128)
+      // alert (131)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/1f7ba0832203ab808fc8d6706836c591754b79da">On Neural Differential Equations</a></td>
         <td>Patrick Kidger</td>
         <td>2022-02-04</td>
         <td>ArXiv</td>
-        <td>128</td>
+        <td>131</td>
       </tr>
     
       <tr>
@@ -93,13 +93,13 @@ hide:
     
       <tr>
       <script>
-      // alert (69)
+      // alert (70)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/7f701c60d0b73af3ad2b70c6303e0cac18fc47a4">Take Their Word for It: The Symbolic Role of Linguistic Style Matches in User Communities</a></td>
         <td>S. Ludwig, K. Ruyter, D. Mahr, Martin Wetzels, E. Brüggen, Tom de Ruyck</td>
         <td>2014-12-01</td>
         <td>MIS Q.</td>
-        <td>69</td>
+        <td>70</td>
       </tr>
     
       <tr>
@@ -1426,7 +1426,7 @@ hide:
         <td>Patrick Kidger</td>
         <td>2022-02-04</td>
         <td>ArXiv</td>
-        <td>128</td>
+        <td>131</td>
       </tr>
     
       <tr>
@@ -1698,7 +1698,7 @@ hide:
         <td>S. Ludwig, K. Ruyter, D. Mahr, Martin Wetzels, E. Brüggen, Tom de Ruyck</td>
         <td>2014-12-01</td>
         <td>MIS Q.</td>
-        <td>69</td>
+        <td>70</td>
       </tr>
     
       <tr>
@@ -1981,7 +1981,7 @@ hide:
 
   var trace2 = {
     x: ['1983', '1996', '1999', '2001', '2002', '2005', '2006', '2008', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
-    y: [7, 10, 6, 283, 111, 14, 11, 0, 58, 62, 63, 150, 25, 171, 160, 42, 10, 17, 68, 214, 14, 0],
+    y: [7, 10, 6, 283, 111, 14, 11, 0, 58, 62, 63, 151, 25, 171, 160, 42, 10, 17, 68, 217, 14, 0],
     name: 'Num of citations',
     yaxis: 'y2',
     type: 'scatter'
