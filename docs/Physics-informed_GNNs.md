@@ -10,7 +10,7 @@ hide:
 
 <body>
   <p>
-  <i>This page was last updated on 2024-03-19 12:32:41 UTC</i>
+  <i>This page was last updated on 2024-03-19 15:02:33 UTC</i>
   </p>
 
   <p>
@@ -49,13 +49,13 @@ hide:
     
       <tr>
       <script>
-      // alert (753)
+      // alert (754)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/c529f5b08675f787cdcc094ee495239592339f82">Learning to Simulate Complex Physics with Graph Networks</a></td>
         <td>Alvaro Sanchez-Gonzalez, Jonathan Godwin, T. Pfaff, Rex Ying, J. Leskovec, P. Battaglia</td>
         <td>2020-02-21</td>
         <td>ArXiv</td>
-        <td>753</td>
+        <td>754</td>
       </tr>
     
       <tr>
@@ -71,13 +71,13 @@ hide:
     
       <tr>
       <script>
-      // alert (288)
+      // alert (289)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/d40531ed81859ce40f119c1bbc1d1cb50af498fd">Learning Particle Dynamics for Manipulating Rigid Bodies, Deformable Objects, and Fluids</a></td>
         <td>Yunzhu Li, Jiajun Wu, Russ Tedrake, J. Tenenbaum, A. Torralba</td>
         <td>2018-09-27</td>
         <td>ArXiv</td>
-        <td>288</td>
+        <td>289</td>
       </tr>
     
       <tr>
@@ -258,23 +258,23 @@ hide:
     
       <tr>
       <script>
-      // alert (64)
+      // alert (65)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/27c2c58bab12896406f6500889f274e356ab26c2">Bayesian Optimization Using Domain Knowledge on the ATRIAS Biped</a></td>
-        <td>Akshara Rai, Rika Antonova, Seungmoon Song, William C. Martin, H. Geyer, C. Atkeson</td>
-        <td>2017-09-18</td>
-        <td>2018 IEEE International Conference on Robotics and Automation (ICRA)</td>
-        <td>64</td>
+        <td><a href="https://www.semanticscholar.org/paper/08a82b3865ba09c457ad525449eb0c7691479574">Forces are not Enough: Benchmark and Critical Evaluation for Machine Learning Force Fields with Molecular Simulations</a></td>
+        <td>Xiang Fu, Zhenghao Wu, Wujie Wang, T. Xie, S. Keten, Rafael Gómez-Bombarelli, T. Jaakkola</td>
+        <td>2022-10-13</td>
+        <td>ArXiv</td>
+        <td>65</td>
       </tr>
     
       <tr>
       <script>
       // alert (64)
       </script>
-        <td><a href="https://www.semanticscholar.org/paper/08a82b3865ba09c457ad525449eb0c7691479574">Forces are not Enough: Benchmark and Critical Evaluation for Machine Learning Force Fields with Molecular Simulations</a></td>
-        <td>Xiang Fu, Zhenghao Wu, Wujie Wang, T. Xie, S. Keten, Rafael Gómez-Bombarelli, T. Jaakkola</td>
-        <td>2022-10-13</td>
-        <td>ArXiv</td>
+        <td><a href="https://www.semanticscholar.org/paper/27c2c58bab12896406f6500889f274e356ab26c2">Bayesian Optimization Using Domain Knowledge on the ATRIAS Biped</a></td>
+        <td>Akshara Rai, Rika Antonova, Seungmoon Song, William C. Martin, H. Geyer, C. Atkeson</td>
+        <td>2017-09-18</td>
+        <td>2018 IEEE International Conference on Robotics and Automation (ICRA)</td>
         <td>64</td>
       </tr>
     
@@ -335,13 +335,13 @@ hide:
     
       <tr>
       <script>
-      // alert (53)
+      // alert (54)
       </script>
         <td><a href="https://www.semanticscholar.org/paper/aab037c6e8ea13f3d307fbf45605d9b6a23351b5">Reinforcement learning for non-prehensile manipulation: Transfer from simulation to physical system</a></td>
         <td>Kendall Lowrey, S. Kolev, Jeremy Dao, A. Rajeswaran, E. Todorov</td>
         <td>2018-03-28</td>
         <td>2018 IEEE International Conference on Simulation, Modeling, and Programming for Autonomous Robots (SIMPAR)</td>
-        <td>53</td>
+        <td>54</td>
       </tr>
     
       <tr>
@@ -1250,7 +1250,7 @@ hide:
         <td>Yuhang Hu, Jiong Lin, Hod Lipson</td>
         <td>2023-11-20</td>
         <td>ArXiv</td>
-        <td>0</td>
+        <td>1</td>
       </tr>
     
       <tr>
@@ -1354,7 +1354,7 @@ hide:
         <td>Jiang-Zhou Peng, Yue Hua, Yu-Bai Li, Zhi-Hua Chen, Wei-Tao Wu, N. Aubry</td>
         <td>2023-08-01</td>
         <td>Physics of Fluids</td>
-        <td>5</td>
+        <td>6</td>
       </tr>
     
       <tr>
@@ -1538,7 +1538,7 @@ hide:
         <td>Xiang Fu, Zhenghao Wu, Wujie Wang, T. Xie, S. Keten, Rafael Gómez-Bombarelli, T. Jaakkola</td>
         <td>2022-10-13</td>
         <td>ArXiv</td>
-        <td>64</td>
+        <td>65</td>
       </tr>
     
       <tr>
@@ -1981,7 +1981,7 @@ hide:
 
   var trace2 = {
     x: ['1992', '1995', '1996', '1998', '2001', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024'],
-    y: [0, 16, 44, 8, 264, 59, 18, 22, 106, 231, 194, 77, 26, 857, 100, 172, 161, 502, 633, 505, 1156, 567, 380, 52, 0],
+    y: [0, 16, 44, 8, 264, 59, 18, 22, 106, 231, 194, 77, 26, 857, 100, 172, 161, 502, 635, 505, 1157, 567, 381, 54, 0],
     name: 'Num of citations',
     yaxis: 'y2',
     type: 'scatter'
