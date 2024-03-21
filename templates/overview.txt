@@ -10,13 +10,16 @@
   </p>
 
   <p>
-    This website is a repository of curated collection of references 
+    This website is a repository of curated collection of references, as well as, 
+    most recent and most popular publications 
     on differentiable and learned simulator algorithms for developing digital 
     twins with applications in drug discovery and development. 
     Here we provide a list of resources with links to the associated manuscripts 
     or websites.
+  </p>
 
-    For further information about our group see [this website](https://bio.mx/research-teams/artificial-intelligence/team-vpe/).
+  <p>
+    For further information about our group see <a href="https://bio.mx/research-teams/artificial-intelligence/team-vpe/">our homepage</a>.
   </p>
 
   <p>
@@ -24,6 +27,10 @@
     sub-topics covered in the tabs, serving as a convenient starting 
     point for seeking a general understanding or quick reference 
     before delving into specific details within individual tabs.
+    Please refer to the tabs 
+    <b> Physics-informed GNNs, Neural ODEs, Koopman Theory, 
+    Latent Space Simulator, PINNs and Symbolic regression </b>
+    for detailed information.
   </p>
 
   <p>
