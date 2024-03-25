@@ -18,13 +18,13 @@ repo_name: LiteratureSurvey
 repo_url: https://github.com/VirtualPatientEngine/literatureSurvey
 site_name: Literature Survey (Simulator)
 theme:
+  name: material
   custom_dir: overrides/
   features:
   - navigation.top
   - navigation.tabs
   icon:
     repo: fontawesome/brands/github
-  name: material
   palette:
   - accent: purple
     primary: red
