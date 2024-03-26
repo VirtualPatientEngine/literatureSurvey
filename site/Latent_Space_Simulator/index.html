@@ -594,7 +594,7 @@
 
 <body>
   <p>
-  <i>This page was last updated on 2024-03-26 13:20:41 UTC</i>
+  <i>This page was last updated on 2024-03-26 13:33:19 UTC</i>
   </p>
 
   <p>
@@ -1934,8 +1934,16 @@
       </tr>
 
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/a8b89c5943d0ac8a9a470ab01c8c553433c888f3">Enhancing xURLLC with RSMA-Assisted Massive-MIMO Networks: Performance Analysis and Optimization</a></td>
-        <td>Yuang Chen, Hancheng Lu, Chenwu Zhang, Yansha Deng, A. Nallanathan</td>
+        <td><a href="https://www.semanticscholar.org/paper/4f1a59bec54c2bf66cd40b9b9cae486260c4862d">Think2Drive: Efficient Reinforcement Learning by Thinking in Latent World Model for Quasi-Realistic Autonomous Driving (in CARLA-v2)</a></td>
+        <td>Qifeng Li, Xiaosong Jia, Shaobo Wang, Junchi Yan</td>
+        <td>2024-02-26</td>
+        <td>ArXiv</td>
+        <td>2</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/798b2f3ea41127ba5698a3f08af96f8450a7773b">A VAE-based Framework for Learning Multi-Level Neural Granger-Causal Connectivity</a></td>
+        <td>Jiahe Lin, Huitian Lei, G. Michailidis</td>
         <td>2024-02-25</td>
         <td>ArXiv</td>
         <td>0</td>
@@ -1946,6 +1954,14 @@
         <td>Hanzhen Jiang, Yingdong Yan</td>
         <td>2024-02-24</td>
         <td>Scalable Comput. Pract. Exp.</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/30b7fb99b7997241a6a54ed96f539ae2665209de">Smooth and Sparse Latent Dynamics in Operator Learning with Jerk Regularization</a></td>
+        <td>Xiaoyu Xie, S. Mowlavi, M. Benosman</td>
+        <td>2024-02-23</td>
+        <td>ArXiv</td>
         <td>0</td>
       </tr>
 
@@ -2154,6 +2170,14 @@
         <td>C. Ghnatios, Sebastian Rodriguez, Jerome Tomezyk, Yves Dupuis, Joel Mouterde, Joaquim Da Silva, Francisco Chinesta</td>
         <td>2024-02-03</td>
         <td>Adv. Model. Simul. Eng. Sci.</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/929396e4c43d948f52310da3f81520968eadee80">Co-orchestration of Multiple Instruments to Uncover Structure-Property Relationships in Combinatorial Libraries</a></td>
+        <td>B. Slautin, Utkarsh Pratiush, Ilia N. Ivanov, Yongtao Liu, Rohit Pant, Xiaohang Zhang, Ichiro Takeuchi, M. Ziatdinov, Sergei V. Kalinin</td>
+        <td>2024-02-03</td>
+        <td>ArXiv</td>
         <td>0</td>
       </tr>
 
@@ -2525,30 +2549,6 @@
         <td>0</td>
       </tr>
 
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/509237c03600a88f1747768a1f0b84a431fe6b23">Uncorrelated Sparse Autoencoder With Long Short-Term Memory for State-of-Charge Estimations in Lithium-Ion Battery Cells</a></td>
-        <td>Mayuresh Savargaonkar, Isaiah Oyewole, Abdallah A. Chehade, A. Hussein</td>
-        <td>2024-01-01</td>
-        <td>IEEE Transactions on Automation Science and Engineering</td>
-        <td>4</td>
-      </tr>
-
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/501f860fa2acf42bfb5d7490521c7c73c8afb7b8">VLEO Satellite Constellation Design for Regional Aviation and Marine Coverage</a></td>
-        <td>Guoquan Chen, Shaohua Wu, Yajing Deng, J. Jiao, Qinyu Zhang</td>
-        <td>2024-01-01</td>
-        <td>IEEE Transactions on Network Science and Engineering</td>
-        <td>0</td>
-      </tr>
-
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/2b74f6f1210b66d4bd2d206d5e40563fae3463ff">TORR: A Lightweight Blockchain for Decentralized Federated Learning</a></td>
-        <td>Xuyang Ma, Du Xu</td>
-        <td>2024-01-01</td>
-        <td>IEEE Internet of Things Journal</td>
-        <td>1</td>
-      </tr>
-
   </tbody>
   </table>
   </p>
@@ -2652,7 +2652,8 @@
   new DataTable('#table1', {
     order: [[5, 'desc']],
     "columnDefs": [
-        {"className": "dt-center", "targets": "_all"}
+        {"className": "dt-center", "targets": "_all"},
+        { width: '30%', targets: 0 }
       ],
     pageLength: 5,
     layout: {
@@ -2664,7 +2665,8 @@
   new DataTable('#table2', {
     order: [[3, 'desc']],
     "columnDefs": [
-        {"className": "dt-center", "targets": "_all"}
+        {"className": "dt-center", "targets": "_all"},
+        { width: '30%', targets: 0 }
       ],
     pageLength: 5,
     layout: {
@@ -2674,9 +2676,41 @@
     }
   });
   new DataTable('#table3', {
+    initComplete: function () {
+        this.api()
+            .columns()
+            .every(function () {
+                let column = this;
+ 
+                // Create select element
+                let select = document.createElement('select');
+                select.add(new Option(''));
+                column.footer().replaceChildren(select);
+ 
+                // Apply listener for user change in value
+                select.addEventListener('change', function () {
+                    column
+                        .search(select.value, {exact: true})
+                        .draw();
+                });
+
+                // keep the width of the select element same as the column
+                select.style.width = '100%';
+ 
+                // Add list of options
+                column
+                    .data()
+                    .unique()
+                    .sort()
+                    .each(function (d, j) {
+                        select.add(new Option(d));
+                    });
+            });
+    },
     // order: [[3, 'desc']],
     "columnDefs": [
-        {"className": "dt-center", "targets": "_all"}
+        {"className": "dt-center", "targets": "_all"},
+        { width: '25%', targets: 1 }
       ],
     pageLength: 5,
     layout: {
@@ -2686,9 +2720,41 @@
     }
   });
   new DataTable('#table4', {
+    initComplete: function () {
+        this.api()
+            .columns()
+            .every(function () {
+                let column = this;
+ 
+                // Create select element
+                let select = document.createElement('select');
+                select.add(new Option(''));
+                column.footer().replaceChildren(select);
+ 
+                // Apply listener for user change in value
+                select.addEventListener('change', function () {
+                    column
+                        .search(select.value, {exact: true})
+                        .draw();
+                });
+
+                // keep the width of the select element same as the column
+                select.style.width = '100%';
+ 
+                // Add list of options
+                column
+                    .data()
+                    .unique()
+                    .sort()
+                    .each(function (d, j) {
+                        select.add(new Option(d));
+                    });
+            });
+    },
     // order: [[3, 'desc']],
     "columnDefs": [
-        {"className": "dt-center", "targets": "_all"}
+        {"className": "dt-center", "targets": "_all"},
+        { width: '30%', targets: 0 }
       ],
     pageLength: 5,
     layout: {

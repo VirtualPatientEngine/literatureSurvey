@@ -594,7 +594,7 @@
 
 <body>
   <p>
-  <i>This page was last updated on 2024-03-26 13:20:37 UTC</i>
+  <i>This page was last updated on 2024-03-26 13:33:15 UTC</i>
   </p>
 
   <p>
@@ -2126,18 +2126,18 @@
       </tr>
 
       <tr>
-        <td><a href="https://www.semanticscholar.org/paper/374f7b50c1d3188aaecd0b475518f69e17142b45">Understanding the training of PINNs for unsteady flow past a plunging foil through the lens of input subdomain level loss function gradients</a></td>
-        <td>Rahul Sundar, Didier Lucor, Sunetra Sarkar</td>
-        <td>2024-02-27</td>
-        <td>ArXiv</td>
-        <td>0</td>
-      </tr>
-
-      <tr>
         <td><a href="https://www.semanticscholar.org/paper/dd0c65d633de2c6e70fee64c6977b898c6a50c65">Physically Informed Deep Learning Technique for Estimating Blood Flow Parameters in Four-Vessel Junction after the Fontan Procedure</a></td>
         <td>Alexander Isaev, T. Dobroserdova, Alexander Danilov, Sergey Simakov</td>
         <td>2024-02-25</td>
         <td>Computation</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/707c5fd84bf8a3d4b7e5af2705b5adcb462022a1">PhyPlan: Compositional and Adaptive Physical Task Reasoning with Physics-Informed Skill Networks for Robot Manipulators</a></td>
+        <td>Harshil Vagadia, Mudit Chopra, Abhinav Barnawal, Tamajit Banerjee, Shreshth Tuli, Souvik Chakraborty, Rohan Paul</td>
+        <td>2024-02-24</td>
+        <td>ArXiv</td>
         <td>0</td>
       </tr>
 
@@ -2652,7 +2652,8 @@
   new DataTable('#table1', {
     order: [[5, 'desc']],
     "columnDefs": [
-        {"className": "dt-center", "targets": "_all"}
+        {"className": "dt-center", "targets": "_all"},
+        { width: '30%', targets: 0 }
       ],
     pageLength: 5,
     layout: {
@@ -2664,7 +2665,8 @@
   new DataTable('#table2', {
     order: [[3, 'desc']],
     "columnDefs": [
-        {"className": "dt-center", "targets": "_all"}
+        {"className": "dt-center", "targets": "_all"},
+        { width: '30%', targets: 0 }
       ],
     pageLength: 5,
     layout: {
@@ -2674,9 +2676,41 @@
     }
   });
   new DataTable('#table3', {
+    initComplete: function () {
+        this.api()
+            .columns()
+            .every(function () {
+                let column = this;
+ 
+                // Create select element
+                let select = document.createElement('select');
+                select.add(new Option(''));
+                column.footer().replaceChildren(select);
+ 
+                // Apply listener for user change in value
+                select.addEventListener('change', function () {
+                    column
+                        .search(select.value, {exact: true})
+                        .draw();
+                });
+
+                // keep the width of the select element same as the column
+                select.style.width = '100%';
+ 
+                // Add list of options
+                column
+                    .data()
+                    .unique()
+                    .sort()
+                    .each(function (d, j) {
+                        select.add(new Option(d));
+                    });
+            });
+    },
     // order: [[3, 'desc']],
     "columnDefs": [
-        {"className": "dt-center", "targets": "_all"}
+        {"className": "dt-center", "targets": "_all"},
+        { width: '25%', targets: 1 }
       ],
     pageLength: 5,
     layout: {
@@ -2686,9 +2720,41 @@
     }
   });
   new DataTable('#table4', {
+    initComplete: function () {
+        this.api()
+            .columns()
+            .every(function () {
+                let column = this;
+ 
+                // Create select element
+                let select = document.createElement('select');
+                select.add(new Option(''));
+                column.footer().replaceChildren(select);
+ 
+                // Apply listener for user change in value
+                select.addEventListener('change', function () {
+                    column
+                        .search(select.value, {exact: true})
+                        .draw();
+                });
+
+                // keep the width of the select element same as the column
+                select.style.width = '100%';
+ 
+                // Add list of options
+                column
+                    .data()
+                    .unique()
+                    .sort()
+                    .each(function (d, j) {
+                        select.add(new Option(d));
+                    });
+            });
+    },
     // order: [[3, 'desc']],
     "columnDefs": [
-        {"className": "dt-center", "targets": "_all"}
+        {"className": "dt-center", "targets": "_all"},
+        { width: '30%', targets: 0 }
       ],
     pageLength: 5,
     layout: {
