@@ -155,6 +155,9 @@ cython_debug/
 # .md files in the docs foldr of mkdocs
 docs/*.md
 
+# mkdocs.yml file
+mkdocs.yml
+
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
