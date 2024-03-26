@@ -594,7 +594,7 @@
 
 <body>
   <p>
-  <i>This page was last updated on 2024-03-26 13:12:14 UTC</i>
+  <i>This page was last updated on 2024-03-26 13:20:41 UTC</i>
   </p>
 
   <p>
@@ -1934,6 +1934,14 @@
       </tr>
 
       <tr>
+        <td><a href="https://www.semanticscholar.org/paper/a8b89c5943d0ac8a9a470ab01c8c553433c888f3">Enhancing xURLLC with RSMA-Assisted Massive-MIMO Networks: Performance Analysis and Optimization</a></td>
+        <td>Yuang Chen, Hancheng Lu, Chenwu Zhang, Yansha Deng, A. Nallanathan</td>
+        <td>2024-02-25</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
         <td><a href="https://www.semanticscholar.org/paper/78b968af546e846d26bd851a619c438a70c6ce68">Sensor based Dance Coherent Action Generation Model using Deep Learning Framework</a></td>
         <td>Hanzhen Jiang, Yingdong Yan</td>
         <td>2024-02-24</td>
@@ -2541,14 +2549,6 @@
         <td>1</td>
       </tr>
 
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/20c2cb075536853f0f09c791f56cfacf4a735415">Enabling In-Network Caching in Traditional IP Networks: Selective Router Upgrades and Cooperative Cache Strategies</a></td>
-        <td>Jiangping Han, Kaiping Xue, Jian Li, Jing Zhang, Zixuan Huang, David S. L. Wei</td>
-        <td>2024-01-01</td>
-        <td>IEEE Transactions on Network Science and Engineering</td>
-        <td>0</td>
-      </tr>
-
   </tbody>
   </table>
   </p>
@@ -2652,8 +2652,7 @@
   new DataTable('#table1', {
     order: [[5, 'desc']],
     "columnDefs": [
-        {"className": "dt-center", "targets": "_all"},
-        { width: '30%', targets: 0 }
+        {"className": "dt-center", "targets": "_all"}
       ],
     pageLength: 5,
     layout: {
@@ -2665,8 +2664,7 @@
   new DataTable('#table2', {
     order: [[3, 'desc']],
     "columnDefs": [
-        {"className": "dt-center", "targets": "_all"},
-        { width: '30%', targets: 0 }
+        {"className": "dt-center", "targets": "_all"}
       ],
     pageLength: 5,
     layout: {
@@ -2676,41 +2674,9 @@
     }
   });
   new DataTable('#table3', {
-    initComplete: function () {
-        this.api()
-            .columns()
-            .every(function () {
-                let column = this;
- 
-                // Create select element
-                let select = document.createElement('select');
-                select.add(new Option(''));
-                column.footer().replaceChildren(select);
- 
-                // Apply listener for user change in value
-                select.addEventListener('change', function () {
-                    column
-                        .search(select.value, {exact: true})
-                        .draw();
-                });
-
-                // keep the width of the select element same as the column
-                select.style.width = '100%';
- 
-                // Add list of options
-                column
-                    .data()
-                    .unique()
-                    .sort()
-                    .each(function (d, j) {
-                        select.add(new Option(d));
-                    });
-            });
-    },
     // order: [[3, 'desc']],
     "columnDefs": [
-        {"className": "dt-center", "targets": "_all"},
-        { width: '25%', targets: 1 }
+        {"className": "dt-center", "targets": "_all"}
       ],
     pageLength: 5,
     layout: {
@@ -2720,41 +2686,9 @@
     }
   });
   new DataTable('#table4', {
-    initComplete: function () {
-        this.api()
-            .columns()
-            .every(function () {
-                let column = this;
- 
-                // Create select element
-                let select = document.createElement('select');
-                select.add(new Option(''));
-                column.footer().replaceChildren(select);
- 
-                // Apply listener for user change in value
-                select.addEventListener('change', function () {
-                    column
-                        .search(select.value, {exact: true})
-                        .draw();
-                });
-
-                // keep the width of the select element same as the column
-                select.style.width = '100%';
- 
-                // Add list of options
-                column
-                    .data()
-                    .unique()
-                    .sort()
-                    .each(function (d, j) {
-                        select.add(new Option(d));
-                    });
-            });
-    },
     // order: [[3, 'desc']],
     "columnDefs": [
-        {"className": "dt-center", "targets": "_all"},
-        { width: '30%', targets: 0 }
+        {"className": "dt-center", "targets": "_all"}
       ],
     pageLength: 5,
     layout: {

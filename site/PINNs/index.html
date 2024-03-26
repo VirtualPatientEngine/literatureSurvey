@@ -594,7 +594,7 @@
 
 <body>
   <p>
-  <i>This page was last updated on 2024-03-26 13:12:11 UTC</i>
+  <i>This page was last updated on 2024-03-26 13:20:37 UTC</i>
   </p>
 
   <p>
@@ -2118,6 +2118,22 @@
       </tr>
 
       <tr>
+        <td><a href="https://www.semanticscholar.org/paper/4fb21d89f9adc8a8299449e6d5e923b00164e444">Two-scale Neural Networks for Partial Differential Equations with Small Parameters</a></td>
+        <td>Zhuang Qiao, Chris Ziyi Yao, Zhongqiang Zhang, G. Karniadakis</td>
+        <td>2024-02-27</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/374f7b50c1d3188aaecd0b475518f69e17142b45">Understanding the training of PINNs for unsteady flow past a plunging foil through the lens of input subdomain level loss function gradients</a></td>
+        <td>Rahul Sundar, Didier Lucor, Sunetra Sarkar</td>
+        <td>2024-02-27</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
         <td><a href="https://www.semanticscholar.org/paper/dd0c65d633de2c6e70fee64c6977b898c6a50c65">Physically Informed Deep Learning Technique for Estimating Blood Flow Parameters in Four-Vessel Junction after the Fontan Procedure</a></td>
         <td>Alexander Isaev, T. Dobroserdova, Alexander Danilov, Sergey Simakov</td>
         <td>2024-02-25</td>
@@ -2382,6 +2398,14 @@
       </tr>
 
       <tr>
+        <td><a href="https://www.semanticscholar.org/paper/fba5fa38b057fe2d4771a42fa3b7834007eac2ca">Insights into Multiscale Complexity: from Macroscopic Patterns to Microscopic Simulations via Deep Learning</a></td>
+        <td>Jing Wang, Zheng Li, Pengyu Lai, Rui Wang, Di Yang, Dewu Yang, Hui Xu</td>
+        <td>2024-02-07</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
         <td><a href="https://www.semanticscholar.org/paper/a8f7336c4ed91ee5fa6c249154c9f9a5cd8834fd">Densely Multiplied Physics Informed Neural Networks</a></td>
         <td>Feilong Jiang, Xiaonan Hou, Min Xia</td>
         <td>2024-02-06</td>
@@ -2525,30 +2549,6 @@
         <td>0</td>
       </tr>
 
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/b2869fcc471f0bd96997b4fd2b089604cd6351d8">High-resolution reconstruction of turbulent flames from sparse data with physics-informed neural networks</a></td>
-        <td>Shiyu Liu, Haiou Wang, Jackie Chen, Kun Luo, Jianren Fan</td>
-        <td>2024-02-01</td>
-        <td>Combustion and Flame</td>
-        <td>0</td>
-      </tr>
-
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/9713d9204b74c13997201dee44ff15e47f265b6e">Impact of uncertainty in the physics-informed neural network on pressure prediction for water hammer in pressurized pipelines</a></td>
-        <td>Hai Huang, Pengcheng Guo, Jianguo Yan, Bo Zhang, Zhenkai Mao</td>
-        <td>2024-02-01</td>
-        <td>Journal of Physics: Conference Series</td>
-        <td>0</td>
-      </tr>
-
-      <tr>
-        <td><a href="https://www.semanticscholar.org/paper/8bc75aa7a8f2e02e20f40dc2b0113a14b3c2f6b9">Stable and accurate representation of species diffusion in multilayer composite electrodes using physics-informed neural networks</a></td>
-        <td>Qiang Wang, Pengfei Zhang, Wei Qiu, Luman Feng</td>
-        <td>2024-02-01</td>
-        <td>Journal of Energy Storage</td>
-        <td>0</td>
-      </tr>
-
   </tbody>
   </table>
   </p>
@@ -2652,8 +2652,7 @@
   new DataTable('#table1', {
     order: [[5, 'desc']],
     "columnDefs": [
-        {"className": "dt-center", "targets": "_all"},
-        { width: '30%', targets: 0 }
+        {"className": "dt-center", "targets": "_all"}
       ],
     pageLength: 5,
     layout: {
@@ -2665,8 +2664,7 @@
   new DataTable('#table2', {
     order: [[3, 'desc']],
     "columnDefs": [
-        {"className": "dt-center", "targets": "_all"},
-        { width: '30%', targets: 0 }
+        {"className": "dt-center", "targets": "_all"}
       ],
     pageLength: 5,
     layout: {
@@ -2676,41 +2674,9 @@
     }
   });
   new DataTable('#table3', {
-    initComplete: function () {
-        this.api()
-            .columns()
-            .every(function () {
-                let column = this;
- 
-                // Create select element
-                let select = document.createElement('select');
-                select.add(new Option(''));
-                column.footer().replaceChildren(select);
- 
-                // Apply listener for user change in value
-                select.addEventListener('change', function () {
-                    column
-                        .search(select.value, {exact: true})
-                        .draw();
-                });
-
-                // keep the width of the select element same as the column
-                select.style.width = '100%';
- 
-                // Add list of options
-                column
-                    .data()
-                    .unique()
-                    .sort()
-                    .each(function (d, j) {
-                        select.add(new Option(d));
-                    });
-            });
-    },
     // order: [[3, 'desc']],
     "columnDefs": [
-        {"className": "dt-center", "targets": "_all"},
-        { width: '25%', targets: 1 }
+        {"className": "dt-center", "targets": "_all"}
       ],
     pageLength: 5,
     layout: {
@@ -2720,41 +2686,9 @@
     }
   });
   new DataTable('#table4', {
-    initComplete: function () {
-        this.api()
-            .columns()
-            .every(function () {
-                let column = this;
- 
-                // Create select element
-                let select = document.createElement('select');
-                select.add(new Option(''));
-                column.footer().replaceChildren(select);
- 
-                // Apply listener for user change in value
-                select.addEventListener('change', function () {
-                    column
-                        .search(select.value, {exact: true})
-                        .draw();
-                });
-
-                // keep the width of the select element same as the column
-                select.style.width = '100%';
- 
-                // Add list of options
-                column
-                    .data()
-                    .unique()
-                    .sort()
-                    .each(function (d, j) {
-                        select.add(new Option(d));
-                    });
-            });
-    },
     // order: [[3, 'desc']],
     "columnDefs": [
-        {"className": "dt-center", "targets": "_all"},
-        { width: '30%', targets: 0 }
+        {"className": "dt-center", "targets": "_all"}
       ],
     pageLength: 5,
     layout: {

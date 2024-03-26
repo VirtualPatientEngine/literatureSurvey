@@ -21,10 +21,10 @@ table{
 }
 
 /* change the with of first column */
-/* thead tr th:first-child,
+thead tr th:first-child,
 tbody tr td:first-child {
   width: 400px;
   min-width: 300px;
   max-width: 400px;
   word-break: break-all;
-} */
+}
