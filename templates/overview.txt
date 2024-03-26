@@ -71,7 +71,7 @@
   <tbody>
     {% for article in most_cited_articles %}
       <tr>
-        <td><a href="{{article.url}}">{{article.title}}</a><br></td>
+        <td><a href="{{article.url}}">{{article.title}}</a></td>
         <td>{{ article.authors}}</td>
         <td>{{ article.publicationDate}}</td>
         <td>{{ article.journal}}</td>
@@ -97,7 +97,7 @@
   <tbody>
     {% for article in most_recent_articles %}
       <tr>
-        <td><a href="{{article.url}}">{{article.title}}</a><br></td>
+        <td><a href="{{article.url}}">{{article.title}}</a></td>
         <td>{{ article.authors}}</td>
         <td>{{ article.publicationDate}}</td>
         <td>{{ article.journal}}</td>
@@ -125,7 +125,7 @@
     {% for article in manually_curated_articles %}
       <tr>
         <td>{{ article.topic}}</td>
-        <td><a href="{{article.url}}">{{article.title}}</a><br></td>
+        <td><a href="{{article.url}}">{{article.title}}</a></td>
         <td>{{ article.authors}}</td>
         <td>{{ article.publicationDate}}</td>
         <td>{{ article.journal}}</td>
@@ -133,6 +133,16 @@
       </tr>
     {% endfor %}
   </tbody>
+  <tfoot>
+    <tr>
+        <th>Topic</th>
+        <th>Title</th>
+        <th>Authors</th>
+        <th>Publication Date</th>
+        <th>Journal/Conference</th>
+        <th>Citation count</th>
+    </tr>
+  </tfoot>
   </table>
   </p>
 
@@ -149,10 +159,16 @@
     {% for article in additional_reading %}
       <tr>
         <td>{{ article.topic}}</td>
-        <td><a href="{{article.link}}">{{article.name}}</a><br></td>
+        <td><a href="{{article.link}}">{{article.name}}</a></td>
       </tr>
     {% endfor %}
   </tbody>
+  <tfoot>
+    <tr>
+        <th>Topic</th>
+        <th>Title</th>
+    </tr>
+  </tfoot>
   </table>
   </p>
 
