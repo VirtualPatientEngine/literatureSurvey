@@ -612,7 +612,8 @@
   new DataTable('#table1', {
     order: [[5, 'desc']],
     "columnDefs": [
-        {"className": "dt-center", "targets": "_all"}
+        {"className": "dt-center", "targets": "_all"},
+        { width: '30%', targets: 0 }
       ],
     pageLength: 5,
     layout: {
@@ -624,7 +625,8 @@
   new DataTable('#table2', {
     order: [[3, 'desc']],
     "columnDefs": [
-        {"className": "dt-center", "targets": "_all"}
+        {"className": "dt-center", "targets": "_all"},
+        { width: '30%', targets: 0 }
       ],
     pageLength: 5,
     layout: {
@@ -634,9 +636,41 @@
     }
   });
   new DataTable('#table3', {
+    initComplete: function () {
+        this.api()
+            .columns()
+            .every(function () {
+                let column = this;
+ 
+                // Create select element
+                let select = document.createElement('select');
+                select.add(new Option(''));
+                column.footer().replaceChildren(select);
+ 
+                // Apply listener for user change in value
+                select.addEventListener('change', function () {
+                    column
+                        .search(select.value, {exact: true})
+                        .draw();
+                });
+
+                // keep the width of the select element same as the column
+                select.style.width = '100%';
+ 
+                // Add list of options
+                column
+                    .data()
+                    .unique()
+                    .sort()
+                    .each(function (d, j) {
+                        select.add(new Option(d));
+                    });
+            });
+    },
     // order: [[3, 'desc']],
     "columnDefs": [
-        {"className": "dt-center", "targets": "_all"}
+        {"className": "dt-center", "targets": "_all"},
+        { width: '25%', targets: 1 }
       ],
     pageLength: 5,
     layout: {
@@ -646,9 +680,41 @@
     }
   });
   new DataTable('#table4', {
+    initComplete: function () {
+        this.api()
+            .columns()
+            .every(function () {
+                let column = this;
+ 
+                // Create select element
+                let select = document.createElement('select');
+                select.add(new Option(''));
+                column.footer().replaceChildren(select);
+ 
+                // Apply listener for user change in value
+                select.addEventListener('change', function () {
+                    column
+                        .search(select.value, {exact: true})
+                        .draw();
+                });
+
+                // keep the width of the select element same as the column
+                select.style.width = '100%';
+ 
+                // Add list of options
+                column
+                    .data()
+                    .unique()
+                    .sort()
+                    .each(function (d, j) {
+                        select.add(new Option(d));
+                    });
+            });
+    },
     // order: [[3, 'desc']],
     "columnDefs": [
-        {"className": "dt-center", "targets": "_all"}
+        {"className": "dt-center", "targets": "_all"},
+        { width: '30%', targets: 0 }
       ],
     pageLength: 5,
     layout: {
