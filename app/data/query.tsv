@@ -1,4 +1,5 @@
 Title	Query
+Time-series forecasting	(time series forecasting)
 Symbolic regression	((symbolic regression) + dynamics)
 PINNs	("physics-informed neural computing") | ("physics-informed neural networks") | ("physics-informed deep learning")
 Latent Space Simulator	(VAMP) | (latent space simul*) | (decomposition of koopman operator) | (time-lagged autoencoder)
