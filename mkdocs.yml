@@ -4,10 +4,10 @@ nav:
 - Overview: index.md
 - Physics-informed GNNs: Physics-informed_GNNs.md
 - Neural ODEs: Neural_ODEs.md
-- Koopman Theory: Koopman_Theory.md
-- Latent Space Simulator: Latent_Space_Simulator.md
 - PINNs: PINNs.md
 - Symbolic regression: Symbolic_regression.md
+- Koopman Theory: Koopman_Theory.md
+- Latent Space Simulator: Latent_Space_Simulator.md
 - Diffusion models: Diffusion_models.md
 - Time-series forecasting: Time-series_forecasting.md
 plugins:
