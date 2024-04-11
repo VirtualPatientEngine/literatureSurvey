@@ -29,7 +29,7 @@
     before delving into specific details within individual tabs.
     Please refer to the tabs 
     <b> Physics-informed GNNs, Neural ODEs, Koopman Theory, 
-    Latent Space Simulator, PINNs and Symbolic regression </b>
+    Latent Space Simulator, PINNs, Symbolic regression, Diffusion models and Time-series forecasting </b>
     for detailed information.
   </p>
 
