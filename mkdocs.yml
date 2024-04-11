@@ -8,6 +8,8 @@ nav:
 - Latent Space Simulator: Latent_Space_Simulator.md
 - PINNs: PINNs.md
 - Symbolic regression: Symbolic_regression.md
+- Diffusion models: Diffusion_models.md
+- Time-series forecasting: Time-series_forecasting.md
 plugins:
 - mkdocstrings:
     paths:
