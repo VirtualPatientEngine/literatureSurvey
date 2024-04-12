@@ -1,0 +1,2842 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Diffusion_models/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
+    
+    
+<title>Literature Survey (VPE)</title>
+
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+  <!-- Add scripts that need to run before here -->
+  <!-- Add jquery script -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <!-- Add data table libraries -->
+  <script src="https://cdn.datatables.net/2.0.1/js/dataTables.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.0.1/css/dataTables.dataTables.css">
+  <!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-2.29.1.min.js'></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.0.1/css/buttons.dataTables.css">
+  <!-- Already specified in mkdocs.yml -->
+  <!-- <link rel="stylesheet" href="../docs/custom.css"> -->
+  <script src="https://cdn.datatables.net/buttons/3.0.1/js/dataTables.buttons.js"></script>
+  <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.dataTables.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+  <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.html5.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.print.min.js"></script>
+
+
+  <!-- 
+      
+     -->
+  <!-- Add scripts that need to run afterwards here -->
+
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Literature Survey (Simulator)" class="md-header__button md-logo" aria-label="Literature Survey (Simulator)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Literature Survey (Simulator)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Time-series forecasting
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/VirtualPatientEngine/literatureSurvey" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    LiteratureSurvey
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Overview
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Physics-informed_GNNs/" class="md-tabs__link">
+        
+  
+    
+  
+  Physics-informed GNNs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Neural_ODEs/" class="md-tabs__link">
+        
+  
+    
+  
+  Neural ODEs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../PINNs/" class="md-tabs__link">
+        
+  
+    
+  
+  PINNs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Symbolic_regression/" class="md-tabs__link">
+        
+  
+    
+  
+  Symbolic regression
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Koopman_Theory/" class="md-tabs__link">
+        
+  
+    
+  
+  Koopman Theory
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Latent_Space_Simulator/" class="md-tabs__link">
+        
+  
+    
+  
+  Latent Space Simulator
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Diffusion_models/" class="md-tabs__link">
+        
+  
+    
+  
+  Diffusion models
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Time-series forecasting
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Literature Survey (Simulator)" class="md-nav__button md-logo" aria-label="Literature Survey (Simulator)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Literature Survey (Simulator)
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/VirtualPatientEngine/literatureSurvey" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    LiteratureSurvey
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Physics-informed_GNNs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Physics-informed GNNs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Neural_ODEs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Neural ODEs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PINNs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PINNs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Symbolic_regression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Symbolic regression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Koopman_Theory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Koopman Theory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Latent_Space_Simulator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Latent Space Simulator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Diffusion_models/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Diffusion models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Time-series forecasting
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Time-series forecasting</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <p>
+  <i>This page was last updated on 2024-04-12 05:14:42 UTC</i>
+  </p>
+
+  <p>
+  <h3>Table of Contents</h3>
+    <a href="#search_query">1. Search Query</a><br>
+    <a href="#plot1">2. Time-series forecasting articles and citations over time</a><br>
+    <a href="#most_cited_articles">3. Most cited articles on Time-series forecasting</a><br>
+    <a href="#latest_articles">4. Latest articles on Time-series forecasting</a><br>
+  <p>
+
+  <p>
+  <h3 id="search_query">1. Search query</h3>
+  <i>("time series forecasting")</i>
+  </p>
+
+  <p>
+  <h3 id="plot1">2. Time-series forecasting articles and citations over time</h3>
+    <div id='myDiv1'>
+      <!-- Plotly chart will be drawn inside this DIV -->
+    </div>
+  </p>
+
+  <p>
+  <h3 id="most_cited_articles">3. Most cited articles on Time-series forecasting</h3>
+  <table id="table1" class="display" style="width:100%">
+  <thead>
+    <tr>
+        <th>Title</th>
+        <th>Authors</th>
+        <th>Publication Date</th>
+        <th>Journal/Conference</th>
+        <th>Citation count</th>
+    </tr>
+  </thead>
+  <tbody>
+
+      <tr>
+      <script>
+      // alert (3311)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/dfdcf7770885e3ee5f31182e91e602aabe5abdbd">Time series forecasting using a hybrid ARIMA and neural network model</a></td>
+        <td>G. Zhang</td>
+        <td>None</td>
+        <td>Neurocomputing</td>
+        <td>3311</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (1831)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/b99bc9f3445b34b3e2a1718c7b48aa9f9e566186">Interval type-2 fuzzy logic systems</a></td>
+        <td>Q. Liang, J. Mendel</td>
+        <td>2000-05-07</td>
+        <td>Ninth IEEE International Conference on Fuzzy Systems. FUZZ- IEEE 2000 (Cat. No.00CH37063)</td>
+        <td>1831</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (1809)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/35a9749df07a2ab97c51af4d260b095b00da7676">Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting</a></td>
+        <td>Haoyi Zhou, Shanghang Zhang, J. Peng, Shuai Zhang, Jianxin Li, Hui Xiong, Wan Zhang</td>
+        <td>2020-12-14</td>
+        <td>AAAI Conference on Artificial Intelligence</td>
+        <td>1809</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (1582)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/fdc35d07cdacf0da55ebdf719e464657000f333a">Financial time series forecasting using support vector machines</a></td>
+        <td>Kyoung-jae Kim</td>
+        <td>2003-09-01</td>
+        <td>Neurocomputing</td>
+        <td>1582</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (1266)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/5f6c1b0a780cbaae92f6169312b7441decc9d6ef">Modeling Long- and Short-Term Temporal Patterns with Deep Neural Networks</a></td>
+        <td>Guokun Lai, Wei-Cheng Chang, Yiming Yang, Hanxiao Liu</td>
+        <td>2017-03-21</td>
+        <td>The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval</td>
+        <td>1266</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (949)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/a244c47a1d4a8c2894b22807df8c7eec16cc110a">Support vector machine with adaptive parameters in financial time series forecasting</a></td>
+        <td>Lijuan Cao, F. Tay</td>
+        <td>2003-11-01</td>
+        <td>IEEE transactions on neural networks</td>
+        <td>949</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (934)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/36e30516683032634975c53e60f3737b6e35ff80">Enhancing the Locality and Breaking the Memory Bottleneck of Transformer on Time Series Forecasting</a></td>
+        <td>SHIYANG LI, Xiaoyong Jin, Yao Xuan, Xiyou Zhou, Wenhu Chen, Yu-Xiang Wang, Xifeng Yan</td>
+        <td>2019-06-29</td>
+        <td>ArXiv</td>
+        <td>934</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (904)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/839c4dd710ae7a234424aeda2f1423e0ce61bd5e">Deep Multi-View Spatial-Temporal Network for Taxi Demand Prediction</a></td>
+        <td>Huaxiu Yao, Fei Wu, Jintao Ke, Xianfeng Tang, Yitian Jia, Siyu Lu, Pinghua Gong, Jieping Ye, Z. Li</td>
+        <td>2018-02-23</td>
+        <td>AAAI Conference on Artificial Intelligence</td>
+        <td>904</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (830)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/a6b3aeb29b5b4034d84598424b1edfb29acf2a6c">Statistical and Machine Learning forecasting methods: Concerns and ways forward</a></td>
+        <td>Spyros Makridakis, Evangelos Spiliotis, Vassilios Assimakopoulos</td>
+        <td>2018-03-27</td>
+        <td>PLoS ONE</td>
+        <td>830</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (794)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/6a9d69fb35414b8461573df333dba800f254519f">Temporal Fusion Transformers for Interpretable Multi-horizon Time Series Forecasting</a></td>
+        <td>Bryan Lim, Sercan Ö. Arik, Nicolas Loeff, Tomas Pfister</td>
+        <td>2019-12-19</td>
+        <td>ArXiv</td>
+        <td>794</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (781)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/75e924bd79d27a23f3f93d9b1ab62a779505c8d2">Connecting the Dots: Multivariate Time Series Forecasting with Graph Neural Networks</a></td>
+        <td>Zonghan Wu, Shirui Pan, Guodong Long, Jing Jiang, Xiaojun Chang, Chengqi Zhang</td>
+        <td>2020-05-24</td>
+        <td>Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining</td>
+        <td>781</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (732)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/035d232d4292bccb1ec0e94aaea44eb4ac2cdf85">Time-Series Forecasting</a></td>
+        <td>C. Borkowf</td>
+        <td>2002-05-01</td>
+        <td>Technometrics</td>
+        <td>732</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (688)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/46439155e6638b2fdc2bcc0c71e4b49b88dd3498">A novel hybridization of artificial neural networks and ARIMA models for time series forecasting</a></td>
+        <td>M. Khashei, M. Bijari</td>
+        <td>2011-03-01</td>
+        <td>Appl. Soft Comput.</td>
+        <td>688</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (649)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/02d49b4dbaf8c093034918a76648fea53961753d">Time-series forecasting with deep learning: a survey</a></td>
+        <td>Bryan Lim, S. Zohren</td>
+        <td>2020-04-28</td>
+        <td>Philosophical Transactions of the Royal Society A</td>
+        <td>649</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (643)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/13c185b8c461034af2634f25dd8a85889e8ee135">N-BEATS: Neural basis expansion analysis for interpretable time series forecasting</a></td>
+        <td>Boris N. Oreshkin, Dmitri Carpov, Nicolas Chapados, Yoshua Bengio</td>
+        <td>2019-05-24</td>
+        <td>ArXiv</td>
+        <td>643</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (623)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/35a25052bf9fc89e0b28499236322c5786fc58a9">Sketch-based change detection: methods, evaluation, and applications</a></td>
+        <td>B. Krishnamurthy, S. Sen, Yin Zhang, Yan Chen</td>
+        <td>2003-10-27</td>
+        <td>ACM/SIGCOMM Internet Measurement Conference</td>
+        <td>623</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (614)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/1fffab513a3aecfb1d5f3e03c3d489e45d848584">Financial Time Series Forecasting with Deep Learning : A Systematic Literature Review: 2005-2019</a></td>
+        <td>Omer Berat Sezer, M. U. Gudelek, A. Ozbayoglu</td>
+        <td>2019-11-29</td>
+        <td>ArXiv</td>
+        <td>614</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (582)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/ee087bb8348f480ad1c18829aa2bdf6f42520931">Predicting Taxi–Passenger Demand Using Streaming Data</a></td>
+        <td>L. Moreira-Matias, João Gama, Michel Ferreira, João Mendes-Moreira, Luís Damas</td>
+        <td>2013-09-01</td>
+        <td>IEEE Transactions on Intelligent Transportation Systems</td>
+        <td>582</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (540)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/1025b16f5fe8c0cc44d6775b6caf0bf7ceba3118">Time series forecasting of petroleum production using deep LSTM recurrent networks</a></td>
+        <td>A. Sagheer, Mostafa Kotb</td>
+        <td>2019-01-05</td>
+        <td>Neurocomputing</td>
+        <td>540</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (522)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/3e707aa0d02b637336739e77f3b05e4fdebb4fba">Recurrent Neural Networks for Time Series Forecasting: Current Status and Future Directions</a></td>
+        <td>Hansika Hewamalage, C. Bergmeir, Kasun Bandara</td>
+        <td>2019-09-02</td>
+        <td>ArXiv</td>
+        <td>522</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (519)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/ae4df460a413f3b1d9a0dfa47917751af9db2597">Deep State Space Models for Time Series Forecasting</a></td>
+        <td>Syama Sundar Rangapuram, M. Seeger, Jan Gasthaus, Lorenzo Stella, Bernie Wang, Tim Januschowski</td>
+        <td>None</td>
+        <td>Neural Information Processing Systems</td>
+        <td>519</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (513)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/6f55f2234a002c69001df8ef9108cb86f1dfa506">Accurate Uncertainties for Deep Learning Using Calibrated Regression</a></td>
+        <td>Volodymyr Kuleshov, Nathan Fenner, Stefano Ermon</td>
+        <td>2018-07-01</td>
+        <td>ArXiv</td>
+        <td>513</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (512)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/a89edddf50e2bbdb61c2d844e5c3d2ee72404b5a">A review and comparison of strategies for multi-step ahead time series forecasting based on the NN5 forecasting competition</a></td>
+        <td>S. B. Taieb, Gianluca Bontempi, A. Atiya, A. Sorjamaa</td>
+        <td>2011-08-16</td>
+        <td>ArXiv</td>
+        <td>512</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (511)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/0658264c335017587a906ceb202da417b5521a92">An Introductory Study on Time Series Modeling and Forecasting</a></td>
+        <td>Ratnadip Adhikari, R. Agrawal</td>
+        <td>2013-01-29</td>
+        <td>ArXiv</td>
+        <td>511</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (499)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/c5b46a2c993afc29c32f85d1394adb6c7628fe69">Financial time series forecasting using independent component analysis and support vector regression</a></td>
+        <td>Chi-Jie Lu, Tian-Shyug Lee, Chih-Chou Chiu</td>
+        <td>2009-05-01</td>
+        <td>Decis. Support Syst.</td>
+        <td>499</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (498)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/5d1d53c671b20db116ba8c91c6446bb4757614da">Temporal pattern attention for multivariate time series forecasting</a></td>
+        <td>Shun-Yao Shih, Fan-Keng Sun, Hung-yi Lee</td>
+        <td>2018-09-12</td>
+        <td>Machine Learning</td>
+        <td>498</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (493)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/6ae5deae0167649c37117d11681a223a271923c3">Back propagation neural network with adaptive differential evolution algorithm for time series forecasting</a></td>
+        <td>Lin Wang, Yi Zeng, Tao Chen</td>
+        <td>2015-02-01</td>
+        <td>Expert Syst. Appl.</td>
+        <td>493</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (477)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/9a8d78c61fb3ad2f72bdcd1ab8795da5e4e60b77">Time series forecasting using a deep belief network with restricted Boltzmann machines</a></td>
+        <td>T. Kuremoto, Shinsuke Kimura, Kunikazu Kobayashi, M. Obayashi</td>
+        <td>2014-08-05</td>
+        <td>Neurocomputing</td>
+        <td>477</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (444)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/c12a9e385935108beb003a97c0e2859d8be5df52">Gaussian Process Priors with Uncertain Inputs - Application to Multiple-Step Ahead Time Series Forecasting</a></td>
+        <td>A. Girard, C. Rasmussen, J. Q. Candela, R. Murray-Smith</td>
+        <td>None</td>
+        <td>Neural Information Processing Systems</td>
+        <td>444</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (435)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/0cb7ebc80fadaa775c3ca64da8930384d910f00e">Predicting the Price of Bitcoin Using Machine Learning</a></td>
+        <td>S. McNally, Jason Roche, Simon Caton</td>
+        <td>2018-03-21</td>
+        <td>2018 26th Euromicro International Conference on Parallel, Distributed and Network-based Processing (PDP)</td>
+        <td>435</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (434)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/987a0c3eb495f712e3ec493631b9ff07a95b4113">Hybrid neural network models for hydrologic time series forecasting</a></td>
+        <td>Ashu Jain, Avadhnam Madhav Kumar</td>
+        <td>2007-03-01</td>
+        <td>Appl. Soft Comput.</td>
+        <td>434</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (430)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/99a39ea1b9bf4e3afc422329c1d4d77446f060b8">Machine Learning Strategies for Time Series Forecasting</a></td>
+        <td>Gianluca Bontempi, S. B. Taieb, Y. Borgne</td>
+        <td>None</td>
+        <td>European Business Intelligence Summer School</td>
+        <td>430</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (428)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/5407ac7cbc0e43244bfc01d297cb4f47b543581e">Time series forecasting using neural networks vs. Box- Jenkins methodology</a></td>
+        <td>Z. Tang, Chrys de Almeida, P. Fishwick</td>
+        <td>1991-11-01</td>
+        <td>Simulation</td>
+        <td>428</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (401)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/68575c7d2370be9efdd91b872fe66d6ac38d8e53">Time series forecasting of COVID-19 transmission in Canada using LSTM networks☆</a></td>
+        <td>Vinay Kumar Reddy Chimmula, Lei Zhang</td>
+        <td>2020-05-08</td>
+        <td>Chaos, Solitons, and Fractals</td>
+        <td>401</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (398)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/5be02c8db2078bb72224438df8003552e49b23a8">Are Transformers Effective for Time Series Forecasting?</a></td>
+        <td>Ailing Zeng, Mu-Hwa Chen, L. Zhang, Qiang Xu</td>
+        <td>2022-05-26</td>
+        <td>AAAI Conference on Artificial Intelligence</td>
+        <td>398</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (395)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/38ed2365b3feecf86d3442460e5b83438e14936f">Support vector machines experts for time series forecasting</a></td>
+        <td>Lijuan Cao</td>
+        <td>2003-04-01</td>
+        <td>Neurocomputing</td>
+        <td>395</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (392)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/121f46b8c1a4f837fc439a8cd74d8afc96d1d0c5">A CNN–LSTM model for gold price time-series forecasting</a></td>
+        <td>I. Livieris, Emmanuel G. Pintelas, P. Pintelas</td>
+        <td>2020-04-13</td>
+        <td>Neural Computing and Applications</td>
+        <td>392</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (382)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/e3cd07ad64750cb153de9fd17e8da8bdcd0481e0">Modified support vector machines in financial time series forecasting</a></td>
+        <td>F. Tay, Lijuan Cao</td>
+        <td>2002-10-01</td>
+        <td>Neurocomputing</td>
+        <td>382</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (366)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/2b0804d207bad27d0903f4d6d4d4212f17a8fb98">Feedforward Neural Nets as Models for Time Series Forecasting</a></td>
+        <td>Z. Tang, P. Fishwick</td>
+        <td>1993-11-01</td>
+        <td>INFORMS J. Comput.</td>
+        <td>366</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (349)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/0d83def5e8da5ec7dd3098f742da9767f3c5d408">Sensor faults: Detection methods and prevalence in real-world datasets</a></td>
+        <td>Abhishek B. Sharma, L. Golubchik, R. Govindan</td>
+        <td>2010-06-01</td>
+        <td>ACM Trans. Sens. Networks</td>
+        <td>349</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (347)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/19adf1880209a37e636947e900e67ba94cf90c65">Empirical Mode Decomposition based ensemble deep learning for load demand time series forecasting</a></td>
+        <td>Xueheng Qiu, Ye Ren, P. Suganthan, G. Amaratunga</td>
+        <td>2017-05-01</td>
+        <td>Appl. Soft Comput.</td>
+        <td>347</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (338)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/ab1dd7090c8a02ce5566dd80ad88e5d741a95e77">A simulation study of artificial neural networks for nonlinear time-series forecasting</a></td>
+        <td>G. Zhang, B. E. Patuwo, Michael Y. Hu</td>
+        <td>2001-04-01</td>
+        <td>Comput. Oper. Res.</td>
+        <td>338</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (334)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/c090ff3dec01e06f46735b7b9ab133a5db8c73c3">CoST: Contrastive Learning of Disentangled Seasonal-Trend Representations for Time Series Forecasting</a></td>
+        <td>Gerald Woo, Chenghao Liu, Doyen Sahoo, Akshat Kumar, Steven C. H. Hoi</td>
+        <td>2022-02-03</td>
+        <td>ArXiv</td>
+        <td>334</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (326)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/f5a28db512357b700b62fb655ef4a90864e2fe7e">Deep Transformer Models for Time Series Forecasting: The Influenza Prevalence Case</a></td>
+        <td>Neo Wu, Bradley Green, X. Ben, S. O’Banion</td>
+        <td>2020-01-23</td>
+        <td>ArXiv</td>
+        <td>326</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (319)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/061c5068678f881c77d3143c4859d51829a9cd77">Time-series forecasting using flexible neural tree model</a></td>
+        <td>Yuehui Chen, Bo Yang, Jiwen Dong, A. Abraham</td>
+        <td>2005-08-11</td>
+        <td>Inf. Sci.</td>
+        <td>319</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (313)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/23afea0a4d9f598e6e63846d0ee2c2a046528708">Deep and Confident Prediction for Time Series at Uber</a></td>
+        <td>Lingxue Zhu, N. Laptev</td>
+        <td>2017-09-06</td>
+        <td>2017 IEEE International Conference on Data Mining Workshops (ICDMW)</td>
+        <td>313</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (307)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/645054d31fa26b29bbfb0cf73b75f8906c359415">Spectral Temporal Graph Neural Network for Multivariate Time-series Forecasting</a></td>
+        <td>Defu Cao, Yujing Wang, Juanyong Duan, Ce Zhang, Xia Zhu, Congrui Huang, Yunhai Tong, Bixiong Xu, Jing Bai, Jie Tong, Qi Zhang</td>
+        <td>2020-11-06</td>
+        <td>ArXiv</td>
+        <td>307</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (306)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/c73b9b2393cc0136c9a7ad89e661107ba0ef73ca">Ensemble deep learning for regression and time series forecasting</a></td>
+        <td>Xueheng Qiu, Le Zhang, Ye Ren, P. Suganthan, G. Amaratunga</td>
+        <td>2014-01-20</td>
+        <td>2014 IEEE Symposium on Computational Intelligence in Ensemble Learning (CIEL)</td>
+        <td>306</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (300)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/a9fd532ec7cfa6e488d09b94b55a3d27644cf40d">PAQ: Time Series Forecasting for Approximate Query Answering in Sensor Networks</a></td>
+        <td>D. Tulone, S. Madden</td>
+        <td>2006-02-13</td>
+        <td>European Conference/Workshop on Wireless Sensor Networks</td>
+        <td>300</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (294)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/2cad8488b911f249117513600a2cedef635e9269">Ratio-based lengths of intervals to improve fuzzy time series forecasting</a></td>
+        <td>K. Huarng, Tiffany Hui-Kuang Yu</td>
+        <td>2006-04-01</td>
+        <td>IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics)</td>
+        <td>294</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (283)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/0600a8982abb5ce087efd6ded007c19e4bfcad5d">Deep Learning for Time Series Forecasting: A Survey</a></td>
+        <td>J. F. Torres, D. Hadjout, A. Sebaa, F. Martínez-Álvarez, A. T. Lora</td>
+        <td>2020-12-03</td>
+        <td>Big data</td>
+        <td>283</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (278)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/bd2f6b6131a13b2afd935db7172e12e64ff95f90">Time series forecasting using neural networks</a></td>
+        <td>Thomas Kolarik, Gottfried Rudorfer</td>
+        <td>1994-08-01</td>
+        <td>APL Conference</td>
+        <td>278</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (266)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/ef87c699a39477d5d1d3fe0970f2dace71eb4d02">Deep learning for stock prediction using numerical and textual information</a></td>
+        <td>Ryo Akita, Akira Yoshihara, Takashi Matsubara, K. Uehara</td>
+        <td>2016-06-26</td>
+        <td>2016 IEEE/ACIS 15th International Conference on Computer and Information Science (ICIS)</td>
+        <td>266</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (263)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/f79a319413b5c014e4a98bcd223e6f65e3f7901b">TS2Vec: Towards Universal Representation of Time Series</a></td>
+        <td>Zhihan Yue, Yujing Wang, Juanyong Duan, Tianmeng Yang, Congrui Huang, Yu Tong, Bixiong Xu</td>
+        <td>2021-06-19</td>
+        <td>AAAI Conference on Artificial Intelligence</td>
+        <td>263</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (261)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/edbca655624c6dc80a3a2410b11ac10cf625665d">Neural network ensemble operators for time series forecasting</a></td>
+        <td>N. Kourentzes, Devon K. Barrow, S. Crone</td>
+        <td>2014-07-01</td>
+        <td>Expert Syst. Appl.</td>
+        <td>261</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (257)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/0983a173c5c5332f053dcea9bf0b7737a090e46c">Think Globally, Act Locally: A Deep Neural Network Approach to High-Dimensional Time Series Forecasting</a></td>
+        <td>Rajat Sen, Hsiang-Fu Yu, I. Dhillon</td>
+        <td>2019-05-09</td>
+        <td>ArXiv</td>
+        <td>257</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (251)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/dad15404d372a23b4b3bf9a63b3124693df3c85e">A Time Series is Worth 64 Words: Long-term Forecasting with Transformers</a></td>
+        <td>Yuqi Nie, Nam H. Nguyen, Phanwadee Sinthong, J. Kalagnanam</td>
+        <td>2022-11-27</td>
+        <td>ArXiv</td>
+        <td>251</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (249)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/e6ed2eae6d810deb0dd00b2bdedf07252dedd51b">A Review of Deep Learning with Special Emphasis on Architectures, Applications and Recent Trends</a></td>
+        <td>Saptarshi Sengupta, Sanchita Basak, P. Saikia, Sayak Paul, Vasilios Tsalavoutis, Frederick Ditliac Atiah, V. Ravi, R. Peters</td>
+        <td>2019-02-26</td>
+        <td>ArXiv</td>
+        <td>249</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (249)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/5ca9bacd6c211e91ad0f92ff9d499c0f17ce19f4">Multivariate time series forecasting via attention-based encoder-decoder framework</a></td>
+        <td>Shengdong Du, Tianrui Li, Yan Yang, S. Horng</td>
+        <td>2020-05-01</td>
+        <td>Neurocomputing</td>
+        <td>249</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (242)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/40fe366c7e7089af2073b3580149aabc1ce59731">Energy Time Series Forecasting Based on Pattern Sequence Similarity</a></td>
+        <td>F. Martínez-Álvarez, A. T. Lora, José Cristóbal Riquelme Santos, J. Aguilar-Ruiz</td>
+        <td>2011-08-01</td>
+        <td>IEEE Transactions on Knowledge and Data Engineering</td>
+        <td>242</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (240)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/c9fdf68362aac37026000496d3b1416c2fe4ce54">Forecasting daily patient volumes in the emergency department.</a></td>
+        <td>Spencer S. Jones, Alun Thomas, R. S. Evans, Shari J. Welch, Peter J. Haug, Gregory L. Snow</td>
+        <td>2008-02-01</td>
+        <td>Academic emergency medicine : official journal of the Society for Academic Emergency Medicine</td>
+        <td>240</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (239)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/9c0e17238e7494de14ffbdf5e327ada7fe23d641">Improving artificial neural networks' performance in seasonal time series forecasting</a></td>
+        <td>C. Hamzaçebi</td>
+        <td>2008-12-01</td>
+        <td>Inf. Sci.</td>
+        <td>239</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (235)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/ef2ef82347236c9b51990448112447bb9bc37336">An investigation of model selection criteria for neural network time series forecasting</a></td>
+        <td>M. Qi, G. Zhang</td>
+        <td>2001-08-01</td>
+        <td>Eur. J. Oper. Res.</td>
+        <td>235</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (235)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/14c7b1c4ba952c990901053ad92a000b71c09c73">A New Method for Crude Oil Price Forecasting Based on Support Vector Machines</a></td>
+        <td>Wen Xie, Lean Yu, Shanying Xu, Shouyang Wang</td>
+        <td>2006-05-28</td>
+        <td>International Conference on Conceptual Structures</td>
+        <td>235</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (226)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/3ca1a767668076b3e8fab765cb3d69328e5a5827">A new hybrid artificial neural networks and fuzzy regression model for time series forecasting</a></td>
+        <td>M. Khashei, S. Hejazi, M. Bijari</td>
+        <td>2008-04-01</td>
+        <td>Fuzzy Sets Syst.</td>
+        <td>226</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (222)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/16f9bfac4a68cc99c38c06db2aa523bc6537db0d">Memory in Memory: A Predictive Neural Network for Learning Higher-Order Non-Stationarity From Spatiotemporal Dynamics</a></td>
+        <td>Yunbo Wang, Jianjin Zhang, Hongyu Zhu, Mingsheng Long, Jianmin Wang, Philip S. Yu</td>
+        <td>2018-11-19</td>
+        <td>2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</td>
+        <td>222</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (220)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/1b24780dbcf196fc336c6339f0045f46b5760661">Stock prediction using deep learning</a></td>
+        <td>Ritika Singh, Shashi Srivastava</td>
+        <td>2017-09-01</td>
+        <td>Multimedia Tools and Applications</td>
+        <td>220</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (219)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/c96265c14c802d084ba0dae72e401f6f02eeda54">Meta-learning for time series forecasting and forecast combination</a></td>
+        <td>Christiane Lemke, B. Gabrys</td>
+        <td>2010-06-01</td>
+        <td>Neurocomputing</td>
+        <td>219</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (212)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/253e4a80e424613de46c4d1f713bf41776dc4e73">An Experimental Review on Deep Learning Architectures for Time Series Forecasting</a></td>
+        <td>Pedro Lara-Benítez, Manuel Carranza-García, José Cristóbal Riquelme Santos</td>
+        <td>2020-11-24</td>
+        <td>International journal of neural systems</td>
+        <td>212</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (205)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/7216669574e8f5cdbd3834614adb0e1c3e9f2236">An Information Theoretic Approach of Designing Sparse Kernel Adaptive Filters</a></td>
+        <td>Weifeng Liu, Il Memming Park, J. Príncipe</td>
+        <td>2009-12-01</td>
+        <td>IEEE Transactions on Neural Networks</td>
+        <td>205</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (199)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/9fca5e6bd8a09c1f06faf28ee5a4857b03f5d86f">Experiences with predicting resource performance on-line in computational grid settings</a></td>
+        <td>R. Wolski</td>
+        <td>2003-03-01</td>
+        <td>SIGMETRICS Perform. Evaluation Rev.</td>
+        <td>199</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (198)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/4605d6feb7ae32f746e0589f17895b98ef65e0ba">Comparison of direct and iterative artificial neural network forecast approaches in multi-periodic time series forecasting</a></td>
+        <td>C. Hamzaçebi, D. Akay, Fevzi Kutay</td>
+        <td>2009-03-01</td>
+        <td>Expert Syst. Appl.</td>
+        <td>198</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (198)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/3a67c3db7d65c9f278d9c9a9ab42033c6e7c9acd">An investigation of neural networks for linear time-series forecasting</a></td>
+        <td>G. Zhang</td>
+        <td>2001-10-01</td>
+        <td>Comput. Oper. Res.</td>
+        <td>198</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (196)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/28870ec6960e8f384b924411a83a60cc88cecf51">A neural network ensemble method with jittered training data for time series forecasting</a></td>
+        <td>G. Zhang</td>
+        <td>2007-12-01</td>
+        <td>Inf. Sci.</td>
+        <td>196</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (193)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/b5ca8f4d9a460036eb9cd8d70bce5c6bb82f6569">Multiple-output modeling for multi-step-ahead time series forecasting</a></td>
+        <td>S. B. Taieb, A. Sorjamaa, Gianluca Bontempi</td>
+        <td>2010-06-01</td>
+        <td>Neurocomputing</td>
+        <td>193</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (189)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/9e39783012e535f36f12ce0008e1986c0e514261">Unsupervised Pre-training of a Deep LSTM-based Stacked Autoencoder for Multivariate Time Series Forecasting Problems</a></td>
+        <td>A. Sagheer, Mostafa Kotb</td>
+        <td>2019-12-01</td>
+        <td>Scientific Reports</td>
+        <td>189</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (187)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/bc8e7ab7d95899c70126f2f7ee601dd86eb1912e">Time series forecasting with neural network ensembles: an application for exchange rate prediction</a></td>
+        <td>G. Zhang, Victor L. Berardi</td>
+        <td>2001-06-01</td>
+        <td>Journal of the Operational Research Society</td>
+        <td>187</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (187)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/1a2957ffa44f56ee8cf903cf17bda517caa05aa4">Fuzzy time series forecasting based on fuzzy logical relationships and similarity measures</a></td>
+        <td>Shou-Hsiung Cheng, Shyi-Ming Chen, Wen-Shan Jian</td>
+        <td>2016-01-10</td>
+        <td>Inf. Sci.</td>
+        <td>187</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (182)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/7e5c683ccc71e9967617d5666d1e9133d30970b4">Clustering-Based Improvement of Nonparametric Functional Time Series Forecasting: Application to Intra-Day Household-Level Load Curves</a></td>
+        <td>M. Chaouch</td>
+        <td>None</td>
+        <td>IEEE Transactions on Smart Grid</td>
+        <td>182</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (182)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/326dd05e2a192616da0b76bb57383ba5f246987d">Pattern discovery of fuzzy time series for financial prediction</a></td>
+        <td>Chiung-Hon Leon Lee, Alan Liu, Wen-Sung Chen</td>
+        <td>2006-05-01</td>
+        <td>IEEE Transactions on Knowledge and Data Engineering</td>
+        <td>182</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (181)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/82ad06f662f903492043fa1a02de9a8418624501">Time series forecasting of Covid-19 using deep learning models: India-USA comparative case study</a></td>
+        <td>Sourabh Shastri, Kuljeet Singh, Sachin Kumar, Paramjit Kour, V. Mansotra</td>
+        <td>2020-08-20</td>
+        <td>Chaos, Solitons, and Fractals</td>
+        <td>181</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (177)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/f80f5c20412f0fa63b164ee3b6c83fc41bce5c42">Robust Approximation to Multiperiod Inventory Management</a></td>
+        <td>Chuen-Teck See, Melvyn Sim</td>
+        <td>2010-05-01</td>
+        <td>Oper. Res.</td>
+        <td>177</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (177)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/273b86196ff41438371b5c14d90ed5c13c056596">A review on methods and software for fuzzy cognitive maps</a></td>
+        <td>Gerardo Felix, Gonzalo Nápoles, R. Falcon, Wojciech Froelich, K. Vanhoof, Rafael Bello</td>
+        <td>2017-08-17</td>
+        <td>Artificial Intelligence Review</td>
+        <td>177</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (176)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/697e709ad3cf526b598df6b77a5061e8bdb92367">Short-Term Freeway Traffic Volume Forecasting Using Radial Basis Function Neural Network</a></td>
+        <td>B. Park, C. Messer, T. Urbanik</td>
+        <td>None</td>
+        <td>Transportation Research Record</td>
+        <td>176</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (175)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/ce2d071c2152f86f8f190bb30ea857f16050ae8d">On the predictability of infectious disease outbreaks</a></td>
+        <td>S. Scarpino, G. Petri</td>
+        <td>2017-03-21</td>
+        <td>Nature Communications</td>
+        <td>175</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (172)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/4f12a7b6e612134f8444a6bbf27831f9a96a19b1">Multivariable Gaussian Evolving Fuzzy Modeling System</a></td>
+        <td>A. Lemos, W. Caminhas, F. Gomide</td>
+        <td>2011-02-01</td>
+        <td>IEEE Transactions on Fuzzy Systems</td>
+        <td>172</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (171)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/43603f9df4e3a3e5b797a76bbb0dbe733ceaa88c">A new accuracy measure based on bounded relative error for time series forecasting</a></td>
+        <td>Chao Chen, J. Twycross, J. Garibaldi</td>
+        <td>2017-03-24</td>
+        <td>PLoS ONE</td>
+        <td>171</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (170)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/5df5df19deb61524c4a2003e716c80caf22f47f3">A Comparison between ARIMA, LSTM, and GRU for Time Series Forecasting</a></td>
+        <td>Peter T. Yamak, Li Yujian, P. K. Gadosey</td>
+        <td>2019-12-20</td>
+        <td>Proceedings of the 2019 2nd International Conference on Algorithms, Computing and Artificial Intelligence</td>
+        <td>170</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (169)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/29c9174881a736acd2b2256dec7da1952ac29683">Temporal Attention-Augmented Bilinear Network for Financial Time-Series Data Analysis</a></td>
+        <td>D. Tran, Alexandros Iosifidis, J. Kanniainen, M. Gabbouj</td>
+        <td>2017-12-04</td>
+        <td>IEEE Transactions on Neural Networks and Learning Systems</td>
+        <td>169</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (168)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/f2c65e1d5cb798ab5f0809415fc0749a2b4c407b">A Multivariate Heuristic Model for Fuzzy Time-Series Forecasting</a></td>
+        <td>K. Huarng, T. Yu, Yu Wei Hsu</td>
+        <td>2007-08-01</td>
+        <td>IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics)</td>
+        <td>168</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (168)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/6772f7ffccc5d320ef6f067c62c8e63083072892">Financial time series forecasting with machine learning techniques: a survey</a></td>
+        <td>Bjoern Krollner, B. Vanstone, G. Finnie</td>
+        <td>None</td>
+        <td></td>
+        <td>168</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (166)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/57c204bac9e7adfa6b285f3787faa1a7ce21d15e">A hybrid ANFIS model based on empirical mode decomposition for stock time series forecasting</a></td>
+        <td>Liang-Ying Wei</td>
+        <td>2016-05-01</td>
+        <td>Appl. Soft Comput.</td>
+        <td>166</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (166)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/248e4c2f6031eef8695fb3bd07eff1f5d19d19bc">Examining COVID-19 Forecasting using Spatio-Temporal Graph Neural Networks</a></td>
+        <td>Amol Kapoor, X. Ben, Luyang Liu, Bryan Perozzi, Matt Barnes, Martin J. Blais, S. O’Banion</td>
+        <td>2020-07-06</td>
+        <td>ArXiv</td>
+        <td>166</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (165)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/ebf738b9a9b43dc9836370c5ba237cdbb2627bce">An evaluation of influenza mortality surveillance, 1962-1979. I. Time series forecasts of expected pneumonia and influenza deaths.</a></td>
+        <td>K. Choi, S. Thacker</td>
+        <td>1981-03-01</td>
+        <td>American journal of epidemiology</td>
+        <td>165</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (165)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/83f6b39db245140beaf7cb509d9fdcf889b81ba2">PSO-based analysis of Echo State Network parameters for time series forecasting</a></td>
+        <td>Naima Chouikhi, B. Ammar, N. Rokbani, A. Alimi</td>
+        <td>2017-06-01</td>
+        <td>Appl. Soft Comput.</td>
+        <td>165</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (163)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/6645a09c742760144e4ba0a6f6652e429b1bf107">DSANet: Dual Self-Attention Network for Multivariate Time Series Forecasting</a></td>
+        <td>Siteng Huang, Donglin Wang, Xuehan Wu, Ao Tang</td>
+        <td>2019-11-03</td>
+        <td>Proceedings of the 28th ACM International Conference on Information and Knowledge Management</td>
+        <td>163</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (163)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/6200383af48ef6fa87a508bea36d40c43f3318a6">Time series forecasting using backpropagation neural networks</a></td>
+        <td>F. Wong</td>
+        <td>1991-07-01</td>
+        <td>Neurocomputing</td>
+        <td>163</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (163)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/2ec659c6699933567a0924053de48359ae0eb00e">Autoregressive Denoising Diffusion Models for Multivariate Probabilistic Time Series Forecasting</a></td>
+        <td>Kashif Rasul, C. Seward, Ingmar Schuster, Roland Vollgraf</td>
+        <td>2021-01-28</td>
+        <td>International Conference on Machine Learning</td>
+        <td>163</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (158)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/4a8e60bb6e965ad992d91805e9d350c49d9b003b">Toward Automatic Time-Series Forecasting Using Neural Networks</a></td>
+        <td>Weizhong Yan</td>
+        <td>2012-06-01</td>
+        <td>IEEE Transactions on Neural Networks and Learning Systems</td>
+        <td>158</td>
+      </tr>
+
+      <tr>
+      <script>
+      // alert (157)
+      </script>
+        <td><a href="https://www.semanticscholar.org/paper/28ba2482af2797b552a7ee1789e256aa054d81d8">A new fuzzy time series forecasting model combined with ant colony optimization and auto-regression</a></td>
+        <td>Qisen Cai, Defu Zhang, Wei Zheng, S. Leung</td>
+        <td>None</td>
+        <td>Knowl. Based Syst.</td>
+        <td>157</td>
+      </tr>
+
+  </tbody>
+  </table>
+  </p>
+
+  <p>
+  <h3 id="latest_articles">4. Latest articles on Time-series forecasting</h3>
+  <table id="table2" class="display" style="width:100%">
+  <thead>
+    <tr>
+        <th>Title</th>
+        <th>Authors</th>
+        <th>Publication Date</th>
+        <th>Journal/Conference</th>
+        <th>Citation count</th>
+    </tr>
+  </thead>
+  <tbody>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/6a833e25a19a7a87744163897a5928877ba1e7dd">Optimizing electricity peak shaving through stochastic programming and probabilistic time series forecasting</a></td>
+        <td>S. Rafayal, Aliaa Alnaggar, Mucahit Cevik</td>
+        <td>2024-07-01</td>
+        <td>Journal of Building Engineering</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/d607b09e561bba79cbaaf83f63bec0bee01297f2">Comparison of ARIMA boost, Prophet boost, and TSLM models in forecasting Davao City weather data</a></td>
+        <td>Jamal Kay B. Rogers, Tamara Cher R. Mercado, Fredelino A. Galleto Jr.</td>
+        <td>2024-05-01</td>
+        <td>Indonesian Journal of Electrical Engineering and Computer Science</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/c67ca8aa3115e5f22154d80d0b3a62ed632f27b4">GRAformer: A gated residual attention transformer for multivariate time series forecasting</a></td>
+        <td>Chengcao Yang, Yutian Wang, Binghao Yang, Jun Chen</td>
+        <td>2024-05-01</td>
+        <td>Neurocomputing</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/9d0967140af698db0ad3c7ee30da9bd8614b6a35">Towards a Unified Understanding of Uncertainty Quantification in Traffic Flow Forecasting</a></td>
+        <td>Weizhu Qian, Yan Zhao, Dalin Zhang, Bowei Chen, Kai Zheng, Xiaofang Zhou</td>
+        <td>2024-05-01</td>
+        <td>IEEE Transactions on Knowledge and Data Engineering</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/b49ac03c5237dd7b468b44a1320357bc1be25332">Forecasting the ecological footprint of G20 countries in the next 30 years.</a></td>
+        <td>Rafael M Eufrasio Espinosa, S. C. Lenny Koh</td>
+        <td>2024-04-09</td>
+        <td>Scientific reports</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/35edadab4f0a047ef893dde05159873054e51bdc">Machine learning for electric energy consumption forecasting: Application to the Paraguayan system</a></td>
+        <td>Felix Morales-Mareco, M. García-Torres, F. Divina, D.H. Stalder, Carlos Sauer</td>
+        <td>2024-04-05</td>
+        <td>Logic Journal of the IGPL</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/7a8297af58036f319a7c937b2c59bd98a51d9251">Forecasting the Future: A Comprehensive Review of Time Series Prediction Techniques</a></td>
+        <td>Milind Kolambe, Sandhya Arora</td>
+        <td>2024-04-04</td>
+        <td>Journal of Electrical Systems</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/14e6dda8b904c7adbe19d6373f3151025a69830c">КОНСТРУКТИВНО-ПРОДУКЦІЙНЕ МОДЕЛЮВАННЯ ДЕТЕРМІНОВАНИХ ЧАСОВИХ РЯДІВ З ФРАКТАЛЬНИМИ ВЛАСТИВОСТЯМИ</a></td>
+        <td>Shynkarenko Vktor, Zhadan Artem</td>
+        <td>2024-04-03</td>
+        <td>International scientific and technical conference Information technologies in metallurgy and machine building</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/f6fcc4240112382aa0493b3177099923b0b686f1">Temporal-spatial dependencies enhanced deep learning model for time series forecast</a></td>
+        <td>Hu Yang, Yu Chen, Kedong Chen, Haijun Wang</td>
+        <td>2024-04-01</td>
+        <td>International Review of Financial Analysis</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/eb1c81440f9c0dde2de90d1b9177d6d4204f2d0b">Blood donation projections using hierarchical time series forecasting: the case of Zimbabwe’s national blood bank</a></td>
+        <td>Coster Chideme, D. Chikobvu, T. Makoni</td>
+        <td>2024-04-01</td>
+        <td>BMC Public Health</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/971ddc9061fcb67a2e86eeb01028597f921311dd">Hybrid learning strategies for multivariate time series forecasting of network quality metrics</a></td>
+        <td>Mario Di Mauro, G. Galatro, Fabio Postiglione, Wei Song, Antonio Liotta</td>
+        <td>2024-04-01</td>
+        <td>Computer Networks</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/742b383fd669407127863c718838359d7f6de33f">MDG: A Multi-Task Dynamic Graph Generation Framework for Multivariate Time Series Forecasting</a></td>
+        <td>Longhao Huang, Jidong Yuan, Shengbo Chen, Xu Li</td>
+        <td>2024-04-01</td>
+        <td>IEEE Transactions on Emerging Topics in Computational Intelligence</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/0c4ba8e4b9fbb2f8c4a4724a92505d3b648c11b4">Wildfire Prediction in the United States Using Time Series Forecasting Models</a></td>
+        <td>Muhammad Khubayeeb Kabir, Kawshik Kumar Ghosh, Md. Fahim Ul Islam, Jia Uddin</td>
+        <td>2024-04-01</td>
+        <td>Annals of Emerging Technologies in Computing</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/89def618685a994dac44fd1d3815d7bc3f6b8390">LSTM-Based Time Series Forecasting of Pulmonary Function Test for COPD Early Diagnosis</a></td>
+        <td>Beomseo Choi, Hongjun Kim, Seung-Hyun Jeon</td>
+        <td>2024-03-31</td>
+        <td>The Journal of Korean Institute of Communications and Information Sciences</td>
+        <td>1</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/9f7088bcb41ae4b9afcf9c518e129d83e84372b8">Energy Forecasting: A Comprehensive Review of Techniques and Technologies</a></td>
+        <td>Aristeidis Mystakidis, Paraskevas Koukaras, Nikolaos Tsalikidis, D. Ioannidis, Christos Tjortjis</td>
+        <td>2024-03-30</td>
+        <td>Energies</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/e3142ff658b29bb6120d0dc6588d86aa1d326273">TFB: Towards Comprehensive and Fair Benchmarking of Time Series Forecasting Methods</a></td>
+        <td>Xiangfei Qiu, Jilin Hu, Lekui Zhou, Xingjian Wu, Junyang Du, Buang Zhang, Chenjuan Guo, Aoying Zhou, Christian S. Jensen, Zhenli Sheng, Bin Yang</td>
+        <td>2024-03-29</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/81bdaf55e392e38529a4084bf20e27468a913fa9">Long-Term Forecasting Using MAMTF: A Matrix Attention Model Based on the Time and Frequency Domains</a></td>
+        <td>Kaixin Guo, Xin Yu</td>
+        <td>2024-03-29</td>
+        <td>Applied Sciences</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/3e4ed3b3790980efbb537d381c7bc020eefed53f">MambaMixer: Efficient Selective State Space Models with Dual Token and Channel Selection</a></td>
+        <td>Ali Behrouz, Michele Santacatterina, Ramin Zabih</td>
+        <td>2024-03-29</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/9228604541ffb98c7394248159213c3895eb580d">Improved Genetic Algorithm Based on Greedy and Simulated Annealing Ideas for Vascular Robot Ordering Strategy</a></td>
+        <td>Zixi Wang, Yubo Huang, Changshuo Fan, Xin Lai, Peng Lu</td>
+        <td>2024-03-28</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/305d4b4df2dd772013c66d73fdda0c710c5d8582">Singh's Fuzzy Time Series Forecasting Modification Based on Interval Ratio</a></td>
+        <td>Erikha Feriyanto, F. Farikhin, Nikken Prima Puspita</td>
+        <td>2024-03-28</td>
+        <td>Jurnal sosial dan sains</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/209f0474527ec347adec6d7f48c92264df31a1de">Gegenbauer Graph Neural Networks for Time-varying Signal Reconstruction</a></td>
+        <td>Jhon A. Castro-Correa, Jhony H. Giraldo, Mohsen Badiey, Fragkiskos D. Malliaros</td>
+        <td>2024-03-28</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/2c33b65b61e23b0f6765004b7cee8f28ff20875e">IIP-Mixer: Intra-Inter Patch Mixing Architecture for Battery Remaining Useful Life Prediction</a></td>
+        <td>G. Ye, Li Feng, Jianlan Guo, Yuqiang Chen</td>
+        <td>2024-03-27</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/fcbf6d1a0fb8de9bd03ffe01637841033e2c8b68">Research on Establishing Inbound Strategies for Supermarkets Based on Time Series and Multi-Objective Planning Models</a></td>
+        <td>Jialin Qian</td>
+        <td>2024-03-26</td>
+        <td>International Journal of Computer Science and Information Technology</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/d6aea8d96d1655d58d512517481c0cbe090a3417">D-PAD: Deep-Shallow Multi-Frequency Patterns Disentangling for Time Series Forecasting</a></td>
+        <td>Xiaobing Yuan, Ling Chen</td>
+        <td>2024-03-26</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/b5e239ac09e681cad7da58dadda7b8bd3abb18bc">Comparing ARIMA, Neural Network and Hybrid Models for Forecasting Fish Production in Bangladesh</a></td>
+        <td>Maisha Binte Saif, Murshida Khanam</td>
+        <td>2024-03-25</td>
+        <td>Dhaka University Journal of Science</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/95f2e4bb807135852b11d46eadb5296d2e1b20ca">Synthetic Time Series Data in Groundwater Analytics: Challenges, Insights, and Applications</a></td>
+        <td>Sarva T. Pulla, Hakan Yasarer, L. D. Yarbrough</td>
+        <td>2024-03-25</td>
+        <td>Water</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/f3b38957454b22f08121ce24897affa05bdeffe6">Multivariate Time-Series Imagification with Time Embedding in Constrained Environments (Student Abstract)</a></td>
+        <td>Seungwoo Kang, Ohyun Jo</td>
+        <td>2024-03-24</td>
+        <td>AAAI Conference on Artificial Intelligence</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/eda45cd6529a34d19acc4f469fc5c2a02a59939e">GMP-AR: Granularity Message Passing and Adaptive Reconciliation for Temporal Hierarchy Forecasting</a></td>
+        <td>Fan Zhou, Chen Pan, Lintao Ma, Yu Liu, Siqiao Xue, James Zhang, Jun Zhou, Hongyuan Mei, Weitao Lin, Zi Zhuang, Wenxin Ning, Yun Hu</td>
+        <td>2024-03-24</td>
+        <td>AAAI Conference on Artificial Intelligence</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/c3bc5903647aef09c31a9a0866d59989e3f874eb">HDMixer: Hierarchical Dependency with Extendable Patch for Multivariate Time Series Forecasting</a></td>
+        <td>Qihe Huang, Lei Shen, Ruixin Zhang, Jiahuan Cheng, Shouhong Ding, Zhengyang Zhou, Yang Wang</td>
+        <td>2024-03-24</td>
+        <td>AAAI Conference on Artificial Intelligence</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/bd7607de4ddc02ec4808146ed33b363af66b16c5">Temporal Dependencies and Spatio-Temporal Patterns of Time Series Models</a></td>
+        <td>Md. Khairul Islam</td>
+        <td>2024-03-24</td>
+        <td>AAAI Conference on Artificial Intelligence</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/900e91d93294a0d4f1213d57272e8801c3abdb06">Latent Diffusion Transformer for Probabilistic Time Series Forecasting</a></td>
+        <td>Shibo Feng, Chunyan Miao, Zhong Zhang, Peilin Zhao</td>
+        <td>2024-03-24</td>
+        <td>AAAI Conference on Artificial Intelligence</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/8e2deaab09cc1585df38b7847f66cf149f88af0f">EasyTS: The Express Lane to Long Time Series Forecasting</a></td>
+        <td>Tiancheng Zhang, Shaoyuan Huang, Cheng Zhang, Xiaofei Wang, Wenyu Wang</td>
+        <td>2024-03-24</td>
+        <td>AAAI Conference on Artificial Intelligence</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/34eedbb011e45d80045cadebaf1d01b2ddec22a1">GPT4MTS: Prompt-based Large Language Model for Multimodal Time-series Forecasting</a></td>
+        <td>Furong Jia, Kevin Wang, Yixiang Zheng, Defu Cao, Yan Liu</td>
+        <td>2024-03-24</td>
+        <td>AAAI Conference on Artificial Intelligence</td>
+        <td>1</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/22303e896e2ddee0d2410d0d1b7491e0acb31b45">High Significant Fault Detection in Azure Core Workload Insights</a></td>
+        <td>Pranay Lohia, Laurent Boué, Sharath Ranganath, Vijay S. Agneeswaran</td>
+        <td>2024-03-24</td>
+        <td>AAAI Conference on Artificial Intelligence</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/e0f62b53ce8e963b6c8947164d9b252594e57ef0">Grey-informed neural network for time-series forecasting</a></td>
+        <td>Wanli Xie, Ruibin Zhao, Zhenguo Xu, Tingting Liang</td>
+        <td>2024-03-22</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/89153b6bcc9f06488f2f7f94176ba5ee4732c667">Branch error reduction criterion-based signal recursive decomposition and its application to wind power generation forecasting</a></td>
+        <td>Fen Xiao, Siyu Yang, Xiao Li, Junhong Ni</td>
+        <td>2024-03-22</td>
+        <td>PLOS ONE</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/60b898d1535696c1c86c4f71d3d4e012198c6c23">Addressing Concept Shift in Online Time Series Forecasting: Detect-then-Adapt</a></td>
+        <td>Yi-Fan Zhang, Weiqiu Chen, Zhaoyang Zhu, Dalin Qin, Liang Sun, Xue Wang, Qingsong Wen, Zhang Zhang, Liang Wang, Rong Jin</td>
+        <td>2024-03-22</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/31fe6fb31658147df5b7f75350879b4eab8c006d">Predicting quantum emitter fluctuations with time-series forecasting models</a></td>
+        <td>F. Ramezani, Matthew C Strasbourg, S. Parvez, Ravindra Saxena, D. Jariwala, Nicholas J. Borys, Bradley M. Whitaker</td>
+        <td>2024-03-22</td>
+        <td>Scientific Reports</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/0d915b039bde932d50716fdf98614f0407435675">The Development of Forecasting Models for Life Insurance Data by Employing Time-series Analysis and Machine Learning Technique</a></td>
+        <td>Supika Huadsri, W. Phaphan</td>
+        <td>2024-03-22</td>
+        <td>WSEAS TRANSACTIONS ON MATHEMATICS</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/ee546e7bb8328bbed1ec1c57e1f7a707e67d743a">HySim: An Efficient Hybrid Similarity Measure for Patch Matching in Image Inpainting</a></td>
+        <td>Saad Noufel, Nadir Maaroufi, Mehdi Najib, Mohamed Bakhouya</td>
+        <td>2024-03-21</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/d4a7f6ced26f5f6432050e3821c9b39a1c657eda">A short-term forecasting method for photovoltaic power generation based on the TCN-ECANet-GRU hybrid model</a></td>
+        <td>Xiuli Xiang, Xingyu Li, Yaoli Zhang, Jiang Hu</td>
+        <td>2024-03-21</td>
+        <td>Scientific Reports</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/40d365c17676ece251156219a8a3cb90bc2c6976">An Analysis of Linear Time Series Forecasting Models</a></td>
+        <td>William Toner, Luke Darlow</td>
+        <td>2024-03-21</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/053f44b0f9015d96269b04981c27d33d23676371">DiffSTOCK: Probabilistic relational Stock Market Predictions using Diffusion Models</a></td>
+        <td>Divyanshu Daiya, Monika Yadav, Harshit Singh Rao</td>
+        <td>2024-03-21</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/f1c85195f314df64b07ebb2b8656eeed597b783f">Sequential Modeling of Complex Marine Navigation: Case Study on a Passenger Vessel (Student Abstract)</a></td>
+        <td>Yimeng Fan, Pedram Agand, Mo Chen, Edward J. Park, Allison Kennedy, Chanwoo Bae</td>
+        <td>2024-03-20</td>
+        <td>AAAI Conference on Artificial Intelligence</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/67f833766640752cf5d2a714f3738c634a99d8eb">On the Opportunities and Challenges of Foundation Models for GeoAI (Vision Paper)</a></td>
+        <td>Gengchen Mai, Weiming Huang, Jin Sun, Suhang Song, Deepak Mishra, Ninghao Liu, Song Gao, Tianming Liu, Gao Cong, Yingjie Hu, Chris Cundy, Ziyuan Li, Rui Zhu, Ni Lao</td>
+        <td>2024-03-20</td>
+        <td>ACM Transactions on Spatial Algorithms and Systems</td>
+        <td>1</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/e1962f2fc65e7d7af5cf912cafd92d13193902f6">FORECASTING THE EURO EXCHANGE RATE USING DEEP LEARNING ALGORITHMS AND MACHINE LEARNING ALGORITHMS</a></td>
+        <td>Yunus Emre Gür</td>
+        <td>2024-03-19</td>
+        <td>İstanbul Ticaret Üniversitesi Sosyal Bilimler Dergisi</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/dba88f9a59ad816ce14d93b2c8bfda5917adc196">Is Mamba Effective for Time Series Forecasting?</a></td>
+        <td>Zihan Wang, Fanheng Kong, Shi Feng, Ming Wang, Han Zhao, Daling Wang, Yifei Zhang</td>
+        <td>2024-03-17</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/a48cbc3e129b448bbff33e773abbe8e1fe10706c">An Interpretable Time Series Forecasting Model for Predicting NOx Emission Concentration in Ferroalloy Electric Arc Furnace Plants</a></td>
+        <td>Youngjin Seol, Seunghyun Lee, Jiho Lee, Chang-wan Kim, H. Bak, Youngchul Byun, Janghyeok Yoon</td>
+        <td>2024-03-16</td>
+        <td>Mathematics</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/73c1d477aa6b3e87277c6b0d9dfe99edb64929e3">Learning evolving relations for multivariate time series forecasting</a></td>
+        <td>Binh Nguyen-Thai, Vuong Le, Ngoc-Dung T. Tieu, T. Tran, S. Venkatesh, Naeem Ramzan</td>
+        <td>2024-03-15</td>
+        <td>Applied Intelligence</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/41367ab19607299e86013cb517a6227a13f0126e">Fuzzy time series dalam meramalkan jumlah produksi karet di Sumatra Utara</a></td>
+        <td>Arika Arika, Daratullaila Daratullaila, Khairunnas Fadjriah Sirait, Riezky Purnama Sari</td>
+        <td>2024-03-15</td>
+        <td>Majalah Ilmiah Matematika dan Statistika</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/2b698849c2467da9f17ab9f743066303af451627">Advancing mortality rate prediction in European population clusters: integrating deep learning and multiscale analysis</a></td>
+        <td>Yuewen Shen, Xinhao Yang, Hao Liu, Ze Li</td>
+        <td>2024-03-15</td>
+        <td>Scientific Reports</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/e3a4ddd90795f20c3f588780f40fe8fd12956f0b">Long-term Regional Influenza-like-illness Forecasting Using Exogenous Data.</a></td>
+        <td>Eirini Papagiannopoulou, M. Bossa, Nikos Deligiannis, Hichem Sahli</td>
+        <td>2024-03-14</td>
+        <td>IEEE journal of biomedical and health informatics</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/d131696232da2cc6333521dd347b84daf1932b25">A Bagging Ensemble Algorithm for Seasonal Time Series Forecasting</a></td>
+        <td>Bhupendra Kumar, Neha Yadav, Sunil</td>
+        <td>2024-03-14</td>
+        <td>SN Comput. Sci.</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/54d28241752c1169f7667586d91b103e4752e62f">MCformer: Multivariate Time Series Forecasting with Mixed-Channels Transformer</a></td>
+        <td>Wenyong Han, Tao Zhu Member, L. Chen, Huansheng Ning, Yang Luo, Yaping Wan</td>
+        <td>2024-03-14</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/3a0c5026f7ea965dc4475c8d857fc3b6df27ae05">TimeMachine: A Time Series is Worth 4 Mambas for Long-term Forecasting</a></td>
+        <td>Md. Atik Ahamed, Qiang Cheng</td>
+        <td>2024-03-14</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/2007ceb4ccdce05c2ce0b6efbc53071cd4fcfc47">A Novel Ensemble Machine Learning Model for Oil Production Prediction with Two-Stage Data Preprocessing</a></td>
+        <td>Zhe Fan, Xiusen Liu, Zuoqian Wang, Pengcheng Liu, Yanwei Wang</td>
+        <td>2024-03-14</td>
+        <td>Processes</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/fbb211669248a84741017eba04d0d0cad37f8c42">Stock Price Prediction with Denoising Autoencoder and Transformers</a></td>
+        <td>Zhiyang Chen</td>
+        <td>2024-03-13</td>
+        <td>Highlights in Science, Engineering and Technology</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/7009f402513e9813294c87001566fa9de15a89bb">Fueling the Future: A Comprehensive Analysis and Forecast of Fuel Consumption Trends in U.S. Electricity Generation</a></td>
+        <td>Md Monjur Hossain Bhuiyan, A. Sakib, Syed Ishmam Alawee, Talayeh Razzaghi</td>
+        <td>2024-03-13</td>
+        <td>Sustainability</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/3cc4d070802326a054d11c7e0e7d9f93e6f8ae0f">Power Factor Modelling and Prediction at the Hot Rolling Mills’ Power Supply Using Machine Learning Algorithms</a></td>
+        <td>M. Panoiu, C. Panoiu, Petru Ivascanu</td>
+        <td>2024-03-13</td>
+        <td>Mathematics</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/06e3773be704812866957023348091c8f3ab97f4">Sales Forecasting Based on Transformer-LSTM Model</a></td>
+        <td>Yi Liu</td>
+        <td>2024-03-13</td>
+        <td>Highlights in Science, Engineering and Technology</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/06107130616c1bbaddca66f2ea7a7687e7f7cfe5">A spatio‐temporal graph convolutional approach to real‐time load forecasting in an edge‐enabled distributed Internet of Smart Grids energy system</a></td>
+        <td>Qi Liu, Li Pan, Xuefei Cao, Jixiang Gan, Xianming Huang, Xiaodong Liu</td>
+        <td>2024-03-13</td>
+        <td>Concurrency and Computation: Practice and Experience</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/03082a976eff70f37009e56af353eaec30a0193a">Leveraging Non-Decimated Wavelet Packet Features and Transformer Models for Time Series Forecasting</a></td>
+        <td>G. P. Nason, James L. Wei</td>
+        <td>2024-03-13</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/be772aea65118d1e01ffaef242a4e16af887a05c">Does future tuna landing stock meet the target? Forecasting tuna landing in Malaysia using seasonal ARIMA model</a></td>
+        <td>A. Nasir, Yeny Nadira Kamaruzzaman</td>
+        <td>2024-03-12</td>
+        <td>International Journal of Social Economics</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/7cfa67513249f2e75697ca6da4170a886a06ebb1">Taming Pre-trained LLMs for Generalised Time Series Forecasting via Cross-modal Knowledge Distillation</a></td>
+        <td>Peiyuan Liu, Hang Guo, Tao Dai, Naiqi Li, Jigang Bao, Xudong Ren, Yong Jiang, Shu-Tao Xia</td>
+        <td>2024-03-12</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/63da2290d9fd8ac3657abee47259199ae96a512f">Rainfall, Wind Speed, and Temperature Forecast Using Triple Exponential Smoothing and Gradient Descent</a></td>
+        <td>Dimara Kusuma Hakim, R. Gernowo, Anang Widhi Nirwansyah</td>
+        <td>2024-03-12</td>
+        <td>KnE Social Sciences</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/c59906d9c1a35ff57f826c60fbf74b315cbc08ff">Koopman Ensembles for Probabilistic Time Series Forecasting</a></td>
+        <td>Anthony Frion, Lucas Drumetz, G. Tochon, M. Mura, Albdeldjalil Aissa El Bey</td>
+        <td>2024-03-11</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/b4c14d2eb0f6b4b26d0a61a76ed2201b1ac9f8c8">MG-TSD: Multi-Granularity Time Series Diffusion Models with Guided Learning Process</a></td>
+        <td>Xinyao Fan, Yueying Wu, Chang Xu, Yuhao Huang, Weiqing Liu, Jiang Bian</td>
+        <td>2024-03-09</td>
+        <td>ArXiv</td>
+        <td>1</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/acc8fba34f2cb8fe35f19ce1c9136bc583f56e5c">S2IP-LLM: Semantic Space Informed Prompt Learning with LLM for Time Series Forecasting</a></td>
+        <td>Zijie Pan, Yushan Jiang, Sahil Garg, Anderson Schneider, Yuriy Nevmyvaka, Dongjin Song</td>
+        <td>2024-03-09</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/03a0157c539c93f0066b4a00a4725a0162d335f6">Time-Series Forecasting of a Typical PWR Undergoing Large Break LOCA</a></td>
+        <td>Michal Kaminski, Aya Diab</td>
+        <td>2024-03-08</td>
+        <td>Science and Technology of Nuclear Installations</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/5a439ee9f9a3f71ae3387288a7259f889cc7b7bd">Integrating GBDT regression and factor analysis for accurate prediction of used sailboat prices</a></td>
+        <td>Haojie Yang, Ruiqi Yao, Qing Zhu, Jialei Huang</td>
+        <td>2024-03-07</td>
+        <td>Theoretical and Natural Science</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/571cbe7c987632484c57fff4b4ad82dcbbbd8358">Hyperparameter Tuning MLPs for Probabilistic Time Series Forecasting</a></td>
+        <td>Kiran Madhusudhanan, Shayan Jawed, Lars Schmidt-Thieme</td>
+        <td>2024-03-07</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/0653f72cb873f280aece9132ffbffb6c7188e3f3">RATSF: Empowering Customer Service Volume Management through Retrieval-Augmented Time-Series Forecasting</a></td>
+        <td>Tianfeng Wang, Gaojie Cui</td>
+        <td>2024-03-07</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/a6d890d824ec89ba2359cd50404e0bc16c3c2c3d">CEEMDAN-Based Hybrid Machine Learning Models for Time Series Forecasting Using MARS Algorithm and PSO-Optimization</a></td>
+        <td>Sandip Garai, R. Paul, M. Yeasin, A. K. Paul</td>
+        <td>2024-03-06</td>
+        <td>Neural Processing Letters</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/485a60b41b9abc13d1526205ef34c3ef13985b97">Probing the Robustness of Time-series Forecasting Models with CounterfacTS</a></td>
+        <td>Haakon Hanisch Kjaernli, Lluis Mas-Ribas, Aida Ashrafi, Gleb Sizov, Helge Langseth, Odd Erik Gundersen</td>
+        <td>2024-03-06</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/a04c52da20c26df9d42b8e0329a7dfc81a899661">InjectTST: A Transformer Method of Injecting Global Information into Independent Channels for Long Time Series Forecasting</a></td>
+        <td>Ce Chi, Xing Wang, Kexin Yang, Zhiyan Song, Di Jin, Lin Zhu, Chao Deng, Junlan Feng</td>
+        <td>2024-03-05</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/940de35bbe24da0cb6eb28532c22d70293fca388">Inflation Forecasting Using a Hybrid LSTM-SARIMA Model Based on Discrete Wavelet Transform</a></td>
+        <td>Shizhe Li</td>
+        <td>2024-03-05</td>
+        <td>Advances in Economics, Management and Political Sciences</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/3f43338dff6340d2cdf3d3a67be5b0d68ef53437">Time series-based prediction of antibiotic degradation via photocatalysis using ensemble gradient boosting.</a></td>
+        <td>Sheetal Sethi, Amit Dhir, Vinay Arora</td>
+        <td>2024-03-05</td>
+        <td>Environmental science and pollution research international</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/f580dd0a37efef01612f3bebed828e0e65976771">Winds of Change: Enhancing Wind Power Generation Forecasting with LSTM Models and Advanced Techniques in a Single Turbine Wind Farm</a></td>
+        <td>Abdel Ali Mana</td>
+        <td>2024-03-04</td>
+        <td>Artificial Intelligence and Applications</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/d55d57ec10332532d085993b152da83bfa5ce422">Daedalus: Self-Adaptive Horizontal Autoscaling for Resource Efficiency of Distributed Stream Processing Systems</a></td>
+        <td>Benjamin J. J. Pfister, Dominik Scheinert, Morgan K. Geldenhuys, O. Kao</td>
+        <td>2024-03-04</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/a0469f51ae6e37b2e5e44ecc06ea8887d2f067c4">Machine Learning-Based Traffic Flow Prediction and Intelligent Traffic Management</a></td>
+        <td>Zheng Xu, Jiaqiang Yuan, Liqiang Yu, Guanghui Wang, Mingwei Zhu</td>
+        <td>2024-03-04</td>
+        <td>International Journal of Computer Science and Information Technology</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/6ab73be1dc10ed619825444aea4f567b8a010727">Hybridizing Traditional and Next-Generation Reservoir Computing to Accurately and Efficiently Forecast Dynamical Systems</a></td>
+        <td>Ravi Chepuri, Dael Amzalag, Thomas Antonsen, M. Girvan</td>
+        <td>2024-03-04</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/4e0ad1a7e02d5ace850ad3dce7816424cd42cecc">Demeter: Resource-Efficient Distributed Stream Processing under Dynamic Loads with Multi-Configuration Optimization</a></td>
+        <td>Morgan K. Geldenhuys, Dominik Scheinert, O. Kao, L. Thamsen</td>
+        <td>2024-03-04</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/465dc9498fa3fd3637e35de14eb0b0c8c78febc7">NeuralReconciler for Hierarchical Time Series Forecasting</a></td>
+        <td>Shiyu Wang</td>
+        <td>2024-03-04</td>
+        <td>Web Search and Data Mining</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/09e098f5bc0a187bea27437a78a0e9ae83cf6a3d">CATS: Enhancing Multivariate Time Series Forecasting by Constructing Auxiliary Time Series as Exogenous Variables</a></td>
+        <td>Jiecheng Lu, Xu Han, Yan Sun, Shihao Yang</td>
+        <td>2024-03-04</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/ac7b15e0b7fc9c51624bfd1a2f5926059a7e0ed8">ConvTimeNet: A Deep Hierarchical Fully Convolutional Model for Multivariate Time Series Analysis</a></td>
+        <td>Mingyue Cheng, Jiqian Yang, Tingyue Pan, Qi Liu, Zhi Li</td>
+        <td>2024-03-03</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/ea0471460efff4e9385cbf609c378c2209c14c50">Attention-Based Models for Multivariate Time Series Forecasting: Multi-step Solar Irradiation Prediction</a></td>
+        <td>Sadman Sakib, M. K. Mahadi, Samiur R. Abir, Al-Muzadded Moon, Ahmad Shafiullah, Sanjida Ali, FAHIM FAISAL, M. M. Nishat</td>
+        <td>2024-03-01</td>
+        <td>Heliyon</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/defafccd4ad6cf641f2990099492009c6e58e6e3">Accounting journal entries as a long‐term multivariate time series: Forecasting wholesale warehouse output</a></td>
+        <td>Mario Zupan</td>
+        <td>2024-03-01</td>
+        <td>Intelligent Systems in Accounting, Finance and Management</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/d933cfec951633c06b4e219144ffecd7ee617e2b">Developing a multivariate time series forecasting framework based on stacked autoencoders and multi-phase feature</a></td>
+        <td>Dilip Kumar Sharma, Ravi Prakash Varshney, Saurabh Agarwal, Amel Ali Alhussan, Hanaa A. Abdallah</td>
+        <td>2024-03-01</td>
+        <td>Heliyon</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/bc72c3054e23dc1d0743f2b8223797337076cdb8">A hybrid time series forecasting method based on neutrosophic logic with applications in financial issues</a></td>
+        <td>S. Edalatpanah, Farnaz Sheikh Hassani, F. Smarandache, Ali Sorourkhah, Dragan Pamučar, Bing Cui</td>
+        <td>2024-03-01</td>
+        <td>Engineering Applications of Artificial Intelligence</td>
+        <td>2</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/93001ee8f70153820fd50490fb78f8ae43e27f34">Enhancing Multivariate Time Series Forecasting with Mutual Information-driven Cross-Variable and Temporal Modeling</a></td>
+        <td>Shiyi Qi, Liangjiang Wen, Yiduo Li, Yuanhang Yang, Zhe Li, Zhongwen Rao, Lujia Pan, Zenglin Xu</td>
+        <td>2024-03-01</td>
+        <td>ArXiv</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/905fefebdd8738f2c3cfec96641f70999f7cd170">SeqOAE: Deep sequence-to-sequence orthogonal auto-encoder for time-series forecasting under variable population sizes</a></td>
+        <td>Abdallah A. Chehade, Wael Hassanieh, Vasiliy V. Krivtsov</td>
+        <td>2024-03-01</td>
+        <td>Reliability Engineering &amp; System Safety</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/6f2324419bea2ffb6d2d62b087b7ba420d973051">Saliency-Aware Dual Embedded Attention Network for Multivariate Time-Series Forecasting in Information Technology Operations</a></td>
+        <td>Jiajia Li, Feng Tan, Cheng He, Zikai Wang, Haitao Song, Pengwei Hu, Xin Luo</td>
+        <td>2024-03-01</td>
+        <td>IEEE Transactions on Industrial Informatics</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/5e2e2ec1e4a54c86734f5f258b03649d0f2bd5f7">RAINFALL FORECASTING WITH AN INTERMITTENT APPROACH USING HYBRID EXPONENTIAL SMOOTHING NEURAL NETWORK</a></td>
+        <td>Regita Putri Permata, A. Muhaimin, Sri Hidayati</td>
+        <td>2024-03-01</td>
+        <td>BAREKENG: Jurnal Ilmu Matematika dan Terapan</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/5d6395e920047efe8c64424f30c7ead81f8bf73e">Probabilistic study of Induced Ordered Linear Fusion Operators for time series forecasting</a></td>
+        <td>Juan Baz, Mikel Ferrero-Jaurrieta, Irene Díaz, Susana Montes, G. Beliakov, Humberto Bustince</td>
+        <td>2024-03-01</td>
+        <td>Inf. Fusion</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/59799767327712921f3e588b9a6ea827631ac619">Time series forecasting of electricity consumption using hybrid model of recurrent neural networks and genetic algorithms</a></td>
+        <td>Ali Hussein, Mohammed Awad</td>
+        <td>2024-03-01</td>
+        <td>Measurement: Energy</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/3b6af2fdae6c61e9922fd4b98f28d96cdd9db728">Few-shot time series forecasting in a meta-learning framework</a></td>
+        <td>Ping Ma, Zhen-Xin Ni</td>
+        <td>2024-03-01</td>
+        <td>Journal of Intelligent &amp; Fuzzy Systems</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/37cd904c5798f28429887c6db104a1715805e0c5">A COMPARISON OF FUZZY TIME SERIES CHENG AND CHEN-HSU IN FORECASTING TOTAL AIRPLANE PASSENGERS OF SOEKARNO-HATTA AIRPORT</a></td>
+        <td>Latifah Zahra, M. Maiyastri, Izzati Rahmi</td>
+        <td>2024-03-01</td>
+        <td>BAREKENG: Jurnal Ilmu Matematika dan Terapan</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/1af64d959d09e5a602840d8ebb0b57c242722062">Estimating Rotational Acceleration in Shoulder and Elbow Joints Using a Transformer Algorithm and a Fusion of Biosignals</a></td>
+        <td>Yu Bai, Xiaorong Guan, Long He, Zheng Wang, Zhong Li, Meng Zhu</td>
+        <td>2024-03-01</td>
+        <td>Sensors (Basel, Switzerland)</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/10cfb2a880e44d326e189c542d42ea82997deb27">Echo state network and classical statistical techniques for time series forecasting: A review</a></td>
+        <td>Fabian Corrêa Cardoso, R. Berri, E. Borges, B. L. Dalmazo, Giancarlo Lucca, Viviane Leite Dias de Mattos</td>
+        <td>2024-03-01</td>
+        <td>Knowledge-Based Systems</td>
+        <td>0</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.semanticscholar.org/paper/09153322fcf042a788d6038b16d77d81a787ce34">Association mining based deep learning approach for financial time-series forecasting</a></td>
+        <td>Tanya Srivastava, Ishita Mullick, Jatin Bedi</td>
+        <td>2024-03-01</td>
+        <td>Applied Soft Computing</td>
+        <td>0</td>
+      </tr>
+
+  </tbody>
+  </table>
+  </p>
+
+</body>
+
+<script>
+  var trace1 = {
+  x: ['1981', '1983', '1991', '1993', '1994', '1995', '1996', '1997', '1998', '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+  y: [1, 1, 3, 2, 2, 3, 2, 3, 3, 7, 6, 12, 8, 12, 14, 13, 18, 20, 14, 19, 30, 23, 35, 35, 29, 40, 32, 65, 79, 88, 127, 90, 62, 22],
+  name: 'Num of articles',
+  type: 'scatter'
+  };
+
+  var trace2 = {
+    x: ['1981', '1983', '1991', '1993', '1994', '1995', '1996', '1997', '1998', '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+    y: [165, 22, 615, 430, 382, 122, 236, 147, 106, 399, 2040, 1443, 1525, 4037, 604, 789, 1674, 1886, 1230, 1563, 2173, 2631, 1785, 2528, 2373, 2149, 1932, 5606, 7157, 8477, 10449, 3576, 2980, 681],
+    name: 'Num of citations',
+    yaxis: 'y2',
+    type: 'scatter'
+  };
+
+  var data = [trace1, trace2];
+
+  var layout = {
+    yaxis: {title: 'Num of articles'},
+    yaxis2: {
+      title: 'Num of citations',
+      overlaying: 'y',
+      side: 'right'
+      }
+  };
+  Plotly.newPlot('myDiv1', data, layout);
+</script>
+</html>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.tabs"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+
+      <script src="../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      
+    
+<script>
+  new DataTable('#table1', {
+    order: [[5, 'desc']],
+    "columnDefs": [
+        {"className": "dt-center", "targets": "_all"},
+        { width: '30%', targets: 0 }
+      ],
+    pageLength: 10,
+    layout: {
+        topStart: {
+            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+        }
+    }
+  });
+  new DataTable('#table2', {
+    order: [[3, 'desc']],
+    "columnDefs": [
+        {"className": "dt-center", "targets": "_all"},
+        { width: '30%', targets: 0 }
+      ],
+    pageLength: 10,
+    layout: {
+        topStart: {
+            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+        }
+    }
+  });
+  new DataTable('#table3', {
+    initComplete: function () {
+        this.api()
+            .columns()
+            .every(function () {
+                let column = this;
+ 
+                // Create select element
+                let select = document.createElement('select');
+                select.add(new Option(''));
+                column.footer().replaceChildren(select);
+ 
+                // Apply listener for user change in value
+                select.addEventListener('change', function () {
+                    column
+                        .search(select.value, {exact: true})
+                        .draw();
+                });
+
+                // keep the width of the select element same as the column
+                select.style.width = '100%';
+ 
+                // Add list of options
+                column
+                    .data()
+                    .unique()
+                    .sort()
+                    .each(function (d, j) {
+                        select.add(new Option(d));
+                    });
+            });
+    },
+    // order: [[3, 'desc']],
+    "columnDefs": [
+        {"className": "dt-center", "targets": "_all"},
+        { width: '25%', targets: 1 }
+      ],
+    pageLength: 10,
+    layout: {
+        topStart: {
+            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+        }
+    }
+  });
+  new DataTable('#table4', {
+    initComplete: function () {
+        this.api()
+            .columns()
+            .every(function () {
+                let column = this;
+ 
+                // Create select element
+                let select = document.createElement('select');
+                select.add(new Option(''));
+                column.footer().replaceChildren(select);
+ 
+                // Apply listener for user change in value
+                select.addEventListener('change', function () {
+                    column
+                        .search(select.value, {exact: true})
+                        .draw();
+                });
+
+                // keep the width of the select element same as the column
+                select.style.width = '100%';
+ 
+                // Add list of options
+                column
+                    .data()
+                    .unique()
+                    .sort()
+                    .each(function (d, j) {
+                        select.add(new Option(d));
+                    });
+            });
+    },
+    // order: [[3, 'desc']],
+    "columnDefs": [
+        {"className": "dt-center", "targets": "_all"},
+        { width: '30%', targets: 0 }
+      ],
+    pageLength: 10,
+    layout: {
+        topStart: {
+            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+        }
+    }
+  });
+</script>
+
+
+  </body>
+</html>
