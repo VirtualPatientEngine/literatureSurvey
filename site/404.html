@@ -284,6 +284,40 @@
   
   
     <li class="md-tabs__item">
+      <a href="/PINNs/" class="md-tabs__link">
+        
+  
+    
+  
+  PINNs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="/Symbolic_regression/" class="md-tabs__link">
+        
+  
+    
+  
+  Symbolic regression
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
       <a href="/Koopman_Theory/" class="md-tabs__link">
         
   
@@ -318,12 +352,12 @@
   
   
     <li class="md-tabs__item">
-      <a href="/PINNs/" class="md-tabs__link">
+      <a href="/Diffusion_models/" class="md-tabs__link">
         
   
     
   
-  PINNs
+  Diffusion models
 
       </a>
     </li>
@@ -335,12 +369,12 @@
   
   
     <li class="md-tabs__item">
-      <a href="/Symbolic_regression/" class="md-tabs__link">
+      <a href="/Time-series_forecasting/" class="md-tabs__link">
         
   
     
   
-  Symbolic regression
+  Time-series forecasting
 
       </a>
     </li>
@@ -459,6 +493,46 @@
   
   
     <li class="md-nav__item">
+      <a href="/PINNs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PINNs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="/Symbolic_regression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Symbolic regression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="/Koopman_Theory/" class="md-nav__link">
         
   
@@ -499,11 +573,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/PINNs/" class="md-nav__link">
+      <a href="/Diffusion_models/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    PINNs
+    Diffusion models
   </span>
   
 
@@ -519,11 +593,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/Symbolic_regression/" class="md-nav__link">
+      <a href="/Time-series_forecasting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Symbolic regression
+    Time-series forecasting
   </span>
   
 
@@ -612,9 +686,10 @@
   new DataTable('#table1', {
     order: [[5, 'desc']],
     "columnDefs": [
-        {"className": "dt-center", "targets": "_all"}
+        {"className": "dt-center", "targets": "_all"},
+        { width: '30%', targets: 0 }
       ],
-    pageLength: 5,
+    pageLength: 10,
     layout: {
         topStart: {
             buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
@@ -624,9 +699,98 @@
   new DataTable('#table2', {
     order: [[3, 'desc']],
     "columnDefs": [
-        {"className": "dt-center", "targets": "_all"}
+        {"className": "dt-center", "targets": "_all"},
+        { width: '30%', targets: 0 }
       ],
-    pageLength: 5,
+    pageLength: 10,
+    layout: {
+        topStart: {
+            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+        }
+    }
+  });
+  new DataTable('#table3', {
+    initComplete: function () {
+        this.api()
+            .columns()
+            .every(function () {
+                let column = this;
+ 
+                // Create select element
+                let select = document.createElement('select');
+                select.add(new Option(''));
+                column.footer().replaceChildren(select);
+ 
+                // Apply listener for user change in value
+                select.addEventListener('change', function () {
+                    column
+                        .search(select.value, {exact: true})
+                        .draw();
+                });
+
+                // keep the width of the select element same as the column
+                select.style.width = '100%';
+ 
+                // Add list of options
+                column
+                    .data()
+                    .unique()
+                    .sort()
+                    .each(function (d, j) {
+                        select.add(new Option(d));
+                    });
+            });
+    },
+    // order: [[3, 'desc']],
+    "columnDefs": [
+        {"className": "dt-center", "targets": "_all"},
+        { width: '25%', targets: 1 }
+      ],
+    pageLength: 10,
+    layout: {
+        topStart: {
+            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+        }
+    }
+  });
+  new DataTable('#table4', {
+    initComplete: function () {
+        this.api()
+            .columns()
+            .every(function () {
+                let column = this;
+ 
+                // Create select element
+                let select = document.createElement('select');
+                select.add(new Option(''));
+                column.footer().replaceChildren(select);
+ 
+                // Apply listener for user change in value
+                select.addEventListener('change', function () {
+                    column
+                        .search(select.value, {exact: true})
+                        .draw();
+                });
+
+                // keep the width of the select element same as the column
+                select.style.width = '100%';
+ 
+                // Add list of options
+                column
+                    .data()
+                    .unique()
+                    .sort()
+                    .each(function (d, j) {
+                        select.add(new Option(d));
+                    });
+            });
+    },
+    // order: [[3, 'desc']],
+    "columnDefs": [
+        {"className": "dt-center", "targets": "_all"},
+        { width: '30%', targets: 0 }
+      ],
+    pageLength: 10,
     layout: {
         topStart: {
             buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
