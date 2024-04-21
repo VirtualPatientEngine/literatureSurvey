@@ -33,7 +33,7 @@ jobs:
         shell: bash -l {0}
         run: |
           cd app/code
-          python3 literature_fetch.py
+          python3 literature_fetch_recommendation_api.py
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
       - uses: actions/cache@v3
         with:

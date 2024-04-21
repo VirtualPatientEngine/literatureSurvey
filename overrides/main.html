@@ -18,6 +18,10 @@
   <!-- Load plotly.js into the DOM -->
 	<script src='https://cdn.plot.ly/plotly-2.29.1.min.js'></script>
   <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.0.1/css/buttons.dataTables.css">
+  <!-- fixedColumns -->
+  <script src="https://cdn.datatables.net/fixedcolumns/5.0.0/js/dataTables.fixedColumns.js"></script>
+  <script src="https://cdn.datatables.net/fixedcolumns/5.0.0/js/fixedColumns.dataTables.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/5.0.0/css/fixedColumns.dataTables.css">
   <!-- Already specified in mkdocs.yml -->
   <!-- <link rel="stylesheet" href="../docs/custom.css"> -->
   <script src="https://cdn.datatables.net/buttons/3.0.1/js/dataTables.buttons.js"></script>
@@ -27,6 +31,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
   <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.html5.min.js"></script>
   <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.print.min.js"></script>
+  <!-- Google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Intro.js -->
+  <script src="https://cdn.jsdelivr.net/npm/intro.js@7.2.0/intro.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@7.2.0/minified/introjs.min.css">
 
 
   <!-- {{ super() }} -->
@@ -36,32 +45,43 @@
 {% block scripts %}
 {{ super() }}
 <script>
-  new DataTable('#table1', {
-    order: [[5, 'desc']],
-    "columnDefs": [
-        {"className": "dt-center", "targets": "_all"},
-        { width: '30%', targets: 0 }
-      ],
-    pageLength: 10,
-    layout: {
-        topStart: {
-            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
-        }
-    }
-  });
-  new DataTable('#table2', {
-    order: [[3, 'desc']],
-    "columnDefs": [
-        {"className": "dt-center", "targets": "_all"},
-        { width: '30%', targets: 0 }
-      ],
-    pageLength: 10,
-    layout: {
-        topStart: {
-            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
-        }
-    }
-  });
+  // Execute intro.js when a button with id 'intro' is clicked
+  function startIntro(){
+      introJs().setOptions({
+          tooltipClass: 'customTooltip'
+      }).start();
+  }
+</script>
+<script>
+  
+
+  // new DataTable('#table1', {
+  //   order: [[5, 'desc']],
+  //   "columnDefs": [
+  //       {"className": "dt-center", "targets": "_all"},
+  //       { width: '30%', targets: 0 }
+  //     ],
+  //   pageLength: 10,
+  //   layout: {
+  //       topStart: {
+  //           buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+  //       }
+  //   }
+  // });
+
+  // new DataTable('#table2', {
+  //   order: [[3, 'desc']],
+  //   "columnDefs": [
+  //       {"className": "dt-center", "targets": "_all"},
+  //       { width: '30%', targets: 0 }
+  //     ],
+  //   pageLength: 10,
+  //   layout: {
+  //       topStart: {
+  //           buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+  //       }
+  //   }
+  // });
   new DataTable('#table3', {
     initComplete: function () {
         this.api()
