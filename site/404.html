@@ -41,6 +41,10 @@
   <!-- Load plotly.js into the DOM -->
 	<script src='https://cdn.plot.ly/plotly-2.29.1.min.js'></script>
   <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.0.1/css/buttons.dataTables.css">
+  <!-- fixedColumns -->
+  <script src="https://cdn.datatables.net/fixedcolumns/5.0.0/js/dataTables.fixedColumns.js"></script>
+  <script src="https://cdn.datatables.net/fixedcolumns/5.0.0/js/fixedColumns.dataTables.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/5.0.0/css/fixedColumns.dataTables.css">
   <!-- Already specified in mkdocs.yml -->
   <!-- <link rel="stylesheet" href="../docs/custom.css"> -->
   <script src="https://cdn.datatables.net/buttons/3.0.1/js/dataTables.buttons.js"></script>
@@ -50,6 +54,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
   <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.html5.min.js"></script>
   <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.print.min.js"></script>
+  <!-- Google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Intro.js -->
+  <script src="https://cdn.jsdelivr.net/npm/intro.js@7.2.0/intro.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@7.2.0/minified/introjs.min.css">
 
 
   <!-- 
@@ -209,7 +218,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
-    LiteratureSurvey
+    VPE/LiteratureSurvey
   </div>
 </a>
       </div>
@@ -233,12 +242,12 @@
   
   
     <li class="md-tabs__item">
-      <a href="/." class="md-tabs__link">
+      <a href="/Symbolic%20regression/" class="md-tabs__link">
         
   
     
   
-  Overview
+  Symbolic regression
 
       </a>
     </li>
@@ -250,29 +259,12 @@
   
   
     <li class="md-tabs__item">
-      <a href="/Physics-informed_GNNs/" class="md-tabs__link">
+      <a href="/Koopman%20operator%20theory/" class="md-tabs__link">
         
   
     
   
-  Physics-informed GNNs
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="/Neural_ODEs/" class="md-tabs__link">
-        
-  
-    
-  
-  Neural ODEs
+  Koopman operator theory
 
       </a>
     </li>
@@ -301,12 +293,12 @@
   
   
     <li class="md-tabs__item">
-      <a href="/Symbolic_regression/" class="md-tabs__link">
+      <a href="/Parametrizing%20of%20ODEs%20using%20ML/" class="md-tabs__link">
         
   
     
   
-  Symbolic regression
+  Parametrizing of ODEs using ML
 
       </a>
     </li>
@@ -318,12 +310,12 @@
   
   
     <li class="md-tabs__item">
-      <a href="/Koopman_Theory/" class="md-tabs__link">
+      <a href="/Latent%20space%20simulators%20%28VAMP%29/" class="md-tabs__link">
         
   
     
   
-  Koopman Theory
+  Latent space simulators (VAMP)
 
       </a>
     </li>
@@ -335,12 +327,12 @@
   
   
     <li class="md-tabs__item">
-      <a href="/Latent_Space_Simulator/" class="md-tabs__link">
+      <a href="/Physics-based%20GNNs/" class="md-tabs__link">
         
   
     
   
-  Latent Space Simulator
+  Physics-based GNNs
 
       </a>
     </li>
@@ -352,29 +344,12 @@
   
   
     <li class="md-tabs__item">
-      <a href="/Diffusion_models/" class="md-tabs__link">
+      <a href="/Neural%20ODEs/" class="md-tabs__link">
         
   
     
   
-  Diffusion models
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="/Time-series_forecasting/" class="md-tabs__link">
-        
-  
-    
-  
-  Time-series forecasting
+  Neural ODEs
 
       </a>
     </li>
@@ -419,7 +394,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
-    LiteratureSurvey
+    VPE/LiteratureSurvey
   </div>
 </a>
     </div>
@@ -433,11 +408,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="/Symbolic%20regression/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Overview
+    Symbolic regression
   </span>
   
 
@@ -453,31 +428,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/Physics-informed_GNNs/" class="md-nav__link">
+      <a href="/Koopman%20operator%20theory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Physics-informed GNNs
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Neural_ODEs/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Neural ODEs
+    Koopman operator theory
   </span>
   
 
@@ -513,11 +468,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/Symbolic_regression/" class="md-nav__link">
+      <a href="/Parametrizing%20of%20ODEs%20using%20ML/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Symbolic regression
+    Parametrizing of ODEs using ML
   </span>
   
 
@@ -533,11 +488,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/Koopman_Theory/" class="md-nav__link">
+      <a href="/Latent%20space%20simulators%20%28VAMP%29/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Koopman Theory
+    Latent space simulators (VAMP)
   </span>
   
 
@@ -553,11 +508,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/Latent_Space_Simulator/" class="md-nav__link">
+      <a href="/Physics-based%20GNNs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Latent Space Simulator
+    Physics-based GNNs
   </span>
   
 
@@ -573,31 +528,11 @@
   
   
     <li class="md-nav__item">
-      <a href="/Diffusion_models/" class="md-nav__link">
+      <a href="/Neural%20ODEs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Diffusion models
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="/Time-series_forecasting/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Time-series forecasting
+    Neural ODEs
   </span>
   
 
@@ -683,32 +618,43 @@
       
     
 <script>
-  new DataTable('#table1', {
-    order: [[5, 'desc']],
-    "columnDefs": [
-        {"className": "dt-center", "targets": "_all"},
-        { width: '30%', targets: 0 }
-      ],
-    pageLength: 10,
-    layout: {
-        topStart: {
-            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
-        }
-    }
-  });
-  new DataTable('#table2', {
-    order: [[3, 'desc']],
-    "columnDefs": [
-        {"className": "dt-center", "targets": "_all"},
-        { width: '30%', targets: 0 }
-      ],
-    pageLength: 10,
-    layout: {
-        topStart: {
-            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
-        }
-    }
-  });
+  // Execute intro.js when a button with id 'intro' is clicked
+  function startIntro(){
+      introJs().setOptions({
+          tooltipClass: 'customTooltip'
+      }).start();
+  }
+</script>
+<script>
+  
+
+  // new DataTable('#table1', {
+  //   order: [[5, 'desc']],
+  //   "columnDefs": [
+  //       {"className": "dt-center", "targets": "_all"},
+  //       { width: '30%', targets: 0 }
+  //     ],
+  //   pageLength: 10,
+  //   layout: {
+  //       topStart: {
+  //           buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+  //       }
+  //   }
+  // });
+
+  // new DataTable('#table2', {
+  //   order: [[3, 'desc']],
+  //   "columnDefs": [
+  //       {"className": "dt-center", "targets": "_all"},
+  //       { width: '30%', targets: 0 }
+  //     ],
+  //   pageLength: 10,
+  //   layout: {
+  //       topStart: {
+  //           buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+  //       }
+  //   }
+  // });
   new DataTable('#table3', {
     initComplete: function () {
         this.api()
