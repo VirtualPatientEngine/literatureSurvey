@@ -1,2 +1,5 @@
-Title	Query
-Neural ODEs	Neural ODEs
+Topic	Positive/Negative	PaperId
+GraphSAGE	Positive	6b7d6e6416343b2a122f8416e69059ce919026ef
+GraphSAGE	Negative	204e3073870fae3d05bcbc2f6a8e263d9b72e776
+Transformers	Positive	204e3073870fae3d05bcbc2f6a8e263d9b72e776
+Transformers	Negative	6b7d6e6416343b2a122f8416e69059ce919026ef

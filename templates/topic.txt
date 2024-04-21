@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <p>
+  <i class="footer">This page was last updated on {{current_time}} UTC</i>
+  </p>
+
+  <div class="note info" onclick="startIntro()">
+    <p>
+      <button type="button" class="buttons">
+        <div style="display: flex; align-items: center;">
+        Click here for a quick intro of the page! <i class="material-icons">help</i>
+        </div>
+      </button>
+    </p>
+  </div>
+
+  <div data-intro='Table of contents'>
+    <p>
+    <h3>Table of Contents</h3>
+      <a href="#plot1">1. Citations over time on {{title}}</a><br>
+      <a href="#manually_curated_articles">2. Manually curated articles on {{title}}</a><br>
+      <a href="#recommended_articles">3. Recommended articles on {{title}}</a><br>
+    <p>
+  </div>
+
+  <div data-intro='Plot displaying number of citations over time 
+                  on the given topic based on recommended articles'>
+    <p>
+    <h3 id="plot1">1. Citations over time on {{title}}</h3>
+      <div id='myDiv1'>
+        <!-- Plotly chart will be drawn inside this DIV -->
+      </div>
+    </p>
+  </div>
+
+  <div data-intro='Manually curated articles on the given topic'>
+    <p>
+    <h3 id="manually_curated_articles">2. Manually curated articles on {{title}}</h3>
+    <table id="table1" class="display" style="width:100%">
+    <thead>
+      <tr>
+          <th>Title</th>
+          <th>Authors</th>
+          <th>Publication Date</th>
+          <th>Journal/Conference</th>
+          <th>Citation count</th>
+          <th>Highest h-index</th>
+          <th data-intro='Recommended articles extracted by considering
+                          only the given article'>
+              View recommendations
+              </th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for article in positive_paper_ids %}
+        <tr>
+          <td><a href="{{positive_paper_ids[article].info.url}}" target='_blank'>
+                {{positive_paper_ids[article].info.title}}
+                </a>
+              </td>
+          <td>
+            {% for author in positive_paper_ids[article].authors %}
+              {{ author.name }},
+            {% endfor %}
+          </td>
+          <td>{{ positive_paper_ids[article].info.publication_date}}</td>
+          <td>{{ positive_paper_ids[article].info.journal}}</td>
+          <td>{{ positive_paper_ids[article].info.citation_count}}</td>
+          <td>{{ positive_paper_ids[article].info.h_index}}</td>
+          {% if positive_paper_ids[article].recommended_articles is not none %}
+            <td><a href='../recommendations/{{positive_paper_ids[article].article_id}}' target='_blank'>
+              <i class="material-icons">open_in_new</i></a>
+            </td>
+          {% else %}
+            <td>No recommendations found</td>
+          {% endif %}
+        </tr>
+      {% endfor %}
+    </tbody>
+    <tfoot>
+      <tr>
+          <th>Title</th>
+          <th>Authors</th>
+          <th>Publication Date</th>
+          <th>Journal/Conference</th>
+          <th>Citation count</th>
+          <th>Highest h-index</th>
+          <th>View recommendations</th>
+      </tr>
+    </tfoot>
+    </table>
+    </p>
+  </div>
+
+  <div data-intro='Recommended articles extracted by contrasting
+                  articles that are relevant against not relevant for this topic'>
+    <p>
+    <h3 id="recommended_articles">3. Recommended articles on {{title}}</h3>
+    <table id="table2" class="display" style="width:100%">
+    <thead>
+      <tr>
+          <th>Title</th>
+          <th>Authors</th>
+          <th>Publication Date</th>
+          <th>Journal/Conference</th>
+          <th>Citation count</th>
+          <th>Highest h-index</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for article in recommended_paper_ids %}
+        <tr>
+          <td><a href="{{recommended_paper_ids[article].info.url}}" target='_blank'>
+              {{recommended_paper_ids[article].info.title}}
+              </a>
+            </td>
+          <td>
+            {% for author in recommended_paper_ids[article].authors %}
+              {{ author.name }},
+            {% endfor %}
+          </td>
+          <td>{{ recommended_paper_ids[article].info.publication_date}}</td>
+          <td>{{ recommended_paper_ids[article].info.journal}}</td>
+          <td>{{ recommended_paper_ids[article].info.citation_count}}</td>
+          <td>{{ recommended_paper_ids[article].info.h_index}}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+    <tfoot>
+      <tr>
+          <th>Title</th>
+          <th>Authors</th>
+          <th>Publication Date</th>
+          <th>Journal/Conference</th>
+          <th>Citation count</th>
+          <th>Highest h-index</th>
+      </tr>
+    </tfoot>
+    </table>
+    </p>
+  </div>
+
+</body>
+
+<script>
+
+  var trace1 = {
+    x: {{x_year}},
+    y: {{y_num_citations}},
+    name: 'Num of citations',
+    yaxis: 'y1',
+    type: 'scatter'
+  };
+
+  var data = [trace1];
+
+  var layout = {
+    yaxis: {
+      title: 'Num of citations',
+      }
+  };
+  Plotly.newPlot('myDiv1', data, layout);
+</script>
+<script>
+var dataTableOptions = {
+        initComplete: function () {
+        this.api()
+            .columns()
+            .every(function () {
+                let column = this;
+ 
+                // Create select element
+                let select = document.createElement('select');
+                select.add(new Option(''));
+                column.footer().replaceChildren(select);
+ 
+                // Apply listener for user change in value
+                select.addEventListener('change', function () {
+                    column
+                        .search(select.value, {exact: true})
+                        .draw();
+                });
+
+                // keep the width of the select element same as the column
+                select.style.width = '100%';
+ 
+                // Add list of options
+                column
+                    .data()
+                    .unique()
+                    .sort()
+                    .each(function (d, j) {
+                        select.add(new Option(d));
+                    });
+            });
+    },
+    scrollX: true,
+    scrollCollapse: true,
+    paging: true,
+    fixedColumns: true,
+    // columnDefs: [
+    //     {"className": "dt-center", "targets": "_all"},
+    //     // set width for both columns 0 and 1 as 25%
+    //     { width: '40%', targets: 4 }
+
+    //   ],
+    pageLength: 10,
+    layout: {
+        topStart: {
+            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+        }
+    }
+  }
+  new DataTable('#table1', dataTableOptions);
+  new DataTable('#table2', dataTableOptions);
+</script>
+</html>

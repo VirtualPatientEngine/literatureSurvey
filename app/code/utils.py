@@ -4,11 +4,228 @@
 script to define utility functions
 '''
 
+import sys
 import matplotlib.pyplot as plt
 import pandas as pd
 import yaml
+import requests
 
-#A26, B1
+FIELDS = 'paperId,url,authors,journal,title,'
+FIELDS += 'publicationTypes,publicationDate,citationCount,'
+FIELDS += 'publicationVenue'
+
+def add_negative_articles(topic_obj, dic, max_num_articles=10):
+    """
+    Add the negative articles to the topic object
+    """
+    if 'negative' not in topic_obj.paper_ids:
+        topic_obj.paper_ids['negative'] = {}
+    num_topics = len(dic) - 1
+    while len(topic_obj.paper_ids["negative"]) < max_num_articles:
+        for topic in dic:
+            if topic == topic_obj.topic:
+                continue
+            articles_per_topic = max_num_articles // num_topics
+            for paper_id in dic[topic].paper_ids['positive']:
+                if paper_id in topic_obj.paper_ids['negative']:
+                    continue
+                topic_obj.paper_ids['negative'][paper_id]=dic[topic].paper_ids['positive'][paper_id]
+                articles_per_topic -= 1
+                if articles_per_topic == 0:
+                    break
+                if len(topic_obj.paper_ids["negative"]) == max_num_articles:
+                    break
+            if len(topic_obj.paper_ids["negative"]) == max_num_articles:
+                break
+    print (f'Added {len(topic_obj.paper_ids["negative"])} negative articles for {topic_obj.topic}.')
+
+def update_paper_details(topic_obj):
+    """
+    Fetch the details of all the papers
+    """
+    all_paper_ids = list(topic_obj.paper_ids['positive'].keys())
+    all_paper_ids += list(topic_obj.paper_ids['negative'].keys())
+    all_paper_ids = list(set(all_paper_ids))
+    all_paper_data = get_paper_details(all_paper_ids)
+    return all_paper_data
+
+def add_paper_details(article_obj, article_data):
+    """
+    Add the details of the article
+    """
+    article_obj.info.journal = update_journal(
+                                article_data['journal'],
+                                article_data['publicationVenue'])
+    article_obj.info.title = article_data['title']
+    article_obj.info.url = article_data['url']
+    article_obj.info.publication_date = article_data['publicationDate']
+    article_obj.info.citation_count = article_data['citationCount']
+    # print (article_obj.info)
+
+def update_h_index(article_obj, dic):
+    """
+    Update the h-index of the article based on
+    the h-index of its authors
+    """
+    # print (dic)
+    authors_h_index_list = []
+    for row in dic:
+        if row is None:
+            continue
+        for author in article_obj.authors:
+            author_id = author.author_id
+            # print (author_id, row)
+            if author_id == row['authorId']:
+                author.h_index = row['hIndex']
+                author.name = row['name']
+                author.citation_count = row['citationCount']
+                authors_h_index_list.append(row['hIndex'])
+    if len(authors_h_index_list) == 0:
+        authors_avg_h_index = 0
+    else:
+        authors_avg_h_index = sum(authors_h_index_list) / len(authors_h_index_list)
+        authors_avg_h_index = max(authors_h_index_list)
+    # article_obj.info.h_index = authors_avg_h_index
+    article_obj.info.h_index = authors_avg_h_index
+
+def add_recommendations_to_positive_articles(article_id,
+                                             limit=500,
+                                             fields=FIELDS):
+    """
+    Add the recommendations to the positive articles
+    """
+    endpoint = 'https://api.semanticscholar.org/recommendations/v1/papers/forpaper/'
+    endpoint += f'{article_id}'
+    params={'fields': fields, 'limit': limit, 'from': 'all-cs'}
+    status_code = 0
+    while status_code not in [200, 400]:
+        # Make a POST request to the paper search batch
+        # endpoint with the URL
+        search_response = requests.get(endpoint,
+                                        params=params,
+                                        # json=json,
+                                        timeout=None)
+        status_code = search_response.status_code
+        # print (article_id, status_code)
+        if status_code == 400:
+            print ('Bad query parameters.',
+                    status_code,
+                    search_response.json())
+            sys.exit()
+    return search_response.json()['recommendedPapers']
+
+def update_journal(journal, publication_venue):
+    """
+    Update the journal of the recommended articles
+    """
+    journal_name = None
+    if journal is not None:
+        if 'name' in journal:
+            # self.journal = journal['name']
+            journal_name = journal['name']
+    if publication_venue is not None:
+        if 'name' in publication_venue:
+            # self.journal = publication_venue['name']
+            journal_name = publication_venue['name']
+    return journal_name
+
+def add_recommendations(topic_obj,
+                        fields=FIELDS):
+    """
+    Add the recommendations to the positive articles
+
+    Args:
+        topic_obj (object): object of the topic class
+
+    Returns:
+        search_response.json() (dict): dictionary of the search response
+    """
+    endpoint = 'https://api.semanticscholar.org/recommendations/v1/papers/'
+    params = {'fields': fields, 'limit': topic_obj.limit}
+    json = {
+            'positivePaperIds': list(topic_obj.paper_ids['positive'].keys())[:10],
+            'negativePaperIds': list(topic_obj.paper_ids['negative'].keys())[:10],
+            }
+    status_code = 0
+    while status_code not in [200, 400, 404]:
+        # Make a POST request to the paper search batch
+        # endpoint with the URL
+        search_response = requests.post(endpoint,
+                                        params=params,
+                                        json=json,
+                                        timeout=None)
+        status_code = search_response.status_code
+        if status_code == 400:
+            print (f'Bad query parameters for {topic_obj.topic}.',
+                    status_code,
+                    search_response.json())
+            sys.exit()
+        elif status_code == 404:
+            print (f'Input papers not found for {topic_obj.topic}.',
+                    status_code,
+                    search_response.json())
+            break
+    return search_response.json()
+
+def get_paper_details(paper_ids, fields=FIELDS):
+    """
+    Get the paper details
+
+    Args:
+        paper_ids (list): list of paper ids
+
+    Returns:
+        search_response.json() (dict): dictionary of the search response
+    """
+    endpoint = 'https://api.semanticscholar.org/graph/v1/paper/batch'
+    params = {'fields': fields}
+    json = {'ids': list(paper_ids)}
+    status_code = 0
+    while status_code != 200:
+        # Make a POST request to the paper search batch
+        # endpoint with the URL
+        search_response = requests.post(endpoint, params=params, json=json, timeout=None)
+        status_code = search_response.status_code
+    return search_response.json()
+
+def get_author_details(authors_ids):
+    """
+    Get the author details
+
+    Args:
+        authors_ids (list): list of authors ids
+
+    Returns:
+        authors_details (list): list of authors details
+    """
+    # Loop over every 1000 authors
+    authors_details = []
+    for start_index in range(0, len(authors_ids), 1000):
+        end_index = start_index + 1000
+        if end_index > len(authors_ids):
+            end_index = len(authors_ids)
+        # Get the h-index of the authors
+        endpoint = 'https://api.semanticscholar.org/graph/v1/author/batch'
+        params={'fields': 'name,hIndex,citationCount'}
+        json = {
+                'ids': authors_ids[start_index:end_index]
+                }
+        status_code = 0
+        while status_code not in [200, 400]:
+            # Make a POST request to the paper search batch
+            # endpoint with the URL
+            search_response = requests.post(endpoint,
+                                            params=params,
+                                            json=json,
+                                            timeout=None)
+            status_code = search_response.status_code
+            if status_code == 400:
+                print ('Bad query parameters.',
+                        status_code,
+                        search_response.json())
+                sys.exit()
+        authors_details += search_response.json()
+    return authors_details
 
 def metrics_over_time_js(data) -> plt:
     """
@@ -37,12 +254,12 @@ def metrics_over_time_js(data) -> plt:
     ]
     """
     dic = {}
-    for paper in data:
+    for _, paper_obj in data.items():
         # Exclude the articles with no publication date or citation count
-        publication_date = paper['publicationDate']
+        publication_date = paper_obj.info.publication_date
         if publication_date is None or publication_date == '':
             continue
-        citation_count = paper['citationCount']
+        citation_count = paper_obj.info.citation_count
         if citation_count is None or citation_count == '':
             continue
         year = publication_date.split('-')[0]
