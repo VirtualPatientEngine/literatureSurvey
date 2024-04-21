@@ -35,8 +35,8 @@ extra_css:
 repo_url: https://github.com/VirtualPatientEngine/literatureSurvey
 repo_name: VPE/LiteratureSurvey
 
-# nav:
-  # - Home: All.md
+nav:
+  - Home: index.md
   # - Neural ODEs: Neural_ODEs.md
   # - Physics-informed GNNs: Physics-informed_GNNs.md
   # - Symbolic regression: Symbolic_regression.md
