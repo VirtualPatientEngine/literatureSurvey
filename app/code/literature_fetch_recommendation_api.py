@@ -5,6 +5,7 @@ This script demonstrates how to use the Semantic Scholar API to search for paper
 and retrieve their details.
 '''
 
+import os
 import time
 import pandas as pd
 from jinja2 import Environment, FileSystemLoader
@@ -69,6 +70,9 @@ if __name__ == '__main__':
     from topic import Topic
     from article import Article
     from author import Author
+
+    if os.path.exists('../../docs/recommendations') is False:
+        os.mkdir('../../docs/recommendations')
 
     QUERY_FILE = '../data/test.tsv'
     # Work with all the topics
