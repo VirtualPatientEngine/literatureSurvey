@@ -61,7 +61,7 @@
     <tbody>
       {% for article in positive_paper_ids %}
         <tr id="{{positive_paper_ids[article].info.abstract}}">
-          <td id="tag"></td>
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="{{positive_paper_ids[article].info.url}}" target='_blank'>
                 {{positive_paper_ids[article].info.title}}
                 </a>
@@ -118,7 +118,7 @@
     <tbody>
       {% for article in recommended_paper_ids %}
         <tr id="{{recommended_paper_ids[article].info.abstract}}">
-          <td id="tag"></td>
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="{{recommended_paper_ids[article].info.url}}" target='_blank'>
               {{recommended_paper_ids[article].info.title}}
               </a>
@@ -244,9 +244,11 @@ var dataTableOptions = {
       // This row is already open - close it.
       row.child.hide();
       tr.removeClass('shown');
+      tr.find('td:first-child').html('<i class="material-icons">visibility_off</i>');
     } else {
       // Open row.
       // row.child('foo').show();
+      tr.find('td:first-child').html('<i class="material-icons">visibility</i>');
       var content = '<div class="child-row-content"><strong>Abstract:</strong> ' + rowId + '</div>';
       row.child(content).show();
       tr.addClass('shown');
@@ -264,13 +266,27 @@ var dataTableOptions = {
       // This row is already open - close it.
       row.child.hide();
       tr.removeClass('shown');
+      tr.find('td:first-child').html('<i class="material-icons">visibility_off</i>');
     } else {
       // Open row.
       // row.child('foo').show();
       var content = '<div class="child-row-content"><strong>Abstract:</strong> ' + rowId + '</div>';
       row.child(content).show();
       tr.addClass('shown');
+      tr.find('td:first-child').html('<i class="material-icons">visibility</i>');
     }
   });
 </script>
+<style>
+  .child-row-content {
+    text-align: justify;
+    text-justify: inter-word;
+    word-wrap: break-word; /* Ensure long words are broken */
+    white-space: normal; /* Ensure text wraps to the next line */
+    max-width: 100%; /* Ensure content does not exceed the table width */
+    padding: 10px; /* Optional: add some padding for better readability */
+    /* font size */
+    font-size: small;
+  }
+</style>
 </html>

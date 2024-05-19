@@ -37,21 +37,10 @@ div.dataTables_wrapper {
 }
 
 tr td#tag:first-child {
-  background: url('https://datatables.net/examples/resources/details_open.png') no-repeat center center;
+  /* background: url('https://datatables.net/examples/resources/details_open.png') no-repeat center center; */
   cursor: pointer;
 }
 
-tr.shown td#tag:first-child {
+/* tr.shown td#tag:first-child {
     background: url('https://datatables.net/examples/resources/details_close.png') no-repeat center center;
-}
-
-.child-row-content {
-  text-align: justify;
-  text-justify: inter-word;
-  word-wrap: break-word; /* Ensure long words are broken */
-  white-space: normal; /* Ensure text wraps to the next line */
-  max-width: 100%; /* Ensure content does not exceed the table width */
-  padding: 10px; /* Optional: add some padding for better readability */
-  /* font size */
-  font-size: small;
-}
+} */
