@@ -217,8 +217,8 @@ var dataTableOptions = {
     columnDefs: [
         {"className": "dt-center", "targets": "_all"},
         // set width for both columns 0 and 1 as 25%
-        { width: '3%', targets: 0 },
-        { width: '35%', targets: 1 },
+        { width: '7%', targets: 0 },
+        { width: '30%', targets: 1 },
         { width: '25%', targets: 2 },
         { width: '15%', targets: 4 }
 
