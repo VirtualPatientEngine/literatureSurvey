@@ -4,18 +4,16 @@ on:
     workflows: ["RELEASE"]
     types:
       - completed
-  # push:
-  #   branches:
-  #     - main
   schedule:
-      - cron: '0 6 * * 1'  # Runs every Monday at 6 AM
-  workflow_dispatch:  # Manually trigger the workflow
+      - cron: '0 6 * * 1'  # Runs every Monday at 6 AM UTC
+  workflow_dispatch:  # Option to also manually trigger the workflow
 permissions:
   contents: write
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      # Set up Git Credentials
       - uses: actions/checkout@v4
       - name: Configure Git Credentials
         run: |
@@ -24,16 +22,19 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: 3.9
+      # Install requirements
       - name: Install the requirements
         shell: bash -l {0}
         run: |
           pip3 install mkdocs mkdocs-material mkdocs-material-extensions mkdocstrings mkdocstrings-python
           pip3 install -r requirements.txt
+      # Run the literature_fetch_recommendations script
       - name: Run literature_fetch
         shell: bash -l {0}
         run: |
           cd app/code
           python3 literature_fetch_recommendation_api.py
+      # Set up mkdocs website
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
       - uses: actions/cache@v3
         with:
@@ -43,14 +44,14 @@ jobs:
             mkdocs-material-
       - run: pip install mkdocs-material 
       - run: mkdocs gh-deploy --force
-      # commit
+      # Commit the files
       - name: Commit files
         run: |
          git config --local user.email "action@github.com"
          git config --local user.name "GitHub Action"
          git add -A
          git commit -m "update data" -a
-      # push
+      # Push the file to GitHub
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
         with:

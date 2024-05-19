@@ -5,6 +5,7 @@ This script demonstrates how to use the Semantic Scholar API to search for paper
 and retrieve their details.
 '''
 
+import os
 import time
 import pandas as pd
 from jinja2 import Environment, FileSystemLoader
@@ -64,13 +65,16 @@ def create_template(template,
     # return markdownify.markdownify(content)
     return content
 
+if os.path.exists('../../docs/recommendations') is False:
+    os.mkdir('../../docs/recommendations')
+
 if __name__ == '__main__':
     import utils
     from topic import Topic
     from article import Article
     from author import Author
 
-    QUERY_FILE = '../data/test.tsv'
+    QUERY_FILE = '../data/query.tsv'
     # Work with all the topics
     with open(QUERY_FILE, 'r', encoding='utf-8-sig') as f:
         for line in f:
@@ -79,16 +83,22 @@ if __name__ == '__main__':
             topic = line.split('\t')[0].lstrip().rstrip()
             if line.split('\t')[1] is None:
                 continue
-            paper_id = line.split('\t')[1].split('/')[-1].split('?')[0]
+            if line.split('\t')[1].lstrip().rstrip() == '1':
+                USE_ARTICLE = True
+            else:
+                USE_ARTICLE = False
+            paper_id = line.split('\t')[2].split('/')[-1].split('?')[0]
             # Check if the topic is already in the dictionary
             topic_obj = Topic(topic) if topic not in DIC else DIC[topic]
             DIC[topic] = topic_obj
             # Add the article to the list of positive articles
-            topic_obj.paper_ids['positive'][paper_id] = Article(paper_id)
+            topic_obj.paper_ids['positive'][paper_id] = Article(paper_id,
+                                                                use_for_recommendation=USE_ARTICLE)
     # Fetch the recommendations for each topic
     # make the markdown files
     for topic, topic_obj in DIC.items():
-        # if 'Koopman operator' not in topic:
+        # if topic not in ['Symbolic regression', 'Koopman operator theory', 'PINNs']:
+        # if topic not in ['Neural ODEs']:
         #     continue
         # Add the negative articles
         utils.add_negative_articles(topic_obj, DIC)
@@ -111,8 +121,11 @@ if __name__ == '__main__':
         ## GET THE RECOMMENDATIONS FOR A SINGLE POSITIVE ARTICLE ##
         for article_id, article_obj in topic_obj.paper_ids['positive'].items():
             # utils.add_recommendations_to_positive_articles(article_obj, 2)
-            search_response = utils.add_recommendations_to_positive_articles(article_id)
+            search_response = utils.add_recommendations_to_positive_articles(article_id, limit=10)
             for rec_paper_data in search_response:
+                # skip the ones with publication date is null
+                if rec_paper_data['publicationDate'] is None:
+                    continue
                 rec_paper_obj = Article(rec_paper_data['paperId'])
                 # rec_paper_obj.add_paper_details(rec_paper_data)
                 ##
@@ -154,9 +167,12 @@ if __name__ == '__main__':
         if len(topic_obj.paper_ids['positive']) == 0:
             print (f'No positive articles for {topic_obj.topic}. Skipping...')
         else:
-            search_response_json = utils.add_recommendations(topic_obj)
+            search_response_json = utils.add_recommendations(topic_obj, limit=300)
             for paper_data in search_response_json['recommendedPapers']:
                 paper_id = paper_data['paperId']
+                # skip the ones with publication date is null
+                if paper_data['publicationDate'] is None:
+                    continue
                 if 'recommended' not in topic_obj.paper_ids:
                     topic_obj.paper_ids['recommended'] = {}
                 paper_obj = Article(paper_data['paperId'])
@@ -195,12 +211,12 @@ if __name__ == '__main__':
     data = utils.read_yaml('../../base.yml')
 
     # Add more stuff to the YAML data
-    data['nav'] = []
+    # data['nav'] = []
     for topic, topic_obj in DIC.items():
         data['nav'].append({topic: topic + '.md'})
 
     # reverser the order so that Overview appears first
-    data['nav'] = data['nav'][::-1]
+    # data['nav'] = data['nav'][::-1]
     # Write modified YAML data back to file
     utils.write_yaml(data, '../../mkdocs.yml')
     print (f'Completed at {time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())}')
