@@ -1,11 +1,11 @@
-site_name: Literature Survey (Simulator)
+site_name: Literature Survey (VPE)
 plugins:
   - mkdocstrings:
       paths: ["app", "tests"]  
   - search
 theme:
   name: material
-  # logo: assets/AI_Schwurbel_standard.jpg
+  logo: assets/VPE.png
   custom_dir: overrides/
   features:
     - navigation.top
@@ -20,14 +20,14 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline 
         name: Switch to dark mode
-      primary: red
-      accent: purple 
+      primary: white
+      accent: black
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode    
-      primary: red
-      accent: lime
+      primary: white
+      accent: black
 extra_css:
   - custom.css
 # use_directory_urls: false

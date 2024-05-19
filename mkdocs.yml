@@ -1,13 +1,10 @@
 extra_css:
 - custom.css
 nav:
-- Symbolic regression: Symbolic regression.md
-- Koopman operator theory: Koopman operator theory.md
-- PINNs: PINNs.md
-- Parametrizing of ODEs using ML: Parametrizing of ODEs using ML.md
-- Latent space simulators (VAMP): Latent space simulators (VAMP).md
-- Physics-based GNNs: Physics-based GNNs.md
+- Home: index.md
 - Neural ODEs: Neural ODEs.md
+- Physics-based GNNs: Physics-based GNNs.md
+- Latent space simulators (VAMP): Latent space simulators (VAMP).md
 plugins:
 - mkdocstrings:
     paths:
@@ -16,7 +13,7 @@ plugins:
 - search
 repo_name: VPE/LiteratureSurvey
 repo_url: https://github.com/VirtualPatientEngine/literatureSurvey
-site_name: Literature Survey (Simulator)
+site_name: Literature Survey (VPE)
 theme:
   custom_dir: overrides/
   features:
@@ -24,16 +21,17 @@ theme:
   - navigation.tabs
   icon:
     repo: fontawesome/brands/github
+  logo: assets/VPE.png
   name: material
   palette:
-  - accent: purple
-    primary: red
+  - accent: black
+    primary: white
     scheme: default
     toggle:
       icon: material/toggle-switch-off-outline
       name: Switch to dark mode
-  - accent: lime
-    primary: red
+  - accent: black
+    primary: white
     scheme: slate
     toggle:
       icon: material/toggle-switch
