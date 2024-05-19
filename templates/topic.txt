@@ -49,7 +49,7 @@
           <th>Title</th>
           <th>Authors</th>
           <th>Publication Date</th>
-          <th>Journal/Conference</th>
+          <th>Journal/ Conference</th>
           <th>Citation count</th>
           <th data-intro='Highest h-index among the authors'>Highest h-index</th>
           <th data-intro='Recommended articles extracted by considering
@@ -89,7 +89,7 @@
           <th>Title</th>
           <th>Authors</th>
           <th>Publication Date</th>
-          <th>Journal/Conference</th>
+          <th>Journal/ Conference</th>
           <th>Citation count</th>
           <th>Highest h-index</th>
           <th>View recommendations</th>
