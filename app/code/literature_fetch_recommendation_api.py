@@ -83,10 +83,7 @@ if __name__ == '__main__':
             topic = line.split('\t')[0].lstrip().rstrip()
             if line.split('\t')[1] is None:
                 continue
-            if line.split('\t')[1].lstrip().rstrip() == '1':
-                USE_ARTICLE = True
-            else:
-                USE_ARTICLE = False
+            USE_ARTICLE = bool(line.split('\t')[1].lstrip().rstrip() == '1')
             paper_id = line.split('\t')[2].split('/')[-1].split('?')[0]
             # Check if the topic is already in the dictionary
             topic_obj = Topic(topic) if topic not in DIC else DIC[topic]
