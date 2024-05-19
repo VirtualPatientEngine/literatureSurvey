@@ -482,7 +482,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-05-19 09:25:45 UTC</i>
+  <i class="footer">This page was last updated on 2024-05-19 10:12:38 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -514,7 +514,7 @@
   <tbody>
 
         <tr id="We introduce a novel grid-independent model for learning partial differential equations (PDEs) from noisy and partial observations on irregular spatiotemporal grids. We propose a space-time continuous latent neural PDE model with an efficient probabilistic framework and a novel encoder design for improved data efficiency and grid independence. The latent state dynamics are governed by a PDE model that combines the collocation method and the method of lines. We employ amortized variational inference for approximate posterior estimation and utilize a multiple shooting technique for enhanced training speed and stability. Our model demonstrates state-of-the-art performance on complex synthetic and real-world datasets, overcoming limitations of previous approaches and effectively handling partially-observed data. The proposed model outperforms recent methods, showing its potential to advance data-driven PDE modeling and enabling robust, grid-independent modeling of complex partially-observed dynamic processes.">
-          <td id="tag"></td>
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/18fc14bf5e659e56f4c5cc3ccd593462dd28c383" target='_blank'>Learning Space-Time Continuous Neural PDEs from Partially Observed States</a></td>
           <td>
             V. Iakovlev, Markus Heinonen, H. Lähdesmäki
@@ -526,7 +526,7 @@
         </tr>
 
         <tr id="Significance In many physical systems, the governing equations are known with high confidence, but direct numerical solution is prohibitively expensive. Often this situation is alleviated by writing effective equations to approximate dynamics below the grid scale. This process is often impossible to perform analytically and is often ad hoc. Here we propose data-driven discretization, a method that uses machine learning to systematically derive discretizations for continuous physical systems. On a series of model problems, data-driven discretization gives accurate solutions with a dramatic drop in required resolution. The numerical solution of partial differential equations (PDEs) is challenging because of the need to resolve spatiotemporal features over wide length- and timescales. Often, it is computationally intractable to resolve the finest features in the solution. The only recourse is to use approximate coarse-grained representations, which aim to accurately represent long-wavelength dynamics while properly accounting for unresolved small-scale physics. Deriving such coarse-grained equations is notoriously difficult and often ad hoc. Here we introduce data-driven discretization, a method for learning optimized approximations to PDEs based on actual solutions to the known underlying equations. Our approach uses neural networks to estimate spatial derivatives, which are optimized end to end to best satisfy the equations on a low-resolution grid. The resulting numerical methods are remarkably accurate, allowing us to integrate in time a collection of nonlinear equations in 1 spatial dimension at resolutions 4× to 8× coarser than is possible with standard finite-difference methods.">
-          <td id="tag"></td>
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/9a43842478bf9d1aff71e964f584af4eeb196073" target='_blank'>Learning data-driven discretizations for partial differential equations</a></td>
           <td>
             Yohai Bar-Sinai, Stephan Hoyer, Jason Hickey, M. Brenner
@@ -538,7 +538,7 @@
         </tr>
 
         <tr id="In this paper, we consider the problem of learning prediction models for spatiotemporal physical processes driven by unknown partial differential equations (PDEs). We propose a deep learning framework that learns the underlying dynamics and predicts its evolution using sparsely distributed data sites. Deep learning has shown promising results in modeling physical dynamics in recent years. However, most of the existing deep learning methods for modeling physical dynamics either focus on solving known PDEs or require data in a dense grid when the governing PDEs are unknown. In contrast, our method focuses on learning prediction models for unknown PDE-driven dynamics only from sparsely observed data. The proposed method is spatial dimension-independent and geometrically flexible. We demonstrate our method in the forecasting task for the two-dimensional wave equation and the Burgers-Fisher equation in multiple geometries with different boundary conditions, and the ten-dimensional heat equation.">
-          <td id="tag"></td>
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/e00fa719a36548c833fe2abe1c2180ecaf3e8e0f" target='_blank'>A Deep Learning Approach for Predicting Spatiotemporal Dynamics From Sparsely Observed Data</a></td>
           <td>
             Priyabrata Saha, S. Mukhopadhyay
@@ -550,7 +550,7 @@
         </tr>
 
         <tr id="Recent advances in incorporating physical knowledge into deep neural networks can estimate previously unknown governing partial differential equations (PDEs) in a data-driven way. They have shown promising results in spatiotemporal predictive learning. However, these methods typically assume universal governing PDEs across space, which is impractical for modeling complex spatiotemporal phenomena with high spatial variability (e.g., climate). Also, they cannot effectively model the evolution of potential errors in estimating the physical dynamics over time. This paper introduces a physics-guided neural network, SVPNet, which learns effective physical representations by estimating the error evolution in physics states for correction and modeling spatially varying physical dynamics to predict the next state. Experiments carried out in four scenarios, including benchmarks and real-world datasets, show that SVPNet outperforms state-of-the-art methods in spatiotemporal prediction tasks for natural processes and significantly improves prediction when training data are limited. Ablation studies also highlight that SVPNet is powerful in capturing physical dynamics in complex physical systems.">
-          <td id="tag"></td>
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/a79653a75c7412044433ab2757edce70b964019a" target='_blank'>Modeling Spatially Varying Physical Dynamics for Spatiotemporal Predictive Learning</a></td>
           <td>
             Yijun Lin, Yao-Yi Chiang
@@ -562,7 +562,7 @@
         </tr>
 
         <tr id="Learning underlying dynamics from data is important and challenging in many real-world scenarios. Incorporating differential equations (DEs) to design continuous networks has drawn much attention recently, however, most prior works make specific assumptions on the type of DEs, making the model specialized for particular problems. This work presents a partial differential equation (PDE) based framework which improves the dynamics modeling capability. Building upon the recent Fourier neural operator, we propose a neural operator that can handle time continuously without requiring iterative operations or specific grids of temporal discretization. A theoretical result demonstrating its universality is provided. We also uncover an intrinsic property of neural operators that improves data efficiency and model generalization by ensuring stability. Our model achieves superior accuracy in dealing with time-dependent PDEs compared to existing models. Furthermore, several numerical pieces of evidence validate that our method better represents a wide range of dynamics and outperforms state-of-the-art DE-based models in real-time-series applications. Our framework opens up a new way for a continuous representation of neural networks that can be readily adopted for real-world applications.">
-          <td id="tag"></td>
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/1095fbfe9feb9117819a6d899faf624f2e943e73" target='_blank'>Learning PDE Solution Operator for Continuous Modeling of Time-Series</a></td>
           <td>
             Yesom Park, Jaemoo Choi, Changyeon Yoon, Changhoon Song, Myung-joo Kang
@@ -574,7 +574,7 @@
         </tr>
 
         <tr id="None">
-          <td id="tag"></td>
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/6645028d3aad0592fe663469862fa3a2b05e73c3" target='_blank'>STENCIL-NET for equation-free forecasting from data</a></td>
           <td>
             S. Maddu, D. Sturm, B. Cheeseman, Christian L. Müller, I. Sbalzarini
@@ -586,7 +586,7 @@
         </tr>
 
         <tr id="None">
-          <td id="tag"></td>
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/c3d769578637c4eebda2ace167b51a0a3ff7698d" target='_blank'>NeuralPDE: Modelling Dynamical Systems from Data</a></td>
           <td>
             Andrzej Dulny, A. Hotho, Anna Krause
@@ -598,7 +598,7 @@
         </tr>
 
         <tr id="Numerical methods for approximately solving partial differential equations (PDE) are at the core of scientific computing. Often, this requires high-resolution or adaptive discretization grids to capture relevant spatio-temporal features in the PDE solution, e.g., in applications like turbulence, combustion, and shock propagation. Numerical approximation also requires knowing the PDE in order to construct problem-specific discretizations. Systematically deriving such solution-adaptive discrete operators, however, is a current challenge. Here we present STENCIL-NET, an artificial neural network architecture for data-driven learning of problem- and resolution-specific local discretizations of nonlinear PDEs. STENCIL-NET achieves numerically stable discretization of the operators in an unknown nonlinear PDE by spatially and temporally adaptive parametric pooling on regular Cartesian grids, and by incorporating knowledge about discrete time integration. Knowing the actual PDE is not necessary, as solution data is sufficient to train the network to learn the discrete operators. A once-trained STENCIL-NET model can be used to predict solutions of the PDE on larger spatial domains and for longer times than it was trained for, hence addressing the problem of PDE-constrained extrapolation from data. To support this claim, we present numerical experiments on long-term forecasting of chaotic PDE solutions on coarse spatio-temporal grids. We also quantify the speed-up achieved by substituting base-line numerical methods with equation-free STENCIL-NET predictions on coarser grids with little compromise on accuracy.">
-          <td id="tag"></td>
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/9892628c5207890a3987a196304fc32a2bbacafd" target='_blank'>STENCIL-NET: Data-driven solution-adaptive discretization of partial differential equations</a></td>
           <td>
             S. Maddu, D. Sturm, B. Cheeseman, Christian L. Müller, I. Sbalzarini
@@ -610,7 +610,7 @@
         </tr>
 
         <tr id="We propose a new method for spatio-temporal forecasting on arbitrarily distributed points. Assuming that the observed system follows an unknown partial differential equation, we derive a continuous-time model for the dynamics of the data via the finite element method. The resulting graph neural network estimates the instantaneous effects of the unknown dynamics on each cell in a meshing of the spatial domain. Our model can incorporate prior knowledge via assumptions on the form of the unknown PDE, which induce a structural bias towards learning specific processes. Through this mechanism, we derive a transport variant of our model from the convection equation and show that it improves the transfer performance to higher-resolution meshes on sea surface temperature and gas flow forecasting against baseline models representing a selection of spatio-temporal forecasting methods. A qualitative analysis shows that our model disentangles the data dynamics into their constituent parts, which makes it uniquely interpretable.">
-          <td id="tag"></td>
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/162b00580f87c9b0a2ac1c17658b316f4b038b05" target='_blank'>Learning the Dynamics of Physical Systems from Sparse Observations with Finite Element Networks</a></td>
           <td>
             Marten Lienen, Stephan Günnemann
@@ -622,7 +622,7 @@
         </tr>
 
         <tr id="The long runtime of high-fidelity partial differential equation (PDE) solvers makes them unsuitable for time-critical applications. We propose to accelerate PDE solvers using reduced-order modeling (ROM). Whereas prior ROM approaches reduce the dimensionality of discretized vector fields, our continuous reduced-order modeling (CROM) approach builds a low-dimensional embedding of the continuous vector fields themselves, not their discretization. We represent this reduced manifold using continuously differentiable neural fields, which may train on any and all available numerical solutions of the continuous system, even when they are obtained using diverse methods or discretizations. We validate our approach on an extensive range of PDEs with training data from voxel grids, meshes, and point clouds. Compared to prior discretization-dependent ROM methods, such as linear subspace proper orthogonal decomposition (POD) and nonlinear manifold neural-network-based autoencoders, CROM features higher accuracy, lower memory consumption, dynamically adaptive resolutions, and applicability to any discretization. For equal latent space dimension, CROM exhibits 79$\times$ and 49$\times$ better accuracy, and 39$\times$ and 132$\times$ smaller memory footprint, than POD and autoencoder methods, respectively. Experiments demonstrate 109$\times$ and 89$\times$ wall-clock speedups over unreduced models on CPUs and GPUs, respectively. Videos and codes are available on the project page: https://crom-pde.github.io">
-          <td id="tag"></td>
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/74d6a587d97bb13d0ca69bb326b454e2d87b9261" target='_blank'>CROM: Continuous Reduced-Order Modeling of PDEs Using Implicit Neural Representations</a></td>
           <td>
             Peter Yichen Chen, Jinxu Xiang, D. Cho, Yue Chang, G. Pershing, H. Maia, Maurizio M. Chiaramonte, K. Carlberg, E. Grinspun
@@ -717,15 +717,29 @@ var dataTableOptions = {
       // This row is already open - close it.
       row.child.hide();
       tr.removeClass('shown');
+      tr.find('td:first-child').html('<i class="material-icons">visibility_off</i>');
     } else {
       // Open row.
       // row.child('foo').show();
       var content = '<div class="child-row-content"><strong>Abstract:</strong> ' + rowId + '</div>';
       row.child(content).show();
       tr.addClass('shown');
+      tr.find('td:first-child').html('<i class="material-icons">visibility</i>');
     }
   });
 </script>
+<style>
+  .child-row-content {
+    text-align: justify;
+    text-justify: inter-word;
+    word-wrap: break-word; /* Ensure long words are broken */
+    white-space: normal; /* Ensure text wraps to the next line */
+    max-width: 100%; /* Ensure content does not exceed the table width */
+    padding: 10px; /* Optional: add some padding for better readability */
+    /* font size */
+    font-size: small;
+  }
+</style>
 </html>
 
 
