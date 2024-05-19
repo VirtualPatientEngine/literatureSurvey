@@ -95,7 +95,7 @@ if __name__ == '__main__':
     # make the markdown files
     for topic, topic_obj in DIC.items():
         # if topic not in ['Symbolic regression', 'Koopman operator theory', 'PINNs']:
-        # if topic not in ['Neural ODEs']:
+        # if topic not in ['Neural ODEs', 'Latent space simulators (VAMP)']:
         #     continue
         # Add the negative articles
         utils.add_negative_articles(topic_obj, DIC)
@@ -110,6 +110,10 @@ if __name__ == '__main__':
             utils.add_paper_details(
                             paper_obj,
                             paper_data)
+            # Some articles are used as negative so they already have authors
+            # assigned to them. If not, assign the authors to the article
+            if len(paper_obj.authors) > 0:
+                continue
             for author in paper_data['authors']:
                 paper_obj.authors.append(
                                         Author(author['authorId'],
@@ -118,7 +122,8 @@ if __name__ == '__main__':
         ## GET THE RECOMMENDATIONS FOR A SINGLE POSITIVE ARTICLE ##
         for article_id, article_obj in topic_obj.paper_ids['positive'].items():
             # utils.add_recommendations_to_positive_articles(article_obj, 2)
-            search_response = utils.add_recommendations_to_positive_articles(article_id, limit=10)
+            search_response = utils.add_recommendations_to_positive_articles(article_id,
+                                                                             limit=10)
             for rec_paper_data in search_response:
                 # skip the ones with publication date is null
                 if rec_paper_data['publicationDate'] is None:
