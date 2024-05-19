@@ -12,6 +12,7 @@ class Info:
     '''
     journal: str = None
     title: str = None
+    abstract: str = None
     url: str = None
     publication_date: str = None
     citation_count: int = None
@@ -21,8 +22,9 @@ class Article:
     """
     Class to represent articles
     """
-    def __init__(self, article_id):
+    def __init__(self, article_id, use_for_recommendation=False):
         self.article_id = article_id
+        self.use_for_recommendation = use_for_recommendation
         self.authors = []
         self.info = Info()
         self.recommended_articles = []

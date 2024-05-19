@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+#
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -9,28 +10,39 @@
   <i class="footer">This page was last updated on {{current_time}} UTC</i>
   </p>
   
+  <div class="note info" onclick="startIntro()">
+    <p>
+      <button type="button" class="buttons">
+        <div style="display: flex; align-items: center;">
+        Click here for a quick intro of the page! <i class="material-icons">help</i>
+        </div>
+      </button>
+    </p>
+  </div>
 
   <p>
-  <h3>Recommendations for the article <i>{{title}}</i></h3>
-  <table id="table1" class="display" style="width:100%">
+  <h3 data-intro='Recommendations for the article'>
+    Recommendations for the article <i>{{title}}</i>
+  </h3>
+  <table id="table1" class="display wrap" style="width:100%">
   <thead>
     <tr>
+        <th data-intro='Click to view the abstract (if available)'>Abstract</th>
         <th>Title</th>
         <th>Authors</th>
         <th>Publication Date</th>
         <th>Journal/Conference</th>
         <th>Citation count</th>
-        <th>Highest h-index</th>
+        <th data-intro='Highest h-index among the authors'>Highest h-index</th>
     </tr>
   </thead>
   <tbody>
     {% for article in positive_paper_ids %}
-        <tr>
+        <tr id="{{article.info.abstract}}">
+          <td id="tag"></td>
           <td><a href="{{article.info.url}}" target='_blank'>{{article.info.title}}</a></td>
           <td>
-            {% for author in article.authors %}
-              {{ author.name }},
-            {% endfor %}
+            {{ article.authors|join(', ', attribute='name') }}
           </td>
           <td>{{ article.info.publication_date }}</td>
           <td>{{ article.info.journal }}</td>
@@ -41,6 +53,7 @@
   </tbody>
   <tfoot>
     <tr>
+        <th>Abstract</th>
         <th>Title</th>
         <th>Authors</th>
         <th>Publication Date</th>
@@ -87,16 +100,19 @@ var dataTableOptions = {
                     });
             });
     },
-    scrollX: true,
+    scrollX: false,
     scrollCollapse: true,
     paging: true,
     fixedColumns: true,
-    // columnDefs: [
-    //     {"className": "dt-center", "targets": "_all"},
-    //     // set width for both columns 0 and 1 as 25%
-    //     { width: '40%', targets: 4 }
+    columnDefs: [
+        {"className": "dt-center", "targets": "_all"},
+        // set width for both columns 0 and 1 as 25%
+        { width: '25%', targets: 1 },
+        { width: '20%', targets: 2 },
+        { width: '10%', targets: 3 },
+        { width: '20%', targets: 4 }
 
-    //   ],
+      ],
     pageLength: 10,
     layout: {
         topStart: {
@@ -105,5 +121,26 @@ var dataTableOptions = {
     }
   }
   new DataTable('#table1', dataTableOptions);
+  
+  var table = $('#table1').DataTable();
+  $('#table1 tbody').on('click', 'td:first-child', function () {
+    var tr = $(this).closest('tr');
+    var row = table.row( tr );
+
+    var rowId = tr.attr('id');
+    // alert(rowId);
+
+    if (row.child.isShown()) {
+      // This row is already open - close it.
+      row.child.hide();
+      tr.removeClass('shown');
+    } else {
+      // Open row.
+      // row.child('foo').show();
+      var content = '<div class="child-row-content"><strong>Abstract:</strong> ' + rowId + '</div>';
+      row.child(content).show();
+      tr.addClass('shown');
+    }
+  });
 </script>
 </html>

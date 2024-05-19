@@ -12,7 +12,7 @@ import requests
 
 FIELDS = 'paperId,url,authors,journal,title,'
 FIELDS += 'publicationTypes,publicationDate,citationCount,'
-FIELDS += 'publicationVenue'
+FIELDS += 'publicationVenue,externalIds,abstract'
 
 def add_negative_articles(topic_obj, dic, max_num_articles=10):
     """
@@ -55,9 +55,11 @@ def add_paper_details(article_obj, article_data):
     """
     article_obj.info.journal = update_journal(
                                 article_data['journal'],
-                                article_data['publicationVenue'])
+                                article_data['publicationVenue'],
+                                article_data['externalIds'])
     article_obj.info.title = article_data['title']
     article_obj.info.url = article_data['url']
+    article_obj.info.abstract = article_data['abstract']
     article_obj.info.publication_date = article_data['publicationDate']
     article_obj.info.citation_count = article_data['citationCount']
     # print (article_obj.info)
@@ -114,22 +116,36 @@ def add_recommendations_to_positive_articles(article_id,
             sys.exit()
     return search_response.json()['recommendedPapers']
 
-def update_journal(journal, publication_venue):
+def update_journal(journal, publication_venue, external_ids):
     """
     Update the journal of the recommended articles
     """
-    journal_name = None
+    journal_name = []
     if journal is not None:
         if 'name' in journal:
             # self.journal = journal['name']
-            journal_name = journal['name']
+            journal_name.append(journal['name'])
     if publication_venue is not None:
         if 'name' in publication_venue:
             # self.journal = publication_venue['name']
-            journal_name = publication_venue['name']
+            for name in journal_name.copy():
+                if publication_venue['name'].lower() == name.lower():
+                    continue
+                journal_name.append(publication_venue['name'])
+    if not journal_name:
+        for external_id in external_ids:
+            if external_id in ['CorpusId', 'DOI']:
+                continue
+            journal_name.append(external_id)
+    if not journal_name:
+        journal_name = None
+    else:
+        journal_name = list(set(journal_name))
+        journal_name = ', '.join(journal_name)
     return journal_name
 
 def add_recommendations(topic_obj,
+                        limit=500,
                         fields=FIELDS):
     """
     Add the recommendations to the positive articles
@@ -141,9 +157,20 @@ def add_recommendations(topic_obj,
         search_response.json() (dict): dictionary of the search response
     """
     endpoint = 'https://api.semanticscholar.org/recommendations/v1/papers/'
-    params = {'fields': fields, 'limit': topic_obj.limit}
+    params = {'fields': fields, 'limit': limit}
+    # Select positive articles that have use_for_recommendation set to True
+    positive_paper_ids = []
+    count = 0
+    for paper_id, paper_obj in topic_obj.paper_ids['positive'].items():
+        if paper_obj.use_for_recommendation is False:
+            continue
+        positive_paper_ids.append(paper_id)
+        count += 1
+        if count == 10:
+            break
     json = {
-            'positivePaperIds': list(topic_obj.paper_ids['positive'].keys())[:10],
+            # 'positivePaperIds': list(topic_obj.paper_ids['positive'].keys())[:10],
+            'positivePaperIds': positive_paper_ids,
             'negativePaperIds': list(topic_obj.paper_ids['negative'].keys())[:10],
             }
     status_code = 0
