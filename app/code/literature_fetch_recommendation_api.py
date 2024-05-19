@@ -6,6 +6,7 @@ and retrieve their details.
 '''
 
 import os
+import os
 import time
 import pandas as pd
 from jinja2 import Environment, FileSystemLoader
