@@ -7,6 +7,8 @@
 <body>
     <h1>Introduction</h1>
     <p>Welcome to <a href="https://github.com/VirtualPatientEngine" target="_blank">Team VPE</a>'s Literature Survey System! This project leverages the powerful <a href='https://api.semanticscholar.org/api-docs/recommendations' target="_blank">Semantic Scholar's Recommendation API</a> to provide you with highly relevant research article recommendations based on your curated lists of articles.</p>
+
+    <p>Moreoer, this website contains curated collection of references on differentiable and learned simulator algorithms for developing digital twins with applications in drug discovery and development.</p>
     
     <h2>Features</h2>
     <ul>
