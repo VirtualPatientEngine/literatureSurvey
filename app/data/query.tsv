@@ -11,6 +11,10 @@ Time-series forecasting	1	https://www.semanticscholar.org/paper/UniTS%3A-Buildin
 Time-series forecasting	1	https://www.semanticscholar.org/paper/Unified-Training-of-Universal-Time-Series-Woo-Liu/4a111f7a3b56d0468f13104999844885157ef17d?utm_source=direct_link
 Time-series forecasting	1	https://www.semanticscholar.org/paper/Time-LLM%3A-Time-Series-Forecasting-by-Reprogramming-Jin-Wang/16f01c1b3ddd0b2abd5ddfe4fdb3f74767607277?utm_source=direct_link
 Time-series forecasting	1	https://www.semanticscholar.org/paper/Tiny-Time-Mixers-(TTMs)%3A-Fast-Pre-trained-Models-of-Ekambaram-Jati/e2e1f1b8e6c1b7f4f166e15b7c674945856a51b6?utm_source=direct_link
+Time-series forecasting	0	https://www.semanticscholar.org/paper/Self-Supervised-Contrastive-Pre-Training-For-Time-Zhang-Zhao/648d90b713997a771e2c49f02cd771e8b7b10b37?utm_source=direct_link
+Time-series forecasting	0	https://www.semanticscholar.org/paper/Domain-Adaptation-for-Time-Series-Under-Feature-and-He-Queen/5bd2c0acaf58c25f71617db2396188c74d29bf14?utm_source=direct_link
+Time-series forecasting	0	https://www.semanticscholar.org/paper/AZ-whiteness-test%3A-a-test-for-signal-uncorrelation-Zambon-Alippi/c3c94ccc094dcf546e8e31c9a42506302e837524?utm_source=direct_link
+Time-series forecasting	0	https://www.semanticscholar.org/paper/Graph-state-space-models-Zambon-Cini/279cd637b7e38bba1dd8915b5ce68cbcacecbe68?utm_source=direct_link
 Symbolic regression	1	https://www.semanticscholar.org/paper/Discovering-governing-equations-from-data-by-sparse-Brunton-Proctor/5d150cec2775f9bc863760448f14104cc8f42368?utm_source=direct_link
 Symbolic regression	1	https://www.semanticscholar.org/paper/Robust-learning-from-noisy%2C-incomplete%2C-data-via-Reinbold-Kageorge/60d0d998fa038182b3b69a57adb9b2f82d40589c?utm_source=direct_link
 Symbolic regression	1	https://www.semanticscholar.org/paper/Data-driven-discovery-of-coordinates-and-governing-Champion-Lusch/3c9961153493370500020c81527b3548c96f81e0?utm_source=direct_link
@@ -18,6 +22,7 @@ Symbolic regression	1	https://www.semanticscholar.org/paper/Chaos-as-an-intermit
 Symbolic regression	1	https://www.semanticscholar.org/paper/Sparse-identification-of-nonlinear-dynamics-for-in-Kaiser-Kutz/b2eb064f432557c59ce99834d7dc7817e4687271?utm_source=direct_link
 Symbolic regression	1	https://www.semanticscholar.org/paper/Inferring-Biological-Networks-by-Sparse-of-Dynamics-Mangan-Brunton/06a0ba437d41a7c82c08a9636a4438c1b5031378?utm_source=direct_link
 Symbolic regression	1	https://www.semanticscholar.org/paper/SINDy-PI%3A-a-robust-algorithm-for-parallel-implicit-Kaheman-Kutz/4971f9abd024e40fbbdff2e9492745b68a6bca01?utm_source=direct_link
+Symbolic regression	0	https://www.semanticscholar.org/paper/Multidimensional-Approximation-of-Nonlinear-Systems-Gel%C3%9F-Klus/2b2aa13d4959073f61ad70555bc8c7da7d116196?utm_source=direct_link
 Symbolic regression	1	https://www.semanticscholar.org/paper/Learning-Discrepancy-Models-From-Experimental-Data-Kaheman-Kaiser/73dd9c49f205280991826b2ea4b50344203916b4?utm_source=direct_link
 Symbolic regression	1	https://www.semanticscholar.org/paper/Discovery-of-Physics-From-Data%3A-Universal-Laws-and-Silva-Higdon/35e2571c17246577e0bc1b9de57a314c3b60e220?utm_source=direct_link
 Symbolic regression	1	https://www.semanticscholar.org/paper/Data-driven-discovery-of-partial-differential-Rudy-Brunton/0acd117521ef5aafb09fed02ab415523b330b058?utm_source=direct_link
@@ -30,6 +35,8 @@ Neural ODEs	1	https://www.semanticscholar.org/paper/Graph-Neural-Ordinary-Differ
 Neural ODEs	1	https://www.semanticscholar.org/paper/GRAND%3A-Graph-Neural-Diffusion-Chamberlain-Rowbottom/95eee51c1cb1771e96cd182f47c90a7877461530?utm_source=direct_link
 Neural ODEs	1	https://www.semanticscholar.org/paper/Beltrami-Flow-and-Neural-Diffusion-on-Graphs-Chamberlain-Rowbottom/af84c6db6b5c41ca628867ff4a27566e9ca3c69e?utm_source=direct_link
 Neural ODEs	1	https://www.semanticscholar.org/paper/Message-Passing-Neural-PDE-Solvers-Brandstetter-Worrall/be8d39424a9010bfc0805385cc91edee383c2e24?utm_source=direct_link
+Neural ODEs	0	https://www.semanticscholar.org/paper/Graph-Coupled-Oscillator-Networks-Rusch-Chamberlain/a50a2a191c98dfe045ac2139495ee80ff1338e47?utm_source=direct_link
+Neural ODEs	0	https://www.semanticscholar.org/paper/Continuous-PDE-Dynamics-Forecasting-with-Implicit-Yin-Kirchmeyer/d39ad86d4617e069d89b6d62c760c2ba268a2b85?utm_source=direct_link
 Physics-based GNNs	1	https://www.semanticscholar.org/paper/Learning-rigid-dynamics-with-face-interaction-graph-Allen-Rubanova/d6fdd8fc0c5fc052d040687e72638fb4297661cc?utm_source=direct_link
 Physics-based GNNs	1	https://www.semanticscholar.org/paper/Graph-network-simulators-can-learn-discontinuous%2C-Allen-Lopez-Guevara/979c112d5ed2f7653990a3591cdfccfad0dc27fd?utm_source=direct_link
 Physics-based GNNs	1	https://www.semanticscholar.org/paper/Learning-Mesh-Based-Simulation-with-Graph-Networks-Pfaff-Fortunato/9e20f6874feaaf7c9994f9875b1d9cab17a2fd59?utm_source=direct_link
@@ -40,6 +47,9 @@ Physics-based GNNs	1	https://www.semanticscholar.org/paper/Interaction-Networks-
 Physics-based GNNs	1	https://www.semanticscholar.org/paper/Graph-networks-as-learnable-physics-engines-for-and-Sanchez-Gonzalez-Heess/43879cf527f4918955fd55128baa6745174d8555?utm_source=direct_link
 Physics-based GNNs	1	https://www.semanticscholar.org/paper/Relational-inductive-biases%2C-deep-learning%2C-and-Battaglia-Hamrick/3a58efcc4558727cc5c131c44923635da4524f33?utm_source=direct_link
 Physics-based GNNs	1	https://www.semanticscholar.org/paper/Learning-to-Simulate-Complex-Physics-with-Graph-Sanchez-Gonzalez-Godwin/c529f5b08675f787cdcc094ee495239592339f82?utm_source=direct_link
+Physics-based GNNs	0	https://www.semanticscholar.org/paper/Discovering-Symbolic-Models-from-Deep-Learning-with-Cranmer-Sanchez-Gonzalez/643ac3ef063c77eb02a3d52637c11fe028bfae28?utm_source=direct_link
+Physics-based GNNs	0	NA	
+Physics-based GNNs	0	https://www.semanticscholar.org/paper/Rediscovering-orbital-mechanics-with-machine-Lemos-Jeffrey/2232751169e57a14723bfffb4ab26aa0e0e3839a?utm_source=direct_link
 Latent space simulators	1	https://www.semanticscholar.org/paper/Molecular-latent-space-simulators-Sidky-Chen/2d3000d245988a02d3c1060211e9d89c67147b49?utm_source=direct_link
 Latent space simulators	1	https://www.semanticscholar.org/paper/Extended-dynamic-mode-decomposition-with-dictionary-Li-Dietrich/80744010d90c8ede052c7ac6ba8c38c9de959c6e?utm_source=direct_link
 Latent space simulators	1	https://www.semanticscholar.org/paper/Time-lagged-autoencoders%3A-Deep-learning-of-slow-for-Wehmeyer-No%C3%A9/d8d8e2c04ca47bd628bd2a499e03ad7cd29633da?utm_source=direct_link
@@ -49,6 +59,7 @@ Latent space simulators	1	https://www.semanticscholar.org/paper/Variational-Appr
 Parametrizing using ML	1	https://www.semanticscholar.org/paper/Deep-learning-prediction-of-patient-response-time-Lu-Bender/4e837965494c4edbec4d30832d31ba5639996da8?utm_source=direct_link
 Parametrizing using ML	1	https://www.semanticscholar.org/paper/Coupled-Graph-ODE-for-Learning-Interacting-System-Huang-Sun/aaf2145f9998f304513c0c9b530ee9f7750c6f55?utm_source=direct_link
 Parametrizing using ML	1	https://www.semanticscholar.org/paper/CellBox%3A-Interpretable-Machine-Learning-for-Biology-Yuan-Shen/6bd28606fbae3449f831248804264c9885e992f9?utm_source=direct_link
+Parametrizing using ML	0	https://www.semanticscholar.org/paper/Efficient-Amortised-Bayesian-Inference-for-and-Roeder-Grant/309c5ae93a4cabfd37747abd130866240e265b2d?utm_source=direct_link
 PINNs	1	https://www.semanticscholar.org/paper/Solving-real-world-optimization-tasks-using-neural-Seo/23c7b93a379c26c3738921282771e1a545538703?utm_source=direct_link
 PINNs	1	https://www.semanticscholar.org/paper/Systems-biology-informed-neural-networks-(SBINN)-Przedborski-Smalley/68d54a4ef82873fd3a0e857ad2c136d65fa17db8?utm_source=direct_link
 PINNs	1	https://www.semanticscholar.org/paper/Physics-informed-machine-learning-Karniadakis-Kevrekidis/53c9f3c34d8481adaf24df3b25581ccf1bc53f5c?utm_source=direct_link

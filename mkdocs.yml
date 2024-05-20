@@ -2,14 +2,14 @@ extra_css:
 - custom.css
 nav:
 - Home: index.md
+- Time-series forecasting: Time-series forecasting.md
+- Symbolic regression: Symbolic regression.md
 - Neural ODEs: Neural ODEs.md
 - Physics-based GNNs: Physics-based GNNs.md
-- Latent space simulators (VAMP): Latent space simulators (VAMP).md
-- Parametrizing of ODEs using ML: Parametrizing of ODEs using ML.md
+- Latent space simulators: Latent space simulators.md
+- Parametrizing using ML: Parametrizing using ML.md
 - PINNs: PINNs.md
-- Koopman operator theory: Koopman operator theory.md
-- Symbolic regression: Symbolic regression.md
-- Time-series forecasting: Time-series forecasting.md
+- Koopman operator: Koopman operator.md
 plugins:
 - mkdocstrings:
     paths:
