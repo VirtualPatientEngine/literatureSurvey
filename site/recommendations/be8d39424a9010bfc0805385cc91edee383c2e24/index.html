@@ -263,6 +263,40 @@
   
   
     <li class="md-tabs__item">
+      <a href="../../Time-series%20forecasting/" class="md-tabs__link">
+        
+  
+    
+  
+  Time-series forecasting
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Symbolic%20regression/" class="md-tabs__link">
+        
+  
+    
+  
+  Symbolic regression
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
       <a href="../../Neural%20ODEs/" class="md-tabs__link">
         
   
@@ -297,12 +331,63 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../Latent%20space%20simulators%20%28VAMP%29/" class="md-tabs__link">
+      <a href="../../Latent%20space%20simulators/" class="md-tabs__link">
         
   
     
   
-  Latent space simulators (VAMP)
+  Latent space simulators
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Parametrizing%20using%20ML/" class="md-tabs__link">
+        
+  
+    
+  
+  Parametrizing using ML
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../PINNs/" class="md-tabs__link">
+        
+  
+    
+  
+  PINNs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Koopman%20operator/" class="md-tabs__link">
+        
+  
+    
+  
+  Koopman operator
 
       </a>
     </li>
@@ -382,6 +467,46 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Time-series%20forecasting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Time-series forecasting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Symbolic%20regression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Symbolic regression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Neural%20ODEs/" class="md-nav__link">
         
   
@@ -422,11 +547,71 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Latent%20space%20simulators%20%28VAMP%29/" class="md-nav__link">
+      <a href="../../Latent%20space%20simulators/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Latent space simulators (VAMP)
+    Latent space simulators
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Parametrizing%20using%20ML/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametrizing using ML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PINNs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PINNs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Koopman%20operator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Koopman operator
   </span>
   
 
@@ -482,7 +667,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-05-20 06:04:38 UTC</i>
+  <i class="footer">This page was last updated on 2024-05-21 05:05:33 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -561,6 +746,18 @@
           <td>38</td>
         </tr>
 
+        <tr id="Recent developments in the field of neural partial differential equation (PDE) solvers have placed a strong emphasis on neural operators. However, the paper"Message Passing Neural PDE Solver"by Brandstetter et al. published in ICLR 2022 revisits autoregressive models and designs a message passing graph neural network that is comparable with or outperforms both the state-of-the-art Fourier Neural Operator and traditional classical PDE solvers in its generalization capabilities and performance. This blog post delves into the key contributions of this work, exploring the strategies used to address the common problem of instability in autoregressive models and the design choices of the message passing graph neural network architecture.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/15e033f23d2074a9188997e5f7f70231bc214e89" target='_blank'>Autoregressive Renaissance in Neural PDE Solvers</a></td>
+          <td>
+            Yolanne Yi Ran Lee
+          </td>
+          <td>2023-10-30</td>
+          <td>ArXiv</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+
         <tr id="One of the main challenges in solving time-dependent partial differential equations is to develop computationally efficient solvers that are accurate and stable. Here, we introduce a graph neural network approach to finding efficient PDE solvers through learning using message-passing models. We first introduce domain invariant features for PDE-data inspired by classical PDE solvers for an efficient physical representation. Next, we use graphs to represent PDE-data on an unstructured mesh and show that message passing graph neural networks (MPGNN) can parameterize governing equations, and as a result, efficiently learn accurate solver schemes for linear/nonlinear PDEs. We further show that the solvers are independent of the initial trained geometry, i.e. the trained solver can find PDE solution on different complex domains. Lastly, we show that a recurrent graph neural network approach can find a temporal sequence of solutions to a PDE.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/88d15996b0eb81c348ab9e145b14655171d35d67" target='_blank'>Learning time-dependent PDE solver using Message Passing Graph Neural Networks</a></td>
@@ -593,7 +790,7 @@
           </td>
           <td>2020-05-17</td>
           <td>ArXiv</td>
-          <td>81</td>
+          <td>82</td>
           <td>10</td>
         </tr>
 

@@ -263,6 +263,40 @@
   
   
     <li class="md-tabs__item">
+      <a href="../../Time-series%20forecasting/" class="md-tabs__link">
+        
+  
+    
+  
+  Time-series forecasting
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Symbolic%20regression/" class="md-tabs__link">
+        
+  
+    
+  
+  Symbolic regression
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
       <a href="../../Neural%20ODEs/" class="md-tabs__link">
         
   
@@ -297,12 +331,63 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../Latent%20space%20simulators%20%28VAMP%29/" class="md-tabs__link">
+      <a href="../../Latent%20space%20simulators/" class="md-tabs__link">
         
   
     
   
-  Latent space simulators (VAMP)
+  Latent space simulators
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Parametrizing%20using%20ML/" class="md-tabs__link">
+        
+  
+    
+  
+  Parametrizing using ML
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../PINNs/" class="md-tabs__link">
+        
+  
+    
+  
+  PINNs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Koopman%20operator/" class="md-tabs__link">
+        
+  
+    
+  
+  Koopman operator
 
       </a>
     </li>
@@ -382,6 +467,46 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Time-series%20forecasting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Time-series forecasting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Symbolic%20regression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Symbolic regression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Neural%20ODEs/" class="md-nav__link">
         
   
@@ -422,11 +547,71 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Latent%20space%20simulators%20%28VAMP%29/" class="md-nav__link">
+      <a href="../../Latent%20space%20simulators/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Latent space simulators (VAMP)
+    Latent space simulators
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Parametrizing%20using%20ML/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametrizing using ML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PINNs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PINNs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Koopman%20operator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Koopman operator
   </span>
   
 
@@ -482,7 +667,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-05-20 06:04:48 UTC</i>
+  <i class="footer">This page was last updated on 2024-05-21 05:05:45 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -607,6 +792,18 @@
           <td></td>
           <td>36</td>
           <td>69</td>
+        </tr>
+
+        <tr id="In recent years, deep generative models have been shown to 'imagine' convincing high-dimensional observations such as images, audio, and even video, learning directly from raw data. In this work, we ask how to imagine goal-directed visual plans – a plausible sequence of observations that transition a dynamical system from its current configuration to a desired goal state, which can later be used as a reference trajectory for control. We focus on systems with high-dimensional observations, such as images, and propose an approach that naturally combines representation learning and planning. Our framework learns a generative model of sequential observations, where the generative process is induced by a transition in a low-dimensional planning model, and an additional noise. By maximizing the mutual information between the generated observations and the transition in the planning model, we obtain a low-dimensional representation that best explains the causal nature of the data. We structure the planning model to be compatible with efficient planning algorithms, and we propose several such models based on either discrete or continuous states. Finally, to generate a visual plan, we project the current and goal observations onto their respective states in the planning model, plan a trajectory, and then use the generative model to transform the trajectory to a sequence of observations. We demonstrate our method on imagining plausible visual plans of rope manipulation.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/3e19a257825066f9a6db913f8d546524c0dc3387" target='_blank'>Learning Plannable Representations with Causal InfoGAN</a></td>
+          <td>
+            Thanard Kurutach, Aviv Tamar, Ge Yang, Stuart J. Russell, P. Abbeel
+          </td>
+          <td>2018-07-24</td>
+          <td>ArXiv</td>
+          <td>164</td>
+          <td>144</td>
         </tr>
 
   </tbody>

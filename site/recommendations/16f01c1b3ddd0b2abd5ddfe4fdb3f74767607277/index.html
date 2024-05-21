@@ -139,7 +139,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              17b851cfc672b65ccf16a7bdbe85d5db9527483b
+              16f01c1b3ddd0b2abd5ddfe4fdb3f74767607277
             
           </span>
         </div>
@@ -263,6 +263,40 @@
   
   
     <li class="md-tabs__item">
+      <a href="../../Time-series%20forecasting/" class="md-tabs__link">
+        
+  
+    
+  
+  Time-series forecasting
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Symbolic%20regression/" class="md-tabs__link">
+        
+  
+    
+  
+  Symbolic regression
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
       <a href="../../Neural%20ODEs/" class="md-tabs__link">
         
   
@@ -297,12 +331,63 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../Latent%20space%20simulators%20%28VAMP%29/" class="md-tabs__link">
+      <a href="../../Latent%20space%20simulators/" class="md-tabs__link">
         
   
     
   
-  Latent space simulators (VAMP)
+  Latent space simulators
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Parametrizing%20using%20ML/" class="md-tabs__link">
+        
+  
+    
+  
+  Parametrizing using ML
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../PINNs/" class="md-tabs__link">
+        
+  
+    
+  
+  PINNs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Koopman%20operator/" class="md-tabs__link">
+        
+  
+    
+  
+  Koopman operator
 
       </a>
     </li>
@@ -382,6 +467,46 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Time-series%20forecasting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Time-series forecasting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Symbolic%20regression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Symbolic regression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Neural%20ODEs/" class="md-nav__link">
         
   
@@ -422,11 +547,71 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Latent%20space%20simulators%20%28VAMP%29/" class="md-nav__link">
+      <a href="../../Latent%20space%20simulators/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Latent space simulators (VAMP)
+    Latent space simulators
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Parametrizing%20using%20ML/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parametrizing using ML
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PINNs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PINNs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Koopman%20operator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Koopman operator
   </span>
   
 
@@ -482,7 +667,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-05-20 06:04:50 UTC</i>
+  <i class="footer">This page was last updated on 2024-05-21 05:05:02 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -497,7 +682,7 @@
 
   <p>
   <h3 data-intro='Recommendations for the article'>
-    Recommendations for the article <i>COPHY: Counterfactual Learning of Physical Dynamics</i>
+    Recommendations for the article <i>Time-LLM: Time Series Forecasting by Reprogramming Large Language Models</i>
   </h3>
   <table id="table1" class="display wrap" style="width:100%">
   <thead>
@@ -513,100 +698,124 @@
   </thead>
   <tbody>
 
-        <tr id="Causal discovery is at the core of human cognition. It enables us to reason about the environment and make counterfactual predictions about unseen scenarios, that can vastly differ from our previous experiences. We consider the task of causal discovery from videos in an end-to-end fashion without supervision on the ground-truth graph structure. In particular, our goal is to discover the structural dependencies among environmental and object variables: inferring the type and strength of interactions that have a causal effect on the behavior of the dynamical system. Our model consists of (a) a perception module that extracts a semantically meaningful and temporally consistent keypoint representation from images, (b) an inference module for determining the graph distribution induced by the detected keypoints, and (c) a dynamics module that can predict the future by conditioning on the inferred graph. We assume access to different configurations and environmental conditions, i.e., data from unknown interventions on the underlying system; thus, we can hope to discover the correct underlying causal graph without explicit interventions. We evaluate our method in a planar multi-body interaction environment and scenarios involving fabrics of different shapes like shirts and pants. Experiments demonstrate that our model can correctly identify the interactions from a short sequence of images and make long-term future predictions. The causal structure assumed by the model also allows it to make counterfactual predictions and extrapolate to systems of unseen interaction graphs or graphs of various sizes.">
+        <tr id="Foundation models of time series have not been fully developed due to the limited availability of large-scale time series and the underexploration of scalable pre-training. Based on the similar sequential structure of time series and natural language, increasing research demonstrates the feasibility of leveraging large language models (LLM) for time series. Nevertheless, prior methods may overlook the consistency in aligning time series and natural language, resulting in insufficient utilization of the LLM potentials. To fully exploit the general-purpose token transitions learned from language modeling, we propose AutoTimes to repurpose LLMs as Autoregressive Time series forecasters, which is consistent with the acquisition and utilization of LLMs without updating the parameters. The consequent forecasters can handle flexible series lengths and achieve competitive performance as prevalent models. Further, we present token-wise prompting that utilizes corresponding timestamps to make our method applicable to multimodal scenarios. Analysis demonstrates our forecasters inherit zero-shot and in-context learning capabilities of LLMs. Empirically, AutoTimes exhibits notable method generality and achieves enhanced performance by basing on larger LLMs, additional texts, or time series as instructions.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/7799534072f3b40bca444442def2b6671a1e32bd" target='_blank'>Causal Discovery in Physical Systems from Videos</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/d488445bb2bf6719bc48a4d39bd906116274abda" target='_blank'>AutoTimes: Autoregressive Time Series Forecasters via Large Language Models</a></td>
           <td>
-            Yunzhu Li, A. Torralba, Anima Anandkumar, D. Fox, Animesh Garg
+            Yong Liu, Guo Qin, Xiangdong Huang, Jianmin Wang, Mingsheng Long
           </td>
-          <td>2020-07-01</td>
+          <td>2024-02-04</td>
           <td>ArXiv</td>
-          <td>91</td>
-          <td>126</td>
-        </tr>
-
-        <tr id="Recent advancements in deep learning, computer vision, and embodied AI have given rise to synthetic causal reasoning video datasets. These datasets facilitate the development of AI algorithms that can reason about physical interactions between objects. However, datasets thus far have primarily focused on elementary physical events such as rolling or falling. There is currently a scarcity of datasets that focus on the physical interactions that humans perform daily with objects in the real world. To address this scarcity, we introduce SPACE: A Simulator for Physical Interactions and Causal Learning in 3D Environments. The SPACE simulator allows us to generate the SPACE dataset, a synthetic video dataset in a 3D environment, to systematically evaluate physics-based models on a range of physical causal reasoning tasks. Inspired by daily object interactions, the SPACE dataset comprises videos depicting three types of physical events: containment, stability and contact. These events make up the vast majority of the basic physical interactions between objects. We then further evaluate it with a state-of-the-art physics-based deep model and show that the SPACE dataset improves the learning of intuitive physics with an approach inspired by curriculum learning. Repository: https://github.com/jiafei1224/SPACE">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/936f99700667ddb07f3bf26aa0a7e701bef2472b" target='_blank'>SPACE: A Simulator for Physical Interactions and Causal Learning in 3D Environments</a></td>
-          <td>
-            Jiafei Duan, Samson Yu, Cheston Tan
-          </td>
-          <td>2021-08-13</td>
-          <td>2021 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)</td>
-          <td>9</td>
-          <td>17</td>
-        </tr>
-
-        <tr id="We are interested in learning models of intuitive physics similar to the ones that animals use for navigation, manipulation and planning. In addition to learning general physical principles, however, we are also interested in learning ``on the fly'', from a few experiences, physical properties specific to new environments. We do all this in an unsupervised manner, using a meta-learning formulation where the goal is to predict videos containing demonstrations of physical phenomena, such as objects moving and colliding with a complex background. We introduce the idea of summarizing past experiences in a very compact manner, in our case using dynamic images, and show that this can be used to solve the problem well and efficiently. Empirically, we show via extensive experiments and ablation studies, that our model learns to perform physical predictions that generalize well in time and space, as well as to a variable number of interacting physical objects.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/c33e8da8d5a7bc6fed2f15c785c0ebec6093ff31" target='_blank'>Unsupervised Intuitive Physics from Past Experiences</a></td>
-          <td>
-            Sébastien Ehrhardt, Áron Monszpart, N. Mitra, A. Vedaldi
-          </td>
-          <td>2019-05-26</td>
-          <td>ArXiv</td>
-          <td>2</td>
-          <td>95</td>
-        </tr>
-
-        <tr id="Discovering the underneath causal relations is the fundamental ability for reasoning about the surrounding environment and predicting the future states in the physical world. Counterfactual prediction from visual input, which requires simulating future states based on unrealized situations in the past, is a vital component in causal relation tasks. In this paper, we work on the confounders that have effect on the physical dynamics, including masses, friction coefficients, etc., to bridge relations between the intervened variable and the affected variable whose future state may be altered. We propose a neural network framework combining Global Causal Relation Attention (GCRA) and Confounder Transmission Structure (CTS). The GCRA looks for the latent causal relations between different variables and estimates the confounders by capturing both spatial and temporal information. The CTS integrates and transmits the learnt confounders in a residual way, so that the estimated confounders can be encoded into the network as a constraint for object positions when performing counterfactual prediction. Without any access to ground truth information about confounders, our model outperforms the state-of-the-art method on various benchmarks by fully utilizing the constraints of confounders. Extensive experiments demonstrate that our model can generalize to unseen environments and maintain good performance.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/9c1cea9e9738a746fadb6cb7d565390d08dadfd3" target='_blank'>Deconfounding Physical Dynamics with Global Causal Relation and Confounder Transmission for Counterfactual Prediction</a></td>
-          <td>
-            Zongzhao Li, Xiangyu Zhu, Zhen Lei, Zhaoxiang Zhang
-          </td>
-          <td>2022-06-28</td>
-          <td>DBLP</td>
-          <td>3</td>
-          <td>25</td>
-        </tr>
-
-        <tr id="None">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/33a44111726ab8f19b3c6a625db4c4f2c18ef2ee" target='_blank'>PIP: Physical Interaction Prediction via Mental Simulation with Span Selection</a></td>
-          <td>
-            Jiafei Duan, Samson Yu, Soujanya Poria, B. Wen, Cheston Tan
-          </td>
-          <td>2021-09-10</td>
-          <td>DBLP, ArXiv</td>
           <td>2</td>
           <td>65</td>
         </tr>
 
-        <tr id="Learning causal relationships in high-dimensional data (images, videos) is a hard task, as they are often defined on low dimensional manifolds and must be extracted from complex signals dominated by appearance, lighting, textures and also spurious correlations in the data. We present a method for learning counterfactual reasoning of physical processes in pixel space, which requires the prediction of the impact of interventions on initial conditions. Going beyond the identification of structural relationships, we deal with the challenging problem of forecasting raw video over long horizons. Our method does not require the knowledge or supervision of any ground truth positions or other object or scene properties. Our model learns and acts on a suitable hybrid latent representation based on a combination of dense features, sets of 2D keypoints and an additional latent vector per keypoint. We show that this better captures the dynamics of physical processes than purely dense or sparse representations. We introduce a new challenging and carefully designed counterfactual benchmark for predictions in pixel space and outperform strong baselines in physics-inspired ML and video prediction.">
+        <tr id="Time-series forecasting (TSF) finds broad applications in real-world scenarios. Prompting off-the-shelf Large Language Models (LLMs) demonstrates strong zero-shot TSF capabilities while preserving computational efficiency. However, existing prompting methods oversimplify TSF as language next-token predictions, overlooking its dynamic nature and lack of integration with state-of-the-art prompt strategies such as Chain-of-Thought. Thus, we propose LSTPrompt, a novel approach for prompting LLMs in zero-shot TSF tasks. LSTPrompt decomposes TSF into short-term and long-term forecasting sub-tasks, tailoring prompts to each. LSTPrompt guides LLMs to regularly reassess forecasting mechanisms to enhance adaptability. Extensive evaluations demonstrate consistently better performance of LSTPrompt than existing prompting methods, and competitive results compared to foundation TSF models.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/b0b51bf9267baf50c5b415bf9e206779228759db" target='_blank'>Filtered-CoPhy: Unsupervised Learning of Counterfactual Physics in Pixel Space</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/bbf272d92b76cc5f1e6f793dcfeb5edd4abed7ef" target='_blank'>LSTPrompt: Large Language Models as Zero-Shot Time Series Forecasters by Long-Short-Term Prompting</a></td>
           <td>
-            Steeven Janny, Fabien Baradel, N. Neverova, M. Nadri, Greg Mori, Christian Wolf
+            Haoxin Liu, Zhiyuan Zhao, Jindong Wang, Harshavardhan Kamarthi, B. A. Prakash
           </td>
-          <td>2022-02-01</td>
+          <td>2024-02-25</td>
           <td>ArXiv</td>
-          <td>9</td>
-          <td>55</td>
+          <td>2</td>
+          <td>7</td>
         </tr>
 
-        <tr id="From just a glance, humans can make rich predictions about the future state of a wide range of physical systems. On the other hand, modern approaches from engineering, robotics, and graphics are often restricted to narrow domains and require direct measurements of the underlying states. We introduce the Visual Interaction Network, a general-purpose model for learning the dynamics of a physical system from raw visual observations. Our model consists of a perceptual front-end based on convolutional neural networks and a dynamics predictor based on interaction networks. Through joint training, the perceptual front-end learns to parse a dynamic visual scene into a set of factored latent object representations. The dynamics predictor learns to roll these states forward in time by computing their interactions and dynamics, producing a predicted physical trajectory of arbitrary length. We found that from just six input video frames the Visual Interaction Network can generate accurate future trajectories of hundreds of time steps on a wide range of physical systems. Our model can also be applied to scenes with invisible objects, inferring their future states from their effects on the visible objects, and can implicitly infer the unknown mass of objects. Our results demonstrate that the perceptual module and the object-based dynamics predictor module can induce factored latent representations that support accurate dynamical predictions. This work opens new opportunities for model-based decision-making and planning from raw sensory observations in complex physical environments.">
+        <tr id="This paper presents a new perspective on time series forecasting. In existing time series forecasting methods, the models take a sequence of numerical values as input and yield numerical values as output. The existing SOTA models are largely based on the Transformer architecture, modified with multiple encoding mechanisms to incorporate the context and semantics around the historical data. Inspired by the successes of pre-trained language foundation models, we pose a question about whether these models can also be adapted to solve time-series forecasting. Thus, we propose a new forecasting paradigm: prompt-based time series forecasting (PromptCast). In this novel task, the numerical input and output are transformed into prompts and the forecasting task is framed in a sentence-to-sentence manner, making it possible to directly apply language models for forecasting purposes. To support and facilitate the research of this task, we also present a large-scale dataset (PISA) that includes three real-world forecasting scenarios. We evaluate different SOTA numerical-based forecasting methods and language generation models. The benchmark results with various forecasting settings demonstrate the proposed PromptCast with language generation models is a promising research direction. Additionally, in comparison to conventional numerical-based forecasting, PromptCast shows a much better generalization ability under the zero-shot setting.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/414ab203d8fc3ecfbf40d004960d3a4774830b48" target='_blank'>Visual Interaction Networks: Learning a Physics Simulator from Video</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/863171ed35ca0035074f73bb202b153cc346f2f3" target='_blank'>PromptCast: A New Prompt-Based Learning Paradigm for Time Series Forecasting</a></td>
           <td>
-            Nicholas Watters, Daniel Zoran, T. Weber, P. Battaglia, Razvan Pascanu, A. Tacchetti
+            Hao Xue, Flora D.Salim
           </td>
-          <td>2017-06-05</td>
-          <td>DBLP, ArXiv, MAG</td>
-          <td>249</td>
-          <td>66</td>
+          <td>2022-09-20</td>
+          <td>IEEE Transactions on Knowledge and Data Engineering</td>
+          <td>33</td>
+          <td>16</td>
         </tr>
 
-        <tr id="Recent years have seen a surge of interest in learning high-level causal representations from low-level image pairs under interventions. Yet, existing efforts are largely limited to simple synthetic settings that are far away from real-world problems. In this paper, we present Causal Triplet, a causal representation learning benchmark featuring not only visually more complex scenes, but also two crucial desiderata commonly overlooked in previous works: (i) an actionable counterfactual setting, where only certain object-level variables allow for counterfactual observations whereas others do not; (ii) an interventional downstream task with an emphasis on out-of-distribution robustness from the independent causal mechanisms principle. Through extensive experiments, we find that models built with the knowledge of disentangled or object-centric representations significantly outperform their distributed counterparts. However, recent causal representation learning methods still struggle to identify such latent structures, indicating substantial challenges and opportunities for future work. Our code and datasets will be available at https://sites.google.com/view/causaltriplet.">
+        <tr id="Time series data are ubiquitous across various domains, making time series analysis critically important. Traditional time series models are task-specific, featuring singular functionality and limited generalization capacity. Recently, large language foundation models have unveiled their remarkable capabilities for cross-task transferability, zero-shot/few-shot learning, and decision-making explainability. This success has sparked interest in the exploration of foundation models to solve multiple time series challenges simultaneously. There are two main research lines, namely pre-training foundation models from scratch for time series and adapting large language foundation models for time series. They both contribute to the development of a unified model that is highly generalizable, versatile, and comprehensible for time series analysis. This survey offers a 3E analytical framework for comprehensive examination of related research. Specifically, we examine existing works from three dimensions, namely Effectiveness, Efficiency and Explainability. In each dimension, we focus on discussing how related works devise tailored solution by considering unique challenges in the realm of time series. Furthermore, we provide a domain taxonomy to help followers keep up with the domain-specific advancements. In addition, we introduce extensive resources to facilitate the field's development, including datasets, open-source, time series libraries. A GitHub repository is also maintained for resource updates (https://github.com/start2020/Awesome-TimeSeries-LLM-FM).">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/4e62a5c8ab3529425ed3a7140d59e3134ac8377b" target='_blank'>Causal Triplet: An Open Challenge for Intervention-centric Causal Representation Learning</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/522828823ff726598675971036fff01b57320578" target='_blank'>A Survey of Time Series Foundation Models: Generalizing Time Series Representation with Large Language Model</a></td>
           <td>
-            Yuejiang Liu, Alexandre Alahi, Chris Russell, Max Horn, Dominik Zietlow, B. Scholkopf, Francesco Locatello
+            Jiexia Ye, Weiqi Zhang, Ke Yi, Yongzi Yu, Ziyue Li, Jia Li, F. Tsung
           </td>
-          <td>2023-01-12</td>
+          <td>2024-05-03</td>
           <td>ArXiv</td>
+          <td>0</td>
+          <td>47</td>
+        </tr>
+
+        <tr id="Multivariate time-series forecasting is vital in various domains, e.g., economic planning and weather prediction. Deep train-from-scratch models have exhibited effective performance yet require large amounts of data, which limits real-world applicability. Recently, researchers have leveraged the representation learning transferability of pre-trained Large Language Models (LLMs) to handle limited non-linguistic datasets effectively. However, incorporating LLMs with time-series data presents challenges of limited adaptation due to different compositions between time-series and linguistic data, and the inability to process multi-scale temporal information. To tackle these challenges, we propose LLM4TS, a framework for time-series forecasting with pre-trained LLMs. LLM4TS consists of a two-stage fine-tuning strategy: the \textit{time-series alignment} stage to align LLMs with the nuances of time-series data, and the \textit{forecasting fine-tuning} stage for downstream time-series forecasting tasks. Furthermore, our framework features a novel two-level aggregation method that integrates multi-scale temporal data within pre-trained LLMs, enhancing their ability to interpret time-specific information. In experiments across 7 time-series forecasting datasets, LLM4TS is superior to existing state-of-the-art methods compared with trained-from-scratch models in full-shot scenarios, and also achieves an average improvement of 6.84% in MSE in few-shot scenarios. In addition, evaluations compared with different self-supervised learning approaches highlight LLM4TS's effectiveness with representation learning in forecasting tasks.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/663dc434fabc1cf1d3e85fff3f7ddcd313035d18" target='_blank'>LLM4TS: Aligning Pre-Trained LLMs as Data-Efficient Time-Series Forecasters</a></td>
+          <td>
+            Ching Chang, Wenjie Peng, Tien-Fu Chen
+          </td>
+          <td>2023-08-16</td>
+          <td>ArXiv</td>
+          <td>10</td>
+          <td>2</td>
+        </tr>
+
+        <tr id="Motivated by recent advances in large language models for Natural Language Processing (NLP), we design a time-series foundation model for forecasting whose out-of-the-box zero-shot performance on a variety of public datasets comes close to the accuracy of state-of-the-art supervised forecasting models for each individual dataset. Our model is based on pretraining a patched-decoder style attention model on a large time-series corpus, and can work well across different forecasting history lengths, prediction lengths and temporal granularities.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/f45f85fa1beaa795c24c4ff86f1f2deece72252f" target='_blank'>A decoder-only foundation model for time-series forecasting</a></td>
+          <td>
+            Abhimanyu Das, Weihao Kong, Rajat Sen, Yichen Zhou
+          </td>
+          <td>2023-10-14</td>
+          <td>ArXiv</td>
+          <td>17</td>
+          <td>13</td>
+        </tr>
+
+        <tr id="Despite the impressive achievements of pre-trained models in the fields of natural language processing (NLP) and computer vision (CV), progress in the domain of time series analysis has been limited. In contrast to NLP and CV, where a single model can handle various tasks, time series analysis still relies heavily on task-specific methods for activities such as classification, anomaly detection, forecasting, and few-shot learning. The primary obstacle to developing a pre-trained model for time series analysis is the scarcity of sufficient training data. In our research, we overcome this obstacle by utilizing pre-trained models from language or CV, which have been trained on billions of data points, and apply them to time series analysis. We assess the effectiveness of the pre-trained transformer model in two ways. Initially, we maintain the original structure of the self-attention and feedforward layers in the residual blocks of the pre-trained language or image model, using the Frozen Pre-trained Transformer (FPT) for time series analysis with the addition of projection matrices for input and output. Additionally, we introduce four unique adapters, designed specifically for downstream tasks based on the pre-trained model, including forecasting and anomaly detection. These adapters are further enhanced with efficient parameter tuning, resulting in superior performance compared to all state-of-the-art methods.Our comprehensive experimental studies reveal that (a) the simple FPT achieves top-tier performance across various time series analysis tasks; and (b) fine-tuning the FPT with the custom-designed adapters can further elevate its performance, outshining specialized task-specific models.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/15bfe54223d28c74f9e39960f7ff1d03167e285f" target='_blank'>One Fits All: Universal Time Series Analysis by Pretrained LM and Specially Designed Adaptors</a></td>
+          <td>
+            Tian Zhou, Peisong Niu, Xue Wang, Liang Sun, Rong Jin
+          </td>
+          <td>2023-11-24</td>
+          <td>ArXiv</td>
+          <td>1</td>
           <td>6</td>
-          <td>156</td>
+        </tr>
+
+        <tr id="Over the past years, foundation models have caused a paradigm shift in machine learning due to their unprecedented capabilities for zero-shot and few-shot generalization. However, despite the success of foundation models in modalities such as natural language processing and computer vision, the development of foundation models for time series forecasting has lagged behind. We present Lag-Llama, a general-purpose foundation model for univariate probabilistic time series forecasting based on a decoder-only transformer architecture that uses lags as covariates. Lag-Llama is pretrained on a large corpus of diverse time series data from several domains, and demonstrates strong zero-shot generalization capabilities compared to a wide range of forecasting models on downstream datasets across domains. Moreover, when fine-tuned on relatively small fractions of such previously unseen datasets, Lag-Llama achieves state-of-the-art performance, outperforming prior deep learning approaches, emerging as the best general-purpose model on average. Lag-Llama serves as a strong contender to the current state-of-art in time series forecasting and paves the way for future advancements in foundation models tailored to time series data.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/7c9bb230946cf48a7b9de97fd0281f42fbc51d31" target='_blank'>Lag-Llama: Towards Foundation Models for Probabilistic Time Series Forecasting</a></td>
+          <td>
+            Kashif Rasul, Arjun Ashok, Andrew Robert Williams, Arian Khorasani, George Adamopoulos, Rishika Bhagwatkar, Marin Bilovs, Hena Ghonia, N. Hassen, Anderson Schneider, Sahil Garg, Alexandre Drouin, Nicolas Chapados, Yuriy Nevmyvaka, I. Rish
+          </td>
+          <td>2023-10-12</td>
+          <td>ArXiv</td>
+          <td>7</td>
+          <td>39</td>
+        </tr>
+
+        <tr id="Recently, remarkable progress has been made over large language models (LLMs), demonstrating their unprecedented capability in varieties of natural language tasks. However, completely training a large general-purpose model from the scratch is challenging for time series analysis, due to the large volumes and varieties of time series data, as well as the non-stationarity that leads to concept drift impeding continuous model adaptation and re-training. Recent advances have shown that pre-trained LLMs can be exploited to capture complex dependencies in time series data and facilitate various applications. In this survey, we provide a systematic overview of existing methods that leverage LLMs for time series analysis. Specifically, we first state the challenges and motivations of applying language models in the context of time series as well as brief preliminaries of LLMs. Next, we summarize the general pipeline for LLM-based time series analysis, categorize existing methods into different groups (i.e., direct query, tokenization, prompt design, fine-tune, and model integration), and highlight the key ideas within each group. We also discuss the applications of LLMs for both general and spatial-temporal time series data, tailored to specific domains. Finally, we thoroughly discuss future research opportunities to empower time series analysis with LLMs.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/44f6cea2aa05620fef00d8dc9e566918dc6771c9" target='_blank'>Empowering Time Series Analysis with Large Language Models: A Survey</a></td>
+          <td>
+            Yushan Jiang, Zijie Pan, Xikun Zhang, Sahil Garg, Anderson Schneider, Yuriy Nevmyvaka, Dongjin Song
+          </td>
+          <td>2024-02-05</td>
+          <td>ArXiv</td>
+          <td>5</td>
+          <td>4</td>
+        </tr>
+
+        <tr id="Foundation models, especially LLMs, are profoundly transforming deep learning. Instead of training many task-specific models, we can adapt a single pretrained model to many tasks via fewshot prompting or fine-tuning. However, current foundation models apply to sequence data but not to time series, which present unique challenges due to the inherent diverse and multidomain time series datasets, diverging task specifications across forecasting, classification and other types of tasks, and the apparent need for task-specialized models. We developed UNITS, a unified time series model that supports a universal task specification, accommodating classification, forecasting, imputation, and anomaly detection tasks. This is achieved through a novel unified network backbone, which incorporates sequence and variable attention along with a dynamic linear operator and is trained as a unified model. Across 38 multi-domain datasets, UNITS demonstrates superior performance compared to task-specific models and repurposed natural language-based LLMs. UNITS exhibits remarkable zero-shot, few-shot, and prompt learning capabilities when evaluated on new data domains and tasks. The source code and datasets are available at https://github.com/mims-harvard/UniTS.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/bcbcc2e1af8bcf6b07edf866be95116a8ed0bf91" target='_blank'>UniTS: Building a Unified Time Series Model</a></td>
+          <td>
+            Shanghua Gao, Teddy Koker, Owen Queen, Thomas Hartvigsen, Theodoros Tsiligkaridis, M. Zitnik
+          </td>
+          <td>2024-02-29</td>
+          <td>ArXiv</td>
+          <td>3</td>
+          <td>45</td>
         </tr>
 
   </tbody>
