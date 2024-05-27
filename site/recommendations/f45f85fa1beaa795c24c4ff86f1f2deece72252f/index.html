@@ -667,7 +667,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-05-21 05:04:58 UTC</i>
+  <i class="footer">This page was last updated on 2024-05-27 07:02:57 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -718,7 +718,7 @@
           </td>
           <td>2023-10-03</td>
           <td>ArXiv</td>
-          <td>61</td>
+          <td>66</td>
           <td>8</td>
         </tr>
 
@@ -770,7 +770,7 @@
           <td>7</td>
         </tr>
 
-        <tr id="Foundation models of time series have not been fully developed due to the limited availability of large-scale time series and the underexploration of scalable pre-training. Based on the similar sequential structure of time series and natural language, increasing research demonstrates the feasibility of leveraging large language models (LLM) for time series. Nevertheless, prior methods may overlook the consistency in aligning time series and natural language, resulting in insufficient utilization of the LLM potentials. To fully exploit the general-purpose token transitions learned from language modeling, we propose AutoTimes to repurpose LLMs as Autoregressive Time series forecasters, which is consistent with the acquisition and utilization of LLMs without updating the parameters. The consequent forecasters can handle flexible series lengths and achieve competitive performance as prevalent models. Further, we present token-wise prompting that utilizes corresponding timestamps to make our method applicable to multimodal scenarios. Analysis demonstrates our forecasters inherit zero-shot and in-context learning capabilities of LLMs. Empirically, AutoTimes exhibits notable method generality and achieves enhanced performance by basing on larger LLMs, additional texts, or time series as instructions.">
+        <tr id="Foundation models of time series have not been fully developed due to the limited availability of time series corpora and the underexploration of scalable pre-training. Based on the similar sequential formulation of time series and natural language, increasing research demonstrates the feasibility of leveraging large language models (LLM) for time series. Nevertheless, the inherent autoregressive property and decoder-only architecture of LLMs have not been fully considered, resulting in insufficient utilization of LLM abilities. To further exploit the general-purpose token transition and multi-step generation ability of large language models, we propose AutoTimes to repurpose LLMs as autoregressive time series forecasters, which independently projects time series segments into the embedding space and autoregressively generates future predictions with arbitrary lengths. Compatible with any decoder-only LLMs, the consequent forecaster exhibits the flexibility of the lookback length and scalability of the LLM size. Further, we formulate time series as prompts, extending the context for prediction beyond the lookback window, termed in-context forecasting. By adopting textual timestamps as position embeddings, AutoTimes integrates multimodality for multivariate scenarios. Empirically, AutoTimes achieves state-of-the-art with 0.1% trainable parameters and over 5 times training/inference speedup compared to advanced LLM-based forecasters.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/d488445bb2bf6719bc48a4d39bd906116274abda" target='_blank'>AutoTimes: Autoregressive Time Series Forecasters via Large Language Models</a></td>
           <td>
@@ -802,7 +802,7 @@
           </td>
           <td>2024-03-12</td>
           <td>ArXiv</td>
-          <td>7</td>
+          <td>10</td>
           <td>18</td>
         </tr>
 
