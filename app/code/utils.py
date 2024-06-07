@@ -5,6 +5,7 @@ script to define utility functions
 '''
 
 import sys
+import re
 import matplotlib.pyplot as plt
 import pandas as pd
 import yaml
@@ -47,6 +48,21 @@ def update_paper_details(topic_obj):
     all_paper_ids += list(topic_obj.paper_ids['negative'].keys())
     all_paper_ids = list(set(all_paper_ids))
     all_paper_data = get_paper_details(all_paper_ids)
+    # Check if the paper id matches the paper data
+    # If not, change the paper id to the new paper id
+    for paper_id, paper_data in zip(all_paper_ids, all_paper_data):
+        if paper_id == paper_data['paperId']:
+            continue
+        print (f'Paper ID {paper_id} does not match {paper_data["paperId"]}.\
+               Changing the paper ID.')
+        if paper_id in topic_obj.paper_ids['positive']:
+            # change the paper id in the positive articles
+            topic_obj.paper_ids['positive'][paper_data['paperId']] = \
+                            topic_obj.paper_ids['positive'].pop(paper_id)
+        elif paper_id in topic_obj.paper_ids['negative']:
+            # change the paper id in the negative articles
+            topic_obj.paper_ids['negative'][paper_data['paperId']] = \
+                            topic_obj.paper_ids['negative'].pop(paper_id)
     return all_paper_data
 
 def add_paper_details(article_obj, article_data):
@@ -81,6 +97,8 @@ def update_h_index(article_obj, dic):
                 author.h_index = row['hIndex']
                 author.name = row['name']
                 author.citation_count = row['citationCount']
+                if row['hIndex'] is None:
+                    continue
                 authors_h_index_list.append(row['hIndex'])
     if len(authors_h_index_list) == 0:
         authors_avg_h_index = 0
@@ -215,7 +233,7 @@ def get_paper_details(paper_ids, fields=FIELDS):
         status_code = search_response.status_code
     return search_response.json()
 
-def get_author_details(authors_ids):
+def get_author_details(all_authors_ids):
     """
     Get the author details
 
@@ -225,6 +243,19 @@ def get_author_details(authors_ids):
     Returns:
         authors_details (list): list of authors details
     """
+    # Some authors have no ids assigned, and in that case their ID is their name
+    # So here we exclude such authors and already prepare their output
+    author_details_wo_id = []
+    authors_ids = []
+    for author_id in all_authors_ids:
+        # check if author id contains only alphabets
+        if re.fullmatch(r'[A-Za-z ]+', author_id):
+            author_details_wo_id.append({'authorId': author_id,
+                                    'hIndex': None,
+                                    'name': author_id,
+                                    'citationCount': None})
+            continue
+        authors_ids.append(author_id)
     # Loop over every 1000 authors
     authors_details = []
     for start_index in range(0, len(authors_ids), 1000):
@@ -252,6 +283,7 @@ def get_author_details(authors_ids):
                         search_response.json())
                 sys.exit()
         authors_details += search_response.json()
+    authors_details += author_details_wo_id
     return authors_details
 
 def metrics_over_time_js(data) -> plt:

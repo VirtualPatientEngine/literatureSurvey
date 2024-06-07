@@ -115,6 +115,11 @@ if __name__ == '__main__':
             if len(paper_obj.authors) > 0:
                 continue
             for author in paper_data['authors']:
+                # if the author id is None, set it to the name
+                if author['authorId'] is None:
+                    author['authorId'] = author['name']
+                    print (f'Author ID is None for {author["name"]}. Setting it to the name.')
+                # Add the author to the article
                 paper_obj.authors.append(
                                         Author(author['authorId'],
                                         author_name=author['name']))
@@ -132,6 +137,11 @@ if __name__ == '__main__':
                 # rec_paper_obj.add_paper_details(rec_paper_data)
                 ##
                 for author in rec_paper_data['authors']:
+                    # if the author id is None, set it to the name
+                    if author['authorId'] is None:
+                        author['authorId'] = author['name']
+                        print (f'Author ID is None for {author["name"]}. Setting it to the name.')
+                    # Add the author to the article
                     rec_paper_obj.authors.append(
                                             Author(author['authorId'],
                                             author_name=author['name']))
@@ -180,6 +190,11 @@ if __name__ == '__main__':
                 paper_obj = Article(paper_data['paperId'])
                 utils.add_paper_details(paper_obj, paper_data)
                 for author in paper_data['authors']:
+                    # if the author id is None, set it to the name
+                    if author['authorId'] is None:
+                        author['authorId'] = author['name']
+                        print (f'Author ID is None for {author["name"]}. Setting it to the name.')
+                    # Add the author to the article
                     paper_obj.authors.append(
                                             Author(author['authorId'],
                                             author_name=author['name']))
@@ -188,7 +203,6 @@ if __name__ == '__main__':
         # Get the metrics over time
         df = utils.metrics_over_time_js(topic_obj.paper_ids['recommended'])
         authors_ids = topic_obj.get_all_authors_ids() # Get all the authors of the articles
-        # print (authors_ids)
         author_details = utils.get_author_details(authors_ids) # Get the details of the authors
         for article_type in topic_obj.paper_ids:
             for article_id, article_obj in topic_obj.paper_ids[article_type].items():
