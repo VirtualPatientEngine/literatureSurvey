@@ -667,7 +667,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-05-27 07:03:20 UTC</i>
+  <i class="footer">This page was last updated on 2024-06-07 12:57:06 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -698,112 +698,124 @@
   </thead>
   <tbody>
 
-        <tr id="Although deep learning has achieved remarkable success in various scientific machine learning applications, its opaque nature poses concerns regarding interpretability and generalization capabilities beyond the training data. Interpretability is crucial and often desired in modeling physical systems. Moreover, acquiring extensive datasets that encompass the entire range of input features is challenging in many physics-based learning tasks, leading to increased errors when encountering out-of-distribution (OOD) data. In this work, motivated by the field of functional data analysis (FDA), we propose generalized functional linear models as an interpretable surrogate for a trained deep learning model. We demonstrate that our model could be trained either based on a trained neural network (post-hoc interpretation) or directly from training data (interpretable operator learning). A library of generalized functional linear models with different kernel functions is considered and sparse regression is used to discover an interpretable surrogate model that could be analytically presented. We present test cases in solid mechanics, fluid mechanics, and transport. Our results demonstrate that our model can achieve comparable accuracy to deep learning and can improve OOD generalization while providing more transparency and interpretability. Our study underscores the significance of interpretable representation in scientific machine learning and showcases the potential of functional linear models as a tool for interpreting and generalizing deep learning.">
+        <tr id="Machine learning (ML) is redefining what is possible in data-intensive fields of science and engineering. However, applying ML to problems in the physical sciences comes with a unique set of challenges: scientists want physically interpretable models that can (i) generalize to predict previously unobserved behaviors, (ii) provide effective forecasting predictions (extrapolation), and (iii) be certifiable. Autonomous systems will necessarily interact with changing and uncertain environments, motivating the need for models that can accurately extrapolate based on physical principles (e.g. Newton’s universal second law for classical mechanics, $F=ma$ ). Standard ML approaches have shown impressive performance for predicting dynamics in an interpolatory regime, but the resulting models often lack interpretability and fail to generalize. We build on a sparse regression framework that discovers governing dynamical systems models from data, selecting relevant terms in the dynamics from a library of possible functions. Our critically enabling innovation introduces a relaxed version of a sparse optimization framework that allows the use of non-convex sparsity promoting regularization functions and addresses three open challenges in scientific problems and data sets: (i) robust handling of outliers and corrupt data within noisy sensor measurements, (ii) parametric dependencies in candidate library functions, and (iii) the imposition of physical constraints. By explicitly addressing these open challenges, the integrated and unified algorithm developed provides a significant advancement over current state-of-the-art sparse model discovery methods. We show that the approach discovers parsimonious dynamical models on several example systems. This flexible approach can be tailored to the unique challenges associated with a wide range of applications and data sets, providing a powerful ML-based framework for learning governing models for physical systems from data.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/918bf58583062a86944e1d2237f9c43073a63219" target='_blank'>Interpreting and generalizing deep learning in physics-based problems with functional linear models</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/7a752ef2c71afa4566dd038b63929e75e41ab32f" target='_blank'>A Unified Sparse Optimization Framework to Learn Parsimonious Physics-Informed Models From Data</a></td>
           <td>
-            Amirhossein Arzani, Lingxiao Yuan, P. Newell, Bei Wang
+            Kathleen P. Champion, P. Zheng, A. Aravkin, S. Brunton, J. Kutz
           </td>
-          <td>2023-07-10</td>
+          <td>2019-06-25</td>
+          <td>IEEE Access</td>
+          <td>91</td>
+          <td>62</td>
+        </tr>
+
+        <tr id="Energy conservation is a basic physics principle, the breakdown of which often implies new physics. This paper presents a method for data-driven "new physics" discovery. Specifically, given a trajectory governed by unknown forces, our neural new-physics detector (NNPhD) aims to detect new physics by decomposing the force field into conservative and nonconservative components, which are represented by a Lagrangian neural network (LNN) and an unconstrained neural network, respectively, trained to minimize the force recovery error plus a constant λ times the magnitude of the predicted nonconservative force. We show that a phase transition occurs at λ=1, universally for arbitrary forces. We demonstrate that NNPhD successfully discovers new physics in toy numerical experiments, rediscovering friction (1493) from a damped double pendulum, Neptune from Uranus' orbit (1846), and gravitational waves (2017) from an inspiraling orbit. We also show how NNPhD coupled with an integrator outperforms both an LNN and an unconstrained neural network for predicting the future of a damped double pendulum.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/bb09f46438236f6e916d2ad23eca92330a41b9fb" target='_blank'>Machine-Learning Non-Conservative Dynamics for New-Physics Detection</a></td>
+          <td>
+            Ziming Liu, Bohan Wang, Qi Meng, Wei Chen, M. Tegmark, Tie-Yan Liu
+          </td>
+          <td>2021-05-31</td>
+          <td>Physical review. E</td>
+          <td>14</td>
+          <td>81</td>
+        </tr>
+
+        <tr id="Invariants and conservation laws convey critical information about the underlying dynamics of a system, yet it is generally infeasible to find them from large-scale data without any prior knowledge or human insight. We propose ConservNet to achieve this goal, a neural network that spontaneously discovers a conserved quantity from grouped data where the members of each group share invariants, similar to a general experimental setting where trajectories from different trials are observed. As a neural network trained with a novel and intuitive loss function called noise-variance loss, ConservNet learns the hidden invariants in each group of multi-dimensional observables in a data-driven, end-to-end manner. Our model successfully discovers underlying invariants from the simulated systems having invariants as well as a real-world double pendulum trajectory. Since the model is robust to various noises and data conditions compared to baseline, our approach is directly applicable to experimental data for discovering hidden conservation laws and further, general relationships between variables.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/87648e8b1e3c94de06380ff58f39c150bc9379bb" target='_blank'>Discovering conservation laws from trajectories via machine learning</a></td>
+          <td>
+            Seungwoong Ha, Hawoong Jeong
+          </td>
+          <td>2021-02-08</td>
           <td>ArXiv</td>
-          <td>3</td>
-          <td>23</td>
+          <td>9</td>
+          <td>43</td>
+        </tr>
+
+        <tr id="How many free variables do we really need to build a credible model of a physical system? Currently there is no systematic approach; we appeal to some physical principles, tune free variables by comparing with canonical cases, and hope our real-world applications interpolate between them. In this work we combine two pioneering and entirely disparate pieces of mathematics: the century-old techniques of Sophus Lie for solving differential equtions and recent work initiated by Field's medallist Terence Tao on converting NP-complete combinatorical problems into neighbouring convex optimisations. We present a novel and fully systematic procedure for designing models of physical systems with necessary and just-sufficient complexity, in marked contrast with the approach to function approximation taken by neural networks and other current approaches to machine learning. Our methodology replaces the ad-hoc development of models to recover structure and understanding from observational, experimental or simulated data. At its core, our method seeks to find invariant properties of differential equations known as Lie symmetries, and for this reason we have called our algorithm the Lie Detector.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/73027ff397a011f8ffb5affb47337bfa6efbfef9" target='_blank'>The Lie Detector.</a></td>
+          <td>
+            A. Young, A. Lawrie
+          </td>
+          <td>2019-12-13</td>
+          <td>arXiv: Signal Processing</td>
+          <td>0</td>
+          <td>18</td>
+        </tr>
+
+        <tr id="Physics-informed machine learning (PIML) is a set of methods and tools that systematically integrate machine learning (ML) algorithms with physical constraints and abstract mathematical models developed in scientific and engineering domains. As opposed to purely data-driven methods, PIML models can be trained from additional information obtained by enforcing physical laws such as energy and mass conservation. More broadly, PIML models can include abstract properties and conditions such as stability, convexity, or invariance. The basic premise of PIML is that the integration of ML and physics can yield more effective, physically consistent, and data-efficient models. This paper aims to provide a tutorial-like overview of the recent advances in PIML for dynamical system modeling and control. Specifically, the paper covers an overview of the theory, fundamental concepts and methods, tools, and applications on topics of: 1) physics-informed learning for system identification; 2) physics-informed learning for control; 3) analysis and verification of PIML models; and 4) physics-informed digital twins. The paper is concluded with a perspective on open challenges and future research opportunities.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/d95c7f3a6ca2b98ba3c4422aabb33e3754cb1a47" target='_blank'>Physics-Informed Machine Learning for Modeling and Control of Dynamical Systems</a></td>
+          <td>
+            Truong X. Nghiem, Ján Drgoňa, Colin N. Jones, Zoltán Nagy, Roland Schwan, Biswadip Dey, A. Chakrabarty, S. D. Cairano, J. Paulson, Andrea Carron, M. Zeilinger, Wenceslao Shaw-Cortez, D. Vrabie
+          </td>
+          <td>2023-05-31</td>
+          <td>2023 American Control Conference (ACC)</td>
+          <td>13</td>
+          <td>37</td>
+        </tr>
+
+        <tr id="Solving inverse problems, such as parameter estimation and optimal control, is a vital part of science. Many experiments repeatedly collect data and rely on machine learning algorithms to quickly infer solutions to the associated inverse problems. We find that state-of-the-art training techniques are not well-suited to many problems that involve physical processes. The highly nonlinear behavior, common in physical processes, results in strongly varying gradients that lead first-order optimizers like SGD or Adam to compute suboptimal optimization directions. We propose a novel hybrid training approach that combines higher-order optimization methods with machine learning techniques. We take updates from a scale-invariant inverse problem solver and embed them into the gradient-descent-based learning pipeline, replacing the regular gradient of the physical process. We demonstrate the capabilities of our method on a variety of canonical physical systems, showing that it yields significant improvements on a wide range of optimization and learning problems.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/8070e0a6ca3fdd46e7af5ec9090643ff60f13a78" target='_blank'>Scale-invariant Learning by Physics Inversion</a></td>
+          <td>
+            Philipp Holl, V. Koltun, Nils Thuerey
+          </td>
+          <td>2021-09-30</td>
+          <td>DBLP, ArXiv</td>
+          <td>5</td>
+          <td>102</td>
         </tr>
 
         <tr id="None">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/9e3d2af591bc08b5bb70d46ec15555eb8a300eee" target='_blank'>The transformative potential of machine learning for experiments in fluid mechanics</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/0dfa7e909940fb1840831614e593714a5544ec02" target='_blank'>Learning continuous models for continuous physics</a></td>
           <td>
-            R. Vinuesa, S. Brunton, B. McKeon
+            A. Krishnapriyan, A. Queiruga, N. Benjamin Erichson, Michael W. Mahoney
           </td>
-          <td>2023-03-28</td>
-          <td>Nature Reviews Physics</td>
-          <td>19</td>
-          <td>62</td>
+          <td>2022-02-17</td>
+          <td>Communications Physics</td>
+          <td>22</td>
+          <td>29</td>
         </tr>
 
-        <tr id="Many tasks in fluid mechanics, such as design optimization and control, are challenging because fluids are nonlinear and exhibit a large range of scales in both space and time. This range of scales necessitates exceedingly high-dimensional measurements and computational discretization to resolve all relevant features, resulting in vast data sets and time-intensive computations. Indeed, fluid dynamics is one of the original big data fields, and many high-performance computing architectures, experimental measurement techniques, and advanced data processing and visualization algorithms were driven by decades of research in fluid mechanics. Machine learning constitutes a growing set of powerful techniques to extract patterns and build models from this data, complementing the existing theoretical, numerical, and experimental efforts in fluid mechanics. In this talk, we will explore current goals and opportunities for machine learning in fluid mechanics, and we will highlight a number of recent technical advances. Because fluid dynamics is central to transportation, health, and defense systems, we will emphasize the importance of machine learning solutions that are interpretable, explainable, generalizable, and that respect known physics.">
+        <tr id="We present AI Poincaré, a machine learning algorithm for autodiscovering conserved quantities using trajectory data from unknown dynamical systems. We test it on five Hamiltonian systems, including the gravitational three-body problem, and find that it discovers not only all exactly conserved quantities, but also periodic orbits, phase transitions, and breakdown timescales for approximate conservation laws.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/d173bf896eb57d3dfd65b28a4e1ddd62fb56707b" target='_blank'>Interpretable and Generalizable Machine Learning for Fluid Mechanics</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/f3cf4756b2375cd6694267370a8d98543e781169" target='_blank'>Machine Learning Conservation Laws from Trajectories.</a></td>
           <td>
-            S. Brunton
+            Ziming Liu, Max Tegmark
           </td>
-          <td>2019-11-25</td>
-          <td>Bulletin of the American Physical Society</td>
-          <td>0</td>
-          <td>62</td>
+          <td>2021-05-06</td>
+          <td>Physical review letters</td>
+          <td>78</td>
+          <td>81</td>
         </tr>
 
-        <tr id="In recent years the fluid mechanics community has been intensely focused on pursuing solutions to its long-standing open problems by exploiting the new machine learning (ML) approaches. The exchange between ML and fluid mechanics is bringing important paybacks in both directions. The first is benefiting from new physics-inspired ML methods and a scientific playground to perform quantitative benchmarks, whilst the latter has been open to a large set of new tools inherently well suited to deal with big data, flexible in scope, and capable of revealing unknown correlations. A special case is the problem of modeling missing information of partially observable systems. The aim of this paper is to review some of the ML algorithms that are playing an important role in the current developments in this field, to uncover potential avenues, and to discuss the open challenges for applications to fluid mechanics.">
+        <tr id="None">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/0e0c245001871af5a85bd3763be14184c9d23958" target='_blank'>Data reconstruction for complex flows using AI: Recent progress, obstacles, and perspectives</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/9865d777203b47ab6ad919ae979714a1dbac8eb9" target='_blank'>From data to conservation laws</a></td>
           <td>
-            M. Buzzicotti
+            F. Chirigati
           </td>
-          <td>2023-03-29</td>
-          <td>Europhysics Letters</td>
-          <td>6</td>
-          <td>14</td>
-        </tr>
-
-        <tr id="The large amount of data collected in complex physical systems allows machine learning models to solve a variety of prediction problems. However, the directly applied learning approaches, especially deep neural networks (DNN), are difficult to balance between universal approximation to minimize error and the interpretability to reveal underlying physical law. Their performance drops even faster with system unobservability (of measurements) issues due to limited measurements. In this paper, we construct the novel physics interpretable shallow-deep neural networks to integrate exact physical interpretation and universal approximation to address the concerns in previous methods. We show that not only the shallow layer of the structural DNN extracts interpretable physical features but also the designed physical-input convex property of the DNN guarantees the true physical function recovery. While input convexity conditions are strict, the proposed model retains the representation capability to universally approximate for the unobservable system regions. We demonstrate its effectiveness by experiments on physical systems. In particular, we implement the proposed model on the forward kinematics and complex power flow reproduction tasks, with or without observability issues. We show that, besides the physical interpretability, our model provides consistently smaller or similar prediction error for system identification, compared to the state-of-art learning methods.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/35ed2d2bb86ea6691e65470b04ab2cbdc0eba4ad" target='_blank'>Physics Interpretable Shallow-Deep Neural Networks for Physical System Identification with Unobservability</a></td>
-          <td>
-            Jingyi Yuan, Yang Weng
-          </td>
-          <td>2021-12-01</td>
-          <td>2021 IEEE International Conference on Data Mining (ICDM)</td>
-          <td>5</td>
-          <td>27</td>
-        </tr>
-
-        <tr id="Process-based models of dynamical systems are often used to study engineering and environmental systems. Despite their extensive use, these models have several well-known limitations due to incomplete or inaccurate representations of the physical processes being modeled. Given rapid data growth due to advances in sensor technologies, there is a tremendous opportunity to systematically advance modeling in these domains by using machine learning (ML) methods. However, capturing this opportunity is contingent on a paradigm shift in data-intensive scientific discovery since the “black box” use of ML often leads to serious false discoveries in scientific applications. Because the hypothesis space of scientific applications is often complex and exponentially large, an uninformed data-driven search can easily select a highly complex model that is neither generalizable nor physically interpretable, resulting in the discovery of spurious relationships, predictors, and patterns. This problem becomes worse when there is a scarcity of labeled samples, which is quite common in science and engineering domains. In this research, we will develop a novel methodology for combining process-based models with state-of-the-art machine learning models to leverage their complementary strengths. Our objective is to develop innovative process-guided deep learning models to better capture the dynamics in scientific systems and advance the understanding of underlying physical processes. Effective representation of physical processes will require development of novel abstractions and architectures that can simulate these processes that may be evolving and interacting at multiple scales. In addition, the optimization process to produce an ML model will have to consider not just accuracy (i.e., how well the output matches the observations) but also its correctness from a physical perspective (i.e., physical consistency). Leveraging physics, both directly (e.g., by incorporating fundamental physical laws), and indirectly (e.g., as embodied in mechanistic models), is the key to address limitations of traditional ML models: inability to generalize to unseen scenarios and need for massive amounts of training data. Incorporation of relevant physical constraints, such as conservation of mass and energy,">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/76eb14e99ed4547051bed0ed27050c46e3f317c8" target='_blank'>Physics-guided machine learning: A new paradigm for scientific knowledge discovery</a></td>
-          <td>
-            X. Jia
-          </td>
-          <td>2021-07-30</td>
-          <td>Microscopy and Microanalysis</td>
+          <td>2023-09-01</td>
+          <td>Nature Computational Science</td>
           <td>0</td>
           <td>17</td>
         </tr>
 
-        <tr id="Deep learning (DL) relies heavily on data, and the quality of data influences its performance significantly. However, obtaining high-quality, well-annotated datasets can be challenging or even impossible in many real-world applications, such as structural risk estimation and medical diagnosis. This presents a significant barrier to the practical implementation of DL in these fields. Physics-guided deep learning (PGDL) is a novel type of DL that can integrate physics laws to train neural networks. This can be applied to any systems that are controlled or governed by physics laws, such as mechanics, finance and medical applications. It has been demonstrated that, with the additional information provided by physics laws, PGDL achieves great accuracy and generalisation in the presence of data scarcity. This review provides a detailed examination of PGDL and offers a structured overview of its use in addressing data scarcity across various fields, including physics, engineering and medical applications. Moreover, the review identifies the current limitations and opportunities for PGDL in relation to data scarcity and offers a thorough discussion on the future prospects of PGDL.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/617617e190c6bb55b6ca20d618a318ed8f29f464" target='_blank'>Utilising physics-guided deep learning to overcome data scarcity</a></td>
-          <td>
-            Jinshuai Bai, Laith Alzubaidi, Qingxia Wang, E. Kuhl, Bennamoun, Yuantong T. Gu
-          </td>
-          <td>2022-11-24</td>
-          <td>ArXiv</td>
-          <td>2</td>
-          <td>63</td>
-        </tr>
-
         <tr id="None">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/4f8a7257c9aa203bb7d824afdf31d0eddaf89a71" target='_blank'>Applying machine learning to study fluid mechanics</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/2cd3a4931a71d74bcec53716855a3f465bca8e71" target='_blank'>Physics-informed regularization and structure preservation for learning stable reduced models from data with operator inference</a></td>
           <td>
-            S. Brunton
+            N. Sawant, B. Kramer, B. Peherstorfer
           </td>
-          <td>2021-10-05</td>
-          <td>Acta Mechanica Sinica</td>
-          <td>61</td>
-          <td>62</td>
-        </tr>
-
-        <tr id="The field of fluid mechanics is rapidly advancing, driven by unprecedented volumes of data from experiments, field measurements, and large-scale simulations at multiple spatiotemporal scales. Machine learning (ML) offers a wealth of techniques to extract information from data that can be translated into knowledge about the underlying fluid mechanics. Moreover, ML algorithms can augment domain knowledge and automate tasks related to flow control and optimization. This article presents an overview of past history, current developments, and emerging opportunities of ML for fluid mechanics. We outline fundamental ML methodologies and discuss their uses for understanding, modeling, optimizing, and controlling fluid flows. The strengths and limitations of these methods are addressed from the perspective of scientific inquiry that considers data as an inherent part of modeling, experiments, and simulations. ML provides a powerful information-processing framework that can augment, and possibly even transform, current lines of fluid mechanics research and industrial applications.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/4087e84fc695bb6433d0104ee94f9d7e9f4b7da5" target='_blank'>Machine Learning for Fluid Mechanics</a></td>
-          <td>
-            S. Brunton, B. R. Noack, P. Koumoutsakos
-          </td>
-          <td>2019-05-27</td>
+          <td>2021-07-06</td>
           <td>ArXiv</td>
-          <td>1587</td>
-          <td>77</td>
+          <td>18</td>
+          <td>27</td>
         </tr>
 
   </tbody>

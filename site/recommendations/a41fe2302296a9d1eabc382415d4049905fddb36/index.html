@@ -667,7 +667,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-05-27 07:04:23 UTC</i>
+  <i class="footer">This page was last updated on 2024-06-07 12:58:14 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -730,20 +730,8 @@
           </td>
           <td>2020-08-22</td>
           <td>Philosophical transactions. Series A, Mathematical, physical, and engineering sciences</td>
-          <td>56</td>
+          <td>57</td>
           <td>62</td>
-        </tr>
-
-        <tr id="In many cases, the equations that dynamical systems are based on are unknown and hard to model and predict. On the other hand, machine learning algorithms are based on the data of a solution as it evolves and do not need equations. In the era of abundant data, using machine learning technology to discover accurate mathematical models of dynamical systems directly from time series data becomes increasingly important. Recently, a multi-step deep neural networks (multi-step DNN) model without need of direct access to temporal gradients is proposed, which can accurately learn the evolution from a given set of observed data, identify nonlinear dynamical systems, and forecast future states. However, the architecture lacks the capability to capture long term temporal dependencies from dynamical time-series data. In the paper, based on the multi-step time-stepping schemes, we proposed a new CLDNN model which combine convolutional layer, long short-term memory layer and fully connected layer, to address the aforementioned weakness. The effectiveness of our model is tested for several benchmark problems involving the identification and prediction of complex, nonlinear and chaotic dynamics. The experiment results show that the multi-step CLDNN has better identification and prediction performance than the multi-step DNN. The research provides possible corroboration for developing new deep learning based algorithms for nonlinear system identification.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/766d4bcb8f8fbbbb47f89e5276f5ec24c8c0d460" target='_blank'>Data driven nonlinear dynamical systems identification using multi-step CLDNN</a></td>
-          <td>
-            Qi Teng, L. Zhang
-          </td>
-          <td>2019-08-19</td>
-          <td>AIP Advances</td>
-          <td>20</td>
-          <td>36</td>
         </tr>
 
         <tr id="Discovering mathematical models that characterize the observed behavior of dynamical systems remains a major challenge, especially for systems in a chaotic regime. The challenge is even greater when the physics underlying such systems is not yet understood, and scientific inquiry must solely rely on empirical data. Driven by the need to fill this gap, we develop a framework that learns mathematical expressions modeling complex dynamical behaviors by identifying differential equations from noisy and sparse observable data. We train a small neural network to learn the dynamics of a system, its rate of change in time, and missing model terms, which are used as input for a symbolic regression algorithm to autonomously distill the explicit mathematical terms. This, in turn, enables us to predict the future evolution of the dynamical behavior. The performance of this framework is validated by recovering the right-hand sides and unknown terms of certain complex, chaotic systems such as the well-known Lorenz system, a six-dimensional hyperchaotic system, and the non-autonomous Sprott chaotic system, and comparing them with their known analytical expressions.">
@@ -755,7 +743,7 @@
           <td>2023-12-21</td>
           <td>ArXiv</td>
           <td>1</td>
-          <td>125</td>
+          <td>126</td>
         </tr>
 
         <tr id="Many complex phenomena, from weather systems to heartbeat rhythm patterns, are effectively modeled as low-dimensional dynamical systems. Such systems may behave chaotically under certain conditions, and so the ability to detect chaos based on empirical measurement is an important step in characterizing and predicting these processes. Classifying a system as chaotic usually requires estimating its largest Lyapunov exponent, which quantifies the average rate of convergence or divergence of initially close trajectories in state space, and for which a positive value is generally accepted as an operational definition of chaos. Estimating the largest Lyapunov exponent from observations of a process is especially challenging in systems affected by dynamical noise, which is the case for many models of real-world processes, in particular models of biological systems. We describe a novel method for estimating the largest Lyapunov exponent from data, based on training Deep Learning models on synthetically generated trajectories, and demonstrate that this method yields accurate and noise-robust predictions given relatively short inputs and across a range of different dynamical systems. Our method is unique in that it can analyze tree-shaped data, a ubiquitous topology in biological settings, and specifically in dynamics over lineages of cells or organisms. We also characterize the types of input information extracted by our models for their predictions, allowing for a deeper understanding into the different ways by which chaos can be analyzed in different topologies.">
@@ -816,6 +804,18 @@
           <td>ArXiv</td>
           <td>34</td>
           <td>15</td>
+        </tr>
+
+        <tr id="Neural Ordinary Differential Equations (NeuralODEs) present an attractive way to extract dynamical laws from time series data, as they bridge neural networks with the differential equation-based modeling paradigm of the physical sciences. However, these models often display long training times and suboptimal results, especially for longer duration data. While a common strategy in the literature imposes strong constraints to the NeuralODE architecture to inherently promote stable model dynamics, such methods are ill-suited for dynamics discovery as the unknown governing equation is not guaranteed to satisfy the assumed constraints. In this paper, we develop a new training method for NeuralODEs, based on synchronization and homotopy optimization, that does not require changes to the model architecture. We show that synchronizing the model dynamics and the training data tames the originally irregular loss landscape, which homotopy optimization can then leverage to enhance training. Through benchmark experiments, we demonstrate our method achieves competitive or better training loss while often requiring less than half the number of training epochs compared to other model-agnostic techniques. Furthermore, models trained with our method display better extrapolation capabilities, highlighting the effectiveness of our method.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/52d5bc698684d676a407c879fc826d2d5596211b" target='_blank'>Homotopy-based training of NeuralODEs for accurate dynamics discovery</a></td>
+          <td>
+            Joon-Hyuk Ko, Hankyul Koh, Nojun Park, W. Jhe
+          </td>
+          <td>2022-10-04</td>
+          <td>ArXiv</td>
+          <td>2</td>
+          <td>31</td>
         </tr>
 
   </tbody>

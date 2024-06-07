@@ -11,7 +11,7 @@ hide:
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-05-27 07:03:03 UTC</i>
+  <i class="footer">This page was last updated on 2024-06-07 12:56:51 UTC</i>
   </p>
   
   <div class="note info" onclick="startIntro()">
@@ -49,9 +49,9 @@ hide:
             Andreas Doerr, Christian Daniel, Martin Schiegg, D. Nguyen-Tuong, S. Schaal, Marc Toussaint, Sebastian Trimpe
           </td>
           <td>2018-01-31</td>
-          <td>DBLP, MAG, ArXiv</td>
-          <td>107</td>
-          <td>92</td>
+          <td>MAG, DBLP, ArXiv</td>
+          <td>108</td>
+          <td>93</td>
         </tr>
     
         <tr id="We introduce a new version of deep state-space models (DSSMs) that combines a recurrent neural network with a state-space framework to forecast time series data. The model estimates the observed series as functions of latent variables that evolve non-linearly through time. Due to the complexity and non-linearity inherent in DSSMs, previous works on DSSMs typically produced latent variables that are very difficult to interpret. Our paper focus on producing interpretable latent parameters with two key modifications. First, we simplify the predictive decoder by restricting the response variables to be a linear transformation of the latent variables plus some noise. Second, we utilize shrinkage priors on the latent variables to reduce redundancy and improve robustness. These changes make the latent variables much easier to understand and allow us to interpret the resulting latent variables as random effects in a linear mixed model. We show through two public benchmark datasets the resulting model improves forecasting performances.">
@@ -86,20 +86,8 @@ hide:
           </td>
           <td>2022-05-26</td>
           <td>J. Mach. Learn. Res.</td>
-          <td>7</td>
+          <td>8</td>
           <td>49</td>
-        </tr>
-    
-        <tr id="Real-world dynamical systems often consist of multiple stochastic subsystems that interact with each other. Modeling and forecasting the behavior of such dynamics are generally not easy, due to the inherent hardness in understanding the complicated interactions and evolutions of their constituents. This paper introduces the relational state-space model (R-SSM), a sequential hierarchical latent variable model that makes use of graph neural networks (GNNs) to simulate the joint state transitions of multiple correlated objects. By letting GNNs cooperate with SSM, R-SSM provides a flexible way to incorporate relational information into the modeling of multi-object dynamics. We further suggest augmenting the model with normalizing flows instantiated for vertex-indexed random variables and propose two auxiliary contrastive objectives to facilitate the learning. The utility of R-SSM is empirically evaluated on synthetic and real time series datasets.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/7a1e5377b08489c2969f73c56efc557e34f578e1" target='_blank'>Relational State-Space Model for Stochastic Multi-Object Systems</a></td>
-          <td>
-            Fan Yang, Ling Chen, Fan Zhou, Yusong Gao, Wei Cao
-          </td>
-          <td>2020-01-13</td>
-          <td>ArXiv</td>
-          <td>6</td>
-          <td>56</td>
         </tr>
     
         <tr id="Time series modeling is a well-established problem, which often requires that methods (1) expressively represent complicated dependencies, (2) forecast long horizons, and (3) efficiently train over long sequences. State-space models (SSMs) are classical models for time series, and prior works combine SSMs with deep learning layers for efficient sequence modeling. However, we find fundamental limitations with these prior approaches, proving their SSM representations cannot express autoregressive time series processes. We thus introduce SpaceTime, a new state-space time series architecture that improves all three criteria. For expressivity, we propose a new SSM parameterization based on the companion matrix -- a canonical representation for discrete-time processes -- which enables SpaceTime's SSM layers to learn desirable autoregressive processes. For long horizon forecasting, we introduce a"closed-loop"variation of the companion SSM, which enables SpaceTime to predict many future time-steps by generating its own layer-wise inputs. For efficient training and inference, we introduce an algorithm that reduces the memory and compute of a forward pass with the companion matrix. With sequence length $\ell$ and state-space size $d$, we go from $\tilde{O}(d \ell)$ na\"ively to $\tilde{O}(d + \ell)$. In experiments, our contributions lead to state-of-the-art results on extensive and diverse benchmarks, with best or second-best AUROC on 6 / 7 ECG and speech time series classification, and best MSE on 14 / 16 Informer forecasting tasks. Furthermore, we find SpaceTime (1) fits AR($p$) processes that prior deep SSMs fail on, (2) forecasts notably more accurately on longer horizons than prior state-of-the-art, and (3) speeds up training on real-world ETTh1 data by 73% and 80% relative wall-clock time over Transformers and LSTMs.">
@@ -110,7 +98,7 @@ hide:
           </td>
           <td>2023-03-16</td>
           <td>ArXiv</td>
-          <td>21</td>
+          <td>27</td>
           <td>42</td>
         </tr>
     
@@ -125,7 +113,7 @@ hide:
             R. G. Krishnan, Uri Shalit, D. Sontag
           </td>
           <td>2016-09-30</td>
-          <td>DBLP, MAG, ArXiv</td>
+          <td>MAG, DBLP, ArXiv</td>
           <td>411</td>
           <td>48</td>
         </tr>
@@ -140,6 +128,18 @@ hide:
           <td>ArXiv</td>
           <td>0</td>
           <td>23</td>
+        </tr>
+    
+        <tr id="Many applications, e.g., healthcare, education, call for effective methods methods for constructing predictive models from high dimensional time series data where the relationship between variables can be complex and vary over time. In such settings, the underlying system undergoes a sequence of unobserved transitions among a finite set of hidden states. Furthermore, the relationships between the observed variables and their temporal dynamics may depend on the hidden state of the system. To further complicate matters, the hidden state sequences underlying the observed data from different individuals may not be aligned relative to a common frame of reference. Against this background, we consider the novel problem of jointly learning the state-dependent inter-variable relationships as well as the pattern of transitions between hidden states from multi-variate time series data. To solve this problem, we introduce the State-Regularized Vector Autoregressive Model (SrVARM) which combines a state-regularized recurrent neural network to learn the dynamics of transitions between discrete hidden states with an augmented autoregressive model which models the inter-variable dependencies in each state using a state-dependent directed acyclic graph (DAG). We propose an efficient algorithm for training SrVARM by leveraging a recently introduced reformulation of the combinatorial problem of optimizing the DAG structure with respect to a scoring function into a continuous optimization problem. We report results of extensive experiments with simulated data as well as a real-world benchmark that show that SrVARM outperforms state-of-the-art baselines in recovering the unobserved state transitions and discovering the state-dependent relationships among variables.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/4ddaa0ff15691ba148dd88c82b03547e9d2aa013" target='_blank'>SrVARM: State Regularized Vector Autoregressive Model for Joint Learning of Hidden State Transitions and State-Dependent Inter-Variable Dependencies from Multi-variate Time Series</a></td>
+          <td>
+            Tsung-Yu Hsieh, Yiwei Sun, Xianfeng Tang, Suhang Wang, Vasant G Honavar
+          </td>
+          <td>2021-04-19</td>
+          <td>Proceedings of the Web Conference 2021</td>
+          <td>7</td>
+          <td>54</td>
         </tr>
     
   </tbody>

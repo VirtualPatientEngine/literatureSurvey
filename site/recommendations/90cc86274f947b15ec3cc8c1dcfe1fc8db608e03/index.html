@@ -667,7 +667,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-05-27 07:03:46 UTC</i>
+  <i class="footer">This page was last updated on 2024-06-07 12:57:32 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -698,6 +698,18 @@
   </thead>
   <tbody>
 
+        <tr id="We present a novel framework to explore neural control and design of complex fluidic systems with dynamic solid boundaries. Our system features a fast differentiable Navier-Stokes solver with solid-fluid interface handling, a low-dimensional differentiable parametric geometry representation, a control-shape co-design algorithm, and gym-like simulation environments to facilitate various fluidic control design applications. Additionally, we present a benchmark of design, control, and learning tasks on high-fidelity, high-resolution dynamic fluid environments that pose challenges for existing differentiable fluid simulators. These tasks include designing the control of artificial hearts, identifying robotic end-effector shapes, and controlling a fluid gate. By seamlessly incorporating our differentiable fluid simulator into a learning framework, we demonstrate successful design, control, and learning results that surpass gradient-free solutions in these benchmark tasks.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/527f3a03a03d3573ea5d162c03cf4e251f6fb9bd" target='_blank'>Neural Fluidic System Design and Control with Differentiable Simulation</a></td>
+          <td>
+            Yifei Li, Yuchen Sun, Pingchuan Ma, Eftychios Sifakis, Tao Du, Bo Zhu, Wojciech Matusik
+          </td>
+          <td>2024-05-22</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>33</td>
+        </tr>
+
         <tr id="We leverage physics-embedded differentiable graph network simulators (GNS) to accelerate particulate and fluid simulations to solve forward and inverse problems. GNS represents the domain as a graph with particles as nodes and learned interactions as edges. Compared to modeling global dynamics, GNS enables learning local interaction laws through edge messages, improving its generalization to new environments. GNS achieves over 165x speedup for granular flow prediction compared to parallel CPU numerical simulations. We propose a novel hybrid GNS/Material Point Method (MPM) to accelerate forward simulations by minimizing error on a pure surrogate model by interleaving MPM in GNS rollouts to satisfy conservation laws and minimize errors achieving 24x speedup compared to pure numerical simulations. The differentiable GNS enables solving inverse problems through automatic differentiation, identifying material parameters that result in target runout distances. We demonstrate the ability of GNS to solve inverse problems by iteratively updating the friction angle (a material property) by computing the gradient of a loss function based on the final and target runouts, thereby identifying the friction angle that best matches the observed runout. The physics-embedded and differentiable simulators open an exciting new paradigm for AI-accelerated design, control, and optimization.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/dd68409179b26b5a21c360142f5a834fa28dcaf6" target='_blank'>Accelerating Particle and Fluid Simulations with Differentiable Graph Networks for Solving Forward and Inverse Problems</a></td>
@@ -718,7 +730,7 @@
           </td>
           <td>2023-03-04</td>
           <td>ArXiv</td>
-          <td>26</td>
+          <td>27</td>
           <td>126</td>
         </tr>
 
@@ -778,7 +790,7 @@
           </td>
           <td>2021-05-18</td>
           <td>DBLP</td>
-          <td>23</td>
+          <td>26</td>
           <td>77</td>
         </tr>
 
@@ -791,20 +803,8 @@
           </td>
           <td>2019-07-26</td>
           <td>ArXiv</td>
-          <td>54</td>
+          <td>55</td>
           <td>49</td>
-        </tr>
-
-        <tr id="We propose a novel method that makes use of deep neural networks and gradient decent to perform automated design on complex real world engineering tasks. Our approach works by training a neural network to mimic the fitness function of a design optimization task and then, using the differential nature of the neural network, perform gradient decent to maximize the fitness. We demonstrate this methods effectiveness by designing an optimized heat sink and both 2D and 3D airfoils that maximize the lift drag ratio under steady state flow conditions. We highlight that our method has two distinct benefits over other automated design approaches. First, evaluating the neural networks prediction of fitness can be orders of magnitude faster then simulating the system of interest. Second, using gradient decent allows the design space to be searched much more efficiently then other gradient free methods. These two strengths work together to overcome some of the current shortcomings of automated design.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/27c02b32a3c352fa7dc4e954c4ad1c5e4207d227" target='_blank'>Automated Design using Neural Networks and Gradient Descent</a></td>
-          <td>
-            O. Hennigh
-          </td>
-          <td>2017-10-27</td>
-          <td>ArXiv</td>
-          <td>6</td>
-          <td>6</td>
         </tr>
 
   </tbody>

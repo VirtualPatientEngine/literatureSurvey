@@ -667,7 +667,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-05-27 07:02:56 UTC</i>
+  <i class="footer">This page was last updated on 2024-06-07 12:56:43 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -706,7 +706,7 @@
           </td>
           <td>2024-03-12</td>
           <td>ArXiv</td>
-          <td>10</td>
+          <td>13</td>
           <td>18</td>
         </tr>
 
@@ -724,26 +724,38 @@
 
         <tr id="In this paper, we introduce TimeGPT, the first foundation model for time series, capable of generating accurate predictions for diverse datasets not seen during training. We evaluate our pre-trained model against established statistical, machine learning, and deep learning methods, demonstrating that TimeGPT zero-shot inference excels in performance, efficiency, and simplicity. Our study provides compelling evidence that insights from other domains of artificial intelligence can be effectively applied to time series analysis. We conclude that large-scale time series models offer an exciting opportunity to democratize access to precise predictions and reduce uncertainty by leveraging the capabilities of contemporary advancements in deep learning.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/3282fd7ad0f45e2e3d7af7072023869e6f5399a3" target='_blank'>TimeGPT-1</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/32b15b02bd2640346678a773079c5d42190bbac9" target='_blank'>TimeGPT-1</a></td>
           <td>
             Azul Garza, Cristian Challu, Max Mergenthaler-Canseco
           </td>
           <td>2023-10-05</td>
           <td>ArXiv</td>
-          <td>23</td>
+          <td>31</td>
           <td>1</td>
         </tr>
 
-        <tr id="Deep learning has contributed remarkably to the advancement of time series analysis. Still, deep models can encounter performance bottlenecks in real-world small-sample scenarios, which can be concealed due to the performance saturation with small models on current benchmarks. Meanwhile, large models have demonstrated great powers in these scenarios through large-scale pre-training. Continuous progresses have been achieved as the emergence of large language models, exhibiting unprecedented ability in few-shot generalization, scalability, and task generality, which is however absent in time series models. To change the current practices of training small models on specific datasets from scratch, this paper aims at an early development of large time series models (LTSM). During pre-training, we curate large-scale datasets with up to 1 billion time points, unify heterogeneous time series into single-series sequence (S3) format, and develop the GPT-style architecture toward LTSMs. To meet diverse application needs, we convert forecasting, imputation, and anomaly detection of time series into a unified generative task. The outcome of this study is a Time Series Transformer (Timer), that is pre-trained by autoregressive next token prediction on large multi-domain datasets, and is fine-tuned to downstream scenarios with promising abilities as an LTSM.">
+        <tr id="Deep learning has contributed remarkably to the advancement of time series analysis. Still, deep models can encounter performance bottlenecks in real-world data-scarce scenarios, which can be concealed due to the performance saturation with small models on current benchmarks. Meanwhile, large models have demonstrated great powers in these scenarios through large-scale pre-training. Continuous progress has been achieved with the emergence of large language models, exhibiting unprecedented abilities such as few-shot generalization, scalability, and task generality, which are however absent in small deep models. To change the status quo of training scenario-specific small models from scratch, this paper aims at the early development of large time series models (LTSM). During pre-training, we curate large-scale datasets with up to 1 billion time points, unify heterogeneous time series into single-series sequence (S3) format, and develop the GPT-style architecture toward LTSMs. To meet diverse application needs, we convert forecasting, imputation, and anomaly detection of time series into a unified generative task. The outcome of this study is a Time Series Transformer (Timer), which is generative pre-trained by next token prediction and adapted to various downstream tasks with promising capabilities as an LTSM. Code and datasets are available at: https://github.com/thuml/Large-Time-Series-Model.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/6b63b78b8368b5974d69e413291fb86c32d6df96" target='_blank'>Timer: Transformers for Time Series Analysis at Scale</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/73f58b90697f957832f5090946894480849dea3a" target='_blank'>Timer: Generative Pre-trained Transformers Are Large Time Series Models</a></td>
           <td>
             Yong Liu, Haoran Zhang, Chenyu Li, Xiangdong Huang, Jianmin Wang, Mingsheng Long
           </td>
           <td>2024-02-04</td>
           <td>ArXiv</td>
-          <td>2</td>
+          <td>7</td>
           <td>65</td>
+        </tr>
+
+        <tr id="Predicting future values in multivariate time series is vital across various domains. This work explores the use of large language models (LLMs) for this task. However, LLMs typically handle one-dimensional data. We introduce MultiCast, a zero-shot LLM-based approach for multivariate time series forecasting. It allows LLMs to receive multivariate time series as input, through three novel token multiplexing solutions that effectively reduce dimensionality while preserving key repetitive patterns. Additionally, a quantization scheme helps LLMs to better learn these patterns, while significantly reducing token use for practical applications. We showcase the performance of our approach in terms of RMSE and execution time against state-of-the-art approaches on three real-world datasets.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/695663f05473270744f228e9beeb7578ceee7c68" target='_blank'>MultiCast: Zero-Shot Multivariate Time Series Forecasting Using LLMs</a></td>
+          <td>
+            Georgios Chatzigeorgakidis, Konstantinos Lentzos, Dimitrios Skoutas
+          </td>
+          <td>2024-05-23</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>7</td>
         </tr>
 
         <tr id="Time series forecasting holds significant importance in many real-world dynamic systems and has been extensively studied. Unlike natural language process (NLP) and computer vision (CV), where a single large model can tackle multiple tasks, models for time series forecasting are often specialized, necessitating distinct designs for different tasks and applications. While pre-trained foundation models have made impressive strides in NLP and CV, their development in time series domains has been constrained by data sparsity. Recent studies have revealed that large language models (LLMs) possess robust pattern recognition and reasoning abilities over complex sequences of tokens. However, the challenge remains in effectively aligning the modalities of time series data and natural language to leverage these capabilities. In this work, we present Time-LLM, a reprogramming framework to repurpose LLMs for general time series forecasting with the backbone language models kept intact. We begin by reprogramming the input time series with text prototypes before feeding it into the frozen LLM to align the two modalities. To augment the LLM's ability to reason with time series data, we propose Prompt-as-Prefix (PaP), which enriches the input context and directs the transformation of reprogrammed input patches. The transformed time series patches from the LLM are finally projected to obtain the forecasts. Our comprehensive evaluations demonstrate that Time-LLM is a powerful time series learner that outperforms state-of-the-art, specialized forecasting models. Moreover, Time-LLM excels in both few-shot and zero-shot learning scenarios.">
@@ -754,7 +766,7 @@
           </td>
           <td>2023-10-03</td>
           <td>ArXiv</td>
-          <td>66</td>
+          <td>81</td>
           <td>8</td>
         </tr>
 
@@ -778,7 +790,7 @@
           </td>
           <td>2023-06-19</td>
           <td>ArXiv</td>
-          <td>23</td>
+          <td>24</td>
           <td>8</td>
         </tr>
 
@@ -792,18 +804,6 @@
           <td>ArXiv</td>
           <td>7</td>
           <td>39</td>
-        </tr>
-
-        <tr id="Motivated by recent advances in large language models for Natural Language Processing (NLP), we design a time-series foundation model for forecasting whose out-of-the-box zero-shot performance on a variety of public datasets comes close to the accuracy of state-of-the-art supervised forecasting models for each individual dataset. Our model is based on pretraining a patched-decoder style attention model on a large time-series corpus, and can work well across different forecasting history lengths, prediction lengths and temporal granularities.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/f45f85fa1beaa795c24c4ff86f1f2deece72252f" target='_blank'>A decoder-only foundation model for time-series forecasting</a></td>
-          <td>
-            Abhimanyu Das, Weihao Kong, Rajat Sen, Yichen Zhou
-          </td>
-          <td>2023-10-14</td>
-          <td>ArXiv</td>
-          <td>21</td>
-          <td>13</td>
         </tr>
 
   </tbody>
