@@ -11,7 +11,7 @@ hide:
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-06-10 06:04:48 UTC</i>
+  <i class="footer">This page was last updated on 2024-06-17 06:05:03 UTC</i>
   </p>
   
   <div class="note info" onclick="startIntro()">
@@ -51,7 +51,7 @@ hide:
           <td>2023-07-27</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>53</td>
+          <td>54</td>
         </tr>
     
         <tr id="Accurate forecasting of multivariate time series is an extensively studied subject in finance, transportation, and computer science. Fully mining the correlation and causation between the variables in a multivariate time series exhibits noticeable results in improving the performance of a time series model. Recently, some models have explored the dependencies between variables through end-to-end graph structure learning without the need for predefined graphs. However, current models do not incorporate the trade-off between efficiency and flexibility and lack the guidance of domain knowledge in the design of graph structure learning algorithms. This paper alleviates the above issues by proposing Balanced Graph Structure Learning for Forecasting (BGSLF), a novel deep learning model that joins graph structure learning and forecasting. Technically, BGSLF leverages the spatial information into convolutional operations and extracts temporal dynamics using the diffusion convolutional recurrent network. The proposed framework balance the trade-off between efficiency and flexibility by introducing Multi-Graph Generation Network (MGN) and Graph Selection Module. In addition, a method named Smooth Sparse Unit (SSU) is designed to sparse the learned graph structures, which conforms to the sparse spatial correlations in the real world. Extensive experiments on four real-world datasets demonstrate that our model achieves state-of-the-art performances with minor trainable parameters. Code will be made publicly available.">
@@ -98,7 +98,7 @@ hide:
           </td>
           <td>2020-05-24</td>
           <td>Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining</td>
-          <td>859</td>
+          <td>866</td>
           <td>53</td>
         </tr>
     
@@ -122,7 +122,7 @@ hide:
           </td>
           <td>2023-11-10</td>
           <td>ArXiv</td>
-          <td>14</td>
+          <td>16</td>
           <td>4</td>
         </tr>
     

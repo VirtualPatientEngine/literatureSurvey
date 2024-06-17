@@ -667,7 +667,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-06-10 06:04:50 UTC</i>
+  <i class="footer">This page was last updated on 2024-06-17 06:05:05 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -707,7 +707,7 @@
           <td>2024-05-22</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>1</td>
+          <td>2</td>
         </tr>
 
         <tr id="Graph Neural Networks (GNNs) have shown promising potential in graph representation learning. The majority of GNNs define a local message-passing mechanism, propagating information over the graph by stacking multiple layers. These methods, however, are known to suffer from two major limitations: over-squashing and poor capturing of long-range dependencies. Recently, Graph Transformers (GTs) emerged as a powerful alternative to Message-Passing Neural Networks (MPNNs). GTs, however, have quadratic computational cost, lack inductive biases on graph structures, and rely on complex Positional/Structural Encodings (SE/PE). In this paper, we show that while Transformers, complex message-passing, and SE/PE are sufficient for good performance in practice, neither is necessary. Motivated by the recent success of State Space Models (SSMs), such as Mamba, we present Graph Mamba Networks (GMNs), a general framework for a new class of GNNs based on selective SSMs. We discuss and categorize the new challenges when adapting SSMs to graph-structured data, and present four required and one optional steps to design GMNs, where we choose (1) Neighborhood Tokenization, (2) Token Ordering, (3) Architecture of Bidirectional Selective SSM Encoder, (4) Local Encoding, and dispensable (5) PE and SE. We further provide theoretical justification for the power of GMNs. Experiments demonstrate that despite much less computational cost, GMNs attain an outstanding performance in long-range, small-scale, large-scale, and heterophilic benchmark datasets.">
@@ -718,8 +718,20 @@
           </td>
           <td>2024-02-13</td>
           <td>ArXiv</td>
-          <td>22</td>
+          <td>25</td>
           <td>8</td>
+        </tr>
+
+        <tr id="Message-passing graph neural networks (GNNs), while excelling at capturing local relationships, often struggle with long-range dependencies on graphs. Conversely, graph transformers (GTs) enable information exchange between all nodes but oversimplify the graph structure by treating them as a set of fixed-length vectors. This work proposes a novel architecture, NeuralWalker, that overcomes the limitations of both methods by combining random walks with message passing. NeuralWalker achieves this by treating random walks as sequences, allowing for the application of recent advances in sequence models in order to capture long-range dependencies within these walks. Based on this concept, we propose a framework that offers (1) more expressive graph representations through random walk sequences, (2) the ability to utilize any sequence model for capturing long-range dependencies, and (3) the flexibility by integrating various GNN and GT architectures. Our experimental evaluations demonstrate that NeuralWalker achieves significant performance improvements on 19 graph and node benchmark datasets, notably outperforming existing methods by up to 13% on the PascalVoc-SP and COCO-SP datasets. Code is available at https://github.com/BorgwardtLab/NeuralWalker.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/0702ac9db3ea20810ffdb9f35bde85cdfaf27a3d" target='_blank'>Learning Long Range Dependencies on Graphs via Random Walks</a></td>
+          <td>
+            Dexiong Chen, Till Hendrik Schulz, Karsten Borgwardt
+          </td>
+          <td>2024-06-05</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>7</td>
         </tr>
 
         <tr id="Graph representation learning (GRL) is fundamental in multi-graph applications like molecular property prediction. Graph neural networks (GNNs) have emerged as a popular method for GRL. However, existing GRL methods primarily focus on designing GNN models with enhanced expressiveness while overlooking the memory efficiency of algorithms during training. The memory inefficiency problem is caused by a contextual constraint imposed on node representations, which requires each node to be context-dependent on its input graph. In this paper, we propose a novel method, called context sketching (COS), for memory-efficient graph representation learning in multi-graph scenarios. We first formally define the contextual constraint based on the enclosed $\infty-$hop subgraphs of nodes. Subsequently, we propose to relax the original contextual constraint by requiring each node to be context-dependent on its enclosed $k-$hop subgraph $(k \ll \infty)$ which is a contextual sketch of the enclosed $\infty$-hop subgraph. Lastly, we prove that COS constructs an optimal solution to a memory-related objective associated with graph coarsening. Experiments on four widely used benchmark datasets demonstrate that COS can reduce the memory footprint of baselines by a large margin with almost no accuracy loss.">
@@ -742,7 +754,7 @@
           </td>
           <td>2022-10-08</td>
           <td>ArXiv</td>
-          <td>45</td>
+          <td>46</td>
           <td>17</td>
         </tr>
 
@@ -768,18 +780,6 @@
           <td>ArXiv</td>
           <td>8</td>
           <td>7</td>
-        </tr>
-
-        <tr id="Message-passing graph neural networks (MPNNs) emerged as powerful tools for processing graph-structured input. However, they operate on a fixed input graph structure, ignoring potential noise and missing information. Furthermore, their local aggregation mechanism can lead to problems such as over-squashing and limited expressive power in capturing relevant graph structures. Existing solutions to these challenges have primarily relied on heuristic methods, often disregarding the underlying data distribution. Hence, devising principled approaches for learning to infer graph structures relevant to the given prediction task remains an open challenge. In this work, leveraging recent progress in exact and differentiable $k$-subset sampling, we devise probabilistically rewired MPNNs (PR-MPNNs), which learn to add relevant edges while omitting less beneficial ones. For the first time, our theoretical analysis explores how PR-MPNNs enhance expressive power, and we identify precise conditions under which they outperform purely randomized approaches. Empirically, we demonstrate that our approach effectively mitigates issues like over-squashing and under-reaching. In addition, on established real-world datasets, our method exhibits competitive or superior predictive performance compared to traditional MPNN models and recent graph transformer architectures.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/eca140fbf6cd4b519e9b2a2d00208af1db6c29c0" target='_blank'>Probabilistically Rewired Message-Passing Neural Networks</a></td>
-          <td>
-            Chendi Qian, Andrei Manolache, Kareem Ahmed, Zhe Zeng, Guy Van den Broeck, Mathias Niepert, Christopher Morris
-          </td>
-          <td>2023-10-03</td>
-          <td>ArXiv</td>
-          <td>4</td>
-          <td>38</td>
         </tr>
 
   </tbody>

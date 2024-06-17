@@ -667,7 +667,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-06-10 06:04:53 UTC</i>
+  <i class="footer">This page was last updated on 2024-06-17 06:05:09 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -710,6 +710,18 @@
           <td>1</td>
         </tr>
 
+        <tr id="In recent years, generative pre-trained paradigms such as Large Language Models (LLMs) and Large Vision Models (LVMs) have achieved revolutionary advancements and widespread real-world applications. Particularly, the emergence of pre-trained LLMs-based temporal works, compared to previous deep model approaches, has demonstrated superior generalization and robustness, showcasing the potential of generative pre-trained paradigms as foundation models for time series. However, those LLMs-based works mainly focus on cross-modal research, i.e., leveraging the language capabilities of LLMs in time series contexts. Although they have achieved impressive performance, there still exist the issues of concept drift caused by differences in data distribution and inflexibility caused by misalignment of dimensions. To this end, inspired by recent work on LVMs, we reconsider the paradigm of time series modeling. In this paper, we comprehensively explore, for the first time, the effectiveness and superiority of the Generative Pre-trained Diffusion (GPD) paradigm in real-world multivariate time series forecasting (TSF). Specifically, to mitigate performance bias introduced by sophisticated networks, we propose a straightforward MLP diffusion network for unconditional modeling of time series. Then we employ a zero-shot and tuning-free method to predict (generate) future data using historical data as prompts. The GPD paradigm is established on the time series modality, effectively preventing the phenomenon of concept drift, and enabling flexible forecasting of arbitrary lengths. We demonstrate that the GPD paradigm achieves comprehensive performance and generalization comparable to current SOTA LLM-based and deep model paradigms on mainstream benchmarks and various TSF tasks. Extensive experiments validate the potential of the GPD paradigm and its assistance in future related research.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/818793961396bbe4c744932676f0ff9cc8385bed" target='_blank'>Generative Pre-Trained Diffusion Paradigm for Zero-Shot Time Series Forecasting</a></td>
+          <td>
+            Jiarui Yang, Tao Dai, Naiqi Li, Junxi Wu, Peiyuan Liu, Jinmin Li, Jigang Bao, Haigang Zhang, Shutao Xia
+          </td>
+          <td>2024-06-04</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>3</td>
+        </tr>
+
         <tr id="We introduce Chronos, a simple yet effective framework for pretrained probabilistic time series models. Chronos tokenizes time series values using scaling and quantization into a fixed vocabulary and trains existing transformer-based language model architectures on these tokenized time series via the cross-entropy loss. We pretrained Chronos models based on the T5 family (ranging from 20M to 710M parameters) on a large collection of publicly available datasets, complemented by a synthetic dataset that we generated via Gaussian processes to improve generalization. In a comprehensive benchmark consisting of 42 datasets, and comprising both classical local models and deep learning methods, we show that Chronos models: (a) significantly outperform other methods on datasets that were part of the training corpus; and (b) have comparable and occasionally superior zero-shot performance on new datasets, relative to methods that were trained specifically on them. Our results demonstrate that Chronos models can leverage time series data from diverse domains to improve zero-shot accuracy on unseen forecasting tasks, positioning pretrained models as a viable tool to greatly simplify forecasting pipelines.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/4fb78450650894091b0a55b5504a8b0a6f3dec37" target='_blank'>Chronos: Learning the Language of Time Series</a></td>
@@ -718,7 +730,7 @@
           </td>
           <td>2024-03-12</td>
           <td>ArXiv</td>
-          <td>13</td>
+          <td>16</td>
           <td>18</td>
         </tr>
 
@@ -742,7 +754,7 @@
           </td>
           <td>2024-05-03</td>
           <td>ArXiv</td>
-          <td>1</td>
+          <td>2</td>
           <td>47</td>
         </tr>
 
@@ -779,7 +791,7 @@
           <td>2023-11-24</td>
           <td>ArXiv</td>
           <td>2</td>
-          <td>6</td>
+          <td>7</td>
         </tr>
 
         <tr id="Predicting future values in multivariate time series is vital across various domains. This work explores the use of large language models (LLMs) for this task. However, LLMs typically handle one-dimensional data. We introduce MultiCast, a zero-shot LLM-based approach for multivariate time series forecasting. It allows LLMs to receive multivariate time series as input, through three novel token multiplexing solutions that effectively reduce dimensionality while preserving key repetitive patterns. Additionally, a quantization scheme helps LLMs to better learn these patterns, while significantly reducing token use for practical applications. We showcase the performance of our approach in terms of RMSE and execution time against state-of-the-art approaches on three real-world datasets.">
@@ -792,18 +804,6 @@
           <td>ArXiv</td>
           <td>0</td>
           <td>7</td>
-        </tr>
-
-        <tr id="Transformers have gained popularity in time series forecasting for their ability to capture long-sequence interactions. However, their memory and compute-intensive requirements pose a critical bottleneck for long-term forecasting, despite numerous advancements in compute-aware self-attention modules. To address this, we propose TSMixer, a lightweight neural architecture exclusively composed of multi-layer perceptron (MLP) modules. TSMixer is designed for multivariate forecasting and representation learning on patched time series, providing an efficient alternative to Transformers. Our model draws inspiration from the success of MLP-Mixer models in computer vision. We demonstrate the challenges involved in adapting Vision MLP-Mixer for time series and introduce empirically validated components to enhance accuracy. This includes a novel design paradigm of attaching online reconciliation heads to the MLP-Mixer backbone, for explicitly modeling the time-series properties such as hierarchy and channel-correlations. We also propose a Hybrid channel modeling approach to effectively handle noisy channel interactions and generalization across diverse datasets, a common challenge in existing patch channel-mixing methods. Additionally, a simple gated attention mechanism is introduced in the backbone to prioritize important features. By incorporating these lightweight components, we significantly enhance the learning capability of simple MLP structures, outperforming complex Transformer models with minimal computing usage. Moreover, TSMixer's modular design enables compatibility with both supervised and masked self-supervised learning methods, making it a promising building block for time-series Foundation Models. TSMixer outperforms state-of-the-art MLP and Transformer models in forecasting by a considerable margin of 8-60%. It also outperforms the latest strong benchmarks of Patch-Transformer models (by 1-2%) with a significant reduction in memory and runtime (2-3X).">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/3803d828e31381c853374133dd4022d3ccd60a5a" target='_blank'>TSMixer: Lightweight MLP-Mixer Model for Multivariate Time Series Forecasting</a></td>
-          <td>
-            Vijayabharathi Ekambaram, Arindam Jati, Nam H. Nguyen, Phanwadee Sinthong, J. Kalagnanam
-          </td>
-          <td>2023-06-14</td>
-          <td>Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</td>
-          <td>30</td>
-          <td>33</td>
         </tr>
 
   </tbody>

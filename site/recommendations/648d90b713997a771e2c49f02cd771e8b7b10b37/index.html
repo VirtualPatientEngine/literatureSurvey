@@ -667,7 +667,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-06-10 06:04:54 UTC</i>
+  <i class="footer">This page was last updated on 2024-06-17 06:05:10 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -706,7 +706,7 @@
           </td>
           <td>2023-04-23</td>
           <td>Sensors (Basel, Switzerland)</td>
-          <td>13</td>
+          <td>14</td>
           <td>76</td>
         </tr>
 
@@ -742,7 +742,7 @@
           </td>
           <td>2023-10-21</td>
           <td>ArXiv</td>
-          <td>11</td>
+          <td>13</td>
           <td>2</td>
         </tr>
 
@@ -754,7 +754,7 @@
           </td>
           <td>2021-09-30</td>
           <td>IEEE Transactions on Pattern Analysis and Machine Intelligence</td>
-          <td>12</td>
+          <td>13</td>
           <td>72</td>
         </tr>
 
@@ -806,16 +806,16 @@
           <td>5</td>
         </tr>
 
-        <tr id="Time series data has attached extensive attention as multi-domain data, but it is difficult to analyze due to its high dimension and few labels. Self-supervised representation learning provides an effective way for processing such data. Considering the frequency domain features of the time series data itself and the contextual feature in the classification task, this paper proposes an unsupervised Long Short-Term Memory (LSTM) and contrastive transformer-based time series representation model using contrastive learning. Firstly, transforming data with frequency domain-based augmentation increases the ability to represent features in the frequency domain. Secondly, the encoder module with three layers of LSTM and convolution maps the augmented data to the latent space and calculates the temporal loss with a contrastive transformer module and contextual loss. Finally, after self-supervised training, the representation vector of the original data can be got from the pre-trained encoder. Our model achieves satisfied performances on Human Activity Recognition (HAR) and sleepEDF real-life datasets.">
+        <tr id="Since labeled samples are typically scarce in real-world scenarios, self-supervised representation learning in time series is critical. Existing approaches mainly employ the contrastive learning framework, which automatically learns to understand similar and dissimilar data pairs. However, they are constrained by the request for cumbersome sampling policies and prior knowledge of constructing pairs. Also, few works have focused on effectively modeling temporal-spectral correlations to improve the capacity of representations. In this article, we propose the cross reconstruction transformer (CRT) to solve the aforementioned issues. CRT achieves time series representation learning through a cross-domain dropping-reconstruction task. Specifically, we obtain the frequency domain of the time series via the fast Fourier transform (FFT) and randomly drop certain patches in both time and frequency domains. Dropping is employed to maximally preserve the global context while masking leads to the distribution shift. Then a Transformer architecture is utilized to adequately discover the cross-domain correlations between temporal and spectral information through reconstructing data in both domains, which is called Dropped Temporal-Spectral Modeling. To discriminate the representations in global latent space, we propose instance discrimination constraint (IDC) to reduce the mutual information between different time series samples and sharpen the decision boundaries. Additionally, a specified curriculum learning (CL) strategy is employed to improve the robustness during the pretraining phase, which progressively increases the dropping ratio in the training process. We conduct extensive experiments to evaluate the effectiveness of the proposed method on multiple real-world datasets. Results show that CRT consistently achieves the best performance over existing methods by 2%-9%. The code is publicly available at https://github.com/BobZwr/Cross-Reconstruction-Transformer.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/205fd9413b159e9f1d5e5cd8fa69960c0a3a31bd" target='_blank'>Self-Supervised Time Series Classification Based on LSTM and Contrastive Transformer</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/26645c9dcb5bcc67f6b1a648937677c6331fac32" target='_blank'>Self-Supervised Time Series Representation Learning via Cross Reconstruction Transformer.</a></td>
           <td>
-            Yuanhao Zou, Yufei Zhang, Xiaodong Zhao
+            Wen-Rang Zhang, Ling Yang, Shijia Geng, Shenda Hong
           </td>
-          <td>2022-12-01</td>
-          <td>Wuhan University Journal of Natural Sciences</td>
-          <td>0</td>
-          <td>7</td>
+          <td>2022-05-20</td>
+          <td>IEEE transactions on neural networks and learning systems</td>
+          <td>14</td>
+          <td>9</td>
         </tr>
 
   </tbody>

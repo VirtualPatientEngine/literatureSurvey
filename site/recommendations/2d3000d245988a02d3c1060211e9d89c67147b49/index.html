@@ -667,7 +667,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-06-10 06:06:23 UTC</i>
+  <i class="footer">This page was last updated on 2024-06-17 06:06:29 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -734,6 +734,18 @@
           <td>38</td>
         </tr>
 
+        <tr id="The dynamics of biological systems, from proteins to cells to organisms, is complex and stochastic. To decipher their physical laws, we need to bridge between experimental observations and theoretical modeling. Thanks to progress in microscopy and tracking, there is today an abundance of experimental trajectories reflecting these dynamical laws. Inferring physical models from noisy and imperfect experimental data, however, is challenging. Because there are no inference methods that are robust and efficient, model reconstruction from experimental trajectories is a bottleneck to data-driven biophysics. In this Thesis, I present a set of tools developed to bridge this gap and permit robust and universal inference of stochastic dynamical models from experimental trajectories. These methods are rooted in an information-theoretical framework that quantifies how much can be inferred from trajectories that are short, partial and noisy. They permit the efficient inference of dynamical models for overdamped and underdamped Langevin systems, as well as the inference of entropy production rates. I finally present early applications of these techniques, as well as future research directions.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/36d5a9b10d628b238c485c3e97f0ad456101dedb" target='_blank'>Learning dynamical models from stochastic trajectories</a></td>
+          <td>
+            Pierre Ronceray
+          </td>
+          <td>2024-06-04</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+
         <tr id="We propose a deep generative Markov State Model (DeepGenMSM) learning framework for inference of metastable dynamical systems and prediction of trajectories. After unsupervised training on time series data, the model contains (i) a probabilistic encoder that maps from high-dimensional configuration space to a small-sized vector indicating the membership to metastable (long-lived) states, (ii) a Markov chain that governs the transitions between metastable states and facilitates analysis of the long-time dynamics, and (iii) a generative part that samples the conditional distribution of configurations in the next time step. The model can be operated in a recursive fashion to generate trajectories to predict the system evolution from a defined starting state and propose new configurations. The DeepGenMSM is demonstrated to provide accurate estimates of the long-time kinetics and generate valid distributions for molecular dynamics (MD) benchmark systems. Remarkably, we show that DeepGenMSMs are able to make long time-steps in molecular configuration space and generate physically realistic structures in regions that were not seen in training data.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/5c6ee980b791766ba036cba282bcbcbcb2e5309e" target='_blank'>Deep Generative Markov State Models</a></td>
@@ -754,7 +766,7 @@
           </td>
           <td>2017-10-16</td>
           <td>Nature Communications</td>
-          <td>455</td>
+          <td>458</td>
           <td>61</td>
         </tr>
 
@@ -792,18 +804,6 @@
           <td>ArXiv</td>
           <td>1</td>
           <td>33</td>
-        </tr>
-
-        <tr id="Markov state models (MSMs) are valuable for studying dynamics of protein conformational changes via statistical analysis of molecular dynamics (MD) simulations. In MSMs, the complex configuration space is coarse-grained into conformational states, with the dynamics modeled by a series of Markovian transitions among these states at discrete lag times. Constructing the Markovian model at a specific lag time requires state defined without significant internal energy barriers, enabling internal dynamics relaxation within the lag time. This process coarse grains time and space, integrating out rapid motions within metastable states. This work introduces a continuous embedding approach for molecular conformations using the state predictive information bottleneck (SPIB), which unifies dimensionality reduction and state space partitioning via a continuous, machine learned basis set. Without explicit optimization of VAMP-based scores, SPIB demonstrates state-of-the-art performance in identifying slow dynamical processes and constructing predictive multi-resolution Markovian models. When applied to mini-proteins trajectories, SPIB showcases unique advantages compared to competing methods. It automatically adjusts the number of metastable states based on a specified minimal time resolution, eliminating the need for manual tuning. While maintaining efficacy in dynamical properties, SPIB excels in accurately distinguishing metastable states and capturing numerous well-populated macrostates. Furthermore, SPIB's ability to learn a low-dimensional continuous embedding of the underlying MSMs enhances the interpretation of dynamic pathways. Accordingly, we propose SPIB as an easy-to-implement methodology for end-to-end MSM construction.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/cb4d8f8b2b1169d210d289c6b2deac0ccbbc34fe" target='_blank'>An Information Bottleneck Approach for Markov Model Construction</a></td>
-          <td>
-            Dedi Wang, Yunrui Qiu, E. Beyerle, Xuhui Huang, P. Tiwary
-          </td>
-          <td>2024-04-03</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>30</td>
         </tr>
 
   </tbody>
