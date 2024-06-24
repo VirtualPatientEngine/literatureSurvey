@@ -667,7 +667,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-06-17 06:06:58 UTC</i>
+  <i class="footer">This page was last updated on 2024-06-24 06:07:30 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -707,7 +707,7 @@
           <td>2021-08-05</td>
           <td>ArXiv</td>
           <td>12</td>
-          <td>20</td>
+          <td>21</td>
         </tr>
 
         <tr id="Bayesian Physics Informed Neural Networks (B-PINNs) have gained significant attention for inferring physical parameters and learning the forward solutions for problems based on partial differential equations. However, the overparameterized nature of neural networks poses a computational challenge for high-dimensional posterior inference. Existing inference approaches, such as particle-based or variance inference methods, are either computationally expensive for high-dimensional posterior inference or provide unsatisfactory uncertainty estimates. In this paper, we present a new efficient inference algorithm for B-PINNs that uses Ensemble Kalman Inversion (EKI) for high-dimensional inference tasks. We find that our proposed method can achieve inference results with informative uncertainty estimates comparable to Hamiltonian Monte Carlo (HMC)-based B-PINNs with a much reduced computational cost. These findings suggest that our proposed approach has great potential for uncertainty quantification in physics-informed machine learning for practical applications.">
@@ -719,7 +719,7 @@
           <td>2023-03-13</td>
           <td>ArXiv</td>
           <td>1</td>
-          <td>15</td>
+          <td>16</td>
         </tr>
 
         <tr id="The accessibility of spatially distributed data, enabled by affordable sensors, field, and numerical experiments, has facilitated the development of data-driven solutions for scientific problems, including climate change, weather prediction, and urban planning. Neural Partial Differential Equations (Neural PDEs), which combine deep learning (DL) techniques with domain expertise (e.g., governing equations) for parameterization, have proven to be effective in capturing valuable correlations within spatiotemporal datasets. However, sparse and noisy measurements coupled with modeling approximation introduce aleatoric and epistemic uncertainties. Therefore, quantifying uncertainties propagated from model inputs to outputs remains a challenge and an essential goal for establishing the trustworthiness of Neural PDEs. This work evaluates various Uncertainty Quantification (UQ) approaches for both Forward and Inverse Problems in scientific applications. Specifically, we investigate the effectiveness of Bayesian methods, such as Hamiltonian Monte Carlo (HMC) and Monte-Carlo Dropout (MCD), and a more conventional approach, Deep Ensembles (DE). To illustrate their performance, we take two canonical PDEs: Burger's equation and the Navier-Stokes equation. Our results indicate that Neural PDEs can effectively reconstruct flow systems and predict the associated unknown parameters. However, it is noteworthy that the results derived from Bayesian methods, based on our observations, tend to display a higher degree of certainty in their predictions as compared to those obtained using the DE. This elevated certainty in predictions suggests that Bayesian techniques might underestimate the true underlying uncertainty, thereby appearing more confident in their predictions than the DE approach.">
@@ -731,7 +731,7 @@
           <td>2023-11-08</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>0</td>
+          <td>1</td>
         </tr>
 
         <tr id="We propose a physics-informed machine learning method for uncertainty quantification in high-dimensional inverse problems. In this method, the states and parameters of partial differential equations (PDEs) are approximated with truncated conditional Karhunen-Lo\`eve expansions (CKLEs), which, by construction, match the measurements of the respective variables. The maximum a posteriori (MAP) solution of the inverse problem is formulated as a minimization problem over CKLE coefficients where the loss function is the sum of the norm of PDE residuals and the $\ell_2$ regularization term. This MAP formulation is known as the physics-informed CKLE (PICKLE) method. Uncertainty in the inverse solution is quantified in terms of the posterior distribution of CKLE coefficients, and we sample the posterior by solving a randomized PICKLE minimization problem, formulated by adding zero-mean Gaussian perturbations in the PICKLE loss function. We call the proposed approach the randomized PICKLE (rPICKLE) method. For linear and low-dimensional nonlinear problems (15 CKLE parameters), we show analytically and through comparison with Hamiltonian Monte Carlo (HMC) that the rPICKLE posterior converges to the true posterior given by the Bayes rule. For high-dimensional non-linear problems with 2000 CKLE parameters, we numerically demonstrate that rPICKLE posteriors are highly informative--they provide mean estimates with an accuracy comparable to the estimates given by the MAP solution and the confidence interval that mostly covers the reference solution. We are not able to obtain the HMC posterior to validate rPICKLE's convergence to the true posterior due to the HMC's prohibitive computational cost for the considered high-dimensional problems. Our results demonstrate the advantages of rPICKLE over HMC for approximately sampling high-dimensional posterior distributions subject to physics constraints.">
@@ -767,7 +767,7 @@
           <td>2022-05-14</td>
           <td>Neurocomputing</td>
           <td>9</td>
-          <td>39</td>
+          <td>40</td>
         </tr>
 
         <tr id="None">
@@ -779,7 +779,7 @@
           <td>2021-06-08</td>
           <td>J. Comput. Phys.</td>
           <td>44</td>
-          <td>126</td>
+          <td>127</td>
         </tr>
 
         <tr id="Physics-informed neural networks (PINNs) have recently become a popular method for solving forward and inverse problems governed by partial differential equations (PDEs). By incorporating the residual of the PDE into the loss function of a neural network-based surrogate model for the unknown state, PINNs can seamlessly blend measurement data with physical constraints. Here, we extend this framework to PDE-constrained optimal control problems, for which the governing PDE is fully known and the goal is to find a control variable that minimizes a desired cost objective. We provide a set of guidelines for obtaining a good optimal control solution; first by selecting an appropriate PINN architecture and training parameters based on a forward problem, second by choosing the best value for a critical scalar weight in the loss function using a simple but effective two-step line search strategy. We then validate the performance of the PINN framework by comparing it to adjoint-based nonlinear optimal control, which performs gradient descent on the discretized control variable while satisfying the discretized PDE. This comparison is carried out on several distributed control examples based on the Laplace, Burgers, Kuramoto-Sivashinsky, and Navier-Stokes equations. Finally, we discuss the advantages and caveats of using the PINN and adjoint-based approaches for solving optimal control problems constrained by nonlinear PDEs.">
@@ -814,8 +814,8 @@
           </td>
           <td>2018-09-21</td>
           <td>J. Comput. Phys.</td>
-          <td>317</td>
-          <td>126</td>
+          <td>318</td>
+          <td>127</td>
         </tr>
 
   </tbody>

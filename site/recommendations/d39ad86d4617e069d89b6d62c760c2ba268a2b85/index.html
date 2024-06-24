@@ -667,7 +667,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-06-17 06:06:04 UTC</i>
+  <i class="footer">This page was last updated on 2024-06-24 06:06:20 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -718,8 +718,8 @@
           </td>
           <td>2018-08-15</td>
           <td>Proceedings of the National Academy of Sciences of the United States of America</td>
-          <td>414</td>
-          <td>64</td>
+          <td>416</td>
+          <td>65</td>
         </tr>
 
         <tr id="In this paper, we consider the problem of learning prediction models for spatiotemporal physical processes driven by unknown partial differential equations (PDEs). We propose a deep learning framework that learns the underlying dynamics and predicts its evolution using sparsely distributed data sites. Deep learning has shown promising results in modeling physical dynamics in recent years. However, most of the existing deep learning methods for modeling physical dynamics either focus on solving known PDEs or require data in a dense grid when the governing PDEs are unknown. In contrast, our method focuses on learning prediction models for unknown PDE-driven dynamics only from sparsely observed data. The proposed method is spatial dimension-independent and geometrically flexible. We demonstrate our method in the forecasting task for the two-dimensional wave equation and the Burgers-Fisher equation in multiple geometries with different boundary conditions, and the ten-dimensional heat equation.">
@@ -755,14 +755,26 @@
           <td>2023-02-02</td>
           <td>ArXiv</td>
           <td>2</td>
-          <td>23</td>
+          <td>24</td>
+        </tr>
+
+        <tr id="Recently, Conditional Neural Fields (NeFs) have emerged as a powerful modelling paradigm for PDEs, by learning solutions as flows in the latent space of the Conditional NeF. Although benefiting from favourable properties of NeFs such as grid-agnosticity and space-time-continuous dynamics modelling, this approach limits the ability to impose known constraints of the PDE on the solutions -- e.g. symmetries or boundary conditions -- in favour of modelling flexibility. Instead, we propose a space-time continuous NeF-based solving framework that - by preserving geometric information in the latent space - respects known symmetries of the PDE. We show that modelling solutions as flows of pointclouds over the group of interest $G$ improves generalization and data-efficiency. We validated that our framework readily generalizes to unseen spatial and temporal locations, as well as geometric transformations of the initial conditions - where other NeF-based PDE forecasting methods fail - and improve over baselines in a number of challenging geometries.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/9c8295fdfb6de078027cabc7d49b319df8abb0ee" target='_blank'>Space-Time Continuous PDE Forecasting using Equivariant Neural Fields</a></td>
+          <td>
+            David M. Knigge, David R. Wessels, Riccardo Valperga, Samuele Papa, J. Sonke, E. Gavves, E. J. Bekkers
+          </td>
+          <td>2024-06-10</td>
+          <td>ArXiv</td>
+          <td>1</td>
+          <td>56</td>
         </tr>
 
         <tr id="We present AROMA (Attentive Reduced Order Model with Attention), a framework designed to enhance the modeling of partial differential equations (PDEs) using local neural fields. Our flexible encoder-decoder architecture can obtain smooth latent representations of spatial physical fields from a variety of data types, including irregular-grid inputs and point clouds. This versatility eliminates the need for patching and allows efficient processing of diverse geometries. The sequential nature of our latent representation can be interpreted spatially and permits the use of a conditional transformer for modeling the temporal dynamics of PDEs. By employing a diffusion-based formulation, we achieve greater stability and enable longer rollouts compared to conventional MSE training. AROMA's superior performance in simulating 1D and 2D equations underscores the efficacy of our approach in capturing complex dynamical behaviors.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/ed3fa74ebc0adcad4aee915c4625b384eaddbc91" target='_blank'>AROMA: Preserving Spatial Structure for Latent PDE Modeling with Local Neural Fields</a></td>
           <td>
-            Louis Serrano, Thomas X. Wang, E. L. Naour, Jean-Noel Vittaut, P. Gallinari
+            Louis Serrano, Thomas X. Wang, E. L. Naour, Jean-Noël Vittaut, P. Gallinari
           </td>
           <td>2024-06-04</td>
           <td>ArXiv</td>
@@ -804,18 +816,6 @@
           <td>ArXiv</td>
           <td>7</td>
           <td>38</td>
-        </tr>
-
-        <tr id="We propose a new method for spatio-temporal forecasting on arbitrarily distributed points. Assuming that the observed system follows an unknown partial differential equation, we derive a continuous-time model for the dynamics of the data via the finite element method. The resulting graph neural network estimates the instantaneous effects of the unknown dynamics on each cell in a meshing of the spatial domain. Our model can incorporate prior knowledge via assumptions on the form of the unknown PDE, which induce a structural bias towards learning specific processes. Through this mechanism, we derive a transport variant of our model from the convection equation and show that it improves the transfer performance to higher-resolution meshes on sea surface temperature and gas flow forecasting against baseline models representing a selection of spatio-temporal forecasting methods. A qualitative analysis shows that our model disentangles the data dynamics into their constituent parts, which makes it uniquely interpretable.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/162b00580f87c9b0a2ac1c17658b316f4b038b05" target='_blank'>Learning the Dynamics of Physical Systems from Sparse Observations with Finite Element Networks</a></td>
-          <td>
-            Marten Lienen, Stephan Günnemann
-          </td>
-          <td>2022-03-16</td>
-          <td>ArXiv</td>
-          <td>33</td>
-          <td>45</td>
         </tr>
 
   </tbody>

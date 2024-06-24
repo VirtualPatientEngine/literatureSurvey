@@ -667,7 +667,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-06-17 06:06:18 UTC</i>
+  <i class="footer">This page was last updated on 2024-06-24 06:06:35 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -705,9 +705,9 @@
             P. Battaglia, Razvan Pascanu, Matthew Lai, Danilo Jimenez Rezende, K. Kavukcuoglu
           </td>
           <td>2016-12-01</td>
-          <td>ArXiv, DBLP, MAG</td>
-          <td>1277</td>
-          <td>69</td>
+          <td>MAG, DBLP, ArXiv</td>
+          <td>1278</td>
+          <td>70</td>
         </tr>
 
         <tr id="Endowing robots with human-like physical reasoning abilities remains challenging. We argue that existing methods often disregard spatio-temporal relations and by using Graph Neural Networks (GNNs) that incorporate a relational inductive bias, we can shift the learning process towards exploiting relations. In this work, we learn action-conditional forward dynamics models of a simulated manipulation task from visual observations involving cluttered and irregularly shaped objects. We investigate two GNN approaches and empirically assess their capability to generalize to scenarios with novel and an increasing number of objects. The first, Graph Networks (GN) based approach, considers explicitly defined edge attributes and not only does it consistently underperform an auto-encoder baseline that we modified to predict future states, our results indicate how different edge attributes can significantly influence the predictions. Consequently, we develop the Auto-Predictor that does not rely on explicitly defined edge attributes. It outperforms the baseline and the GN-based models. Overall, our results show the sensitivity of GNN-based approaches to the task representation, the efficacy of relational inductive biases and advocate choosing lightweight approaches that implicitly reason about relations over ones that leave these decisions to human designers.">
@@ -746,19 +746,6 @@
           <td>25</td>
         </tr>
 
-        <tr id="Intelligent agents need a physical understanding of the world to predict the impact of their actions in the future. While learning-based models of the environment dynamics have contributed to significant improvements in sample efficiency compared to model-free reinforcement learning algorithms, they typically fail to generalize to system states beyond the training data, while often grounding their predictions on non-interpretable latent variables. 
-We introduce Interactive Differentiable Simulation (IDS), a differentiable physics engine, that allows for efficient, accurate inference of physical properties of rigid-body systems. Integrated into deep learning architectures, our model is able to accomplish system identification using visual input, leading to an interpretable model of the world whose parameters have physical meaning. We present experiments showing automatic task-based robot design and parameter estimation for nonlinear dynamical systems by automatically calculating gradients in IDS. When integrated into an adaptive model-predictive control algorithm, our approach exhibits orders of magnitude improvements in sample efficiency over model-free reinforcement learning algorithms on challenging nonlinear control domains.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/0910a3cf9813c41ea764c89584d2957efa1159a9" target='_blank'>Interactive Differentiable Simulation</a></td>
-          <td>
-            Eric Heiden, David Millard, Hejia Zhang, G. Sukhatme
-          </td>
-          <td>2019-05-01</td>
-          <td>ArXiv</td>
-          <td>45</td>
-          <td>91</td>
-        </tr>
-
         <tr id="From just a glance, humans can make rich predictions about the future state of a wide range of physical systems. On the other hand, modern approaches from engineering, robotics, and graphics are often restricted to narrow domains and require direct measurements of the underlying states. We introduce the Visual Interaction Network, a general-purpose model for learning the dynamics of a physical system from raw visual observations. Our model consists of a perceptual front-end based on convolutional neural networks and a dynamics predictor based on interaction networks. Through joint training, the perceptual front-end learns to parse a dynamic visual scene into a set of factored latent object representations. The dynamics predictor learns to roll these states forward in time by computing their interactions and dynamics, producing a predicted physical trajectory of arbitrary length. We found that from just six input video frames the Visual Interaction Network can generate accurate future trajectories of hundreds of time steps on a wide range of physical systems. Our model can also be applied to scenes with invisible objects, inferring their future states from their effects on the visible objects, and can implicitly infer the unknown mass of objects. Our results demonstrate that the perceptual module and the object-based dynamics predictor module can induce factored latent representations that support accurate dynamical predictions. This work opens new opportunities for model-based decision-making and planning from raw sensory observations in complex physical environments.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/414ab203d8fc3ecfbf40d004960d3a4774830b48" target='_blank'>Visual Interaction Networks: Learning a Physics Simulator from Video</a></td>
@@ -766,9 +753,9 @@ We introduce Interactive Differentiable Simulation (IDS), a differentiable physi
             Nicholas Watters, Daniel Zoran, T. Weber, P. Battaglia, Razvan Pascanu, A. Tacchetti
           </td>
           <td>2017-06-05</td>
-          <td>ArXiv, DBLP, MAG</td>
+          <td>MAG, DBLP, ArXiv</td>
           <td>252</td>
-          <td>66</td>
+          <td>67</td>
         </tr>
 
         <tr id="A structured understanding of our world in terms of objects, relations, and hierarchies is an important component of human cognition. Learning such a structured world model from raw sensory data remains a challenge. As a step towards this goal, we introduce Contrastively-trained Structured World Models (C-SWMs). C-SWMs utilize a contrastive approach for representation learning in environments with compositional structure. We structure each state embedding as a set of object representations and their relations, modeled by a graph neural network. This allows objects to be discovered from raw pixel observations without direct supervision as part of the learning process. We evaluate C-SWMs on compositional environments involving multiple interacting objects that can be manipulated independently by an agent, simple Atari games, and a multi-object physics simulation. Our experiments demonstrate that C-SWMs can overcome limitations of models based on pixel reconstruction and outperform typical representatives of this model class in highly structured environments, while learning interpretable object-based representations.">
@@ -804,7 +791,19 @@ We introduce Interactive Differentiable Simulation (IDS), a differentiable physi
           <td>2018-07-24</td>
           <td>ArXiv</td>
           <td>167</td>
-          <td>145</td>
+          <td>147</td>
+        </tr>
+
+        <tr id="There has been an increasing interest in learning dynamics simulators for model-based control. Compared with off-the-shelf physics engines, a learnable simulator can quickly adapt to unseen objects, scenes, and tasks. However, existing models like interaction networks only work for fully observable systems; they also only consider pairwise interactions within a single time step, both restricting their use in practical systems. We introduce Propagation Networks (PropNet), a differentiable, learnable dynamics model that handles partially observable scenarios and enables instantaneous propagation of signals beyond pairwise interactions. With these innovations, our propagation networks not only outperform current learnable physics engines in forward simulation, but also achieves superior performance on various control tasks. Compared with existing deep reinforcement learning algorithms, model-based control with propagation networks is more accurate, efficient, and generalizable to novel, partially observable scenes and tasks.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/d920e8c8493efcc7bdcd96d06228b564e788806d" target='_blank'>Propagation Networks for Model-Based Control Under Partial Observation</a></td>
+          <td>
+            Yunzhu Li, Jiajun Wu, Jun-Yan Zhu, J. Tenenbaum, A. Torralba, Russ Tedrake
+          </td>
+          <td>2018-09-28</td>
+          <td>2019 International Conference on Robotics and Automation (ICRA)</td>
+          <td>118</td>
+          <td>126</td>
         </tr>
 
   </tbody>
