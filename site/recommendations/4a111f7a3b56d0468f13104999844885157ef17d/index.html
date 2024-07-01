@@ -667,7 +667,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-06-24 06:05:36 UTC</i>
+  <i class="footer">This page was last updated on 2024-07-01 06:05:14 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -730,7 +730,7 @@
           </td>
           <td>2022-11-27</td>
           <td>ArXiv</td>
-          <td>397</td>
+          <td>406</td>
           <td>33</td>
         </tr>
 
@@ -753,7 +753,7 @@
             Riccardo Ughi, Eugenio Lomurno, Matteo Matteucci
           </td>
           <td>2023-04-10</td>
-          <td>DBLP, ArXiv</td>
+          <td>ArXiv, DBLP</td>
           <td>1</td>
           <td>5</td>
         </tr>
@@ -768,18 +768,6 @@
           <td>ArXiv</td>
           <td>6</td>
           <td>21</td>
-        </tr>
-
-        <tr id="Recent efforts have been dedicated to enhancing time series forecasting accuracy by introducing advanced network architectures and self-supervised pretraining strategies. Nevertheless, existing approaches still exhibit two critical drawbacks. Firstly, these methods often rely on a single dataset for training, limiting the model's generalizability due to the restricted scale of the training data. Secondly, the one-step generation schema is widely followed, which necessitates a customized forecasting head and overlooks the temporal dependencies in the output series, and also leads to increased training costs under different horizon length settings. To address these issues, we propose a novel generative pretrained hierarchical transformer architecture for forecasting, named \textbf{GPHT}. There are two aspects of key designs in GPHT. On the one hand, we advocate for constructing a mixed dataset under the channel-independent assumption for pretraining our model, comprising various datasets from diverse data scenarios. This approach significantly expands the scale of training data, allowing our model to uncover commonalities in time series data and facilitating improved transfer to specific datasets. On the other hand, GPHT employs an auto-regressive forecasting approach, effectively modeling temporal dependencies in the output series. Importantly, no customized forecasting head is required, enabling \textit{a single model to forecast at arbitrary horizon settings.} We conduct sufficient experiments on eight datasets with mainstream self-supervised pretraining models and supervised models. The results demonstrated that GPHT surpasses the baseline models across various fine-tuning and zero/few-shot learning settings in the traditional long-term forecasting task. We make our codes publicly available\footnote{https://github.com/icantnamemyself/GPHT}.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/49d5566590abf9a8e22deb738c70f44d61937c9e" target='_blank'>Generative Pretrained Hierarchical Transformer for Time Series Forecasting</a></td>
-          <td>
-            Zhiding Liu, Jiqian Yang, Mingyue Cheng, Yucong Luo, Zhi Li
-          </td>
-          <td>2024-02-26</td>
-          <td>ArXiv</td>
-          <td>1</td>
-          <td>10</td>
         </tr>
 
         <tr id="Time Series Forecasting plays a crucial role in various fields such as industrial equipment maintenance, meteorology, energy consumption, traffic flow and financial investment. However, despite their considerable advantages over traditional statistical approaches, current deep learning-based predictive models often exhibit a significant deviation between their forecasting outcomes and the ground truth. This discrepancy is largely due to an insufficient emphasis on extracting the sequence's latent information, particularly its global information within the frequency domain and the relationship between different variables. To address this issue, we propose a novel model Frequency-domain Attention In Two Horizons, which decomposes time series into trend and seasonal components using a multi-scale sequence adaptive decomposition and fusion architecture, and processes them separately. FAITH utilizes Frequency Channel feature Extraction Module and Frequency Temporal feature Extraction Module to capture inter-channel relationships and temporal global information in the sequence, significantly improving its ability to handle long-term dependencies and complex patterns. Furthermore, FAITH achieves theoretically linear complexity by modifying the time-frequency domain transformation method, effectively reducing computational costs. Extensive experiments on 6 benchmarks for long-term forecasting and 3 benchmarks for short-term forecasting demonstrate that FAITH outperforms existing models in many fields, such as electricity, weather and traffic, proving its effectiveness and superiority both in long-term and short-term time series forecasting tasks. Our codes and data are available at https://github.com/LRQ577/FAITH.">
@@ -804,6 +792,18 @@
           <td>ArXiv</td>
           <td>1</td>
           <td>78</td>
+        </tr>
+
+        <tr id="With the increasing collection of time series data from various domains, there arises a strong demand for general time series forecasting models pre-trained on a large number of time-series datasets to support a variety of downstream prediction tasks. Enabling general time series forecasting faces two challenges: how to obtain unified representations from multi-domian time series data, and how to capture domain-specific features from time series data across various domains for adaptive transfer in downstream tasks. To address these challenges, we propose a Register Assisted General Time Series Forecasting Model with Decomposed Frequency Learning (ROSE), a novel pre-trained model for time series forecasting. ROSE employs Decomposed Frequency Learning for the pre-training task, which decomposes coupled semantic and periodic information in time series with frequency-based masking and reconstruction to obtain unified representations across domains. We also equip ROSE with a Time Series Register, which learns to generate a register codebook to capture domain-specific representations during pre-training and enhances domain-adaptive transfer by selecting related register tokens on downstream tasks. After pre-training on large-scale time series data, ROSE achieves state-of-the-art forecasting performance on 8 real-world benchmarks. Remarkably, even in few-shot scenarios, it demonstrates competitive or superior performance compared to existing methods trained with full data.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/2d319b101aa7247140a6242d09ceb47212c4502b" target='_blank'>ROSE: Register Assisted General Time Series Forecasting with Decomposed Frequency Learning</a></td>
+          <td>
+            Yihang Wang, Yuying Qiu, Peng Chen, Kai Zhao, Yang Shu, Zhongwen Rao, Lujia Pan, Bin Yang, Chenjuan Guo
+          </td>
+          <td>2024-05-24</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>26</td>
         </tr>
 
   </tbody>
