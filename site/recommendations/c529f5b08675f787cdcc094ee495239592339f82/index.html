@@ -667,7 +667,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-07-01 06:06:08 UTC</i>
+  <i class="footer">This page was last updated on 2024-07-04 13:10:41 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -753,21 +753,9 @@
             Karolis Martinkus, Aurélien Lucchi, Nathanael Perraudin
           </td>
           <td>2020-10-14</td>
-          <td>ArXiv, MAG, DBLP</td>
+          <td>MAG, DBLP, ArXiv</td>
           <td>10</td>
           <td>39</td>
-        </tr>
-
-        <tr id="Mesh-based simulations are central to modeling complex physical systems in many disciplines across science and engineering. Mesh representations support powerful numerical integration methods and their resolution can be adapted to strike favorable trade-offs between accuracy and efficiency. However, high-dimensional scientific simulations are very expensive to run, and solvers and parameters must often be tuned individually to each system studied. Here we introduce MeshGraphNets, a framework for learning mesh-based simulations using graph neural networks. Our model can be trained to pass messages on a mesh graph and to adapt the mesh discretization during forward simulation. Our results show it can accurately predict the dynamics of a wide range of physical systems, including aerodynamics, structural mechanics, and cloth. The model's adaptivity supports learning resolution-independent dynamics and can scale to more complex state spaces at test time. Our method is also highly efficient, running 1-2 orders of magnitude faster than the simulation on which it is trained. Our approach broadens the range of problems on which neural network simulators can operate and promises to improve the efficiency of complex, scientific modeling tasks.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/9e20f6874feaaf7c9994f9875b1d9cab17a2fd59" target='_blank'>Learning Mesh-Based Simulation with Graph Networks</a></td>
-          <td>
-            T. Pfaff, Meire Fortunato, Alvaro Sanchez-Gonzalez, P. Battaglia
-          </td>
-          <td>2020-10-07</td>
-          <td>ArXiv</td>
-          <td>541</td>
-          <td>46</td>
         </tr>
 
         <tr id="Recently, graph neural networks have been gaining a lot of attention to simulate dynamical systems due to their inductive nature leading to zero-shot generalizability. Similarly, physics-informed inductive biases in deep-learning frameworks have been shown to give superior performance in learning the dynamics of physical systems. There is a growing volume of literature that attempts to combine these two approaches. Here, we evaluate the performance of thirteen different graph neural networks, namely, Hamiltonian and Lagrangian graph neural networks, graph neural ODE, and their variants with explicit constraints and different architectures. We briefly explain the theoretical formulation highlighting the similarities and differences in the inductive biases and graph architecture of these systems. We evaluate these models on spring, pendulum, gravitational, and 3D deformable solid systems to compare the performance in terms of rollout error, conserved quantities such as energy and momentum, and generalizability to unseen system sizes. Our study demonstrates that GNNs with additional inductive biases, such as explicit constraints and decoupling of kinetic and potential energies, exhibit significantly enhanced performance. Further, all the physics-informed GNNs exhibit zero-shot generalizability to system sizes an order of magnitude larger than the training system, thus providing a promising route to simulate large-scale realistic systems.">
@@ -814,8 +802,20 @@
           </td>
           <td>2019-09-27</td>
           <td>ArXiv</td>
-          <td>158</td>
+          <td>159</td>
           <td>46</td>
+        </tr>
+
+        <tr id="Particle-based systems provide a flexible and unified way to simulate physics systems with complex dynamics. Most existing data-driven simulators for particle-based systems adopt graph neural networks (GNNs) as their network backbones, as particles and their interactions can be naturally represented by graph nodes and graph edges. However, while particle-based systems usually contain hundreds even thousands of particles, the explicit modeling of particle interactions as graph edges inevitably leads to a significant computational overhead, due to the increased number of particle interactions. Consequently, in this paper we propose a novel Transformer-based method, dubbed as Transformer with Implicit Edges (TIE), to capture the rich semantics of particle interactions in an edge-free manner. The core idea of TIE is to decentralize the computation involving pair-wise particle interactions into per-particle updates. This is achieved by adjusting the self-attention module to resemble the update formula of graph edges in GNN. To improve the generalization ability of TIE, we further amend TIE with learnable material-specific abstract particles to disentangle global material-wise semantics from local particle-wise semantics. We evaluate our model on diverse domains of varying complexity and materials. Compared with existing GNN-based methods, without bells and whistles, TIE achieves superior performance and generalization across all these domains. Codes and models are available at https://github.com/ftbabi/TIE_ECCV2022.git.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/fb1036cddc05983c3c8d296b61d7bec2605118ef" target='_blank'>Transformer with Implicit Edges for Particle-based Physics Simulation</a></td>
+          <td>
+            Yidi Shao, Chen Change Loy, Bo Dai
+          </td>
+          <td>2022-07-22</td>
+          <td>DBLP, ArXiv</td>
+          <td>7</td>
+          <td>106</td>
         </tr>
 
   </tbody>
