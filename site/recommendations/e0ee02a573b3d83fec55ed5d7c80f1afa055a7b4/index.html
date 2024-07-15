@@ -667,7 +667,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-07-08 06:06:39 UTC</i>
+  <i class="footer">This page was last updated on 2024-07-15 06:05:38 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -706,7 +706,7 @@
           </td>
           <td>2019-09-27</td>
           <td>ArXiv</td>
-          <td>159</td>
+          <td>160</td>
           <td>46</td>
         </tr>
 
@@ -730,7 +730,7 @@
           </td>
           <td>2020-02-21</td>
           <td>ArXiv</td>
-          <td>836</td>
+          <td>845</td>
           <td>134</td>
         </tr>
 
@@ -756,6 +756,18 @@
           <td>J. Open Source Softw.</td>
           <td>7</td>
           <td>9</td>
+        </tr>
+
+        <tr id="Mesh-based simulations are central to modeling complex physical systems in many disciplines across science and engineering. Mesh representations support powerful numerical integration methods and their resolution can be adapted to strike favorable trade-offs between accuracy and efficiency. However, high-dimensional scientific simulations are very expensive to run, and solvers and parameters must often be tuned individually to each system studied. Here we introduce MeshGraphNets, a framework for learning mesh-based simulations using graph neural networks. Our model can be trained to pass messages on a mesh graph and to adapt the mesh discretization during forward simulation. Our results show it can accurately predict the dynamics of a wide range of physical systems, including aerodynamics, structural mechanics, and cloth. The model's adaptivity supports learning resolution-independent dynamics and can scale to more complex state spaces at test time. Our method is also highly efficient, running 1-2 orders of magnitude faster than the simulation on which it is trained. Our approach broadens the range of problems on which neural network simulators can operate and promises to improve the efficiency of complex, scientific modeling tasks.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/9e20f6874feaaf7c9994f9875b1d9cab17a2fd59" target='_blank'>Learning Mesh-Based Simulation with Graph Networks</a></td>
+          <td>
+            T. Pfaff, Meire Fortunato, Alvaro Sanchez-Gonzalez, P. Battaglia
+          </td>
+          <td>2020-10-07</td>
+          <td>ArXiv</td>
+          <td>555</td>
+          <td>46</td>
         </tr>
 
         <tr id="Differentiable physics simulation is a powerful family of new techniques that applies gradient-based methods to learning and control of physical systems. It enables optimization for control, and can also be integrated into neural network frameworks for performing complex tasks. We believe that differentiable physics simulation should be a key component for neural networks to bridge the gap between training performance and the generality to previously unseen real-world inputs. However, realizing a practical differentiable simulation is still challenging because of its high dimensionality and fragmented computation flow. In this paper, we motivate the importance of differentiable physics simulation, describe its current challenges, introduce state-of-the-art approaches, and discuss potential improvements and future directions.">
@@ -790,20 +802,8 @@
           </td>
           <td>2021-07-02</td>
           <td>ArXiv</td>
-          <td>45</td>
+          <td>46</td>
           <td>10</td>
-        </tr>
-
-        <tr id="Recently, graph neural networks have been gaining a lot of attention to simulate dynamical systems due to their inductive nature leading to zero-shot generalizability. Similarly, physics-informed inductive biases in deep-learning frameworks have been shown to give superior performance in learning the dynamics of physical systems. There is a growing volume of literature that attempts to combine these two approaches. Here, we evaluate the performance of thirteen different graph neural networks, namely, Hamiltonian and Lagrangian graph neural networks, graph neural ODE, and their variants with explicit constraints and different architectures. We briefly explain the theoretical formulation highlighting the similarities and differences in the inductive biases and graph architecture of these systems. We evaluate these models on spring, pendulum, gravitational, and 3D deformable solid systems to compare the performance in terms of rollout error, conserved quantities such as energy and momentum, and generalizability to unseen system sizes. Our study demonstrates that GNNs with additional inductive biases, such as explicit constraints and decoupling of kinetic and potential energies, exhibit significantly enhanced performance. Further, all the physics-informed GNNs exhibit zero-shot generalizability to system sizes an order of magnitude larger than the training system, thus providing a promising route to simulate large-scale realistic systems.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/d7952de05e25e90a08b79431116ca6d2ec85e710" target='_blank'>Unravelling the Performance of Physics-informed Graph Neural Networks for Dynamical Systems</a></td>
-          <td>
-            A. Thangamuthu, Gunjan Kumar, S. Bishnoi, Ravinder Bhattoo, N. Krishnan, Sayan Ranu
-          </td>
-          <td>2022-11-10</td>
-          <td>ArXiv</td>
-          <td>12</td>
-          <td>21</td>
         </tr>
 
   </tbody>

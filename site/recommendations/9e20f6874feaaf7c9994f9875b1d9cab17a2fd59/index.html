@@ -667,7 +667,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-07-08 06:06:37 UTC</i>
+  <i class="footer">This page was last updated on 2024-07-15 06:05:35 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -730,7 +730,7 @@
           </td>
           <td>2022-10-02</td>
           <td>ArXiv</td>
-          <td>42</td>
+          <td>45</td>
           <td>27</td>
         </tr>
 
@@ -742,7 +742,7 @@
           </td>
           <td>2020-02-21</td>
           <td>ArXiv</td>
-          <td>836</td>
+          <td>845</td>
           <td>134</td>
         </tr>
 
@@ -782,6 +782,18 @@
           <td>46</td>
         </tr>
 
+        <tr id="Solving complex Partial Differential Equations (PDEs) accurately and efficiently is an essential and challenging problem in all scientific and engineering disciplines. Mesh movement methods provide the capability to improve the accuracy of the numerical solution without increasing the overall mesh degree of freedom count. Conventional sophisticated mesh movement methods are extremely expensive and struggle to handle scenarios with complex boundary geometries. However, existing learning-based methods require re-training from scratch given a different PDE type or boundary geometry, which limits their applicability, and also often suffer from robustness issues in the form of inverted elements. In this paper, we introduce the Universal Mesh Movement Network (UM2N), which -- once trained -- can be applied in a non-intrusive, zero-shot manner to move meshes with different size distributions and structures, for solvers applicable to different PDE types and boundary geometries. UM2N consists of a Graph Transformer (GT) encoder for extracting features and a Graph Attention Network (GAT) based decoder for moving the mesh. We evaluate our method on advection and Navier-Stokes based examples, as well as a real-world tsunami simulation case. Our method outperforms existing learning-based mesh movement methods in terms of the benchmarks described above. In comparison to the conventional sophisticated Monge-Amp\`ere PDE-solver based method, our approach not only significantly accelerates mesh movement, but also proves effective in scenarios where the conventional method fails. Our project page is at https://erizmr.github.io/UM2N/.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/569f07b5381b1df88a804a15614ac2ddef7715f2" target='_blank'>Towards Universal Mesh Movement Networks</a></td>
+          <td>
+            Mingrui Zhang, Chunyang Wang, Stephan Kramer, Joseph G. Wallwork, Siyi Li, Jiancheng Liu, Xiang Chen, M. Piggott
+          </td>
+          <td>2024-06-29</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>38</td>
+        </tr>
+
         <tr id="Simulating the time evolution of physical systems is pivotal in many scientific and engineering problems. An open challenge in simulating such systems is their multi-resolution dynamics: a small fraction of the system is extremely dynamic, and requires very fine-grained resolution, while a majority of the system is changing slowly and can be modeled by coarser spatial scales. Typical learning-based surrogate models use a uniform spatial scale, which needs to resolve to the finest required scale and can waste a huge compute to achieve required accuracy. In this work, we introduce Learning controllable Adaptive simulation for Multi-resolution Physics (LAMP) as the first full deep learning-based surrogate model that jointly learns the evolution model and optimizes appropriate spatial resolutions that devote more compute to the highly dynamic regions. LAMP consists of a Graph Neural Network (GNN) for learning the forward evolution, and a GNN-based actor-critic for learning the policy of spatial refinement and coarsening. We introduce learning techniques that optimizes LAMP with weighted sum of error and computational cost as objective, allowing LAMP to adapt to varying relative importance of error vs. computation tradeoff at inference time. We evaluate our method in a 1D benchmark of nonlinear PDEs and a challenging 2D mesh-based simulation. We demonstrate that our LAMP outperforms state-of-the-art deep learning surrogate models, and can adaptively trade-off computation to improve long-term prediction error: it achieves an average of 33.7% error reduction for 1D nonlinear PDEs, and outperforms MeshGraphNets + classical Adaptive Mesh Refinement (AMR) in 2D mesh-based simulations. Project website with data and code can be found at: http://snap.stanford.edu/lamp.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/75cb343edaaa6a5322588bf6f3ef160742e9fbc0" target='_blank'>Learning Controllable Adaptive Simulation for Multi-resolution Physics</a></td>
@@ -792,18 +804,6 @@
           <td>ArXiv</td>
           <td>12</td>
           <td>134</td>
-        </tr>
-
-        <tr id="Solving partial differential equations of complex physical systems is a computationally expensive task, especially in Computational Fluid Dynamics(CFD). This drives the application of deep learning methods in solving physical systems. There exist a few deep learning models that are very successful in predicting flow fields of complex physical models, yet most of these still exhibit large errors compared to simulation. Here we introduce AMGNET, a multi-scale graph neural network model based on Encoder-Process-Decoder structure for flow field prediction. Our model employs message passing of graph neural networks at different mesh graph scales. Our method has significantly lower prediction errors than the GCN baseline on several complex fluid prediction tasks, such as airfoil flow and cylinder flow. Our results show that multi-scale representation learning at the graph level is more effective in improving the prediction accuracy of flow field.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/aae1805c481055c0970a4606f0e56d69f0c1291f" target='_blank'>AMGNET: multi-scale graph neural networks for flow field prediction</a></td>
-          <td>
-            Zhishuang Yang, Yidao Dong, Xiaogang Deng, Laiping Zhang
-          </td>
-          <td>2022-10-13</td>
-          <td>Connection Science</td>
-          <td>22</td>
-          <td>13</td>
         </tr>
 
   </tbody>
