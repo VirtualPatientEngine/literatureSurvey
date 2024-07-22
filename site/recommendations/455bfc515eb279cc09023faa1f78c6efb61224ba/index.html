@@ -667,7 +667,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-07-15 06:04:48 UTC</i>
+  <i class="footer">This page was last updated on 2024-07-22 06:04:57 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -698,112 +698,112 @@
   </thead>
   <tbody>
 
-        <tr id="Many important problems can be modeled as a system of interconnected entities, where each entity is recording time-dependent observations or measurements. In order to spot trends, detect anomalies, and interpret the temporal dynamics of such data, it is essential to understand the relationships between the different entities and how these relationships evolve over time. In this paper, we introduce the time-varying graphical lasso (TVGL), a method of inferring time-varying networks from raw time series data. We cast the problem in terms of estimating a sparse time-varying inverse covariance matrix, which reveals a dynamic network of interdependencies between the entities. Since dynamic network inference is a computationally expensive task, we derive a scalable message-passing algorithm based on the Alternating Direction Method of Multipliers (ADMM) to solve this problem in an efficient way. We also discuss several extensions, including a streaming algorithm to update the model and incorporate new observations in real time. Finally, we evaluate our TVGL algorithm on both real and synthetic datasets, obtaining interpretable results and outperforming state-of-the-art baselines in terms of both accuracy and scalability.">
+        <tr id="Real-world applications often involve irregular time series, for which the time intervals between successive observations are non-uniform. Irregularity across multiple features in a multi-variate time series further results in a different subset of features at any given time (i.e., asynchronicity). Existing pre-training schemes for time-series, however, often assume regularity of time series and make no special treatment of irregularity. We argue that such irregularity offers insight about domain property of the data—for example, frequency of hospital visits may signal patient health condition—that can guide representation learning. In this work, we propose PrimeNet to learn a self-supervised representation for irregular multivariate time-series. Specifically, we design a time sensitive contrastive learning and data reconstruction task to pre-train a model. Irregular time-series exhibits considerable variations in sampling density over time. Hence, our triplet generation strategy follows the density of the original data points, preserving its native irregularity. Moreover, the sampling density variation over time makes data reconstruction difficult for different regions. Therefore, we design a data masking technique that always masks a constant time duration to accommodate reconstruction for regions of different sampling density. We learn with these tasks using unlabeled data to build a pre-trained model and fine-tune on a downstream task with limited labeled data, in contrast with existing fully supervised approach for irregular time-series, requiring large amounts of labeled data. Experiment results show that PrimeNet significantly outperforms state-of-the-art methods on naturally irregular and asynchronous data from Healthcare and IoT applications for several downstream tasks, including classification, interpolation, and regression.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/597cfe5df3d08a0bcd26e7d3128d8317265f9ced" target='_blank'>Network Inference via the Time-Varying Graphical Lasso</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/70e5e9bd353d1b1e54b4eebd3a67b58026a13dff" target='_blank'>PrimeNet: Pre-training for Irregular Multivariate Time Series</a></td>
           <td>
-            David Hallac, Youngsuk Park, Stephen P. Boyd, J. Leskovec
+            Ranak Roy Chowdhury, Jiacheng Li, Xiyuan Zhang, Dezhi Hong, Rajesh K. Gupta, Jingbo Shang
           </td>
-          <td>2017-03-06</td>
-          <td>Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</td>
-          <td>175</td>
-          <td>134</td>
+          <td>2023-06-26</td>
+          <td>DBLP</td>
+          <td>9</td>
+          <td>16</td>
         </tr>
 
-        <tr id="Complex systems are characterized by intricate interactions between entities that evolve dynamically over time. Accurate inference of these dynamic relationships is crucial for understanding and predicting system behavior. In this paper, we propose Regulatory Temporal Interaction Network Inference (RiTINI) for inferring time-varying interaction graphs in complex systems using a novel combination of space-and-time graph attentions and graph neural ordinary differential equations (ODEs). RiTINI leverages time-lapse signals on a graph prior, as well as perturbations of signals at various nodes in order to effectively capture the dynamics of the underlying system. This approach is distinct from traditional causal inference networks, which are limited to inferring acyclic and static graphs. In contrast, RiTINI can infer cyclic, directed, and time-varying graphs, providing a more comprehensive and accurate representation of complex systems. The graph attention mechanism in RiTINI allows the model to adaptively focus on the most relevant interactions in time and space, while the graph neural ODEs enable continuous-time modeling of the system's dynamics. We evaluate RiTINI's performance on various simulated and real-world datasets, demonstrating its state-of-the-art capability in inferring interaction graphs compared to previous methods.">
+        <tr id="Irregularly-sampled time series (ITS) are native to high-impact domains like healthcare, where measurements are collected over time at uneven intervals. However, for many classification problems, only small portions of long time series are often relevant to the class label. In this case, existing ITS models often fail to classify long series since they rely on careful imputation, which easily over- or under-samples the relevant regions. Using this insight, we then propose CAT, a model that classifies multivariate ITS by explicitly seeking highly-relevant portions of an input series' timeline. CAT achieves this by integrating three components: (1) A Moment Network learns to seek relevant moments in an ITS's continuous timeline using reinforcement learning. (2) A Receptor Network models the temporal dynamics of both observations and their timing localized around predicted moments. (3) A recurrent Transition Model models the sequence of transitions between these moments, cultivating a representation with which the series is classified. Using synthetic and real data, we find that CAT outperforms ten state-of-the-art methods by finding short signals in long irregular time series.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/017758833be6b6155b4b012b81affa1b62937b58" target='_blank'>Inferring dynamic regulatory interaction graphs from time series data with perturbations</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/6f0f354fc0a8f864d7646c41d06fdcbc65a8d55d" target='_blank'>Finding Short Signals in Long Irregular Time Series with Continuous-Time Attention Policy Networks</a></td>
           <td>
-            Dhananjay Bhaskar, Sumner Magruder, E. Brouwer, Aarthi Venkat, Frederik Wenkel, Guy Wolf, Smita Krishnaswamy
+            Thomas Hartvigsen, Jidapa Thadajarassiri, Xiangnan Kong, Elke A. Rundensteiner
           </td>
-          <td>2023-06-13</td>
+          <td>2023-02-08</td>
           <td>ArXiv</td>
           <td>1</td>
-          <td>26</td>
+          <td>38</td>
         </tr>
 
-        <tr id="None">
+        <tr id="Prevalent in many real-world settings such as healthcare, irregular time series are challenging to formulate predictions from. It is difficult to infer the value of a feature at any given time when observations are sporadic, as it could take on a range of values depending on when it was last observed. To characterize this uncertainty we present EDICT, a strategy that learns an evidential distribution over irregular time series in continuous time. This distribution enables well-calibrated and flexible inference of partially observed features at any time of interest, while expanding uncertainty temporally for sparse, irregular observations. We demonstrate that EDICT attains competitive performance on challenging time series classification tasks and enabling uncertainty-guided inference when encountering noisy data.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/a1cf7a3f372bce77e47b8c7026c35153ba2cc99d" target='_blank'>Unsupervised relational inference using masked reconstruction</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/5a4149fcbf11abc14e349a75f2e0672e876b7faf" target='_blank'>Continuous Time Evidential Distributions for Irregular Time Series</a></td>
           <td>
-            G. Grossmann, Julian Zimmerlin, Michael Backenköhler, V. Wolf
+            Taylor W. Killian, Haoran Zhang, Thomas Hartvigsen, Ava P. Amini
           </td>
-          <td>2023-04-03</td>
-          <td>Applied Network Science</td>
-          <td>0</td>
-          <td>23</td>
-        </tr>
-
-        <tr id="In this paper we present a novel approach for inferring functional connectivity within a large-scale network from time series of emitted node events. We do so under the following constraints: (a) non-stationarity of the underlying connectivity, (b) sparsity of the time-series of events, and (c) absence of an explicit model describing how events propagate through the network. We develop an inference method whose output is an undirected weighted network, where the weight of an edge between two nodes denotes the probability of these nodes being functionally connected. Two nodes are assumed to be functionally connected if they show significantly more coincident or short-lagged events than randomly picked pairs of nodes with similar levels of activity. We develop a model of time-varying connectivity whose parameters are determined by maximising the model’s predictive power from one time window to the next. We assess the accuracy, efficiency and scalability of our method on a real dataset of network events spanning multiple months.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/c7a5f28036245223ff5e2350b24a846a9a2124b7" target='_blank'>Functional Topology Inference from Network Events</a></td>
-          <td>
-            Antoine Messager, G. Parisis, I. Kiss, R. Harper, P. Tee, L. Berthouze
-          </td>
-          <td>2019-04-08</td>
-          <td>2019 IFIP/IEEE Symposium on Integrated Network and Service Management (IM)</td>
-          <td>0</td>
-          <td>49</td>
-        </tr>
-
-        <tr id="Networks (i.e., graphs) appears in many high-impact applications. Often these networks are collected from different sources, at different times, at different granularities. In this talk, I will present our recent work on mining such multiple networks. First, we will present several new data models, whose key idea is to leverage networks as context to connect different data sets or different data mining models, including a network of networks (NoN) model, a network of co-evolving time series (NoT) model and a network of regression model. Second, we will present some algorithmic examples on how to perform mining with such new models where the key idea is to leverage the contextual network as an effective regularizer during the mining process, including ranking, imputation, prediction and inference. Finally, we will demonstrate the effectiveness of our new models and algorithms in some applications, including bioinformatics, sensor networks, critical infrastructure networks and scholarly data mining.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/32215d55205255616fb3e77cc3da1a57b24b7cee" target='_blank'>Inside the Atoms: Mining a Network of Networks and Beyond</a></td>
-          <td>
-            Hanghang Tong
-          </td>
-          <td>2017-11-01</td>
-          <td>2017 IEEE International Conference on Data Mining Workshops (ICDMW)</td>
-          <td>0</td>
-          <td>56</td>
-        </tr>
-
-        <tr id="One of the main modelling paradigms for complex physical systems are networks. When estimating the network structure from measured signals, typically several assumptions such as stationarity are made in the estimation process. Violating these assumptions renders standard analysis techniques fruitless. We here propose a framework to estimate the network structure from measurements of arbitrary non-linear, non-stationary, stochastic processes. To this end, we propose a rigorous mathematical theory that underlies this framework. Based on this theory, we present a highly efficient algorithm and the corresponding statistics that are immediately sensibly applicable to measured signals. We demonstrate its performance in a simulation study. In experiments of transitions between vigilance stages in rodents, we infer small network structures with complex, time-dependent interactions; this suggests biomarkers for such transitions, the key to understand and diagnose numerous diseases such as dementia. We argue that the suggested framework combines features that other approaches followed so far lack.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/57cfc196722279ac3721d4e918c768411e301f90" target='_blank'>Overarching framework for data-based modelling</a></td>
-          <td>
-            B. Schelter, M. Mader, W. Mader, L. Sommerlade, B. Platt, Y. Lai, C. Grebogi, M. Thiel
-          </td>
-          <td>2014-02-20</td>
-          <td>Europhysics Letters</td>
-          <td>14</td>
-          <td>68</td>
-        </tr>
-
-        <tr id="We consider the problem of inferring the functional connectivity of a large-scale computer network from sparse time series of events emitted by its nodes. We do so under the following three domain-specific constraints: (a) non-stationarity of the functional connectivity due to unknown temporal changes in the network, (b) sparsity of the time-series of events that limits the effectiveness of classical correlation-based analysis, and (c) lack of an explicit model describing how events propagate through the network. Under the assumption that the probability of two nodes being functionally connected correlates with the mean delay between their respective events, we develop an inference method whose output is an undirected weighted network where the weight of an edge between two nodes denotes the probability of these nodes being functionally connected. Using a combination of windowing and convolution to calculate at each time window a score quantifying the likelihood of a pair of nodes emitting events in quick succession, we develop a model of time-varying connectivity whose parameters are determined by maximising the model's predictive power from one time window to the next. To assess the effectiveness of our inference method, we construct synthetic data for which ground truth is available and use these data to benchmark our approach against three state-of-the-art inference methods. We conclude by discussing its application to data from a real-world large-scale computer network.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/3b55d11dcfa17aa7a51af13eb4e706e66283b24d" target='_blank'>Inferring the time-varying functional connectivity of large-scale computer networks from emitted events</a></td>
-          <td>
-            Antoine Messager, G. Parisis, I. Kiss, R. Harper, P. Tee, L. Berthouze
-          </td>
-          <td>2018-02-12</td>
+          <td>2023-07-25</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>49</td>
+          <td>12</td>
         </tr>
 
-        <tr id="The ability to quantify the level of regularity in an individual's patterns of visiting a particular location provides valuable context in many areas, such as urban planning, reality mining, and opportunistic networks. However, in many cases, visit data is only available as zero-duration events, precluding the application of methods that require continuous, densely-sampled data. To address this, our approach in this paper takes inspiration from an established body of research in the neural coding community that deals with the similar problem of finding patterns in event-based data. We adapt a neural synchrony measure to develop a method of quantifying the regularity of an individual's visits to a location, where regularity is defined as the level of similarity in weekly visiting patterns. We apply this method to study regularity in three real-world datasets, specifically, a metropolitan transport system, a university campus, and an online location-sharing service. Among our findings we identify a core group of individuals in each dataset that visited at least one location with near-perfect regularity.">
+        <tr id="Irregularly sampled time series are increasingly prevalent, particularly in medical domains. While various specialized methods have been developed to handle these irregularities, effectively modeling their complex dynamics and pronounced sparsity remains a challenge. This paper introduces a novel perspective by converting irregularly sampled time series into line graph images, then utilizing powerful pre-trained vision transformers for time series classification in the same way as image classification. This method not only largely simplifies specialized algorithm designs but also presents the potential to serve as a universal framework for time series modeling. Remarkably, despite its simplicity, our approach outperforms state-of-the-art specialized algorithms on several popular healthcare and human activity datasets. Especially in the rigorous leave-sensors-out setting where a portion of variables is omitted during testing, our method exhibits strong robustness against varying degrees of missing observations, achieving an impressive improvement of 42.8% in absolute F1 score points over leading specialized baselines even with half the variables masked. Code and data are available at https://github.com/Leezekun/ViTST">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/d52c5208f2d4da0fd4cf26e34e135f78547609df" target='_blank'>Measuring Individual Regularity in Human Visiting Patterns</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/3f4bd6e35eca865b0226f1bc0da9fc5f0dc948a8" target='_blank'>Time Series as Images: Vision Transformer for Irregularly Sampled Time Series</a></td>
           <td>
-            Matthew J. Williams, R. Whitaker, S. M. Allen
+            Zekun Li, SHIYANG LI, Xifeng Yan
           </td>
-          <td>2012-09-03</td>
-          <td>2012 International Conference on Privacy, Security, Risk and Trust and 2012 International Confernece on Social Computing</td>
-          <td>29</td>
+          <td>2023-03-01</td>
+          <td>ArXiv</td>
+          <td>8</td>
+          <td>65</td>
+        </tr>
+
+        <tr id="Irregularly sampled time series are increasingly prevalent, particularly in medical domains. While various specialized methods have been developed to handle these irregularities, effectively modeling their complex dynamics and pronounced sparsity remains a challenge. This paper introduces a novel perspective by converting irregularly sampled time series into line graph images, then utilizing powerful pre-trained vision transformers for time series classification in the same way as image classification. This method not only largely simplifies specialized algorithm designs but also presents the potential to serve as a universal framework for time series modeling. Remarkably, despite its simplicity, our approach outperforms state-of-the-art specialized algorithms on several popular healthcare and human activity datasets. Especially in the rigorous leave-sensors-out setting where a portion of variables is omitted during testing, our method exhibits strong robustness against varying degrees of missing observations, achieving an impressive improvement of 42.8% in absolute F1 score points over leading specialized baselines even with half the variables masked. Code and data are available at https://github.com/Leezekun/ViTST">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/3f4bd6e35eca865b0226f1bc0da9fc5f0dc948a8" target='_blank'>Time Series as Images: Vision Transformer for Irregularly Sampled Time Series</a></td>
+          <td>
+            Zekun Li, SHIYANG LI, Xifeng Yan
+          </td>
+          <td>2023-03-01</td>
+          <td>ArXiv</td>
+          <td>8</td>
+          <td>65</td>
+        </tr>
+
+        <tr id="To analyze multivariate time series, most previous methods assume regular subsampling of time series, where the interval between adjacent measurements and the number of samples remain unchanged. Practically, data collection systems could produce irregularly sampled time series due to sensor failures and interventions. However, existing methods designed for regularly sampled multivariate time series cannot directly handle irregularity owing to misalignment along both temporal and variate dimensions. To fill this gap, we propose Compatible Transformer (CoFormer), a transformer-based encoder to achieve comprehensive temporal-interaction feature learning for each individual sample in irregular multivariate time series. In CoFormer, we view each sample as a unique variate-time point and leverage intra-variate/inter-variate attentions to learn sample-wise temporal/interaction features based on intra-variate/inter-variate neighbors. With CoFormer as the core, we can analyze irregularly sampled multivariate time series for many downstream tasks, including classification and prediction. We conduct extensive experiments on 3 real-world datasets and validate that the proposed CoFormer significantly and consistently outperforms existing methods. Code will be avilable at https://github.com/MediaBrain-SJTU/CoFormer.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/f6f708484a85b2b96d6f6764724b950cab167bb7" target='_blank'>Compatible Transformer for Irregularly Sampled Multivariate Time Series</a></td>
+          <td>
+            Yuxi Wei, Juntong Peng, Tong He, Chenxin Xu, Jian Zhang, Shirui Pan, Siheng Chen
+          </td>
+          <td>2023-10-17</td>
+          <td>2023 IEEE International Conference on Data Mining (ICDM)</td>
+          <td>0</td>
+          <td>8</td>
+        </tr>
+
+        <tr id="Irregularly-sampled time series occur in many domains including healthcare. They can be challenging to model because they do not naturally yield a fixed-dimensional representation as required by many standard machine learning models. In this paper, we consider irregular sampling from the perspective of missing data. We model observed irregularly-sampled time series data as a sequence of index-value pairs sampled from a continuous but unobserved function. We introduce an encoder-decoder framework for learning from such generic indexed sequences. We propose learning methods for this framework based on variational autoencoders and generative adversarial networks. For continuous irregularly-sampled time series, we introduce continuous convolutional layers that can efficiently interface with existing neural network architectures. Experiments show that our models are able to achieve competitive or better classification results on irregularly-sampled multivariate time series compared to recent RNN models while offering significantly faster training times.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/7651d6498f437e30d31e354933b93f52791b6542" target='_blank'>Learning from Irregularly-Sampled Time Series: A Missing Data Perspective</a></td>
+          <td>
+            Steven Cheng-Xian Li, Benjamin M Marlin
+          </td>
+          <td>2020-07-12</td>
+          <td>MAG, ArXiv, DBLP</td>
+          <td>45</td>
+          <td>32</td>
+        </tr>
+
+        <tr id="We consider a sequence of related multivariate time series learning tasks, such as predicting failures for different instances of a machine from time series of multi-sensor data, or activity recognition tasks over different individuals from multiple wearable sensors. We focus on two under-explored practical challenges arising in such settings: (i) Each task may have a different subset of sensors, i.e., providing different partial observations of the underlying ‘system’. This restriction can be due to different manufacturers in the former case, and people wearing more or less measurement devices in the latter (ii) We are not allowed to store or re-access data from a task once it has been observed at the task level. This may be due to privacy considerations in the case of people, or legal restrictions placed by machine owners. Nevertheless, we would like to (a) improve performance on subsequent tasks using experience from completed tasks as well as (b) continue to perform better on past tasks, e.g., update the model and improve predictions on even the first machine after learning from subsequently observed ones. We note that existing continual learning methods do not take into account variability in input dimensions arising due to different subsets of sensors being available across tasks, and struggle to adapt to such variable input dimensions (VID) tasks. In this work, we address this shortcoming of existing methods. To this end, we learn task-specific generative models and classifiers, and use these to augment data for target tasks. Since the input dimensions across tasks vary, we propose a novel conditioning module based on graph neural networks to aid a standard recurrent neural network. We evaluate the efficacy of the proposed approach on three publicly available datasets corresponding to two activity recognition tasks (classification) and one prognostics task (regression). We demonstrate that it is possible to significantly enhance the performance on future and previous tasks while learning continuously from VID tasks without storing data.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/72846d22118ef02bff11330dd28f408fde72d98b" target='_blank'>Continual Learning for Multivariate Time Series Tasks with Variable Input Dimensions</a></td>
+          <td>
+            Vibhor Gupta, Jyoti Narwariya, Pankaj Malhotra, L. Vig, Gautam M. Shroff
+          </td>
+          <td>2021-12-01</td>
+          <td>2021 IEEE International Conference on Data Mining (ICDM)</td>
+          <td>15</td>
+          <td>27</td>
+        </tr>
+
+        <tr id="Multivariate time series (MTS) data are becoming increasingly ubiquitous in diverse domains, e.g., IoT systems, health informatics, and 5G networks. To obtain an effective representation of MTS data, it is not only essential to consider unpredictable dynamics and highly variable lengths of these data but also important to address the irregularities in the sampling rates of MTS. Existing parametric approaches rely on manual hyperparameter tuning and may cost a huge amount of labor effort. Therefore, it is desirable to learn the representation automatically and efficiently. To this end, we propose an autonomous representation learning approach for multivariate time series (TimeAutoML) with irregular sampling rates and variable lengths. As opposed to previous works, we first present a representation learning pipeline in which the configuration and hyperparameter optimization are fully automatic and can be tailored for various tasks, e.g., anomaly detection, clustering, etc. Next, a negative sample generation approach and an auxiliary classification task are developed and integrated within TimeAutoML to enhance its representation capability. Extensive empirical studies on real-world datasets demonstrate that the proposed TimeAutoML outperforms competing approaches on various tasks by a large margin. In fact, it achieves the best anomaly detection performance among all comparison algorithms on 78 out of all 85 UCR datasets, acquiring up to 20% performance improvement in terms of AUC score.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/60773c01dd3c76be0e1d3bc429cf474e5f9d8519" target='_blank'>TimeAutoML: Autonomous Representation Learning for Multivariate Irregularly Sampled Time Series</a></td>
+          <td>
+            Yang Jiao, Kai Yang, Shaoyu Dou, Pan Luo, Sijia Liu, Dongjin Song
+          </td>
+          <td>2020-10-04</td>
+          <td>ArXiv</td>
+          <td>6</td>
           <td>22</td>
-        </tr>
-
-        <tr id="Modeling temporal event sequences on the vertices of a network is an important problem with widespread applications; examples include modeling influences in social networks, preventing crimes by modeling their space–time occurrences, and forecasting earthquakes. Existing solutions for this problem use a parametric approach, whose applicability is limited to event sequences following some well‐known distributions, which is not true for many real life event datasets. To overcome this limitation, in this work, we propose a composite recurrent neural network model for learning events occurring in the vertices of a network over time. Our proposed model combines two long short‐term memory units to capture base intensity and conditional intensity of an event sequence. We also introduce a second‐order statistic loss that penalizes higher divergence between the generated and the target sequence's distribution of hop count distance of consecutive events. Given a sequence of vertices of a network in which an event has occurred, the proposed model predicts the vertex where the next event would most likely occur. Experimental results on synthetic and real‐world datasets validate the superiority of our proposed model in comparison to various baseline methods.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/a0eac0dfa6281d66dbf3726d03f4e644557eb012" target='_blank'>Learning network event sequences using long short‐term memory and second‐order statistic loss</a></td>
-          <td>
-            Hao Sha, M. Hasan, G. Mohler
-          </td>
-          <td>2020-11-18</td>
-          <td>Statistical Analysis and Data Mining: The ASA Data Science Journal</td>
-          <td>2</td>
-          <td>28</td>
         </tr>
 
   </tbody>

@@ -667,7 +667,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-07-15 06:06:29 UTC</i>
+  <i class="footer">This page was last updated on 2024-07-22 06:07:02 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -720,6 +720,18 @@
           <td>ArXiv</td>
           <td>18</td>
           <td>68</td>
+        </tr>
+
+        <tr id="Kolmogorov-Arnold Networks (KANs) as an alternative to Multi-layer perceptrons (MLPs) are a recent development demonstrating strong potential for data-driven modeling. This work applies KANs as the backbone of a Neural Ordinary Differential Equation framework, generalizing their use to the time-dependent and grid-sensitive cases often seen in scientific machine learning applications. The proposed KAN-ODEs retain the flexible dynamical system modeling framework of Neural ODEs while leveraging the many benefits of KANs, including faster neural scaling, stronger interpretability, and lower parameter counts when compared against MLPs. We demonstrate these benefits in three test cases: the Lotka-Volterra predator-prey model, Burgers' equation, and the Fisher-KPP PDE. We showcase the strong performance of parameter-lean KAN-ODE systems generally in reconstructing entire dynamical systems, and also in targeted applications to the inference of a source term in an otherwise known flow field. We additionally demonstrate the interpretability of KAN-ODEs via activation function visualization and symbolic regression of trained results. The successful training of KAN-ODEs and their improved performance when compared to traditional Neural ODEs implies significant potential in leveraging this novel network architecture in myriad scientific machine learning applications.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/efeeddb4162e3eefbe1d974d6ce7cd1d32498a6b" target='_blank'>KAN-ODEs: Kolmogorov-Arnold Network Ordinary Differential Equations for Learning Dynamical Systems and Hidden Physics</a></td>
+          <td>
+            Benjamin C. Koenig, Suyong Kim, Sili Deng
+          </td>
+          <td>2024-07-05</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>2</td>
         </tr>
 
         <tr id="Nonlinear differential equations rarely admit closed-form solutions, thus requiring numerical time-stepping algorithms to approximate solutions. Further, many systems characterized by multiscale physics exhibit dynamics over a vast range of timescales, making numerical integration expensive. In this work, we develop a hierarchy of deep neural network time-steppers to approximate the dynamical system flow map over a range of time-scales. The model is purely data-driven, enabling accurate and efficient numerical integration and forecasting. Similar ideas can be used to couple neural network-based models with classical numerical time-steppers. Our hierarchical time-stepping scheme provides advantages over current time-stepping algorithms, including (i) capturing a range of timescales, (ii) improved accuracy in comparison with leading neural network architectures, (iii) efficiency in long-time forecasting due to explicit training of slow time-scale dynamics, and (iv) a flexible framework that is parallelizable and may be integrated with standard numerical time-stepping algorithms. The method is demonstrated on numerous nonlinear dynamical systems, including the Van der Pol oscillator, the Lorenz system, the Kuramoto–Sivashinsky equation, and fluid flow pass a cylinder; audio and video signals are also explored. On the sequence generation examples, we benchmark our algorithm against state-of-the-art methods, such as LSTM, reservoir computing and clockwork RNN. This article is part of the theme issue ‘Data-driven prediction in dynamical systems’.">
@@ -778,7 +790,7 @@
           </td>
           <td>2020-11-22</td>
           <td>Biophysical Reviews</td>
-          <td>31</td>
+          <td>32</td>
           <td>4</td>
         </tr>
 
@@ -804,18 +816,6 @@
           <td>ArXiv</td>
           <td>0</td>
           <td>11</td>
-        </tr>
-
-        <tr id="In this work, we blend machine learning and dictionary-based learning with numerical analysis tools to discover differential equations from noisy and sparsely sampled measurement data of time-dependent processes. We use the fact that given a dictionary containing large candidate nonlinear functions, dynamical models can often be described by a few appropriately chosen basis functions. As a result, we obtain parsimonious models that can be better interpreted by practitioners, and potentially generalize better beyond the sampling regime than black-box modelling. In this work, we integrate a numerical integration framework with dictionary learning that yields differential equations without requiring or approximating derivative information at any stage. Hence, it is utterly effective for corrupted and sparsely sampled data. We discuss its extension to governing equations, containing rational nonlinearities that typically appear in biological networks. Moreover, we generalized the method to governing equations subject to parameter variations and externally controlled inputs. We demonstrate the efficiency of the method to discover a number of diverse differential equations using noisy measurements, including a model describing neural dynamics, chaotic Lorenz model, Michaelis–Menten kinetics and a parameterized Hopf normal form.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/5430c642bf5e56ce52dbfa94a9b3f4035b3222d1" target='_blank'>Discovery of nonlinear dynamical systems using a Runge–Kutta inspired dictionary-based sparse regression approach</a></td>
-          <td>
-            P. Goyal, P. Benner
-          </td>
-          <td>2021-05-11</td>
-          <td>Proceedings. Mathematical, Physical, and Engineering Sciences</td>
-          <td>37</td>
-          <td>53</td>
         </tr>
 
   </tbody>

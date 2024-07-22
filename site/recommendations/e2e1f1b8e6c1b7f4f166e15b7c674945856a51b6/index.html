@@ -667,7 +667,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-07-15 06:04:54 UTC</i>
+  <i class="footer">This page was last updated on 2024-07-22 06:05:08 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -698,112 +698,112 @@
   </thead>
   <tbody>
 
-        <tr id="Large pre-trained, zero-shot capable models have shown considerable success both for standard transfer and adaptation tasks, with particular robustness towards distribution shifts. In addition, subsequent ﬁne-tuning can considerably improve performance on a selected downstream task. However, through naive ﬁne-tuning, these zero-shot models lose their generalizability and robustness towards distribution shifts. This is a particular problem for tasks such as Continual Learning (CL), where continuous adaptation has to be performed as new task distributions are introduced sequentially. In this work, we showcase that where ﬁne-tuning falls short to adapt such zero-shot capable models, simple momentum-based weight interpolation can provide consistent improvements for CL tasks in both memory-free and memory-based settings. In particular, we ﬁnd improvements of over +4% on standard CL benchmarks, while reducing the error to the upper limit of jointly training on all tasks at once in parts by more than half, allowing the continual learner to inch closer to the joint training limits.">
+        <tr id="We present General Time Transformer (GTT), an encoder-only style foundation model for zero-shot multivariate time series forecasting. GTT is pretrained on a large dataset of 200M high-quality time series samples spanning diverse domains. In our proposed framework, the task of multivariate time series forecasting is formulated as a channel-wise next curve shape prediction problem, where each time series sample is represented as a sequence of non-overlapping curve shapes with a unified numerical magnitude. GTT is trained to predict the next curve shape based on a window of past curve shapes in a channel-wise manner. Experimental results demonstrate that GTT exhibits superior zero-shot multivariate forecasting capabilities on unseen time series datasets, even surpassing state-of-the-art supervised baselines. Additionally, we investigate the impact of varying GTT model parameters and training dataset scales, observing that the scaling law also holds in the context of zero-shot multivariate time series forecasting.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/36701733cb475d3c0d92b35f5d0dd89348875f1a" target='_blank'>Momentum-based Weight Interpolation of Strong Zero-Shot Models for Continual Learning</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/15ea0190593662402d0493958a53d5ca3b8e8406" target='_blank'>Only the Curve Shape Matters: Training Foundation Models for Zero-Shot Multivariate Time Series Forecasting through Next Curve Shape Prediction</a></td>
           <td>
-            Zafir Stojanovski, Karsten Roth, Zeynep Akata
+            Cheng Feng, Long Huang, Denis Krompass
           </td>
-          <td>2022-11-06</td>
+          <td>2024-02-12</td>
           <td>ArXiv</td>
-          <td>9</td>
-          <td>42</td>
+          <td>3</td>
+          <td>1</td>
         </tr>
 
-        <tr id="Keeping large foundation models up to date on latest data is inherently expensive. To avoid the prohibitive costs of constantly retraining, it is imperative to continually train these models. This problem is exacerbated by the lack of any large scale continual learning benchmarks or baselines. We introduce the first set of web-scale Time-Continual (TiC) benchmarks for training vision-language models: TiC-DataComp, TiC-YFCC, and TiC-Redcaps. TiC-DataComp, our largest dataset, contains over 12.7B timestamped image-text pairs spanning 9 years (2014-2022). We first use our benchmarks to curate various dynamic evaluations to measure temporal robustness of existing models. We show OpenAI's CLIP (trained on data up to 2020) loses $\approx 8\%$ zero-shot accuracy on our curated retrieval task from 2021-2022 compared with more recently trained models in OpenCLIP repository. We then study how to efficiently train models on time-continuous data. We demonstrate that a simple rehearsal-based approach that continues training from the last checkpoint and replays old data reduces compute by $2.5\times$ when compared to the standard practice of retraining from scratch. Code is available at https://github.com/apple/ml-tic-clip.">
+        <tr id="In recent years, generative pre-trained paradigms such as Large Language Models (LLMs) and Large Vision Models (LVMs) have achieved revolutionary advancements and widespread real-world applications. Particularly, the emergence of pre-trained LLMs-based temporal works, compared to previous deep model approaches, has demonstrated superior generalization and robustness, showcasing the potential of generative pre-trained paradigms as foundation models for time series. However, those LLMs-based works mainly focus on cross-modal research, i.e., leveraging the language capabilities of LLMs in time series contexts. Although they have achieved impressive performance, there still exist the issues of concept drift caused by differences in data distribution and inflexibility caused by misalignment of dimensions. To this end, inspired by recent work on LVMs, we reconsider the paradigm of time series modeling. In this paper, we comprehensively explore, for the first time, the effectiveness and superiority of the Generative Pre-trained Diffusion (GPD) paradigm in real-world multivariate time series forecasting (TSF). Specifically, to mitigate performance bias introduced by sophisticated networks, we propose a straightforward MLP diffusion network for unconditional modeling of time series. Then we employ a zero-shot and tuning-free method to predict (generate) future data using historical data as prompts. The GPD paradigm is established on the time series modality, effectively preventing the phenomenon of concept drift, and enabling flexible forecasting of arbitrary lengths. We demonstrate that the GPD paradigm achieves comprehensive performance and generalization comparable to current SOTA LLM-based and deep model paradigms on mainstream benchmarks and various TSF tasks. Extensive experiments validate the potential of the GPD paradigm and its assistance in future related research.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/21f005c5b15f5c41a45b76b733cb928dfc8e9b05" target='_blank'>TiC-CLIP: Continual Training of CLIP Models</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/818793961396bbe4c744932676f0ff9cc8385bed" target='_blank'>Generative Pre-Trained Diffusion Paradigm for Zero-Shot Time Series Forecasting</a></td>
           <td>
-            Saurabh Garg, Mehrdad Farajtabar, Hadi Pouransari, Raviteja Vemulapalli, Sachin Mehta, Oncel Tuzel, Vaishaal Shankar, Fartash Faghri
+            Jiarui Yang, Tao Dai, Naiqi Li, Junxi Wu, Peiyuan Liu, Jinmin Li, Jigang Bao, Haigang Zhang, Shutao Xia
           </td>
-          <td>2023-10-24</td>
+          <td>2024-06-04</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>3</td>
+        </tr>
+
+        <tr id="We introduce Chronos, a simple yet effective framework for pretrained probabilistic time series models. Chronos tokenizes time series values using scaling and quantization into a fixed vocabulary and trains existing transformer-based language model architectures on these tokenized time series via the cross-entropy loss. We pretrained Chronos models based on the T5 family (ranging from 20M to 710M parameters) on a large collection of publicly available datasets, complemented by a synthetic dataset that we generated via Gaussian processes to improve generalization. In a comprehensive benchmark consisting of 42 datasets, and comprising both classical local models and deep learning methods, we show that Chronos models: (a) significantly outperform other methods on datasets that were part of the training corpus; and (b) have comparable and occasionally superior zero-shot performance on new datasets, relative to methods that were trained specifically on them. Our results demonstrate that Chronos models can leverage time series data from diverse domains to improve zero-shot accuracy on unseen forecasting tasks, positioning pretrained models as a viable tool to greatly simplify forecasting pipelines.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/4fb78450650894091b0a55b5504a8b0a6f3dec37" target='_blank'>Chronos: Learning the Language of Time Series</a></td>
+          <td>
+            Abdul Fatir Ansari, Lorenzo Stella, Caner Turkmen, Xiyuan Zhang, Pedro Mercado, Huibin Shen, Oleksandr Shchur, Syama Sundar Rangapuram, Sebastian Pineda Arango, Shubham Kapoor, Jasper Zschiegner, Danielle C. Maddix, Michael W. Mahoney, Kari Torkkola, Andrew Gordon Wilson, Michael Bohlke-Schneider, Yuyang Wang
+          </td>
+          <td>2024-03-12</td>
+          <td>ArXiv</td>
+          <td>21</td>
+          <td>18</td>
+        </tr>
+
+        <tr id="Over the past years, foundation models have caused a paradigm shift in machine learning due to their unprecedented capabilities for zero-shot and few-shot generalization. However, despite the success of foundation models in modalities such as natural language processing and computer vision, the development of foundation models for time series forecasting has lagged behind. We present Lag-Llama, a general-purpose foundation model for univariate probabilistic time series forecasting based on a decoder-only transformer architecture that uses lags as covariates. Lag-Llama is pretrained on a large corpus of diverse time series data from several domains, and demonstrates strong zero-shot generalization capabilities compared to a wide range of forecasting models on downstream datasets across domains. Moreover, when fine-tuned on relatively small fractions of such previously unseen datasets, Lag-Llama achieves state-of-the-art performance, outperforming prior deep learning approaches, emerging as the best general-purpose model on average. Lag-Llama serves as a strong contender to the current state-of-art in time series forecasting and paves the way for future advancements in foundation models tailored to time series data.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/7c9bb230946cf48a7b9de97fd0281f42fbc51d31" target='_blank'>Lag-Llama: Towards Foundation Models for Probabilistic Time Series Forecasting</a></td>
+          <td>
+            Kashif Rasul, Arjun Ashok, Andrew Robert Williams, Arian Khorasani, George Adamopoulos, Rishika Bhagwatkar, Marin Bilovs, Hena Ghonia, N. Hassen, Anderson Schneider, Sahil Garg, Alexandre Drouin, Nicolas Chapados, Yuriy Nevmyvaka, I. Rish
+          </td>
+          <td>2023-10-12</td>
           <td>ArXiv</td>
           <td>12</td>
-          <td>42</td>
+          <td>40</td>
         </tr>
 
-        <tr id="With the emergence of pre-trained vision-language models like CLIP, how to adapt them to various downstream classification tasks has garnered significant attention in recent research. The adaptation strategies can be typically categorized into three paradigms: zero-shot adaptation, few-shot adaptation, and the recently-proposed training-free few-shot adaptation. Most existing approaches are tailored for a specific setting and can only cater to one or two of these paradigms. In this paper, we introduce a versatile adaptation approach that can effectively work under all three settings. Specifically, we propose the dual memory networks that comprise dynamic and static memory components. The static memory caches training data knowledge, enabling training-free few-shot adaptation, while the dynamic memory preserves historical test features online during the testing process, allowing for the exploration of additional data insights beyond the training set. This novel capability enhances model performance in the few-shot setting and enables model usability in the absence of training data. The two memory networks employ the same flexible memory interactive strategy, which can operate in a training-free mode and can be further enhanced by incorporating learnable projection layers. Our approach is tested across 11 datasets under the three task settings. Remarkably, in the zero-shot scenario, it outperforms existing methods by over 3\% and even shows superior results against methods utilizing external training data. Additionally, our method exhibits robust performance against natural distribution shifts. Codes are available at \url{https://github.com/YBZh/DMN}.">
+        <tr id="Time series data are ubiquitous across various domains, making time series analysis critically important. Traditional time series models are task-specific, featuring singular functionality and limited generalization capacity. Recently, large language foundation models have unveiled their remarkable capabilities for cross-task transferability, zero-shot/few-shot learning, and decision-making explainability. This success has sparked interest in the exploration of foundation models to solve multiple time series challenges simultaneously. There are two main research lines, namely pre-training foundation models from scratch for time series and adapting large language foundation models for time series. They both contribute to the development of a unified model that is highly generalizable, versatile, and comprehensible for time series analysis. This survey offers a 3E analytical framework for comprehensive examination of related research. Specifically, we examine existing works from three dimensions, namely Effectiveness, Efficiency and Explainability. In each dimension, we focus on discussing how related works devise tailored solution by considering unique challenges in the realm of time series. Furthermore, we provide a domain taxonomy to help followers keep up with the domain-specific advancements. In addition, we introduce extensive resources to facilitate the field's development, including datasets, open-source, time series libraries. A GitHub repository is also maintained for resource updates (https://github.com/start2020/Awesome-TimeSeries-LLM-FM).">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/427c1f7e70712ec4433e859c493bfb4d8d18c713" target='_blank'>Dual Memory Networks: A Versatile Adaptation Approach for Vision-Language Models</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/522828823ff726598675971036fff01b57320578" target='_blank'>A Survey of Time Series Foundation Models: Generalizing Time Series Representation with Large Language Model</a></td>
           <td>
-            Yabin Zhang, Wen-Qing Zhu, Hui Tang, Zhiyuan Ma, Kaiyang Zhou, Lei Zhang
+            Jiexia Ye, Weiqi Zhang, Ke Yi, Yongzi Yu, Ziyue Li, Jia Li, F. Tsung
           </td>
-          <td>2024-03-26</td>
+          <td>2024-05-03</td>
           <td>ArXiv</td>
-          <td>3</td>
-          <td>11</td>
+          <td>2</td>
+          <td>47</td>
         </tr>
 
-        <tr id="The surprisingly fluent predictive performance of LLM (Large Language Models) as well as the high-quality photo-realistic rendering of Diffusion Models has heralded a new beginning in the area of Generative AI. Such kinds of deep learning based models with billions of parameters and pre-trained on massive-scale data-sets are also called Large Foundation Models (LFM). These models not only have caught the public imagination but also have led to an unprecedented surge in interest towards the applications of these models. Instead of the previous approach of developing AI models for specific tasks, more and more researchers are developing large task-agnostic models pre-trained on massive data, which can then be adapted to a variety of downstream tasks via fine-tuning, fewshot learning, or zero-shot learning. Some examples are ChatGPT, LLaMA, GPT-4, Flamingo, MidJourney, Stable-Diffusion and DALLE. Some of them can handle text (e.g., ChatGPT, LLaMA) while some others (e.g., GPT-4 and Flamingo) can utilize multimodal data and can hence be considered Multimodal Large Foundation Models (MLFM). Several recent studies have shown that when adapted to specific tasks (e.g., visual question answering), the foundation models can often surpass the performance of state-of-the-art, fully supervised AI models. However, applying foundation models to specialized domain tasks (e.g., medical diagnosis, financial recommendation etc.) raises many ethical issues (e.g., privacy, model bias or hallucinations). The panel members will discuss the emerging trends in the development and use of large multimodal foundation models. Some of the issues to be discussed are: Research issues in going from LLM to MLFM Behaviour of MLFM Application Potential of MLFM Trust issues in MLFM Limitations of MLFM Societal, Legal and Regulatory issues of MLFM Promising future research in MLFM This panel will bring together several leading experts from universities, research institutions, and industry who will discuss and debate together with the audience. We invite everybody to participate and contribute towards this important and promising research direction.">
+        <tr id="In this study, we present aLLM4TS, an innovative framework that adapts Large Language Models (LLMs) for time-series representation learning. Central to our approach is that we reconceive time-series forecasting as a self-supervised, multi-patch prediction task, which, compared to traditional contrastive learning or mask-and-reconstruction methods, captures temporal dynamics in patch representations more effectively. Our strategy encompasses two-stage training: (i). a causal continual pre-training phase on various time-series datasets, anchored on next patch prediction, effectively syncing LLM capabilities with the intricacies of time-series data; (ii). fine-tuning for multi-patch prediction in the targeted time-series context. A distinctive element of our framework is the patch-wise decoding layer, which departs from previous methods reliant on sequence-level decoding. Such a design directly transposes individual patches into temporal sequences, thereby significantly bolstering the model's proficiency in mastering temporal patch-based representations. aLLM4TS demonstrates superior performance in several downstream tasks, proving its effectiveness in deriving temporal representations with enhanced transferability and marking a pivotal advancement in the adaptation of LLMs for time-series analysis.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/b2b8d5181b1206850d86fbb12890f4823a7b05e7" target='_blank'>Panel: Multimodal Large Foundation Models</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/c699624c3cdd5e2ac0d1f67de733bbad1b1c0e37" target='_blank'>Multi-Patch Prediction: Adapting LLMs for Time Series Representation Learning</a></td>
           <td>
-            Mohan S. Kankanhalli, M. Worring
+            Yuxuan Bian, Xu Ju, Jiangtong Li, Zhijian Xu, Dawei Cheng, Qiang Xu
           </td>
-          <td>2023-10-26</td>
-          <td>Proceedings of the 31st ACM International Conference on Multimedia</td>
+          <td>2024-02-07</td>
+          <td>ArXiv</td>
+          <td>4</td>
+          <td>5</td>
+        </tr>
+
+        <tr id="Time series has been left behind in the era of pre-training and transfer learning. While research in the fields of natural language processing and computer vision are enjoying progressively larger datasets to train massive models, the most popular time series datasets consist of only tens of thousands of time steps, limiting our ability to study the effectiveness of pre-training and scaling. Recent studies have also cast doubt on the need for expressive models and scale. To alleviate these issues, we introduce three large-scale time series forecasting datasets from the cloud operations (CloudOps) domain, the largest having billions of observations, enabling further study into pre-training and scaling of time series models. We build the empirical groundwork for studying pre-training and scaling of time series models and pave the way for future research by identifying a promising candidate architecture. We show that it is a strong zero-shot baseline and benefits from further scaling, both in model and dataset size. Accompanying these datasets and results is a suite of comprehensive benchmark results comparing classical and deep learning baselines to our pre-trained method - achieving a 27% reduction in error on the largest dataset. Code and datasets can be found https://github.com/SalesforceAIResearch/pretrain-time-series-cloudops.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/dbd6463cfff26861f6f3ea8e8d19eff4e6331904" target='_blank'>Pushing the Limits of Pre-training for Time Series Forecasting in the CloudOps Domain</a></td>
+          <td>
+            Gerald Woo, Chenghao Liu, Akshat Kumar, Doyen Sahoo
+          </td>
+          <td>2023-10-08</td>
+          <td>ArXiv</td>
+          <td>6</td>
+          <td>22</td>
+        </tr>
+
+        <tr id="Despite the impressive achievements of pre-trained models in the fields of natural language processing (NLP) and computer vision (CV), progress in the domain of time series analysis has been limited. In contrast to NLP and CV, where a single model can handle various tasks, time series analysis still relies heavily on task-specific methods for activities such as classification, anomaly detection, forecasting, and few-shot learning. The primary obstacle to developing a pre-trained model for time series analysis is the scarcity of sufficient training data. In our research, we overcome this obstacle by utilizing pre-trained models from language or CV, which have been trained on billions of data points, and apply them to time series analysis. We assess the effectiveness of the pre-trained transformer model in two ways. Initially, we maintain the original structure of the self-attention and feedforward layers in the residual blocks of the pre-trained language or image model, using the Frozen Pre-trained Transformer (FPT) for time series analysis with the addition of projection matrices for input and output. Additionally, we introduce four unique adapters, designed specifically for downstream tasks based on the pre-trained model, including forecasting and anomaly detection. These adapters are further enhanced with efficient parameter tuning, resulting in superior performance compared to all state-of-the-art methods.Our comprehensive experimental studies reveal that (a) the simple FPT achieves top-tier performance across various time series analysis tasks; and (b) fine-tuning the FPT with the custom-designed adapters can further elevate its performance, outshining specialized task-specific models.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/15bfe54223d28c74f9e39960f7ff1d03167e285f" target='_blank'>One Fits All: Universal Time Series Analysis by Pretrained LM and Specially Designed Adaptors</a></td>
+          <td>
+            Tian Zhou, Peisong Niu, Xue Wang, Liang Sun, Rong Jin
+          </td>
+          <td>2023-11-24</td>
+          <td>ArXiv</td>
+          <td>2</td>
+          <td>7</td>
+        </tr>
+
+        <tr id="Predicting future values in multivariate time series is vital across various domains. This work explores the use of large language models (LLMs) for this task. However, LLMs typically handle one-dimensional data. We introduce MultiCast, a zero-shot LLM-based approach for multivariate time series forecasting. It allows LLMs to receive multivariate time series as input, through three novel token multiplexing solutions that effectively reduce dimensionality while preserving key repetitive patterns. Additionally, a quantization scheme helps LLMs to better learn these patterns, while significantly reducing token use for practical applications. We showcase the performance of our approach in terms of RMSE and execution time against state-of-the-art approaches on three real-world datasets.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/695663f05473270744f228e9beeb7578ceee7c68" target='_blank'>MultiCast: Zero-Shot Multivariate Time Series Forecasting Using LLMs</a></td>
+          <td>
+            Georgios Chatzigeorgakidis, Konstantinos Lentzos, Dimitrios Skoutas
+          </td>
+          <td>2024-05-13</td>
+          <td>2024 IEEE 40th International Conference on Data Engineering Workshops (ICDEW)</td>
           <td>0</td>
-          <td>44</td>
-        </tr>
-
-        <tr id="Fine-tuning pre-trained vision-language models (VLMs), e.g., CLIP, for the open-world generalization has gained increasing popularity due to its practical value. However, performance advancements are limited when relying solely on intricate algorithmic designs for a single model, even one exhibiting strong performance, e.g., CLIP-ViT-B/16. This paper, for the first time, explores the collaborative potential of leveraging much weaker VLMs to enhance the generalization of a robust single model. The affirmative findings motivate us to address the generalization problem from a novel perspective, i.e., ensemble of pre-trained VLMs. We introduce three customized ensemble strategies, each tailored to one specific scenario. Firstly, we introduce the zero-shot ensemble, automatically adjusting the logits of different models based on their confidence when only pre-trained VLMs are available. Furthermore, for scenarios with extra few-shot samples, we propose the training-free and tuning ensemble, offering flexibility based on the availability of computing resources. The proposed ensemble strategies are evaluated on zero-shot, base-to-new, and cross-dataset generalization, achieving new state-of-the-art performance. Notably, this work represents an initial stride toward enhancing the generalization performance of VLMs via ensemble. The code is available at https://github.com/zhiheLu/Ensemble_VLM.git.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/ad73f8a70fa8e64fca1b8f7d663245c257e1759f" target='_blank'>Beyond Sole Strength: Customized Ensembles for Generalized Vision-Language Models</a></td>
-          <td>
-            Zhihe Lu, Jiawang Bai, Xin Li, Zeyu Xiao, Xinchao Wang
-          </td>
-          <td>2023-11-28</td>
-          <td>ArXiv</td>
-          <td>3</td>
-          <td>51</td>
-        </tr>
-
-        <tr id="Even when using large multi-modal foundation models, few-shot learning is still challenging -- if there is no proper inductive bias, it is nearly impossible to keep the nuanced class attributes while removing the visually prominent attributes that spuriously correlate with class labels. To this end, we find an inductive bias that the time-steps of a Diffusion Model (DM) can isolate the nuanced class attributes, i.e., as the forward diffusion adds noise to an image at each time-step, nuanced attributes are usually lost at an earlier time-step than the spurious attributes that are visually prominent. Building on this, we propose Time-step Few-shot (TiF) learner. We train class-specific low-rank adapters for a text-conditioned DM to make up for the lost attributes, such that images can be accurately reconstructed from their noisy ones given a prompt. Hence, at a small time-step, the adapter and prompt are essentially a parameterization of only the nuanced class attributes. For a test image, we can use the parameterization to only extract the nuanced class attributes for classification. TiF learner significantly outperforms OpenCLIP and its adapters on a variety of fine-grained and customized few-shot learning tasks. Codes are in https://github.com/yue-zhongqi/tif.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/91006c4feb580561ecaae49faf936344f05b5799" target='_blank'>Few-shot Learner Parameterization by Diffusion Time-steps</a></td>
-          <td>
-            Zhongqi Yue, Pan Zhou, Richang Hong, Hanwang Zhang, Qianru Sun
-          </td>
-          <td>2024-03-05</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>14</td>
-        </tr>
-
-        <tr id="The era of pre-trained models has ushered in a wealth of new insights for the machine learning community. Among the myriad of questions that arise, one of paramount importance is: 'Do pre-trained models possess comprehensive knowledge?' This paper seeks to address this crucial inquiry. In line with our objective, we have made publicly available a novel dataset comprised of images from TV series released post-2021. This dataset holds significant potential for use in various research areas, including the evaluation of incremental learning, novel class discovery, and long-tailed learning, among others. Project page: https://tv-100.github.io/">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/992f838eaab4cd43abced150662b8ff2ef8eda9c" target='_blank'>TV100: A TV Series Dataset that Pre-Trained CLIP Has Not Seen</a></td>
-          <td>
-            Da-Wei Zhou, Zhi-Hong Qi, Han-Jia Ye, De-chuan Zhan
-          </td>
-          <td>2024-04-16</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>29</td>
-        </tr>
-
-        <tr id="Few-shot image classification involves classifying images using very few training examples. Recent vision foundation models show excellent few-shot transfer abilities, but are large and slow at inference. Using knowledge distillation, the capabilities of high-performing but slow models can be transferred to tiny, efficient models. However, common distillation methods require a large set of unlabeled data, which is not available in the few-shot setting. To overcome this lack of data, there has been a recent interest in using synthetic data. We expand on this work by presenting a novel diffusion model inversion technique (TINT) combining the diversity of textual inversion with the specificity of null-text inversion. Using this method in a few-shot distillation pipeline leads to state-of-the-art accuracy among small student models on popular benchmarks, while being significantly faster than prior work. This allows us to push even tiny models to high accuracy using only a tiny application-specific dataset, albeit relying on extra data for pre-training. Popular few-shot benchmarks involve evaluation over a large number of episodes, which is computationally cumbersome for methods involving synthetic data generation. Therefore, we also present a theoretical analysis on how the variance of the accuracy estimator depends on the number of episodes and query examples, and use these results to lower the computational effort required for method evaluation. In addition, to further motivate the use of generative models in few-shot distillation, we demonstrate that our method performs better compared to training on real data mined from the dataset used to train the diffusion model. Source code will be made available at https://github.com/pixwse/tiny2.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/ba2d0ba580a2f8e0af142da6a4773da587e80909" target='_blank'>Tiny models from tiny data: Textual and null-text inversion for few-shot distillation</a></td>
-          <td>
-            Erik Landolsi, Fredrik Kahl
-          </td>
-          <td>2024-06-05</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>0</td>
-        </tr>
-
-        <tr id="Recent progress in the few-shot adaptation of Vision-Language Models (VLMs) has further pushed their generalization capabilities, at the expense of just a few labeled samples within the target downstream task. However, this promising, already quite abundant few-shot literature has focused principally on prompt learning and, to a lesser extent, on adapters, overlooking the recent advances in Parameter-Efficient Fine-Tuning (PEFT). Furthermore, existing few-shot learning methods for VLMs often rely on heavy training procedures and/or carefully chosen, task-specific hyper-parameters, which might impede their applicability. In response, we introduce Low-Rank Adaptation (LoRA) in few-shot learning for VLMs, and show its potential on 11 datasets, in comparison to current state-of-the-art prompt- and adapter-based approaches. Surprisingly, our simple CLIP-LoRA method exhibits substantial improvements, while reducing the training times and keeping the same hyper-parameters in all the target tasks, i.e., across all the datasets and numbers of shots. Certainly, our surprising results do not dismiss the potential of prompt-learning and adapter-based research. However, we believe that our strong baseline could be used to evaluate progress in these emergent subjects in few-shot VLMs.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/42012c4e9dc8d787adb101548cefc42b8a4507d9" target='_blank'>Low-Rank Few-Shot Adaptation of Vision-Language Models</a></td>
-          <td>
-            Maxime Zanella, Ismail Ben Ayed
-          </td>
-          <td>2024-05-28</td>
-          <td>ArXiv</td>
-          <td>1</td>
-          <td>45</td>
+          <td>7</td>
         </tr>
 
   </tbody>

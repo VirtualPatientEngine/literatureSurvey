@@ -667,7 +667,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-07-15 06:05:49 UTC</i>
+  <i class="footer">This page was last updated on 2024-07-22 06:06:25 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -770,18 +770,6 @@
           <td>20</td>
         </tr>
 
-        <tr id="We present a generative model that amortises computation for the field around e.g. gravitational or magnetic sources. Exact numerical calculation has either computational complexity $\mathcal{O}(M\times{}N)$ in the number of sources and field evaluation points, or requires a fixed evaluation grid to exploit fast Fourier transforms. Using an architecture where a hypernetwork produces an implicit representation of the field around a source collection, our model instead performs as $\mathcal{O}(M + N)$, achieves accuracy of $\sim\!4\%-6\%$, and allows evaluation at arbitrary locations for arbitrary numbers of sources, greatly increasing the speed of e.g. physics simulations. We also examine a model relating to the physical properties of the output field and develop two-dimensional examples to demonstrate its application. The code for these models and experiments is available at https://github.com/cmt-dtu-energy/hypermagnetics.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/70c2a9f4249351e7bf76677c09b508db82644b76" target='_blank'>Scalable physical source-to-field inference with hypernetworks</a></td>
-          <td>
-            Berian James, Stefan Pollok, Ignacio Peis, J. Frellsen, Rasmus Bjørk
-          </td>
-          <td>2024-05-07</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>20</td>
-        </tr>
-
         <tr id="Despite the success of neural networks at solving concrete physics problems, their use as a general-purpose tool for scientific discovery is still in its infancy. Here, we approach this problem by modeling a neural network architecture after the human physical reasoning process, which has similarities to representation learning. This allows us to make progress towards the long-term goal of machine-assisted scientific discovery from experimental data without making prior assumptions about the system. We apply this method to toy examples and show that the network finds the physically relevant parameters, exploits conservation laws to make predictions, and can help to gain conceptual insights, e.g., Copernicus' conclusion that the solar system is heliocentric.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/7b2e20a3cdf96fc0bcddf6bd6576e5d5e09f17ec" target='_blank'>Discovering physical concepts with neural networks</a></td>
@@ -792,6 +780,18 @@
           <td>Physical review letters</td>
           <td>355</td>
           <td>69</td>
+        </tr>
+
+        <tr id="Symbolic regression (SR) aims to discover concise closed-form mathematical equations from data, a task fundamental to scientific discovery. However, the problem is highly challenging because closed-form equations lie in a complex combinatorial search space. Existing methods, ranging from heuristic search to reinforcement learning, fail to scale with the number of input variables. We make the observation that closed-form equations often have structural characteristics and invariances (e.g., the commutative law) that could be further exploited to build more effective symbolic regression solutions. Motivated by this observation, our key contribution is to leverage pre-trained deep generative models to capture the intrinsic regularities of equations, thereby providing a solid foundation for subsequent optimization steps. We show that our novel formalism unifies several prominent approaches of symbolic regression and offers a new perspective to justify and improve on the previous ad hoc designs, such as the usage of cross-entropy loss during pre-training. Specifically, we propose an instantiation of our framework, Deep Generative Symbolic Regression (DGSR). In our experiments, we show that DGSR achieves a higher recovery rate of true equations in the setting of a larger number of input variables, and it is more computationally efficient at inference time than state-of-the-art RL symbolic regression solutions.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/cda10f395932f2d16ce925d3d91dc4368416a656" target='_blank'>Deep Generative Symbolic Regression</a></td>
+          <td>
+            Samuel Holt, Zhaozhi Qian, M. Schaar
+          </td>
+          <td>2023-12-30</td>
+          <td>ArXiv</td>
+          <td>16</td>
+          <td>64</td>
         </tr>
 
   </tbody>
