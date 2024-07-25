@@ -25,7 +25,7 @@ Follow these simple steps to set up your literature survey website:
 
 2. Open up the ```app/data/query.tsv``` file in your favorite code editor or Excel.
 
-3. Under the `Title` column, give titles to your topics. Under the `Use` column, write <kbd>1</kbd> if you want to use the article for recommendations or <kbd>0</kbd> if you just want to display the article. **Under the URL column, specify the corresponding URLs to Semantic Scholar (https://www.semanticscholar.org/) article.** Submit your edited file by clicking on `Commit changes...`. In the `Commit message` add a prefix by using one of these keywords **feat:, fix: or chore:**, e.g., "feat: added one paper". After committing changes to the `main` branch directly, the workflows should start automatically.
+3. Under the `Title` column, give titles to your topics. Under the `Use` column, write <kbd>1</kbd> if you want to use the article for recommendations or <kbd>0</kbd> if you just want to display the article. **Under the URL column, specify the corresponding URLs to [Semantic Scholar](https://www.semanticscholar.org/) article.** Submit your edited file by clicking on `Commit changes...`. In the `Commit message` add a prefix by using one of these keywords **feat:, fix: or chore:**, e.g., "feat: added one paper". After committing changes to the `main` branch directly, the workflows should start automatically.
 
 4. (Optional) Create a venv:
 ```
