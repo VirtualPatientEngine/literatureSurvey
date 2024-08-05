@@ -11,7 +11,7 @@ hide:
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-07-29 06:05:01 UTC</i>
+  <i class="footer">This page was last updated on 2024-08-05 06:04:50 UTC</i>
   </p>
   
   <div class="note info" onclick="startIntro()">
@@ -74,7 +74,7 @@ hide:
           </td>
           <td>2022-05-26</td>
           <td>J. Mach. Learn. Res.</td>
-          <td>10</td>
+          <td>11</td>
           <td>49</td>
         </tr>
     
@@ -98,7 +98,7 @@ hide:
           </td>
           <td>2020-05-24</td>
           <td>Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining</td>
-          <td>924</td>
+          <td>934</td>
           <td>54</td>
         </tr>
     
@@ -122,7 +122,7 @@ hide:
           </td>
           <td>2023-11-10</td>
           <td>ArXiv</td>
-          <td>20</td>
+          <td>24</td>
           <td>4</td>
         </tr>
     
