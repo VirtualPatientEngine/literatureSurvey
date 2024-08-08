@@ -15,29 +15,22 @@ FIELDS = 'paperId,url,authors,journal,title,'
 FIELDS += 'publicationTypes,publicationDate,citationCount,'
 FIELDS += 'publicationVenue,externalIds,abstract'
 
-def add_negative_articles(topic_obj, dic, max_num_articles=10):
+def add_negative_articles(topic_obj, dic):
     """
     Add the negative articles to the topic object
     """
     if 'negative' not in topic_obj.paper_ids:
         topic_obj.paper_ids['negative'] = {}
-    num_topics = len(dic) - 1
-    while len(topic_obj.paper_ids["negative"]) < max_num_articles:
-        for topic in dic:
-            if topic == topic_obj.topic:
+    for topic in dic:
+        # Skip the current topic
+        if topic == topic_obj.topic:
+            continue
+        # Add the articles from the other topics
+        # as negative articles to the current topic
+        for paper_id in dic[topic].paper_ids['positive']:
+            if paper_id in topic_obj.paper_ids['negative']:
                 continue
-            articles_per_topic = max_num_articles // num_topics
-            for paper_id in dic[topic].paper_ids['positive']:
-                if paper_id in topic_obj.paper_ids['negative']:
-                    continue
-                topic_obj.paper_ids['negative'][paper_id]=dic[topic].paper_ids['positive'][paper_id]
-                articles_per_topic -= 1
-                if articles_per_topic == 0:
-                    break
-                if len(topic_obj.paper_ids["negative"]) == max_num_articles:
-                    break
-            if len(topic_obj.paper_ids["negative"]) == max_num_articles:
-                break
+            topic_obj.paper_ids['negative'][paper_id]=dic[topic].paper_ids['positive'][paper_id]
     print (f'Added {len(topic_obj.paper_ids["negative"])} negative articles for {topic_obj.topic}.')
 
 def update_paper_details(topic_obj):
