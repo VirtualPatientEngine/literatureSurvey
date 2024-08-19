@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-08-12 06:05:14 UTC</i>
+  <i class="footer">This page was last updated on 2024-08-19 06:05:00 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -496,8 +496,8 @@
           </td>
           <td>2024-02-13</td>
           <td>ArXiv</td>
-          <td>30</td>
-          <td>8</td>
+          <td>32</td>
+          <td>9</td>
         </tr>
 
         <tr id="Message-passing graph neural networks (GNNs), while excelling at capturing local relationships, often struggle with long-range dependencies on graphs. Conversely, graph transformers (GTs) enable information exchange between all nodes but oversimplify the graph structure by treating them as a set of fixed-length vectors. This work proposes a novel architecture, NeuralWalker, that overcomes the limitations of both methods by combining random walks with message passing. NeuralWalker achieves this by treating random walks as sequences, allowing for the application of recent advances in sequence models in order to capture long-range dependencies within these walks. Based on this concept, we propose a framework that offers (1) more expressive graph representations through random walk sequences, (2) the ability to utilize any sequence model for capturing long-range dependencies, and (3) the flexibility by integrating various GNN and GT architectures. Our experimental evaluations demonstrate that NeuralWalker achieves significant performance improvements on 19 graph and node benchmark datasets, notably outperforming existing methods by up to 13% on the PascalVoc-SP and COCO-SP datasets. Code is available at https://github.com/BorgwardtLab/NeuralWalker.">
@@ -521,7 +521,7 @@
           <td>2024-06-09</td>
           <td>ArXiv</td>
           <td>1</td>
-          <td>2</td>
+          <td>3</td>
         </tr>
 
         <tr id="Graph representation learning (GRL) is fundamental in multi-graph applications like molecular property prediction. Graph neural networks (GNNs) have emerged as a popular method for GRL. However, existing GRL methods primarily focus on designing GNN models with enhanced expressiveness while overlooking the memory efficiency of algorithms during training. The memory inefficiency problem is caused by a contextual constraint imposed on node representations, which requires each node to be context-dependent on its input graph. In this paper, we propose a novel method, called context sketching (COS), for memory-efficient graph representation learning in multi-graph scenarios. We first formally define the contextual constraint based on the enclosed $\infty-$hop subgraphs of nodes. Subsequently, we propose to relax the original contextual constraint by requiring each node to be context-dependent on its enclosed $k-$hop subgraph $(k \ll \infty)$ which is a contextual sketch of the enclosed $\infty$-hop subgraph. Lastly, we prove that COS constructs an optimal solution to a memory-related objective associated with graph coarsening. Experiments on four widely used benchmark datasets demonstrate that COS can reduce the memory footprint of baselines by a large margin with almost no accuracy loss.">
@@ -545,7 +545,7 @@
           <td>2024-06-17</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>6</td>
+          <td>7</td>
         </tr>
 
         <tr id="The Transformer architecture has achieved remarkable success in a number of domains including natural language processing and computer vision. However, when it comes to graph-structured data, transformers have not achieved competitive performance, especially on large graphs. In this paper, we identify the main deficiencies of current graph transformers:(1) Existing node sampling strategies in Graph Transformers are agnostic to the graph characteristics and the training process. (2) Most sampling strategies only focus on local neighbors and neglect the long-range dependencies in the graph. We conduct experimental investigations on synthetic datasets to show that existing sampling strategies are sub-optimal. To tackle the aforementioned problems, we formulate the optimization strategies of node sampling in Graph Transformer as an adversary bandit problem, where the rewards are related to the attention weights and can vary in the training procedure. Meanwhile, we propose a hierarchical attention scheme with graph coarsening to capture the long-range interactions while reducing computational complexity. Finally, we conduct extensive experiments on real-world datasets to demonstrate the superiority of our method over existing graph transformers and popular GNNs.">
@@ -556,8 +556,8 @@
           </td>
           <td>2022-10-08</td>
           <td>ArXiv</td>
-          <td>58</td>
-          <td>17</td>
+          <td>59</td>
+          <td>19</td>
         </tr>
 
         <tr id="Transformer-based models have recently shown success in representation learning on graph-structured data beyond natural language processing and computer vision. However, the success is limited to small-scale graphs due to the drawbacks of full dot-product attention on graphs such as the quadratic complexity with respect to the number of nodes and message aggregation from enormous irrelevant nodes. To address these issues, we propose Deformable Graph Transformer (DGT) that performs sparse attention via dynamically sampled relevant nodes for efficiently handling large-scale graphs with a linear complexity in the number of nodes. Specifically, our framework first constructs multiple node sequences with various criteria to consider both structural and semantic proximity. Then, combining with our learnable Katz Positional Encodings, the sparse attention is applied to the node sequences for learning node representations with a significantly reduced computational cost. Extensive experiments demonstrate that our DGT achieves state-of-the-art performance on 7 graph benchmark datasets with 2.5 - 449 times less computational cost compared to transformer-based graph models with full attention.">
@@ -569,7 +569,7 @@
           <td>2022-06-29</td>
           <td>ArXiv</td>
           <td>6</td>
-          <td>27</td>
+          <td>28</td>
         </tr>
 
   </tbody>
