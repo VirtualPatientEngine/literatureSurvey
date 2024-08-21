@@ -5,7 +5,7 @@
 
 <h1 align="center" style="border-bottom: none;">🚀 Literature Survey</h1>
 
-Welcome to Team VPE's Literature Survey Template Repository! 📚✨ This repository provides you with a quick setup to create your very own automated literature survey website using Semantic Scholar's [Recommendation API](https://api.semanticscholar.org/api-docs/recommendations).
+Welcome to Team VPE's Literature Survey Template Repository! 📚✨ This repository provides you with a quick setup to create your very own automated literature survey website using Semantic Scholar's [Recommendation API](https://api.semanticscholar.org/api-docs/recommendations), and provides an option to import the recommended articles to your [Zotero](https://www.zotero.org/) account.
 
 ### Types of Recommendations
 Semantic Scholar provides 2 types of recommendations:
@@ -65,6 +65,16 @@ Head over to the localhost link that pops up in your terminal.
 11. If you'd like to edit the home page of the website, head over to `docs/index.md` to make the changes.
 
 12. (Optional) Edit custom.css if you'd like to change the styling of web pages.
+
+### Zotero Plugin
+If you'd like to read the recommended articles in your Zotero Account:
+1. Create an account with Zotero
+2. Under the `Settings` tab in your GitHub repo, click on `Secrets and variables`, and select `Actions`
+3. Set the following `Repository secrets`:
+    - `ZOTERO_API_KEY` as Zotero API key (you can get it [here](https://www.zotero.org/settings/keys/new))
+    - `LIBRARY_ID` as your group ID (this can be found by opening the group's page: https://www.zotero.org/groups/groupname , and hovering over the group settings link. The ID is the integer after /groups/)
+    - `TEST_COLLECTION_KEY` as your collection's key (enter `https://api.zotero.org/groups/<LIBRARY_ID>/collections?key=<ZOTERO_API_KEY>` in your browser to view all the collections in your group; choose the key of the collection in which you'd like the recommended articles to be sotred)
+4. The changes take effect only when the code is re-run. This can happen either the next time the code is scheduled for a run (Mondays) or under the `Actions` tab, select `mkdocs-deploy` from the left panel, and click on `Run workflow`.
 
 ### Bugs? Feature Requests?
 If you encounter any bugs or have brilliant ideas for new features, please head over to the [Issues](https://github.com/VirtualPatientEngine/literatureSurvey/issues) and let us know.
