@@ -1,6 +1,7 @@
 astroid==3.0.0
 Babel==2.14.0
 beautifulsoup4==4.12.3
+bibtexparser==1.4.1
 blinker==1.6.3
 certifi==2024.7.4
 charset-normalizer==3.3.2
@@ -56,6 +57,7 @@ python-dateutil==2.9.0.post0
 pytz==2024.1
 PyYAML==6.0.1
 pyyaml_env_tag==0.1
+pyzotero==1.5.20
 regex==2023.12.25
 requests==2.31.0
 seaborn==0.13.2

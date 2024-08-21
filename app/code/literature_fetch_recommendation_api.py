@@ -208,6 +208,8 @@ if __name__ == '__main__':
             for article_id, article_obj in topic_obj.paper_ids[article_type].items():
                 utils.update_h_index(article_obj, author_details)
         print (f'Fetched the details of the authors (n={len(author_details)}) for {topic}.')
+        # Add the recommended articles to Zotero
+        utils.add_recommended_articles_to_zotero(topic, topic_obj.paper_ids)
         # Create the markdown text
         markdown_text = create_template(
                                         ("../../templates", "topic.txt"),
