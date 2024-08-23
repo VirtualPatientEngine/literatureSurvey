@@ -4,40 +4,81 @@
 script to define utility functions
 '''
 
+import os
 import sys
 import re
 import matplotlib.pyplot as plt
 import pandas as pd
 import yaml
 import requests
+from pyzotero import zotero
 
 FIELDS = 'paperId,url,authors,journal,title,'
 FIELDS += 'publicationTypes,publicationDate,citationCount,'
 FIELDS += 'publicationVenue,externalIds,abstract'
 
-def add_negative_articles(topic_obj, dic, max_num_articles=10):
+LIBRARY_TYPE = 'group'
+LIBRARY_ID = os.environ.get('LIBRARY_ID')
+ZOTERO_API_KEY = os.environ.get('ZOTERO_API_KEY')
+TEST_COLLECTION_KEY = os.environ.get('TEST_COLLECTION_KEY')
+
+def add_recommended_articles_to_zotero(topic_name, paper_ids):
+    """
+    Add the recommended articles to zotero
+    """
+    if LIBRARY_ID is None or ZOTERO_API_KEY is None or TEST_COLLECTION_KEY is None:
+        print ('Zotero credentials not found.')
+    else:
+        print ('Adding recommended articles to Zotero.')
+        # Create a zotero object
+        zot = zotero.Zotero(LIBRARY_ID, LIBRARY_TYPE, ZOTERO_API_KEY)
+        new_items = []
+        for _, paper_obj in paper_ids['recommended'].items():
+            # create a template for the paper
+            template = zot.item_template('journalArticle')
+            template['title'] = paper_obj.info.title
+            template['creators'] = []
+            for author in paper_obj.authors:
+                template['creators'].append({'creatorType': 'author',
+                                            'name': author.author_name})
+            template['publicationTitle'] = paper_obj.info.journal
+            template['date'] = paper_obj.info.publication_date
+            template['abstractNote'] = paper_obj.info.abstract
+            template['url'] = paper_obj.info.url
+            # assign topic names as tags
+            template['tags'] = [{'tag': topic_name}]
+            # assign the paper to the collection
+            template['collections'] = [TEST_COLLECTION_KEY]
+            new_items.append(template)
+        # add all the items to zotero, only 50 items at a time
+        for i in range(0, len(new_items), 50):
+            zot.check_items(new_items[i:i+50])
+            zot.create_items(new_items[i:i+50])
+
+def add_negative_articles(topic_obj, dic):
     """
     Add the negative articles to the topic object
     """
     if 'negative' not in topic_obj.paper_ids:
         topic_obj.paper_ids['negative'] = {}
-    num_topics = len(dic) - 1
-    while len(topic_obj.paper_ids["negative"]) < max_num_articles:
-        for topic in dic:
-            if topic == topic_obj.topic:
+    for topic in dic:
+        # Skip the current topic
+        if topic == topic_obj.topic:
+            continue
+        # Add the negative articles to the topic object
+        for paper_id in dic[topic].paper_ids['positive']:
+            # Skip if the paper id is already in the negative articles
+            if paper_id in topic_obj.paper_ids['negative']:
                 continue
-            articles_per_topic = max_num_articles // num_topics
-            for paper_id in dic[topic].paper_ids['positive']:
-                if paper_id in topic_obj.paper_ids['negative']:
-                    continue
-                topic_obj.paper_ids['negative'][paper_id]=dic[topic].paper_ids['positive'][paper_id]
-                articles_per_topic -= 1
-                if articles_per_topic == 0:
-                    break
-                if len(topic_obj.paper_ids["negative"]) == max_num_articles:
-                    break
-            if len(topic_obj.paper_ids["negative"]) == max_num_articles:
-                break
+            # Skip if the paper id is already in the positive articles
+            # i.e. do not add the same paper id to both positive and negative articles
+            if paper_id in topic_obj.paper_ids['positive']:
+                continue
+            # Skip if the paper id if it is marked to be not used for recommendation
+            paper_obj = dic[topic].paper_ids['positive'][paper_id]
+            if paper_obj.use_for_recommendation is False:
+                continue
+            topic_obj.paper_ids['negative'][paper_id]=dic[topic].paper_ids['positive'][paper_id]
     print (f'Added {len(topic_obj.paper_ids["negative"])} negative articles for {topic_obj.topic}.')
 
 def update_paper_details(topic_obj):
@@ -178,18 +219,14 @@ def add_recommendations(topic_obj,
     params = {'fields': fields, 'limit': limit}
     # Select positive articles that have use_for_recommendation set to True
     positive_paper_ids = []
-    count = 0
+    # count = 0
     for paper_id, paper_obj in topic_obj.paper_ids['positive'].items():
         if paper_obj.use_for_recommendation is False:
             continue
         positive_paper_ids.append(paper_id)
-        count += 1
-        if count == 10:
-            break
     json = {
-            # 'positivePaperIds': list(topic_obj.paper_ids['positive'].keys())[:10],
             'positivePaperIds': positive_paper_ids,
-            'negativePaperIds': list(topic_obj.paper_ids['negative'].keys())[:10],
+            'negativePaperIds': list(topic_obj.paper_ids['negative'].keys()),
             }
     status_code = 0
     while status_code not in [200, 400, 404]:
