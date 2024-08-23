@@ -17,8 +17,8 @@ FIELDS = 'paperId,url,authors,journal,title,'
 FIELDS += 'publicationTypes,publicationDate,citationCount,'
 FIELDS += 'publicationVenue,externalIds,abstract'
 
-LIBRARY_ID = os.environ.get('LIBRARY_ID')
 LIBRARY_TYPE = 'group'
+LIBRARY_ID = os.environ.get('LIBRARY_ID')
 ZOTERO_API_KEY = os.environ.get('ZOTERO_API_KEY')
 TEST_COLLECTION_KEY = os.environ.get('TEST_COLLECTION_KEY')
 
@@ -73,6 +73,10 @@ def add_negative_articles(topic_obj, dic):
             # Skip if the paper id is already in the positive articles
             # i.e. do not add the same paper id to both positive and negative articles
             if paper_id in topic_obj.paper_ids['positive']:
+                continue
+            # Skip if the paper id if it is marked to be not used for recommendation
+            paper_obj = dic[topic].paper_ids['positive'][paper_id]
+            if paper_obj.use_for_recommendation is False:
                 continue
             topic_obj.paper_ids['negative'][paper_id]=dic[topic].paper_ids['positive'][paper_id]
     print (f'Added {len(topic_obj.paper_ids["negative"])} negative articles for {topic_obj.topic}.')
@@ -215,18 +219,14 @@ def add_recommendations(topic_obj,
     params = {'fields': fields, 'limit': limit}
     # Select positive articles that have use_for_recommendation set to True
     positive_paper_ids = []
-    count = 0
+    # count = 0
     for paper_id, paper_obj in topic_obj.paper_ids['positive'].items():
         if paper_obj.use_for_recommendation is False:
             continue
         positive_paper_ids.append(paper_id)
-        count += 1
-        if count == 10:
-            break
     json = {
-            # 'positivePaperIds': list(topic_obj.paper_ids['positive'].keys())[:10],
             'positivePaperIds': positive_paper_ids,
-            'negativePaperIds': list(topic_obj.paper_ids['negative'].keys())[:10],
+            'negativePaperIds': list(topic_obj.paper_ids['negative'].keys()),
             }
     status_code = 0
     while status_code not in [200, 400, 404]:

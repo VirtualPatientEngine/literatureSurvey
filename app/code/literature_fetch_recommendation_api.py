@@ -179,7 +179,7 @@ if __name__ == '__main__':
         if len(topic_obj.paper_ids['positive']) == 0:
             print (f'No positive articles for {topic_obj.topic}. Skipping...')
         else:
-            search_response_json = utils.add_recommendations(topic_obj, limit=300)
+            search_response_json = utils.add_recommendations(topic_obj, limit=200)
             for paper_data in search_response_json['recommendedPapers']:
                 paper_id = paper_data['paperId']
                 # skip the ones with publication date is null
