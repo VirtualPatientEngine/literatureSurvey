@@ -59,7 +59,7 @@ PyYAML==6.0.1
 pyyaml_env_tag==0.1
 pyzotero==1.5.20
 regex==2023.12.25
-requests==2.31.0
+requests==2.32.2
 seaborn==0.13.2
 sgmllib3k==1.0.0
 six==1.16.0
