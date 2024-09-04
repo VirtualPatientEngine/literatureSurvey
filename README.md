@@ -15,11 +15,11 @@ To know more about what Team VPE does, checkout our [GitHub page](https://github
 If you find our literature survey tool helpful and enjoy using it, we'd really appreciate it if you could give our repository a ⭐️! Your support helps us continue to improve and grow. Thank you! 😊
 
 ### Table of Contents 📋
-1. [Recommendation types](#💡-recommendation-types)
-2. [Usage](#🚀-usage)
-3. [Getting Started for Non Developers](#🎨-getting-started-for-non-developers)
-4. [Getting Started for Developers](#🧑‍💻-getting-started-for-developers)
-5. [Bugs or Feature Requests](#🔖-bugs-or-feature-requests)
+1. [Recommendation types](#-recommendation-types)
+2. [Usage](#-usage)
+3. [Getting Started for Non Developers](#-getting-started-for-non-developers)
+4. [Getting Started for Developers](#-getting-started-for-developers)
+5. [Bugs or Feature Requests](#-bugs-or-feature-requests)
 
 ### 💡 Recommendation types
 Semantic Scholar provides 2 types of recommendations:
