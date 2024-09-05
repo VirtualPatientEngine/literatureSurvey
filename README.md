@@ -5,14 +5,10 @@
 
 <h1 align="center" style="border-bottom: none;">🔍 An automated literature survey tool</h1>
 
-<<<<<<< HEAD
 Welcome to [Team VPE](https://github.com/VirtualPatientEngine)'s Literature Survey Template Repository! 📚✨ This repository:
 1. Describes a quick setup to create your very own automated literature survey website using Semantic Scholar's [Recommendation API](https://api.semanticscholar.org/api-docs/recommendations).
 2. Offers an option to import the recommended articles to your [Zotero](https://www.zotero.org/) account.
 3. Runs itself automatically every Monday morning to fetch a new list of recommended articles.
-=======
-Welcome to Team VPE's Literature Survey Template Repository! 📚✨ This repository provides you with a quick setup to create your very own automated literature survey website using Semantic Scholar's [Recommendation API](https://api.semanticscholar.org/api-docs/recommendations), and provides an option to import the recommended articles to your [Zotero](https://www.zotero.org/) account.
->>>>>>> main
 
 To know more about what Team VPE does, checkout our [GitHub page](https://github.com/VirtualPatientEngine), or even better, follow us by clicking the `Follow` button on our [GitHub page](https://github.com/VirtualPatientEngine)! 😊
 
