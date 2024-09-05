@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-08-19 06:05:02 UTC</i>
+  <i class="footer">This page was last updated on 2024-09-04 08:44:51 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -488,6 +488,18 @@
           <td>6</td>
         </tr>
 
+        <tr id="Large language models (LLMs) have been applied in many fields and have developed rapidly in recent years. As a classic machine learning task, time series forecasting has recently been boosted by LLMs. Recent works treat large language models as \emph{zero-shot} time series reasoners without further fine-tuning, which achieves remarkable performance. However, there are some unexplored research problems when applying LLMs for time series forecasting under the zero-shot setting. For instance, the LLMs' preferences for the input time series are less understood. In this paper, by comparing LLMs with traditional time series forecasting models, we observe many interesting properties of LLMs in the context of time series forecasting. First, our study shows that LLMs perform well in predicting time series with clear patterns and trends, but face challenges with datasets lacking periodicity. This observation can be explained by the ability of LLMs to recognize the underlying period within datasets, which is supported by our experiments. In addition, the input strategy is investigated, and it is found that incorporating external knowledge and adopting natural language paraphrases substantially improve the predictive performance of LLMs for time series. Overall, our study contributes insight into LLMs' advantages and limitations in time series forecasting under different conditions.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/d09f8aa653bc6e602f8512561a38308874b0767e" target='_blank'>Time Series Forecasting with LLMs: Understanding and Enhancing Model Capabilities</a></td>
+          <td>
+            Mingyu Jin, Hua Tang, Chong Zhang, Qinkai Yu, Chengzhi Liu, Suiyuan Zhu, Yongfeng Zhang, Mengnan Du
+          </td>
+          <td>2024-02-16</td>
+          <td>ArXiv</td>
+          <td>3</td>
+          <td>6</td>
+        </tr>
+
         <tr id="Time-series forecasting (TSF) finds broad applications in real-world scenarios. Prompting off-the-shelf Large Language Models (LLMs) demonstrates strong zero-shot TSF capabilities while preserving computational efficiency. However, existing prompting methods oversimplify TSF as language next-token predictions, overlooking its dynamic nature and lack of integration with state-of-the-art prompt strategies such as Chain-of-Thought. Thus, we propose LSTPrompt, a novel approach for prompting LLMs in zero-shot TSF tasks. LSTPrompt decomposes TSF into short-term and long-term forecasting sub-tasks, tailoring prompts to each. LSTPrompt guides LLMs to regularly reassess forecasting mechanisms to enhance adaptability. Extensive evaluations demonstrate consistently better performance of LSTPrompt than existing prompting methods, and competitive results compared to foundation TSF models.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/bbf272d92b76cc5f1e6f793dcfeb5edd4abed7ef" target='_blank'>LSTPrompt: Large Language Models as Zero-Shot Time Series Forecasters by Long-Short-Term Prompting</a></td>
@@ -508,7 +520,7 @@
           </td>
           <td>2022-09-20</td>
           <td>IEEE Transactions on Knowledge and Data Engineering</td>
-          <td>58</td>
+          <td>62</td>
           <td>17</td>
         </tr>
 
@@ -521,7 +533,7 @@
           <td>2024-06-20</td>
           <td>ArXiv</td>
           <td>1</td>
-          <td>22</td>
+          <td>23</td>
         </tr>
 
         <tr id="Time series data are ubiquitous across various domains, making time series analysis critically important. Traditional time series models are task-specific, featuring singular functionality and limited generalization capacity. Recently, large language foundation models have unveiled their remarkable capabilities for cross-task transferability, zero-shot/few-shot learning, and decision-making explainability. This success has sparked interest in the exploration of foundation models to solve multiple time series challenges simultaneously. There are two main research lines, namely pre-training foundation models from scratch for time series and adapting large language foundation models for time series. They both contribute to the development of a unified model that is highly generalizable, versatile, and comprehensible for time series analysis. This survey offers a 3E analytical framework for comprehensive examination of related research. Specifically, we examine existing works from three dimensions, namely Effectiveness, Efficiency and Explainability. In each dimension, we focus on discussing how related works devise tailored solution by considering unique challenges in the realm of time series. Furthermore, we provide a domain taxonomy to help followers keep up with the domain-specific advancements. In addition, we introduce extensive resources to facilitate the field's development, including datasets, open-source, time series libraries. A GitHub repository is also maintained for resource updates (https://github.com/start2020/Awesome-TimeSeries-LLM-FM).">
@@ -532,7 +544,7 @@
           </td>
           <td>2024-05-03</td>
           <td>ArXiv</td>
-          <td>2</td>
+          <td>4</td>
           <td>47</td>
         </tr>
 
@@ -556,7 +568,7 @@
           </td>
           <td>2023-08-16</td>
           <td>ArXiv</td>
-          <td>15</td>
+          <td>16</td>
           <td>2</td>
         </tr>
 
@@ -569,7 +581,7 @@
           <td>2024-06-22</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>3</td>
+          <td>1</td>
         </tr>
 
         <tr id="Motivated by recent advances in large language models for Natural Language Processing (NLP), we design a time-series foundation model for forecasting whose out-of-the-box zero-shot performance on a variety of public datasets comes close to the accuracy of state-of-the-art supervised forecasting models for each individual dataset. Our model is based on pretraining a patched-decoder style attention model on a large time-series corpus, and can work well across different forecasting history lengths, prediction lengths and temporal granularities.">
@@ -580,20 +592,8 @@
           </td>
           <td>2023-10-14</td>
           <td>ArXiv</td>
-          <td>48</td>
+          <td>50</td>
           <td>14</td>
-        </tr>
-
-        <tr id="Foundation models of time series have not been fully developed due to the limited availability of time series corpora and the underexploration of scalable pre-training. Based on the similar sequential formulation of time series and natural language, increasing research demonstrates the feasibility of leveraging large language models (LLM) for time series. Nevertheless, the inherent autoregressive property and decoder-only architecture of LLMs have not been fully considered, resulting in insufficient utilization of LLM abilities. To further exploit the general-purpose token transition and multi-step generation ability of large language models, we propose AutoTimes to repurpose LLMs as autoregressive time series forecasters, which independently projects time series segments into the embedding space and autoregressively generates future predictions with arbitrary lengths. Compatible with any decoder-only LLMs, the consequent forecaster exhibits the flexibility of the lookback length and scalability of the LLM size. Further, we formulate time series as prompts, extending the context for prediction beyond the lookback window, termed in-context forecasting. By adopting textual timestamps as position embeddings, AutoTimes integrates multimodality for multivariate scenarios. Empirically, AutoTimes achieves state-of-the-art with 0.1% trainable parameters and over 5 times training/inference speedup compared to advanced LLM-based forecasters.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/d488445bb2bf6719bc48a4d39bd906116274abda" target='_blank'>AutoTimes: Autoregressive Time Series Forecasters via Large Language Models</a></td>
-          <td>
-            Yong Liu, Guo Qin, Xiangdong Huang, Jianmin Wang, Mingsheng Long
-          </td>
-          <td>2024-02-04</td>
-          <td>ArXiv</td>
-          <td>3</td>
-          <td>66</td>
         </tr>
 
   </tbody>

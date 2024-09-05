@@ -5,10 +5,14 @@
 
 <h1 align="center" style="border-bottom: none;">🔍 An automated literature survey tool</h1>
 
+<<<<<<< HEAD
 Welcome to [Team VPE](https://github.com/VirtualPatientEngine)'s Literature Survey Template Repository! 📚✨ This repository:
 1. Describes a quick setup to create your very own automated literature survey website using Semantic Scholar's [Recommendation API](https://api.semanticscholar.org/api-docs/recommendations).
 2. Offers an option to import the recommended articles to your [Zotero](https://www.zotero.org/) account.
 3. Runs itself automatically every Monday morning to fetch a new list of recommended articles.
+=======
+Welcome to Team VPE's Literature Survey Template Repository! 📚✨ This repository provides you with a quick setup to create your very own automated literature survey website using Semantic Scholar's [Recommendation API](https://api.semanticscholar.org/api-docs/recommendations), and provides an option to import the recommended articles to your [Zotero](https://www.zotero.org/) account.
+>>>>>>> main
 
 To know more about what Team VPE does, checkout our [GitHub page](https://github.com/VirtualPatientEngine), or even better, follow us by clicking the `Follow` button on our [GitHub page](https://github.com/VirtualPatientEngine)! 😊
 
@@ -110,6 +114,7 @@ Head over to the localhost link that pops up in your terminal.
 
 12. (Optional) Edit custom.css if you'd like to change the styling of web pages.
 
+<<<<<<< HEAD
 13. Commit your code:
 ```
 > git add .
@@ -129,6 +134,10 @@ If you find our literature survey tool helpful and enjoy using it, we'd really a
 
 ### 🔖 Zotero Plugin
 If you'd like to read the recommended articles in your own [Zotero](https://www.zotero.org/) Account:
+=======
+### Zotero Plugin
+If you'd like to read the recommended articles in your Zotero Account:
+>>>>>>> main
 1. Create an account with Zotero
 2. Under the `Settings` tab in your GitHub repo, click on `Secrets and variables`, and select `Actions`
 3. Set the following `Repository secrets`:
@@ -137,9 +146,13 @@ If you'd like to read the recommended articles in your own [Zotero](https://www.
     - `TEST_COLLECTION_KEY` as your collection's key (enter `https://api.zotero.org/groups/<LIBRARY_ID>/collections?key=<ZOTERO_API_KEY>` in your browser to view all the collections in your group; choose the key of the collection in which you'd like the recommended articles to be sotred)
 4. The changes take effect only when the code is re-run. This can happen either the next time the code is scheduled for a run (Mondays) or under the `Actions` tab, select `mkdocs-deploy` from the left panel, and click on `Run workflow`.
 
+<<<<<<< HEAD
 _❗ Please note that this tool will keep pushing new recommendations on a weekly basis to your Zotero account. You may have to clear out/empty the collection every week to avoid surplus of articles._
 
 ### 🐞 Bugs or Feature Requests
+=======
+### Bugs? Feature Requests?
+>>>>>>> main
 If you encounter any bugs or have brilliant ideas for new features, please head over to the [Issues](https://github.com/VirtualPatientEngine/literatureSurvey/issues) and let us know.
 
 ### 📖 Happy surveying!

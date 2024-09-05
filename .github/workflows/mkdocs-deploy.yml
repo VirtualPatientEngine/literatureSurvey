@@ -9,6 +9,10 @@ on:
   workflow_dispatch:  # Option to also manually trigger the workflow
 permissions:
   contents: write
+env:
+  LIBRARY_ID: ${{ secrets.LIBRARY_ID }}
+  ZOTERO_API_KEY: ${{ secrets.ZOTERO_API_KEY }}
+  TEST_COLLECTION_KEY: ${{ secrets.TEST_COLLECTION_KEY }}
 jobs:
   deploy:
     runs-on: ubuntu-latest
