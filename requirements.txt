@@ -8,7 +8,7 @@ charset-normalizer==3.3.2
 click==8.1.7
 colorama==0.4.6
 contourpy==1.2.0
-coverage==7.3.2
+coverage==7.6.1
 cycler==0.12.1
 dill==0.3.7
 exceptiongroup==1.2.0
