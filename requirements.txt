@@ -3,7 +3,7 @@ Babel==2.14.0
 beautifulsoup4==4.12.3
 bibtexparser==1.4.1
 blinker==1.6.3
-certifi==2024.7.4
+certifi==2024.8.30
 charset-normalizer==3.3.2
 click==8.1.7
 colorama==0.4.6
