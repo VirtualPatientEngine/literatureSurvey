@@ -1,0 +1,18 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
+version: 2
+updates:
+  - package-ecosystem: "pip" # Enter your package ecosystem
+    directory: "/" # Location of package manifests
+    schedule: # Check for updates
+      interval: "weekly"
+    commit-message: # Set the commit message preference to "chore"
+      prefix: "chore"
+    assignees: # Set the default assignee (just not Gurdeep!)
+      - "gurdeep330"
+    # Raise pull requests for version updates
+    # to pip against the `develop` branch
+    target-branch: "develop"
