@@ -34,23 +34,26 @@ Let's dive in and set up your own literature survey adventure!
 
 ### 🎨 Getting Started for Non Developers
 _Jump to the next section if you are a developer_
-1. Prepare a ```query.tsv``` file with 3 columns:
+
+1. Click on the ```Use this template``` button to create your own repository based on this template in your private account.
+
+2. Prepare a ```query.tsv``` file with 3 columns (see the sample ```app/data/query.tsv```):
     - Under the `Title` column, give titles to your topics. It is mandatory to define at least one topic.
     - Under the `Use` column, write <kbd>1</kbd> if you want to use the article for recommendations or <kbd>0</kbd> if you just want to display the article on the website without using it to generate recommendations.
     - Under the `URL` column, specify the corresponding URLs to [Semantic Scholar](https://www.semanticscholar.org/) articles. Only one line per artticle. You may assign more than articles to a topic.
 
-2. Navigate to the data folder in the repository by clicking ```app > data``` on the GitHub page.
+3. Navigate to the data folder in the repository by clicking ```app > data``` on the GitHub page.
 ![alt text](img/image.png)
 
-3. Click on the dropdown `Add file` followed by ```Upload files``` buttons.
+4. Click on the dropdown `Add file` followed by ```Upload files``` buttons.
 ![alt text](img/image-1.png)
 
-4. Upload the ```query.tsv``` file that you have prepared. Under the header ```Commit changes```, in the first field (_Add files via upload_), type ***feat: new query.tsv***, and press the blue-colored ```Commit changes``` button at the bottom of the page.
+5. Upload the ```query.tsv``` file that you have prepared. Under the header ```Commit changes```, in the first field (_Add files via upload_), type ***feat: new query.tsv***, and press the blue-colored ```Commit changes``` button at the bottom of the page.
 
-5. This will trigger a workflow to update the literature survey, and can take a few minutes. You should be able to see a brown-colored circle on your main GitHub page. This means that the workflow is still running. Once that goes away, your website is up and running.
+6. This will trigger a workflow to update the literature survey, and can take a few minutes. You should be able to see a brown-colored circle on your main GitHub page. This means that the workflow is still running. Once that goes away, your website is up and running.
 ![alt text](img/image-2.png).
 
-6. To view your website, click on the gear button (top-right) and a menu to edit your repository details will open up. Check the `Use your GitHub Pages website` checkbox to make your website appear in the `Website` field above. This the URL to your website. Bookmark the website or come back to your website's GitHub page in case you forget the URL.
+7. To view your website, click on the gear button (top-right) and a menu to edit your repository details will open up. Check the `Use your GitHub Pages website` checkbox to make your website appear in the `Website` field above. This the URL to your website. Bookmark the website or come back to your website's GitHub page in case you forget the URL.
 ![alt text](img/github_website.png)
 
 If you find our literature survey tool helpful and enjoy using it, we'd really appreciate it if you could give our repository a ⭐️! Your support helps us continue to improve and grow. Thank you! 😊
