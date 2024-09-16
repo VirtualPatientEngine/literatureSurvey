@@ -56,7 +56,7 @@ pytest==7.4.2
 pytest-cov==4.1.0
 python-dateutil==2.9.0.post0
 pytz==2024.1
-PyYAML==6.0.1
+PyYAML==6.0.2
 pyyaml_env_tag==0.1
 pyzotero==1.5.20
 regex==2023.12.25
