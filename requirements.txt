@@ -1,5 +1,5 @@
 astroid==3.0.0
-Babel==2.14.0
+Babel==2.16.0
 beautifulsoup4==4.12.3
 bibtexparser==1.4.1
 blinker==1.6.3
