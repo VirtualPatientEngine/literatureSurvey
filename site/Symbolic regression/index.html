@@ -451,7 +451,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-09-16 06:06:54 UTC</i>
+  <i class="footer">This page was last updated on 2024-09-23 06:05:57 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -516,7 +516,7 @@
           </td>
           <td>2015-09-11</td>
           <td>Proceedings of the National Academy of Sciences of the United States of America, Proceedings of the National Academy of Sciences</td>
-          <td>3270</td>
+          <td>3283</td>
           <td>65</td>
 
             <td><a href='../recommendations/5d150cec2775f9bc863760448f14104cc8f42368' target='_blank'>
@@ -536,7 +536,7 @@
           </td>
           <td>2021-02-24</td>
           <td>Nature Communications</td>
-          <td>87</td>
+          <td>88</td>
           <td>23</td>
 
             <td><a href='../recommendations/60d0d998fa038182b3b69a57adb9b2f82d40589c' target='_blank'>
@@ -556,7 +556,7 @@
           </td>
           <td>2019-03-29</td>
           <td>Proceedings of the National Academy of Sciences of the United States of America</td>
-          <td>620</td>
+          <td>621</td>
           <td>65</td>
 
             <td><a href='../recommendations/3c9961153493370500020c81527b3548c96f81e0' target='_blank'>
@@ -675,7 +675,7 @@
             Kadierdan Kaheman, E. Kaiser, B. Strom, J. Kutz, S. Brunton
           </td>
           <td>2019-09-18</td>
-          <td>ArXiv, arXiv.org</td>
+          <td>arXiv.org, ArXiv</td>
           <td>32</td>
           <td>65</td>
 
@@ -716,7 +716,7 @@
           </td>
           <td>2016-09-21</td>
           <td>Science Advances</td>
-          <td>1196</td>
+          <td>1197</td>
           <td>65</td>
 
             <td><a href='../recommendations/0acd117521ef5aafb09fed02ab415523b330b058' target='_blank'>
@@ -907,22 +907,7 @@
           <td>2024-09-10</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>1</td>
-        </tr>
-
-        <tr id="This paper presents a sequence of two approaches for the data-driven control-oriented modeling of networked systems, i.e., the systems that involve many interacting dynamical components. First, a novel deep learning approach named the weak Latent Dynamics Model (wLDM) is developed for learning generic nonlinear dynamics with control. Leveraging the weak form, the wLDM enables more numerically stable and computationally efficient training as well as more accurate prediction, when compared to conventional methods such as neural ordinary differential equations. Building upon the wLDM framework, we propose the weak Graph Koopman Bilinear Form (wGKBF) model, which integrates geometric deep learning and Koopman theory to learn latent space dynamics for networked systems, especially for the challenging cases having multiple timescales. The effectiveness of the wLDM framework and wGKBF model are demonstrated on three example systems of increasing complexity - a controlled double pendulum, the stiff Brusselator dynamics, and an electrified aircraft energy system. These numerical examples show that the wLDM and wGKBF achieve superior predictive accuracy and training efficiency as compared to baseline models. Parametric studies provide insights into the effects of hyperparameters in the weak form. The proposed framework shows the capability to efficiently capture control-dependent dynamics in these systems, including stiff dynamics and multi-physics interactions, offering a promising direction for learning control-oriented models of complex networked systems.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/c2168dc84b931e82498692c0f9277bed180e91df" target='_blank'>
-              Learning Networked Dynamical System Models with Weak Form and Graph Neural Networks
-              </a>
-            </td>
-          <td>
-            Yin Yu, Daning Huang, Seho Park, H. Pangborn
-          </td>
-          <td>2024-07-23</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>11</td>
+          <td>2</td>
         </tr>
 
         <tr id="This paper compared physics-informed neural network (PINN), conventional neural network (NN) and traditional numerical discretization methods on solving differential equations (DEs) through literature investigation and experimental validation. We focused on the soft-constrained PINN approach and formalized its mathematical framework and computational flow for solving Ordinary DEs and Partial DEs (ODEs/PDEs). The working mechanism and its accuracy and efficiency were experimentally verified by solving typical linear and non-linear oscillator ODEs. We demonstrate that the DeepXDE-based implementation of PINN is not only light code and efficient in training, but also flexible across CPU/GPU platforms. PINN greatly reduces the need for labeled data: when the nonlinearity of the ODE is weak, a very small amount of supervised training data plus a few unsupervised collocation points are sufficient to predict the solution; in the minimalist case, only one or two training points (with initial values) are needed for first- or second-order ODEs, respectively. We also find that, with the aid of collocation points and the use of physical information, PINN has the ability to extrapolate data outside the time domain of the training set, and especially is robust to noisy data, thus with enhanced generalization capabilities. Training is accelerated when the gains obtained along with the reduction in the amount of data outweigh the delay caused by the increase in the loss function terms. The soft-constrained PINN can easily impose a physical law (e.g., conservation of energy) constraint by adding a regularization term to the total loss function, thus improving the solution performance to ODEs that obey this physical law. Furthermore, PINN can also be used for stiff ODEs, PDEs, and other types of DEs, and is becoming a favorable catalyst for the era of Digital Twins.">
@@ -951,23 +936,8 @@
           </td>
           <td>2024-08-29</td>
           <td>ArXiv</td>
-          <td>0</td>
+          <td>1</td>
           <td>19</td>
-        </tr>
-
-        <tr id="Machine learning techniques have recently been of great interest for solving differential equations. Training these models is classically a data-fitting task, but knowledge of the expression of the differential equation can be used to supplement the training objective, leading to the development of physics-informed scientific machine learning. In this article, we focus on one class of models called nonlinear vector autoregression (NVAR) to solve ordinary differential equations (ODEs). Motivated by connections to numerical integration and physics-informed neural networks, we explicitly derive the physics-informed NVAR (piNVAR) which enforces the right-hand side of the underlying differential equation regardless of NVAR construction. Because NVAR and piNVAR completely share their learned parameters, we propose an augmented procedure to jointly train the two models. Then, using both data-driven and ODE-driven metrics, we evaluate the ability of the piNVAR model to predict solutions to various ODE systems, such as the undamped spring, a Lotka-Volterra predator-prey nonlinear model, and the chaotic Lorenz system.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/59096640a40ed6b70acbbfdaca5a505cd1330bb4" target='_blank'>
-              Physics-informed nonlinear vector autoregressive models for the prediction of dynamical systems
-              </a>
-            </td>
-          <td>
-            James H. Adler, Samuel Hocking, Xiaozhe Hu, Shafiqul Islam
-          </td>
-          <td>2024-07-25</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>2</td>
         </tr>
 
         <tr id="We propose a novel learning framework for Koopman operator of nonlinear dynamical systems that is informed by the governing equation and guarantees long-time stability and robustness to noise. In contrast to existing frameworks where either ad-hoc observables or blackbox neural networks are used to construct observables in the extended dynamic mode decomposition (EDMD), our observables are informed by governing equations via Polyflow. To improve the noise robustness and guarantee long-term stability, we designed a stable parameterization of the Koopman operator together with a progressive learning strategy for roll-out recurrent loss. To further improve model performance in the phase space, a simple iterative strategy of data augmentation was developed. Numerical experiments of prediction and control of classic nonlinear systems with ablation study showed the effectiveness of the proposed techniques over several state-of-the-art practices.">
@@ -1028,21 +998,6 @@
           <td>ArXiv</td>
           <td>0</td>
           <td>47</td>
-        </tr>
-
-        <tr id="Koopman operator theory offers a rigorous treatment of dynamics and has been emerging as a powerful modeling and learning-based control method enabling significant advancements across various domains of robotics. Due to its ability to represent nonlinear dynamics as a linear operator, Koopman theory offers a fresh lens through which to understand and tackle the modeling and control of complex robotic systems. Moreover, it enables incremental updates and is computationally inexpensive making it particularly appealing for real-time applications and online active learning. This review comprehensively presents recent research results on advancing Koopman operator theory across diverse domains of robotics, encompassing aerial, legged, wheeled, underwater, soft, and manipulator robotics. Furthermore, it offers practical tutorials to help new users get started as well as a treatise of more advanced topics leading to an outlook on future directions and open research questions. Taken together, these provide insights into the potential evolution of Koopman theory as applied to the field of robotics.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/14f58618f049522401ec48897f882dcc38849d2b" target='_blank'>
-              Koopman Operators in Robot Learning
-              </a>
-            </td>
-          <td>
-            Lu Shi, Masih Haseli, Giorgos Mamakoukas, Daniel Bruder, Ian Abraham, Todd Murphey, Jorge Cortes, Konstantinos Karydis
-          </td>
-          <td>2024-08-08</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>9</td>
         </tr>
 
         <tr id="This paper presents a probabilistic approach to represent and quantify model-form uncertainties in the reduced-order modeling of complex systems using operator inference techniques. Such uncertainties can arise in the selection of an appropriate state-space representation, in the projection step that underlies many reduced-order modeling methods, or as a byproduct of considerations made during training, to name a few. Following previous works in the literature, the proposed method captures these uncertainties by expanding the approximation space through the randomization of the projection matrix. This is achieved by combining Riemannian projection and retraction operators - acting on a subset of the Stiefel manifold - with an information-theoretic formulation. The efficacy of the approach is assessed on canonical problems in fluid mechanics by identifying and quantifying the impact of model-form uncertainties on the inferred operators.">
@@ -1120,6 +1075,36 @@
           <td>0</td>
         </tr>
 
+        <tr id="Modeling and controlling complex spatiotemporal dynamical systems driven by partial differential equations (PDEs) often necessitate dimensionality reduction techniques to construct lower-order models for computational efficiency. This paper explores a deep autoencoding learning method for reduced-order modeling and control of dynamical systems governed by spatiotemporal PDEs. We first analytically show that an optimization objective for learning a linear autoencoding reduced-order model can be formulated to yield a solution closely resembling the result obtained through the dynamic mode decomposition with control algorithm. We then extend this linear autoencoding architecture to a deep autoencoding framework, enabling the development of a nonlinear reduced-order model. Furthermore, we leverage the learned reduced-order model to design controllers using stability-constrained deep neural networks. Numerical experiments are presented to validate the efficacy of our approach in both modeling and control using the example of a reaction-diffusion system.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/550297187ed813182eac5e6799e3f82cf376e9dc" target='_blank'>
+              Bridging Autoencoders and Dynamic Mode Decomposition for Reduced-order Modeling and Control of PDEs
+              </a>
+            </td>
+          <td>
+            Priyabrata Saha, Saibal Mukhopadhyay
+          </td>
+          <td>2024-09-09</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>7</td>
+        </tr>
+
+        <tr id="The celebrated Takens' embedding theorem provides a theoretical foundation for reconstructing the full state of a dynamical system from partial observations. However, the classical theorem assumes that the underlying system is deterministic and that observations are noise-free, limiting its applicability in real-world scenarios. Motivated by these limitations, we rigorously establish a measure-theoretic generalization that adopts an Eulerian description of the dynamics and recasts the embedding as a pushforward map between probability spaces. Our mathematical results leverage recent advances in optimal transportation theory. Building on our novel measure-theoretic time-delay embedding theory, we have developed a new computational framework that forecasts the full state of a dynamical system from time-lagged partial observations, engineered with better robustness to handle sparse and noisy data. We showcase the efficacy and versatility of our approach through several numerical examples, ranging from the classic Lorenz-63 system to large-scale, real-world applications such as NOAA sea surface temperature forecasting and ERA5 wind field reconstruction.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/005c02e2fb7a7bc5cbe28f120e73daaf0c9f2dcc" target='_blank'>
+              Measure-Theoretic Time-Delay Embedding
+              </a>
+            </td>
+          <td>
+            Jonah Botvinick-Greenhouse, Maria Oprea, R. Maulik, Yunan Yang
+          </td>
+          <td>2024-09-13</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>22</td>
+        </tr>
+
         <tr id="Conventional physics-based modeling techniques involve high effort, e.g., time and expert knowledge, while data-driven methods often lack interpretability, structure, and sometimes reliability. To mitigate this, we present a data-driven system identification framework that derives models in the port-Hamiltonian (pH) formulation. This formulation is suitable for multi-physical systems while guaranteeing the useful system theoretical properties of passivity and stability. Our framework combines linear and nonlinear reduction with structured, physics-motivated system identification. In this process, high-dimensional state data obtained from possibly nonlinear systems serves as input for an autoencoder, which then performs two tasks: (i) nonlinearly transforming and (ii) reducing this data onto a low-dimensional latent space. In this space, a linear pH system, that satisfies the pH properties per construction, is parameterized by the weights of a neural network. The mathematical requirements are met by defining the pH matrices through Cholesky factorizations. The neural networks that define the coordinate transformation and the pH system are identified in a joint optimization process to match the dynamics observed in the data while defining a linear pH system in the latent space. The learned, low-dimensional pH system can describe even nonlinear systems and is rapidly computable due to its small size. The method is exemplified by a parametric mass-spring-damper and a nonlinear pendulum example, as well as the high-dimensional model of a disc brake with linear thermoelastic behavior.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/8c88f9ec4b5bd522ac8e312f90d2801489785951" target='_blank'>
@@ -1146,7 +1131,7 @@
           </td>
           <td>2024-08-06</td>
           <td>ArXiv</td>
-          <td>1</td>
+          <td>2</td>
           <td>2</td>
         </tr>
 
@@ -1165,6 +1150,21 @@
           <td>4</td>
         </tr>
 
+        <tr id="Unstable periodic orbits (UPOs) are believed to be the underlying dynamical structures of spatio-temporal chaos and turbulence. Finding these UPOs is however notoriously difficult. Matrix-free loop convergence algorithms deform entire space-time fields (loops) until they satisfy the evolution equations. Initial guesses for these robust variational convergence algorithms are thus periodic space-time fields in a high-dimensional state space, rendering their generation highly challenging. Usually guesses are generated with recurrency methods, which are most suited to shorter and more stable periodic orbits. Here we propose an alternative, data-driven method for generating initial guesses: while the dimension of the space used to discretize fluid flows is prohibitively large to construct suitable initial guesses, the dissipative dynamics will collapse onto a chaotic attractor of far lower dimension. We use an autoencoder to obtain a low-dimensional representation of the discretized physical space for the one-dimensional Kuramoto-Sivashinksy equation, in chaotic and hyperchaotic regimes. In this low-dimensional latent space, we construct loops based on the latent POD modes with random periodic coefficients, which are then decoded to physical space and used as initial guesses. These loops are found to be realistic initial guesses and, together with variational convergence algorithms, these guesses help us to quickly converge to UPOs. We further attempt to 'glue' known UPOs in the latent space to create guesses for longer ones. This gluing procedure is successful and points towards a hierarchy of UPOs where longer UPOs shadow sequences of shorter ones.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/f0f41a62e72902ad312a07f6c822ec404caf21b6" target='_blank'>
+              Machine-aided guessing and gluing of unstable periodic orbits
+              </a>
+            </td>
+          <td>
+            Pierre Beck, Jeremy P. Parker, Tobias M. Schneider
+          </td>
+          <td>2024-09-04</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+
         <tr id="In this paper, we discuss the learning and discovery problem for the dynamical systems described through stable evolutionary Partial Differential Equations (PDEs). The main idea is to employ a suitable learning approach for creating a map from boundary conditions to the corresponding output. More precisely, in order to accurately uncover the evolutionary PDE dynamics, we propose a scheme that employs large-scale system identification to construct such a map using sufficiently informative measurements. Accordingly, we first develop a scalable implementation for the subspace identification method, enforcing stability on the identified system. To this end, numerical optimization techniques such as coordinate descent, randomized singular value decomposition, and large-scale semidefinite programming are employed. The performance and complexity of the resulting scheme are discussed and demonstrated through numerical experiments on generic identification examples. Following this, we validate the effectiveness of the proposed approach on an example of a stable evolutionary partial differential equation. The numerical results confirm the efficacy of the proposed learning scheme.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/ad724feeadb174c02ab117fb1485d96872be3d31" target='_blank'>
@@ -1176,6 +1176,21 @@
           </td>
           <td>2024-08-21</td>
           <td>2024 IEEE Conference on Control Technology and Applications (CCTA)</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+
+        <tr id="Many important physical systems can be described as the evolution of a Hamiltonian system, which has the important property of being conservative, that is, energy is conserved throughout the evolution. Physics Informed Neural Networks and in particular Hamiltonian Neural Networks have emerged as a mechanism to incorporate structural inductive bias into the NN model. By ensuring physical invariances are conserved, the models exhibit significantly better sample complexity and out-of-distribution accuracy than standard NNs. Learning the Hamiltonian as a function of its canonical variables, typically position and velocity, from sample observations of the system thus becomes a critical task in system identification and long-term prediction of system behavior. However, to truly preserve the long-run physical conservation properties of Hamiltonian systems, one must use symplectic integrators for a forward pass of the system's simulation. While symplectic schemes have been used in the literature, they are thus far limited to situations when they reduce to explicit algorithms, which include the case of separable Hamiltonians or augmented non-separable Hamiltonians. We extend it to generalized non-separable Hamiltonians, and noting the self-adjoint property of symplectic integrators, we bypass computationally intensive backpropagation through an ODE solver. We show that the method is robust to noise and provides a good approximation of the system Hamiltonian when the state variables are sampled from a noisy observation. In the numerical results, we show the performance of the method concerning Hamiltonian reconstruction and conservation, indicating its particular advantage for non-separable systems.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/e92316bb21fc0f2dba7399ed2b4dceedd3feac93" target='_blank'>
+              Learning Generalized Hamiltonians using fully Symplectic Mappings
+              </a>
+            </td>
+          <td>
+            Harsh Choudhary, Chandan Gupta, Vyacheslav kungrutsev, Melvin Leok, Georgios Korpas
+          </td>
+          <td>2024-09-17</td>
+          <td>ArXiv</td>
           <td>0</td>
           <td>0</td>
         </tr>
@@ -1192,7 +1207,7 @@
           <td>2024-09-09</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>0</td>
+          <td>1</td>
         </tr>
 
         <tr id="Fitting models to data to obtain distributions of consistent parameter values is important for uncertainty quantification, model comparison, and prediction. Standard Markov Chain Monte Carlo (MCMC) approaches for fitting ordinary differential equations (ODEs) to time-series data involve proposing trial parameter sets, numerically integrating the ODEs forward in time, and accepting or rejecting the trial parameter sets. When the model dynamics depend nonlinearly on the parameters, as is generally the case, trial parameter sets are often rejected, and MCMC approaches become prohibitively computationally costly to converge. Here, we build on methods for numerical continuation and trajectory optimization to introduce an approach in which we use Langevin dynamics in the joint space of variables and parameters to sample models that satisfy constraints on the dynamics. We demonstrate the method by sampling Hopf bifurcations and limit cycles of a model of a biochemical oscillator in a Bayesian framework for parameter estimation, and we obtain more than a hundred fold speedup relative to a leading ensemble MCMC approach that requires numerically integrating the ODEs forward in time. We describe numerical experiments that provide insight into the speedup. The method is general and can be used in any framework for parameter estimation and model selection.">
@@ -1210,19 +1225,34 @@
           <td>20</td>
         </tr>
 
-        <tr id="Understanding how the collective activity of neural populations relates to computation and ultimately behavior is a key goal in neuroscience. To this end, statistical methods which describe high-dimensional neural time series in terms of low-dimensional latent dynamics have played a fundamental role in characterizing neural systems. Yet, what constitutes a successful method involves two opposing criteria: (1) methods should be expressive enough to capture complex nonlinear dynamics, and (2) they should maintain a notion of interpretability often only warranted by simpler linear models. In this paper, we develop an approach that balances these two objectives: the Gaussian Process Switching Linear Dynamical System (gpSLDS). Our method builds on previous work modeling the latent state evolution via a stochastic differential equation whose nonlinear dynamics are described by a Gaussian process (GP-SDEs). We propose a novel kernel function which enforces smoothly interpolated locally linear dynamics, and therefore expresses flexible -- yet interpretable -- dynamics akin to those of recurrent switching linear dynamical systems (rSLDS). Our approach resolves key limitations of the rSLDS such as artifactual oscillations in dynamics near discrete state boundaries, while also providing posterior uncertainty estimates of the dynamics. To fit our models, we leverage a modified learning objective which improves the estimation accuracy of kernel hyperparameters compared to previous GP-SDE fitting approaches. We apply our method to synthetic data and data recorded in two neuroscience experiments and demonstrate favorable performance in comparison to the rSLDS.">
+        <tr id="Soft robots have many advantages over rigid robots thanks to their compliant and passive nature. However, it is generally challenging to model the dynamics of soft robots due to their high spatial dimensionality, making it difficult to use model-based methods to accurately control soft robots. It often requires direct numerical simulation of partial differential equations to simulate soft robots. This not only requires an accurate numerical model, but also makes soft robot modeling slow and expensive. Deep learning algorithms have shown promises in data-driven modeling of soft robots. However, these algorithms usually require a large amount of data, which are difficult to obtain in either simulation or real-world experiments of soft robots. In this work, we propose KNODE-Cosserat, a framework that combines first-principle physics models and neural ordinary differential equations. We leverage the best from both worlds -- the generalization ability of physics-based models and the fast speed of deep learning methods. We validate our framework in both simulation and real-world experiments. In both cases, we show that the robot model significantly improves over the baseline models under different metrics.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/b38dffa6030cac42cce7564c8fe38875646c5f4f" target='_blank'>
-              Modeling Latent Neural Dynamics with Gaussian Process Switching Linear Dynamical Systems
+          <td><a href="https://www.semanticscholar.org/paper/0b7cbd201b9d22d115f97d732f4f9015bbe4be4e" target='_blank'>
+              Knowledge-based Neural Ordinary Differential Equations for Cosserat Rod-based Soft Robots
               </a>
             </td>
           <td>
-            Amber Hu, D. Zoltowski, Aditya Nair, David Anderson, Lea Duncker, Scott W. Linderman
+            Tom Z. Jiahao, Ryan Adolf, Cynthia Sung, M. A. Hsieh
           </td>
-          <td>2024-07-19</td>
+          <td>2024-08-14</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>27</td>
+          <td>5</td>
+        </tr>
+
+        <tr id="A framework for deriving probabilistic data-driven closure models is proposed for coarse-grained numerical simulations of turbulence in statistically stationary state. The approach unites the ideal large-eddy simulation model and data assimilation methods. The method requires a posteriori measured data to define stochastic flow perturbations, which are combined with a Bayesian statistical correction enforcing user-specified statistics extracted from high-fidelity flow snapshots. Thus, it enables computationally cheap ensemble simulations by combining knowledge of the local integration error and knowledge of desired flow statistics. A model example is given for two-dimensional Rayleigh-B\'enard convection at Rayleigh number $\mathit{Ra}=10^{10}$, incorporating stochastic perturbations and an ensemble Kalman filtering step in a non-intrusive way. Physical flow dynamics are obtained, whilst kinetic energy spectra and heat flux are accurately reproduced in long-time ensemble forecasts on coarse grids. The model is shown to produce accurate results with as few as 20 high-fidelity flow snapshots as input data.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/cda27069136b8c8c44626747e087d636e5c2f840" target='_blank'>
+              Probabilistic data-driven turbulence closure modeling by assimilating statistics
+              </a>
+            </td>
+          <td>
+            Sagy R. Ephrati
+          </td>
+          <td>2024-08-27</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>4</td>
         </tr>
 
         <tr id="Forecasting dynamical systems is of importance to numerous real-world applications. When possible, dynamical systems forecasts are constructed based on first-principles-based models such as through the use of differential equations. When these equations are unknown, non-intrusive techniques must be utilized to build predictive models from data alone. Machine learning (ML) methods have recently been used for such tasks. Moreover, ML methods provide the added advantage of significant reductions in time-to-solution for predictions in contrast with first-principle based models. However, many state-of-the-art ML-based methods for forecasting rely on neural networks, which may be expensive to train and necessitate requirements for large amounts of memory. In this work, we propose a quantum mechanics inspired ML modeling strategy for learning nonlinear dynamical systems that provides data-driven forecasts for complex dynamical systems with reduced training time and memory costs. This approach, denoted the quantum reservoir computing technique (QRC), is a hybrid quantum-classical framework employing an ensemble of interconnected small quantum systems via classical linear feedback connections. By mapping the dynamical state to a suitable quantum representation amenable to unitary operations, QRC is able to predict complex nonlinear dynamical systems in a stable and accurate manner. We demonstrate the efficacy of this framework through benchmark forecasts of the NOAA Optimal Interpolation Sea Surface Temperature dataset and compare the performance of QRC to other ML methods.">
@@ -1390,21 +1420,6 @@
           <td>0</td>
         </tr>
 
-        <tr id="This paper introduces a novel methodology for solving distributed-order fractional differential equations using a physics-informed machine learning framework. The core of this approach involves extending the support vector regression (SVR) algorithm to approximate the unknown solutions of the governing equations during the training phase. By embedding the distributed-order functional equation into the SVR framework, we incorporate physical laws directly into the learning process. To further enhance computational efficiency, Gegenbauer orthogonal polynomials are employed as the kernel function, capitalizing on their fractional differentiation properties to streamline the problem formulation. Finally, the resulting optimization problem of SVR is addressed either as a quadratic programming problem or as a positive definite system in its dual form. The effectiveness of the proposed approach is validated through a series of numerical experiments on Caputo-based distributed-order fractional differential equations, encompassing both ordinary and partial derivatives.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/678e571496c32c6339a102d96524511b6072448e" target='_blank'>
-              A Physics-Informed Machine Learning Approach for Solving Distributed Order Fractional Differential Equations
-              </a>
-            </td>
-          <td>
-            A. Aghaei
-          </td>
-          <td>2024-09-05</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>5</td>
-        </tr>
-
         <tr id="The modeling of dynamical systems is a pervasive concern for not only describing but also predicting and controlling natural phenomena and engineered systems. Current data-driven approaches often assume prior knowledge of the relevant state variables or result in overparameterized state spaces. Boyuan Chen and his co-authors proposed a neural network model that estimates the degrees of freedom and attempts to discover the state variables of a dynamical system. Despite its innovative approach, this baseline model lacks a connection to the physical principles governing the systems it analyzes, leading to unreliable state variables. This research proposes a method that leverages the physical characteristics of second-order Hamiltonian systems to constrain the baseline model. The proposed model outperforms the baseline model in identifying a minimal set of non-redundant and interpretable state variables.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/ddabca2c86de837436088e84f6e03ca06d2c3870" target='_blank'>
@@ -1418,21 +1433,6 @@
           <td>ArXiv</td>
           <td>0</td>
           <td>3</td>
-        </tr>
-
-        <tr id="Lifted linear predictor (LLP) is an artificial linear dynamical system designed to predict trajectories of a generally nonlinear dynamical system based on the current state (or measurements) and the input. The main benefit of the LLP is its potential ability to capture the nonlinear system's dynamics with precision superior to other linearization techniques, such as local linearization about the operation point. The idea of lifting is supported by the theory of Koopman Operators. For LLP identification, we focus on the data-driven method based on the extended dynamic mode decomposition (EDMD) algorithm. However, while the EDMD algorithm presents an extremely simple and efficient way to obtain the LLP, it can also yield poor results. In this paper, we present some less intuitive practical guidelines for data-driven identification of the LLPs, aiming at improving usability of LLPs for designing control. We support the guidelines with two motivating examples. The implementation of the examples are shared on a public repository.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/bf1ce9a8c8346f1264e7cecb5aea44d98aa65af7" target='_blank'>
-              Practical Guidelines for Data-driven Identification of Lifted Linear Predictors for Control
-              </a>
-            </td>
-          <td>
-            Loi Do, Adam Uchytil, Zdenvek Hur'ak
-          </td>
-          <td>2024-08-02</td>
-          <td>ArXiv</td>
-          <td>1</td>
-          <td>2</td>
         </tr>
 
         <tr id="In many practical scenarios, the dynamical system is not available and standard data assimilation methods are not applicable. Our objective is to construct a data-driven model for state estimation without the underlying dynamics. Instead of directly modeling the observation operator with noisy observation, we establish the state space model of the denoised observation. Through data assimilation techniques, the denoised observation information could be used to recover the original model state. Takens' theorem shows that an embedding of the partial and denoised observation is diffeomorphic to the attractor. This gives a theoretical base for estimating the model state using the reconstruction map. To realize the idea, the procedure consists of offline stage and online stage. In the offline stage, we construct the surrogate dynamics using dynamic mode decomposition with noisy snapshots to learn the transition operator for the denoised observation. The filtering distribution of the denoised observation can be estimated using adaptive ensemble Kalman filter, without knowledge of the model error and observation noise covariances. Then the reconstruction map can be established using the posterior mean of the embedding and its corresponding state. In the online stage, the observation is filtered with the surrogate dynamics. Then the online state estimation can be performed utilizing the reconstruction map and the filtered observation. Furthermore, the idea can be generalized to the nonparametric framework with nonparametric time series prediction methods for chaotic problems. The numerical results show the proposed method can estimate the state distribution without the physical dynamical system.">
@@ -1510,6 +1510,21 @@
           <td>1</td>
         </tr>
 
+        <tr id="This work builds off the manifold-constrained Gaussian process inference (MAGI) method for Bayesian parameter inference and trajectory reconstruction of ODE-based dynamical systems, focusing primarily on sparse and noisy data conditions. First, we introduce Pilot MAGI (pMAGI), a novel methodological upgrade on the base MAGI method that confers significantly-improved numerical stability, parameter inference, and trajectory reconstruction. Second, we demonstrate, for the first time to our knowledge, how one can combine MAGI-based methods with dynamical systems theory to provide probabilistic classifications of whether a system is stable or chaotic. Third, we demonstrate how pMAGI performs favorably in many settings against much more computationally-expensive and overparameterized methods. Fourth, we introduce Pilot MAGI Sequential Prediction (PMSP), a novel method building upon pMAGI that allows one to predict the trajectory of ODE-based dynamical systems multiple time steps into the future, given only sparse and noisy observations. We show that PMSP can output accurate future predictions even on chaotic dynamical systems and significantly outperform PINN-based methods. Overall, we contribute to the literature two novel methods, pMAGI and PMSP, that serve as Bayesian, uncertainty-quantified competitors to the Physics-Informed Neural Network.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/dddfbbe5f065cec496b9ae71ef35638fe5cd439f" target='_blank'>
+              Extracting Signal out of Chaos: Advancements on MAGI for Bayesian Analysis of Dynamical Systems
+              </a>
+            </td>
+          <td>
+            Skyler Wu
+          </td>
+          <td>2024-08-20</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+
     </tbody>
     <tfoot>
       <tr>
@@ -1540,7 +1555,7 @@
 
   var trace1 = {
     x: ['2024'],
-    y: [3],
+    y: [4],
     name: 'Num of citations',
     yaxis: 'y1',
     type: 'scatter'

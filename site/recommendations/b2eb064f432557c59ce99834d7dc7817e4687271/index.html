@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-09-16 06:06:39 UTC</i>
+  <i class="footer">This page was last updated on 2024-09-23 06:05:37 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -475,6 +475,18 @@
     </tr>
   </thead>
   <tbody>
+
+        <tr id="Many dynamical systems of interest are nonlinear, with examples in turbulence, epidemiology, neuroscience, and finance, making them difficult to control using linear approaches. Model predictive control (MPC) is a powerful model-based optimization technique that enables the control of such nonlinear systems with constraints. However, modern systems often lack computationally tractable models, motivating the use of system identification techniques to learn accurate and efficient models for real-time control. In this tutorial article, we review emerging data-driven methods for model discovery and how they are used for nonlinear MPC. In particular, we focus on the sparse identification of nonlinear dynamics (SINDy) algorithm and show how it may be used with MPC on an infectious disease control example. We compare the performance against MPC based on a linear dynamic mode decomposition (DMD) model. Code is provided to run the tutorial examples and may be modified to extend this data-driven control framework to arbitrary nonlinear systems.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/700552dde778bd1f6b76f7237e9b561597b859ba" target='_blank'>SINDy with Control: A Tutorial</a></td>
+          <td>
+            Urban Fasel, E. Kaiser, J. Kutz, Bingni W. Brunton, S. Brunton
+          </td>
+          <td>2021-08-30</td>
+          <td>2021 60th IEEE Conference on Decision and Control (CDC)</td>
+          <td>50</td>
+          <td>65</td>
+        </tr>
 
         <tr id="In this work we analyze the effectiveness of the Sparse Identification of Nonlinear Dynamics (SINDy) technique on three benchmark datasets for nonlinear identification, to provide a better understanding of its suitability when tackling real dynamical systems. While SINDy can be an appealing strategy for pursuing physics-based learning, our analysis highlights difficulties in dealing with unobserved states and non-smooth dynamics. Due to the ubiquity of these features in real systems in general, and control applications in particular, we complement our analysis with hands-on approaches to tackle these issues in order to exploit SINDy also in these challenging contexts.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
@@ -524,6 +536,30 @@
           <td>1</td>
         </tr>
 
+        <tr id="The sparse identification of nonlinear dynamics (SINDy) has been established as an effective technique to produce interpretable models of dynamical systems from time-resolved state data via sparse regression. However, to model parameterized systems, SINDy requires data from transient trajectories for various parameter values over the range of interest, which are typically difficult to acquire experimentally. In this work, we extend SINDy to be able to leverage data on fixed points and/or limit cycles to reduce the number of transient trajectories needed for successful system identification. To achieve this, we incorporate the data on these attractors at various parameter values as constraints in the optimization problem. First, we show that enforcing these as hard constraints leads to an ill-conditioned regression problem due to the large number of constraints. Instead, we implement soft constraints by modifying the cost function to be minimized. This leads to the formulation of a multi-objective sparse regression problem where we simultaneously seek to minimize the error of the fit to the transients trajectories and to the data on attractors, while penalizing the number of terms in the model. Our extension, demonstrated on several numerical examples, is more robust to noisy measurements and requires substantially less training data than the original SINDy method to correctly identify a parameterized dynamical system.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/0c03c126b4d641a81099470f03a7d5215a2a6820" target='_blank'>Multi-objective SINDy for parameterized model discovery from single transient trajectory data</a></td>
+          <td>
+            Javier A. Lemus, Benjamin Herrmann
+          </td>
+          <td>2024-05-14</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+
+        <tr id="Significance Understanding dynamic constraints and balances in nature has facilitated rapid development of knowledge and enabled technology, including aircraft, combustion engines, satellites, and electrical power. This work develops a novel framework to discover governing equations underlying a dynamical system simply from data measurements, leveraging advances in sparsity techniques and machine learning. The resulting models are parsimonious, balancing model complexity with descriptive ability while avoiding overfitting. There are many critical data-driven problems, such as understanding cognition from neural recordings, inferring climate patterns, determining stability of financial markets, predicting and suppressing the spread of disease, and controlling turbulence for greener transportation and energy. With abundant data and elusive laws, data-driven discovery of dynamics will continue to play an important role in these efforts. Extracting governing equations from data is a central challenge in many diverse areas of science and engineering. Data are abundant whereas models often remain elusive, as in climate science, neuroscience, ecology, finance, and epidemiology, to name only a few examples. In this work, we combine sparsity-promoting techniques and machine learning with nonlinear dynamical systems to discover governing equations from noisy measurement data. The only assumption about the structure of the model is that there are only a few important terms that govern the dynamics, so that the equations are sparse in the space of possible functions; this assumption holds for many physical systems in an appropriate basis. In particular, we use sparse regression to determine the fewest terms in the dynamic governing equations required to accurately represent the data. This results in parsimonious models that balance accuracy with model complexity to avoid overfitting. We demonstrate the algorithm on a wide range of problems, from simple canonical systems, including linear and nonlinear oscillators and the chaotic Lorenz system, to the fluid vortex shedding behind an obstacle. The fluid example illustrates the ability of this method to discover the underlying dynamics of a system that took experts in the community nearly 30 years to resolve. We also show that this method generalizes to parameterized systems and systems that are time-varying or have external forcing.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/5d150cec2775f9bc863760448f14104cc8f42368" target='_blank'>Discovering governing equations from data by sparse identification of nonlinear dynamical systems</a></td>
+          <td>
+            S. Brunton, J. Proctor, J. Kutz
+          </td>
+          <td>2015-09-11</td>
+          <td>Proceedings of the National Academy of Sciences</td>
+          <td>3283</td>
+          <td>65</td>
+        </tr>
+
         <tr id="Automated data-driven modeling, the process of directly discovering the governing equations of a system from data, is increasingly being used across the scientific community. PySINDy is a Python package that provides tools for applying the sparse identification of nonlinear dynamics (SINDy) approach to data-driven model discovery. In this major update to PySINDy, we implement several advanced features that enable the discovery of more general differential equations from noisy and limited data. The library of candidate terms is extended for the identification of actuated systems, partial differential equations (PDEs), and implicit differential equations. Robust formulations, including the integral form of SINDy and ensembling techniques, are also implemented to improve performance for real-world data. Finally, we provide a range of new optimization algorithms, including several sparse regression techniques and algorithms to enforce and promote inequality constraints and stability. Together, these updates enable entirely new SINDy model discovery capabilities that have not been reported in the literature, such as constrained PDE identification and ensembling with different sparse regression optimizers.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/433ba35ced5d3f47fa2688c81a60363a74193449" target='_blank'>PySINDy: A comprehensive Python package for robust sparse system identification</a></td>
@@ -532,8 +568,20 @@
           </td>
           <td>2021-11-12</td>
           <td>J. Open Source Softw.</td>
-          <td>112</td>
+          <td>113</td>
           <td>65</td>
+        </tr>
+
+        <tr id="We develop a principled mathematical framework for controlling nonlinear, networked dynamical systems. Our method integrates dimensionality reduction, bifurcation theory, and emerging model discovery tools to find low-dimensional subspaces where feed-forward control can be used to manipulate a system to a desired outcome. The method leverages the fact that many high-dimensional networked systems have many fixed points, allowing for the computation of control signals that will move the system between any pair of fixed points. The sparse identification of nonlinear dynamics (SINDy) algorithm is used to fit a nonlinear dynamical system to the evolution on the dominant, low-rank subspace. This then allows us to use bifurcation theory to find collections of constant control signals that will produce the desired objective path for a prescribed outcome. Specifically, we can destabilize a given fixed point while making the target fixed point an attractor. The discovered control signals can be easily projected back to the original high-dimensional state and control space. We illustrate our nonlinear control procedure on established bistable, low-dimensional biological systems, showing how control signals are found that generate switches between the fixed points. We then demonstrate our control procedure for high-dimensional systems on random high-dimensional networks and Hopfield memory networks.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/4b849d45b437a09d1ea5321a304c5bc411bf3de4" target='_blank'>Nonlinear Control of Networked Dynamical Systems</a></td>
+          <td>
+            Megan Morrison, Nathan Kutz
+          </td>
+          <td>2020-06-09</td>
+          <td>IEEE Transactions on Network Science and Engineering</td>
+          <td>10</td>
+          <td>5</td>
         </tr>
 
         <tr id="None">
@@ -546,42 +594,6 @@
           <td>Communications Physics</td>
           <td>17</td>
           <td>94</td>
-        </tr>
-
-        <tr id="Authors of papers retaincopyright and release the workunder a Creative CommonsAttribution 4.0 InternationalLicense (CC-BY)">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/85d5e9aea7235bf6aa67d5febc4013923a77d4de" target='_blank'>PySINDy: A Python package for the sparse identification of nonlinear dynamical systems from data</a></td>
-          <td>
-            Brian M. de Silva, Kathleen P. Champion, M. Quade, Jean-Christophe Loiseau, J. Kutz, S. Brunton
-          </td>
-          <td>2020-05-18</td>
-          <td>J. Open Source Softw.</td>
-          <td>129</td>
-          <td>65</td>
-        </tr>
-
-        <tr id="The vast majority of systems of practical interest are characterised by nonlinear dynamics. This renders the control and optimization of such systems a complex task due to their nonlinear behaviour. Additionally, standard methods such as linearizing around a fixed point may not be an effective strategy for many systems, thus requiring an alternative approach. For this reason, we propose a new deep learning framework to discover a transformation of a nonlinear dynamical system to an equivalent higher dimensional linear representation. We demonstrate that the resulting learned linear representation accurately captures the dynamics of the original system for a wider range of conditions than standard linearization. As a result of this, we show that the learned linear model can subsequently be used for the successful control of the original system. We demonstrate this by applying the proposed framework to two examples; one from the literature and a more complex example in the form of a Continuous Stirred Tank Reactor (CSTR).">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/c309d30d468a48f5c5d40e402af5881451bb6117" target='_blank'>Learning Linear Representations of Nonlinear Dynamics Using Deep Learning</a></td>
-          <td>
-            Akhil Ahmed, E. A. Rio-Chanona, Mehmet Mercangöz
-          </td>
-          <td>2022-04-03</td>
-          <td>ArXiv</td>
-          <td>3</td>
-          <td>19</td>
-        </tr>
-
-        <tr id="None">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/acd85b948087067938680356a0cb7597de12a25d" target='_blank'>Data-based modeling and control of nonlinear process systems using sparse identification: An overview of recent results</a></td>
-          <td>
-            Fahim Abdullah, P. Christofides
-          </td>
-          <td>2023-03-01</td>
-          <td>Comput. Chem. Eng.</td>
-          <td>12</td>
-          <td>76</td>
         </tr>
 
   </tbody>
