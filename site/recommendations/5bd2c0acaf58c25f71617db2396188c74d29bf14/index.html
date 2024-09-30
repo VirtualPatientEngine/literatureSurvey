@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-09-23 06:05:18 UTC</i>
+  <i class="footer">This page was last updated on 2024-09-30 06:05:32 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -508,8 +508,20 @@
           </td>
           <td>2022-03-15</td>
           <td>ACM Transactions on Knowledge Discovery from Data</td>
-          <td>43</td>
+          <td>44</td>
           <td>38</td>
+        </tr>
+
+        <tr id="Unsupervised domain adaptation (UDA) of time series aims to teach models to identify consistent patterns across various temporal scenarios, disregarding domain-specific differences, which can maintain their predictive accuracy and effectively adapt to new domains. However, existing UDA methods struggle to adequately extract and align both global and local features in time series data. To address this issue, we propose the Local-Global Representation Alignment framework (LogoRA), which employs a two-branch encoder, comprising a multi-scale convolutional branch and a patching transformer branch. The encoder enables the extraction of both local and global representations from time series. A fusion module is then introduced to integrate these representations, enhancing domain-invariant feature alignment from multi-scale perspectives. To achieve effective alignment, LogoRA employs strategies like invariant feature learning on the source domain, utilizing triplet loss for fine alignment and dynamic time warping-based feature alignment. Additionally, it reduces source-target domain gaps through adversarial training and per-class prototype alignment. Our evaluations on four time-series datasets demonstrate that LogoRA outperforms strong baselines by up to $12.52\%$, showcasing its superiority in time series UDA tasks.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/9e46960ff506775c47d101a6b9c61e32073d772a" target='_blank'>LogoRA: Local-Global Representation Alignment for Robust Time Series Classification</a></td>
+          <td>
+            Huanyu Zhang, Yi-Fan Zhang, Zhang Zhang, Qingsong Wen, Liang Wang
+          </td>
+          <td>2024-09-12</td>
+          <td>IEEE Transactions on Knowledge and Data Engineering</td>
+          <td>0</td>
+          <td>3</td>
         </tr>
 
         <tr id="Domain generalization methods aim to learn models robust to domain shift with data from a limited number of source domains and without access to target domain samples during training. Popular domain alignment methods for domain generalization seek to extract domain-invariant features by minimizing the discrepancy between feature distributions across all domains, disregarding inter-domain relationships. In this paper, we instead propose a novel representation learning methodology that selectively enforces prediction consistency between source domains estimated to be closely-related. Specifically, we hypothesize that domains share different class-informative representations, so instead of aligning all domains which can cause negative transfer, we only regularize the discrepancy between closely-related domains. We apply our method to time-series classification tasks and conduct comprehensive experiments on three public real-world datasets. Our method significantly improves over the baseline and achieves better or competitive performance in comparison with state-of-the-art methods in terms of both accuracy and model calibration.">
@@ -531,7 +543,7 @@
             Xiaoyong Jin, Youngsuk Park, Danielle C. Maddix, Bernie Wang, Xifeng Yan
           </td>
           <td>2021-02-13</td>
-          <td>DBLP, ArXiv</td>
+          <td>ArXiv, DBLP</td>
           <td>59</td>
           <td>65</td>
         </tr>

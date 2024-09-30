@@ -11,7 +11,7 @@ hide:
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-09-23 06:05:19 UTC</i>
+  <i class="footer">This page was last updated on 2024-09-30 06:05:33 UTC</i>
   </p>
   
   <div class="note info" onclick="startIntro()">
@@ -49,8 +49,8 @@ hide:
             Andreas Doerr, Christian Daniel, Martin Schiegg, D. Nguyen-Tuong, S. Schaal, Marc Toussaint, Sebastian Trimpe
           </td>
           <td>2018-01-31</td>
-          <td>MAG, ArXiv, DBLP</td>
-          <td>112</td>
+          <td>ArXiv, MAG, DBLP</td>
+          <td>113</td>
           <td>93</td>
         </tr>
     
@@ -94,7 +94,7 @@ hide:
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/05cd3afc8208f1c0dd61b09a90f35dd42497e175" target='_blank'>Multi-Knowledge Fusion Network for Time Series Representation Learning</a></td>
           <td>
-            Sagar Srinivas Sakhinana, Shivam Gupta, Krishna Sai Sudhir Aripirala, Venkataramana Runkana
+            Sakhinana Sagar Srinivas, Shivam Gupta, Krishna Sai Sudhir Aripirala, Venkataramana Runkana
           </td>
           <td>2024-08-22</td>
           <td>ArXiv</td>
