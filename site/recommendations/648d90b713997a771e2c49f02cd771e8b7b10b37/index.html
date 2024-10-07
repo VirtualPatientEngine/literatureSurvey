@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-09-30 06:05:31 UTC</i>
+  <i class="footer">This page was last updated on 2024-10-07 06:05:27 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -516,7 +516,7 @@
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/a2056f5affe509b50e41612057ca9cca143ef97a" target='_blank'>Supervised Contrastive Few-Shot Learning for High-Frequency Time Series</a></td>
           <td>
-            X. Chen, Cheng Ge, , Jin Wang
+            X. Chen, Cheng Ge, Ming Wang, Jin Wang
           </td>
           <td>2023-06-26</td>
           <td>DBLP</td>
@@ -532,7 +532,7 @@
           </td>
           <td>2023-10-21</td>
           <td>ArXiv</td>
-          <td>21</td>
+          <td>22</td>
           <td>3</td>
         </tr>
 
@@ -560,6 +560,18 @@
           <td>24</td>
         </tr>
 
+        <tr id="In this work, we investigate the time series representation learning problem using self-supervised techniques. Contrastive learning is well-known in this area as it is a powerful method for extracting information from the series and generating task-appropriate representations. Despite its proficiency in capturing time series characteristics, these techniques often overlook a critical factor - the inherent noise in this type of data, a consideration usually emphasized in general time series analysis. Moreover, there is a notable absence of attention to developing efficient yet lightweight encoder architectures, with an undue focus on delivering contrastive losses. Our work address these gaps by proposing an innovative training strategy that promotes consistent representation learning, accounting for the presence of noise-prone signals in natural time series. Furthermore, we propose an encoder architecture that incorporates dilated convolution within the Inception block, resulting in a scalable and robust network with a wide receptive field. Experimental findings underscore the effectiveness of our method, consistently outperforming state-of-the-art approaches across various tasks, including forecasting, classification, and abnormality detection. Notably, our method attains the top rank in over two-thirds of the classification UCR datasets, utilizing only 40% of the parameters compared to the second-best approach. Our source code for CoInception framework is accessible at https://github.com/anhduy0911/CoInception.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/b1909388ab7a548f6b27dc95a3a279a1a24234fe" target='_blank'>Improving Time Series Encoding with Noise-Aware Self-Supervised Learning and an Efficient Encoder</a></td>
+          <td>
+            Anh Duy Nguyen, Trang H. Tran, Hieu Pham, Phi-Le Nguyen, Lam M. Nguyen
+          </td>
+          <td>2023-06-11</td>
+          <td>ArXiv</td>
+          <td>3</td>
+          <td>20</td>
+        </tr>
+
         <tr id="Monitoring and recognizing patterns in continuous sensing data is crucial for many practical applications. These real-world time-series data are often nonstationary, characterized by varying statistical and spectral properties over time. This poses a significant challenge in developing learning models that can effectively generalize across different distributions. In this work, based on our observation that nonstationary statistics are intrinsically linked to the phase information, we propose a time-series learning framework, PhASER. It consists of three novel elements: 1) phase augmentation that diversifies non-stationarity while preserving discriminatory semantics, 2) separate feature encoding by viewing time-varying magnitude and phase as independent modalities, and 3) feature broadcasting by incorporating phase with a novel residual connection for inherent regularization to enhance distribution invariant learning. Upon extensive evaluation on 5 datasets from human activity recognition, sleep-stage classification, and gesture recognition against 10 state-of-the-art baseline methods, we demonstrate that PhASER consistently outperforms the best baselines by an average of 5% and up to 13% in some cases. Moreover, PhASER's principles can be applied broadly to boost the generalization ability of existing time series classification models.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/8afaf2f41bc85fd8c0413754fa9ccc2b1e9303d5" target='_blank'>Phase-driven Domain Generalizable Learning for Nonstationary Time Series</a></td>
@@ -582,18 +594,6 @@
           <td>ArXiv, DBLP</td>
           <td>10</td>
           <td>13</td>
-        </tr>
-
-        <tr id="Learning representations from unlabeled time series data is a challenging problem. Most existing self-supervised and unsupervised approaches in the time-series domain fall short in capturing low-and high-frequency features at the same time. As a result, the generalization ability of the learned representations remains limited. Furthermore, some of these methods employ large-scale models like transformers or rely on computationally expensive techniques such as contrastive learning. To tackle these problems, we propose a noncontrastive self-supervised learning (SSL) approach that efficiently captures low-and high-frequency features in a cost-effective manner. The proposed framework comprises a Siamese configuration of a deep neural network with two weight-sharing branches which are followed by low-and high-frequency feature extraction modules. The two branches of the proposed network allow bootstrapping of the latent representation by taking two different augmented views of raw time series data as input. The augmented views are created by applying random transformations sampled from a single set of augmentations. The low-and high-frequency feature extraction modules of the proposed network contain a combination of multilayer perceptron (MLP) and temporal convolutional network (TCN) heads, respectively, which capture the temporal dependencies from the raw input data at various scales due to the varying receptive fields. To demonstrate the robustness of our model, we performed extensive experiments and ablation studies on five real-world time-series datasets. Our method achieves state-of-art performance on all the considered datasets.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/4b65c76f7f28e7ba3ea44ebb1b3e4355a148d0de" target='_blank'>Large Scale Time-Series Representation Learning via Simultaneous Low and High Frequency Feature Bootstrapping</a></td>
-          <td>
-            Vandan Gorade, Azad Singh, Deepak Mishra
-          </td>
-          <td>2022-04-24</td>
-          <td>IEEE transactions on neural networks and learning systems</td>
-          <td>5</td>
-          <td>6</td>
         </tr>
 
   </tbody>

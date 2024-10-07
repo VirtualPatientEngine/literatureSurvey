@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-09-30 06:05:29 UTC</i>
+  <i class="footer">This page was last updated on 2024-10-07 06:05:25 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -496,8 +496,20 @@
           </td>
           <td>2024-06-22</td>
           <td>ArXiv</td>
-          <td>3</td>
+          <td>4</td>
           <td>2</td>
+        </tr>
+
+        <tr id="Inspired by recent advancements in large language models (LLMs) for Natural Language Processing (NLP), there has been a surge in research focused on developing foundational models for time series forecasting. One approach involves training LLM architectures on tokenized time series data using cross-entropy loss. Although this method has demonstrated promising results, cross-entropy loss is primarily designed for classification tasks and does not account for the distance between classes. To address this limitation, we propose using the Wasserstein loss for such architectures. To validate our approach, we fine-tuned a foundational time series model on $22$ zero-shot datasets, comparing the performance of cross-entropy loss with that of Wasserstein loss. Our results demonstrate that replacing cross-entropy loss with Wasserstein loss significantly improves point estimation.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/341fc8f00805b53471ae91bc2f7e1d5b4d281048" target='_blank'>Fine-Tuning a Time Series Foundation Model with Wasserstein Loss</a></td>
+          <td>
+            Andrei Chernov
+          </td>
+          <td>2024-09-18</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>0</td>
         </tr>
 
         <tr id="Time series forecasting holds significant importance in many real-world dynamic systems and has been extensively studied. Unlike natural language process (NLP) and computer vision (CV), where a single large model can tackle multiple tasks, models for time series forecasting are often specialized, necessitating distinct designs for different tasks and applications. While pre-trained foundation models have made impressive strides in NLP and CV, their development in time series domains has been constrained by data sparsity. Recent studies have revealed that large language models (LLMs) possess robust pattern recognition and reasoning abilities over complex sequences of tokens. However, the challenge remains in effectively aligning the modalities of time series data and natural language to leverage these capabilities. In this work, we present Time-LLM, a reprogramming framework to repurpose LLMs for general time series forecasting with the backbone language models kept intact. We begin by reprogramming the input time series with text prototypes before feeding it into the frozen LLM to align the two modalities. To augment the LLM's ability to reason with time series data, we propose Prompt-as-Prefix (PaP), which enriches the input context and directs the transformation of reprogrammed input patches. The transformed time series patches from the LLM are finally projected to obtain the forecasts. Our comprehensive evaluations demonstrate that Time-LLM is a powerful time series learner that outperforms state-of-the-art, specialized forecasting models. Moreover, Time-LLM excels in both few-shot and zero-shot learning scenarios.">
@@ -508,7 +520,7 @@
           </td>
           <td>2023-10-03</td>
           <td>ArXiv</td>
-          <td>145</td>
+          <td>147</td>
           <td>9</td>
         </tr>
 
@@ -520,7 +532,7 @@
           </td>
           <td>2024-05-23</td>
           <td>ArXiv</td>
-          <td>1</td>
+          <td>2</td>
           <td>1</td>
         </tr>
 
@@ -534,6 +546,18 @@
           <td>ArXiv</td>
           <td>17</td>
           <td>2</td>
+        </tr>
+
+        <tr id="Deep learning for time series forecasting has seen significant advancements over the past decades. However, despite the success of large-scale pre-training in language and vision domains, pre-trained time series models remain limited in scale and operate at a high cost, hindering the development of larger capable forecasting models in real-world applications. In response, we introduce Time-MoE, a scalable and unified architecture designed to pre-train larger, more capable forecasting foundation models while reducing inference costs. By leveraging a sparse mixture-of-experts (MoE) design, Time-MoE enhances computational efficiency by activating only a subset of networks for each prediction, reducing computational load while maintaining high model capacity. This allows Time-MoE to scale effectively without a corresponding increase in inference costs. Time-MoE comprises a family of decoder-only transformer models that operate in an auto-regressive manner and support flexible forecasting horizons with varying input context lengths. We pre-trained these models on our newly introduced large-scale data Time-300B, which spans over 9 domains and encompassing over 300 billion time points. For the first time, we scaled a time series foundation model up to 2.4 billion parameters, achieving significantly improved forecasting precision. Our results validate the applicability of scaling laws for training tokens and model size in the context of time series forecasting. Compared to dense models with the same number of activated parameters or equivalent computation budgets, our models consistently outperform them by large margin. These advancements position Time-MoE as a state-of-the-art solution for tackling real-world time series forecasting challenges with superior capability, efficiency, and flexibility.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/2cb3044ef42c7ee022a988864028b80ce977072c" target='_blank'>Time-MoE: Billion-Scale Time Series Foundation Models with Mixture of Experts</a></td>
+          <td>
+            Xiaoming Shi, Shiyu Wang, Yuqi Nie, Dianqi Li, Zhou Ye, Qingsong Wen, Ming Jin
+          </td>
+          <td>2024-09-24</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>4</td>
         </tr>
 
         <tr id="Time series data are ubiquitous across various domains, making time series analysis critically important. Traditional time series models are task-specific, featuring singular functionality and limited generalization capacity. Recently, large language foundation models have unveiled their remarkable capabilities for cross-task transferability, zero-shot/few-shot learning, and decision-making explainability. This success has sparked interest in the exploration of foundation models to solve multiple time series challenges simultaneously. There are two main research lines, namely pre-training foundation models from scratch for time series and adapting large language foundation models for time series. They both contribute to the development of a unified model that is highly generalizable, versatile, and comprehensible for time series analysis. This survey offers a 3E analytical framework for comprehensive examination of related research. Specifically, we examine existing works from three dimensions, namely Effectiveness, Efficiency and Explainability. In each dimension, we focus on discussing how related works devise tailored solution by considering unique challenges in the realm of time series. Furthermore, we provide a domain taxonomy to help followers keep up with the domain-specific advancements. In addition, we introduce extensive resources to facilitate the field's development, including datasets, open-source, time series libraries. A GitHub repository is also maintained for resource updates (https://github.com/start2020/Awesome-TimeSeries-LLM-FM).">
@@ -557,30 +581,6 @@
           <td>2024-02-25</td>
           <td>ArXiv</td>
           <td>6</td>
-          <td>8</td>
-        </tr>
-
-        <tr id="Unlike natural language processing and computer vision, the development of Foundation Models (FMs) for time series forecasting is blocked due to data scarcity. While recent efforts are focused on building such FMs by unlocking the potential of language models (LMs) for time series analysis, dedicated parameters for various downstream forecasting tasks need training, which hinders the common knowledge sharing across domains. Moreover, data owners may hesitate to share the access to local data due to privacy concerns and copyright protection, which makes it impossible to simply construct a FM on cross-domain training instances. To address these issues, we propose Time-FFM, a Federated Foundation Model for Time series forecasting by leveraging pretrained LMs. Specifically, we begin by transforming time series into the modality of text tokens. To bootstrap LMs for time series reasoning, we propose a prompt adaption module to determine domain-customized prompts dynamically instead of artificially. Given the data heterogeneity across domains, we design a personalized federated training strategy by learning global encoders and local prediction heads. Our comprehensive experiments indicate that Time-FFM outperforms state-of-the-arts and promises effective few-shot and zero-shot forecaster.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/68a65925ac6d270ca27a4fe99e58cf2ed0795821" target='_blank'>Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting</a></td>
-          <td>
-            Qingxiang Liu, Xu Liu, Chenghao Liu, Qingsong Wen, Yuxuan Liang
-          </td>
-          <td>2024-05-23</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>6</td>
-        </tr>
-
-        <tr id="Despite the impressive achievements of pre-trained models in the fields of natural language processing (NLP) and computer vision (CV), progress in the domain of time series analysis has been limited. In contrast to NLP and CV, where a single model can handle various tasks, time series analysis still relies heavily on task-specific methods for activities such as classification, anomaly detection, forecasting, and few-shot learning. The primary obstacle to developing a pre-trained model for time series analysis is the scarcity of sufficient training data. In our research, we overcome this obstacle by utilizing pre-trained models from language or CV, which have been trained on billions of data points, and apply them to time series analysis. We assess the effectiveness of the pre-trained transformer model in two ways. Initially, we maintain the original structure of the self-attention and feedforward layers in the residual blocks of the pre-trained language or image model, using the Frozen Pre-trained Transformer (FPT) for time series analysis with the addition of projection matrices for input and output. Additionally, we introduce four unique adapters, designed specifically for downstream tasks based on the pre-trained model, including forecasting and anomaly detection. These adapters are further enhanced with efficient parameter tuning, resulting in superior performance compared to all state-of-the-art methods.Our comprehensive experimental studies reveal that (a) the simple FPT achieves top-tier performance across various time series analysis tasks; and (b) fine-tuning the FPT with the custom-designed adapters can further elevate its performance, outshining specialized task-specific models.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/15bfe54223d28c74f9e39960f7ff1d03167e285f" target='_blank'>One Fits All: Universal Time Series Analysis by Pretrained LM and Specially Designed Adaptors</a></td>
-          <td>
-            Tian Zhou, Peisong Niu, Xue Wang, Liang Sun, Rong Jin
-          </td>
-          <td>2023-11-24</td>
-          <td>ArXiv</td>
-          <td>4</td>
           <td>8</td>
         </tr>
 
