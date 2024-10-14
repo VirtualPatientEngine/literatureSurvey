@@ -11,7 +11,7 @@ hide:
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-10-07 06:05:31 UTC</i>
+  <i class="footer">This page was last updated on 2024-10-14 06:05:27 UTC</i>
   </p>
   
   <div class="note info" onclick="startIntro()">
@@ -90,6 +90,18 @@ hide:
           <td>50</td>
         </tr>
     
+        <tr id="Forecasting the behaviour of complex dynamical systems such as interconnected sensor networks characterized by high-dimensional multivariate time series(MTS) is of paramount importance for making informed decisions and planning for the future in a broad spectrum of applications. Graph forecasting networks(GFNs) are well-suited for forecasting MTS data that exhibit spatio-temporal dependencies. However, most prior works of GFN-based methods on MTS forecasting rely on domain-expertise to model the nonlinear dynamics of the system, but neglect the potential to leverage the inherent relational-structural dependencies among time series variables underlying MTS data. On the other hand, contemporary works attempt to infer the relational structure of the complex dependencies between the variables and simultaneously learn the nonlinear dynamics of the interconnected system but neglect the possibility of incorporating domain-specific prior knowledge to improve forecast accuracy. To this end, we propose a hybrid architecture that combines explicit prior knowledge with implicit knowledge of the relational structure within the MTS data. It jointly learns intra-series temporal dependencies and inter-series spatial dependencies by encoding time-conditioned structural spatio-temporal inductive biases to provide more accurate and reliable forecasts. It also models the time-varying uncertainty of the multi-horizon forecasts to support decision-making by providing estimates of prediction uncertainty. The proposed architecture has shown promising results on multiple benchmark datasets and outperforms state-of-the-art forecasting methods by a significant margin. We report and discuss the ablation studies to validate our forecasting architecture.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/05cd3afc8208f1c0dd61b09a90f35dd42497e175" target='_blank'>Multi-Knowledge Fusion Network for Time Series Representation Learning</a></td>
+          <td>
+            Sakhinana Sagar Srinivas, Shivam Gupta, Krishna Sai Sudhir Aripirala, Venkataramana Runkana
+          </td>
+          <td>2024-08-22</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>3</td>
+        </tr>
+    
         <tr id="Real-world dynamical systems often consist of multiple stochastic subsystems that interact with each other. Modeling and forecasting the behavior of such dynamics are generally not easy, due to the inherent hardness in understanding the complicated interactions and evolutions of their constituents. This paper introduces the relational state-space model (R-SSM), a sequential hierarchical latent variable model that makes use of graph neural networks (GNNs) to simulate the joint state transitions of multiple correlated objects. By letting GNNs cooperate with SSM, R-SSM provides a flexible way to incorporate relational information into the modeling of multi-object dynamics. We further suggest augmenting the model with normalizing flows instantiated for vertex-indexed random variables and propose two auxiliary contrastive objectives to facilitate the learning. The utility of R-SSM is empirically evaluated on synthetic and real time series datasets.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/7a1e5377b08489c2969f73c56efc557e34f578e1" target='_blank'>Relational State-Space Model for Stochastic Multi-Object Systems</a></td>
@@ -123,23 +135,7 @@ hide:
           <td>2023-03-16</td>
           <td>ArXiv</td>
           <td>31</td>
-          <td>44</td>
-        </tr>
-    
-        <tr id="
- 
- Gaussian state space models have been used for decades as generative models of sequential data. They admit an intuitive probabilistic interpretation, have a simple functional form, and enjoy widespread adoption. We introduce a unified algorithm to efficiently learn a broad class of linear and non-linear state space models, including variants where the emission and transition distributions are modeled by deep neural networks. Our learning algorithm simultaneously learns a compiled inference network and the generative model, leveraging a structured variational approximation parameterized by recurrent neural networks to mimic the posterior distribution. We apply the learning algorithm to both synthetic and real-world datasets, demonstrating its scalability and versatility. We find that using the structured approximation to the posterior results in models with significantly higher held-out likelihood.
- 
-">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/2af17f153e3fd71e15db9216b972aef222f46617" target='_blank'>Structured Inference Networks for Nonlinear State Space Models</a></td>
-          <td>
-            R. G. Krishnan, Uri Shalit, D. Sontag
-          </td>
-          <td>2016-09-30</td>
-          <td>MAG, ArXiv, DBLP</td>
-          <td>430</td>
-          <td>48</td>
+          <td>45</td>
         </tr>
     
   </tbody>

@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-10-07 06:05:26 UTC</i>
+  <i class="footer">This page was last updated on 2024-10-14 06:05:20 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -496,7 +496,7 @@
           </td>
           <td>2024-02-16</td>
           <td>ArXiv</td>
-          <td>3</td>
+          <td>4</td>
           <td>7</td>
         </tr>
 
@@ -508,7 +508,7 @@
           </td>
           <td>2024-02-25</td>
           <td>ArXiv</td>
-          <td>6</td>
+          <td>7</td>
           <td>8</td>
         </tr>
 
@@ -520,7 +520,7 @@
           </td>
           <td>2022-09-20</td>
           <td>IEEE Transactions on Knowledge and Data Engineering</td>
-          <td>66</td>
+          <td>69</td>
           <td>17</td>
         </tr>
 
@@ -536,42 +536,6 @@
           <td>23</td>
         </tr>
 
-        <tr id="Time series data are ubiquitous across various domains, making time series analysis critically important. Traditional time series models are task-specific, featuring singular functionality and limited generalization capacity. Recently, large language foundation models have unveiled their remarkable capabilities for cross-task transferability, zero-shot/few-shot learning, and decision-making explainability. This success has sparked interest in the exploration of foundation models to solve multiple time series challenges simultaneously. There are two main research lines, namely pre-training foundation models from scratch for time series and adapting large language foundation models for time series. They both contribute to the development of a unified model that is highly generalizable, versatile, and comprehensible for time series analysis. This survey offers a 3E analytical framework for comprehensive examination of related research. Specifically, we examine existing works from three dimensions, namely Effectiveness, Efficiency and Explainability. In each dimension, we focus on discussing how related works devise tailored solution by considering unique challenges in the realm of time series. Furthermore, we provide a domain taxonomy to help followers keep up with the domain-specific advancements. In addition, we introduce extensive resources to facilitate the field's development, including datasets, open-source, time series libraries. A GitHub repository is also maintained for resource updates (https://github.com/start2020/Awesome-TimeSeries-LLM-FM).">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/522828823ff726598675971036fff01b57320578" target='_blank'>A Survey of Time Series Foundation Models: Generalizing Time Series Representation with Large Language Model</a></td>
-          <td>
-            Jiexia Ye, Weiqi Zhang, Ke Yi, Yongzi Yu, Ziyue Li, Jia Li, F. Tsung
-          </td>
-          <td>2024-05-03</td>
-          <td>ArXiv</td>
-          <td>5</td>
-          <td>47</td>
-        </tr>
-
-        <tr id="Recent Transformer-based large language models (LLMs) demonstrate in-context learning ability to perform various functions based solely on the provided context, without updating model parameters. To fully utilize the in-context capabilities in time series forecasting (TSF) problems, unlike previous Transformer-based or LLM-based time series forecasting methods, we reformulate"time series forecasting tasks"as input tokens by constructing a series of (lookback, future) pairs within the tokens. This method aligns more closely with the inherent in-context mechanisms, and is more parameter-efficient without the need of using pre-trained LLM parameters. Furthermore, it addresses issues such as overfitting in existing Transformer-based TSF models, consistently achieving better performance across full-data, few-shot, and zero-shot settings compared to previous architectures.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/3777e8d6cda553cbd9e3bbd6484e613386f3a59e" target='_blank'>In-context Time Series Predictor</a></td>
-          <td>
-            Jiecheng Lu, Yan Sun, Shihao Yang
-          </td>
-          <td>2024-05-23</td>
-          <td>ArXiv</td>
-          <td>2</td>
-          <td>1</td>
-        </tr>
-
-        <tr id="Multivariate time-series forecasting is vital in various domains, e.g., economic planning and weather prediction. Deep train-from-scratch models have exhibited effective performance yet require large amounts of data, which limits real-world applicability. Recently, researchers have leveraged the representation learning transferability of pre-trained Large Language Models (LLMs) to handle limited non-linguistic datasets effectively. However, incorporating LLMs with time-series data presents challenges of limited adaptation due to different compositions between time-series and linguistic data, and the inability to process multi-scale temporal information. To tackle these challenges, we propose LLM4TS, a framework for time-series forecasting with pre-trained LLMs. LLM4TS consists of a two-stage fine-tuning strategy: the \textit{time-series alignment} stage to align LLMs with the nuances of time-series data, and the \textit{forecasting fine-tuning} stage for downstream time-series forecasting tasks. Furthermore, our framework features a novel two-level aggregation method that integrates multi-scale temporal data within pre-trained LLMs, enhancing their ability to interpret time-specific information. In experiments across 7 time-series forecasting datasets, LLM4TS is superior to existing state-of-the-art methods compared with trained-from-scratch models in full-shot scenarios, and also achieves an average improvement of 6.84% in MSE in few-shot scenarios. In addition, evaluations compared with different self-supervised learning approaches highlight LLM4TS's effectiveness with representation learning in forecasting tasks.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/663dc434fabc1cf1d3e85fff3f7ddcd313035d18" target='_blank'>LLM4TS: Aligning Pre-Trained LLMs as Data-Efficient Time-Series Forecasters</a></td>
-          <td>
-            Ching Chang, Wenjie Peng, Tien-Fu Chen
-          </td>
-          <td>2023-08-16</td>
-          <td>ArXiv</td>
-          <td>17</td>
-          <td>2</td>
-        </tr>
-
         <tr id="Multi-modal large language models (MLLMs) have enabled numerous advances in understanding and reasoning in domains like vision, but we have not yet seen this broad success for time-series. Although prior works on time-series MLLMs have shown promising performance in time-series forecasting, very few works show how an LLM could be used for time-series reasoning in natural language. We propose a novel multi-modal time-series LLM approach that learns generalizable information across various domains with powerful zero-shot performance. First, we train a lightweight time-series encoder on top of an LLM to directly extract time-series information. Then, we fine-tune our model with chain-of-thought augmented time-series tasks to encourage the model to generate reasoning paths. We show that our model learns a latent representation that reflects specific time-series features (e.g. slope, frequency), as well as outperforming GPT-4o on a set of zero-shot reasoning tasks on a variety of domains.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/e2b1ba7e73ca4ce0abef8c87f2c266e502b3b7b4" target='_blank'>Towards Time Series Reasoning with LLMs</a></td>
@@ -584,16 +548,40 @@
           <td>1</td>
         </tr>
 
-        <tr id="Large language models (LLMs) are being applied to time series tasks, particularly time series forecasting. However, are language models actually useful for time series? After a series of ablation studies on three recent and popular LLM-based time series forecasting methods, we find that removing the LLM component or replacing it with a basic attention layer does not degrade the forecasting results -- in most cases the results even improved. We also find that despite their significant computational cost, pretrained LLMs do no better than models trained from scratch, do not represent the sequential dependencies in time series, and do not assist in few-shot settings. Additionally, we explore time series encoders and reveal that patching and attention structures perform similarly to state-of-the-art LLM-based forecasters.">
+        <tr id="Foundation models of time series have not been fully developed due to the limited availability of time series corpora and the underexploration of scalable pre-training. Based on the similar sequential formulation of time series and natural language, increasing research demonstrates the feasibility of leveraging large language models (LLM) for time series. Nevertheless, the inherent autoregressive property and decoder-only architecture of LLMs have not been fully considered, resulting in insufficient utilization of LLM abilities. To further exploit the general-purpose token transition and multi-step generation ability of large language models, we propose AutoTimes to repurpose LLMs as autoregressive time series forecasters, which independently projects time series segments into the embedding space and autoregressively generates future predictions with arbitrary lengths. Compatible with any decoder-only LLMs, the consequent forecaster exhibits the flexibility of the lookback length and scalability of the LLM size. Further, we formulate time series as prompts, extending the context for prediction beyond the lookback window, termed in-context forecasting. By adopting textual timestamps as position embeddings, AutoTimes integrates multimodality for multivariate scenarios. Empirically, AutoTimes achieves state-of-the-art with 0.1% trainable parameters and over 5 times training/inference speedup compared to advanced LLM-based forecasters.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/df0d604b8e8e3b2947d9865d735f204c08635012" target='_blank'>Are Language Models Actually Useful for Time Series Forecasting?</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/d488445bb2bf6719bc48a4d39bd906116274abda" target='_blank'>AutoTimes: Autoregressive Time Series Forecasters via Large Language Models</a></td>
           <td>
-            Mingtian Tan, Mike A. Merrill, Vinayak Gupta, Tim Althoff, Tom Hartvigsen
+            Yong Liu, Guo Qin, Xiangdong Huang, Jianmin Wang, Mingsheng Long
           </td>
-          <td>2024-06-22</td>
+          <td>2024-02-04</td>
           <td>ArXiv</td>
           <td>4</td>
-          <td>2</td>
+          <td>66</td>
+        </tr>
+
+        <tr id="An emerging topic in large language models (LLMs) is their application to time series forecasting, characterizing mainstream and patternable characteristics of time series. A relevant but rarely explored and more challenging question is whether LLMs can detect and explain time series anomalies, a critical task across various real-world applications. In this paper, we investigate the capabilities of LLMs, specifically GPT-4 and LLaMA3, in detecting and explaining anomalies in time series. Our studies reveal that: 1) LLMs cannot be directly used for time series anomaly detection. 2) By designing prompt strategies such as in-context learning and chain-of-thought prompting, GPT-4 can detect time series anomalies with results competitive to baseline methods. 3) We propose a synthesized dataset to automatically generate time series anomalies with corresponding explanations. By applying instruction fine-tuning on this dataset, LLaMA3 demonstrates improved performance in time series anomaly detection tasks. In summary, our exploration shows the promising potential of LLMs as time series anomaly detectors.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/12b073694ad8cf460d1e74a34b68d07536e0db14" target='_blank'>Can LLMs Serve As Time Series Anomaly Detectors?</a></td>
+          <td>
+            Manqing Dong, Hao Huang, Longbing Cao
+          </td>
+          <td>2024-08-06</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+
+        <tr id="Recently, time series foundation models have shown promising zero-shot forecasting performance on time series from a wide range of domains. However, it remains unclear whether their success stems from a true understanding of temporal dynamics or simply from memorizing the training data. While implicit reasoning in language models has been studied, similar evaluations for time series models have been largely unexplored. This work takes an initial step toward assessing the reasoning abilities of deep time series forecasting models. We find that certain linear, MLP-based, and patch-based Transformer models generalize effectively in systematically orchestrated out-of-distribution scenarios, suggesting underexplored reasoning capabilities beyond simple pattern memorization.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/0fb2694a6193c3c333e8501154e0b9bd23dbb2ee" target='_blank'>Implicit Reasoning in Deep Time Series Forecasting</a></td>
+          <td>
+            Willa Potosnak, Cristian Challu, Mononito Goswami, Michał Wiliński, Nina .Zukowska
+          </td>
+          <td>2024-09-17</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>8</td>
         </tr>
 
   </tbody>
