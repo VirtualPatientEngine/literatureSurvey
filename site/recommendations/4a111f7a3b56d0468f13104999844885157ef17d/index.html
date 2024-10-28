@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-10-21 06:05:48 UTC</i>
+  <i class="footer">This page was last updated on 2024-10-28 06:05:34 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -476,6 +476,30 @@
   </thead>
   <tbody>
 
+        <tr id="Time series foundation models excel in zero-shot forecasting, handling diverse tasks without explicit training. However, the advancement of these models has been hindered by the lack of comprehensive benchmarks. To address this gap, we introduce the General Time Series Forecasting Model Evaluation, GIFT-Eval, a pioneering benchmark aimed at promoting evaluation across diverse datasets. GIFT-Eval encompasses 28 datasets over 144,000 time series and 177 million data points, spanning seven domains, 10 frequencies, multivariate inputs, and prediction lengths ranging from short to long-term forecasts. To facilitate the effective pretraining and evaluation of foundation models, we also provide a non-leaking pretraining dataset containing approximately 230 billion data points. Additionally, we provide a comprehensive analysis of 17 baselines, which includes statistical models, deep learning models, and foundation models. We discuss each model in the context of various benchmark characteristics and offer a qualitative analysis that spans both deep learning and foundation models. We believe the insights from this analysis, along with access to this new standard zero-shot time series forecasting benchmark, will guide future developments in time series foundation models. The codebase, datasets, and a leaderboard showing all the results in detail will be available soon.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/8bf78baccb9e56ffef46080b9b34752f23d1911c" target='_blank'>GIFT-Eval: A Benchmark For General Time Series Forecasting Model Evaluation</a></td>
+          <td>
+            Taha İbrahim Aksu, Gerald Woo, Juncheng Liu, Xu Liu, Chenghao Liu, Silvio Savarese, Caiming Xiong, Doyen Sahoo
+          </td>
+          <td>2024-10-14</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>25</td>
+        </tr>
+
+        <tr id="Time Series Forecasting (TSF) is key functionality in numerous fields, including in finance, weather services, and energy management. While TSF methods are emerging these days, many of them require domain-specific data collection and model training and struggle with poor generalization performance on new domains. Foundation models aim to overcome this limitation. Pre-trained on large-scale language or time series data, they exhibit promising inferencing capabilities in new or unseen data. This has spurred a surge in new TSF foundation models. We propose a new benchmark, FoundTS, to enable thorough and fair evaluation and comparison of such models. FoundTS covers a variety of TSF foundation models, including those based on large language models and those pretrained on time series. Next, FoundTS supports different forecasting strategies, including zero-shot, few-shot, and full-shot, thereby facilitating more thorough evaluations. Finally, FoundTS offers a pipeline that standardizes evaluation processes such as dataset splitting, loading, normalization, and few-shot sampling, thereby facilitating fair evaluations. Building on this, we report on an extensive evaluation of TSF foundation models on a broad range of datasets from diverse domains and with different statistical characteristics. Specifically, we identify pros and cons and inherent limitations of existing foundation models, and we identify directions for future model design. We make our code and datasets available at https://anonymous.4open.science/r/FoundTS-C2B0.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/c245a7d561855d7bef6c758e45e772129b52dacb" target='_blank'>FoundTS: Comprehensive and Unified Benchmarking of Foundation Models for Time Series Forecasting</a></td>
+          <td>
+            Zhe Li, Xiangfei Qiu, Peng Chen, Yihang Wang, Hanyin Cheng, Yang Shu, Jilin Hu, Chenjuan Guo, Aoying Zhou, Qingsong Wen, Christian S. Jensen, Bin Yang
+          </td>
+          <td>2024-10-15</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>27</td>
+        </tr>
+
         <tr id="Deep learning for time series forecasting has seen significant advancements over the past decades. However, despite the success of large-scale pre-training in language and vision domains, pre-trained time series models remain limited in scale and operate at a high cost, hindering the development of larger capable forecasting models in real-world applications. In response, we introduce Time-MoE, a scalable and unified architecture designed to pre-train larger, more capable forecasting foundation models while reducing inference costs. By leveraging a sparse mixture-of-experts (MoE) design, Time-MoE enhances computational efficiency by activating only a subset of networks for each prediction, reducing computational load while maintaining high model capacity. This allows Time-MoE to scale effectively without a corresponding increase in inference costs. Time-MoE comprises a family of decoder-only transformer models that operate in an auto-regressive manner and support flexible forecasting horizons with varying input context lengths. We pre-trained these models on our newly introduced large-scale data Time-300B, which spans over 9 domains and encompassing over 300 billion time points. For the first time, we scaled a time series foundation model up to 2.4 billion parameters, achieving significantly improved forecasting precision. Our results validate the applicability of scaling laws for training tokens and model size in the context of time series forecasting. Compared to dense models with the same number of activated parameters or equivalent computation budgets, our models consistently outperform them by large margin. These advancements position Time-MoE as a state-of-the-art solution for tackling real-world time series forecasting challenges with superior capability, efficiency, and flexibility.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/2cb3044ef42c7ee022a988864028b80ce977072c" target='_blank'>Time-MoE: Billion-Scale Time Series Foundation Models with Mixture of Experts</a></td>
@@ -496,7 +520,7 @@
           </td>
           <td>2024-03-12</td>
           <td>ArXiv</td>
-          <td>52</td>
+          <td>56</td>
           <td>18</td>
         </tr>
 
@@ -508,8 +532,8 @@
           </td>
           <td>2024-02-04</td>
           <td>DBLP, ArXiv</td>
-          <td>14</td>
-          <td>66</td>
+          <td>15</td>
+          <td>67</td>
         </tr>
 
         <tr id="We propose an efficient design of Transformer-based models for multivariate time series forecasting and self-supervised representation learning. It is based on two key components: (i) segmentation of time series into subseries-level patches which are served as input tokens to Transformer; (ii) channel-independence where each channel contains a single univariate time series that shares the same embedding and Transformer weights across all the series. Patching design naturally has three-fold benefit: local semantic information is retained in the embedding; computation and memory usage of the attention maps are quadratically reduced given the same look-back window; and the model can attend longer history. Our channel-independent patch time series Transformer (PatchTST) can improve the long-term forecasting accuracy significantly when compared with that of SOTA Transformer-based models. We also apply our model to self-supervised pre-training tasks and attain excellent fine-tuning performance, which outperforms supervised training on large datasets. Transferring of masked pre-trained representation on one dataset to others also produces SOTA forecasting accuracy. Code is available at: https://github.com/yuqinie98/PatchTST.">
@@ -520,7 +544,7 @@
           </td>
           <td>2022-11-27</td>
           <td>ArXiv</td>
-          <td>660</td>
+          <td>677</td>
           <td>35</td>
         </tr>
 
@@ -531,7 +555,7 @@
             Shubao Zhao, Ming Jin, Zhaoxiang Hou, Che-Sheng Yang, Zengxiang Li, Qingsong Wen, Yi Wang
           </td>
           <td>2024-01-10</td>
-          <td>ArXiv</td>
+          <td>Proceedings of the 33rd ACM International Conference on Information and Knowledge Management</td>
           <td>0</td>
           <td>7</td>
         </tr>
@@ -546,18 +570,6 @@
           <td>DBLP, ArXiv</td>
           <td>1</td>
           <td>6</td>
-        </tr>
-
-        <tr id="Time series has been left behind in the era of pre-training and transfer learning. While research in the fields of natural language processing and computer vision are enjoying progressively larger datasets to train massive models, the most popular time series datasets consist of only tens of thousands of time steps, limiting our ability to study the effectiveness of pre-training and scaling. Recent studies have also cast doubt on the need for expressive models and scale. To alleviate these issues, we introduce three large-scale time series forecasting datasets from the cloud operations (CloudOps) domain, the largest having billions of observations, enabling further study into pre-training and scaling of time series models. We build the empirical groundwork for studying pre-training and scaling of time series models and pave the way for future research by identifying a promising candidate architecture. We show that it is a strong zero-shot baseline and benefits from further scaling, both in model and dataset size. Accompanying these datasets and results is a suite of comprehensive benchmark results comparing classical and deep learning baselines to our pre-trained method - achieving a 27% reduction in error on the largest dataset. Code and datasets can be found https://github.com/SalesforceAIResearch/pretrain-time-series-cloudops.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/dbd6463cfff26861f6f3ea8e8d19eff4e6331904" target='_blank'>Pushing the Limits of Pre-training for Time Series Forecasting in the CloudOps Domain</a></td>
-          <td>
-            Gerald Woo, Chenghao Liu, Akshat Kumar, Doyen Sahoo
-          </td>
-          <td>2023-10-08</td>
-          <td>ArXiv</td>
-          <td>9</td>
-          <td>25</td>
         </tr>
 
   </tbody>

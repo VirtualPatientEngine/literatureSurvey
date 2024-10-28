@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-10-21 06:05:25 UTC</i>
+  <i class="footer">This page was last updated on 2024-10-28 06:05:28 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -484,7 +484,7 @@
           </td>
           <td>2023-12-23</td>
           <td>ACM Transactions on Knowledge Discovery from Data</td>
-          <td>2</td>
+          <td>3</td>
           <td>15</td>
         </tr>
 
@@ -508,7 +508,7 @@
           </td>
           <td>2023-10-24</td>
           <td>ArXiv</td>
-          <td>7</td>
+          <td>8</td>
           <td>50</td>
         </tr>
 
@@ -534,6 +534,18 @@
           <td>ArXiv</td>
           <td>0</td>
           <td>2</td>
+        </tr>
+
+        <tr id="Multivariate time series (MTS) forecasting has shown great importance in numerous industries. Current state-of-the-art graph neural network (GNN)-based forecasting methods usually require both graph networks (e.g., GCN) and temporal networks (e.g., LSTM) to capture inter-series (spatial) dynamics and intra-series (temporal) dependencies, respectively. However, the uncertain compatibility of the two networks puts an extra burden on handcrafted model designs. Moreover, the separate spatial and temporal modeling naturally violates the unified spatiotemporal inter-dependencies in real world, which largely hinders the forecasting performance. To overcome these problems, we explore an interesting direction of directly applying graph networks and rethink MTS forecasting from a pure graph perspective. We first define a novel data structure, hypervariate graph, which regards each series value (regardless of variates or timestamps) as a graph node, and represents sliding windows as space-time fully-connected graphs. This perspective considers spatiotemporal dynamics unitedly and reformulates classic MTS forecasting into the predictions on hypervariate graphs. Then, we propose a novel architecture Fourier Graph Neural Network (FourierGNN) by stacking our proposed Fourier Graph Operator (FGO) to perform matrix multiplications in Fourier space. FourierGNN accommodates adequate expressiveness and achieves much lower complexity, which can effectively and efficiently accomplish the forecasting. Besides, our theoretical analysis reveals FGO's equivalence to graph convolutions in the time domain, which further verifies the validity of FourierGNN. Extensive experiments on seven datasets have demonstrated our superior performance with higher efficiency and fewer parameters compared with state-of-the-art methods.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/9dbcb0893d05e6176353eee401afa4929b570cf6" target='_blank'>FourierGNN: Rethinking Multivariate Time Series Forecasting from a Pure Graph Perspective</a></td>
+          <td>
+            Kun Yi, Qi Zhang, Wei Fan, Hui He, Liang Hu, Pengyang Wang, Ning An, Longbin Cao, Zhendong Niu
+          </td>
+          <td>2023-11-10</td>
+          <td>ArXiv</td>
+          <td>46</td>
+          <td>6</td>
         </tr>
 
         <tr id="Anomaly detection of time series, especially multivariate time series(time series with multiple sensors), has been focused on for several years. Though existing method has achieved great progress, there are several challenging problems to be solved. Firstly, existing method including neural network only concentrate on the relationship in terms of timestamp. To be exact, they only want to know how does the data in the past inﬂuence which in the future. However, one sensor sometimes intervenes in other sensor such as the speed of wind may cause decrease of temperature. Secondly, there exist two categories of model for time series anomaly detection: prediction model and reconstruction model. Prediction model is adept at learning timely representation while short of capability when faced with sparse anomaly. Conversely, reconstruction model is opposite. Therefore, how can we eﬃciently get the relationship both in terms of both timestamp and sensors becomes our main topic. Our approach uses GAT, which is originated from graph neural network, to obtain connection between sensors. And LSTM is used to obtain relationships timely. Our approach is also designed to be double headed to calculate both prediction loss and reconstruction loss via VAE(Variational Auto-Encoder). In order to take advantage of two sorts of model, multi-task optimization algorithm is used in this model.">
@@ -572,28 +584,16 @@
           <td>1</td>
         </tr>
 
-        <tr id="Spatio-temporal forecasting of future values of spatially correlated time series is important across many cyber-physical systems (CPS). Recent studies offer evidence that the use of graph neural networks to capture latent correlations between time series holds a potential for enhanced forecasting. However, most existing methods rely on predefined or self-learning graphs, which are either static or unintentionally dynamic, and thus cannot model the time-varying correlations that exhibit trends and periodicities caused by the regularity of the underlying processes in CPS. To tackle such limitation, we propose Time-aware Graph Structure Learning (TagSL), which extracts time-aware correlations among time series by measuring the interaction of node and time representations in high-dimensional spaces. Notably, we introduce time discrepancy learning that utilizes contrastive learning with distance-based regularization terms to constrain learned spatial correlations to a trend sequence. Additionally, we propose a periodic discriminant function to enable the capture of periodic changes from the state of nodes. Next, we present a Graph Convolution-based Gated Recurrent Unit (GCGRU) that jointly captures spatial and temporal dependencies while learning time-aware and node-specific patterns. Finally, we introduce a unified framework named Time-aware Graph Convolutional Recurrent Network (TGCRN), combining TagSL, and GCGRU in an encoder-decoder architecture for multi-step spatiotemporal forecasting. We report on experiments with TGCRN and popular existing approaches on five real-world datasets, thus providing evidence that TGCRN is capable of advancing the state-of-the-art. We also cover a detailed ablation study and visualization analysis, offering detailed insight into the effectiveness of time-aware structure learning.">
+        <tr id="This paper introduces a novel Graph Neural Network (GNN) architecture for time series classification, based on visibility graph representations. Traditional time series classification methods often struggle with high computational complexity and inadequate capture of spatio-temporal dynamics. By representing time series as visibility graphs, it is possible to encode both spatial and temporal dependencies inherent to time series data, while being computationally efficient. Our architecture is fully modular, enabling flexible experimentation with different models and representations. We employ directed visibility graphs encoded with in-degree and PageRank features to improve the representation of time series, ensuring efficient computation while enhancing the model's ability to capture long-range dependencies in the data. We show the robustness and generalization capability of the proposed architecture across a diverse set of classification tasks and against a traditional model. Our work represents a significant advancement in the application of GNNs for time series analysis, offering a powerful and flexible framework for future research and practical implementations.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/2e635d42e768aec7be29fbd203a605c1f011a44d" target='_blank'>Learning Time-Aware Graph Structures for Spatially Correlated Time Series Forecasting</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/1be874b113152ade7584757402c8129e5e036526" target='_blank'>Graph Neural Alchemist: An innovative fully modular architecture for time series-to-graph classification</a></td>
           <td>
-            Minbo Ma, Jilin Hu, Christian S. Jensen, Fei Teng, Peng Han, Zhiqiang Xu, Tian-Jie Li
+            Paulo Coelho, Raul Araju, Lu'is Ramos, Samir Saliba, Renato Vimieiro
           </td>
-          <td>2023-12-27</td>
-          <td>2024 IEEE 40th International Conference on Data Engineering (ICDE)</td>
+          <td>2024-10-12</td>
+          <td>ArXiv</td>
           <td>0</td>
-          <td>13</td>
-        </tr>
-
-        <tr id="Multivariate time-series anomaly detection is critically important in many applications, including retail, transportation, power grid, and water treatment plants. Existing approaches for this problem mostly employ either statistical models which cannot capture the nonlinear relations well or conventional deep learning (DL) models [e.g., convolutional neural network (CNN) and long short-term memory (LSTM)] that do not explicitly learn the pairwise correlations among variables. To overcome these limitations, we propose a novel method, correlation-aware spatial–temporal graph learning (termed CST-GL), for time-series anomaly detection. CST-GL explicitly captures the pairwise correlations via a multivariate time series correlation learning (MTCL) module based on which a spatial–temporal graph neural network (STGNN) can be developed. Then, by employing a graph convolution network (GCN) that exploits one- and multihop neighbor information, our STGNN component can encode rich spatial information from complex pairwise dependencies between variables. With a temporal module that consists of dilated convolutional functions, the STGNN can further capture long-range dependence over time. A novel anomaly scoring component is further integrated into CST-GL to estimate the degree of an anomaly in a purely unsupervised manner. Experimental results demonstrate that CST-GL can detect and diagnose anomalies effectively in general settings as well as enable early detection across different time delays. Our code is available at https://github.com/huankoh/CST-GL.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/eb46fe40562fe20eac559174dacd98614d80d1e4" target='_blank'>Correlation-Aware Spatial–Temporal Graph Learning for Multivariate Time-Series Anomaly Detection</a></td>
-          <td>
-            Yu Zheng, Huan Yee Koh, Ming Jin, Lianhua Chi, Khoa T. Phan, Shirui Pan, Yi-Ping Phoebe Chen, Wei Xiang
-          </td>
-          <td>2023-07-17</td>
-          <td>IEEE Transactions on Neural Networks and Learning Systems</td>
-          <td>10</td>
-          <td>20</td>
+          <td>0</td>
         </tr>
 
   </tbody>
