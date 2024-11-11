@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-11-04 06:06:03 UTC</i>
+  <i class="footer">This page was last updated on 2024-11-11 06:05:42 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -476,6 +476,18 @@
   </thead>
   <tbody>
 
+        <tr id="This article introduces an advanced Koopman mode decomposition (KMD) technique—coined Featurized Koopman Mode Decomposition (FKMD)—that uses delay embedding and a learned Mahalanobis distance to enhance analysis and prediction of high-dimensional dynamical systems. The delay embedding expands the observation space to better capture underlying manifold structures, while the Mahalanobis distance adjusts observations based on the system’s dynamics. This aids in featurizing KMD in cases where good features are not a priori known. We show that FKMD improves predictions for a high-dimensional linear oscillator, a high-dimensional Lorenz attractor that is partially observed, and a cell signaling problem from cancer research.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/78f159b92f2f6689b738970dc1ce3a8641b2a534" target='_blank'>Featurizing Koopman mode decomposition for robust forecasting</a></td>
+          <td>
+            D. Aristoff, J. Copperman, Nathan Mankovich, Alexander Davies
+          </td>
+          <td>2023-12-14</td>
+          <td>The Journal of Chemical Physics</td>
+          <td>0</td>
+          <td>12</td>
+        </tr>
+
         <tr id="A common problem in time-series analysis is to predict dynamics with only scalar or partial observations of the underlying dynamical system. For data on a smooth compact manifold, Takens' theorem proves a time-delayed embedding of the partial state is diffeomorphic to the attractor, although for chaotic and highly nonlinear systems, learning these delay coordinate mappings is challenging. We utilize deep artificial neural networks (ANNs) to learn discrete time maps and continuous time flows of the partial state. Given training data for the full state, we also learn a reconstruction map. Thus, predictions of a time series can be made from the current state and several previous observations with embedding parameters determined from time-series analysis. The state space for time evolution is of comparable dimension to reduced order manifold models. These are advantages over recurrent neural network models, which require a high-dimensional internal state or additional memory terms and hyperparameters. We demonstrate the capacity of deep ANNs to predict chaotic behavior from a scalar observation on a manifold of dimension three via the Lorenz system. We also consider multivariate observations on the Kuramoto-Sivashinsky equation, where the observation dimension required for accurately reproducing dynamics increases with the manifold dimension via the spatial extent of the system.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/e001a698302d507abbd3a818e0b0aaf84f02e418" target='_blank'>Deep learning delay coordinate dynamics for chaotic attractors from partial observable data</a></td>
@@ -496,8 +508,8 @@
           </td>
           <td>2022-01-13</td>
           <td>Proceedings of the Royal Society A</td>
-          <td>73</td>
-          <td>66</td>
+          <td>75</td>
+          <td>67</td>
         </tr>
 
         <tr id="Making accurate forecasts for a complex system is a challenge in various practical applications. The major difficulty in solving such a problem concerns nonlinear spatiotemporal dynamics with time-varying characteristics. Takens' delay embedding theory provides a way to transform high-dimensional spatial information into temporal information. In this work, by combining delay embedding theory and deep learning techniques, we propose a novel framework, delay-embedding-based forecast Machine (DEFM), to predict the future values of a target variable in a self-supervised and multistep-ahead manner based on high-dimensional observations. With a three-module spatiotemporal architecture, the DEFM leverages deep neural networks to effectively extract both the spatially and temporally associated information from the observed time series even with time-varying parameters or additive noise. The DEFM can accurately predict future information by transforming spatiotemporal information to the delay embeddings of a target variable. The efficacy and precision of the DEFM are substantiated through applications in three spatiotemporally chaotic systems: a 90-dimensional (90D) coupled Lorenz system, the Lorenz 96 system, and the Kuramoto-Sivashinsky equation with inhomogeneity. Additionally, the performance of the DEFM is evaluated on six real-world datasets spanning various fields. Comparative experiments with five prediction methods illustrate the superiority and robustness of the DEFM and show the great potential of the DEFM in temporal information mining and forecasting.">
@@ -509,7 +521,7 @@
           <td>2020-05-16</td>
           <td>Chaos</td>
           <td>1</td>
-          <td>82</td>
+          <td>83</td>
         </tr>
 
         <tr id="Making accurate forecasts for a complex system is a challenge in various practical applications. The major difficulty in solving such a problem concerns nonlinear spatiotemporal dynamics with time-varying characteristics. Takens' delay embedding theory provides a way to transform high-dimensional spatial information into temporal information. In this work, by combining delay embedding theory and deep learning techniques, we propose a novel framework, delay-embedding-based forecast Machine (DEFM), to predict the future values of a target variable in a self-supervised and multistep-ahead manner based on high-dimensional observations. With a three-module spatiotemporal architecture, the DEFM leverages deep neural networks to effectively extract both the spatially and temporally associated information from the observed time series even with time-varying parameters or additive noise. The DEFM can accurately predict future information by transforming spatiotemporal information to the delay embeddings of a target variable. The efficacy and precision of the DEFM are substantiated through applications in three spatiotemporally chaotic systems: a 90-dimensional (90D) coupled Lorenz system, the Lorenz 96 system, and the Kuramoto-Sivashinsky equation with inhomogeneity. Additionally, the performance of the DEFM is evaluated on six real-world datasets spanning various fields. Comparative experiments with five prediction methods illustrate the superiority and robustness of the DEFM and show the great potential of the DEFM in temporal information mining and forecasting.">
@@ -521,7 +533,7 @@
           <td>2020-05-16</td>
           <td>Chaos</td>
           <td>1</td>
-          <td>82</td>
+          <td>83</td>
         </tr>
 
         <tr id="Many complex phenomena, from weather systems to heartbeat rhythm patterns, are effectively modeled as low-dimensional dynamical systems. Such systems may behave chaotically under certain conditions, and so the ability to detect chaos based on empirical measurement is an important step in characterizing and predicting these processes. Classifying a system as chaotic usually requires estimating its largest Lyapunov exponent, which quantifies the average rate of convergence or divergence of initially close trajectories in state space, and for which a positive value is generally accepted as an operational definition of chaos. Estimating the largest Lyapunov exponent from observations of a process is especially challenging in systems affected by dynamical noise, which is the case for many models of real-world processes, in particular models of biological systems. We describe a novel method for estimating the largest Lyapunov exponent from data, based on training Deep Learning models on synthetically generated trajectories, and demonstrate that this method yields accurate and noise-robust predictions given relatively short inputs and across a range of different dynamical systems. Our method is unique in that it can analyze tree-shaped data, a ubiquitous topology in biological settings, and specifically in dynamics over lineages of cells or organisms. We also characterize the types of input information extracted by our models for their predictions, allowing for a deeper understanding into the different ways by which chaos can be analyzed in different topologies.">
@@ -544,7 +556,7 @@
           </td>
           <td>2021-06-01</td>
           <td>Science Advances</td>
-          <td>49</td>
+          <td>50</td>
           <td>50</td>
         </tr>
 
@@ -558,30 +570,6 @@
           <td>arXiv: Data Analysis, Statistics and Probability</td>
           <td>1</td>
           <td>50</td>
-        </tr>
-
-        <tr id="Complex systems are commonly modeled using nonlinear dynamical systems. These models are often high-dimensional and chaotic. An important goal in studying physical systems through the lens of mathematical models is to determine when the system undergoes changes in qualitative behavior. A detailed description of the dynamics can be difficult or impossible to obtain for high-dimensional and chaotic systems. Therefore, a more sensible goal is to recognize and mark transitions of a system between qualitatively different regimes of behavior. In practice, one is interested in developing techniques for detection of such transitions from sparse observations, possibly contaminated by noise. In this paper we develop a framework to accurately tag different regimes of complex systems based on topological features. In particular, our framework works with a high degree of success in picking out a cyclically orbiting regime from a stationary equilibrium regime in high-dimensional stochastic dynamical systems.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/4201cd896bbab7c98602be04bb744b6c470b0dfb" target='_blank'>Automatic recognition and tagging of topologically different regimes in dynamical systems</a></td>
-          <td>
-            Jesse Berwald, M. Gidea, Mikael Vejdemo-Johansson
-          </td>
-          <td>2013-12-09</td>
-          <td>ArXiv</td>
-          <td>35</td>
-          <td>22</td>
-        </tr>
-
-        <tr id="None">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/0515c6b8af04ab03d06dcbb61caf851ff899fc37" target='_blank'>Dynamics reconstruction and classification via Koopman features</a></td>
-          <td>
-            Wei Zhang, Yao-Chi Yu, Jr-Shin Li
-          </td>
-          <td>2019-06-24</td>
-          <td>Data Mining and Knowledge Discovery</td>
-          <td>3</td>
-          <td>28</td>
         </tr>
 
   </tbody>
