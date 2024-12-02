@@ -65,7 +65,7 @@ seaborn==0.13.2
 sgmllib3k==1.0.0
 six==1.16.0
 soupsieve==2.6
-tomli==2.0.1
+tomli==2.2.1
 tomlkit==0.12.1
 typing_extensions==4.9.0
 tzdata==2024.1
