@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-11-11 06:05:30 UTC</i>
+  <i class="footer">This page was last updated on 2024-12-25 10:33:26 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -460,7 +460,7 @@
 
   <p>
   <h3 data-intro='Recommendations for the article'>
-    Recommendations for the article <i>UNITS: A Unified Multi-Task Time Series Model</i>
+    Recommendations for the article <i>UniTS: A Unified Multi-Task Time Series Model</i>
   </h3>
   <table id="table1" class="display wrap" style="width:100%">
   <thead>
@@ -483,8 +483,8 @@
             Yong Liu, Haoran Zhang, Chenyu Li, Xiangdong Huang, Jianmin Wang, Mingsheng Long
           </td>
           <td>2024-02-04</td>
-          <td>ArXiv, DBLP</td>
-          <td>21</td>
+          <td>DBLP, ArXiv</td>
+          <td>26</td>
           <td>67</td>
         </tr>
 
@@ -492,7 +492,7 @@
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/67381675766ffe648e1346cb19d0d7318366bbbe" target='_blank'>Towards Generalisable Time Series Understanding Across Domains</a></td>
           <td>
-            Ozgun Turgut, Philip Muller, M. Menten, Daniel Rueckert
+            Özgün Turgut, Philip Müller, M. Menten, Daniel Rueckert
           </td>
           <td>2024-10-09</td>
           <td>ArXiv</td>
@@ -500,16 +500,16 @@
           <td>15</td>
         </tr>
 
-        <tr id="Large pre-trained models have been vital in recent advancements in domains like language and vision, making model training for individual downstream tasks more efficient and provide superior performance. However, tackling time-series analysis tasks usually involves designing and training a separate model from scratch leveraging training data and domain expertise specific to the task. We tackle a significant challenge for pre-training a foundational time-series model from multi-domain time-series datasets: extracting semantically useful tokenized inputs to the model across heterogenous time-series from different domains. We propose Large Pre-trained Time-series Models (LPTM) that introduces a novel method of \textit{adaptive segmentation} that automatically identifies optimal dataset-specific segmentation strategy during pre-training. This enables LPTM to perform similar to or better than domain-specific state-of-art model when fine-tuned to different downstream time-series analysis tasks and under zero-shot settings. LPTM achieves superior forecasting and time-series classification results taking up to 40% less data and 50% less training time compared to state-of-art baselines.">
+        <tr id="We present Timer-XL, a generative Transformer for unified time series forecasting. To uniformly predict 1D and 2D time series, we generalize next token prediction, predominantly adopted for causal generation of 1D sequences, to multivariate next token prediction. The proposed paradigm uniformly formulates various forecasting scenarios as a long-context generation problem. We opt for the generative Transformer, which can capture global-range and causal dependencies while providing contextual flexibility, to implement unified forecasting on univariate series characterized by non-stationarity, multivariate time series with complicated dynamics and correlations, and covariate-informed contexts that include both endogenous and exogenous time series. Technically, we propose a universal TimeAttention to facilitate generative Transformers on multiple time series, which can effectively capture fine-grained intra- and inter-series dependencies of flattened time series tokens (patches), and is further enhanced by deftly designed position embeddings for the temporal and variable dimensions. Timer-XL achieves state-of-the-art performance across challenging forecasting benchmarks through a unified approach. Based on large-scale pre-training, Timer-XL also demonstrates notable zero-shot performance, making it a promising architecture for large time series models.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/d8140a17dfc21b1e3300158cb0676600136f14b1" target='_blank'>Large Pre-trained time series models for cross-domain Time series analysis tasks</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/518ecc43f230938e62b1f237ce9a0ef0d1f6d449" target='_blank'>Timer-XL: Long-Context Transformers for Unified Time Series Forecasting</a></td>
           <td>
-            Harshavardhan Kamarthi, B. A. Prakash
+            Yong Liu, Guo Qin, Xiangdong Huang, Jianmin Wang, Mingsheng Long
           </td>
-          <td>2023-11-19</td>
+          <td>2024-10-07</td>
           <td>ArXiv</td>
-          <td>4</td>
-          <td>8</td>
+          <td>0</td>
+          <td>67</td>
         </tr>
 
         <tr id="The field of general time series analysis has recently begun to explore unified modeling, where a common architectural backbone can be retrained on a specific task for a specific dataset. In this work, we approach unification from a complementary vantage point: unification across tasks and domains. To this end, we explore the impact of discrete, learnt, time series data representations that enable generalist, cross-domain training. Our method, TOTEM, or TOkenized Time Series EMbeddings, proposes a simple tokenizer architecture that embeds time series data from varying domains using a discrete vectorized representation learned in a self-supervised manner. TOTEM works across multiple tasks and domains with minimal to no tuning. We study the efficacy of TOTEM with an extensive evaluation on 17 real world time series datasets across 3 tasks. We evaluate both the specialist (i.e., training a model on each domain) and generalist (i.e., training a single model on many domains) settings, and show that TOTEM matches or outperforms previous best methods on several popular benchmarks. The code can be found at: https://github.com/SaberaTalukder/TOTEM.">
@@ -536,18 +536,6 @@
           <td>7</td>
         </tr>
 
-        <tr id="Despite the impressive achievements of pre-trained models in the fields of natural language processing (NLP) and computer vision (CV), progress in the domain of time series analysis has been limited. In contrast to NLP and CV, where a single model can handle various tasks, time series analysis still relies heavily on task-specific methods for activities such as classification, anomaly detection, forecasting, and few-shot learning. The primary obstacle to developing a pre-trained model for time series analysis is the scarcity of sufficient training data. In our research, we overcome this obstacle by utilizing pre-trained models from language or CV, which have been trained on billions of data points, and apply them to time series analysis. We assess the effectiveness of the pre-trained transformer model in two ways. Initially, we maintain the original structure of the self-attention and feedforward layers in the residual blocks of the pre-trained language or image model, using the Frozen Pre-trained Transformer (FPT) for time series analysis with the addition of projection matrices for input and output. Additionally, we introduce four unique adapters, designed specifically for downstream tasks based on the pre-trained model, including forecasting and anomaly detection. These adapters are further enhanced with efficient parameter tuning, resulting in superior performance compared to all state-of-the-art methods.Our comprehensive experimental studies reveal that (a) the simple FPT achieves top-tier performance across various time series analysis tasks; and (b) fine-tuning the FPT with the custom-designed adapters can further elevate its performance, outshining specialized task-specific models.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/15bfe54223d28c74f9e39960f7ff1d03167e285f" target='_blank'>One Fits All: Universal Time Series Analysis by Pretrained LM and Specially Designed Adaptors</a></td>
-          <td>
-            Tian Zhou, Peisong Niu, Xue Wang, Liang Sun, Rong Jin
-          </td>
-          <td>2023-11-24</td>
-          <td>ArXiv</td>
-          <td>4</td>
-          <td>8</td>
-        </tr>
-
         <tr id="We introduce Chronos, a simple yet effective framework for pretrained probabilistic time series models. Chronos tokenizes time series values using scaling and quantization into a fixed vocabulary and trains existing transformer-based language model architectures on these tokenized time series via the cross-entropy loss. We pretrained Chronos models based on the T5 family (ranging from 20M to 710M parameters) on a large collection of publicly available datasets, complemented by a synthetic dataset that we generated via Gaussian processes to improve generalization. In a comprehensive benchmark consisting of 42 datasets, and comprising both classical local models and deep learning methods, we show that Chronos models: (a) significantly outperform other methods on datasets that were part of the training corpus; and (b) have comparable and occasionally superior zero-shot performance on new datasets, relative to methods that were trained specifically on them. Our results demonstrate that Chronos models can leverage time series data from diverse domains to improve zero-shot accuracy on unseen forecasting tasks, positioning pretrained models as a viable tool to greatly simplify forecasting pipelines.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/02fa77e4f355198cb4270f6d4a07517bf09c46dd" target='_blank'>Chronos: Learning the Language of Time Series</a></td>
@@ -556,20 +544,20 @@
           </td>
           <td>2024-03-12</td>
           <td>ArXiv</td>
-          <td>69</td>
+          <td>82</td>
           <td>18</td>
         </tr>
 
-        <tr id="Deep learning for time series forecasting has traditionally operated within a one-model-per-dataset framework, limiting its potential to leverage the game-changing impact of large pre-trained models. The concept of universal forecasting, emerging from pre-training on a vast collection of time series datasets, envisions a single Large Time Series Model capable of addressing diverse downstream forecasting tasks. However, constructing such a model poses unique challenges specific to time series data: i) cross-frequency learning, ii) accommodating an arbitrary number of variates for multivariate time series, and iii) addressing the varying distributional properties inherent in large-scale data. To address these challenges, we present novel enhancements to the conventional time series Transformer architecture, resulting in our proposed Masked Encoder-based Universal Time Series Forecasting Transformer (Moirai). Trained on our newly introduced Large-scale Open Time Series Archive (LOTSA) featuring over 27B observations across nine domains, Moirai achieves competitive or superior performance as a zero-shot forecaster when compared to full-shot models. Code, data, and model weights can be found at https://github.com/SalesforceAIResearch/uni2ts.">
+        <tr id="Large pre-trained models have been vital in recent advancements in domains like language and vision, making model training for individual downstream tasks more efficient and provide superior performance. However, tackling time-series analysis tasks usually involves designing and training a separate model from scratch leveraging training data and domain expertise specific to the task. We tackle a significant challenge for pre-training a foundational time-series model from multi-domain time-series datasets: extracting semantically useful tokenized inputs to the model across heterogenous time-series from different domains. We propose Large Pre-trained Time-series Models (LPTM) that introduces a novel method of adaptive segmentation that automatically identifies optimal dataset-specific segmentation strategy during pre-training. This enables LPTM to perform similar to or better than domain-specific state-of-art model when fine-tuned to different downstream time-series analysis tasks and under zero-shot settings. LPTM achieves superior forecasting and time-series classification results taking up to 40% less data and 50% less training time compared to state-of-art baselines. Code: www.github.com/AdityaLab/Samay">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/4a111f7a3b56d0468f13104999844885157ef17d" target='_blank'>Unified Training of Universal Time Series Forecasting Transformers</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/d8140a17dfc21b1e3300158cb0676600136f14b1" target='_blank'>Large Pre-trained time series models for cross-domain Time series analysis tasks</a></td>
           <td>
-            Gerald Woo, Chenghao Liu, Akshat Kumar, Caiming Xiong, Silvio Savarese, Doyen Sahoo
+            Harshavardhan Kamarthi, B. A. Prakash
           </td>
-          <td>2024-02-04</td>
+          <td>2023-11-19</td>
           <td>ArXiv</td>
-          <td>71</td>
-          <td>25</td>
+          <td>4</td>
+          <td>9</td>
         </tr>
 
   </tbody>

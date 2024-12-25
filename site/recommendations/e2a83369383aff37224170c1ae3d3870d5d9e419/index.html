@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-11-11 06:05:10 UTC</i>
+  <i class="footer">This page was last updated on 2024-12-25 10:33:14 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -496,7 +496,7 @@
           </td>
           <td>2022-09-14</td>
           <td>ArXiv</td>
-          <td>34</td>
+          <td>37</td>
           <td>50</td>
         </tr>
 
@@ -524,6 +524,18 @@
           <td>12</td>
         </tr>
 
+        <tr id="Spatial-temporal graphs are widely used in a variety of real-world applications. Spatial-Temporal Graph Neural Networks (STGNNs) have emerged as a powerful tool to extract meaningful insights from this data. However, in real-world applications, most nodes may not possess any available temporal data during training. For example, the pandemic dynamics of most cities on a geographical graph may not be available due to the asynchronous nature of outbreaks. Such a phenomenon disagrees with the training requirements of most existing spatial-temporal forecasting methods, which jeopardizes their effectiveness and thus blocks broader deployment. In this paper, we propose to formulate a novel problem of inductive forecasting with limited training data. In particular, given a spatial-temporal graph, we aim to learn a spatial-temporal forecasting model that can be easily generalized onto those nodes without any available temporal training data. To handle this problem, we propose a principled framework named ST-FiT. ST-FiT consists of two key learning components: temporal data augmentation and spatial graph topology learning. With such a design, ST-FiT can be used on top of any existing STGNNs to achieve superior performance on the nodes without training data. Extensive experiments verify the effectiveness of ST-FiT in multiple key perspectives.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/d05151eeedb6e1f5b10ce6c5dbd3de96467f481b" target='_blank'>ST-FiT: Inductive Spatial-Temporal Forecasting with Limited Training Data</a></td>
+          <td>
+            Zhenyu Lei, Yushun Dong, Jundong Li, Chen Chen
+          </td>
+          <td>2024-12-14</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>15</td>
+        </tr>
+
         <tr id="The challenge of effectively learning inter-series correlations for multivariate time series forecasting remains a substantial and unresolved problem. Traditional deep learning models, which are largely dependent on the Transformer paradigm for modeling long sequences, often fail to integrate information from multiple time series into a coherent and universally applicable model. To bridge this gap, our paper presents ForecastGrapher, a framework reconceptualizes multivariate time series forecasting as a node regression task, providing a unique avenue for capturing the intricate temporal dynamics and inter-series correlations. Our approach is underpinned by three pivotal steps: firstly, generating custom node embeddings to reflect the temporal variations within each series; secondly, constructing an adaptive adjacency matrix to encode the inter-series correlations; and thirdly, augmenting the GNNs' expressive power by diversifying the node feature distribution. To enhance this expressive power, we introduce the Group Feature Convolution GNN (GFC-GNN). This model employs a learnable scaler to segment node features into multiple groups and applies one-dimensional convolutions with different kernel lengths to each group prior to the aggregation phase. Consequently, the GFC-GNN method enriches the diversity of node feature distribution in a fully end-to-end fashion. Through extensive experiments and ablation studies, we show that ForecastGrapher surpasses strong baselines and leading published techniques in the domain of multivariate time series forecasting.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/60560da7e2483d4f788c228ebd5e226ae1f40002" target='_blank'>ForecastGrapher: Redefining Multivariate Time Series Forecasting with Graph Neural Networks</a></td>
@@ -534,18 +546,6 @@
           <td>ArXiv</td>
           <td>0</td>
           <td>3</td>
-        </tr>
-
-        <tr id="Multivariate time series (MTS) forecasting has shown great importance in numerous industries. Current state-of-the-art graph neural network (GNN)-based forecasting methods usually require both graph networks (e.g., GCN) and temporal networks (e.g., LSTM) to capture inter-series (spatial) dynamics and intra-series (temporal) dependencies, respectively. However, the uncertain compatibility of the two networks puts an extra burden on handcrafted model designs. Moreover, the separate spatial and temporal modeling naturally violates the unified spatiotemporal inter-dependencies in real world, which largely hinders the forecasting performance. To overcome these problems, we explore an interesting direction of directly applying graph networks and rethink MTS forecasting from a pure graph perspective. We first define a novel data structure, hypervariate graph, which regards each series value (regardless of variates or timestamps) as a graph node, and represents sliding windows as space-time fully-connected graphs. This perspective considers spatiotemporal dynamics unitedly and reformulates classic MTS forecasting into the predictions on hypervariate graphs. Then, we propose a novel architecture Fourier Graph Neural Network (FourierGNN) by stacking our proposed Fourier Graph Operator (FGO) to perform matrix multiplications in Fourier space. FourierGNN accommodates adequate expressiveness and achieves much lower complexity, which can effectively and efficiently accomplish the forecasting. Besides, our theoretical analysis reveals FGO's equivalence to graph convolutions in the time domain, which further verifies the validity of FourierGNN. Extensive experiments on seven datasets have demonstrated our superior performance with higher efficiency and fewer parameters compared with state-of-the-art methods.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/9dbcb0893d05e6176353eee401afa4929b570cf6" target='_blank'>FourierGNN: Rethinking Multivariate Time Series Forecasting from a Pure Graph Perspective</a></td>
-          <td>
-            Kun Yi, Qi Zhang, Wei Fan, Hui He, Liang Hu, Pengyang Wang, Ning An, Longbin Cao, Zhendong Niu
-          </td>
-          <td>2023-11-10</td>
-          <td>ArXiv</td>
-          <td>49</td>
-          <td>6</td>
         </tr>
 
   </tbody>

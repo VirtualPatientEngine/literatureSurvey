@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-11-11 06:05:17 UTC</i>
+  <i class="footer">This page was last updated on 2024-12-25 10:33:20 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -476,9 +476,9 @@
   </thead>
   <tbody>
 
-        <tr id="Time series foundation models excel in zero-shot forecasting, handling diverse tasks without explicit training. However, the advancement of these models has been hindered by the lack of comprehensive benchmarks. To address this gap, we introduce the General Time Series Forecasting Model Evaluation, GIFT-Eval, a pioneering benchmark aimed at promoting evaluation across diverse datasets. GIFT-Eval encompasses 28 datasets over 144,000 time series and 177 million data points, spanning seven domains, 10 frequencies, multivariate inputs, and prediction lengths ranging from short to long-term forecasts. To facilitate the effective pretraining and evaluation of foundation models, we also provide a non-leaking pretraining dataset containing approximately 230 billion data points. Additionally, we provide a comprehensive analysis of 17 baselines, which includes statistical models, deep learning models, and foundation models. We discuss each model in the context of various benchmark characteristics and offer a qualitative analysis that spans both deep learning and foundation models. We believe the insights from this analysis, along with access to this new standard zero-shot time series forecasting benchmark, will guide future developments in time series foundation models. The codebase, datasets, and a leaderboard showing all the results in detail will be available soon.">
+        <tr id="Time series foundation models excel in zero-shot forecasting, handling diverse tasks without explicit training. However, the advancement of these models has been hindered by the lack of comprehensive benchmarks. To address this gap, we introduce the General Time Series Forecasting Model Evaluation, GIFT-Eval, a pioneering benchmark aimed at promoting evaluation across diverse datasets. GIFT-Eval encompasses 23 datasets over 144,000 time series and 177 million data points, spanning seven domains, 10 frequencies, multivariate inputs, and prediction lengths ranging from short to long-term forecasts. To facilitate the effective pretraining and evaluation of foundation models, we also provide a non-leaking pretraining dataset containing approximately 230 billion data points. Additionally, we provide a comprehensive analysis of 17 baselines, which includes statistical models, deep learning models, and foundation models. We discuss each model in the context of various benchmark characteristics and offer a qualitative analysis that spans both deep learning and foundation models. We believe the insights from this analysis, along with access to this new standard zero-shot time series forecasting benchmark, will guide future developments in time series foundation models. Code, data, and the leaderboard can be found at https://github.com/SalesforceAIResearch/gift-eval .">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/8bf78baccb9e56ffef46080b9b34752f23d1911c" target='_blank'>GIFT-Eval: A Benchmark For General Time Series Forecasting Model Evaluation</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/8fd087d409dcaf31042a0096e3cb4dc157e1591d" target='_blank'>GIFT-Eval: A Benchmark For General Time Series Forecasting Model Evaluation</a></td>
           <td>
             Taha İbrahim Aksu, Gerald Woo, Juncheng Liu, Xu Liu, Chenghao Liu, Silvio Savarese, Caiming Xiong, Doyen Sahoo
           </td>
@@ -496,8 +496,8 @@
           </td>
           <td>2024-10-15</td>
           <td>ArXiv</td>
-          <td>0</td>
-          <td>27</td>
+          <td>1</td>
+          <td>28</td>
         </tr>
 
         <tr id="Deep learning for time series forecasting has seen significant advancements over the past decades. However, despite the success of large-scale pre-training in language and vision domains, pre-trained time series models remain limited in scale and operate at a high cost, hindering the development of larger capable forecasting models in real-world applications. In response, we introduce Time-MoE, a scalable and unified architecture designed to pre-train larger, more capable forecasting foundation models while reducing inference costs. By leveraging a sparse mixture-of-experts (MoE) design, Time-MoE enhances computational efficiency by activating only a subset of networks for each prediction, reducing computational load while maintaining high model capacity. This allows Time-MoE to scale effectively without a corresponding increase in inference costs. Time-MoE comprises a family of decoder-only transformer models that operate in an auto-regressive manner and support flexible forecasting horizons with varying input context lengths. We pre-trained these models on our newly introduced large-scale data Time-300B, which spans over 9 domains and encompassing over 300 billion time points. For the first time, we scaled a time series foundation model up to 2.4 billion parameters, achieving significantly improved forecasting precision. Our results validate the applicability of scaling laws for training tokens and model size in the context of time series forecasting. Compared to dense models with the same number of activated parameters or equivalent computation budgets, our models consistently outperform them by large margin. These advancements position Time-MoE as a state-of-the-art solution for tackling real-world time series forecasting challenges with superior capability, efficiency, and flexibility.">
@@ -520,7 +520,7 @@
           </td>
           <td>2024-03-12</td>
           <td>ArXiv</td>
-          <td>69</td>
+          <td>82</td>
           <td>18</td>
         </tr>
 
@@ -531,8 +531,8 @@
             Yong Liu, Haoran Zhang, Chenyu Li, Xiangdong Huang, Jianmin Wang, Mingsheng Long
           </td>
           <td>2024-02-04</td>
-          <td>ArXiv, DBLP</td>
-          <td>21</td>
+          <td>DBLP, ArXiv</td>
+          <td>26</td>
           <td>67</td>
         </tr>
 
@@ -544,7 +544,7 @@
           </td>
           <td>2022-11-27</td>
           <td>ArXiv</td>
-          <td>724</td>
+          <td>773</td>
           <td>35</td>
         </tr>
 
@@ -552,12 +552,12 @@
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/45521591fd8c46068f0a8712b43ce6cdaac1edea" target='_blank'>FlexTSF: A Universal Forecasting Model for Time Series with Variable Regularities</a></td>
           <td>
-            Jingge Xiao, Yile Chen, Gao Cong, Wolfgang Nejdl, Simon Gottschalk
+            Jing Xiao, Yile Chen, Gao Cong, Wolfgang Nejdl, Simon Gottschalk
           </td>
           <td>2024-10-30</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>6</td>
+          <td>7</td>
         </tr>
 
         <tr id="Time series forecasting is a critical and challenging task in practical application. Recent advancements in pre-trained foundation models for time series forecasting have gained significant interest. However, current methods often overlook the multi-scale nature of time series, which is essential for accurate forecasting. To address this, we propose HiMTM, a hierarchical multi-scale masked time series modeling with self-distillation for long-term forecasting. HiMTM integrates four key components: (1) hierarchical multi-scale transformer (HMT) to capture temporal information at different scales; (2) decoupled encoder-decoder (DED) that directs the encoder towards feature extraction while the decoder focuses on pretext tasks; (3) hierarchical self-distillation (HSD) for multi-stage feature-level supervision signals during pre-training; and (4) cross-scale attention fine-tuning (CSA-FT) to capture dependencies between different scales for downstream tasks. These components collectively enhance multi-scale feature extraction in masked time series modeling, improving forecasting accuracy. Extensive experiments on seven mainstream datasets show that HiMTM surpasses state-of-the-art self-supervised and end-to-end learning methods by a considerable margin of 3.16-68.54\%. Additionally, HiMTM outperforms the latest robust self-supervised learning method, PatchTST, in cross-domain forecasting by a significant margin of 2.3\%. The effectiveness of HiMTM is further demonstrated through its application in natural gas demand forecasting.">
@@ -567,7 +567,7 @@
             Shubao Zhao, Ming Jin, Zhaoxiang Hou, Che-Sheng Yang, Zengxiang Li, Qingsong Wen, Yi Wang
           </td>
           <td>2024-01-10</td>
-          <td>Proceedings of the 33rd ACM International Conference on Information and Knowledge Management</td>
+          <td>DBLP, ArXiv</td>
           <td>0</td>
           <td>7</td>
         </tr>

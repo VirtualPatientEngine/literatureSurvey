@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-11-11 06:05:21 UTC</i>
+  <i class="footer">This page was last updated on 2024-12-25 10:33:22 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -484,8 +484,8 @@
           </td>
           <td>2023-04-23</td>
           <td>Sensors (Basel, Switzerland)</td>
-          <td>28</td>
-          <td>77</td>
+          <td>32</td>
+          <td>78</td>
         </tr>
 
         <tr id="Time series is a typical data type in numerous domains; however, labeling large amounts of time series data can be costly and time-consuming. Learning effective representation from unlabeled time series data is a challenging task. Contrastive learning stands out as a promising method to acquire representations of unlabeled time series data. Therefore, we propose a self-supervised time-series representation learning framework via Time-Frequency Fusion Contrasting (TF-FC) to learn time-series representation from unlabeled data. Specifically, TF-FC combines time-domain augmentation with frequency-domain augmentation to generate the diverse samples. For time-domain augmentation, the raw time series data pass through the time-domain augmentation bank (such as jitter, scaling, permutation, and masking) and get time-domain augmentation data. For frequency-domain augmentation, first, the raw time series undergoes conversion into frequency domain data following Fast Fourier Transform (FFT) analysis. Then, the frequency data passes through the frequency-domain augmentation bank (such as low pass filter, remove frequency, add frequency, and phase shift) and gets frequency-domain augmentation data. The fusion method of time-domain augmentation data and frequency-domain augmentation data is kernel PCA, which is useful for extracting nonlinear features in high-dimensional spaces. By capturing both the time and frequency domains of the time series, the proposed approach is able to extract more informative features from the data, enhancing the model's capacity to distinguish between different time series. To verify the effectiveness of the TF-FC method, we conducted experiments on four time series domain datasets (i.e., SleepEEG, HAR, Gesture, and Epilepsy). Experimental results show that TF-FC significantly improves in recognition accuracy compared with other SOTA methods.">
@@ -496,7 +496,7 @@
           </td>
           <td>2024-06-12</td>
           <td>Frontiers in Artificial Intelligence</td>
-          <td>0</td>
+          <td>1</td>
           <td>1</td>
         </tr>
 
@@ -512,6 +512,18 @@
           <td>39</td>
         </tr>
 
+        <tr id="In this study, we propose a novel framework for time-series representation learning that integrates a learnable masking-augmentation strategy into a contrastive learning framework. Time-series data pose challenges due to their temporal dependencies and feature-extraction complexities. To address these challenges, we introduce a masking-based reconstruction approach within a contrastive learning context, aiming to enhance the model’s ability to learn discriminative temporal features. Our method leverages self-supervised learning to effectively capture both global and local patterns by strategically masking segments of the time-series data and reconstructing them, which aids in revealing nuanced temporal dependencies. We utilize learnable masking as a dynamic augmentation technique, which enables the model to optimize contextual relationships in the data and extract meaningful representations that are both context-aware and robust. Extensive experiments were conducted on multiple time-series datasets, including SleepEDF-78, 20, UCI-HAR, achieving improvements of 2%, 2.55%, and 3.89% each and similar performance on Epilepsy in accuracy over baseline methods. Our results show significant performance gains compared to existing methods, highlighting the potential of our framework to advance the field of time-series analysis by improving the quality of learned representations and enhancing downstream task performance.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/77dcbf1b1d32d371861cbc7b2429f37514c961c3" target='_blank'>Time-Series Representation Feature Refinement with a Learnable Masking Augmentation Framework in Contrastive Learning</a></td>
+          <td>
+            Junyeop Lee, Insung Ham, Yongmin Kim, Hanseok Ko
+          </td>
+          <td>2024-12-11</td>
+          <td>Sensors</td>
+          <td>0</td>
+          <td>2</td>
+        </tr>
+
         <tr id="Significant progress has been made in representation learning, especially with recent success on self-supervised contrastive learning. However, for time series with less intuitive or semantic meaning, sampling bias may be inevitably encountered in unsupervised approaches. Although supervised contrastive learning has shown superior performance by leveraging label information, it may also suffer from class collapse. In this study, we consider a realistic scenario in industry with limited annotation information available. A supervised contrastive framework is developed for high-frequency time series representation and classification, wherein a novel variant of supervised contrastive loss is proposed to include multiple augmentations while induce spread within each class. Experiments on four mainstream public datasets as well as a series of sensitivity and ablation analyses demonstrate that the learned representations are effective and robust compared with the direct supervised learning and self-supervised learning, notably under the minimal few-shot situation.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/a2056f5affe509b50e41612057ca9cca143ef97a" target='_blank'>Supervised Contrastive Few-Shot Learning for High-Frequency Time Series</a></td>
@@ -521,7 +533,7 @@
           <td>2023-06-26</td>
           <td>DBLP</td>
           <td>4</td>
-          <td>140</td>
+          <td>141</td>
         </tr>
 
         <tr id="Contrastive representation learning is crucial in medical time series analysis as it alleviates dependency on labor-intensive, domain-specific, and scarce expert annotations. However, existing contrastive learning methods primarily focus on one single data level, which fails to fully exploit the intricate nature of medical time series. To address this issue, we present COMET, an innovative hierarchical framework that leverages data consistencies at all inherent levels in medical time series. Our meticulously designed model systematically captures data consistency from four potential levels: observation, sample, trial, and patient levels. By developing contrastive loss at multiple levels, we can learn effective representations that preserve comprehensive data consistency, maximizing information utilization in a self-supervised manner. We conduct experiments in the challenging patient-independent setting. We compare COMET against six baselines using three diverse datasets, which include ECG signals for myocardial infarction and EEG signals for Alzheimer's and Parkinson's diseases. The results demonstrate that COMET consistently outperforms all baselines, particularly in setup with 10% and 1% labeled data fractions across all datasets. These results underscore the significant impact of our framework in advancing contrastive representation learning techniques for medical time series. The source code is available at https://github.com/DL4mHealth/COMET.">
@@ -532,7 +544,7 @@
           </td>
           <td>2023-10-21</td>
           <td>ArXiv</td>
-          <td>30</td>
+          <td>33</td>
           <td>4</td>
         </tr>
 
@@ -545,7 +557,7 @@
           <td>2021-09-30</td>
           <td>IEEE Transactions on Pattern Analysis and Machine Intelligence</td>
           <td>21</td>
-          <td>72</td>
+          <td>71</td>
         </tr>
 
         <tr id="To improve the accuracy of clinical multivariate time series (MTS) classification (such as EEG and ECG) by a novel self-supervised paradigm that directly captures the dynamics between the different time series learned together to optimize the classification task. Labels in clinical datasets are very often insufficient. One way to address this challenge is leveraging self-supervision. This paradigm attempts to identify a supervisory signal inherent within a dataset to serve as a surrogate label. We present a novel form of self-supervision: dynamics of clinical MTS. Unlike other self-supervision methods, such as masking, that are intuitive but still heuristic, we suggest to learn a representation justified by Koopman theory. The latter was shown useful for representing clinical time series and can be used as a form of surrogate task to improve the clinical MTS classification. In the ECG task, we show that our proposed framework achieved higher sensitivity and specificity than the state-of-the-art (SOTA) baseline over numerous common diagnoses. For EEG abnormality classification, our proposed framework also achieved higher sensitivity and specificity than the SOTA baseline. All results are statistically significant. Our technique yields reliable clinical diagnosis in an empirical study employing signals from thousands of patients in multiple clinical tasks employing two types of clinical-grade sensors (ECG and EEG) as compared to the state-of-the-art machine learning. Leveraging time-series-dynamics self-supervision can help mitigate the lack of labels in clinical datasets used for training machine learning algorithms and significantly improve their performance. Specifically, the ECG system presented in this work is being trialed in hospitals, used by top cardiologists for patient diagnosis and treatment. We believe that the deployment of such cutting-edge technology will significantly improve the accuracy and speed of cardiac assessments.">
@@ -582,18 +594,6 @@
           <td>ArXiv</td>
           <td>1</td>
           <td>10</td>
-        </tr>
-
-        <tr id="Recent contrastive methods show significant improvement in self-supervised learning in several domains. In particular, contrastive methods are most effective where data augmentation can be easily constructed e.g. in computer vision. However, they are less successful in domains without established data transformations such as time series data. In this paper, we propose a novel self-supervised learning framework that combines contrastive learning with neural processes. It relies on recent advances in neural processes to perform time series forecasting. This allows to generate augmented versions of data by employing a set of various sampling functions and, hence, avoid manually designed augmentations. We extend conventional neural processes and propose a new contrastive loss to learn times series representations in a self-supervised setup. Therefore, unlike previous self-supervised methods, our augmentation pipeline is task-agnostic, enabling our method to perform well across various applications. In particular, a ResNet with a linear classifier trained using our approach is able to outperform state-of-the-art techniques across industrial, medical and audio datasets improving accuracy over 10% in ECG periodic data. We further demonstrate that our self-supervised representations are more efficient in the latent space, improving multiple clustering indexes and that fine-tuning our method on 10% of labels achieves results competitive to fully-supervised learning.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/3f20f3b72be3b57f375bc5116a34f750554ec2a2" target='_blank'>Contrastive Neural Processes for Self-Supervised Learning</a></td>
-          <td>
-            Konstantinos Kallidromitis, Denis A. Gudovskiy, Kozuka Kazuki, Ohama Iku, Luca Rigazio
-          </td>
-          <td>2021-10-24</td>
-          <td>ArXiv, DBLP</td>
-          <td>10</td>
-          <td>13</td>
         </tr>
 
   </tbody>
