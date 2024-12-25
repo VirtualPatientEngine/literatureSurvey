@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-09-11 16:11:32 UTC</i>
+  <i class="footer">This page was last updated on 2024-11-11 06:05:21 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -484,7 +484,7 @@
           </td>
           <td>2023-04-23</td>
           <td>Sensors (Basel, Switzerland)</td>
-          <td>22</td>
+          <td>28</td>
           <td>77</td>
         </tr>
 
@@ -509,7 +509,7 @@
           <td>2023-06-10</td>
           <td>2023 31st European Signal Processing Conference (EUSIPCO)</td>
           <td>0</td>
-          <td>38</td>
+          <td>39</td>
         </tr>
 
         <tr id="Significant progress has been made in representation learning, especially with recent success on self-supervised contrastive learning. However, for time series with less intuitive or semantic meaning, sampling bias may be inevitably encountered in unsupervised approaches. Although supervised contrastive learning has shown superior performance by leveraging label information, it may also suffer from class collapse. In this study, we consider a realistic scenario in industry with limited annotation information available. A supervised contrastive framework is developed for high-frequency time series representation and classification, wherein a novel variant of supervised contrastive loss is proposed to include multiple augmentations while induce spread within each class. Experiments on four mainstream public datasets as well as a series of sensitivity and ablation analyses demonstrate that the learned representations are effective and robust compared with the direct supervised learning and self-supervised learning, notably under the minimal few-shot situation.">
@@ -520,7 +520,7 @@
           </td>
           <td>2023-06-26</td>
           <td>DBLP</td>
-          <td>2</td>
+          <td>4</td>
           <td>140</td>
         </tr>
 
@@ -532,8 +532,8 @@
           </td>
           <td>2023-10-21</td>
           <td>ArXiv</td>
-          <td>21</td>
-          <td>3</td>
+          <td>30</td>
+          <td>4</td>
         </tr>
 
         <tr id="Unsupervised domain adaptation (UDA) provides a strategy for improving machine learning performance in data-rich (target) domains where ground truth labels are inaccessible but can be found in related (source) domains. In cases where meta-domain information such as label distributions is available, weak supervision can further boost performance. We propose a novel framework, CALDA, to tackle these two problems. CALDA synergistically combines the principles of contrastive learning and adversarial learning to robustly support multi-source UDA (MS-UDA) for time series data. Similar to prior methods, CALDA utilizes adversarial learning to align source and target feature representations. Unlike prior approaches, CALDA additionally leverages cross-source label information across domains. CALDA pulls examples with the same label close to each other, while pushing apart examples with different labels, reshaping the space through contrastive learning. Unlike prior contrastive adaptation methods, CALDA requires neither data augmentation nor pseudo labeling, which may be more challenging for time series. We empirically validate our proposed approach. Based on results from human activity recognition, electromyography, and synthetic datasets, we find utilizing cross-source information improves performance over prior time series and contrastive methods. Weak supervision further improves performance, even in the presence of noise, allowing CALDA to offer generalizable strategies for MS-UDA.">
@@ -544,7 +544,7 @@
           </td>
           <td>2021-09-30</td>
           <td>IEEE Transactions on Pattern Analysis and Machine Intelligence</td>
-          <td>16</td>
+          <td>21</td>
           <td>72</td>
         </tr>
 
@@ -557,7 +557,19 @@
           <td>2023-08-04</td>
           <td>Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</td>
           <td>0</td>
-          <td>24</td>
+          <td>25</td>
+        </tr>
+
+        <tr id="In this work, we investigate the time series representation learning problem using self-supervised techniques. Contrastive learning is well-known in this area as it is a powerful method for extracting information from the series and generating task-appropriate representations. Despite its proficiency in capturing time series characteristics, these techniques often overlook a critical factor - the inherent noise in this type of data, a consideration usually emphasized in general time series analysis. Moreover, there is a notable absence of attention to developing efficient yet lightweight encoder architectures, with an undue focus on delivering contrastive losses. Our work address these gaps by proposing an innovative training strategy that promotes consistent representation learning, accounting for the presence of noise-prone signals in natural time series. Furthermore, we propose an encoder architecture that incorporates dilated convolution within the Inception block, resulting in a scalable and robust network with a wide receptive field. Experimental findings underscore the effectiveness of our method, consistently outperforming state-of-the-art approaches across various tasks, including forecasting, classification, and abnormality detection. Notably, our method attains the top rank in over two-thirds of the classification UCR datasets, utilizing only 40% of the parameters compared to the second-best approach. Our source code for CoInception framework is accessible at https://github.com/anhduy0911/CoInception.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/b1909388ab7a548f6b27dc95a3a279a1a24234fe" target='_blank'>Improving Time Series Encoding with Noise-Aware Self-Supervised Learning and an Efficient Encoder</a></td>
+          <td>
+            Anh Duy Nguyen, Trang H. Tran, Hieu Pham, Phi-Le Nguyen, Lam M. Nguyen
+          </td>
+          <td>2023-06-11</td>
+          <td>ArXiv</td>
+          <td>3</td>
+          <td>20</td>
         </tr>
 
         <tr id="Monitoring and recognizing patterns in continuous sensing data is crucial for many practical applications. These real-world time-series data are often nonstationary, characterized by varying statistical and spectral properties over time. This poses a significant challenge in developing learning models that can effectively generalize across different distributions. In this work, based on our observation that nonstationary statistics are intrinsically linked to the phase information, we propose a time-series learning framework, PhASER. It consists of three novel elements: 1) phase augmentation that diversifies non-stationarity while preserving discriminatory semantics, 2) separate feature encoding by viewing time-varying magnitude and phase as independent modalities, and 3) feature broadcasting by incorporating phase with a novel residual connection for inherent regularization to enhance distribution invariant learning. Upon extensive evaluation on 5 datasets from human activity recognition, sleep-stage classification, and gesture recognition against 10 state-of-the-art baseline methods, we demonstrate that PhASER consistently outperforms the best baselines by an average of 5% and up to 13% in some cases. Moreover, PhASER's principles can be applied broadly to boost the generalization ability of existing time series classification models.">
@@ -569,7 +581,7 @@
           <td>2024-02-05</td>
           <td>ArXiv</td>
           <td>1</td>
-          <td>9</td>
+          <td>10</td>
         </tr>
 
         <tr id="Recent contrastive methods show significant improvement in self-supervised learning in several domains. In particular, contrastive methods are most effective where data augmentation can be easily constructed e.g. in computer vision. However, they are less successful in domains without established data transformations such as time series data. In this paper, we propose a novel self-supervised learning framework that combines contrastive learning with neural processes. It relies on recent advances in neural processes to perform time series forecasting. This allows to generate augmented versions of data by employing a set of various sampling functions and, hence, avoid manually designed augmentations. We extend conventional neural processes and propose a new contrastive loss to learn times series representations in a self-supervised setup. Therefore, unlike previous self-supervised methods, our augmentation pipeline is task-agnostic, enabling our method to perform well across various applications. In particular, a ResNet with a linear classifier trained using our approach is able to outperform state-of-the-art techniques across industrial, medical and audio datasets improving accuracy over 10% in ECG periodic data. We further demonstrate that our self-supervised representations are more efficient in the latent space, improving multiple clustering indexes and that fine-tuning our method on 10% of labels achieves results competitive to fully-supervised learning.">
@@ -582,18 +594,6 @@
           <td>ArXiv, DBLP</td>
           <td>10</td>
           <td>13</td>
-        </tr>
-
-        <tr id="Learning representations from unlabeled time series data is a challenging problem. Most existing self-supervised and unsupervised approaches in the time-series domain fall short in capturing low-and high-frequency features at the same time. As a result, the generalization ability of the learned representations remains limited. Furthermore, some of these methods employ large-scale models like transformers or rely on computationally expensive techniques such as contrastive learning. To tackle these problems, we propose a noncontrastive self-supervised learning (SSL) approach that efficiently captures low-and high-frequency features in a cost-effective manner. The proposed framework comprises a Siamese configuration of a deep neural network with two weight-sharing branches which are followed by low-and high-frequency feature extraction modules. The two branches of the proposed network allow bootstrapping of the latent representation by taking two different augmented views of raw time series data as input. The augmented views are created by applying random transformations sampled from a single set of augmentations. The low-and high-frequency feature extraction modules of the proposed network contain a combination of multilayer perceptron (MLP) and temporal convolutional network (TCN) heads, respectively, which capture the temporal dependencies from the raw input data at various scales due to the varying receptive fields. To demonstrate the robustness of our model, we performed extensive experiments and ablation studies on five real-world time-series datasets. Our method achieves state-of-art performance on all the considered datasets.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/4b65c76f7f28e7ba3ea44ebb1b3e4355a148d0de" target='_blank'>Large Scale Time-Series Representation Learning via Simultaneous Low and High Frequency Feature Bootstrapping</a></td>
-          <td>
-            Vandan Gorade, Azad Singh, Deepak Mishra
-          </td>
-          <td>2022-04-24</td>
-          <td>IEEE transactions on neural networks and learning systems</td>
-          <td>5</td>
-          <td>6</td>
         </tr>
 
   </tbody>

@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-09-11 16:11:34 UTC</i>
+  <i class="footer">This page was last updated on 2024-11-11 06:05:30 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -484,8 +484,20 @@
           </td>
           <td>2024-02-04</td>
           <td>ArXiv, DBLP</td>
-          <td>4</td>
-          <td>66</td>
+          <td>21</td>
+          <td>67</td>
+        </tr>
+
+        <tr id="In natural language processing and computer vision, self-supervised pre-training on large datasets unlocks foundational model capabilities across domains and tasks. However, this potential has not yet been realised in time series analysis, where existing methods disregard the heterogeneous nature of time series characteristics. Time series are prevalent in many domains, including medicine, engineering, natural sciences, and finance, but their characteristics vary significantly in terms of variate count, inter-variate relationships, temporal dynamics, and sampling frequency. This inherent heterogeneity across domains prevents effective pre-training on large time series corpora. To address this issue, we introduce OTiS, an open model for general time series analysis, that has been specifically designed to handle multi-domain heterogeneity. We propose a novel pre-training paradigm including a tokeniser with learnable domain-specific signatures, a dual masking strategy to capture temporal causality, and a normalised cross-correlation loss to model long-range dependencies. Our model is pre-trained on a large corpus of 640,187 samples and 11 billion time points spanning 8 distinct domains, enabling it to analyse time series from any (unseen) domain. In comprehensive experiments across 15 diverse applications - including classification, regression, and forecasting - OTiS showcases its ability to accurately capture domain-specific data characteristics and demonstrates its competitiveness against state-of-the-art baselines. Our code and pre-trained weights are publicly available at https://github.com/oetu/otis.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/67381675766ffe648e1346cb19d0d7318366bbbe" target='_blank'>Towards Generalisable Time Series Understanding Across Domains</a></td>
+          <td>
+            Ozgun Turgut, Philip Muller, M. Menten, Daniel Rueckert
+          </td>
+          <td>2024-10-09</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>15</td>
         </tr>
 
         <tr id="Large pre-trained models have been vital in recent advancements in domains like language and vision, making model training for individual downstream tasks more efficient and provide superior performance. However, tackling time-series analysis tasks usually involves designing and training a separate model from scratch leveraging training data and domain expertise specific to the task. We tackle a significant challenge for pre-training a foundational time-series model from multi-domain time-series datasets: extracting semantically useful tokenized inputs to the model across heterogenous time-series from different domains. We propose Large Pre-trained Time-series Models (LPTM) that introduces a novel method of \textit{adaptive segmentation} that automatically identifies optimal dataset-specific segmentation strategy during pre-training. This enables LPTM to perform similar to or better than domain-specific state-of-art model when fine-tuned to different downstream time-series analysis tasks and under zero-shot settings. LPTM achieves superior forecasting and time-series classification results taking up to 40% less data and 50% less training time compared to state-of-art baselines.">
@@ -496,8 +508,8 @@
           </td>
           <td>2023-11-19</td>
           <td>ArXiv</td>
-          <td>2</td>
-          <td>7</td>
+          <td>4</td>
+          <td>8</td>
         </tr>
 
         <tr id="The field of general time series analysis has recently begun to explore unified modeling, where a common architectural backbone can be retrained on a specific task for a specific dataset. In this work, we approach unification from a complementary vantage point: unification across tasks and domains. To this end, we explore the impact of discrete, learnt, time series data representations that enable generalist, cross-domain training. Our method, TOTEM, or TOkenized Time Series EMbeddings, proposes a simple tokenizer architecture that embeds time series data from varying domains using a discrete vectorized representation learned in a self-supervised manner. TOTEM works across multiple tasks and domains with minimal to no tuning. We study the efficacy of TOTEM with an extensive evaluation on 17 real world time series datasets across 3 tasks. We evaluate both the specialist (i.e., training a model on each domain) and generalist (i.e., training a single model on many domains) settings, and show that TOTEM matches or outperforms previous best methods on several popular benchmarks. The code can be found at: https://github.com/SaberaTalukder/TOTEM.">
@@ -508,7 +520,7 @@
           </td>
           <td>2024-02-26</td>
           <td>ArXiv</td>
-          <td>4</td>
+          <td>7</td>
           <td>4</td>
         </tr>
 
@@ -520,8 +532,8 @@
           </td>
           <td>2024-01-08</td>
           <td>ArXiv</td>
-          <td>5</td>
           <td>6</td>
+          <td>7</td>
         </tr>
 
         <tr id="Despite the impressive achievements of pre-trained models in the fields of natural language processing (NLP) and computer vision (CV), progress in the domain of time series analysis has been limited. In contrast to NLP and CV, where a single model can handle various tasks, time series analysis still relies heavily on task-specific methods for activities such as classification, anomaly detection, forecasting, and few-shot learning. The primary obstacle to developing a pre-trained model for time series analysis is the scarcity of sufficient training data. In our research, we overcome this obstacle by utilizing pre-trained models from language or CV, which have been trained on billions of data points, and apply them to time series analysis. We assess the effectiveness of the pre-trained transformer model in two ways. Initially, we maintain the original structure of the self-attention and feedforward layers in the residual blocks of the pre-trained language or image model, using the Frozen Pre-trained Transformer (FPT) for time series analysis with the addition of projection matrices for input and output. Additionally, we introduce four unique adapters, designed specifically for downstream tasks based on the pre-trained model, including forecasting and anomaly detection. These adapters are further enhanced with efficient parameter tuning, resulting in superior performance compared to all state-of-the-art methods.Our comprehensive experimental studies reveal that (a) the simple FPT achieves top-tier performance across various time series analysis tasks; and (b) fine-tuning the FPT with the custom-designed adapters can further elevate its performance, outshining specialized task-specific models.">
@@ -533,18 +545,18 @@
           <td>2023-11-24</td>
           <td>ArXiv</td>
           <td>4</td>
-          <td>7</td>
+          <td>8</td>
         </tr>
 
         <tr id="We introduce Chronos, a simple yet effective framework for pretrained probabilistic time series models. Chronos tokenizes time series values using scaling and quantization into a fixed vocabulary and trains existing transformer-based language model architectures on these tokenized time series via the cross-entropy loss. We pretrained Chronos models based on the T5 family (ranging from 20M to 710M parameters) on a large collection of publicly available datasets, complemented by a synthetic dataset that we generated via Gaussian processes to improve generalization. In a comprehensive benchmark consisting of 42 datasets, and comprising both classical local models and deep learning methods, we show that Chronos models: (a) significantly outperform other methods on datasets that were part of the training corpus; and (b) have comparable and occasionally superior zero-shot performance on new datasets, relative to methods that were trained specifically on them. Our results demonstrate that Chronos models can leverage time series data from diverse domains to improve zero-shot accuracy on unseen forecasting tasks, positioning pretrained models as a viable tool to greatly simplify forecasting pipelines.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/4fb78450650894091b0a55b5504a8b0a6f3dec37" target='_blank'>Chronos: Learning the Language of Time Series</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/02fa77e4f355198cb4270f6d4a07517bf09c46dd" target='_blank'>Chronos: Learning the Language of Time Series</a></td>
           <td>
             Abdul Fatir Ansari, Lorenzo Stella, Caner Turkmen, Xiyuan Zhang, Pedro Mercado, Huibin Shen, Oleksandr Shchur, Syama Sundar Rangapuram, Sebastian Pineda Arango, Shubham Kapoor, Jasper Zschiegner, Danielle C. Maddix, Michael W. Mahoney, Kari Torkkola, Andrew Gordon Wilson, Michael Bohlke-Schneider, Yuyang Wang
           </td>
           <td>2024-03-12</td>
           <td>ArXiv</td>
-          <td>28</td>
+          <td>69</td>
           <td>18</td>
         </tr>
 
@@ -556,8 +568,8 @@
           </td>
           <td>2024-02-04</td>
           <td>ArXiv</td>
-          <td>32</td>
-          <td>22</td>
+          <td>71</td>
+          <td>25</td>
         </tr>
 
   </tbody>

@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-09-11 16:12:07 UTC</i>
+  <i class="footer">This page was last updated on 2024-11-11 06:05:51 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -484,8 +484,8 @@
           </td>
           <td>2021-07-05</td>
           <td>Royal Society Open Science</td>
-          <td>54</td>
-          <td>31</td>
+          <td>61</td>
+          <td>32</td>
         </tr>
 
         <tr id="Sparse model identification enables nonlinear dynamical system discovery from data. However, the control of false discoveries for sparse model identification is challenging, especially in the low-data and high-noise limit. In this paper, we perform a theoretical study on ensemble sparse model discovery, which shows empirical success in terms of accuracy and robustness to noise. In particular, we analyse the bootstrapping-based sequential thresholding least-squares estimator. We show that this bootstrapping-based ensembling technique can perform a provably correct variable selection procedure with an exponential convergence rate of the error rate. In addition, we show that the ensemble sparse model discovery method can perform computationally efficient uncertainty estimation, compared to expensive Bayesian uncertainty quantification methods via MCMC. We demonstrate the convergence properties and connection to uncertainty quantification in various numerical studies on synthetic sparse linear regression and sparse model discovery. The experiments on sparse linear regression support that the bootstrapping-based sequential thresholding least-squares method has better performance for sparse variable selection compared to LASSO, thresholding least-squares, and bootstrapping-based LASSO. In the sparse model discovery experiment, we show that the bootstrapping-based sequential thresholding least-squares method can provide valid uncertainty quantification, converging to a delta measure centered around the true value with increased sample sizes. Finally, we highlight the improved robustness to hyperparameter selection under shifting noise and sparsity levels of the bootstrapping-based sequential thresholding least-squares method compared to other sparse regression methods.">
@@ -497,7 +497,7 @@
           <td>2023-01-30</td>
           <td>ArXiv</td>
           <td>11</td>
-          <td>65</td>
+          <td>67</td>
         </tr>
 
         <tr id="None">
@@ -508,7 +508,7 @@
           </td>
           <td>2024-01-09</td>
           <td>Communications Physics</td>
-          <td>8</td>
+          <td>11</td>
           <td>2</td>
         </tr>
 
@@ -520,8 +520,8 @@
           </td>
           <td>2020-04-05</td>
           <td>Proceedings. Mathematical, Physical, and Engineering Sciences</td>
-          <td>202</td>
-          <td>65</td>
+          <td>221</td>
+          <td>67</td>
         </tr>
 
         <tr id="We propose a fast probabilistic framework for identifying differential equations governing the dynamics of observed data. We recast the SINDy method within a Bayesian framework and use Gaussian approximations for the prior and likelihood to speed up computation. The resulting method, Bayesian-SINDy, not only quantifies uncertainty in the parameters estimated but also is more robust when learning the correct model from limited and noisy data. Using both synthetic and real-life examples such as Lynx-Hare population dynamics, we demonstrate the effectiveness of the new framework in learning correct model equations and compare its computational and data efficiency with existing methods. Because Bayesian-SINDy can quickly assimilate data and is robust against noise, it is particularly suitable for biological data and real-time system identification in control. Its probabilistic framework also enables the calculation of information entropy, laying the foundation for an active learning strategy.">
@@ -544,8 +544,8 @@
           </td>
           <td>2015-09-11</td>
           <td>Proceedings of the National Academy of Sciences</td>
-          <td>3256</td>
-          <td>65</td>
+          <td>3408</td>
+          <td>67</td>
         </tr>
 
         <tr id="The SINDy algorithm has been successfully used to identify the governing equations of dynamical systems from time series data. However, SINDy assumes the user has prior knowledge of the variables in the system and of a function library that can act as a basis for the system. In this paper, we demonstrate on real world data how the Augmented SINDy algorithm outperforms SINDy in the presence of system variable uncertainty. We then show SINDy can be further augmented to perform robustly when both kinds of uncertainty are present.">
@@ -560,6 +560,18 @@
           <td>0</td>
         </tr>
 
+        <tr id="Active learning algorithms strategically select informative input samples, aiming to enhance understanding and optimize sample efficiency for dynamical systems. The efficacy of machine learning (ML) models with uncertainty quantification in identifying dynamical systems with different characteristics has not yet been explored. This paper investigates four ML models: Gaussian processes (GPs) with radial basis function (RBF), GPs with Matérn kernels, Bayesian neural networks (NNs) with Monte Carlo dropout(MCD), and ensemble neural networks (ENNs). Both continuous and non-continuous learning strategies are employed for all models. Five well known dynamical systems with different characteristics, state dimensionalities, and dynamical complexities are simulated to test the performance of the models along the metrics of test RMSE as well as samples and run time until convergence. Through systematic experimentation, this paper provides guidance for researchers selecting models and algorithms in active learning for system identification, with insights into their strengths and limitations. Gaussian Processes with RBF kernels are shown to be the best overall choice while ENNs with Bayesian inference emerge as a scalable alternative, showing promise for high-dimensional tasks. Employing continuous training has proven to enhance the performance of Gaussian processes with RBF kernels, as well as ENNs, resulting in significant improvements in both sample and run-time efficiency.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/4a3887d48d70464cf825d7d6d8834e36e77b5d04" target='_blank'>Comparative Analysis of Uncertainty Quantification Models in Active Learning for Efficient System Identification of Dynamical Systems</a></td>
+          <td>
+            Hans Mertens, Frances Zhu
+          </td>
+          <td>2024-08-28</td>
+          <td>2024 IEEE 20th International Conference on Automation Science and Engineering (CASE)</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+
         <tr id="We consider the data-driven discovery of governing equations from time-series data in the limit of high noise. The algorithms developed describe an extensive toolkit of methods for circumventing the deleterious effects of noise in the context of the <italic>sparse identification of nonlinear dynamics</italic> (SINDy) framework. We offer two primary contributions, both focused on noisy data acquired from a system <inline-formula> <tex-math notation="LaTeX">$\dot { \boldsymbol x} = { \boldsymbol f} ({ \boldsymbol x})$ </tex-math></inline-formula>. First, we propose, for use in high-noise settings, an extensive toolkit of critically enabling extensions for the SINDy regression method, to progressively cull functionals from an over-complete library and yield a set of sparse equations that regress to the derivate <inline-formula> <tex-math notation="LaTeX">$\dot { \boldsymbol {x}}$ </tex-math></inline-formula>. This toolkit includes: (regression step) weight timepoints based on estimated noise, use ensembles to estimate coefficients, and regress using FFTs; (culling step) leverage linear dependence of functionals, and restore and protect culled functionals based on Figures of Merit (FoMs). In a novel Assessment step, we define FoMs that compare model predictions to the original time-series (i.e., <inline-formula> <tex-math notation="LaTeX">${ \boldsymbol x}(t)$ </tex-math></inline-formula> rather than <inline-formula> <tex-math notation="LaTeX">$\dot { \boldsymbol {x}}(t)$ </tex-math></inline-formula>). These innovations can extract sparse governing equations and coefficients from high-noise time-series data (e.g., 300% added noise). For example, it discovers the correct sparse libraries in the Lorenz system, with median coefficient estimate errors equal to 1%−3% (for 50% noise), 6%−8% (for 100% noise), and 23%−25% (for 300% noise). The enabling modules in the toolkit are combined into a single method, but the individual modules can be tactically applied in other equation discovery methods (SINDy or not) to improve results on high-noise data. Second, we propose a technique, applicable to any model discovery method based on <inline-formula> <tex-math notation="LaTeX">$\dot { \boldsymbol x} = { \boldsymbol f} ({ \boldsymbol x})$ </tex-math></inline-formula>, to assess the accuracy of a discovered model in the context of non-unique solutions due to noisy data. Currently, this non-uniqueness can obscure a discovered model’s accuracy and thus a discovery method’s effectiveness. We describe a technique that uses linear dependencies among functionals to transform a discovered model into an equivalent form that is closest to the <italic>true</italic> model, enabling more accurate assessment of a discovered model’s correctness.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/a9803137946f0dc8997f23de925d5aec6e92dfb9" target='_blank'>A Toolkit for Data-Driven Discovery of Governing Equations in High-Noise Regimes</a></td>
@@ -569,7 +581,7 @@
           <td>2021-11-08</td>
           <td>IEEE Access</td>
           <td>16</td>
-          <td>31</td>
+          <td>32</td>
         </tr>
 
   </tbody>

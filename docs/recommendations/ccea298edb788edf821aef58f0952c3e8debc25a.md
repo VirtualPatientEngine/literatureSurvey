@@ -11,7 +11,7 @@ hide:
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-09-11 16:11:16 UTC</i>
+  <i class="footer">This page was last updated on 2024-11-11 06:05:11 UTC</i>
   </p>
   
   <div class="note info" onclick="startIntro()">
@@ -50,8 +50,8 @@ hide:
           </td>
           <td>2023-07-27</td>
           <td>ArXiv</td>
-          <td>0</td>
-          <td>54</td>
+          <td>1</td>
+          <td>55</td>
         </tr>
     
         <tr id="Accurate forecasting of multivariate time series is an extensively studied subject in finance, transportation, and computer science. Fully mining the correlation and causation between the variables in a multivariate time series exhibits noticeable results in improving the performance of a time series model. Recently, some models have explored the dependencies between variables through end-to-end graph structure learning without the need for predefined graphs. However, current models do not incorporate the trade-off between efficiency and flexibility and lack the guidance of domain knowledge in the design of graph structure learning algorithms. This paper alleviates the above issues by proposing Balanced Graph Structure Learning for Forecasting (BGSLF), a novel deep learning model that joins graph structure learning and forecasting. Technically, BGSLF leverages the spatial information into convolutional operations and extracts temporal dynamics using the diffusion convolutional recurrent network. The proposed framework balance the trade-off between efficiency and flexibility by introducing Multi-Graph Generation Network (MGN) and Graph Selection Module. In addition, a method named Smooth Sparse Unit (SSU) is designed to sparse the learned graph structures, which conforms to the sparse spatial correlations in the real world. Extensive experiments on four real-world datasets demonstrate that our model achieves state-of-the-art performances with minor trainable parameters. Code will be made publicly available.">
@@ -63,7 +63,7 @@ hide:
           <td>2022-01-24</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>10</td>
+          <td>11</td>
         </tr>
     
         <tr id="Outstanding achievements of graph neural networks for spatiotemporal time series analysis show that relational constraints introduce an effective inductive bias into neural forecasting architectures. Often, however, the relational information characterizing the underlying data-generating process is unavailable and the practitioner is left with the problem of inferring from data which relational graph to use in the subsequent processing stages. We propose novel, principled - yet practical - probabilistic score-based methods that learn the relational dependencies as distributions over graphs while maximizing end-to-end the performance at task. The proposed graph learning framework is based on consolidated variance reduction techniques for Monte Carlo score-based gradient estimation, is theoretically grounded, and, as we show, effective in practice. In this paper, we focus on the time series forecasting problem and show that, by tailoring the gradient estimators to the graph learning problem, we are able to achieve state-of-the-art performance while controlling the sparsity of the learned graph and the computational scalability. We empirically assess the effectiveness of the proposed method on synthetic and real-world benchmarks, showing that the proposed solution can be used as a stand-alone graph identification procedure as well as a graph learning component of an end-to-end forecasting architecture.">
@@ -74,7 +74,7 @@ hide:
           </td>
           <td>2022-05-26</td>
           <td>J. Mach. Learn. Res.</td>
-          <td>11</td>
+          <td>14</td>
           <td>50</td>
         </tr>
     
@@ -98,8 +98,8 @@ hide:
           </td>
           <td>2020-05-24</td>
           <td>Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining</td>
-          <td>981</td>
-          <td>55</td>
+          <td>1082</td>
+          <td>57</td>
         </tr>
     
         <tr id="Graph Neural Networks (GNN) have gained significant traction in the forecasting domain, especially for their capacity to simultaneously account for intra-series temporal correlations and inter-series relationships. This paper introduces a novel Hierarchical GNN (DeepHGNN) framework, explicitly designed for forecasting in complex hierarchical structures. The uniqueness of DeepHGNN lies in its innovative graph-based hierarchical interpolation and an end-to-end reconciliation mechanism. This approach ensures forecast accuracy and coherence across various hierarchical levels while sharing signals across them, addressing a key challenge in hierarchical forecasting. A critical insight in hierarchical time series is the variance in forecastability across levels, with upper levels typically presenting more predictable components. DeepHGNN capitalizes on this insight by pooling and leveraging knowledge from all hierarchy levels, thereby enhancing the overall forecast accuracy. Our comprehensive evaluation set against several state-of-the-art models confirm the superior performance of DeepHGNN. This research not only demonstrates DeepHGNN's effectiveness in achieving significantly improved forecast accuracy but also contributes to the understanding of graph-based methods in hierarchical time series forecasting.">
@@ -122,7 +122,7 @@ hide:
           </td>
           <td>2023-11-10</td>
           <td>ArXiv</td>
-          <td>32</td>
+          <td>49</td>
           <td>6</td>
         </tr>
     
