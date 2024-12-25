@@ -11,7 +11,7 @@ hide:
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2024-11-11 06:05:28 UTC</i>
+  <i class="footer">This page was last updated on 2024-12-25 11:29:49 UTC</i>
   </p>
   
   <div class="note info" onclick="startIntro()">
@@ -49,8 +49,8 @@ hide:
             Andreas Doerr, Christian Daniel, Martin Schiegg, D. Nguyen-Tuong, S. Schaal, Marc Toussaint, Sebastian Trimpe
           </td>
           <td>2018-01-31</td>
-          <td>ArXiv, MAG, DBLP</td>
-          <td>113</td>
+          <td>ArXiv, DBLP, MAG</td>
+          <td>115</td>
           <td>93</td>
         </tr>
     
@@ -70,7 +70,7 @@ hide:
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/ec840755867d3f5cf175cb57de963f042297f4ef" target='_blank'>FACTS: A Factored State-Space Framework For World Modelling</a></td>
           <td>
-            Li Nanbo, Firas Laakom, Yucheng Xu, Wenyi Wang, Jurgen Schmidhuber
+            Nanbo Li, Firas Laakom, Yucheng Xu, Wenyi Wang, Jurgen Schmidhuber
           </td>
           <td>2024-10-28</td>
           <td>ArXiv</td>
@@ -123,7 +123,7 @@ hide:
           <td>2020-01-13</td>
           <td>ArXiv</td>
           <td>8</td>
-          <td>60</td>
+          <td>61</td>
         </tr>
     
         <tr id="Over the past few years, research on deep graph learning has shifted from static graphs to temporal graphs in response to real-world complex systems that exhibit dynamic behaviors. In practice, temporal graphs are formalized as an ordered sequence of static graph snapshots observed at discrete time points. Sequence models such as RNNs or Transformers have long been the predominant backbone networks for modeling such temporal graphs. Yet, despite the promising results, RNNs struggle with long-range dependencies, while transformers are burdened by quadratic computational complexity. Recently, state space models (SSMs), which are framed as discretized representations of an underlying continuous-time linear dynamical system, have garnered substantial attention and achieved breakthrough advancements in independent sequence modeling. In this work, we undertake a principled investigation that extends SSM theory to temporal graphs by integrating structural information into the online approximation objective via the adoption of a Laplacian regularization term. The emergent continuous-time system introduces novel algorithmic challenges, thereby necessitating our development of GraphSSM, a graph state space model for modeling the dynamics of temporal graphs. Extensive experimental results demonstrate the effectiveness of our GraphSSM framework across various temporal graph benchmarks.">
@@ -134,7 +134,7 @@ hide:
           </td>
           <td>2024-06-03</td>
           <td>ArXiv</td>
-          <td>1</td>
+          <td>2</td>
           <td>12</td>
         </tr>
     
