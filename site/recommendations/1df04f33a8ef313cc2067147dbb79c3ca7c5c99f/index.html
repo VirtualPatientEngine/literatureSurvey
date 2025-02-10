@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-02-03 06:05:11 UTC</i>
+  <i class="footer">This page was last updated on 2025-02-10 06:05:16 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -496,7 +496,7 @@
           </td>
           <td>2024-02-13</td>
           <td>DBLP, ArXiv</td>
-          <td>45</td>
+          <td>46</td>
           <td>9</td>
         </tr>
 
@@ -504,12 +504,24 @@
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/0702ac9db3ea20810ffdb9f35bde85cdfaf27a3d" target='_blank'>Learning Long Range Dependencies on Graphs via Random Walks</a></td>
           <td>
-            Dexiong Chen, Till Hendrik Schulz, Karsten Borgwardt
+            Dexiong Chen, Till Hendrik Schulz, Karsten M. Borgwardt
           </td>
           <td>2024-06-05</td>
           <td>ArXiv</td>
           <td>2</td>
           <td>8</td>
+        </tr>
+
+        <tr id="Graph Neural Networks (GNNs) have shown great success in various graph-based learning tasks. However, it often faces the issue of over-smoothing as the model depth increases, which causes all node representations to converge to a single value and become indistinguishable. This issue stems from the inherent limitations of GNNs, which struggle to distinguish the importance of information from different neighborhoods. In this paper, we introduce MbaGCN, a novel graph convolutional architecture that draws inspiration from the Mamba paradigm-originally designed for sequence modeling. MbaGCN presents a new backbone for GNNs, consisting of three key components: the Message Aggregation Layer, the Selective State Space Transition Layer, and the Node State Prediction Layer. These components work in tandem to adaptively aggregate neighborhood information, providing greater flexibility and scalability for deep GNN models. While MbaGCN may not consistently outperform all existing methods on each dataset, it provides a foundational framework that demonstrates the effective integration of the Mamba paradigm into graph representation learning. Through extensive experiments on benchmark datasets, we demonstrate that MbaGCN paves the way for future advancements in graph neural network research.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/48501b0d5aa2d42f74523141c1954e671546b307" target='_blank'>Mamba-Based Graph Convolutional Networks: Tackling Over-smoothing with Selective State Space</a></td>
+          <td>
+            Xingbo He, Yili Wang, Wenqi Fan, Xu Shen, Xin Juan, Rui Miao, Xin Wang
+          </td>
+          <td>2025-01-26</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>4</td>
         </tr>
 
         <tr id="Machine learning on graphs has recently found extensive applications across domains. However, the commonly used Message Passing Neural Networks (MPNNs) suffer from limited expressive power and struggle to capture long-range dependencies. Graph transformers offer a strong alternative due to their global attention mechanism, but they come with great computational overheads, especially for large graphs. In recent years, State Space Models (SSMs) have emerged as a compelling approach to replace full attention in transformers to model sequential data. It blends the strengths of RNNs and CNNs, offering a) efficient computation, b) the ability to capture long-range dependencies, and c) good generalization across sequences of various lengths. However, extending SSMs to graph-structured data presents unique challenges due to the lack of canonical node ordering in graphs. In this work, we propose Graph State Space Convolution (GSSC) as a principled extension of SSMs to graph-structured data. By leveraging global permutation-equivariant set aggregation and factorizable graph kernels that rely on relative node distances as the convolution kernels, GSSC preserves all three advantages of SSMs. We demonstrate the provably stronger expressiveness of GSSC than MPNNs in counting graph substructures and show its effectiveness across 11 real-world, widely used benchmark datasets. GSSC achieves the best results on 6 out of 11 datasets with all significant improvements compared to the state-of-the-art baselines and second-best results on the other 5 datasets. Our findings highlight the potential of GSSC as a powerful and scalable model for graph machine learning. Our code is available at https://github.com/Graph-COM/GSSC.">
@@ -520,19 +532,7 @@
           </td>
           <td>2024-06-09</td>
           <td>ArXiv</td>
-          <td>5</td>
-          <td>4</td>
-        </tr>
-
-        <tr id="Graph representation learning (GRL) is fundamental in multi-graph applications like molecular property prediction. Graph neural networks (GNNs) have emerged as a popular method for GRL. However, existing GRL methods primarily focus on designing GNN models with enhanced expressiveness while overlooking the memory efficiency of algorithms during training. The memory inefficiency problem is caused by a contextual constraint imposed on node representations, which requires each node to be context-dependent on its input graph. In this paper, we propose a novel method, called context sketching (COS), for memory-efficient graph representation learning in multi-graph scenarios. We first formally define the contextual constraint based on the enclosed $\infty-$hop subgraphs of nodes. Subsequently, we propose to relax the original contextual constraint by requiring each node to be context-dependent on its enclosed $k-$hop subgraph $(k \ll \infty)$ which is a contextual sketch of the enclosed $\infty$-hop subgraph. Lastly, we prove that COS constructs an optimal solution to a memory-related objective associated with graph coarsening. Experiments on four widely used benchmark datasets demonstrate that COS can reduce the memory footprint of baselines by a large margin with almost no accuracy loss.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/54288b7e9ce29a338f2b11981c6b84f4f0cb9a50" target='_blank'>Context Sketching for Memory-efficient Graph Representation Learning</a></td>
-          <td>
-            Kai-Lang Yao, Wusuo Li
-          </td>
-          <td>2023-12-01</td>
-          <td>2023 IEEE International Conference on Data Mining (ICDM)</td>
-          <td>0</td>
+          <td>6</td>
           <td>4</td>
         </tr>
 
