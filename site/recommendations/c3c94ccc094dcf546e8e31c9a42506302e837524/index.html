@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-02-10 06:05:21 UTC</i>
+  <i class="footer">This page was last updated on 2025-02-17 06:05:24 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -476,100 +476,76 @@
   </thead>
   <tbody>
 
-        <tr id="We present the first whiteness test for graphs, i.e., a whiteness test for multivariate time series associated with the nodes of a dynamic graph. The statistical test aims at finding serial dependencies among close-in-time observations, as well as spatial dependencies among neighboring observations given the underlying graph. The proposed test is a spatio-temporal extension of traditional tests from the system identification literature and finds applications in similar, yet more general, application scenarios involving graph signals. The AZ-test is versatile, allowing the underlying graph to be dynamic, changing in topology and set of nodes, and weighted, thus accounting for connections of different strength, as is the case in many application scenarios like transportation networks and sensor grids. The asymptotic distribution -- as the number of graph edges or temporal observations increases -- is known, and does not assume identically distributed data. We validate the practical value of the test on both synthetic and real-world problems, and show how the test can be employed to assess the quality of spatio-temporal forecasting models by analyzing the prediction residuals appended to the graphs stream.">
+        <tr id="As the complexity of production processes increases, the diversity of data types drives the development of network monitoring technology. This paper mainly focuses on an online algorithm to detect serially correlated directed networks robustly and sensitively. First, we consider a transition probability matrix to resolve the double correlation of primary data. Further, since the sum of each row of the transition probability matrix is one, it standardizes the data, facilitating subsequent modeling. Then we extend the spring length based method to the multivariate case and propose an adaptive cumulative sum (CUSUM) control chart on the strength of a weighted statistic to monitor directed networks. This novel approach assumes only that the process observation is associated with nearby points without any parametric time series model, which is in line with reality. Simulation results and a real example from metro transportation demonstrate the superiority of our design.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/44a9610f927230a711176e4ad7008324abacd65b" target='_blank'>AZ-whiteness test: a test for uncorrelated noise on spatio-temporal graphs</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/8b98ec85ed0a5ff6fa1d5ca314e55f643a806c7f" target='_blank'>Robust online detection in serially correlated directed network</a></td>
           <td>
-            Daniele Zambon, C. Alippi
+            Miaomiao Yu, Yuhao Zhou, F. Tsung
           </td>
-          <td>2022-04-23</td>
-          <td>ArXiv</td>
-          <td>7</td>
-          <td>50</td>
+          <td>2021-11-04</td>
+          <td>Naval Research Logistics (NRL)</td>
+          <td>2</td>
+          <td>48</td>
         </tr>
 
-        <tr id="Time series are the primary data type used to record dynamic system measurements and generated in great volume by both physical sensors and online processes (virtual sensors). Time series analytics is therefore crucial to unlocking the wealth of information implicit in available data. With the recent advancements in graph neural networks (GNNs), there has been a surge in GNN-based approaches for time series analysis. These approaches can explicitly model inter-temporal and inter-variable relationships, which traditional and other deep neural network-based methods struggle to do. In this survey, we provide a comprehensive review of graph neural networks for time series analysis (GNN4TS), encompassing four fundamental dimensions: forecasting, classification, anomaly detection, and imputation. Our aim is to guide designers and practitioners to understand, build applications, and advance research of GNN4TS. At first, we provide a comprehensive task-oriented taxonomy of GNN4TS. Then, we present and discuss representative research works and introduce mainstream applications of GNN4TS. A comprehensive discussion of potential future research directions completes the survey. This survey, for the first time, brings together a vast array of knowledge on GNN-based time series research, highlighting foundations, practical applications, and opportunities of graph neural networks for time series analysis.">
+        <tr id="In order to predict the network traffic of a unit scientifically and accurately, the data of the network traffic of a unit from May 2019 to August 2020 basically have the characteristic of monotone increasing, the grey GM (1,1) model is used to forecast the network traffic from September 2020 to December 2020. The relative error between the predicted value 141.3,134.7,136.3,139.8 and the real value 141.6,133.8,133.9 and 139.4 is 0.2119,-0.6726 in turn, −1.7924 and 0.2869 are within the allowable range, and the prediction results are satisfactory.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/d3dbbd0f0de51b421a6220bd6480b8d2e99a88e9" target='_blank'>A Survey on Graph Neural Networks for Time Series: Forecasting, Classification, Imputation, and Anomaly Detection</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/42d8f3438c68761049c2173fec9edaed3fd80643" target='_blank'>Research on grey prediction model of computer network traffic</a></td>
           <td>
-            Ming Jin, Huan Yee Koh, Qingsong Wen, Daniele Zambon, C. Alippi, G. I. Webb, Irwin King, Shirui Pan
+            Yi Zhang
           </td>
-          <td>2023-07-07</td>
-          <td>IEEE Transactions on Pattern Analysis and Machine Intelligence</td>
-          <td>96</td>
-          <td>50</td>
+          <td>2021-05-01</td>
+          <td>2021 6th International Conference on Smart Grid and Electrical Automation (ICSGEA)</td>
+          <td>0</td>
+          <td>0</td>
         </tr>
 
-        <tr id="Spatio-temporal forecasting of future values of spatially correlated time series is important across many cyber-physical systems (CPS). Recent studies offer evidence that the use of graph neural networks to capture latent correlations between time series holds a potential for enhanced forecasting. However, most existing methods rely on predefined or self-learning graphs, which are either static or unintentionally dynamic, and thus cannot model the time-varying correlations that exhibit trends and periodicities caused by the regularity of the underlying processes in CPS. To tackle such limitation, we propose Time-aware Graph Structure Learning (TagSL), which extracts time-aware correlations among time series by measuring the interaction of node and time representations in high-dimensional spaces. Notably, we introduce time discrepancy learning that utilizes contrastive learning with distance-based regularization terms to constrain learned spatial correlations to a trend sequence. Additionally, we propose a periodic discriminant function to enable the capture of periodic changes from the state of nodes. Next, we present a Graph Convolution-based Gated Recurrent Unit (GCGRU) that jointly captures spatial and temporal dependencies while learning time-aware and node-specific patterns. Finally, we introduce a unified framework named Time-aware Graph Convolutional Recurrent Network (TGCRN), combining TagSL, and GCGRU in an encoder-decoder architecture for multi-step spatiotemporal forecasting. We report on experiments with TGCRN and popular existing approaches on five real-world datasets, thus providing evidence that TGCRN is capable of advancing the state-of-the-art. We also cover a detailed ablation study and visualization analysis, offering detailed insight into the effectiveness of time-aware structure learning.">
+        <tr id="iii OZ iv DEDICATION v ACKNOWLEDGMENT vi LIST OF TABLES ix LIST OF FIGURES x LIST OF SYMBOLS/ABBREVIATIONS xi">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/2e635d42e768aec7be29fbd203a605c1f011a44d" target='_blank'>Learning Time-Aware Graph Structures for Spatially Correlated Time Series Forecasting</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/7567974582b631764d86ec5c9cb37be60e1999ca" target='_blank'>Network Monitoring System</a></td>
           <td>
-            Minbo Ma, Jilin Hu, Christian S. Jensen, Fei Teng, Peng Han, Zhiqiang Xu, Tian-Jie Li
+            S. Mazaheri
           </td>
-          <td>2023-12-27</td>
-          <td>2024 IEEE 40th International Conference on Data Engineering (ICDE)</td>
+          <td>2015-02-01</td>
+          <td></td>
+          <td>0</td>
           <td>1</td>
-          <td>14</td>
         </tr>
 
-        <tr id="None">
+        <tr id="Accurate detection for network traffic anomalies is one of the fundamental tasks in building an efficient smart grid, which can effectively ensure the information security of power grids. In this paper, a network traffic abnormal detection model called BGA is proposed, which combines CNN, Bi-GRU, and Attention. To improve the feature extraction performance of the model, CNN is used to extract spatial features from the traffic data, Bi-GRU is employed to capture the complete temporal features of time sequence data, and Attention mechanism is utilized to address the challenge of encoding complex positional information. Several experiments are conducted on multiple network traffic datasets to compare the performance of the BGA model against other state-of-the-art (SOTA) models. The results demonstrate that the BGA model outperforms other models in terms of performance. The model would effectively protect power grid information security by identifying abnormal network traffic.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/8af9708e610256bd5f2315fc83b8c55cd1482901" target='_blank'>Graph construction on complex spatiotemporal data for enhancing graph neural network-based approaches</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/02ca02ca3275a0b20b8005f75b855195e203ede4" target='_blank'>BGA: an Network Abnormal Traffic Detection Model for Information Security in Grid</a></td>
           <td>
-            Stefan Bloemheuvel, J. Hoogen, Martin Atzmueller
+            Qiong-lan Na, Na Xiao, Shijun Zhang, Xin Li, Sijia Zheng, Yi-xi Yang
           </td>
-          <td>2023-09-25</td>
-          <td>International Journal of Data Science and Analytics</td>
-          <td>5</td>
-          <td>6</td>
+          <td>2023-12-22</td>
+          <td>Proceedings of the 2023 International Conference on Information Education and Artificial Intelligence</td>
+          <td>0</td>
+          <td>3</td>
         </tr>
 
-        <tr id="The recovery of time-varying graph signals is a fundamental problem with numerous applications in sensor networks and forecasting in time series. Effectively capturing the spatiotemporal information in these signals is essential for the downstream tasks. Previous studies have used the smoothness of the temporal differences of such graph signals as an initial assumption. Nevertheless, this smoothness assumption could result in a degradation of performance in the corresponding application when the prior does not hold. In this work, we relax the requirement of this hypothesis by including a learning module. We propose a Time Graph Neural Network (TimeGNN) for the recovery of time-varying graph signals. Our algorithm uses an encoder-decoder architecture with a specialized loss composed of a mean squared error function and a Sobolev smoothness operator. TimeGNN shows competitive performance against previous methods in real datasets.">
+        <tr id="DCSA: Using Density-Based Clustering and Sequential Association Analysis to Predict Alarms in Telecommunication Networks 1 Peng Lin (Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, China), Kejiang Ye (Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, China), Ming Chen (Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, China), and Cheng-Zhong Xu (University of Macau, Macau, China)">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/a320892b1bc4ef98c47edf416d6921a64d0b4b77" target='_blank'>Time-Varying Signals Recovery Via Graph Neural Networks</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/88c38f14a18f5baa4862c8f2a6d178ba2dc24254" target='_blank'>Table of Contents</a></td>
           <td>
-            Jhon A. Castro-Correa, Jhony H. Giraldo, Anindya Mondal, M. Badiey, T. Bouwmans, Fragkiskos D. Malliaros
+            Jianbo Guan, Yusong Tan, Q. Wu
           </td>
-          <td>2023-02-22</td>
-          <td>ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</td>
-          <td>9</td>
-          <td>42</td>
+          <td>1999-03-01</td>
+          <td>Annals of Allergy, Asthma & Immunology</td>
+          <td>0</td>
+          <td>32</td>
         </tr>
 
-        <tr id="Devising and analysing learning models for spatiotemporal network data is of importance for tasks including forecasting, anomaly detection, and multi-agent coordination, among others. Graph Convolutional Neural Networks (GCNNs) are an established approach to learn from time-invariant network data. The graph convolution operation offers a principled approach to aggregate information and offers mathematical analysis by exploring tools from graph signal processing. This analysis provides insights into the equivariance properties of GCNNs; spectral behaviour of the learned filters; and the stability to graph perturbations, which arise from support perturbations or uncertainties. However, extending the convolutional learning and respective analysis to the spatiotemporal domain is challenging because spatiotemporal data have more intrinsic dependencies. Hence, a higher flexibility to capture jointly the spatial and temporal dependencies is required to learn meaningful higher-order representations. Here, we leverage product graphs to represent the spatiotemporal dependencies in the data and introduce Graph-Time Convolutional Neural Networks (GTCNNs) as a principled architecture. We also introduce a parametric product graph to learn the spatiotemporal coupling. The convolution principle further allows a similar mathematical tractability as for GCNNs. In particular, the stability result shows GTCNNs are stable to spatial perturbations. owever, there is an implicit trade-off between discriminability and robustness; i.e., the more complex the model, the less stable. Extensive numerical results on benchmark datasets corroborate our findings and show the GTCNN compares favorably with state-of-the-art solutions. We anticipate the GTCNN to be a starting point for more sophisticated models that achieve good performance but are also fundamentally grounded.">
+        <tr id="Key Laboratory of Information and Communication Systems, Ministry of Information Industry, Beijing Information Science and Technology University, Beijing, China, Key Laboratory of ModernMeasurement and Control Technology, Ministry of Education Beijing Information Science and Technology University, Beijing, China, State Key Laboratory of Networking and Switching Technology, Beijing University of Posts and Telecommunications, Beijing, China, School of Electronic and Information Engineering, Beijing Jiaotong University, Beijing, China, School of Public Health, Chongqing Medical University, Chongqing, China, School of Information and Communication Technology, Griffith University, Nathan, QLD, Australia">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/41a11baa108f2e022357c92b4e71750b9f585639" target='_blank'>Graph-Time Convolutional Neural Networks: Architecture and Theoretical Analysis</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/cc870917fb20630e8efed8abf0bb7a852682e896" target='_blank'>Editorial: Network mining and propagation dynamics analysis</a></td>
           <td>
-            Mohammad Sabbaqi, E. Isufi
+            Xinyi Wang, Yuexia Zhang, Xuzhen Zhu, Fei Xiong, W. Wang, Shirui Pan
           </td>
-          <td>2022-06-30</td>
-          <td>IEEE Transactions on Pattern Analysis and Machine Intelligence</td>
-          <td>11</td>
-          <td>22</td>
-        </tr>
-
-        <tr id="Multivariate time series forecasting has long received significant attention in real-world applications, such as energy consumption and traffic prediction. While recent methods demonstrate good forecasting abilities, they have three fundamental limitations. (i). <italic>Discrete neural architectures:</italic> Interlacing individually parameterized spatial and temporal blocks to encode rich underlying patterns leads to discontinuous latent state trajectories and higher forecasting numerical errors. (ii). <italic>High complexity:</italic> Discrete approaches complicate models with dedicated designs and redundant parameters, leading to higher computational and memory overheads. (iii). <italic>Reliance on graph priors:</italic> Relying on predefined static graph structures limits their effectiveness and practicability in real-world applications. In this paper, we address all the above limitations by proposing a continuous model to forecast <underline><bold>M</bold></underline>ultivariate <underline><bold>T</bold></underline>ime series with dynamic <underline><bold>G</bold></underline>raph neural <underline><bold>O</bold></underline>rdinary <underline><bold>D</bold></underline>ifferential <underline><bold>E</bold></underline>quations (<monospace>MTGODE</monospace>). Specifically, we first abstract multivariate time series into dynamic graphs with time-evolving node features and unknown graph structures. Then, we design and solve a neural ODE to complement missing graph topologies and unify both spatial and temporal message passing, allowing deeper graph propagation and fine-grained temporal information aggregation to characterize stable and precise latent spatial-temporal dynamics. Our experiments demonstrate the superiorities of <monospace>MTGODE</monospace> from various perspectives on five time series benchmark datasets.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/b02a5aebd9598ddbb2b4021b5576cedb5519d436" target='_blank'>Multivariate Time Series Forecasting With Dynamic Graph Neural ODEs</a></td>
-          <td>
-            Ming Jin, Yu Zheng, Yuanhao Li, Siheng Chen, B. Yang, Shirui Pan
-          </td>
-          <td>2022-02-17</td>
-          <td>IEEE Transactions on Knowledge and Data Engineering</td>
-          <td>83</td>
-          <td>44</td>
-        </tr>
-
-        <tr id="The online prediction of multivariate signals, existing simultaneously in space and time, from noisy partial observations is a fundamental task in numerous applications. We propose an efficient Neural Network architecture for the online estimation of time-varying graph signals named the Adaptive Least Mean Squares Graph Neural Networks (LMS-GNN). LMS-GNN aims to capture the time variation and bridge the cross-space-time interactions under the condition that signals are corrupted by noise and missing values. The LMS-GNN is a combination of adaptive graph filters and Graph Neural Networks (GNN). At each time step, the forward propagation of LMS-GNN is similar to adaptive graph filters where the output is based on the error between the observation and the prediction similar to GNN. The filter coefficients are updated via backpropagation as in GNN. Experimenting on real-world temperature data reveals that our LMS-GNN achieves more accurate online predictions compared to graph-based methods like adaptive graph filters and graph convolutional neural networks.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/a03d0f3fd814c3732704bc65e2e60d0a92b0e8ae" target='_blank'>Adaptive Least Mean Squares Graph Neural Networks and Online Graph Signal Estimation</a></td>
-          <td>
-            Yi Yan, Changran Peng, E. Kuruoglu
-          </td>
-          <td>2024-01-27</td>
-          <td>ArXiv</td>
-          <td>1</td>
-          <td>26</td>
+          <td>2023-01-24</td>
+          <td>None</td>
+          <td>0</td>
+          <td>69</td>
         </tr>
 
   </tbody>
