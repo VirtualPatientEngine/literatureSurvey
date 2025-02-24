@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-02-17 06:05:19 UTC</i>
+  <i class="footer">This page was last updated on 2025-02-24 06:05:32 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -484,7 +484,7 @@
           </td>
           <td>2023-10-12</td>
           <td>ArXiv</td>
-          <td>32</td>
+          <td>31</td>
           <td>40</td>
         </tr>
 
@@ -508,7 +508,7 @@
           </td>
           <td>2024-06-22</td>
           <td>ArXiv</td>
-          <td>24</td>
+          <td>25</td>
           <td>3</td>
         </tr>
 
@@ -532,7 +532,7 @@
           </td>
           <td>2023-10-03</td>
           <td>ArXiv</td>
-          <td>240</td>
+          <td>247</td>
           <td>9</td>
         </tr>
 
@@ -556,8 +556,8 @@
           </td>
           <td>2024-10-15</td>
           <td>ArXiv</td>
-          <td>1</td>
-          <td>29</td>
+          <td>2</td>
+          <td>30</td>
         </tr>
 
         <tr id="Time series foundation models have demonstrated strong performance in zero-shot learning, making them well-suited for predicting rapidly evolving patterns in real-world applications where relevant training data are scarce. However, most of these models rely on the Transformer architecture, which incurs quadratic complexity as input length increases. To address this, we introduce TSMamba, a linear-complexity foundation model for time series forecasting built on the Mamba architecture. The model captures temporal dependencies through both forward and backward Mamba encoders, achieving high prediction accuracy. To reduce reliance on large datasets and lower training costs, TSMamba employs a two-stage transfer learning process that leverages pretrained Mamba LLMs, allowing effective time series modeling with a moderate training set. In the first stage, the forward and backward backbones are optimized via patch-wise autoregressive prediction; in the second stage, the model trains a prediction head and refines other components for long-term forecasting. While the backbone assumes channel independence to manage varying channel numbers across datasets, a channel-wise compressed attention module is introduced to capture cross-channel dependencies during fine-tuning on specific multivariate datasets. Experiments show that TSMamba's zero-shot performance is comparable to state-of-the-art time series foundation models, despite using significantly less training data. It also achieves competitive or superior full-shot performance compared to task-specific prediction models. The code will be made publicly available.">
@@ -572,15 +572,23 @@
           <td>8</td>
         </tr>
 
-        <tr id="Multivariate time-series forecasting is vital in various domains, e.g., economic planning and weather prediction. Deep train-from-scratch models have exhibited effective performance yet require large amounts of data, which limits real-world applicability. Recently, researchers have leveraged the representation learning transferability of pre-trained Large Language Models (LLMs) to handle limited non-linguistic datasets effectively. However, incorporating LLMs with time-series data presents challenges of limited adaptation due to different compositions between time-series and linguistic data, and the inability to process multi-scale temporal information. To tackle these challenges, we propose LLM4TS, a framework for time-series forecasting with pre-trained LLMs. LLM4TS consists of a two-stage fine-tuning strategy: the \textit{time-series alignment} stage to align LLMs with the nuances of time-series data, and the \textit{forecasting fine-tuning} stage for downstream time-series forecasting tasks. Furthermore, our framework features a novel two-level aggregation method that integrates multi-scale temporal data within pre-trained LLMs, enhancing their ability to interpret time-specific information. In experiments across 7 time-series forecasting datasets, LLM4TS is superior to existing state-of-the-art methods compared with trained-from-scratch models in full-shot scenarios, and also achieves an average improvement of 6.84% in MSE in few-shot scenarios. In addition, evaluations compared with different self-supervised learning approaches highlight LLM4TS's effectiveness with representation learning in forecasting tasks.">
+        <tr id="
+ Multivariate time-series forecasting is vital in various domains, e.g., economic planning and weather prediction. Deep train-from-scratch models have exhibited effective performance yet require large amounts of data, which limits real-world applicability. Recently, researchers have leveraged the representation learning transferability of pre-trained Large Language Models (LLMs) to handle limited non-linguistic datasets effectively. However, incorporating LLMs with time-series data presents challenges of limited adaptation due to different compositions between time-series and linguistic data, and the inability to process multi-scale temporal information. To tackle these challenges, we propose LLM4TS, a framework for time-series forecasting with pre-trained LLMs. LLM4TS consists of a two-stage fine-tuning strategy: the
+ time-series alignment
+ stage to align LLMs with the nuances of time-series data, and the
+ forecasting fine-tuning
+ stage for downstream time-series forecasting tasks. Furthermore, our framework features a novel two-level aggregation method that integrates multi-scale temporal data within pre-trained LLMs, enhancing their ability to interpret time-specific information. In experiments across 7 time-series forecasting datasets, LLM4TS is superior to existing state-of-the-art methods compared with trained-from-scratch models in full-shot scenarios, and also achieves the highest rank in few-shot scenarios. In addition, evaluations compared with different unsupervised representation learning approaches highlight LLM4TS’s effectiveness with representation learning in forecasting tasks. Ablation studies further validate each component’s contribution to LLM4TS and underscore the essential role of utilizing LLM’s pre-trained weights for optimal performance. The code is available at
+ https://github.com/blacksnail789521/LLM4TS
+ .
+">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/663dc434fabc1cf1d3e85fff3f7ddcd313035d18" target='_blank'>LLM4TS: Aligning Pre-Trained LLMs as Data-Efficient Time-Series Forecasters</a></td>
           <td>
             Ching Chang, Wenjie Peng, Tien-Fu Chen
           </td>
           <td>2023-08-16</td>
-          <td>ArXiv</td>
-          <td>28</td>
+          <td>ACM Transactions on Intelligent Systems and Technology</td>
+          <td>29</td>
           <td>3</td>
         </tr>
 
