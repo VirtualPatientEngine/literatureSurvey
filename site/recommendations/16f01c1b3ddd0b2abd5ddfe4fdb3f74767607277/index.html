@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-02-24 06:05:34 UTC</i>
+  <i class="footer">This page was last updated on 2025-03-03 06:05:44 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -484,8 +484,8 @@
           </td>
           <td>2024-05-23</td>
           <td>ArXiv</td>
-          <td>1</td>
-          <td>7</td>
+          <td>2</td>
+          <td>8</td>
         </tr>
 
         <tr id="Large language models (LLMs) have been applied in many fields and have developed rapidly in recent years. As a classic machine learning task, time series forecasting has recently been boosted by LLMs. Recent works treat large language models as zero-shot time series reasoners without further fine-tuning, which achieves remarkable performance. However, some unexplored research problems exist when applying LLMs for time series forecasting under the zero-shot setting. For instance, the LLMs' preferences for the input time series are less understood. In this paper, by comparing LLMs with traditional time series forecasting models, we observe many interesting properties of LLMs in the context of time series forecasting. First, our study shows that LLMs perform well in predicting time series with clear patterns and trends but face challenges with datasets lacking periodicity. This observation can be explained by the ability of LLMs to recognize the underlying period within datasets, which is supported by our experiments. In addition, the input strategy is investigated, and it is found that incorporating external knowledge and adopting natural language paraphrases substantially improves the predictive performance of LLMs for time series. Our study contributes insight into LLMs' advantages and limitations in time series forecasting under different conditions.">
@@ -496,7 +496,7 @@
           </td>
           <td>2024-02-16</td>
           <td>SIGKDD Explor.</td>
-          <td>11</td>
+          <td>12</td>
           <td>9</td>
         </tr>
 
@@ -520,8 +520,28 @@
           </td>
           <td>2022-09-20</td>
           <td>IEEE Transactions on Knowledge and Data Engineering</td>
-          <td>103</td>
+          <td>107</td>
           <td>18</td>
+        </tr>
+
+        <tr id="
+ Multivariate time-series forecasting is vital in various domains, e.g., economic planning and weather prediction. Deep train-from-scratch models have exhibited effective performance yet require large amounts of data, which limits real-world applicability. Recently, researchers have leveraged the representation learning transferability of pre-trained Large Language Models (LLMs) to handle limited non-linguistic datasets effectively. However, incorporating LLMs with time-series data presents challenges of limited adaptation due to different compositions between time-series and linguistic data, and the inability to process multi-scale temporal information. To tackle these challenges, we propose LLM4TS, a framework for time-series forecasting with pre-trained LLMs. LLM4TS consists of a two-stage fine-tuning strategy: the
+ time-series alignment
+ stage to align LLMs with the nuances of time-series data, and the
+ forecasting fine-tuning
+ stage for downstream time-series forecasting tasks. Furthermore, our framework features a novel two-level aggregation method that integrates multi-scale temporal data within pre-trained LLMs, enhancing their ability to interpret time-specific information. In experiments across 7 time-series forecasting datasets, LLM4TS is superior to existing state-of-the-art methods compared with trained-from-scratch models in full-shot scenarios, and also achieves the highest rank in few-shot scenarios. In addition, evaluations compared with different unsupervised representation learning approaches highlight LLM4TS’s effectiveness with representation learning in forecasting tasks. Ablation studies further validate each component’s contribution to LLM4TS and underscore the essential role of utilizing LLM’s pre-trained weights for optimal performance. The code is available at
+ https://github.com/blacksnail789521/LLM4TS
+ .
+">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/663dc434fabc1cf1d3e85fff3f7ddcd313035d18" target='_blank'>LLM4TS: Aligning Pre-Trained LLMs as Data-Efficient Time-Series Forecasters</a></td>
+          <td>
+            Ching Chang, Wenjie Peng, Tien-Fu Chen
+          </td>
+          <td>2023-08-16</td>
+          <td>ACM Transactions on Intelligent Systems and Technology</td>
+          <td>30</td>
+          <td>3</td>
         </tr>
 
         <tr id="Inspired by Large Language Models (LLMs), Time Series Forecasting (TSF), a long-standing task in time series analysis, is undergoing a transition towards Large Time Series Models (LTSMs), aiming to train universal transformer-based models for TSF. However, training LTSMs on heterogeneous time series data poses unique challenges, including diverse frequencies, dimensions, and patterns across datasets. Recent endeavors have studied and evaluated various design choices aimed at enhancing LTSM training and generalization capabilities, spanning pre-processing techniques, model configurations, and dataset configurations. In this work, we comprehensively analyze these design choices and aim to identify the best practices for training LTSM. Moreover, we propose \emph{time series prompt}, a novel statistical prompting strategy tailored to time series data. Furthermore, based on the observations in our analysis, we introduce \texttt{LTSM-bundle}, which bundles the best design choices we have identified. Empirical results demonstrate that \texttt{LTSM-bundle} achieves superior zero-shot and few-shot performances compared to state-of-the-art LSTMs and traditional TSF methods on benchmark datasets.">
@@ -558,26 +578,6 @@
           <td>ArXiv</td>
           <td>4</td>
           <td>2</td>
-        </tr>
-
-        <tr id="
- Multivariate time-series forecasting is vital in various domains, e.g., economic planning and weather prediction. Deep train-from-scratch models have exhibited effective performance yet require large amounts of data, which limits real-world applicability. Recently, researchers have leveraged the representation learning transferability of pre-trained Large Language Models (LLMs) to handle limited non-linguistic datasets effectively. However, incorporating LLMs with time-series data presents challenges of limited adaptation due to different compositions between time-series and linguistic data, and the inability to process multi-scale temporal information. To tackle these challenges, we propose LLM4TS, a framework for time-series forecasting with pre-trained LLMs. LLM4TS consists of a two-stage fine-tuning strategy: the
- time-series alignment
- stage to align LLMs with the nuances of time-series data, and the
- forecasting fine-tuning
- stage for downstream time-series forecasting tasks. Furthermore, our framework features a novel two-level aggregation method that integrates multi-scale temporal data within pre-trained LLMs, enhancing their ability to interpret time-specific information. In experiments across 7 time-series forecasting datasets, LLM4TS is superior to existing state-of-the-art methods compared with trained-from-scratch models in full-shot scenarios, and also achieves the highest rank in few-shot scenarios. In addition, evaluations compared with different unsupervised representation learning approaches highlight LLM4TS’s effectiveness with representation learning in forecasting tasks. Ablation studies further validate each component’s contribution to LLM4TS and underscore the essential role of utilizing LLM’s pre-trained weights for optimal performance. The code is available at
- https://github.com/blacksnail789521/LLM4TS
- .
-">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/663dc434fabc1cf1d3e85fff3f7ddcd313035d18" target='_blank'>LLM4TS: Aligning Pre-Trained LLMs as Data-Efficient Time-Series Forecasters</a></td>
-          <td>
-            Ching Chang, Wenjie Peng, Tien-Fu Chen
-          </td>
-          <td>2023-08-16</td>
-          <td>ACM Transactions on Intelligent Systems and Technology</td>
-          <td>29</td>
-          <td>3</td>
         </tr>
 
   </tbody>

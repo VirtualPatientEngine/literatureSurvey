@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-02-24 06:05:35 UTC</i>
+  <i class="footer">This page was last updated on 2025-03-03 06:05:47 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -533,7 +533,7 @@
           <td>2023-06-26</td>
           <td>DBLP</td>
           <td>5</td>
-          <td>141</td>
+          <td>142</td>
         </tr>
 
         <tr id="Contrastive representation learning is crucial in medical time series analysis as it alleviates dependency on labor-intensive, domain-specific, and scarce expert annotations. However, existing contrastive learning methods primarily focus on one single data level, which fails to fully exploit the intricate nature of medical time series. To address this issue, we present COMET, an innovative hierarchical framework that leverages data consistencies at all inherent levels in medical time series. Our meticulously designed model systematically captures data consistency from four potential levels: observation, sample, trial, and patient levels. By developing contrastive loss at multiple levels, we can learn effective representations that preserve comprehensive data consistency, maximizing information utilization in a self-supervised manner. We conduct experiments in the challenging patient-independent setting. We compare COMET against six baselines using three diverse datasets, which include ECG signals for myocardial infarction and EEG signals for Alzheimer's and Parkinson's diseases. The results demonstrate that COMET consistently outperforms all baselines, particularly in setup with 10% and 1% labeled data fractions across all datasets. These results underscore the significant impact of our framework in advancing contrastive representation learning techniques for medical time series. The source code is available at https://github.com/DL4mHealth/COMET.">
@@ -544,7 +544,7 @@
           </td>
           <td>2023-10-21</td>
           <td>ArXiv</td>
-          <td>39</td>
+          <td>41</td>
           <td>4</td>
         </tr>
 
@@ -556,7 +556,7 @@
           </td>
           <td>2021-09-30</td>
           <td>IEEE Transactions on Pattern Analysis and Machine Intelligence</td>
-          <td>23</td>
+          <td>24</td>
           <td>72</td>
         </tr>
 
@@ -568,20 +568,8 @@
           </td>
           <td>2023-08-04</td>
           <td>Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</td>
-          <td>1</td>
+          <td>2</td>
           <td>26</td>
-        </tr>
-
-        <tr id="In this work, we investigate the time series representation learning problem using self-supervised techniques. Contrastive learning is well-known in this area as it is a powerful method for extracting information from the series and generating task-appropriate representations. Despite its proficiency in capturing time series characteristics, these techniques often overlook a critical factor - the inherent noise in this type of data, a consideration usually emphasized in general time series analysis. Moreover, there is a notable absence of attention to developing efficient yet lightweight encoder architectures, with an undue focus on delivering contrastive losses. Our work address these gaps by proposing an innovative training strategy that promotes consistent representation learning, accounting for the presence of noise-prone signals in natural time series. Furthermore, we propose an encoder architecture that incorporates dilated convolution within the Inception block, resulting in a scalable and robust network with a wide receptive field. Experimental findings underscore the effectiveness of our method, consistently outperforming state-of-the-art approaches across various tasks, including forecasting, classification, and abnormality detection. Notably, our method attains the top rank in over two-thirds of the classification UCR datasets, utilizing only 40% of the parameters compared to the second-best approach.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/b1909388ab7a548f6b27dc95a3a279a1a24234fe" target='_blank'>Improving Time Series Encoding with Noise-Aware Self-Supervised Learning and an Efficient Encoder</a></td>
-          <td>
-            Anh Duy Nguyen, Trang H. Tran, Hieu Pham, Phi-Le Nguyen, Lam M. Nguyen
-          </td>
-          <td>2023-06-11</td>
-          <td>2024 IEEE International Conference on Data Mining (ICDM)</td>
-          <td>3</td>
-          <td>21</td>
         </tr>
 
         <tr id="Monitoring and recognizing patterns in continuous sensing data is crucial for many practical applications. These real-world time-series data are often nonstationary, characterized by varying statistical and spectral properties over time. This poses a significant challenge in developing learning models that can effectively generalize across different distributions. In this work, based on our observation that nonstationary statistics are intrinsically linked to the phase information, we propose a time-series learning framework, PhASER. It consists of three novel elements: 1) phase augmentation that diversifies non-stationarity while preserving discriminatory semantics, 2) separate feature encoding by viewing time-varying magnitude and phase as independent modalities, and 3) feature broadcasting by incorporating phase with a novel residual connection for inherent regularization to enhance distribution invariant learning. Upon extensive evaluation on 5 datasets from human activity recognition, sleep-stage classification, and gesture recognition against 10 state-of-the-art baseline methods, we demonstrate that PhASER consistently outperforms the best baselines by an average of 5% and up to 13% in some cases. Moreover, PhASER's principles can be applied broadly to boost the generalization ability of existing time series classification models.">
@@ -594,6 +582,18 @@
           <td>ArXiv</td>
           <td>1</td>
           <td>11</td>
+        </tr>
+
+        <tr id="In this work, we investigate the time series representation learning problem using self-supervised techniques. Contrastive learning is well-known in this area as it is a powerful method for extracting information from the series and generating task-appropriate representations. Despite its proficiency in capturing time series characteristics, these techniques often overlook a critical factor - the inherent noise in this type of data, a consideration usually emphasized in general time series analysis. Moreover, there is a notable absence of attention to developing efficient yet lightweight encoder architectures, with an undue focus on delivering contrastive losses. Our work address these gaps by proposing an innovative training strategy that promotes consistent representation learning, accounting for the presence of noise-prone signals in natural time series. Furthermore, we propose an encoder architecture that incorporates dilated convolution within the Inception block, resulting in a scalable and robust network with a wide receptive field. Experimental findings underscore the effectiveness of our method, consistently outperforming state-of-the-art approaches across various tasks, including forecasting, classification, and abnormality detection. Notably, our method attains the top rank in over two-thirds of the classification UCR datasets, utilizing only 40% of the parameters compared to the second-best approach.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/b1909388ab7a548f6b27dc95a3a279a1a24234fe" target='_blank'>Improving Time Series Encoding with Noise-Aware Self-Supervised Learning and an Efficient Encoder</a></td>
+          <td>
+            Anh Duy Nguyen, Trang H. Tran, Hieu Pham, Phi-Le Nguyen, Lam M. Nguyen
+          </td>
+          <td>2023-06-11</td>
+          <td>2024 IEEE International Conference on Data Mining (ICDM)</td>
+          <td>3</td>
+          <td>21</td>
         </tr>
 
   </tbody>
