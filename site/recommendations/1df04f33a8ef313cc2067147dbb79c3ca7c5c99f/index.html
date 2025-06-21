@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-03-03 06:05:41 UTC</i>
+  <i class="footer">This page was last updated on 2025-06-21 20:21:58 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -488,16 +488,16 @@
           <td>6</td>
         </tr>
 
-        <tr id="Graph Neural Networks (GNNs) have shown promising potential in graph representation learning. The majority of GNNs define a local message-passing mechanism, propagating information over the graph by stacking multiple layers. These methods, however, are known to suffer from two major limitations: over-squashing and poor capturing of long-range dependencies. Recently, Graph Transformers (GTs) emerged as a powerful alternative to Message-Passing Neural Networks (MPNNs). GTs, however, have quadratic computational cost, lack inductive biases on graph structures, and rely on complex Positional/Structural Encodings (SE/PE). In this paper, we show that while Transformers, complex message-passing, and SE/PE are sufficient for good performance in practice, neither is necessary. Motivated by the recent success of State Space Models (SSMs), such as Mamba, we present Graph Mamba Networks (GMNs), a general framework for a new class of GNNs based on selective SSMs. We discuss and categorize the new challenges when adapting SSMs to graph-structured data, and present four required and one optional steps to design GMNs, where we choose (1) Neighborhood Tokenization, (2) Token Ordering, (3) Architecture of Bidirectional Selective SSM Encoder, (4) Local Encoding, and dispensable (5) PE and SE. We further provide theoretical justification for the power of GMNs. Experiments demonstrate that despite much less computational cost, GMNs attain an outstanding performance in long-range, small-scale, large-scale, and heterophilic benchmark datasets.">
+        <tr id="Graph Neural Networks (GNNs) have shown promising potential in graph representation learning. The majority of GNNs define a local message-passing mechanism, propagating information over the graph by stacking multiple layers. These methods, however, are known to suffer from two major limitations: over-squashing and poor capturing of long-range dependencies. Recently, Graph Transformers (GTs) emerged as a powerful alternative to Message-Passing Neural Networks (MPNNs). GTs, however, have quadratic computational cost, lack inductive biases on graph structures, and rely on complex Positional Encodings (PE). In this paper, we show that while Transformers, complex message-passing, and PE are sufficient for good performance in practice, neither is necessary. Motivated by the recent success of State Space Models (SSMs), we present Graph Mamba Networks (GMNs), a framework for a new class of GNNs based on selective SSMs. We discuss the new challenges when adapting SSMs to graph-structured data, and present four required steps to design GMNs, where we choose (1) Neighborhood Tokenization, (2) Token Ordering, (3) Architecture of SSM Encoder, and (4) Local Encoding. We provide theoretical justification for the power of GMNs, and experimentally show that GMNs attain an outstanding performance in various benchmark datasets. The code is available in this link.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/2dda6da7375bf5e8bcf60f87b17ba10757f3bc57" target='_blank'>Graph Mamba: Towards Learning on Graphs with State Space Models</a></td>
           <td>
             Ali Behrouz, Farnoosh Hashemi
           </td>
           <td>2024-02-13</td>
-          <td>ArXiv, DBLP</td>
-          <td>51</td>
-          <td>9</td>
+          <td>Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</td>
+          <td>68</td>
+          <td>10</td>
         </tr>
 
         <tr id="Message-passing graph neural networks (GNNs) excel at capturing local relationships but struggle with long-range dependencies in graphs. In contrast, graph transformers (GTs) enable global information exchange but often oversimplify the graph structure by representing graphs as sets of fixed-length vectors. This work introduces a novel architecture that overcomes the shortcomings of both approaches by combining the long-range information of random walks with local message passing. By treating random walks as sequences, our architecture leverages recent advances in sequence models to effectively capture long-range dependencies within these walks. Based on this concept, we propose a framework that offers (1) more expressive graph representations through random walk sequences, (2) the ability to utilize any sequence model for capturing long-range dependencies, and (3) the flexibility by integrating various GNN and GT architectures. Our experimental evaluations demonstrate that our approach achieves significant performance improvements on 19 graph and node benchmark datasets, notably outperforming existing methods by up to 13\% on the PascalVoc-SP and COCO-SP datasets. The code is available at https://github.com/BorgwardtLab/NeuralWalker.">
@@ -508,8 +508,8 @@
           </td>
           <td>2024-06-05</td>
           <td>ArXiv</td>
-          <td>2</td>
-          <td>8</td>
+          <td>6</td>
+          <td>9</td>
         </tr>
 
         <tr id="Graph Neural Networks (GNNs) have shown great success in various graph-based learning tasks. However, it often faces the issue of over-smoothing as the model depth increases, which causes all node representations to converge to a single value and become indistinguishable. This issue stems from the inherent limitations of GNNs, which struggle to distinguish the importance of information from different neighborhoods. In this paper, we introduce MbaGCN, a novel graph convolutional architecture that draws inspiration from the Mamba paradigm-originally designed for sequence modeling. MbaGCN presents a new backbone for GNNs, consisting of three key components: the Message Aggregation Layer, the Selective State Space Transition Layer, and the Node State Prediction Layer. These components work in tandem to adaptively aggregate neighborhood information, providing greater flexibility and scalability for deep GNN models. While MbaGCN may not consistently outperform all existing methods on each dataset, it provides a foundational framework that demonstrates the effective integration of the Mamba paradigm into graph representation learning. Through extensive experiments on benchmark datasets, we demonstrate that MbaGCN paves the way for future advancements in graph neural network research.">
@@ -520,7 +520,7 @@
           </td>
           <td>2025-01-26</td>
           <td>ArXiv</td>
-          <td>0</td>
+          <td>1</td>
           <td>4</td>
         </tr>
 
@@ -532,8 +532,8 @@
           </td>
           <td>2024-06-09</td>
           <td>ArXiv</td>
-          <td>7</td>
-          <td>4</td>
+          <td>8</td>
+          <td>5</td>
         </tr>
 
         <tr id="Graph representation learning (GRL) is fundamental in multi-graph applications like molecular property prediction. Graph neural networks (GNNs) have emerged as a popular method for GRL. However, existing GRL methods primarily focus on designing GNN models with enhanced expressiveness while overlooking the memory efficiency of algorithms during training. The memory inefficiency problem is caused by a contextual constraint imposed on node representations, which requires each node to be context-dependent on its input graph. In this paper, we propose a novel method, called context sketching (COS), for memory-efficient graph representation learning in multi-graph scenarios. We first formally define the contextual constraint based on the enclosed $\infty-$hop subgraphs of nodes. Subsequently, we propose to relax the original contextual constraint by requiring each node to be context-dependent on its enclosed $k-$hop subgraph $(k \ll \infty)$ which is a contextual sketch of the enclosed $\infty$-hop subgraph. Lastly, we prove that COS constructs an optimal solution to a memory-related objective associated with graph coarsening. Experiments on four widely used benchmark datasets demonstrate that COS can reduce the memory footprint of baselines by a large margin with almost no accuracy loss.">
@@ -548,7 +548,7 @@
           <td>4</td>
         </tr>
 
-        <tr id="Graph Neural Networks (GNNs) have shown impressive performance in graph representation learning, but they face challenges in capturing long-range dependencies due to their limited expressive power. To address this, Graph Transformers (GTs) were introduced, utilizing self-attention mechanism to effectively model pairwise node relationships. Despite their advantages, GTs suffer from quadratic complexity w.r.t. the number of nodes in the graph, hindering their applicability to large graphs. In this work, we present Graph-Enhanced Contextual Operator (GECO), a scalable and effective alternative to GTs that leverages neighborhood propagation and global convolutions to effectively capture local and global dependencies in quasilinear time. Our study on synthetic datasets reveals that GECO reaches 169x speedup on a graph with 2M nodes w.r.t. optimized attention. Further evaluations on diverse range of benchmarks showcase that GECO scales to large graphs where traditional GTs often face memory and time limitations. Notably, GECO consistently achieves comparable or superior quality compared to baselines, improving the SOTA up to 4.5%, and offering a scalable and effective solution for large-scale graph learning.">
+        <tr id="Graph Neural Networks (GNNs) have shown impressive performance in graph representation learning, but they face challenges in capturing long-range dependencies due to their limited expressive power. To address this, Graph Transformers (GTs) were introduced, utilizing self-attention mechanism to effectively model pairwise node relationships. Despite their advantages, GTs suffer from quadratic complexity w.r.t. the number of nodes in the graph, hindering their applicability to large graphs. In this work, we present Graph-Enhanced Contextual Operator (GECO), a scalable and effective alternative to GTs that leverages neighborhood propagation and global convolutions to effectively capture local and global dependencies in quasiliniear time. Our study on synthetic datasets reveals that GECO reaches 169x speedup on a graph with 2M nodes w.r.t. optimized attention. Further evaluations on diverse range of benchmarks showcase that it scales to large graphs where traditional GTs often face memory and time limitations. Notably, GECO consistently achieves comparable or superior quality compared to baselines, improving the SOTA up to 4.5%, and offering a scalable and effective solution for large-scale graph learning.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/48052c9ebe066b9fcd653897dabf18582ec7e7fb" target='_blank'>A Scalable and Effective Alternative to Graph Transformers</a></td>
           <td>
@@ -560,16 +560,16 @@
           <td>7</td>
         </tr>
 
-        <tr id="The Transformer architecture has achieved remarkable success in a number of domains including natural language processing and computer vision. However, when it comes to graph-structured data, transformers have not achieved competitive performance, especially on large graphs. In this paper, we identify the main deficiencies of current graph transformers:(1) Existing node sampling strategies in Graph Transformers are agnostic to the graph characteristics and the training process. (2) Most sampling strategies only focus on local neighbors and neglect the long-range dependencies in the graph. We conduct experimental investigations on synthetic datasets to show that existing sampling strategies are sub-optimal. To tackle the aforementioned problems, we formulate the optimization strategies of node sampling in Graph Transformer as an adversary bandit problem, where the rewards are related to the attention weights and can vary in the training procedure. Meanwhile, we propose a hierarchical attention scheme with graph coarsening to capture the long-range interactions while reducing computational complexity. Finally, we conduct extensive experiments on real-world datasets to demonstrate the superiority of our method over existing graph transformers and popular GNNs.">
+        <tr id="Transformer-based models have recently shown success in representation learning on graph-structured data beyond natural language processing and computer vision. However, the success is limited to small-scale graphs due to the drawbacks of full dot-product attention on graphs such as the <italic>quadratic</italic> complexity with respect to the number of nodes and message aggregation from enormous <italic>irrelevant</italic> nodes. To address these issues, we propose Deformable Graph Transformer (DGT) that performs sparse attention via dynamically selected <italic>relevant</italic> nodes for efficiently handling large-scale graphs with a <italic>linear</italic> complexity in the number of nodes. Specifically, our framework first constructs multiple node sequences with various criteria to consider both structural and semantic proximity. Then, combining with our learnable Katz Positional Encodings, the sparse attention is applied to the node sequences for learning node representations with a significantly reduced computational cost. Extensive experiments demonstrate that our DGT achieves superior performance on 7 graph benchmark datasets with 2.5 <inline-formula><tex-math notation="LaTeX">$\sim$</tex-math><alternatives><mml:math><mml:mo>∼</mml:mo></mml:math><inline-graphic xlink:href="kim-ieq1-3550281.gif"/></alternatives></inline-formula> 449 times less computational cost compared to transformer-based graph models with full attention.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/5152b9391762aefc532f85a801093bd38a6688c6" target='_blank'>Hierarchical Graph Transformer with Adaptive Node Sampling</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/1fb264b21eaf9046387ffddd7a8bf5262674682c" target='_blank'>Deformable Graph Transformer</a></td>
           <td>
-            Zaixin Zhang, Qi Liu, Qingyong Hu, Cheekong Lee
+            Jinyoung Park, Seongjun Yun, Hyeon-ju Park, Jaewoo Kang, Jisu Jeong, KyungHyun Kim, Jung-Woo Ha, Hyunwoo J. Kim
           </td>
-          <td>2022-10-08</td>
-          <td>ArXiv</td>
-          <td>74</td>
-          <td>19</td>
+          <td>2022-06-29</td>
+          <td>IEEE Transactions on Pattern Analysis and Machine Intelligence</td>
+          <td>7</td>
+          <td>29</td>
         </tr>
 
   </tbody>

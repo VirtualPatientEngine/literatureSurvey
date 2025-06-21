@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-03-03 06:05:30 UTC</i>
+  <i class="footer">This page was last updated on 2025-06-21 20:21:55 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -485,7 +485,7 @@
           <td>2024-12-14</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>3</td>
+          <td>4</td>
         </tr>
 
         <tr id="Real-world applications often involve irregular time series, for which the time intervals between successive observations are non-uniform. Irregularity across multiple features in a multi-variate time series further results in a different subset of features at any given time (i.e., asynchronicity). Existing pre-training schemes for time-series, however, often assume regularity of time series and make no special treatment of irregularity. We argue that such irregularity offers insight about domain property of the data—for example, frequency of hospital visits may signal patient health condition—that can guide representation learning. In this work, we propose PrimeNet to learn a self-supervised representation for irregular multivariate time-series. Specifically, we design a time sensitive contrastive learning and data reconstruction task to pre-train a model. Irregular time-series exhibits considerable variations in sampling density over time. Hence, our triplet generation strategy follows the density of the original data points, preserving its native irregularity. Moreover, the sampling density variation over time makes data reconstruction difficult for different regions. Therefore, we design a data masking technique that always masks a constant time duration to accommodate reconstruction for regions of different sampling density. We learn with these tasks using unlabeled data to build a pre-trained model and fine-tune on a downstream task with limited labeled data, in contrast with existing fully supervised approach for irregular time-series, requiring large amounts of labeled data. Experiment results show that PrimeNet significantly outperforms state-of-the-art methods on naturally irregular and asynchronous data from Healthcare and IoT applications for several downstream tasks, including classification, interpolation, and regression.">
@@ -496,8 +496,8 @@
           </td>
           <td>2023-06-26</td>
           <td>DBLP</td>
-          <td>14</td>
-          <td>17</td>
+          <td>21</td>
+          <td>16</td>
         </tr>
 
         <tr id="Irregularly-sampled time series (ITS) are native to high-impact domains like healthcare, where measurements are collected over time at uneven intervals. However, for many classification problems, only small portions of long time series are often relevant to the class label. In this case, existing ITS models often fail to classify long series since they rely on careful imputation, which easily over- or under-samples the relevant regions. Using this insight, we then propose CAT, a model that classifies multivariate ITS by explicitly seeking highly-relevant portions of an input series' timeline. CAT achieves this by integrating three components: (1) A Moment Network learns to seek relevant moments in an ITS's continuous timeline using reinforcement learning. (2) A Receptor Network models the temporal dynamics of both observations and their timing localized around predicted moments. (3) A recurrent Transition Model models the sequence of transitions between these moments, cultivating a representation with which the series is classified. Using synthetic and real data, we find that CAT outperforms ten state-of-the-art methods by finding short signals in long irregular time series.">
@@ -508,7 +508,7 @@
           </td>
           <td>2023-02-08</td>
           <td>ArXiv</td>
-          <td>1</td>
+          <td>2</td>
           <td>39</td>
         </tr>
 
@@ -520,7 +520,7 @@
           </td>
           <td>2025-01-13</td>
           <td>Frontiers Comput. Sci.</td>
-          <td>0</td>
+          <td>1</td>
           <td>7</td>
         </tr>
 
@@ -544,8 +544,8 @@
           </td>
           <td>2023-03-01</td>
           <td>ArXiv</td>
-          <td>29</td>
-          <td>66</td>
+          <td>58</td>
+          <td>67</td>
         </tr>
 
         <tr id="Irregularly sampled time series are increasingly prevalent, particularly in medical domains. While various specialized methods have been developed to handle these irregularities, effectively modeling their complex dynamics and pronounced sparsity remains a challenge. This paper introduces a novel perspective by converting irregularly sampled time series into line graph images, then utilizing powerful pre-trained vision transformers for time series classification in the same way as image classification. This method not only largely simplifies specialized algorithm designs but also presents the potential to serve as a universal framework for time series modeling. Remarkably, despite its simplicity, our approach outperforms state-of-the-art specialized algorithms on several popular healthcare and human activity datasets. Especially in the rigorous leave-sensors-out setting where a portion of variables is omitted during testing, our method exhibits strong robustness against varying degrees of missing observations, achieving an impressive improvement of 42.8% in absolute F1 score points over leading specialized baselines even with half the variables masked. Code and data are available at https://github.com/Leezekun/ViTST">
@@ -556,20 +556,20 @@
           </td>
           <td>2023-03-01</td>
           <td>ArXiv</td>
-          <td>29</td>
-          <td>66</td>
+          <td>58</td>
+          <td>67</td>
         </tr>
 
         <tr id="Irregular time series, where data points are recorded at uneven intervals, are prevalent in healthcare settings, such as emergency wards where vital signs and laboratory results are captured at varying times. This variability, which reflects critical fluctuations in patient health, is essential for informed clinical decision-making. Existing self-supervised learning research on irregular time series often relies on generic pretext tasks like forecasting, which may not fully utilise the signal provided by irregular time series. There is a significant need for specialised pretext tasks designed for the characteristics of irregular time series to enhance model performance and robustness, especially in scenarios with limited data availability. This paper proposes a novel pretraining framework, EMIT, an event-based masking for irregular time series. EMIT focuses on masking-based reconstruction in the latent space, selecting masking points based on the rate of change in the data. This method preserves the natural variability and timing of measurements while enhancing the model's ability to process irregular intervals without losing essential information. Extensive experiments on the MIMIC-III and PhysioNet Challenge datasets demonstrate the superior performance of our event-based masking strategy. The code has been released at https://github.com/hrishi-ds/EMIT.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/5e13c5354481232bed4c0fb1e4b6a37d07f32e52" target='_blank'>EMIT - Event-Based Masked Auto Encoding for Irregular Time Series</a></td>
           <td>
-            Hrishikesh Patel, Ruihong Qiu, Adam Irwin, S. Sadiq, Sen Wang
+            Hrishikesh Patel, Ruihong Qiu, Adam Irwin, Shazia Sadiq, Sen Wang
           </td>
           <td>2024-09-25</td>
           <td>2024 IEEE International Conference on Data Mining (ICDM)</td>
-          <td>1</td>
-          <td>2</td>
+          <td>3</td>
+          <td>3</td>
         </tr>
 
   </tbody>

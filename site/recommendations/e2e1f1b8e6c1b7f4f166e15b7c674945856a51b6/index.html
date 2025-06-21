@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-03-03 06:05:46 UTC</i>
+  <i class="footer">This page was last updated on 2025-06-21 20:22:01 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -476,124 +476,112 @@
   </thead>
   <tbody>
 
-        <tr id="Autoregressive transformers are spectacular models for short sequences but scale poorly to long sequences such as high-resolution images, podcasts, code, or books. We proposed Megabyte, a multi-scale decoder architecture that enables end-to-end differentiable modeling of sequences of over one million bytes. Megabyte segments sequences into patches and uses a local submodel within patches and a global model between patches. This enables sub-quadratic self-attention, much larger feedforward layers for the same compute, and improved parallelism during decoding -- unlocking better performance at reduced cost for both training and generation. Extensive experiments show that Megabyte allows byte-level models to perform competitively with subword models on long context language modeling, achieve state-of-the-art density estimation on ImageNet, and model audio from raw files. Together, these results establish the viability of tokenization-free autoregressive sequence modeling at scale.">
+        <tr id="Time series foundation models have demonstrated strong performance in zero-shot learning, making them well-suited for predicting rapidly evolving patterns in real-world applications where relevant training data are scarce. However, most of these models rely on the Transformer architecture, which incurs quadratic complexity as input length increases. To address this, we introduce TSMamba, a linear-complexity foundation model for time series forecasting built on the Mamba architecture. The model captures temporal dependencies through both forward and backward Mamba encoders, achieving high prediction accuracy. To reduce reliance on large datasets and lower training costs, TSMamba employs a two-stage transfer learning process that leverages pretrained Mamba LLMs, allowing effective time series modeling with a moderate training set. In the first stage, the forward and backward backbones are optimized via patch-wise autoregressive prediction; in the second stage, the model trains a prediction head and refines other components for long-term forecasting. While the backbone assumes channel independence to manage varying channel numbers across datasets, a channel-wise compressed attention module is introduced to capture cross-channel dependencies during fine-tuning on specific multivariate datasets. Experiments show that TSMamba's zero-shot performance is comparable to state-of-the-art time series foundation models, despite using significantly less training data. It also achieves competitive or superior full-shot performance compared to task-specific prediction models. The code will be made publicly available.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/412e266cddfd87c79087a88ba1e4d11b89a45a13" target='_blank'>MEGABYTE: Predicting Million-byte Sequences with Multiscale Transformers</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/30abc3fad3c88886c189e216c8414b18c396c6bd" target='_blank'>A Mamba Foundation Model for Time Series Forecasting</a></td>
           <td>
-            L. Yu, Daniel Simig, Colin Flaherty, Armen Aghajanyan, Luke Zettlemoyer, M. Lewis
+            Haoyu Ma, Yushu Chen, Wenlai Zhao, Jinzhe Yang, Yingsheng Ji, Xinghua Xu, Xiaozhu Liu, Hao Jing, Shengzhuo Liu, Guangwen Yang
           </td>
-          <td>2023-05-12</td>
-          <td>ArXiv</td>
-          <td>74</td>
-          <td>111</td>
-        </tr>
-
-        <tr id="Transformer-based models have achieved great success in various NLP, vision, and speech tasks. However, the core of Transformer, the self-attention mechanism, has a quadratic time and memory complexity with respect to the sequence length, which hinders applications of Transformer-based models to long sequences. Many approaches have been proposed to mitigate this problem, such as sparse attention mechanisms, low-rank matrix approximations and scalable kernels, and token mixing alternatives to self-attention. We propose a novel Pooling Network (PoNet) for token mixing in long sequences with linear complexity. We design multi-granularity pooling and pooling fusion to capture different levels of contextual information and combine their interactions with tokens. On the Long Range Arena benchmark, PoNet significantly outperforms Transformer and achieves competitive accuracy, while being only slightly slower than the fastest model, FNet, across all sequence lengths measured on GPUs. We also conduct systematic studies on the transfer learning capability of PoNet and observe that PoNet achieves 95.7% of the accuracy of BERT on the GLUE benchmark, outperforming FNet by 4.5% relative. Comprehensive ablation analysis demonstrates effectiveness of the designed multi-granularity pooling and pooling fusion for token mixing in long sequences and efficacy of the designed pre-training tasks for PoNet to learn transferable contextualized language representations.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/c88e2d70e44493d5508bfe517be978a9040be6a5" target='_blank'>PoNet: Pooling Network for Efficient Token Mixing in Long Sequences</a></td>
-          <td>
-            Chao-Hong Tan, Qian Chen, Wen Wang, Qinglin Zhang, Siqi Zheng, Zhenhua Ling
-          </td>
-          <td>2021-10-06</td>
-          <td>ArXiv</td>
-          <td>10</td>
-          <td>45</td>
-        </tr>
-
-        <tr id="Token-based text-to-speech (TTS) models have emerged as a promising avenue for generating natural and realistic speech, yet they grapple with low pronunciation accuracy, speaking style and timbre inconsistency, and a substantial need for diverse training data. In response, we introduce a novel hierarchical acoustic modeling approach complemented by a tailored data augmentation strategy and train it on the combination of real and synthetic data, scaling the data size up to 650k hours, leading to the zero-shot TTS model with 0.8B parameters. Specifically, our method incorporates a latent variable sequence containing supplementary acoustic information based on refined self-supervised learning (SSL) discrete units into the TTS model by a predictor. This significantly mitigates pronunciation errors and style mutations in synthesized speech. During training, we strategically replace and duplicate segments of the data to enhance timbre uniformity. Moreover, a pretrained few-shot voice conversion model is utilized to generate a plethora of voices with identical content yet varied timbres. This facilitates the explicit learning of utterance-level one-to-many mappings, enriching speech diversity and also ensuring consistency in timbre. Comparative experiments (Demo page: https://anonymous.4open.science/w/ham-tts/)demonstrate our model's superiority over VALL-E in pronunciation precision and maintaining speaking style, as well as timbre continuity.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/4a0692c5e5c33588cb33362284a978ca7a9b8663" target='_blank'>HAM-TTS: Hierarchical Acoustic Modeling for Token-Based Zero-Shot Text-to-Speech with Model and Data Scaling</a></td>
-          <td>
-            Chunhui Wang, Chang Zeng, Bowen Zhang, Ziyang Ma, Yefan Zhu, Zifeng Cai, Jian Zhao, Zhonglin Jiang, Yong Chen
-          </td>
-          <td>2024-03-09</td>
+          <td>2024-11-05</td>
           <td>ArXiv</td>
           <td>4</td>
-          <td>13</td>
+          <td>8</td>
         </tr>
 
-        <tr id="Several recent studies have attempted to autoregressively generate continuous speech representations without discrete speech tokens by combining diffusion and autoregressive models, yet they often face challenges with excessive computational loads or suboptimal outcomes. In this work, we propose Diffusion Transformer Autoregressive Modeling (DiTAR), a patch-based autoregressive framework combining a language model with a diffusion transformer. This approach significantly enhances the efficacy of autoregressive models for continuous tokens and reduces computational demands. DiTAR utilizes a divide-and-conquer strategy for patch generation, where the language model processes aggregated patch embeddings and the diffusion transformer subsequently generates the next patch based on the output of the language model. For inference, we propose defining temperature as the time point of introducing noise during the reverse diffusion ODE to balance diversity and determinism. We also show in the extensive scaling analysis that DiTAR has superb scalability. In zero-shot speech generation, DiTAR achieves state-of-the-art performance in robustness, speaker similarity, and naturalness.">
+        <tr id="Foundation models have emerged as a promising approach in time series forecasting (TSF). Existing approaches either repurpose large language models (LLMs) or build large-scale time series datasets to develop TSF foundation models for universal forecasting. However, these methods face challenges due to the severe cross-domain gap or in-domain heterogeneity. This paper explores a new road to building a TSF foundation model from rich, high-quality natural images. Our key insight is that a visual masked autoencoder, pre-trained on the ImageNet dataset, can naturally be a numeric series forecaster. By reformulating TSF as an image reconstruction task, we bridge the gap between image pre-training and TSF downstream tasks. Surprisingly, without further adaptation in the time series domain, the proposed VisionTS could achieve better zero-shot forecast performance than existing TSF foundation models. With fine-tuning for one epoch, VisionTS could further improve the forecasting and achieve state-of-the-art performance in most cases. Extensive experiments reveal intrinsic similarities between images and real-world time series, suggesting that visual models may offer a"free lunch"for TSF and highlight the potential for future cross-modality research. Our code is publicly available at https://github.com/Keytoyze/VisionTS.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/cb043b7182fc671d51939a1562e080459c347019" target='_blank'>DiTAR: Diffusion Transformer Autoregressive Modeling for Speech Generation</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/7665209f6d696321650c8d7eb1d1635406f44d0d" target='_blank'>VisionTS: Visual Masked Autoencoders Are Free-Lunch Zero-Shot Time Series Forecasters</a></td>
           <td>
-            Dongya Jia, Zhuo Chen, Jiawei Chen, Chenpeng Du, Jian Wu, Jian Cong, Xiaobin Zhuang, Chumin Li, Zhengnan Wei, Yuping Wang, Yuxuan Wang
+            Mouxiang Chen, Lefei Shen, Zhuo Li, Xiaoyun Joy Wang, Jianling Sun, Chenghao Liu
           </td>
-          <td>2025-02-06</td>
+          <td>2024-08-30</td>
+          <td>ArXiv</td>
+          <td>30</td>
+          <td>4</td>
+        </tr>
+
+        <tr id="Using pre-trained large language models (LLMs) as the backbone for time series prediction has recently gained significant research interest. However, the effectiveness of LLM backbones in this domain remains a topic of debate. Based on thorough empirical analyses, we observe that training and testing LLM-based models on small datasets often leads to the Encoder and Decoder becoming overly adapted to the dataset, thereby obscuring the true predictive capabilities of the LLM backbone. To investigate the genuine potential of LLMs in time series prediction, we introduce three pre-training models with identical architectures but different pre-training strategies. Thereby, large-scale pre-training allows us to create unbiased Encoder and Decoder components tailored to the LLM backbone. Through controlled experiments, we evaluate the zero-shot and few-shot prediction performance of the LLM, offering insights into its capabilities. Extensive experiments reveal that although the LLM backbone demonstrates some promise, its forecasting performance is limited. Our source code is publicly available in the anonymous repository: https://anonymous.4open.science/r/LLM4TS-0B5C.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/a5a5e8483d34d7ba7978564dcb570fa4a5a72f41" target='_blank'>From Text to Time? Rethinking the Effectiveness of the Large Language Model for Time Series Forecasting</a></td>
+          <td>
+            Xinyu Zhang, Shanshan Feng, Xutao Li
+          </td>
+          <td>2025-04-09</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>4</td>
+          <td>11</td>
         </tr>
 
-        <tr id="Large-scale latent diffusion models (LDMs) excel in content generation across various modalities, but their reliance on phonemes and durations in text-to-speech (TTS) limits scalability and access from other fields. While recent studies show potential in removing these domain-specific factors, performance remains suboptimal. In this work, we introduce DiTTo-TTS, a Diffusion Transformer (DiT)-based TTS model, to investigate whether LDM-based TTS can achieve state-of-the-art performance without domain-specific factors. Through rigorous analysis and empirical exploration, we find that (1) DiT with minimal modifications outperforms U-Net, (2) variable-length modeling with a speech length predictor significantly improves results over fixed-length approaches, and (3) conditions like semantic alignment in speech latent representations are key to further enhancement. By scaling our training data to 82K hours and the model size to 790M parameters, we achieve superior or comparable zero-shot performance to state-of-the-art TTS models in naturalness, intelligibility, and speaker similarity, all without relying on domain-specific factors. Speech samples are available at https://ditto-tts.github.io.">
+        <tr id="We present TimeFound, an encoder-decoder transformer-based time series foundation model for out-of-the-box zero-shot forecasting. To handle time series data from various domains, TimeFound employs a multi-resolution patching strategy to capture complex temporal patterns at multiple scales. We pre-train our model with two sizes (200M and 710M parameters) on a large time-series corpus comprising both real-world and synthetic datasets. Over a collection of unseen datasets across diverse domains and forecasting horizons, our empirical evaluations suggest that TimeFound can achieve superior or competitive zero-shot forecasting performance, compared to state-of-the-art time series foundation models.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/628cda62d6fffedd220d440bf80d70abe07583f3" target='_blank'>DiTTo-TTS: Diffusion Transformers for Scalable Text-to-Speech without Domain-Specific Factors</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/cedf35c0b6ec1637367e228ffec07af0cfe03ce2" target='_blank'>TimeFound: A Foundation Model for Time Series Forecasting</a></td>
           <td>
-            Keon Lee, Dong Won Kim, Jaehyeon Kim, Seungjun Chung, Jaewoong Cho
+            Congxi Xiao, Jingbo Zhou, Yixiong Xiao, Xinjiang Lu, Le Zhang, Hui Xiong
           </td>
-          <td>2024-06-17</td>
+          <td>2025-03-06</td>
           <td>ArXiv</td>
-          <td>13</td>
-          <td>4</td>
+          <td>0</td>
+          <td>10</td>
         </tr>
 
-        <tr id="The rapid development of large-scale text-to-speech (TTS) models has led to significant advancements in modeling diverse speaker prosody and voices. However, these models often face issues such as slow inference speeds, reliance on complex pre-trained neural codec representations, and difficulties in achieving naturalness and high similarity to reference speakers. To address these challenges, this work introduces StyleTTS-ZS, an efficient zero-shot TTS model that leverages distilled time-varying style diffusion to capture diverse speaker identities and prosodies. We propose a novel approach that represents human speech using input text and fixed-length time-varying discrete style codes to capture diverse prosodic variations, trained adversarially with multi-modal discriminators. A diffusion model is then built to sample this time-varying style code for efficient latent diffusion. Using classifier-free guidance, StyleTTS-ZS achieves high similarity to the reference speaker in the style diffusion process. Furthermore, to expedite sampling, the style diffusion model is distilled with perceptual loss using only 10k samples, maintaining speech quality and similarity while reducing inference speed by 90%. Our model surpasses previous state-of-the-art large-scale zero-shot TTS models in both naturalness and similarity, offering a 10-20 faster sampling speed, making it an attractive alternative for efficient large-scale zero-shot TTS systems. The audio demo, code and models are available at https://styletts-zs.github.io/.">
+        <tr id="The diversity of time series applications and scarcity of domain-specific data highlight the need for time-series models with strong few-shot learning capabilities. In this work, we propose a novel training scheme and a transformer-based architecture, collectively referred to as TimePFN, for multivariate time-series (MTS) forecasting. TimePFN is based on the concept of Prior-data Fitted Networks (PFN), which aims to approximate Bayesian inference. Our approach consists of (1) generating synthetic MTS data through diverse Gaussian process kernels and the linear coregionalization method, and (2) a novel MTS architecture capable of utilizing both temporal and cross-channel dependencies across all input patches. We evaluate TimePFN on several benchmark datasets and demonstrate that it outperforms the existing state-of-the-art models for MTS forecasting in both zero-shot and few-shot settings. Notably, fine-tuning TimePFN with as few as 500 data points nearly matches full dataset training error, and even 50 data points yield competitive results. We also find that TimePFN exhibits strong univariate forecasting performance, attesting to its generalization ability. Overall, this work unlocks the power of synthetic data priors for MTS forecasting and facilitates strong zero- and few-shot forecasting performance.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/b809886164dd2e0b4b94795cf401408770c81706" target='_blank'>StyleTTS-ZS: Efficient High-Quality Zero-Shot Text-to-Speech Synthesis with Distilled Time-Varying Style Diffusion</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/e343012eb838b2222f5d9982d195d54be4d7c5d3" target='_blank'>TimePFN: Effective Multivariate Time Series Forecasting with Synthetic Data</a></td>
           <td>
-            Yinghao Aaron Li, Xilin Jiang, Cong Han, N. Mesgarani
+            Ege Onur Taga, M. E. Ildiz, Samet Oymak
           </td>
-          <td>2024-09-16</td>
+          <td>2025-02-22</td>
+          <td>DBLP, ArXiv</td>
+          <td>3</td>
+          <td>36</td>
+        </tr>
+
+        <tr id="In recent years, generative pre-trained paradigms such as Large Language Models (LLMs) and Large Vision Models (LVMs) have achieved revolutionary advancements and widespread real-world applications. Particularly, the emergence of pre-trained LLMs-based temporal works, compared to previous deep model approaches, has demonstrated superior generalization and robustness, showcasing the potential of generative pre-trained paradigms as foundation models for time series. However, those LLMs-based works mainly focus on cross-modal research, i.e., leveraging the language capabilities of LLMs in time series contexts. Although they have achieved impressive performance, there still exist the issues of concept drift caused by differences in data distribution and inflexibility caused by misalignment of dimensions. To this end, inspired by recent work on LVMs, we reconsider the paradigm of time series modeling. In this paper, we comprehensively explore, for the first time, the effectiveness and superiority of the Generative Pre-trained Diffusion (GPD) paradigm in real-world multivariate time series forecasting (TSF). Specifically, to mitigate performance bias introduced by sophisticated networks, we propose a straightforward MLP diffusion network for unconditional modeling of time series. Then we employ a zero-shot and tuning-free method to predict (generate) future data using historical data as prompts. The GPD paradigm is established on the time series modality, effectively preventing the phenomenon of concept drift, and enabling flexible forecasting of arbitrary lengths. We demonstrate that the GPD paradigm achieves comprehensive performance and generalization comparable to current SOTA LLM-based and deep model paradigms on mainstream benchmarks and various TSF tasks. Extensive experiments validate the potential of the GPD paradigm and its assistance in future related research.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/818793961396bbe4c744932676f0ff9cc8385bed" target='_blank'>Generative Pre-Trained Diffusion Paradigm for Zero-Shot Time Series Forecasting</a></td>
+          <td>
+            Jiarui Yang, Tao Dai, Naiqi Li, Junxi Wu, Peiyuan Liu, Jinmin Li, Jigang Bao, Haigang Zhang, Shu-Tao Xia
+          </td>
+          <td>2024-06-04</td>
           <td>ArXiv</td>
           <td>3</td>
-          <td>41</td>
+          <td>8</td>
         </tr>
 
-        <tr id="Scaling text-to-speech to a large and wild dataset has been proven to be highly effective in achieving timbre and speech style generalization, particularly in zero-shot TTS. However, previous works usually encode speech into latent using audio codec and use autoregressive language models or diffusion models to generate it, which ignores the intrinsic nature of speech and may lead to inferior or uncontrollable results. We argue that speech can be decomposed into several attributes (e.g., content, timbre, prosody, and phase) and each of them should be modeled using a module with appropriate inductive biases. From this perspective, we carefully design a novel and large zero-shot TTS system called Mega-TTS, which is trained with large-scale wild data and models different attributes in different ways: 1) Instead of using latent encoded by audio codec as the intermediate feature, we still choose spectrogram as it separates the phase and other attributes very well. Phase can be appropriately constructed by the GAN-based vocoder and does not need to be modeled by the language model. 2) We model the timbre using global vectors since timbre is a global attribute that changes slowly over time. 3) We further use a VQGAN-based acoustic model to generate the spectrogram and a latent code language model to fit the distribution of prosody, since prosody changes quickly over time in a sentence, and language models can capture both local and long-range dependencies. We scale Mega-TTS to multi-domain datasets with 20K hours of speech and evaluate its performance on unseen speakers. Experimental results demonstrate that Mega-TTS surpasses state-of-the-art TTS systems on zero-shot TTS, speech editing, and cross-lingual TTS tasks, with superior naturalness, robustness, and speaker similarity due to the proper inductive bias of each module. Audio samples are available at https://mega-tts.github.io/demo-page.">
+        <tr id="We present General Time Transformer (GTT), an encoder-only style foundation model for zero-shot multivariate time series forecasting. GTT is pretrained on a large dataset of 200M high-quality time series samples spanning diverse domains. In our framework, we consider multivariate time series as a distinct category of images characterized by varying number of channels, and represent each time series sample as a sequence of non-overlapping curve shapes (patches) within an unified numerical magnitude. Furthermore, we formulate the task of multivariate time series forecasting as a problem of predicting the next curve shape based on a window of past curve shapes on a channel-wise basis. Experimental results demonstrate that GTT exhibits superior zero-shot multivariate forecasting capabilities on unseen time series datasets, even surpassing state-of-the-art supervised baselines. Additionally, we investigate the impact of varying GTT model parameters and training dataset scales, observing that the scaling law also applies in the context of zero-shot multivariate time series forecasting. The codebase of GTT is available at https://github.com/cfeng783/GTT.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/5d56f58baf377f191721062ceb64ff1b029f67b2" target='_blank'>Mega-TTS: Zero-Shot Text-to-Speech at Scale with Intrinsic Inductive Bias</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/3478b9dda561998530e59d8fee184c848e3ade4b" target='_blank'>General Time Transformer: an Encoder-only Foundation Model for Zero-Shot Multivariate Time Series Forecasting</a></td>
           <td>
-            Ziyue Jiang, Yi Ren, Zhe Ye, Jinglin Liu, Chen Zhang, Qiang Yang, Shengpeng Ji, Rongjie Huang, Chunfeng Wang, Xiang Yin, Zejun Ma, Zhou Zhao
+            Cheng Feng, Long Huang, Denis Krompass
           </td>
-          <td>2023-06-06</td>
-          <td>ArXiv</td>
-          <td>64</td>
-          <td>107</td>
-        </tr>
-
-        <tr id="This paper introduces Easy One-Step Text-to-Speech (E1 TTS), an efficient non-autoregressive zero-shot text-to-speech system based on denoising diffusion pretraining and distribution matching distillation. The training of E1 TTS is straightforward; it does not require explicit monotonic alignment between the text and audio pairs. The inference of E1 TTS is efficient, requiring only one neural network evaluation for each utterance. Despite its sampling efficiency, E1 TTS achieves naturalness and speaker similarity comparable to various strong baseline models. Audio samples are available at http://e1tts.github.io/ .">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/3db993294a6fac85d8eba6dd40b505688230212b" target='_blank'>E1 TTS: Simple and Fast Non-Autoregressive TTS</a></td>
-          <td>
-            Zhijun Liu, Shuai Wang, Pengcheng Zhu, Mengxiao Bi, Haizhou Li
-          </td>
-          <td>2024-09-14</td>
-          <td>ArXiv</td>
-          <td>2</td>
-          <td>9</td>
-        </tr>
-
-        <tr id="Zero-shot Text-To-Speech (TTS) synthesis shows great promise for personalized voice customization through voice cloning. However, current methods for achieving zero-shot TTS heavily rely on large model scales and extensive training datasets to ensure satisfactory performance and generalizability across various speakers. This raises concerns regarding both deployment costs and data security. In this paper, we present a lightweight and stable zero-shot TTS system. We introduce a novel TTS architecture designed to effectively model linguistic content and various speaker attributes from source speech and prompt speech, respectively. Furthermore, we present a two-stage self-distillation framework that constructs parallel data pairs for effectively disentangling linguistic content and speakers from the perspective of training data. Extensive experiments show that our system exhibits excellent performance and superior stability on the zero-shot TTS tasks. Moreover, it shows markedly superior computational efficiency, with RTFs of 0.13 and 0.012 on the CPU and GPU, respectively.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/42536101065937b49e2aa1365dc84fef45f4d317" target='_blank'>Towards Lightweight and Stable Zero-shot TTS with Self-distilled Representation Disentanglement</a></td>
-          <td>
-            Qianniu Chen, Xiaoyang Hao, Bowen Li, Yue Liu, Li Lu
-          </td>
-          <td>2025-01-15</td>
-          <td>ArXiv</td>
-          <td>0</td>
+          <td>2024-10-21</td>
+          <td>Proceedings of the 33rd ACM International Conference on Information and Knowledge Management</td>
+          <td>3</td>
           <td>1</td>
         </tr>
 
-        <tr id="Ever since their conception, Transformers have taken over traditional sequence models in many tasks, such as NLP, image classification, and video/audio processing, for their fast training and superior performance. Much of the merit is attributable to positional encoding and multi-head attention. However, Transformers fall short in learning long-range dependencies mainly due to the quadratic complexity scaled with context length, in terms of both time and space. Consequently, over the past five years, a myriad of methods has been proposed to make Transformers more efficient. In this work, we first take a step back, study and compare existing solutions to long-sequence modeling in terms of their pure mathematical formulation. Specifically, we summarize them using a unified template, given their shared nature of token mixing. Through benchmarks, we then demonstrate that long context length does yield better performance, albeit application-dependent, and traditional Transformer models fall short in taking advantage of long-range dependencies. Next, inspired by emerging sparse models of huge capacity, we propose a machine learning system for handling million-scale dependencies. As a proof of concept, we evaluate the performance of one essential component of this system, namely, the distributed multi-head attention. We show that our algorithm can scale up attention computation by almost $40\times$ using four GeForce RTX 4090 GPUs, compared to vanilla multi-head attention mechanism. We believe this study is an instrumental step towards modeling million-scale dependencies.">
+        <tr id="We present General Time Transformer (GTT), an encoder-only style foundation model for zero-shot multivariate time series forecasting. GTT is pretrained on a large dataset of 200M high-quality time series samples spanning diverse domains. In our proposed framework, the task of multivariate time series forecasting is formulated as a channel-wise next curve shape prediction problem, where each time series sample is represented as a sequence of non-overlapping curve shapes with a unified numerical magnitude. GTT is trained to predict the next curve shape based on a window of past curve shapes in a channel-wise manner. Experimental results demonstrate that GTT exhibits superior zero-shot multivariate forecasting capabilities on unseen time series datasets, even surpassing state-of-the-art supervised baselines. Additionally, we investigate the impact of varying GTT model parameters and training dataset scales, observing that the scaling law also holds in the context of zero-shot multivariate time series forecasting.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/f640a2635f38cbb3dbb83775088c2e27b790ad77" target='_blank'>A Unified View of Long-Sequence Models towards Modeling Million-Scale Dependencies</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/15ea0190593662402d0493958a53d5ca3b8e8406" target='_blank'>Only the Curve Shape Matters: Training Foundation Models for Zero-Shot Multivariate Time Series Forecasting through Next Curve Shape Prediction</a></td>
           <td>
-            Hongyu Hè, Marko Kabic
+            Cheng Feng, Long Huang, Denis Krompass
           </td>
-          <td>2023-02-13</td>
+          <td>2024-02-12</td>
           <td>ArXiv</td>
-          <td>2</td>
           <td>5</td>
+          <td>16</td>
+        </tr>
+
+        <tr id="Over the past years, foundation models have caused a paradigm shift in machine learning due to their unprecedented capabilities for zero-shot and few-shot generalization. However, despite the success of foundation models in modalities such as natural language processing and computer vision, the development of foundation models for time series forecasting has lagged behind. We present Lag-Llama, a general-purpose foundation model for univariate probabilistic time series forecasting based on a decoder-only transformer architecture that uses lags as covariates. Lag-Llama is pretrained on a large corpus of diverse time series data from several domains, and demonstrates strong zero-shot generalization capabilities compared to a wide range of forecasting models on downstream datasets across domains. Moreover, when fine-tuned on relatively small fractions of such previously unseen datasets, Lag-Llama achieves state-of-the-art performance, outperforming prior deep learning approaches, emerging as the best general-purpose model on average. Lag-Llama serves as a strong contender to the current state-of-art in time series forecasting and paves the way for future advancements in foundation models tailored to time series data.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/7c9bb230946cf48a7b9de97fd0281f42fbc51d31" target='_blank'>Lag-Llama: Towards Foundation Models for Probabilistic Time Series Forecasting</a></td>
+          <td>
+            Kashif Rasul, Arjun Ashok, Andrew Robert Williams, Arian Khorasani, George Adamopoulos, Rishika Bhagwatkar, Marin Bilovs, Hena Ghonia, N. Hassen, Anderson Schneider, Sahil Garg, Alexandre Drouin, Nicolas Chapados, Yuriy Nevmyvaka, I. Rish
+          </td>
+          <td>2023-10-12</td>
+          <td>ArXiv</td>
+          <td>50</td>
+          <td>41</td>
         </tr>
 
   </tbody>

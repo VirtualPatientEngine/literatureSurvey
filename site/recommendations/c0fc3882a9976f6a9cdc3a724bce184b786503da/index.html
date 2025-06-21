@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-03-03 06:06:24 UTC</i>
+  <i class="footer">This page was last updated on 2025-06-21 20:22:23 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -476,7 +476,7 @@
   </thead>
   <tbody>
 
-        <tr id="Regularized regression problems are ubiquitous in statistical modeling, signal processing, and machine learning. Sparse regression in particular has been instrumental in scientific model discovery, including compressed sensing applications, variable selection, and high-dimensional analysis. We propose a new and highly effective approach for regularized regression, called SR3. The key idea is to solve a relaxation of the regularized problem, which has three advantages over the state-of-the-art: (1) solutions of the relaxed problem are superior with respect to errors, false positives, and conditioning, (2) relaxation allows extremely fast algorithms for both convex and nonconvex formulations, and (3) the methods apply to composite regularizers such as total variation (TV) and its nonconvex variants. We demonstrate the improved performance of SR3 across a range of regularized regression problems with synthetic and real data, including compressed sensing, LASSO, matrix completion and TV regularization. To promote reproducible research, we include a companion MATLAB package that implements these popular applications.">
+        <tr id="None">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/4395eb13c70bf57c074a857f00a05b97174945c2" target='_blank'>Sparse Relaxed Regularized Regression: SR3</a></td>
           <td>
@@ -485,7 +485,7 @@
           <td>2018-07-14</td>
           <td>ArXiv</td>
           <td>9</td>
-          <td>68</td>
+          <td>70</td>
         </tr>
 
         <tr id="Sparse regression models are increasingly prevalent due to their ease of interpretability and superior out-of-sample performance. However, the exact model of sparse regression with an $\ell_0$ constraint restricting the support of the estimators is a challenging (\NP-hard) non-convex optimization problem. In this paper, we derive new strong convex relaxations for sparse regression. These relaxations are based on the ideal (convex-hull) formulations for rank-one quadratic terms with indicator variables. The new relaxations can be formulated as semidefinite optimization problems in an extended space and are stronger and more general than the state-of-the-art formulations, including the perspective reformulation and formulations with the reverse Huber penalty and the minimax concave penalty functions. Furthermore, the proposed rank-one strengthening can be interpreted as a \textit{non-separable, non-convex, unbiased} sparsity-inducing regularizer, which dynamically adjusts its penalty according to the shape of the error function without inducing bias for the sparse solutions. In our computational experiments with benchmark datasets, the proposed conic formulations are solved within seconds and result in near-optimal solutions (with 0.4\% optimality gap) for non-convex $\ell_0$-problems. Moreover, the resulting estimators also outperform alternative convex approaches from a statistical perspective, achieving high prediction accuracy and good interpretability.">
@@ -496,8 +496,8 @@
           </td>
           <td>2019-01-29</td>
           <td>ArXiv</td>
-          <td>49</td>
-          <td>36</td>
+          <td>50</td>
+          <td>37</td>
         </tr>
 
         <tr id="In the context of sparse recovery, it is known that most of existing regularizers such as $\ell_1$ suffer from some bias incurred by some leading entries (in magnitude) of the associated vector. To neutralize this bias, we propose a class of models with partial regularizers for recovering a sparse solution of a linear system. We show that every local minimizer of these models is sufficiently sparse or the magnitude of all its nonzero entries is above a uniform constant depending only on the data of the linear system. Moreover, for a class of partial regularizers, any global minimizer of these models is a sparsest solution to the linear system. We also establish some sufficient conditions for local or global recovery of the sparsest solution to the linear system, among which one of the conditions is weaker than the best known restricted isometry property (RIP) condition for sparse recovery by $\ell_1$. In addition, a first-order feasible augmented Lagrangian (FAL) method is proposed for solving these models, in which each subproblem is solved by a nonmonotone proximal gradient (NPG) method. Despite the complication of the partial regularizers, we show that each proximal subproblem in NPG can be solved as a certain number of one-dimensional optimization problems, which usually have a closed-form solution. We also show that any accumulation point of the sequence generated by FAL is a first-order stationary point of the models. Numerical results on compressed sensing and sparse logistic regression demonstrate that the proposed models substantially outperform the widely used ones in the literature in terms of solution quality.">
@@ -508,7 +508,7 @@
           </td>
           <td>2015-11-23</td>
           <td>Math. Oper. Res.</td>
-          <td>36</td>
+          <td>38</td>
           <td>32</td>
         </tr>
 
@@ -521,7 +521,7 @@
           <td>2014-01-03</td>
           <td></td>
           <td>62</td>
-          <td>96</td>
+          <td>97</td>
         </tr>
 
         <tr id="High-dimensional sparse linear regression is a basic problem in machine learning and statistics. Consider a linear model $y = X\theta^\star + w$, where $y \in \mathbb{R}^n$ is the vector of observations, $X \in \mathbb{R}^{n \times d}$ is the covariate matrix and $w \in \mathbb{R}^n$ is an unknown noise vector. In many applications, the linear regression model is high-dimensional in nature, meaning that the number of observations $n$ may be substantially smaller than the number of covariates $d$. In these cases, it is common to assume that $\theta^\star$ is sparse, and the goal in sparse linear regression is to estimate this sparse $\theta^\star$, given $(X,y)$. 
@@ -558,11 +558,11 @@ As a simple consequence, our approach also provides a new way for estimating $\t
           </td>
           <td>2017-03-23</td>
           <td>IEEE Transactions on Computational Imaging</td>
-          <td>88</td>
+          <td>89</td>
           <td>32</td>
         </tr>
 
-        <tr id="None">
+        <tr id="We study the problem of learning a sparse linear regression vector under additional conditions on the structure of its sparsity pattern. This problem is relevant in machine learning, statistics and signal processing. It is well known that a linear regression can benefit from knowledge that the underlying regression vector is sparse. The combinatorial problem of selecting the nonzero components of this vector can be “relaxed” by regularizing the squared error with a convex penalty function like the ℓ1 norm. However, in many applications, additional conditions on the structure of the regression vector and its sparsity pattern are available. Incorporating this information into the learning method may lead to a significant decrease of the estimation error. In this paper, we present a family of convex penalty functions, which encode prior knowledge on the structure of the vector formed by the absolute values of the regression coefficients. This family subsumes the ℓ1 norm and is flexible enough to include different models of sparsity patterns, which are of practical and theoretical importance. We establish the basic properties of these penalty functions and discuss some examples where they can be computed explicitly. Moreover, we present a convergent optimization algorithm for solving regularized least squares with these penalty functions. Numerical simulations highlight the benefit of structured sparsity and the advantage offered by our approach over the Lasso method and other related methods.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/10d6de4fab447cbb4279a5206d5b2c276162c656" target='_blank'>Regularizers for structured sparsity</a></td>
           <td>
@@ -571,10 +571,10 @@ As a simple consequence, our approach also provides a new way for estimating $\t
           <td>2010-10-04</td>
           <td>Advances in Computational Mathematics</td>
           <td>80</td>
-          <td>70</td>
+          <td>69</td>
         </tr>
 
-        <tr id="None">
+        <tr id="We study the problem of learning a sparse linear regression vector under additional conditions on the structure of its sparsity pattern. This problem is relevant in machine learning, statistics and signal processing. It is well known that a linear regression can benefit from knowledge that the underlying regression vector is sparse. The combinatorial problem of selecting the nonzero components of this vector can be “relaxed” by regularizing the squared error with a convex penalty function like the ℓ1 norm. However, in many applications, additional conditions on the structure of the regression vector and its sparsity pattern are available. Incorporating this information into the learning method may lead to a significant decrease of the estimation error. In this paper, we present a family of convex penalty functions, which encode prior knowledge on the structure of the vector formed by the absolute values of the regression coefficients. This family subsumes the ℓ1 norm and is flexible enough to include different models of sparsity patterns, which are of practical and theoretical importance. We establish the basic properties of these penalty functions and discuss some examples where they can be computed explicitly. Moreover, we present a convergent optimization algorithm for solving regularized least squares with these penalty functions. Numerical simulations highlight the benefit of structured sparsity and the advantage offered by our approach over the Lasso method and other related methods.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/10d6de4fab447cbb4279a5206d5b2c276162c656" target='_blank'>Regularizers for structured sparsity</a></td>
           <td>
@@ -583,7 +583,7 @@ As a simple consequence, our approach also provides a new way for estimating $\t
           <td>2010-10-04</td>
           <td>Advances in Computational Mathematics</td>
           <td>80</td>
-          <td>70</td>
+          <td>69</td>
         </tr>
 
   </tbody>

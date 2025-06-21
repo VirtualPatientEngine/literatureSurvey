@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-03-03 06:05:29 UTC</i>
+  <i class="footer">This page was last updated on 2025-06-21 20:21:54 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -484,20 +484,44 @@
           </td>
           <td>2023-12-23</td>
           <td>ACM Transactions on Knowledge Discovery from Data</td>
-          <td>9</td>
+          <td>11</td>
+          <td>15</td>
+        </tr>
+
+        <tr id="With the recent advances in technology, a wide range of systems continue to collect a large amount of data over time and thus generate time series. Time-Series Anomaly Detection (TSAD) is an important task in various time-series applications such as e-commerce, cybersecurity, vehicle maintenance, and healthcare monitoring. However, this task is very challenging as it requires considering both the intra-variable dependency (relationships within a variable over time) and the inter-variable dependency (relationships between multiple variables) existing in time-series data. Recent graph-based approaches have made impressive progress in tackling the challenges of this field. In this survey, we conduct a comprehensive and up-to-date review of TSAD using graphs, referred to as G-TSAD. First, we explore the significant potential of graph representation for time-series data and and its contributions to facilitating anomaly detection. Then, we review state-of-the-art graph anomaly detection techniques, mostly leveraging deep learning architectures, in the context of time series. For each method, we discuss its strengths, limitations, and the specific applications where it excels. Finally, we address both the technical and application challenges currently facing the field, and suggest potential future directions for advancing research and improving practical outcomes.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/cf0eaa1b8d9cdc56f6cef0d95fa4007adb57aff7" target='_blank'>Graph Anomaly Detection in Time Series: A Survey.</a></td>
+          <td>
+            Thi Kieu Khanh Ho, Ali Karami, N. Armanfard
+          </td>
+          <td>2023-01-31</td>
+          <td>IEEE transactions on pattern analysis and machine intelligence</td>
+          <td>7</td>
           <td>15</td>
         </tr>
 
         <tr id="In recent years, spatio-temporal graph neural networks (GNNs) have attracted considerable interest in the field of time series analysis, due to their ability to capture dependencies among variables and across time points. The objective of the presented systematic literature review is hence to provide a comprehensive overview of the various modeling approaches and application domains of GNNs for time series classification and forecasting. A database search was conducted, and over 150 journal papers were selected for a detailed examination of the current state-of-the-art in the field. This examination is intended to offer to the reader a comprehensive collection of proposed models, links to related source code, available datasets, benchmark models, and fitting results. All this information is hoped to assist researchers in future studies. To the best of our knowledge, this is the first systematic literature review presenting a detailed comparison of the results of current spatio-temporal GNN models in different domains. In addition, in its final part this review discusses current limitations and challenges in the application of spatio-temporal GNNs, such as comparability, reproducibility, explainability, poor information capacity, and scalability.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/e6544d542d13247f620834689ca2378cb7fb04f8" target='_blank'>A Systematic Literature Review of Spatio-Temporal Graph Neural Network Models for Time Series Forecasting and Classification</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/70c9ccbdcb3398f57e07ee8ba951472cf318ceb5" target='_blank'>A Systematic Literature Review of Spatio-Temporal Graph Neural Network Models for Time Series Forecasting and Classification</a></td>
           <td>
             Flavio Corradini, Marco Gori, Carlo Lucheroni, Marco Piangerelli, Martina Zannotti
           </td>
           <td>2024-10-29</td>
           <td>ArXiv</td>
-          <td>1</td>
+          <td>2</td>
           <td>12</td>
+        </tr>
+
+        <tr id="Recently, graph neural networks (GNNs) have demonstrated remarkable success in multivariable time series anomaly detection, particularly by explicitly modeling inter-variable relationships. However, to prevent the distinct pattern of one variable from introducing noise to unrelated variables, existing methods focus solely on leveraging positive correlations among neighbors for relationship modeling while neglecting the role of negative correlations. This limitation hinders their effectiveness in complex scenarios where both positive and negative dependencies are critical. To address this challenge, we propose PNGDN, a novel GNN framework that incorporates both positive and negative correlations to enhance anomaly-detection performance. Notably, PNGDN introduces a correlational graph structure learning module that simultaneously captures positive and negative dependencies. It quantitatively filters out spurious relationships based on the value of similarity, which serves as a unified threshold to screen both positive and negative correlations, allowing the model to focus on truly meaningful correlations among variables. Additionally, an attention-based information propagation mechanism ensures the efficient propagation of information under positive and negative correlations, facilitating accurate predictions for each variable. Extensive experiments on three benchmark time series anomaly detection datasets validate the superior performance of PNGDN.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/7b55c7e490513759c28a97dc0710eaf5f92e2d6c" target='_blank'>Negative Feedback Matters: Exploring Positive and Negative Correlations for Time Series Anomaly Detection</a></td>
+          <td>
+            Yixuan Jin, Xueting Liu, Bing Hu, Joojo Walker, Ke Wang, Wei Wu, Ting Zhong
+          </td>
+          <td>2025-05-20</td>
+          <td>Electronics</td>
+          <td>0</td>
+          <td>5</td>
         </tr>
 
         <tr id="Time series forecasting lies at the core of important real-world applications in many fields of science and engineering. The abundance of large time series datasets that consist of complex patterns and long-term dependencies has led to the development of various neural network architectures. Graph neural network approaches, which jointly learn a graph structure based on the correlation of raw values of multivariate time series while forecasting, have recently seen great success. However, such solutions are often costly to train and difficult to scale. In this paper, we propose TimeGNN, a method that learns dynamic temporal graph representations that can capture the evolution of inter-series patterns along with the correlations of multiple series. TimeGNN achieves inference times 4 to 80 times faster than other state-of-the-art graph-based methods while achieving comparable forecasting performance">
@@ -508,32 +532,20 @@
           </td>
           <td>2023-07-27</td>
           <td>ArXiv</td>
-          <td>4</td>
+          <td>6</td>
           <td>56</td>
         </tr>
 
-        <tr id="Graph-based deep learning methods have become popular tools to process collections of correlated time series. Differently from traditional multivariate forecasting methods, neural graph-based predictors take advantage of pairwise relationships by conditioning forecasts on a (possibly dynamic) graph spanning the time series collection. The conditioning can take the form of an architectural inductive bias on the neural forecasting architecture, resulting in a family of deep learning models called spatiotemporal graph neural networks. Such relational inductive biases enable the training of global forecasting models on large time-series collections, while at the same time localizing predictions w.r.t. each element in the set (i.e., graph nodes) by accounting for local correlations among them (i.e., graph edges). Indeed, recent theoretical and practical advances in graph neural networks and deep learning for time series forecasting make the adoption of such processing frameworks appealing and timely. However, most of the studies in the literature focus on proposing variations of existing neural architectures by taking advantage of modern deep learning practices, while foundational and methodological aspects have not been subject to systematic investigation. To fill the gap, this paper aims to introduce a comprehensive methodological framework that formalizes the forecasting problem and provides design principles for graph-based predictive models and methods to assess their performance. At the same time, together with an overview of the field, we provide design guidelines, recommendations, and best practices, as well as an in-depth discussion of open challenges and future research directions.">
+        <tr id="Graph deep learning methods have become popular tools to process collections of correlated time series. Unlike traditional multivariate forecasting methods, graph-based predictors leverage pairwise relationships by conditioning forecasts on graphs spanning the time series collection. The conditioning takes the form of architectural inductive biases on the forecasting architecture, resulting in a family of models called spatiotemporal graph neural networks. These biases allow for training global forecasting models on large collections of time series while localizing predictions w.r.t. each element in the set (nodes) by accounting for correlations among them (edges). Recent advances in graph neural networks and deep learning for time series forecasting make the adoption of such processing framework appealing and timely. However, most studies focus on refining existing architectures by exploiting modern deep-learning practices. Conversely, foundational and methodological aspects have not been subject to systematic investigation. To fill this void, this tutorial paper aims to introduce a comprehensive methodological framework formalizing the forecasting problem and providing design principles for graph-based predictors, as well as methods to assess their performance. In addition, together with an overview of the field, we provide design guidelines and best practices, as well as an in-depth discussion of open challenges and future directions.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/ccea298edb788edf821aef58f0952c3e8debc25a" target='_blank'>Graph Deep Learning for Time Series Forecasting</a></td>
           <td>
             Andrea Cini, Ivan Marisca, Daniele Zambon, C. Alippi
           </td>
           <td>2023-10-24</td>
-          <td>ArXiv</td>
-          <td>12</td>
-          <td>50</td>
-        </tr>
-
-        <tr id="With the recent advances in technology, a wide range of systems continue to collect a large amount of data over time and thus generate time series. Time-Series Anomaly Detection (TSAD) is an important task in various time-series applications such as e-commerce, cybersecurity, vehicle maintenance, and healthcare monitoring. However, this task is very challenging as it requires considering both the intra-variable dependency and the inter-variable dependency, where a variable can be defined as an observation in time-series data. Recent graph-based approaches have made impressive progress in tackling the challenges of this field. In this survey, we conduct a comprehensive and up-to-date review of TSAD using graphs, referred to as G-TSAD. First, we explore the significant potential of graph representation learning for time-series data. Then, we review state-of-the-art graph anomaly detection techniques in the context of time series and discuss their strengths and drawbacks. Finally, we discuss the technical challenges and potential future directions for possible improvements in this research field.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/cf0eaa1b8d9cdc56f6cef0d95fa4007adb57aff7" target='_blank'>Graph Anomaly Detection in Time Series: A Survey</a></td>
-          <td>
-            Thi Kieu Khanh Ho, Ali Karami, N. Armanfard
-          </td>
-          <td>2023-01-31</td>
-          <td>ArXiv</td>
-          <td>4</td>
-          <td>15</td>
+          <td>ACM Computing Surveys</td>
+          <td>16</td>
+          <td>52</td>
         </tr>
 
         <tr id="Multivariate Time Series Classification (MTSC) enables the analysis if complex temporal data, and thus serves as a cornerstone in various real-world applications, ranging from healthcare to finance. Since the relationship among variables in MTS usually contain crucial cues, a large number of graph-based MTSC approaches have been proposed, as the graph topology and edges can explicitly represent relationships among variables (channels), where not only various MTS graph representation learning strategies but also different Graph Neural Networks (GNNs) have been explored. Despite such progresses, there is no comprehensive study that fairly benchmarks and investigates the performances of existing widely-used graph representation learning strategies/GNN classifiers in the application of different MTSC tasks. In this paper, we present the first benchmark which systematically investigates the effectiveness of the widely-used three node feature definition strategies, four edge feature learning strategies and five GNN architecture, resulting in 60 different variants for graph-based MTSC. These variants are developed and evaluated with a standardized data pipeline and training/validation/testing strategy on 26 widely-used suspensor MTSC datasets. Our experiments highlight that node features significantly influence MTSC performance, while the visualization of edge features illustrates why adaptive edge learning outperforms other edge feature learning methods. The code of the proposed benchmark is publicly available at \url{https://github.com/CVI-yangwn/Benchmark-GNN-for-Multivariate-Time-Series-Classification}.">
@@ -545,7 +557,7 @@
           <td>2025-01-14</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>15</td>
+          <td>16</td>
         </tr>
 
         <tr id="Unsupervised anomaly detection in time series is essential in industrial applications, as it significantly reduces the need for manual intervention. Multivariate time series pose a complex challenge due to their feature and temporal dimensions. Traditional methods use Graph Neural Networks (GNNs) or Transformers to analyze spatial while RNNs to model temporal dependencies. These methods focus narrowly on one dimension or engage in coarse-grained feature extraction, which can be inadequate for large datasets characterized by intricate relationships and dynamic changes. This paper introduces a novel temporal model built on an enhanced Graph Attention Network (GAT) for multivariate time series anomaly detection called TopoGDN. Our model analyzes both time and feature dimensions from a fine-grained perspective. First, we introduce a multi-scale temporal convolution module to extract detailed temporal features. Additionally, we present an augmented GAT to manage complex inter-feature dependencies, which incorporates graph topology into node features across multiple scales, a versatile, plug-and-play enhancement that significantly boosts the performance of GAT. Our experimental results confirm that our approach surpasses the baseline models on four datasets, demonstrating its potential for widespread application in fields requiring robust anomaly detection. The code is available at https://github.com/ljj-cyber/TopoGDN.">
@@ -555,9 +567,9 @@
             Zhe Liu, Xiang Huang, Jingyun Zhang, Zhifeng Hao, L. Sun, Hao Peng
           </td>
           <td>2024-08-23</td>
-          <td>ArXiv, DBLP</td>
-          <td>2</td>
-          <td>2</td>
+          <td>Proceedings of the 33rd ACM International Conference on Information and Knowledge Management</td>
+          <td>7</td>
+          <td>3</td>
         </tr>
 
         <tr id="Multivariate time series (MTS) forecasting has shown great importance in numerous industries. Current state-of-the-art graph neural network (GNN)-based forecasting methods usually require both graph networks (e.g., GCN) and temporal networks (e.g., LSTM) to capture inter-series (spatial) dynamics and intra-series (temporal) dependencies, respectively. However, the uncertain compatibility of the two networks puts an extra burden on handcrafted model designs. Moreover, the separate spatial and temporal modeling naturally violates the unified spatiotemporal inter-dependencies in real world, which largely hinders the forecasting performance. To overcome these problems, we explore an interesting direction of directly applying graph networks and rethink MTS forecasting from a pure graph perspective. We first define a novel data structure, hypervariate graph, which regards each series value (regardless of variates or timestamps) as a graph node, and represents sliding windows as space-time fully-connected graphs. This perspective considers spatiotemporal dynamics unitedly and reformulates classic MTS forecasting into the predictions on hypervariate graphs. Then, we propose a novel architecture Fourier Graph Neural Network (FourierGNN) by stacking our proposed Fourier Graph Operator (FGO) to perform matrix multiplications in Fourier space. FourierGNN accommodates adequate expressiveness and achieves much lower complexity, which can effectively and efficiently accomplish the forecasting. Besides, our theoretical analysis reveals FGO's equivalence to graph convolutions in the time domain, which further verifies the validity of FourierGNN. Extensive experiments on seven datasets have demonstrated our superior performance with higher efficiency and fewer parameters compared with state-of-the-art methods.">
@@ -568,31 +580,19 @@
           </td>
           <td>2023-11-10</td>
           <td>ArXiv</td>
-          <td>77</td>
-          <td>6</td>
+          <td>126</td>
+          <td>7</td>
         </tr>
 
-        <tr id="Anomaly detection of time series, especially multivariate time series(time series with multiple sensors), has been focused on for several years. Though existing method has achieved great progress, there are several challenging problems to be solved. Firstly, existing method including neural network only concentrate on the relationship in terms of timestamp. To be exact, they only want to know how does the data in the past inﬂuence which in the future. However, one sensor sometimes intervenes in other sensor such as the speed of wind may cause decrease of temperature. Secondly, there exist two categories of model for time series anomaly detection: prediction model and reconstruction model. Prediction model is adept at learning timely representation while short of capability when faced with sparse anomaly. Conversely, reconstruction model is opposite. Therefore, how can we eﬃciently get the relationship both in terms of both timestamp and sensors becomes our main topic. Our approach uses GAT, which is originated from graph neural network, to obtain connection between sensors. And LSTM is used to obtain relationships timely. Our approach is also designed to be double headed to calculate both prediction loss and reconstruction loss via VAE(Variational Auto-Encoder). In order to take advantage of two sorts of model, multi-task optimization algorithm is used in this model.">
+        <tr id="Anomaly detection in high-dimensional time series data is pivotal for numerous industrial applications. Recent advances in multivariate time series anomaly detection (TSAD) have increasingly leveraged graph structures to model inter-variable relationships, typically employing Graph Neural Networks (GNNs). Despite their promising results, existing methods often rely on a single graph representation, which are insufficient for capturing the complex, diverse relationships inherent in multivariate time series. To address this, we propose the Prospective Multi-Graph Cohesion (PMGC) framework for multivariate TSAD. PMGC exploits spatial correlations by integrating a long-term static graph with a series of short-term instance-wise dynamic graphs, regulated through a graph cohesion loss function. Our theoretical analysis shows that this loss function promotes diversity among dynamic graphs while aligning them with the stable long-term relationships encapsulated by the static graph. Additionally, we introduce a "prospective graphing" strategy to mitigate the limitations of traditional forecasting-based TSAD methods, which often struggle with unpredictable future variations. This strategy allows the model to accurately reflect concurrent inter-series relationships under normal conditions, thereby enhancing anomaly detection efficacy. Empirical evaluations on real-world datasets demonstrate the superior performance of our method compared to existing TSAD techniques.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/2859004fbfeaa7b388b73ee632c1eda77afeafc0" target='_blank'>MGADN: A Multi-task Graph Anomaly Detection Network for Multivariate Time Series</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/838603d307edc0a32a65ec180fd71bb81bdc1c67" target='_blank'>Prospective Multi-Graph Cohesion for Multivariate Time Series Anomaly Detection</a></td>
           <td>
-            Wei-Shu Xiong, Xiaochen (Michael) Sun
+            Jiazhen Chen, Mingbin Feng, T. Wirjanto
           </td>
-          <td>2022-11-22</td>
-          <td>ArXiv</td>
+          <td>2025-03-10</td>
+          <td>Proceedings of the Eighteenth ACM International Conference on Web Search and Data Mining</td>
           <td>1</td>
-          <td>2</td>
-        </tr>
-
-        <tr id="Anomalies in univariate time series often refer to abnormal values and deviations from the temporal patterns from majority of historical observations. In multivariate time series, anomalies also refer to abnormal changes in the inter-series relationship, such as correlation, over time. Existing studies have been able to model such inter-series relationships through graph neural networks. However, most works settle on learning a static graph globally or within a context window to assist a time series forecasting task or a reconstruction task, whose objective is not tailored to explicitly detect the abnormal relationship. Some other works detect anomalies based on reconstructing or forecasting a list of inter-series graphs, which inadvertently weakens their power to capture temporal patterns within the data due to the discrete nature of graphs. In this study, we propose DyGraphAD, a multivariate time series anomaly detection framework based upon a list of dynamic inter-series graphs. The core idea is to detect anomalies based on the deviation of inter-series relationships and intra-series temporal patterns from normal to anomalous states, by leveraging the evolving nature of the graphs in order to assist a graph forecasting task and a time series forecasting task simultaneously. Our numerical experiments on real-world datasets demonstrate that DyGraphAD has superior performance than baseline anomaly detection approaches.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/bd2aad6aa8c0b257a0ef98404f58dd541e27e774" target='_blank'>Multivariate Time Series Anomaly Detection via Dynamic Graph Forecasting</a></td>
-          <td>
-            Katrina Chen, M. Feng, T. Wirjanto
-          </td>
-          <td>2023-02-04</td>
-          <td>ArXiv</td>
-          <td>6</td>
           <td>22</td>
         </tr>
 

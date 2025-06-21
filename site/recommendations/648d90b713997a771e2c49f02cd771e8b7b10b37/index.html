@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-03-03 06:05:47 UTC</i>
+  <i class="footer">This page was last updated on 2025-06-21 20:22:02 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -484,8 +484,8 @@
           </td>
           <td>2023-04-23</td>
           <td>Sensors (Basel, Switzerland)</td>
-          <td>37</td>
-          <td>78</td>
+          <td>47</td>
+          <td>80</td>
         </tr>
 
         <tr id="Time series is a typical data type in numerous domains; however, labeling large amounts of time series data can be costly and time-consuming. Learning effective representation from unlabeled time series data is a challenging task. Contrastive learning stands out as a promising method to acquire representations of unlabeled time series data. Therefore, we propose a self-supervised time-series representation learning framework via Time-Frequency Fusion Contrasting (TF-FC) to learn time-series representation from unlabeled data. Specifically, TF-FC combines time-domain augmentation with frequency-domain augmentation to generate the diverse samples. For time-domain augmentation, the raw time series data pass through the time-domain augmentation bank (such as jitter, scaling, permutation, and masking) and get time-domain augmentation data. For frequency-domain augmentation, first, the raw time series undergoes conversion into frequency domain data following Fast Fourier Transform (FFT) analysis. Then, the frequency data passes through the frequency-domain augmentation bank (such as low pass filter, remove frequency, add frequency, and phase shift) and gets frequency-domain augmentation data. The fusion method of time-domain augmentation data and frequency-domain augmentation data is kernel PCA, which is useful for extracting nonlinear features in high-dimensional spaces. By capturing both the time and frequency domains of the time series, the proposed approach is able to extract more informative features from the data, enhancing the model's capacity to distinguish between different time series. To verify the effectiveness of the TF-FC method, we conducted experiments on four time series domain datasets (i.e., SleepEEG, HAR, Gesture, and Epilepsy). Experimental results show that TF-FC significantly improves in recognition accuracy compared with other SOTA methods.">
@@ -496,8 +496,8 @@
           </td>
           <td>2024-06-12</td>
           <td>Frontiers in Artificial Intelligence</td>
-          <td>1</td>
-          <td>1</td>
+          <td>3</td>
+          <td>2</td>
         </tr>
 
         <tr id="Limited availability of labeled physiological data often prohibits the use of powerful supervised deep learning models in the biomedical machine intelligence domain. We approach this problem and propose a novel encoding framework that relies on self-supervised learning with momentum contrast to learn representations from multivariate time-series of various physiological domains without needing labels. Our model uses a transformer architecture that can be easily adapted to classification problems by optimizing a linear output classification layer. We experimentally evaluate our framework using two publicly available physiological datasets from different domains, i.e., human activity recognition from embedded inertial sensory and emotion recognition from electroencephalography. We show that our self-supervised learning approach can indeed learn discriminative features which can be exploited in downstream classification tasks. Our work enables the development of domain-agnostic intelligent systems that can effectively analyze multivariate time-series data from physiological domains.">
@@ -508,7 +508,7 @@
           </td>
           <td>2023-06-10</td>
           <td>2023 31st European Signal Processing Conference (EUSIPCO)</td>
-          <td>0</td>
+          <td>1</td>
           <td>40</td>
         </tr>
 
@@ -524,6 +524,18 @@
           <td>2</td>
         </tr>
 
+        <tr id="Learning semantic-rich representations from unlabeled time series data with intricate dynamics is a notable challenge. Traditional contrastive learning techniques predominantly focus on segment-level augmentations through time slicing, a practice that, while valuable, often results in sampling bias and suboptimal performance due to the loss of global context. Furthermore, they typically disregard the vital frequency information to enrich data representations. To this end, we propose a novel self-supervised general-purpose framework called Temporal-Frequency and Contextual Consistency (TFCC). Specifically, this framework first performs two instance-level augmentation families over the entire series to capture nuanced representations alongside critical long-term dependencies. Then, TFCC advances by initiating dual cross-view forecasting tasks between the original series and its augmented counterpart in both time and frequency domains to learn robust representations. Finally, three specially designed consistency modules 'temporal, frequency, and temporal-frequency' aid in further developing discriminative representations on top of the learned robust representations. Extensive experiments on multiple benchmarks demonstrate TFCC's superiority over the state-of-the-art classification and forecasting methods and exhibit exceptional efficiency in semi-supervised and transfer learning scenarios.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/8d281ac2a76c57c676ea1ef5195d92cbff1e9c8d" target='_blank'>Multi-view Self-Supervised Contrastive Learning for Multivariate Time Series</a></td>
+          <td>
+            Yuhan Wu, Xiyu Meng, Yang He, Junru Zhang, Haowen Zhang, Yabo Dong, Dongming Lu
+          </td>
+          <td>2024-10-28</td>
+          <td>Proceedings of the 32nd ACM International Conference on Multimedia</td>
+          <td>0</td>
+          <td>5</td>
+        </tr>
+
         <tr id="Significant progress has been made in representation learning, especially with recent success on self-supervised contrastive learning. However, for time series with less intuitive or semantic meaning, sampling bias may be inevitably encountered in unsupervised approaches. Although supervised contrastive learning has shown superior performance by leveraging label information, it may also suffer from class collapse. In this study, we consider a realistic scenario in industry with limited annotation information available. A supervised contrastive framework is developed for high-frequency time series representation and classification, wherein a novel variant of supervised contrastive loss is proposed to include multiple augmentations while induce spread within each class. Experiments on four mainstream public datasets as well as a series of sensitivity and ablation analyses demonstrate that the learned representations are effective and robust compared with the direct supervised learning and self-supervised learning, notably under the minimal few-shot situation.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/a2056f5affe509b50e41612057ca9cca143ef97a" target='_blank'>Supervised Contrastive Few-Shot Learning for High-Frequency Time Series</a></td>
@@ -532,8 +544,20 @@
           </td>
           <td>2023-06-26</td>
           <td>DBLP</td>
-          <td>5</td>
+          <td>7</td>
           <td>142</td>
+        </tr>
+
+        <tr id="Contrastive learning has emerged as a competent approach for unsupervised representation learning. However, the design of an optimal augmentation strategy, although crucial for contrastive learning, is less explored for time series classification tasks. Existing predefined time-domain augmentation methods are primarily adopted from vision and are not specific to time series data. Consequently, this cross-modality incompatibility may distort the semantically relevant information of time series by introducing mismatched patterns into the data. To address this limitation, we present a novel perspective from the frequency domain and identify three advantages for downstream classification: global, independent, and compact. To fully utilize the three properties, we propose the lightweight yet effective Frequency Refined Augmentation (FreRA) tailored for time series contrastive learning on classification tasks, which can be seamlessly integrated with contrastive learning frameworks in a plug-and-play manner. Specifically, FreRA automatically separates critical and unimportant frequency components. Accordingly, we propose semantic-aware Identity Modification and semantic-agnostic Self-adaptive Modification to protect semantically relevant information in the critical frequency components and infuse variance into the unimportant ones respectively. Theoretically, we prove that FreRA generates semantic-preserving views. Empirically, we conduct extensive experiments on two benchmark datasets, including UCR and UEA archives, as well as five large-scale datasets on diverse applications. FreRA consistently outperforms ten leading baselines on time series classification, anomaly detection, and transfer learning tasks, demonstrating superior capabilities in contrastive representation learning and generalization in transfer learning scenarios across diverse datasets.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/a68db4cf9dad3ef54e41c6cee38183d8c3b0efbf" target='_blank'>FreRA: A Frequency-Refined Augmentation for Contrastive Learning on Time Series Classification</a></td>
+          <td>
+            Tian Tian, Chunyan Miao, Hangwei Qian
+          </td>
+          <td>2025-05-29</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>13</td>
         </tr>
 
         <tr id="Contrastive representation learning is crucial in medical time series analysis as it alleviates dependency on labor-intensive, domain-specific, and scarce expert annotations. However, existing contrastive learning methods primarily focus on one single data level, which fails to fully exploit the intricate nature of medical time series. To address this issue, we present COMET, an innovative hierarchical framework that leverages data consistencies at all inherent levels in medical time series. Our meticulously designed model systematically captures data consistency from four potential levels: observation, sample, trial, and patient levels. By developing contrastive loss at multiple levels, we can learn effective representations that preserve comprehensive data consistency, maximizing information utilization in a self-supervised manner. We conduct experiments in the challenging patient-independent setting. We compare COMET against six baselines using three diverse datasets, which include ECG signals for myocardial infarction and EEG signals for Alzheimer's and Parkinson's diseases. The results demonstrate that COMET consistently outperforms all baselines, particularly in setup with 10% and 1% labeled data fractions across all datasets. These results underscore the significant impact of our framework in advancing contrastive representation learning techniques for medical time series. The source code is available at https://github.com/DL4mHealth/COMET.">
@@ -544,8 +568,8 @@
           </td>
           <td>2023-10-21</td>
           <td>ArXiv</td>
-          <td>41</td>
-          <td>4</td>
+          <td>52</td>
+          <td>5</td>
         </tr>
 
         <tr id="Unsupervised domain adaptation (UDA) provides a strategy for improving machine learning performance in data-rich (target) domains where ground truth labels are inaccessible but can be found in related (source) domains. In cases where meta-domain information such as label distributions is available, weak supervision can further boost performance. We propose a novel framework, CALDA, to tackle these two problems. CALDA synergistically combines the principles of contrastive learning and adversarial learning to robustly support multi-source UDA (MS-UDA) for time series data. Similar to prior methods, CALDA utilizes adversarial learning to align source and target feature representations. Unlike prior approaches, CALDA additionally leverages cross-source label information across domains. CALDA pulls examples with the same label close to each other, while pushing apart examples with different labels, reshaping the space through contrastive learning. Unlike prior contrastive adaptation methods, CALDA requires neither data augmentation nor pseudo labeling, which may be more challenging for time series. We empirically validate our proposed approach. Based on results from human activity recognition, electromyography, and synthetic datasets, we find utilizing cross-source information improves performance over prior time series and contrastive methods. Weak supervision further improves performance, even in the presence of noise, allowing CALDA to offer generalizable strategies for MS-UDA.">
@@ -556,8 +580,8 @@
           </td>
           <td>2021-09-30</td>
           <td>IEEE Transactions on Pattern Analysis and Machine Intelligence</td>
-          <td>24</td>
-          <td>72</td>
+          <td>34</td>
+          <td>73</td>
         </tr>
 
         <tr id="To improve the accuracy of clinical multivariate time series (MTS) classification (such as EEG and ECG) by a novel self-supervised paradigm that directly captures the dynamics between the different time series learned together to optimize the classification task. Labels in clinical datasets are very often insufficient. One way to address this challenge is leveraging self-supervision. This paradigm attempts to identify a supervisory signal inherent within a dataset to serve as a surrogate label. We present a novel form of self-supervision: dynamics of clinical MTS. Unlike other self-supervision methods, such as masking, that are intuitive but still heuristic, we suggest to learn a representation justified by Koopman theory. The latter was shown useful for representing clinical time series and can be used as a form of surrogate task to improve the clinical MTS classification. In the ECG task, we show that our proposed framework achieved higher sensitivity and specificity than the state-of-the-art (SOTA) baseline over numerous common diagnoses. For EEG abnormality classification, our proposed framework also achieved higher sensitivity and specificity than the SOTA baseline. All results are statistically significant. Our technique yields reliable clinical diagnosis in an empirical study employing signals from thousands of patients in multiple clinical tasks employing two types of clinical-grade sensors (ECG and EEG) as compared to the state-of-the-art machine learning. Leveraging time-series-dynamics self-supervision can help mitigate the lack of labels in clinical datasets used for training machine learning algorithms and significantly improve their performance. Specifically, the ECG system presented in this work is being trialed in hospitals, used by top cardiologists for patient diagnosis and treatment. We believe that the deployment of such cutting-edge technology will significantly improve the accuracy and speed of cardiac assessments.">
@@ -568,32 +592,8 @@
           </td>
           <td>2023-08-04</td>
           <td>Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</td>
-          <td>2</td>
-          <td>26</td>
-        </tr>
-
-        <tr id="Monitoring and recognizing patterns in continuous sensing data is crucial for many practical applications. These real-world time-series data are often nonstationary, characterized by varying statistical and spectral properties over time. This poses a significant challenge in developing learning models that can effectively generalize across different distributions. In this work, based on our observation that nonstationary statistics are intrinsically linked to the phase information, we propose a time-series learning framework, PhASER. It consists of three novel elements: 1) phase augmentation that diversifies non-stationarity while preserving discriminatory semantics, 2) separate feature encoding by viewing time-varying magnitude and phase as independent modalities, and 3) feature broadcasting by incorporating phase with a novel residual connection for inherent regularization to enhance distribution invariant learning. Upon extensive evaluation on 5 datasets from human activity recognition, sleep-stage classification, and gesture recognition against 10 state-of-the-art baseline methods, we demonstrate that PhASER consistently outperforms the best baselines by an average of 5% and up to 13% in some cases. Moreover, PhASER's principles can be applied broadly to boost the generalization ability of existing time series classification models.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/8afaf2f41bc85fd8c0413754fa9ccc2b1e9303d5" target='_blank'>Phase-driven Domain Generalizable Learning for Nonstationary Time Series</a></td>
-          <td>
-            Payal Mohapatra, Lixu Wang, Qi Zhu
-          </td>
-          <td>2024-02-05</td>
-          <td>ArXiv</td>
-          <td>1</td>
-          <td>11</td>
-        </tr>
-
-        <tr id="In this work, we investigate the time series representation learning problem using self-supervised techniques. Contrastive learning is well-known in this area as it is a powerful method for extracting information from the series and generating task-appropriate representations. Despite its proficiency in capturing time series characteristics, these techniques often overlook a critical factor - the inherent noise in this type of data, a consideration usually emphasized in general time series analysis. Moreover, there is a notable absence of attention to developing efficient yet lightweight encoder architectures, with an undue focus on delivering contrastive losses. Our work address these gaps by proposing an innovative training strategy that promotes consistent representation learning, accounting for the presence of noise-prone signals in natural time series. Furthermore, we propose an encoder architecture that incorporates dilated convolution within the Inception block, resulting in a scalable and robust network with a wide receptive field. Experimental findings underscore the effectiveness of our method, consistently outperforming state-of-the-art approaches across various tasks, including forecasting, classification, and abnormality detection. Notably, our method attains the top rank in over two-thirds of the classification UCR datasets, utilizing only 40% of the parameters compared to the second-best approach.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/b1909388ab7a548f6b27dc95a3a279a1a24234fe" target='_blank'>Improving Time Series Encoding with Noise-Aware Self-Supervised Learning and an Efficient Encoder</a></td>
-          <td>
-            Anh Duy Nguyen, Trang H. Tran, Hieu Pham, Phi-Le Nguyen, Lam M. Nguyen
-          </td>
-          <td>2023-06-11</td>
-          <td>2024 IEEE International Conference on Data Mining (ICDM)</td>
           <td>3</td>
-          <td>21</td>
+          <td>26</td>
         </tr>
 
   </tbody>
