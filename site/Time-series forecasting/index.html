@@ -453,7 +453,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-06-21 20:22:14 UTC</i>
+  <i class="footer">This page was last updated on 2025-06-23 11:22:53 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -577,7 +577,7 @@
             Andrea Cini, Daniele Zambon, C. Alippi
           </td>
           <td>2022-05-26</td>
-          <td>Journal of machine learning research, J. Mach. Learn. Res.</td>
+          <td>J. Mach. Learn. Res., Journal of machine learning research</td>
           <td>19</td>
           <td>52</td>
 
@@ -637,7 +637,7 @@
             Chloe Wang, Oleksii Tsepa, Jun Ma, Bo Wang
           </td>
           <td>2024-02-01</td>
-          <td>arXiv.org, ArXiv</td>
+          <td>ArXiv, arXiv.org</td>
           <td>94</td>
           <td>5</td>
 
@@ -797,7 +797,7 @@
             Daniele Zambon, Andrea Cini, L. Livi, C. Alippi
           </td>
           <td>2023-01-04</td>
-          <td>arXiv.org, ArXiv</td>
+          <td>ArXiv, arXiv.org</td>
           <td>6</td>
           <td>52</td>
 
@@ -1267,6 +1267,21 @@
           <td>5</td>
         </tr>
 
+        <tr id="Time series forecasting plays a crucial role in many real-world applications, and numerous complex forecasting models have been proposed in recent years. Despite their architectural innovations, most state-of-the-art models report only marginal improvements -- typically just a few thousandths in standard error metrics. These models often incorporate complex data embedding layers to transform raw inputs into higher-dimensional representations to enhance accuracy. But are data embedding techniques actually effective in time series forecasting? Through extensive ablation studies across fifteen state-of-the-art models and four benchmark datasets, we find that removing data embedding layers from many state-of-the-art models does not degrade forecasting performance. In many cases, it improves both accuracy and computational efficiency. The gains from removing embedding layers often exceed the performance differences typically reported between competing models. Code available at: https://github.com/neuripsdataembedidng/DataEmbedding">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/b56485cd6cd848b7b9bf1d3671bdb6bc008e4b5b" target='_blank'>
+              Are Data Embeddings effective in time series forecasting?
+              </a>
+            </td>
+          <td>
+            Reza Nematirad, Anil Pahwa, Balasubramaniam Natarajan
+          </td>
+          <td>2025-05-27</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>9</td>
+        </tr>
+
         <tr id="We propose ss-Mamba, a novel foundation model that enhances time series forecasting by integrating semantic-aware embeddings and adaptive spline-based temporal encoding within a selective state-space modeling framework. Building upon the recent success of Transformer architectures, ss-Mamba adopts the Mamba selective state space model as an efficient alternative that achieves comparable performance while significantly reducing computational complexity from quadratic to linear time. Semantic index embeddings, initialized from pretrained language models, allow effective generalization to previously unseen series through meaningful semantic priors. Additionally, spline-based Kolmogorov-Arnold Networks (KAN) dynamically and interpretably capture complex seasonalities and non-stationary temporal effects, providing a powerful enhancement over conventional temporal feature encodings. Extensive experimental evaluations confirm that ss-Mamba delivers superior accuracy, robustness, and interpretability, demonstrating its capability as a versatile and computationally efficient alternative to traditional Transformer-based models in time-series forecasting.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/89e034e5fc56fb8d0d5c042af084f14b2ccae189" target='_blank'>
@@ -1385,21 +1400,6 @@
           <td>ArXiv</td>
           <td>0</td>
           <td>4</td>
-        </tr>
-
-        <tr id="Long-term time series forecasting plays a pivotal role in various real-world applications. Despite recent advancements and the success of different architectures, forecasting is often challenging due to non-stationary nature of the real-world data, which frequently exhibit distribution shifts and temporal changes in statistical properties like mean and variance over time. Previous studies suggest that this inherent variability complicates forecasting, limiting the performance of many models by leading to loss of non-stationarity and resulting in over-stationarization (Liu, Wu, Wang and Long, 2022). To address this challenge, we introduce a novel architecture, ChoronoAdaptive Network (CANet), inspired by style-transfer techniques. The core of CANet is the Non-stationary Adaptive Normalization module, seamlessly integrating the Style Blending Gate and Adaptive Instance Normalization (AdaIN) (Huang and Belongie, 2017). The Style Blending Gate preserves and reintegrates non-stationary characteristics, such as mean and standard deviation, by blending internal and external statistics, preventing over-stationarization while maintaining essential temporal dependencies. Coupled with AdaIN, which dynamically adapts the model to statistical changes, this approach enhances predictive accuracy under non-stationary conditions. CANet also employs multi-resolution patching to handle short-term fluctuations and long-term trends, along with Fourier analysis-based adaptive thresholding to reduce noise. A Stacked Kronecker Product Layer further optimizes the model's efficiency while maintaining high performance. Extensive experiments on real-world datasets validate CANet's superiority over state-of-the-art methods, achieving a 42% reduction in MSE and a 22% reduction in MAE. The source code is publicly available at https://github.com/mertsonmezer/CANet.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/b2c4874fcf0b2d0e635af1a8c5d1a5d55cd0814e" target='_blank'>
-              CANet: ChronoAdaptive Network for Enhanced Long-Term Time Series Forecasting under Non-Stationarity
-              </a>
-            </td>
-          <td>
-            Mert Sonmezer, S. Ertekin
-          </td>
-          <td>2025-04-24</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>18</td>
         </tr>
 
         <tr id="Multivariate time series forecasting enables the prediction of future states by leveraging historical data, thereby facilitating decision-making processes. Each data node in a multivariate time series encompasses a sequence of multiple dimensions. These nodes exhibit interdependent relationships, forming a graph structure. While existing prediction methods often assume a fixed graph structure, many real-world scenarios involve dynamic graph structures. Moreover, interactions among time series observed at different time scales vary significantly. To enhance prediction accuracy by capturing precise temporal and spatial features, this paper introduces the Temporal Attention Evolutional Graph Convolutional Network (TAEGCN). This novel method not only integrates causal temporal convolution and a multi-head self-attention mechanism to learn temporal features of nodes, but also construct the dynamic graph structure based on these temporal features to keep the consistency of the changing in spatial feature with temporal series. TAEGCN adeptly captures temporal causal relationships and hidden spatial dependencies within the data. Furthermore, TAEGCN incorporates a unified neural network that seamlessly integrates these components to generate final predictions. Experimental results conducted on two public transportation network datasets, METR-LA and PEMS-BAY, demonstrate the superior performance of the proposed model.">
@@ -1550,6 +1550,21 @@
           <td>ArXiv</td>
           <td>0</td>
           <td>9</td>
+        </tr>
+
+        <tr id="Time series forecasting uses historical data to predict future trends, leveraging the relationships between past observations and available features. In this paper, we propose RAFT, a retrieval-augmented time series forecasting method to provide sufficient inductive biases and complement the model's learning capacity. When forecasting the subsequent time frames, we directly retrieve historical data candidates from the training dataset with patterns most similar to the input, and utilize the future values of these candidates alongside the inputs to obtain predictions. This simple approach augments the model's capacity by externally providing information about past patterns via retrieval modules. Our empirical evaluations on ten benchmark datasets show that RAFT consistently outperforms contemporary baselines with an average win ratio of 86%.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/8096a5d8ecc369a9a4aa7afc3efa446fb0776dd0" target='_blank'>
+              Retrieval Augmented Time Series Forecasting
+              </a>
+            </td>
+          <td>
+            Sungwon Han, Seungeon Lee, Meeyoung Cha, Sercan Ö. Arik, Jinsung Yoon
+          </td>
+          <td>2025-05-07</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>35</td>
         </tr>
 
         <tr id="Time series forecasting remains a challenging task for foundation models due to temporal heterogeneity, high dimensionality, and the lack of inherent symbolic structure. In this work, we propose DRAGON (Discrete Representation and Augmented Graph encoding Over deBruijN Graphs), a novel encoder that introduces Multivariate de Bruijn Graphs (MdBGs) to bridge the gap between symbolic representations and neural modeling. DRAGON discretizes continuous input sequences and maps them onto a fixed graph structure, enabling dynamic context recovery via graph-based attention. Integrated as an auxiliary module within a dual-branch architecture, DRAGON augments conventional CNN-based encoders with symbolic, structure-aware representations. All code developed for this study is available at: https://github.com/KurbanIntelligenceLab/MultdBG-Time-Series-Library">

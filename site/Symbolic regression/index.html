@@ -451,7 +451,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-06-21 20:22:30 UTC</i>
+  <i class="footer">This page was last updated on 2025-06-23 11:23:08 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -595,7 +595,7 @@
             E. Kaiser, J. Kutz, S. Brunton
           </td>
           <td>2017-11-15</td>
-          <td>Proceedings. Mathematical, Physical, and Engineering Sciences, Proceedings of the Royal Society A</td>
+          <td>Proceedings of the Royal Society A, Proceedings. Mathematical, Physical, and Engineering Sciences</td>
           <td>523</td>
           <td>70</td>
 
@@ -615,7 +615,7 @@
             N. Mangan, S. Brunton, J. Proctor, J. Kutz
           </td>
           <td>2016-05-26</td>
-          <td>IEEE Transactions on Molecular Biological and Multi-Scale Communications, IEEE Transactions on Molecular, Biological and Multi-Scale Communications</td>
+          <td>IEEE Transactions on Molecular, Biological and Multi-Scale Communications, IEEE Transactions on Molecular Biological and Multi-Scale Communications</td>
           <td>358</td>
           <td>70</td>
 
@@ -635,7 +635,7 @@
             Kadierdan Kaheman, J. Kutz, S. Brunton
           </td>
           <td>2020-04-05</td>
-          <td>Proceedings. Mathematical, Physical, and Engineering Sciences, Proceedings of the Royal Society A</td>
+          <td>Proceedings of the Royal Society A, Proceedings. Mathematical, Physical, and Engineering Sciences</td>
           <td>268</td>
           <td>70</td>
 
@@ -675,7 +675,7 @@
             Kadierdan Kaheman, E. Kaiser, B. Strom, J. Kutz, S. Brunton
           </td>
           <td>2019-09-18</td>
-          <td>arXiv.org, ArXiv</td>
+          <td>ArXiv, arXiv.org</td>
           <td>46</td>
           <td>70</td>
 
@@ -735,7 +735,7 @@
             Urban Fasel, J. Kutz, Bingni W. Brunton, S. Brunton
           </td>
           <td>2021-11-22</td>
-          <td>Proceedings. Mathematical, Physical, and Engineering Sciences, Proceedings of the Royal Society A</td>
+          <td>Proceedings of the Royal Society A, Proceedings. Mathematical, Physical, and Engineering Sciences</td>
           <td>228</td>
           <td>70</td>
 
@@ -940,6 +940,21 @@
           <td>0</td>
         </tr>
 
+        <tr id="Complex piezoelectric systems are foundational in industrial applications. Their performance, however, is challenged by the nonlinear voltage-displacement hysteretic relationships. Efficient characterization methods are, therefore, essential for reliable design, monitoring, and maintenance. Recently proposed neural operator methods serve as surrogates for system characterization but face two pressing issues: interpretability and generalizability. State-of-the-art (SOTA) neural operators are black-boxes, providing little insight into the learned operator. Additionally, generalizing them to novel voltages and predicting displacement profiles beyond the training domain is challenging, limiting their practical use. To address these limitations, this paper proposes a neuro-symbolic operator (NSO) framework that derives the analytical operators governing hysteretic relationships. NSO first learns a Fourier neural operator mapping voltage fields to displacement profiles, followed by a library-based sparse model discovery method, generating white-box parsimonious models governing the underlying hysteresis. These models enable accurate and interpretable prediction of displacement profiles across varying and out-of-distribution voltage fields, facilitating generalizability. The potential of NSO is demonstrated by accurately predicting voltage-displacement hysteresis, including butterfly-shaped relationships. Moreover, NSO predicts displacement profiles even for noisy and low-fidelity voltage data, emphasizing its robustness. The results highlight the advantages of NSO compared to SOTA neural operators and model discovery methods on several evaluation metrics. Consequently, NSO contributes to characterizing complex piezoelectric systems while improving the interpretability and generalizability of neural operators, essential for design, monitoring, maintenance, and other real-world scenarios.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/234414a8c864c8ed93c62f2ffa2bc06e4cccaccf" target='_blank'>
+              Neuro-Symbolic Operator for Interpretable and Generalizable Characterization of Complex Piezoelectric Systems
+              </a>
+            </td>
+          <td>
+            Abhishek Chandra, Taniya Kapoor, M. Curti, K. Tiels, E. Lomonova
+          </td>
+          <td>2025-05-30</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>25</td>
+        </tr>
+
         <tr id="Dynamical systems modeling is a core pillar of scientific inquiry across natural and life sciences. Increasingly, dynamical system models are learned from data, rendering identifiability a paramount concept. For systems that are not identifiable from data, no guarantees can be given about their behavior under new conditions and inputs, or about possible control mechanisms to steer the system. It is known in the community that"linear ordinary differential equations (ODE) are almost surely identifiable from a single trajectory."However, this only holds for dense matrices. The sparse regime remains underexplored, despite its practical relevance with sparsity arising naturally in many biological, social, and physical systems. In this work, we address this gap by characterizing the identifiability of sparse linear ODEs. Contrary to the dense case, we show that sparse systems are unidentifiable with a positive probability in practically relevant sparsity regimes and provide lower bounds for this probability. We further study empirically how this theoretical unidentifiability manifests in state-of-the-art methods to estimate linear ODEs from data. Our results corroborate that sparse systems are also practically unidentifiable. Theoretical limitations are not resolved through inductive biases or optimization dynamics. Our findings call for rethinking what can be expected from data-driven dynamical system modeling and allows for quantitative assessments of how much to trust a learned linear ODE.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/5876a1a726cb5a39a461607b2fe3740d67f21724" target='_blank'>
@@ -1060,6 +1075,36 @@
           <td>2</td>
         </tr>
 
+        <tr id="Hybrid modelling enhances the accuracy and predictive capability of dynamic models by integrating first principles with data-driven methods, effectively mitigating epistemic uncertainties inherent in mechanistic approaches. However, hybrid model construction remains complex, typically requiring expert knowledge to identify model epistemic uncertainty and select suitable machine-learning components to capture it. This complexity limits broader adoption in research and industry. We introduce SINDybrid, an automated algorithm designed to streamline hybrid model development for dynamic systems. SINDybrid employs a mixed-integer linear programming (MILP) approach to systematically identify epistemic uncertainty sources and compensate them using optimally selected data-driven components. For broader accessibility and reproducibility, we provide SINDybrid as an open-source Python library. SINDybrid was validated through three case studies: a catalytic reaction system, a continuous fermentation process, and a Lotka-Volterra oscillator, each showcasing different epistemic uncertainties. The robustness of the algorithm is tested against varying experimental conditions, including measurement noise (up to 20%), limited training batches (minimum 2), and sparse temporal sampling (minimum 5 samples per experiment). Results demonstrate a consistent ability of the SINDybrid approach to produce accurate hybrid models, achieving R^2 scores above 0.85 on validation data. Additionally, the algorithm effectively identifies uncertainty locations within system dynamics under challenging scenarios. This work highlights SINDybrid potential as a versatile, automated solution for hybrid modelling, significantly reducing the barriers to adopting hybrid methods in complex dynamic systems across scientific research and industrial applications.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/abf7b83b577457ad4cae57adc6f7dae78e991701" target='_blank'>
+              SINDybrid: automatic generation of hybrid models for dynamic systems
+              </a>
+            </td>
+          <td>
+            Ulderico Di Caprio, M. Leblebici
+          </td>
+          <td>2025-06-14</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>14</td>
+        </tr>
+
+        <tr id="Neural ordinary differential equations (NODEs) offer a data-driven approach to modeling chaotic dynamical systems without prior knowledge of governing equations. We show that enhanced phase-space sampling through diverse initial conditions significantly improves NODEs' ability to capture both local and global system behaviors. Using the Lorenz system, we demonstrate that broader phase-space coverage enhances generalization, reduces overfitting, and improves long-term predictive stability. Evaluations based on Lyapunov exponents, the Kaplan–Yorke dimension, return maps, and probability density functions confirm that increased initial condition diversity leads to more accurate reconstructions of chaotic attractors and system dynamics.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/24781cedca7a71e556009536a4153cea3945e617" target='_blank'>
+              Data-driven discovery of nonlinear dynamics in complex systems through phase-space informed neural ordinary differential equations
+              </a>
+            </td>
+          <td>
+            David Garrido González, N. Saura, S. Benkadda, P. Beyer
+          </td>
+          <td>2025-06-01</td>
+          <td>Physics of Plasmas</td>
+          <td>0</td>
+          <td>29</td>
+        </tr>
+
         <tr id="The control of spatio-temporally chaos is challenging because of high dimensionality and unpredictability. Model-free reinforcement learning (RL) discovers optimal control policies by interacting with the system, typically requiring observations of the full physical state. In practice, sensors often provide only partial and noisy measurements (observations) of the system. The objective of this paper is to develop a framework that enables the control of chaotic systems with partial and noisy observability. The proposed method, data-assimilated model-informed reinforcement learning (DA-MIRL), integrates (i) low-order models to approximate high-dimensional dynamics; (ii) sequential data assimilation to correct the model prediction when observations become available; and (iii) an off-policy actor-critic RL algorithm to adaptively learn an optimal control strategy based on the corrected state estimates. We test DA-MIRL on the spatiotemporally chaotic solutions of the Kuramoto-Sivashinsky equation. We estimate the full state of the environment with (i) a physics-based model, here, a coarse-grained model; and (ii) a data-driven model, here, the control-aware echo state network, which is proposed in this paper. We show that DA-MIRL successfully estimates and suppresses the chaotic dynamics of the environment in real time from partial observations and approximate models. This work opens opportunities for the control of partially observable chaotic systems.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/a213fd4d0fd0b29b1c695bac9874b013234a6736" target='_blank'>
@@ -1133,21 +1178,6 @@
           <td>ArXiv</td>
           <td>0</td>
           <td>0</td>
-        </tr>
-
-        <tr id="One use case of ``physics-informed neural networks'' (PINNs) is solution reconstruction, which aims to estimate the full-field state of a physical system from sparse measurements. Parameterized governing equations of the system are used in tandem with the measurements to regularize the regression problem. However, in real-world solution reconstruction problems, the parameterized governing equation may be inconsistent with the physical phenomena that give rise to the measurement data. We show that due to assuming consistency between the true and parameterized physics, PINNs-based approaches may fail to satisfy three basic criteria of interpretability, robustness, and data consistency. As we argue, these criteria ensure that (i) the quality of the reconstruction can be assessed, (ii) the reconstruction does not depend strongly on the choice of physics loss, and (iii) that in certain situations, the physics parameters can be uniquely recovered. In the context of elasticity and heat transfer, we demonstrate how standard formulations of the physics loss and techniques for constraining the solution to respect the measurement data lead to different ``constraint forces"-- which we define as additional source terms arising from the constraints -- and that these constraint forces can significantly influence the reconstructed solution. To avoid the potentially substantial influence of the choice of physics loss and method of constraint enforcement on the reconstructed solution, we propose the ``explicit constraint force method'' (ECFM) to gain control of the source term introduced by the constraint. We then show that by satisfying the criteria of interpretability, robustness, and data consistency, this approach leads to more predictable and customizable reconstructions from noisy measurement data, even when the parameterization of the missing physics is inconsistent with the measured system.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/aedc274aa598dec850e90d2343677aad41224110" target='_blank'>
-              Physics-informed solution reconstruction in elasticity and heat transfer using the explicit constraint force method
-              </a>
-            </td>
-          <td>
-            Conor Rowan, K. Maute, Alireza Doostan
-          </td>
-          <td>2025-05-08</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>53</td>
         </tr>
 
         <tr id="This paper develops an interpretable, non-intrusive reduced-order modeling technique using regularized kernel interpolation. Existing non-intrusive approaches approximate the dynamics of a reduced-order model (ROM) by solving a data-driven least-squares regression problem for low-dimensional matrix operators. Our approach instead leverages regularized kernel interpolation, which yields an optimal approximation of the ROM dynamics from a user-defined reproducing kernel Hilbert space. We show that our kernel-based approach can produce interpretable ROMs whose structure mirrors full-order model structure by embedding judiciously chosen feature maps into the kernel. The approach is flexible and allows a combination of informed structure through feature maps and closure terms via more general nonlinear terms in the kernel. We also derive a computable a posteriori error bound that combines standard error estimates for intrusive projection-based ROMs and kernel interpolants. The approach is demonstrated in several numerical experiments that include comparisons to operator inference using both proper orthogonal decomposition and quadratic manifold dimension reduction.">
@@ -1270,21 +1300,6 @@
           <td>1</td>
         </tr>
 
-        <tr id="Integral equations are widely used in fields such as applied modeling, medical imaging, and system identification, providing a powerful framework for solving deterministic problems. While parameter identification for differential equations has been extensively studied, the focus on integral equations, particularly stochastic Volterra integral equations, remains limited. This research addresses the parameter identification problem, also known as the equation reconstruction problem, in Volterra integral equations driven by Gaussian noise. We propose an improved deep neural networks framework for estimating unknown parameters in the drift term of these equations. The network represents the primary variables and their integrals, enhancing parameter estimation accuracy by incorporating inter-output relationships into the loss function. Additionally, the framework extends beyond parameter identification to predict the system's behavior outside the integration interval. Prediction accuracy is validated by comparing predicted and true trajectories using a 95% confidence interval. Numerical experiments demonstrate the effectiveness of the proposed deep neural networks framework in both parameter identification and prediction tasks, showing robust performance under varying noise levels and providing accurate solutions for modeling stochastic systems.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/c26f2d97969a0f89925678b3cf2f2e66d2c08663" target='_blank'>
-              Reconstruction and Prediction of Volterra Integral Equations Driven by Gaussian Noise
-              </a>
-            </td>
-          <td>
-            Zhihao Xu, Saisai Ding, Zhikun Zhang, Xiangjun Wang
-          </td>
-          <td>2025-06-01</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>2</td>
-        </tr>
-
         <tr id="We propose an efficient thermodynamics-informed latent space dynamics identification (tLaSDI) framework for the reduced-order modeling of parametric nonlinear dynamical systems. This framework integrates autoencoders for dimensionality reduction with newly developed parametric GENERIC formalism-informed neural networks (pGFINNs), which enable efficient learning of parametric latent dynamics while preserving key thermodynamic principles such as free energy conservation and entropy generation across the parameter space. To further enhance model performance, a physics-informed active learning strategy is incorporated, leveraging a greedy, residual-based error indicator to adaptively sample informative training data, outperforming uniform sampling at equivalent computational cost. Numerical experiments on the Burgers' equation and the 1D/1V Vlasov-Poisson equation demonstrate that the proposed method achieves up to 3,528x speed-up with 1-3% relative errors, and significant reduction in training (50-90%) and inference (57-61%) cost. Moreover, the learned latent space dynamics reveal the underlying thermodynamic behavior of the system, offering valuable insights into the physical-space dynamics.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/7176a1066c81be7edef17fdcdf76cf8c795c2c44" target='_blank'>
@@ -1390,21 +1405,6 @@
           <td>2</td>
         </tr>
 
-        <tr id="We propose an online learning framework for forecasting nonlinear spatio-temporal signals (fields). The method integrates (i) dimensionality reduction, here, a simple proper orthogonal decomposition (POD) projection; (ii) a generalized autoregressive model to forecast reduced dynamics, here, a reservoir computer; (iii) online adaptation to update the reservoir computer (the model), here, ensemble sequential data assimilation.We demonstrate the framework on a wake past a cylinder governed by the Navier-Stokes equations, exploring the assimilation of full flow fields (projected onto POD modes) and sparse sensors. Three scenarios are examined: a na\"ive physical state estimation; a two-fold estimation of physical and reservoir states; and a three-fold estimation that also adjusts the model parameters. The two-fold strategy significantly improves ensemble convergence and reduces reconstruction error compared to the na\"ive approach. The three-fold approach enables robust online training of partially-trained reservoir computers, overcoming limitations of a priori training. By unifying data-driven reduced order modelling with Bayesian data assimilation, this work opens new opportunities for scalable online model learning for nonlinear time series forecasting.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/0b2cffdceee617b140f986fee310d6213413406a" target='_blank'>
-              Online model learning with data-assimilated reservoir computers
-              </a>
-            </td>
-          <td>
-            Andrea N'ovoa, Luca Magri
-          </td>
-          <td>2025-04-23</td>
-          <td>ArXiv</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-
         <tr id="None">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/a4892f4c6dfa7e3dfedaabb074a416dbfa1e43aa" target='_blank'>
@@ -1448,6 +1448,21 @@
           <td>ArXiv</td>
           <td>0</td>
           <td>2</td>
+        </tr>
+
+        <tr id="The explicit governing equation is one of the simplest and most intuitive forms for characterizing physical laws. However, directly discovering partial differential equations (PDEs) from data poses significant challenges, primarily in determining relevant terms from a vast search space. Symmetry, as a crucial prior knowledge in scientific fields, has been widely applied in tasks such as designing equivariant networks and guiding neural PDE solvers. In this paper, we propose a pipeline for governing equation discovery based on differential invariants, which can losslessly reduce the search space of existing equation discovery methods while strictly adhering to symmetry. Specifically, we compute the set of differential invariants corresponding to the infinitesimal generators of the symmetry group and select them as the relevant terms for equation discovery. Taking DI-SINDy (SINDy based on Differential Invariants) as an example, we demonstrate that its success rate and accuracy in PDE discovery surpass those of other symmetry-informed governing equation discovery methods across a series of PDEs.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/9988d01e37e45a85ae89bc51e97ab9baf8384953" target='_blank'>
+              Governing Equation Discovery from Data Based on Differential Invariants
+              </a>
+            </td>
+          <td>
+            Lexiang Hu, Yikang Li, Zhouchen Lin
+          </td>
+          <td>2025-05-24</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>1</td>
         </tr>
 
         <tr id="Despite the promise of scientific machine learning (SciML) in combining data-driven techniques with mechanistic modeling, existing approaches for incorporating hard constraints in neural differential equations (NDEs) face significant limitations. Scalability issues and poor numerical properties prevent these neural models from being used for modeling physical systems with complicated conservation laws. We propose Manifold-Projected Neural ODEs (PNODEs), a method that explicitly enforces algebraic constraints by projecting each ODE step onto the constraint manifold. This framework arises naturally from semi-explicit differential-algebraic equations (DAEs), and includes both a robust iterative variant and a fast approximation requiring a single Jacobian factorization. We further demonstrate that prior works on relaxation methods are special cases of our approach. PNODEs consistently outperform baselines across six benchmark problems achieving a mean constraint violation error below $10^{-10}$. Additionally, PNODEs consistently achieve lower runtime compared to other methods for a given level of error tolerance. These results show that constraint projection offers a simple strategy for learning physically consistent long-horizon dynamics.">
@@ -1495,21 +1510,6 @@
           <td>1</td>
         </tr>
 
-        <tr id="The goal of many applications in energy and transport sectors is to control turbulent flows. However, because of chaotic dynamics and high dimensionality, the control of turbulent flows is exceedingly difficult. Model-free reinforcement learning (RL) methods can discover optimal control policies by interacting with the environment, but they require full state information, which is often unavailable in experimental settings. We propose a data-assimilated model-based RL (DA-MBRL) framework for systems with partial observability and noisy measurements. Our framework employs a control-aware Echo State Network for data-driven prediction of the dynamics, and integrates data assimilation with an Ensemble Kalman Filter for real-time state estimation. An off-policy actor-critic algorithm is employed to learn optimal control strategies from state estimates. The framework is tested on the Kuramoto-Sivashinsky equation, demonstrating its effectiveness in stabilizing a spatiotemporally chaotic flow from noisy and partial measurements.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/bd988e4f4210112c850ac4e94c211d0da9079423" target='_blank'>
-              Data-Assimilated Model-Based Reinforcement Learning for Partially Observed Chaotic Flows
-              </a>
-            </td>
-          <td>
-            D. E. Ozan, Andrea N'ovoa, Luca Magri
-          </td>
-          <td>2025-04-23</td>
-          <td>ArXiv</td>
-          <td>1</td>
-          <td>2</td>
-        </tr>
-
     </tbody>
     <tfoot>
       <tr>
@@ -1540,7 +1540,7 @@
 
   var trace1 = {
     x: ['2025'],
-    y: [6],
+    y: [4],
     name: 'Num of citations',
     yaxis: 'y1',
     type: 'scatter'
