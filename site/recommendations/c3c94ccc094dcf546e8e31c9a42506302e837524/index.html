@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-07-07 06:11:52 UTC</i>
+  <i class="footer">This page was last updated on 2025-07-28 06:13:14 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -476,6 +476,18 @@
   </thead>
   <tbody>
 
+        <tr id="We present the first whiteness test for graphs, i.e., a whiteness test for multivariate time series associated with the nodes of a dynamic graph. The statistical test aims at finding serial dependencies among close-in-time observations, as well as spatial dependencies among neighboring observations given the underlying graph. The proposed test is a spatio-temporal extension of traditional tests from the system identification literature and finds applications in similar, yet more general, application scenarios involving graph signals. The AZ-test is versatile, allowing the underlying graph to be dynamic, changing in topology and set of nodes, and weighted, thus accounting for connections of different strength, as is the case in many application scenarios like transportation networks and sensor grids. The asymptotic distribution -- as the number of graph edges or temporal observations increases -- is known, and does not assume identically distributed data. We validate the practical value of the test on both synthetic and real-world problems, and show how the test can be employed to assess the quality of spatio-temporal forecasting models by analyzing the prediction residuals appended to the graphs stream.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/44a9610f927230a711176e4ad7008324abacd65b" target='_blank'>AZ-whiteness test: a test for uncorrelated noise on spatio-temporal graphs</a></td>
+          <td>
+            Daniele Zambon, C. Alippi
+          </td>
+          <td>2022-04-23</td>
+          <td>ArXiv</td>
+          <td>7</td>
+          <td>53</td>
+        </tr>
+
         <tr id="Time series are the primary data type used to record dynamic system measurements and generated in great volume by both physical sensors and online processes (virtual sensors). Time series analytics is therefore crucial to unlocking the wealth of information implicit in available data. With the recent advancements in graph neural networks (GNNs), there has been a surge in GNN-based approaches for time series analysis. These approaches can explicitly model inter-temporal and inter-variable relationships, which traditional and other deep neural network-based methods struggle to do. In this survey, we provide a comprehensive review of graph neural networks for time series analysis (GNN4TS), encompassing four fundamental dimensions: forecasting, classification, anomaly detection, and imputation. Our aim is to guide designers and practitioners to understand, build applications, and advance research of GNN4TS. At first, we provide a comprehensive task-oriented taxonomy of GNN4TS. Then, we present and discuss representative research works and introduce mainstream applications of GNN4TS. A comprehensive discussion of potential future research directions completes the survey. This survey, for the first time, brings together a vast array of knowledge on GNN-based time series research, highlighting foundations, practical applications, and opportunities of graph neural networks for time series analysis.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/d3dbbd0f0de51b421a6220bd6480b8d2e99a88e9" target='_blank'>A Survey on Graph Neural Networks for Time Series: Forecasting, Classification, Imputation, and Anomaly Detection</a></td>
@@ -484,7 +496,7 @@
           </td>
           <td>2023-07-07</td>
           <td>IEEE Transactions on Pattern Analysis and Machine Intelligence</td>
-          <td>174</td>
+          <td>178</td>
           <td>53</td>
         </tr>
 
@@ -510,6 +522,18 @@
           <td>International Journal of Data Science and Analytics</td>
           <td>10</td>
           <td>7</td>
+        </tr>
+
+        <tr id="None">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/01852c3a699f05f67726839f6753832694c5e3ee" target='_blank'>Graph Construction Approaches for Graph Neural Networks-Based Anomaly Detection in Time Series</a></td>
+          <td>
+            N. J. Mlyahilu, Evgenia Novikova
+          </td>
+          <td>2025-05-28</td>
+          <td>2025 XXVIII International Conference on Soft Computing and Measurements (SCM)</td>
+          <td>0</td>
+          <td>0</td>
         </tr>
 
         <tr id="The recovery of time-varying graph signals is a fundamental problem with numerous applications in sensor networks and forecasting in time series. Effectively capturing the spatiotemporal information in these signals is essential for the downstream tasks. Previous studies have used the smoothness of the temporal differences of such graph signals as an initial assumption. Nevertheless, this smoothness assumption could result in a degradation of performance in the corresponding application when the prior does not hold. In this work, we relax the requirement of this hypothesis by including a learning module. We propose a Time Graph Neural Network (TimeGNN) for the recovery of time-varying graph signals. Our algorithm uses an encoder-decoder architecture with a specialized loss composed of a mean squared error function and a Sobolev smoothness operator. TimeGNN shows competitive performance against previous methods in real datasets.">
@@ -546,30 +570,6 @@
           <td>IEEE Transactions on Pattern Analysis and Machine Intelligence</td>
           <td>16</td>
           <td>23</td>
-        </tr>
-
-        <tr id="Multivariate time series forecasting has long received significant attention in real-world applications, such as energy consumption and traffic prediction. While recent methods demonstrate good forecasting abilities, they have three fundamental limitations. (i). <italic>Discrete neural architectures:</italic> Interlacing individually parameterized spatial and temporal blocks to encode rich underlying patterns leads to discontinuous latent state trajectories and higher forecasting numerical errors. (ii). <italic>High complexity:</italic> Discrete approaches complicate models with dedicated designs and redundant parameters, leading to higher computational and memory overheads. (iii). <italic>Reliance on graph priors:</italic> Relying on predefined static graph structures limits their effectiveness and practicability in real-world applications. In this paper, we address all the above limitations by proposing a continuous model to forecast <underline><bold>M</bold></underline>ultivariate <underline><bold>T</bold></underline>ime series with dynamic <underline><bold>G</bold></underline>raph neural <underline><bold>O</bold></underline>rdinary <underline><bold>D</bold></underline>ifferential <underline><bold>E</bold></underline>quations (<monospace>MTGODE</monospace>). Specifically, we first abstract multivariate time series into dynamic graphs with time-evolving node features and unknown graph structures. Then, we design and solve a neural ODE to complement missing graph topologies and unify both spatial and temporal message passing, allowing deeper graph propagation and fine-grained temporal information aggregation to characterize stable and precise latent spatial-temporal dynamics. Our experiments demonstrate the superiorities of <monospace>MTGODE</monospace> from various perspectives on five time series benchmark datasets.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/b02a5aebd9598ddbb2b4021b5576cedb5519d436" target='_blank'>Multivariate Time Series Forecasting With Dynamic Graph Neural ODEs</a></td>
-          <td>
-            Ming Jin, Yu Zheng, Yuanhao Li, Siheng Chen, B. Yang, Shirui Pan
-          </td>
-          <td>2022-02-17</td>
-          <td>IEEE Transactions on Knowledge and Data Engineering</td>
-          <td>115</td>
-          <td>47</td>
-        </tr>
-
-        <tr id="The online prediction of multivariate signals, existing simultaneously in space and time, from noisy partial observations is a fundamental task in numerous applications. We propose an efficient Neural Network architecture for the online estimation of time-varying graph signals named the Adaptive Least Mean Squares Graph Neural Networks (LMS-GNN). LMS-GNN aims to capture the time variation and bridge the cross-space-time interactions under the condition that signals are corrupted by noise and missing values. The LMS-GNN is a combination of adaptive graph filters and Graph Neural Networks (GNN). At each time step, the forward propagation of LMS-GNN is similar to adaptive graph filters where the output is based on the error between the observation and the prediction similar to GNN. The filter coefficients are updated via backpropagation as in GNN. Experimenting on real-world temperature data reveals that our LMS-GNN achieves more accurate online predictions compared to graph-based methods like adaptive graph filters and graph convolutional neural networks.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/a03d0f3fd814c3732704bc65e2e60d0a92b0e8ae" target='_blank'>Adaptive Least Mean Squares Graph Neural Networks and Online Graph Signal Estimation</a></td>
-          <td>
-            Yi Yan, Changran Peng, E. Kuruoglu
-          </td>
-          <td>2024-01-27</td>
-          <td>ArXiv</td>
-          <td>1</td>
-          <td>27</td>
         </tr>
 
   </tbody>

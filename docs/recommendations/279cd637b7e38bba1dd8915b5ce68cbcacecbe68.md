@@ -11,7 +11,7 @@ hide:
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-07-07 06:11:53 UTC</i>
+  <i class="footer">This page was last updated on 2025-07-28 06:13:15 UTC</i>
   </p>
   
   <div class="note info" onclick="startIntro()">
@@ -49,7 +49,7 @@ hide:
             Andreas Doerr, Christian Daniel, Martin Schiegg, D. Nguyen-Tuong, S. Schaal, Marc Toussaint, Sebastian Trimpe
           </td>
           <td>2018-01-31</td>
-          <td>ArXiv, DBLP, MAG</td>
+          <td>DBLP, ArXiv, MAG</td>
           <td>123</td>
           <td>94</td>
         </tr>
@@ -98,7 +98,7 @@ hide:
           </td>
           <td>2022-05-26</td>
           <td>J. Mach. Learn. Res.</td>
-          <td>19</td>
+          <td>20</td>
           <td>53</td>
         </tr>
     
