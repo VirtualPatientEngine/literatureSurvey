@@ -11,7 +11,7 @@ hide:
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-08-04 06:15:04 UTC</i>
+  <i class="footer">This page was last updated on 2025-08-11 06:12:36 UTC</i>
   </p>
   
   <div class="note info" onclick="startIntro()">
@@ -74,7 +74,7 @@ hide:
           </td>
           <td>2023-07-27</td>
           <td>ArXiv</td>
-          <td>6</td>
+          <td>7</td>
           <td>56</td>
         </tr>
     
@@ -86,7 +86,7 @@ hide:
           </td>
           <td>2022-05-26</td>
           <td>J. Mach. Learn. Res.</td>
-          <td>20</td>
+          <td>22</td>
           <td>53</td>
         </tr>
     
@@ -110,8 +110,8 @@ hide:
           </td>
           <td>2020-05-24</td>
           <td>Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining</td>
-          <td>1457</td>
-          <td>59</td>
+          <td>1472</td>
+          <td>60</td>
         </tr>
     
         <tr id="Time series forecasting is an extensively studied subject in statistics, economics, and computer science. Exploration of the correlation and causation among the variables in a multivariate time series shows promise in enhancing the performance of a time series model. When using deep neural networks as forecasting models, we hypothesize that exploiting the pairwise information among multiple (multivariate) time series also improves their forecast. If an explicit graph structure is known, graph neural networks (GNNs) have been demonstrated as powerful tools to exploit the structure. In this work, we propose learning the structure simultaneously with the GNN if the graph is unknown. We cast the problem as learning a probabilistic graph model through optimizing the mean performance over the graph distribution. The distribution is parameterized by a neural network so that discrete graphs can be sampled differentiably through reparameterization. Empirical evaluations show that our method is simpler, more efficient, and better performing than a recently proposed bilevel learning approach for graph structure learning, as well as a broad array of forecasting models, either deep or non-deep learning based, and graph or non-graph based.">
@@ -122,7 +122,7 @@ hide:
           </td>
           <td>2021-01-18</td>
           <td>ArXiv</td>
-          <td>247</td>
+          <td>248</td>
           <td>39</td>
         </tr>
     
