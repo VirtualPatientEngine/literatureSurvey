@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-10-20 06:11:35 UTC</i>
+  <i class="footer">This page was last updated on 2025-10-27 06:13:03 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -496,7 +496,7 @@
           </td>
           <td>2023-06-26</td>
           <td>DBLP</td>
-          <td>23</td>
+          <td>24</td>
           <td>17</td>
         </tr>
 
@@ -548,28 +548,28 @@
           <td>68</td>
         </tr>
 
-        <tr id="Irregular time series, where data points are recorded at uneven intervals, are prevalent in healthcare settings, such as emergency wards where vital signs and laboratory results are captured at varying times. This variability, which reflects critical fluctuations in patient health, is essential for informed clinical decision-making. Existing self-supervised learning research on irregular time series often relies on generic pretext tasks like forecasting, which may not fully utilise the signal provided by irregular time series. There is a significant need for specialised pretext tasks designed for the characteristics of irregular time series to enhance model performance and robustness, especially in scenarios with limited data availability. This paper proposes a novel pretraining framework, EMIT, an event-based masking for irregular time series. EMIT focuses on masking-based reconstruction in the latent space, selecting masking points based on the rate of change in the data. This method preserves the natural variability and timing of measurements while enhancing the model's ability to process irregular intervals without losing essential information. Extensive experiments on the MIMIC-III and PhysioNet Challenge datasets demonstrate the superior performance of our event-based masking strategy. The code has been released at https://github.com/hrishi-ds/EMIT.">
+        <tr id="Irregularly sampled time series are increasingly prevalent, particularly in medical domains. While various specialized methods have been developed to handle these irregularities, effectively modeling their complex dynamics and pronounced sparsity remains a challenge. This paper introduces a novel perspective by converting irregularly sampled time series into line graph images, then utilizing powerful pre-trained vision transformers for time series classification in the same way as image classification. This method not only largely simplifies specialized algorithm designs but also presents the potential to serve as a universal framework for time series modeling. Remarkably, despite its simplicity, our approach outperforms state-of-the-art specialized algorithms on several popular healthcare and human activity datasets. Especially in the rigorous leave-sensors-out setting where a portion of variables is omitted during testing, our method exhibits strong robustness against varying degrees of missing observations, achieving an impressive improvement of 42.8% in absolute F1 score points over leading specialized baselines even with half the variables masked. Code and data are available at https://github.com/Leezekun/ViTST">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/5e13c5354481232bed4c0fb1e4b6a37d07f32e52" target='_blank'>EMIT - Event-Based Masked Auto Encoding for Irregular Time Series</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/3f4bd6e35eca865b0226f1bc0da9fc5f0dc948a8" target='_blank'>Time Series as Images: Vision Transformer for Irregularly Sampled Time Series</a></td>
           <td>
-            Hrishikesh Patel, Ruihong Qiu, Adam Irwin, Shazia Sadiq, Sen Wang
+            Zekun Li, SHIYANG LI, Xifeng Yan
           </td>
-          <td>2024-09-25</td>
-          <td>2024 IEEE International Conference on Data Mining (ICDM)</td>
-          <td>4</td>
-          <td>3</td>
+          <td>2023-03-01</td>
+          <td>ArXiv</td>
+          <td>74</td>
+          <td>68</td>
         </tr>
 
-        <tr id="To analyze multivariate time series, most previous methods assume regular subsampling of time series, where the interval between adjacent measurements and the number of samples remain unchanged. Practically, data collection systems could produce irregularly sampled time series due to sensor failures and interventions. However, existing methods designed for regularly sampled multivariate time series cannot directly handle irregularity owing to misalignment along both temporal and variate dimensions. To fill this gap, we propose Compatible Transformer (CoFormer), a transformer-based encoder to achieve comprehensive temporal-interaction feature learning for each individual sample in irregular multivariate time series. In CoFormer, we view each sample as a unique variate-time point and leverage intra-variate/inter-variate attentions to learn sample-wise temporal/interaction features based on intra-variate/inter-variate neighbors. With CoFormer as the core, we can analyze irregularly sampled multivariate time series for many downstream tasks, including classification and prediction. We conduct extensive experiments on 3 real-world datasets and validate that the proposed CoFormer significantly and consistently outperforms existing methods. Code will be avilable at https://github.com/MediaBrain-SJTU/CoFormer.">
+        <tr id="Irregular multivariate time series (IMTS) are prevalent in critical domains like healthcare and finance, where accurate forecasting is vital for proactive decision-making. However, the asynchronous sampling and irregular intervals inherent to IMTS pose two core challenges for existing methods: (1) how to accurately represent the raw information of irregular time series without introducing data distortion, and (2) how to effectively capture the complex dynamic dependencies between observation points. To address these challenges, we propose the Adaptive Spatio-Temporal Graph Interaction (ASTGI) framework. Specifically, the framework first employs a Spatio-Temporal Point Representation module to encode each discrete observation as a point within a learnable spatio-temporal embedding space. Second, a Neighborhood-Adaptive Graph Construction module adaptively builds a causal graph for each point in the embedding space via nearest neighbor search. Subsequently, a Spatio-Temporal Dynamic Propagation module iteratively updates information on these adaptive causal graphs by generating messages and computing interaction weights based on the relative spatio-temporal positions between points. Finally, a Query Point-based Prediction module generates the final forecast by aggregating neighborhood information for a new query point and performing regression. Extensive experiments on multiple benchmark datasets demonstrate that ASTGI outperforms various state-of-the-art methods.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/f6f708484a85b2b96d6f6764724b950cab167bb7" target='_blank'>Compatible Transformer for Irregularly Sampled Multivariate Time Series</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/f98109a141b929f30f6374d73e7d91321168dc27" target='_blank'>ASTGI: Adaptive Spatio-Temporal Graph Interactions for Irregular Multivariate Time Series Forecasting</a></td>
           <td>
-            Yuxi Wei, Juntong Peng, Tong He, Chenxin Xu, Jian Zhang, Shirui Pan, Siheng Chen
+            Xvyuan Liu, Xiangfei Qiu, Hanyin Cheng, Xingjian Wu, Chenjuan Guo, Bin Yang, Jilin Hu
           </td>
-          <td>2023-10-17</td>
-          <td>2023 IEEE International Conference on Data Mining (ICDM)</td>
-          <td>2</td>
-          <td>13</td>
+          <td>2025-09-27</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>34</td>
         </tr>
 
   </tbody>
