@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-10-27 06:13:28 UTC</i>
+  <i class="footer">This page was last updated on 2025-11-03 06:13:22 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -508,8 +508,20 @@
           </td>
           <td>2023-06-10</td>
           <td>2023 31st European Signal Processing Conference (EUSIPCO)</td>
-          <td>3</td>
+          <td>4</td>
           <td>42</td>
+        </tr>
+
+        <tr id="Pattern recognition is a fundamental task in continuous sensing applications, but real-world scenarios often experience distribution shifts that necessitate learning generalizable representations for such tasks. This challenge is exacerbated with time-series data, which also exhibit inherent nonstationarity--variations in statistical and spectral properties over time. In this work, we offer a fresh perspective on learning generalizable representations for time-series classification by considering the phase information of a signal as an approximate proxy for nonstationarity and propose a phase-driven generalizable representation learning framework for time-series classification, PhASER. It consists of three key elements: 1) Hilbert transform-based augmentation, which diversifies nonstationarity while preserving task-specific discriminatory semantics, 2) separate magnitude-phase encoding, viewing time-varying magnitude and phase as independent modalities, and 3) phase-residual feature broadcasting, integrating 2D phase features with a residual connection to the 1D signal representation, providing inherent regularization to improve distribution-invariant learning. Extensive evaluations on five datasets from sleep-stage classification, human activity recognition, and gesture recognition against 13 state-of-the-art baseline methods demonstrate that PhASER consistently outperforms the best baselines by an average of 5% and up to 11% in some cases. Additionally, the principles of PhASER can be broadly applied to enhance the generalizability of existing time-series representation learning models.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/8afaf2f41bc85fd8c0413754fa9ccc2b1e9303d5" target='_blank'>Phase-driven Domain Generalizable Learning for Nonstationary Time Series</a></td>
+          <td>
+            Payal Mohapatra, Lixu Wang, Qi Zhu
+          </td>
+          <td>2024-02-05</td>
+          <td>ArXiv</td>
+          <td>3</td>
+          <td>12</td>
         </tr>
 
         <tr id="In this study, we propose a novel framework for time-series representation learning that integrates a learnable masking-augmentation strategy into a contrastive learning framework. Time-series data pose challenges due to their temporal dependencies and feature-extraction complexities. To address these challenges, we introduce a masking-based reconstruction approach within a contrastive learning context, aiming to enhance the model’s ability to learn discriminative temporal features. Our method leverages self-supervised learning to effectively capture both global and local patterns by strategically masking segments of the time-series data and reconstructing them, which aids in revealing nuanced temporal dependencies. We utilize learnable masking as a dynamic augmentation technique, which enables the model to optimize contextual relationships in the data and extract meaningful representations that are both context-aware and robust. Extensive experiments were conducted on multiple time-series datasets, including SleepEDF-78, 20, UCI-HAR, achieving improvements of 2%, 2.55%, and 3.89% each and similar performance on Epilepsy in accuracy over baseline methods. Our results show significant performance gains compared to existing methods, highlighting the potential of our framework to advance the field of time-series analysis by improving the quality of learned representations and enhancing downstream task performance.">
@@ -572,28 +584,16 @@
           <td>143</td>
         </tr>
 
-        <tr id="Contrastive learning has emerged as a competent approach for unsupervised representation learning. However, the design of an optimal augmentation strategy, although crucial for contrastive learning, is less explored for time series classification tasks. Existing predefined time-domain augmentation methods are primarily adopted from vision and are not specific to time series data. Consequently, this cross-modality incompatibility may distort the semantically relevant information of time series by introducing mismatched patterns into the data. To address this limitation, we present a novel perspective from the frequency domain and identify three advantages for downstream classification: global, independent, and compact. To fully utilize the three properties, we propose the lightweight yet effective Frequency Refined Augmentation (FreRA) tailored for time series contrastive learning on classification tasks, which can be seamlessly integrated with contrastive learning frameworks in a plug-and-play manner. Specifically, FreRA automatically separates critical and unimportant frequency components. Accordingly, we propose semantic-aware Identity Modification and semantic-agnostic Self-adaptive Modification to protect semantically relevant information in the critical frequency components and infuse variance into the unimportant ones respectively. Theoretically, we prove that FreRA generates semantic-preserving views. Empirically, we conduct extensive experiments on two benchmark datasets, including UCR and UEA archives, as well as five large-scale datasets on diverse applications. FreRA consistently outperforms ten leading baselines on time series classification, anomaly detection, and transfer learning tasks, demonstrating superior capabilities in contrastive representation learning and generalization in transfer learning scenarios across diverse datasets.">
+        <tr id="Contrastive learning has emerged as a competent approach for unsupervised representation learning. However, the design of an optimal augmentation strategy, although crucial for contrastive learning, is less explored for time series classification tasks. Existing predefined time-domain augmentation methods are primarily adopted from vision and are not specific to time series data. Consequently, this cross-modality incompatibility may distort the semantically relevant information of time series by introducing mismatched patterns into the data. To address this limitation, we present a novel perspective from the frequency domain and identify three advantages for downstream classification: 1) the frequency component naturally encodes global features, 2) the orthogonal nature of the Fourier basis allows easier isolation and independent modifications of critical and unimportant information, and 3) a compact set of frequency components can preserve semantic integrity. To fully utilize the three properties, we propose the lightweight yet effective Frequency-Refined Augmentation (FreRA) tailored for time series contrastive learning on classification tasks, which can be seamlessly integrated with contrastive learning frameworks in a plug-and-play manner. Specifically, FreRA automatically separates critical and unimportant frequency components. Accordingly, we propose semantic-aware Identity Modification and semantic-agnostic Self-adaptive Modification to protect semantically relevant information in the critical frequency components and infuse variance into the unimportant ones respectively. Theoretically, we prove that FreRA generates semantic-preserving views. Empirically, we conduct extensive experiments on two benchmark datasets, including UCR and UEA archives, as well as five large-scale datasets on diverse applications. FreRA consistently outperforms ten leading baselines on time series classification, anomaly detection, and transfer learning tasks, demonstrating superior capabilities in contrastive representation learning and generalization in transfer learning scenarios across diverse datasets. The code is available at https://github.com/Tian0426/FreRA.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/a68db4cf9dad3ef54e41c6cee38183d8c3b0efbf" target='_blank'>FreRA: A Frequency-Refined Augmentation for Contrastive Learning on Time Series Classification</a></td>
           <td>
             Tian Tian, Chunyan Miao, Hangwei Qian
           </td>
           <td>2025-05-29</td>
-          <td>ArXiv</td>
+          <td>Proceedings of the 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2</td>
           <td>0</td>
           <td>13</td>
-        </tr>
-
-        <tr id="Contrastive representation learning is crucial in medical time series analysis as it alleviates dependency on labor-intensive, domain-specific, and scarce expert annotations. However, existing contrastive learning methods primarily focus on one single data level, which fails to fully exploit the intricate nature of medical time series. To address this issue, we present COMET, an innovative hierarchical framework that leverages data consistencies at all inherent levels in medical time series. Our meticulously designed model systematically captures data consistency from four potential levels: observation, sample, trial, and patient levels. By developing contrastive loss at multiple levels, we can learn effective representations that preserve comprehensive data consistency, maximizing information utilization in a self-supervised manner. We conduct experiments in the challenging patient-independent setting. We compare COMET against six baselines using three diverse datasets, which include ECG signals for myocardial infarction and EEG signals for Alzheimer's and Parkinson's diseases. The results demonstrate that COMET consistently outperforms all baselines, particularly in setup with 10% and 1% labeled data fractions across all datasets. These results underscore the significant impact of our framework in advancing contrastive representation learning techniques for medical time series. The source code is available at https://github.com/DL4mHealth/COMET.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/9331fe5ae1d8c16a36037dd0f0378ccac7d5f230" target='_blank'>Contrast Everything: A Hierarchical Contrastive Framework for Medical Time-Series</a></td>
-          <td>
-            Yihe Wang, Yu Han, Haishuai Wang, Xiang Zhang
-          </td>
-          <td>2023-10-21</td>
-          <td>ArXiv</td>
-          <td>67</td>
-          <td>6</td>
         </tr>
 
   </tbody>

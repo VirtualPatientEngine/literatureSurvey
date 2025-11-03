@@ -11,7 +11,7 @@ hide:
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-10-27 06:13:29 UTC</i>
+  <i class="footer">This page was last updated on 2025-11-03 06:13:32 UTC</i>
   </p>
   
   <div class="note info" onclick="startIntro()">
@@ -49,7 +49,7 @@ hide:
             Andreas Doerr, Christian Daniel, Martin Schiegg, D. Nguyen-Tuong, S. Schaal, Marc Toussaint, Sebastian Trimpe
           </td>
           <td>2018-01-31</td>
-          <td>MAG, ArXiv, DBLP</td>
+          <td>DBLP, ArXiv, MAG</td>
           <td>124</td>
           <td>94</td>
         </tr>
