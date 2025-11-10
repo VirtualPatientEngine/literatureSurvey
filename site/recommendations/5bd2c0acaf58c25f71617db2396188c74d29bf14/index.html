@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-11-03 06:13:23 UTC</i>
+  <i class="footer">This page was last updated on 2025-11-10 06:12:52 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -476,16 +476,16 @@
   </thead>
   <tbody>
 
-        <tr id="Unsupervised Domain Adaptation (UDA) aims to harness labeled source data to train models for unlabeled target data. Despite extensive research in domains like computer vision and natural language processing, UDA remains underexplored for time series data, which has widespread real-world applications ranging from medicine and manufacturing to earth observation and human activity recognition. Our paper addresses this gap by introducing a comprehensive benchmark for evaluating UDA techniques for time series classification, with a focus on deep learning methods. We provide seven new benchmark datasets covering various domain shifts and temporal dynamics, facilitating fair and standardized UDA method assessments with state of the art neural network backbones (e.g. Inception) for time series data. This benchmark offers insights into the strengths and limitations of the evaluated approaches while preserving the unsupervised nature of domain adaptation, making it directly applicable to practical problems. Our paper serves as a vital resource for researchers and practitioners, advancing domain adaptation solutions for time series data and fostering innovation in this critical field. The implementation code of this benchmark is available at https://github.com/EricssonResearch/UDA-4-TSC.">
+        <tr id="None">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/0f5f7b22ebc4dbbb2a0d3ba1e19e4659a7b0bcb5" target='_blank'>Deep Unsupervised Domain Adaptation for Time Series Classification: a Benchmark</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/5626e81a7fbeae8f31d04d59f95fcab64b2fc6de" target='_blank'>Domain adaptation of time series via contrastive learning with task-specific consistency</a></td>
           <td>
-            Hassan Ismail Fawaz, Ganesh Del Grosso, Tanguy Kerdoncuff, Aurélie Boisbunon, Illyyne Saffar
+            Tao Wu, Qiushu Chen, Dongfang Zhao, Jinhua Wang, Linhua Jiang
           </td>
-          <td>2023-12-15</td>
-          <td>ArXiv</td>
+          <td>2024-09-20</td>
+          <td>Applied Intelligence</td>
+          <td>3</td>
           <td>2</td>
-          <td>5</td>
         </tr>
 
         <tr id="Unsupervised domain adaptation (UDA) is becoming a prominent solution for the domain-shift problem in many time-series classification tasks. With sequence properties, time-series data contain both local and sequential features, and the domain shift exists in both features. However, conventional UDA methods usually cannot distinguish those two features but mix them into one variable for direct alignment, which harms the performance. To address this problem, we propose a novel virtual-label-based hierarchical domain adaptation (VLH-DA) approach for time-series classification. Specifically, we first slice the original time-series data and introduce virtual labels to represent the type of each slice (called local patterns). With the help of virtual labels, we decompose the end-to-end (i.e., signal to time-series label) time-series task into two parts, i.e., signal sequence to local pattern sequence and local pattern sequence to time-series label. By decomposing the complex time-series UDA task into two simpler subtasks, the local features and sequential features can be aligned separately, making it easier to mitigate distribution discrepancies. Experiments on four public time-series datasets demonstrate that our VLH-DA outperforms all state-of-the-art (SOTA) methods.">
@@ -497,7 +497,7 @@
           <td>2024-08-28</td>
           <td>IEEE Transactions on Neural Networks and Learning Systems</td>
           <td>1</td>
-          <td>18</td>
+          <td>19</td>
         </tr>
 
         <tr id="Deep learning models have significantly improved the ability to detect novelties in time series (TS) data. This success is attributed to their strong representation capabilities. However, due to the inherent variability in TS data, these models often struggle with generalization and robustness. To address this, a common approach is to perform Unsupervised Domain Adaptation, particularly Universal Domain Adaptation (UniDA), to handle domain shifts and emerging novel classes. While extensively studied in computer vision, UniDA remains underexplored for TS data. This work provides a comprehensive implementation and comparison of state-of-the-art TS backbones in a UniDA framework. We propose a reliable protocol to evaluate their robustness and generalization across different domains. The goal is to provide practitioners with a framework that can be easily extended to incorporate future advancements in UniDA and TS architectures. Our results highlight the critical influence of backbone selection in UniDA performance and enable a robustness analysis across various datasets and architectures.">
@@ -512,6 +512,18 @@
           <td>2</td>
         </tr>
 
+        <tr id="Unsupervised Domain Adaptation (UDA) aims to harness labeled source data to train models for unlabeled target data. While research in UDA is extensive in domains like computer vision and natural language processing, it remains under-explored for time series data despite its widespread real-world applications. Our paper addresses this gap by introducing a comprehensive benchmark for evaluating UDA techniques for time series classification, with a focus on deep learning methods. We provide a fair and standardized UDA method assessment with state of the art neural network backbones (e.g. Inception) for time series data, as well as seven extra datasets in addition to the already established ones. This benchmark offers insights into the strengths and limitations of the evaluated approaches while preserving the unsupervised nature of DA, making it directly applicable to real data mining problems. It serves as a beneficial resource for researchers and practitioners, fostering innovation in this critical field. In order to ensure reproducibility, the code and results have been open-sourced.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/0f5f7b22ebc4dbbb2a0d3ba1e19e4659a7b0bcb5" target='_blank'>Deep unsupervised domain adaptation for time series classification: a benchmark</a></td>
+          <td>
+            Hassan Ismail Fawaz, Ganesh Del Grosso, Tanguy Kerdoncuff, Aurélie Boisbunon, Illyyne Saffar
+          </td>
+          <td>2023-12-15</td>
+          <td>Data Mining and Knowledge Discovery</td>
+          <td>2</td>
+          <td>5</td>
+        </tr>
+
         <tr id="Unsupervised domain adaptation methods aim at generalizing well on unlabeled test data that may have a different (shifted) distribution from the training data. Such methods are typically developed on image data, and their application to time series data is less explored. Existing works on time series domain adaptation suffer from inconsistencies in evaluation schemes, datasets, and backbone neural network architectures. Moreover, labeled target data are often used for model selection, which violates the fundamental assumption of unsupervised domain adaptation. To address these issues, we develop a benchmarking evaluation suite (AdaTime) to systematically and fairly evaluate different domain adaptation methods on time series data. Specifically, we standardize the backbone neural network architectures and benchmarking datasets, while also exploring more realistic model selection approaches that can work with no labeled data or just a few labeled samples. Our evaluation includes adapting state-of-the-art visual domain adaptation methods to time series data as well as the recent methods specifically developed for time series data. We conduct extensive experiments to evaluate 11 state-of-the-art methods on five representative datasets spanning 50 cross-domain scenarios. Our results suggest that with careful selection of hyper-parameters, visual domain adaptation methods are competitive with methods proposed for time series domain adaptation. In addition, we find that hyper-parameters could be selected based on realistic model selection approaches. Our work unveils practical insights for applying domain adaptation methods on time series data and builds a solid foundation for future works in the field. The code is available at github.com/emadeldeen24/AdaTime.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/4fce5494c4c00fbf0cabab2744d024d0f8039007" target='_blank'>ADATIME: A Benchmarking Suite for Domain Adaptation on Time Series Data</a></td>
@@ -520,7 +532,7 @@
           </td>
           <td>2022-03-15</td>
           <td>ACM Transactions on Knowledge Discovery from Data</td>
-          <td>82</td>
+          <td>85</td>
           <td>45</td>
         </tr>
 
@@ -556,7 +568,7 @@
           </td>
           <td>2024-09-12</td>
           <td>IEEE Transactions on Knowledge and Data Engineering</td>
-          <td>1</td>
+          <td>4</td>
           <td>9</td>
         </tr>
 
@@ -570,18 +582,6 @@
           <td>ArXiv</td>
           <td>1</td>
           <td>2</td>
-        </tr>
-
-        <tr id="Domain generalization methods aim to learn models robust to domain shift with data from a limited number of source domains and without access to target domain samples during training. Popular domain alignment methods for domain generalization seek to extract domain-invariant features by minimizing the discrepancy between feature distributions across all domains, disregarding inter-domain relationships. In this paper, we instead propose a novel representation learning methodology that selectively enforces prediction consistency between source domains estimated to be closely-related. Specifically, we hypothesize that domains share different class-informative representations, so instead of aligning all domains which can cause negative transfer, we only regularize the discrepancy between closely-related domains. We apply our method to time-series classification tasks and conduct comprehensive experiments on three public real-world datasets. Our method significantly improves over the baseline and achieves better or competitive performance in comparison with state-of-the-art methods in terms of both accuracy and model calibration.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/4a1938c9fd3db160a34b8673afd6ba51f8c151f6" target='_blank'>Domain Generalization via Selective Consistency Regularization for Time Series Classification</a></td>
-          <td>
-            Wenyu Zhang, Mohamed Ragab, Chuan-Sheng Foo
-          </td>
-          <td>2022-06-16</td>
-          <td>2022 26th International Conference on Pattern Recognition (ICPR)</td>
-          <td>2</td>
-          <td>26</td>
         </tr>
 
   </tbody>

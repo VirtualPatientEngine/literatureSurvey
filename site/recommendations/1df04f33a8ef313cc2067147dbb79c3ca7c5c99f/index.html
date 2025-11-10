@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-11-03 06:12:47 UTC</i>
+  <i class="footer">This page was last updated on 2025-11-10 06:12:48 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -496,8 +496,8 @@
           </td>
           <td>2024-02-13</td>
           <td>Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</td>
-          <td>96</td>
-          <td>10</td>
+          <td>100</td>
+          <td>12</td>
         </tr>
 
         <tr id="Graph Neural Networks (GNNs) have shown great success in various graph-based learning tasks. However, it often faces the issue of over-smoothing as the model depth increases, which causes all node representations to converge to a single value and become indistinguishable. This issue stems from the inherent limitations of GNNs, which struggle to distinguish the importance of information from different neighborhoods. In this paper, we introduce MbaGCN, a novel graph convolutional architecture that draws inspiration from the Mamba paradigm—originally designed for sequence modeling. MbaGCN presents a new backbone for GNNs, consisting of three key components: the Message Aggregation Layer, the Selective State Space Transition Layer, and the Node State Prediction Layer. These components work in tandem to adaptively aggregate neighborhood information, providing greater flexibility and scalability for deep GNN models. While MbaGCN may not consistently outperform all existing methods on each dataset, it provides a foundational framework that demonstrates the effective integration of the Mamba paradigm into graph representation learning. Through extensive experiments on benchmark datasets, we demonstrate that MbaGCN paves the way for future advancements in graph neural network research. Our code is in https://github.com/hexin5515/MbaGCN.">
@@ -507,8 +507,8 @@
             Xingbo He, Yili Wang, Wenqi Fan, Xu Shen, Xin Juan, Rui Miao, Xin Wang
           </td>
           <td>2025-01-26</td>
-          <td>DBLP, ArXiv</td>
-          <td>3</td>
+          <td>ArXiv, DBLP</td>
+          <td>4</td>
           <td>5</td>
         </tr>
 
@@ -522,6 +522,18 @@
           <td>ArXiv</td>
           <td>15</td>
           <td>10</td>
+        </tr>
+
+        <tr id="Graphs model latent variable relationships in many real-world systems, and Message Passing Neural Networks (MPNNs) are widely used to learn such structures for downstream tasks. While edge-based MPNNs effectively capture local interactions, their expressive power is theoretically bounded, limiting the discovery of higher-order relationships. We introduce the Higher-Order Graph Attention (HoGA) module, which constructs a k-order attention matrix by sampling subgraphs to maximize diversity among feature vectors. Unlike existing higher-order attention methods that greedily resample similar k-order relationships, HoGA targets diverse modalities in higher-order topology, reducing redundancy and expanding the range of captured substructures. Applied to two single-hop attention models, HoGA achieves at least a 5% accuracy gain on all benchmark node classification datasets and outperforms recent baselines on six of eight datasets. Code is available at https://github.com/TB862/Higher_Order.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/433d75dcce202c058e23549ba3a504b3ef1a0f51" target='_blank'>HoGA: Higher-Order Graph Attention via Diversity-Aware k-Hop Sampling</a></td>
+          <td>
+            Thomas Bailie, Yun Sing Koh, Karthik Mukkavilli
+          </td>
+          <td>2024-11-18</td>
+          <td>ArXiv</td>
+          <td>1</td>
+          <td>1</td>
         </tr>
 
         <tr id="Machine learning on graphs has recently found extensive applications across domains. However, the commonly used Message Passing Neural Networks (MPNNs) suffer from limited expressive power and struggle to capture long-range dependencies. Graph transformers offer a strong alternative due to their global attention mechanism, but they come with great computational overheads, especially for large graphs. In recent years, State Space Models (SSMs) have emerged as a compelling approach to replace full attention in transformers to model sequential data. It blends the strengths of RNNs and CNNs, offering a) efficient computation, b) the ability to capture long-range dependencies, and c) good generalization across sequences of various lengths. However, extending SSMs to graph-structured data presents unique challenges due to the lack of canonical node ordering in graphs. In this work, we propose Graph State Space Convolution (GSSC) as a principled extension of SSMs to graph-structured data. By leveraging global permutation-equivariant set aggregation and factorizable graph kernels that rely on relative node distances as the convolution kernels, GSSC preserves all three advantages of SSMs. We demonstrate the provably stronger expressiveness of GSSC than MPNNs in counting graph substructures and show its effectiveness across 11 real-world, widely used benchmark datasets. GSSC achieves the best results on 6 out of 11 datasets with all significant improvements compared to the state-of-the-art baselines and second-best results on the other 5 datasets. Our findings highlight the potential of GSSC as a powerful and scalable model for graph machine learning. Our code is available at https://github.com/Graph-COM/GSSC.">
@@ -558,18 +570,6 @@
           <td>ArXiv</td>
           <td>2</td>
           <td>7</td>
-        </tr>
-
-        <tr id="Transformer-based models have recently shown success in representation learning on graph-structured data beyond natural language processing and computer vision. However, the success is limited to small-scale graphs due to the drawbacks of full dot-product attention on graphs such as the <italic>quadratic</italic> complexity with respect to the number of nodes and message aggregation from enormous <italic>irrelevant</italic> nodes. To address these issues, we propose Deformable Graph Transformer (DGT) that performs sparse attention via dynamically selected <italic>relevant</italic> nodes for efficiently handling large-scale graphs with a <italic>linear</italic> complexity in the number of nodes. Specifically, our framework first constructs multiple node sequences with various criteria to consider both structural and semantic proximity. Then, combining with our learnable Katz Positional Encodings, the sparse attention is applied to the node sequences for learning node representations with a significantly reduced computational cost. Extensive experiments demonstrate that our DGT achieves superior performance on 7 graph benchmark datasets with 2.5 <inline-formula><tex-math notation="LaTeX">$\sim$</tex-math><alternatives><mml:math><mml:mo>∼</mml:mo></mml:math><inline-graphic xlink:href="kim-ieq1-3550281.gif"/></alternatives></inline-formula> 449 times less computational cost compared to transformer-based graph models with full attention.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/1fb264b21eaf9046387ffddd7a8bf5262674682c" target='_blank'>Deformable Graph Transformer</a></td>
-          <td>
-            Jinyoung Park, Seongjun Yun, Hyeon-ju Park, Jaewoo Kang, Jisu Jeong, KyungHyun Kim, Jung-Woo Ha, Hyunwoo J. Kim
-          </td>
-          <td>2022-06-29</td>
-          <td>IEEE Transactions on Pattern Analysis and Machine Intelligence</td>
-          <td>9</td>
-          <td>31</td>
         </tr>
 
   </tbody>

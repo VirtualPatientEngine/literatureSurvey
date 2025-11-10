@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-11-03 06:12:46 UTC</i>
+  <i class="footer">This page was last updated on 2025-11-10 06:12:47 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -484,7 +484,7 @@
           </td>
           <td>2024-03-12</td>
           <td>ArXiv</td>
-          <td>361</td>
+          <td>382</td>
           <td>19</td>
         </tr>
 
@@ -497,7 +497,7 @@
           <td>2025-05-31</td>
           <td>ArXiv</td>
           <td>1</td>
-          <td>7</td>
+          <td>8</td>
         </tr>
 
         <tr id="Time series prediction poses a significant challenge in statistics and artificial intelligence, drawing considerable attention and sparking extensive research. The complexity of patterns within such data makes it challenging for many models to learn effectively. Additionally, the limited availability of time series data hinders the use of high-capacity models like deep neural networks, which are prone to overfitting with sparse data. To overcome this limitation, simpler models such as ARIMA or SARIMA are often employed, proving effective despite their straightforward nature. Another data category with similarities to time series is textual data, where neural network models have recently shown promise. In this realm, models pretrained for specific tasks and fine-tuned for others have demonstrated excellent results even with limited data or computational resources. This study addresses the time series prediction challenge by introducing llama-time, leveraging the capabilities of the llama 2 language model. Through fine-tuning for time series prediction, our approach yields favorable results on previously unseen data. Consequently, our model functions as a zero-shot learner, proficient in predicting various time series data without prior exposure or assumptions about underlying patterns.">
@@ -520,8 +520,20 @@
           </td>
           <td>2024-02-04</td>
           <td>ArXiv</td>
-          <td>54</td>
-          <td>76</td>
+          <td>59</td>
+          <td>77</td>
+        </tr>
+
+        <tr id="While large language models (LLMs) have demonstrated remarkable potential in time series forecasting, their practical deployment remains constrained by excessive computational demands and memory footprints. Existing LLM-based methods typically suffer from three critical limitations: (1) inefficient parameter utilization in handling numerical time series patterns; (2) modality misalignment between continuous temporal signals and discrete text embeddings; and (3) inflexibility for real-time expert knowledge integration. We present small but mighty enhancing time series (SMETimes), the first systematic investigation of small language models with sub-3B parameters (SLM) for efficient and accurate time series forecasting. Our method centers on three key innovations: (1) a statistically enhanced prompt structure that bridges numerical time series with textual semantics through descriptive statistical features; (2) an adaptive fusion embedding structure that aligns temporal patterns with language model token spaces through learnable parameters; and (3) a dynamic mixture-of-experts structure enabled by SLMs’ computational efficiency, adaptively combining base predictions with domain-specific models. Extensive evaluations across seven benchmark datasets (ETTh1/2, ETTm1/2, Weather, Solar, ECL) demonstrate that our 3B-parameter SLM achieves state-of-the-art performance on five primary datasets while maintaining 3.8×\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\times$$\end{document} faster training and 5.2×\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\times$$\end{document} lower memory consumption compared to 7B-parameter LLM baselines. In particular, the proposed model exhibits better learning capabilities, achieving 12.3% lower MSE than conventional LLM. Ablation studies validate that our statistically enhanced prompt structure and adaptive fusion embedding structure contribute, respectively, to the reduction of 15.7% and 18.2% errors in long-horizon forecasting tasks. By redefining the efficiency-accuracy trade-off landscape, this work establishes SLMs as viable alternatives to resource-intensive LLMs for practical time series forecasting. The code and models are available at https://github.com/xiyan1234567/SMETimes.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/3c15c797dc9b2d870abf4aa272e022c46a9e2273" target='_blank'>Small but mighty: enhancing time series forecasting with lightweight LLMs</a></td>
+          <td>
+            Haoran Fan, Bin Li, Yixuan Weng, Shoujun Zhou
+          </td>
+          <td>2025-03-05</td>
+          <td>The Journal of Supercomputing</td>
+          <td>0</td>
+          <td>10</td>
         </tr>
 
         <tr id="This research examines the use of Large Language Models (LLMs) in predicting time series, with a specific focus on the LLMTIME model. Despite the established effectiveness of LLMs in tasks such as text generation, language translation, and sentiment analysis, this study highlights the key challenges that large language models encounter in the context of time series prediction. We assess the performance of LLMTIME across multiple datasets and introduce classical almost periodic functions as time series to gauge its effectiveness. The empirical results indicate that while large language models can perform well in zero-shot forecasting for certain datasets, their predictive accuracy diminishes notably when confronted with diverse time series data and traditional signals. The primary finding of this study is that the predictive capacity of LLMTIME, similar to other LLMs, significantly deteriorates when dealing with time series data that contain both periodic and trend components, as well as when the signal comprises complex frequency components.">
@@ -532,8 +544,8 @@
           </td>
           <td>2024-08-09</td>
           <td>2024 IEEE International Conference on Future Machine Learning and Data Science (FMLDS)</td>
+          <td>7</td>
           <td>5</td>
-          <td>4</td>
         </tr>
 
         <tr id="Using pre-trained large language models (LLMs) as the backbone for time series prediction has recently gained significant research interest. However, the effectiveness of LLM backbones in this domain remains a topic of debate. Based on thorough empirical analyses, we observe that training and testing LLM-based models on small datasets often leads to the Encoder and Decoder becoming overly adapted to the dataset, thereby obscuring the true predictive capabilities of the LLM backbone. To investigate the genuine potential of LLMs in time series prediction, we introduce three pre-training models with identical architectures but different pre-training strategies. Thereby, large-scale pre-training allows us to create unbiased Encoder and Decoder components tailored to the LLM backbone. Through controlled experiments, we evaluate the zero-shot and few-shot prediction performance of the LLM, offering insights into its capabilities. Extensive experiments reveal that although the LLM backbone demonstrates some promise, its forecasting performance is limited. Our source code is publicly available in the anonymous repository: https://anonymous.4open.science/r/LLM4TS-0B5C.">
@@ -544,7 +556,7 @@
           </td>
           <td>2025-04-09</td>
           <td>ArXiv</td>
-          <td>0</td>
+          <td>1</td>
           <td>14</td>
         </tr>
 
@@ -556,7 +568,7 @@
           </td>
           <td>2024-06-22</td>
           <td>ArXiv</td>
-          <td>132</td>
+          <td>137</td>
           <td>9</td>
         </tr>
 
@@ -568,21 +580,6 @@
           </td>
           <td>2024-12-16</td>
           <td>ArXiv</td>
-          <td>0</td>
-          <td>7</td>
-        </tr>
-
-        <tr id="Encoding time series into tokens and using language models for processing has been shown to substantially augment the models' ability to generalize to unseen tasks. 
-However, existing language models for time series forecasting encounter several obstacles, including aliasing distortion and prolonged inference times, primarily due to the limitations of quantization processes and the computational demands of large models.
-This paper introduces Apollo-Forecast, a novel framework that tackles these challenges with two key innovations: the Anti-Aliasing Quantization Module (AAQM) and the Race Decoding (RD) technique. AAQM adeptly encodes sequences into tokens while mitigating high-frequency noise in the original signals, thus enhancing both signal fidelity and overall quantization efficiency. RD employs a draft model to enable parallel processing and results integration, which markedly accelerates the inference speed for long-term predictions, particularly in large-scale models. 
-Extensive experiments on various real-world datasets show that Apollo-Forecast outperforms state-of-the-art methods by 35.41% and 18.99% in WQL and MASE metrics, respectively, in zero-shot scenarios. Furthermore, our method achieves an acceleration of 1.9X-2.7X in inference speed over the baseline methods.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/40de3280154a9567664fd5d4d427f52b8f02e110" target='_blank'>Apollo-Forecast: Overcoming Aliasing and Inference Speed Challenges in Language Models for Time Series Forecasting</a></td>
-          <td>
-            Tianyi Yin, Jingwei Wang, Yunlong Ma, Han Wang, Chenze Wang, Yukai Zhao, Min Liu, Weiming Shen
-          </td>
-          <td>2025-04-11</td>
-          <td>DBLP</td>
           <td>0</td>
           <td>7</td>
         </tr>

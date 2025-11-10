@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-11-03 06:14:16 UTC</i>
+  <i class="footer">This page was last updated on 2025-11-10 06:13:11 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -484,8 +484,8 @@
           </td>
           <td>2019-06-25</td>
           <td>IEEE Access</td>
-          <td>137</td>
-          <td>74</td>
+          <td>144</td>
+          <td>75</td>
         </tr>
 
         <tr id="Energy conservation is a basic physics principle, the breakdown of which often implies new physics. This paper presents a method for data-driven "new physics" discovery. Specifically, given a trajectory governed by unknown forces, our neural new-physics detector (NNPhD) aims to detect new physics by decomposing the force field into conservative and nonconservative components, which are represented by a Lagrangian neural network (LNN) and an unconstrained neural network, respectively, trained to minimize the force recovery error plus a constant λ times the magnitude of the predicted nonconservative force. We show that a phase transition occurs at λ=1, universally for arbitrary forces. We demonstrate that NNPhD successfully discovers new physics in toy numerical experiments, rediscovering friction (1493) from a damped double pendulum, Neptune from Uranus' orbit (1846), and gravitational waves (2017) from an inspiraling orbit. We also show how NNPhD coupled with an integrator outperforms both an LNN and an unconstrained neural network for predicting the future of a damped double pendulum.">
@@ -496,8 +496,20 @@
           </td>
           <td>2021-05-31</td>
           <td>Physical review. E</td>
-          <td>17</td>
+          <td>19</td>
           <td>89</td>
+        </tr>
+
+        <tr id="Current limitations in human scientific discovery necessitate a new research paradigm. While advances in artificial intelligence (AI) offer a highly promising solution, enabling AI to emulate human-like scientific discovery remains an open challenge. To address this, we propose AI-Newton, a concept-driven discovery system capable of autonomously deriving physical laws from raw data -- without supervision or prior physical knowledge. The system integrates a knowledge base and knowledge representation centered on physical concepts, along with an autonomous discovery workflow. As a proof of concept, we apply AI-Newton to a large set of Newtonian mechanics problems. Given experimental data with noise, the system successfully rediscovers fundamental laws, including Newton's second law, energy conservation and law of gravitation, using autonomously defined concepts. This achievement marks a significant step toward AI-driven autonomous scientific discovery.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/0a80464770695035db907314b2f4d50f67dd2208" target='_blank'>AI-Newton: A Concept-Driven Physical Law Discovery System without Prior Physical Knowledge</a></td>
+          <td>
+            Youyuan Fang, Dong-Shan Jian, Xiang Li, Yan-Qing Ma
+          </td>
+          <td>2025-04-02</td>
+          <td>ArXiv</td>
+          <td>1</td>
+          <td>2</td>
         </tr>
 
         <tr id="Invariants and conservation laws convey critical information about the underlying dynamics of a system, yet it is generally infeasible to find them from large-scale data without any prior knowledge or human insight. We propose ConservNet to achieve this goal, a neural network that spontaneously discovers a conserved quantity from grouped data where the members of each group share invariants, similar to a general experimental setting where trajectories from different trials are observed. As a neural network trained with a novel and intuitive loss function called noise-variance loss, ConservNet learns the hidden invariants in each group of multi-dimensional observables in a data-driven, end-to-end manner. Our model successfully discovers underlying invariants from the simulated systems having invariants as well as a real-world double pendulum trajectory. Since the model is robust to various noises and data conditions compared to baseline, our approach is directly applicable to experimental data for discovering hidden conservation laws and further, general relationships between variables.">
@@ -532,7 +544,7 @@
           </td>
           <td>2023-05-31</td>
           <td>2023 American Control Conference (ACC)</td>
-          <td>49</td>
+          <td>54</td>
           <td>41</td>
         </tr>
 
@@ -543,7 +555,7 @@
             Philipp Holl, V. Koltun, Nils Thuerey
           </td>
           <td>2021-09-30</td>
-          <td>DBLP, ArXiv</td>
+          <td>ArXiv, DBLP</td>
           <td>9</td>
           <td>112</td>
         </tr>
@@ -556,8 +568,8 @@
           </td>
           <td>2022-02-17</td>
           <td>Communications Physics</td>
+          <td>38</td>
           <td>37</td>
-          <td>36</td>
         </tr>
 
         <tr id="We present AI Poincaré, a machine learning algorithm for autodiscovering conserved quantities using trajectory data from unknown dynamical systems. We test it on five Hamiltonian systems, including the gravitational three-body problem, and find that it discovers not only all exactly conserved quantities, but also periodic orbits, phase transitions, and breakdown timescales for approximate conservation laws.">
@@ -568,7 +580,7 @@
           </td>
           <td>2021-05-06</td>
           <td>Physical review letters</td>
-          <td>121</td>
+          <td>128</td>
           <td>85</td>
         </tr>
 
@@ -582,18 +594,6 @@
           <td>Nature Computational Science</td>
           <td>1</td>
           <td>17</td>
-        </tr>
-
-        <tr id="Big data is transforming scientific progress by enabling the discovery of novel models, enhancing existing frameworks, and facilitating precise uncertainty quantification, while advancements in scientific machine learning complement this by providing powerful tools to solve inverse problems to identify the complex systems where traditional methods falter due to sparse or noisy data. We introduce two innovative neural operator frameworks tailored for discovering hidden physics and identifying unknown system parameters from sparse measurements. The first framework integrates a popular neural operator, DeepONet, and a physics-informed neural network to capture the relationship between sparse data and the underlying physics, enabling the accurate discovery of a family of governing equations. The second framework focuses on system parameter identification, leveraging a DeepONet pre-trained on sparse sensor measurements to initialize a physics-constrained inverse model. Both frameworks excel in handling limited data and preserving physical consistency. Benchmarking on the Burgers' equation and reaction-diffusion system demonstrates state-of-the-art performance, achieving average $L_2$ errors of $\mathcal{O}(10^{-2})$ for hidden physics discovery and absolute errors of $\mathcal{O}(10^{-3})$ for parameter identification. These results underscore the frameworks' robustness, efficiency, and potential for solving complex scientific problems with minimal observational data.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/fac52e25998ecb2657489d5358e6d0ca9064f2f7" target='_blank'>Learning Hidden Physics and System Parameters with Deep Operator Networks</a></td>
-          <td>
-            Vijay Kag, Dibakar Roy Sarkar, Birupaksha Pal, Somdatta Goswami
-          </td>
-          <td>2024-12-06</td>
-          <td>ArXiv</td>
-          <td>4</td>
-          <td>3</td>
         </tr>
 
   </tbody>
