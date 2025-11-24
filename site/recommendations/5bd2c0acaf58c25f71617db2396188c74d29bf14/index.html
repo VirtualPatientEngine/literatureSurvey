@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-11-17 06:12:39 UTC</i>
+  <i class="footer">This page was last updated on 2025-11-24 06:12:30 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -507,9 +507,9 @@
             Romain Mussard, Fannia Pacheco, Maxime Berar, Gilles Gasso, Paul Honeine
           </td>
           <td>2025-05-23</td>
-          <td>ArXiv</td>
+          <td>2025 33rd European Signal Processing Conference (EUSIPCO)</td>
           <td>0</td>
-          <td>2</td>
+          <td>3</td>
         </tr>
 
         <tr id="Unsupervised Domain Adaptation (UDA) aims to harness labeled source data to train models for unlabeled target data. While research in UDA is extensive in domains like computer vision and natural language processing, it remains under-explored for time series data despite its widespread real-world applications. Our paper addresses this gap by introducing a comprehensive benchmark for evaluating UDA techniques for time series classification, with a focus on deep learning methods. We provide a fair and standardized UDA method assessment with state of the art neural network backbones (e.g. Inception) for time series data, as well as seven extra datasets in addition to the already established ones. This benchmark offers insights into the strengths and limitations of the evaluated approaches while preserving the unsupervised nature of DA, making it directly applicable to real data mining problems. It serves as a beneficial resource for researchers and practitioners, fostering innovation in this critical field. In order to ensure reproducibility, the code and results have been open-sourced.">
@@ -532,8 +532,8 @@
           </td>
           <td>2022-03-15</td>
           <td>ACM Transactions on Knowledge Discovery from Data</td>
-          <td>87</td>
-          <td>45</td>
+          <td>88</td>
+          <td>46</td>
         </tr>
 
         <tr id="Domain adaptation is challenging for time series classification due to the highly dynamic nature. This study tackles the most difficult subtask when both target labels and source data are inaccessible, namely, source-free domain adaptation. To reuse the classification backbone pre-trained on source data, time series reconstruction is a sound solution that aligns target and source time series by minimizing the reconstruction errors of both. However, simply fine-tuning the source pre-trained reconstruction model on target data may lose the learnt priori, and it struggles to accommodate domain varying temporal patterns in a single encoder-decoder. Therefore, this paper tries to disentangle the composition of domain transferability by using a compositional architecture for time series reconstruction. Here, the preceding component is a U-net frozen since pre-trained, the output of which during adaptation is the initial reconstruction of a given target time series, acting as a coarse step to prompt the subsequent finer adaptation. The following pipeline for finer adaptation includes two parallel branches: The source replay branch using a residual link to preserve the output of U-net, and the offset compensation branch that applies an additional autoencoder (AE) to further warp U-net's output. By deploying a learnable factor on either branch to scale their composition in the final output of reconstruction, the data transferability is disentangled and the learnt reconstructive capability from source data is retained. During inference, aside from the batch-level optimization in the training, we search at test time stability-aware rescaling of source replay branch to tolerate instance-wise variation. The experimental results show that such compositional architecture of time series reconstruction leads to SOTA performance on 3 widely used benchmarks.">
