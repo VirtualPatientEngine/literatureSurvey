@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-11-24 06:12:45 UTC</i>
+  <i class="footer">This page was last updated on 2025-12-01 06:13:39 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -475,6 +475,18 @@
     </tr>
   </thead>
   <tbody>
+
+        <tr id="Many dynamical systems of interest are nonlinear, with examples in turbulence, epidemiology, neuroscience, and finance, making them difficult to control using linear approaches. Model predictive control (MPC) is a powerful model-based optimization technique that enables the control of such nonlinear systems with constraints. However, modern systems often lack computationally tractable models, motivating the use of system identification techniques to learn accurate and efficient models for real-time control. In this tutorial article, we review emerging data-driven methods for model discovery and how they are used for nonlinear MPC. In particular, we focus on the sparse identification of nonlinear dynamics (SINDy) algorithm and show how it may be used with MPC on an infectious disease control example. We compare the performance against MPC based on a linear dynamic mode decomposition (DMD) model. Code is provided to run the tutorial examples and may be modified to extend this data-driven control framework to arbitrary nonlinear systems.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/700552dde778bd1f6b76f7237e9b561597b859ba" target='_blank'>SINDy with Control: A Tutorial</a></td>
+          <td>
+            Urban Fasel, E. Kaiser, J. Kutz, Bingni W. Brunton, S. Brunton
+          </td>
+          <td>2021-08-30</td>
+          <td>2021 60th IEEE Conference on Decision and Control (CDC)</td>
+          <td>82</td>
+          <td>76</td>
+        </tr>
 
         <tr id="Machine learning is rapidly advancing nearly every field of science and engineering, and control theory is no exception. In particular, it has shown incredible promise for handling several of the main challenges facing modern dynamics and control, including complexity, unmodeled dynamics, strong nonlinearity, and hidden variables. However, machine learning models are often expensive to train and deploy, fail to generalize beyond the training data, and suffer from a lack of explainability, interpretability, and guarantees, all of which limit their use in real-world and safety-critical control applications. Sparse nonlinear modeling and control techniques are a powerful class of machine learning that promote parsimony through sparse optimization, providing data-efficient models that are more interpretable and generalizable and have proven effective for control. In this review, we explore the use of sparse optimization in the context of machine learning to develop compact models and controllers that are easy to train, require significantly less data, and make low-latency predictions. In particular, we focus on applications in model predictive control and reinforcement learning, two of the foundational algorithms in control theory.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
@@ -532,7 +544,7 @@
           </td>
           <td>2020-04-05</td>
           <td>Proceedings. Mathematical, Physical, and Engineering Sciences</td>
-          <td>305</td>
+          <td>307</td>
           <td>76</td>
         </tr>
 
@@ -560,16 +572,16 @@
           <td>2</td>
         </tr>
 
-        <tr id="The sparse identification of nonlinear dynamics (SINDy) approach can discover the governing equations of dynamical systems based on measurement data, where the dynamical model is identified as the sparse linear combination of the given basis functions. A major challenge in SINDy is the design of a library, which is a set of candidate basis functions, as the appropriate library is not trivial for many dynamical systems. To overcome this difficulty, this study proposes SINDy with library optimization mechanism (SINDy-LOM), which is a combination of the sparse regression technique and the novel learning strategy of the library. In the proposed approach, the basis functions are parametrized. The SINDy-LOM approach involves a two-layer optimization architecture: the inner-layer, in which the data-driven model is extracted as the sparse linear combination of the candidate basis functions, and the outer-layer, in which the basis functions are optimized from the viewpoint of the recursive long-term (RLT) prediction accuracy; thus, the library design is reformulated as the optimization of the parametrized basis functions. The resulting SINDy-LOM model has good interpretability and usability, as the proposed approach yields the parsimonious model. The library optimization mechanism significantly reduces user burden. The RLT perspective improves the reliability of the resulting model compared with the traditional SINDy approach that can only ensure the one-step-ahead prediction accuracy. The validity of the proposed approach is demonstrated by applying it to a diesel engine airpath system, which is a well-known complex industrial system.">
+        <tr id="Learning governing equations from data is central to understanding the behavior of physical systems across diverse scientific disciplines, including physics, biology, and engineering. The Sindy algorithm has proven effective in leveraging sparsity to identify concise models of nonlinear dynamical systems. In this paper, we extend sparsity-driven approaches to real-time learning by integrating a cornerstone algorithm from control theory -- the Kalman filter (KF). The resulting Sindy Kalman Filter (SKF) unifies both frameworks by treating unknown system parameters as state variables, enabling real-time inference of complex, time-varying nonlinear models unattainable by either method alone. Furthermore, SKF enhances KF parameter identification strategies, particularly via look-ahead error, significantly simplifying the estimation of sparsity levels, variance parameters, and switching instants. We validate SKF on a chaotic Lorenz system with drifting or switching parameters and demonstrate its effectiveness in the real-time identification of a sparse nonlinear aircraft model built from real flight data.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/b4caed623155c66f7152f6037191c53faf351c02" target='_blank'>Sparse identification of nonlinear dynamics with library optimization mechanism: Recursive long-term prediction perspective</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/d50f61ec047a0a24e2085fc8043077c49a8cfb95" target='_blank'>On-line learning of dynamic systems: sparse regression meets Kalman filtering</a></td>
           <td>
-            Ansei Yonezawa, Heisei Yonezawa, S. Yahagi, Itsuro Kajiwara, Shinya Kijimoto, Hikaru Taniuchi, Kentaro Murakami
+            G. Pillonetto, Akram Yazdani, A. Aravkin
           </td>
-          <td>2025-07-24</td>
+          <td>2025-11-14</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>11</td>
+          <td>59</td>
         </tr>
 
   </tbody>
