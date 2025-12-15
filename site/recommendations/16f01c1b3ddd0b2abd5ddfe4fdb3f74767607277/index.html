@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-12-08 06:13:27 UTC</i>
+  <i class="footer">This page was last updated on 2025-12-15 06:13:37 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -520,7 +520,7 @@
           </td>
           <td>2024-02-16</td>
           <td>ACM SIGKDD Explorations Newsletter</td>
-          <td>59</td>
+          <td>60</td>
           <td>16</td>
         </tr>
 
@@ -532,8 +532,20 @@
           </td>
           <td>2024-02-25</td>
           <td>ArXiv</td>
-          <td>56</td>
+          <td>57</td>
           <td>16</td>
+        </tr>
+
+        <tr id="Recent adaptations of Large Language Models (LLMs) for time series forecasting often fail to effectively enhance information for raw series, leaving LLM reasoning capabilities underutilized. Existing prompting strategies rely on static correlations rather than generative interpretations of dynamic behavior, lacking critical global and instance-specific context. To address this, we propose STELLA (Semantic-Temporal Alignment with Language Abstractions), a framework that systematically mines and injects structured supplementary and complementary information. STELLA employs a dynamic semantic abstraction mechanism that decouples input series into trend, seasonality, and residual components. It then translates intrinsic behavioral features of these components into Hierarchical Semantic Anchors: a Corpus-level Semantic Prior (CSP) for global context and a Fine-grained Behavioral Prompt (FBP) for instance-level patterns. Using these anchors as prefix-prompts, STELLA guides the LLM to model intrinsic dynamics. Experiments on eight benchmark datasets demonstrate that STELLA outperforms state-of-the-art methods in long- and short-term forecasting, showing superior generalization in zero-shot and few-shot settings. Ablation studies further validate the effectiveness of our dynamically generated semantic anchors.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/123e026135d13869a2b755a6d57d6457b0e77f50" target='_blank'>STELLA: Guiding Large Language Models for Time Series Forecasting with Semantic Abstractions</a></td>
+          <td>
+            Junjie Fan, Hongye Zhao, Linduo Wei, Jiayu Rao, Guijia Li, Jiaxin Yuan, Wenqi Xu, Yong Qi
+          </td>
+          <td>2025-12-04</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>1</td>
         </tr>
 
         <tr id="Large Language Models (LLMs) and Foundation Models (FMs) have recently become prevalent for time series forecasting tasks. While fine-tuning LLMs enables domain adaptation, they often struggle to generalize across diverse and unseen datasets. Moreover, existing Time Series Foundation Models (TSFMs) still face challenges in handling non-stationary dynamics and distribution shifts, largely due to the lack of effective mechanisms for adaptation. To this end, we present TS-RAG, a retrieval-augmented generation framework for time series forecasting that enhances the generalization and interpretability of TSFMs. Specifically, TS-RAG leverages pre-trained time series encoders to retrieve semantically relevant segments from a dedicated knowledge base, enriching the contextual representation of the input query. Furthermore, we propose an Adaptive Retrieval Mixer (ARM) module that dynamically fuses the retrieved patterns with the TSFM's internal representation, improving forecasting accuracy without requiring task-specific fine-tuning. Thorough empirical studies on seven public benchmark datasets demonstrate that TS-RAG achieves state-of-the-art zero-shot forecasting performance, outperforming the existing TSFMs by up to 6.84% across diverse domains while also providing desirable interpretability. Our code and data are available at: https://github.com/UConn-DSIS/TS-RAG">
@@ -544,7 +556,7 @@
           </td>
           <td>2025-03-06</td>
           <td>ArXiv</td>
-          <td>9</td>
+          <td>10</td>
           <td>16</td>
         </tr>
 
@@ -556,7 +568,7 @@
           </td>
           <td>2022-09-20</td>
           <td>IEEE Transactions on Knowledge and Data Engineering</td>
-          <td>248</td>
+          <td>250</td>
           <td>19</td>
         </tr>
 
@@ -570,18 +582,6 @@
           <td>ArXiv</td>
           <td>0</td>
           <td>15</td>
-        </tr>
-
-        <tr id="Multivariate time-series forecasting is vital in various domains, e.g., economic planning and weather prediction. Deep train-from-scratch models have exhibited effective performance yet require large amounts of data, which limits real-world applicability. Recently, researchers have leveraged the representation learning transferability of pre-trained Large Language Models (LLMs) to handle limited non-linguistic datasets effectively. However, incorporating LLMs with time-series data presents challenges of limited adaptation due to different compositions between time-series and linguistic data, and the inability to process multi-scale temporal information. To tackle these challenges, we propose LLM4TS, a framework for time-series forecasting with pre-trained LLMs. LLM4TS consists of a two-stage fine-tuning strategy: the time-series alignment stage to align LLMs with the nuances of time-series data and the forecasting fine-tuning stage for downstream time-series forecasting tasks. Furthermore, our framework features a novel two-level aggregation method that integrates multi-scale temporal data within pre-trained LLMs, enhancing their ability to interpret time-specific information. In experiments across seven time-series forecasting datasets, LLM4TS is superior to existing state-of-the-art methods compared with trained-from-scratch models in full-shot scenarios and also achieves the highest rank in few-shot scenarios. In addition, evaluations compared with different unsupervised representation learning approaches highlight LLM4TS’s effectiveness with representation learning in forecasting tasks. Ablation studies further validate each component’s contribution to LLM4TS and underscore the essential role of utilizing LLM’s pre-trained weights for optimal performance. The code is available at https://github.com/blacksnail789521/LLM4TS.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/663dc434fabc1cf1d3e85fff3f7ddcd313035d18" target='_blank'>LLM4TS: Aligning Pre-Trained LLMs as Data-Efficient Time-Series Forecasters</a></td>
-          <td>
-            Ching Chang, , Tien-Fu Chen
-          </td>
-          <td>2023-08-16</td>
-          <td>ACM Transactions on Intelligent Systems and Technology</td>
-          <td>112</td>
-          <td>4</td>
         </tr>
 
   </tbody>
