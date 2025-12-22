@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-12-15 06:13:35 UTC</i>
+  <i class="footer">This page was last updated on 2025-12-22 06:13:25 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -496,7 +496,7 @@
           </td>
           <td>2024-02-13</td>
           <td>Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining</td>
-          <td>105</td>
+          <td>107</td>
           <td>12</td>
         </tr>
 
@@ -507,7 +507,7 @@
             Xingbo He, Yili Wang, Wenqi Fan, Xu Shen, Xin Juan, Rui Miao, Xin Wang
           </td>
           <td>2025-01-26</td>
-          <td>DBLP, ArXiv</td>
+          <td>ArXiv, DBLP</td>
           <td>4</td>
           <td>5</td>
         </tr>
@@ -520,7 +520,7 @@
           </td>
           <td>2024-06-05</td>
           <td>ArXiv</td>
-          <td>18</td>
+          <td>19</td>
           <td>10</td>
         </tr>
 
@@ -548,18 +548,6 @@
           <td>6</td>
         </tr>
 
-        <tr id="Graph representation learning (GRL) is fundamental in multi-graph applications like molecular property prediction. Graph neural networks (GNNs) have emerged as a popular method for GRL. However, existing GRL methods primarily focus on designing GNN models with enhanced expressiveness while overlooking the memory efficiency of algorithms during training. The memory inefficiency problem is caused by a contextual constraint imposed on node representations, which requires each node to be context-dependent on its input graph. In this paper, we propose a novel method, called context sketching (COS), for memory-efficient graph representation learning in multi-graph scenarios. We first formally define the contextual constraint based on the enclosed $\infty-$hop subgraphs of nodes. Subsequently, we propose to relax the original contextual constraint by requiring each node to be context-dependent on its enclosed $k-$hop subgraph $(k \ll \infty)$ which is a contextual sketch of the enclosed $\infty$-hop subgraph. Lastly, we prove that COS constructs an optimal solution to a memory-related objective associated with graph coarsening. Experiments on four widely used benchmark datasets demonstrate that COS can reduce the memory footprint of baselines by a large margin with almost no accuracy loss.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/54288b7e9ce29a338f2b11981c6b84f4f0cb9a50" target='_blank'>Context Sketching for Memory-efficient Graph Representation Learning</a></td>
-          <td>
-            Kai-Lang Yao, Wusuo Li
-          </td>
-          <td>2023-12-01</td>
-          <td>2023 IEEE International Conference on Data Mining (ICDM)</td>
-          <td>0</td>
-          <td>4</td>
-        </tr>
-
         <tr id="Graph Neural Networks (GNNs) have shown impressive performance in graph representation learning, but they face challenges in capturing long-range dependencies due to their limited expressive power. To address this, Graph Transformers (GTs) were introduced, utilizing self-attention mechanism to effectively model pairwise node relationships. Despite their advantages, GTs suffer from quadratic complexity w.r.t. the number of nodes in the graph, hindering their applicability to large graphs. In this work, we present Graph-Enhanced Contextual Operator (GECO), a scalable and effective alternative to GTs that leverages neighborhood propagation and global convolutions to effectively capture local and global dependencies in quasiliniear time. Our study on synthetic datasets reveals that GECO reaches 169x speedup on a graph with 2M nodes w.r.t. optimized attention. Further evaluations on diverse range of benchmarks showcase that it scales to large graphs where traditional GTs often face memory and time limitations. Notably, GECO consistently achieves comparable or superior quality compared to baselines, improving the SOTA up to 4.5%, and offering a scalable and effective solution for large-scale graph learning.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/48052c9ebe066b9fcd653897dabf18582ec7e7fb" target='_blank'>A Scalable and Effective Alternative to Graph Transformers</a></td>
@@ -570,6 +558,18 @@
           <td>ArXiv</td>
           <td>3</td>
           <td>7</td>
+        </tr>
+
+        <tr id="Transformer-based models have recently shown success in representation learning on graph-structured data beyond natural language processing and computer vision. However, the success is limited to small-scale graphs due to the drawbacks of full dot-product attention on graphs such as the <italic>quadratic</italic> complexity with respect to the number of nodes and message aggregation from enormous <italic>irrelevant</italic> nodes. To address these issues, we propose Deformable Graph Transformer (DGT) that performs sparse attention via dynamically selected <italic>relevant</italic> nodes for efficiently handling large-scale graphs with a <italic>linear</italic> complexity in the number of nodes. Specifically, our framework first constructs multiple node sequences with various criteria to consider both structural and semantic proximity. Then, combining with our learnable Katz Positional Encodings, the sparse attention is applied to the node sequences for learning node representations with a significantly reduced computational cost. Extensive experiments demonstrate that our DGT achieves superior performance on 7 graph benchmark datasets with 2.5 <inline-formula><tex-math notation="LaTeX">$\sim$</tex-math><alternatives><mml:math><mml:mo>∼</mml:mo></mml:math><inline-graphic xlink:href="kim-ieq1-3550281.gif"/></alternatives></inline-formula> 449 times less computational cost compared to transformer-based graph models with full attention.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/1fb264b21eaf9046387ffddd7a8bf5262674682c" target='_blank'>Deformable Graph Transformer</a></td>
+          <td>
+            Jinyoung Park, Seongjun Yun, Hyeon-ju Park, Jaewoo Kang, Jisu Jeong, KyungHyun Kim, Jung-Woo Ha, Hyunwoo J. Kim
+          </td>
+          <td>2022-06-29</td>
+          <td>IEEE Transactions on Pattern Analysis and Machine Intelligence</td>
+          <td>11</td>
+          <td>32</td>
         </tr>
 
   </tbody>

@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-12-15 06:13:42 UTC</i>
+  <i class="footer">This page was last updated on 2025-12-22 06:13:29 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -560,6 +560,18 @@
           <td>6</td>
         </tr>
 
+        <tr id="Time series classification (TSC) is crucial in numerous real-world applications, such as environmental monitoring, medical diagnosis, and posture recognition. TSC tasks require models to effectively capture discriminative information for accurate class identification. Although deep learning architectures excel at capturing temporal dependencies, they often suffer from high computational cost, sensitivity to noise perturbations, and susceptibility to overfitting on small-scale datasets. To address these challenges, we propose FAIM, a lightweight Frequency-Aware Interactive Mamba model. Specifically, we introduce an Adaptive Filtering Block (AFB) that leverages Fourier Transform to extract frequency-domain features from time series data. The AFB incorporates learnable adaptive thresholds to dynamically suppress noise and employs element-wise coupling of global and local semantic adaptive filtering, enabling in-depth modeling of the synergy among different frequency components. Furthermore, we design an Interactive Mamba Block (IMB) to facilitate efficient multi-granularity information interaction, balancing the extraction of fine-grained discriminative features and comprehensive global contextual information, thereby endowing FAIM with powerful and expressive representations for TSC tasks. Additionally, we incorporate a self-supervised pre-training mechanism to enhance FAIM's understanding of complex temporal patterns and improve its robustness across various domains and high-noise scenarios. Extensive experiments on multiple benchmarks demonstrate that FAIM consistently outperforms existing state-of-the-art (SOTA) methods, achieving a superior trade-off between accuracy and efficiency and exhibits outstanding performance.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/90f7988a5890c24f23c4cb7352d21a32726ab923" target='_blank'>FAIM: Frequency-Aware Interactive Mamba for Time Series Classification</a></td>
+          <td>
+            Da Zhang, Bingyu Li, Zhiyuan Zhao, Yanhan Zhang, Junyu Gao, Feiping Nie, Xuelong Li
+          </td>
+          <td>2025-11-26</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>11</td>
+        </tr>
+
         <tr id="In recent years, contrastive learning (CL) frameworks have been widely applied to multivariate time series classification (MTSC) tasks. However, existing methods lack task-specific guidance, leading to limitations in fully capturing the complex dynamics and invariant representations in time series data. Motivated by the auxiliary tasks in multitask learning (MTL) and to fully utilize the rich frequency-domain information of time series data, we propose a novel time series classification framework, uncertainty-based time-frequency supervised CL (U-TFSCL). This framework uses SCL in the time and frequency domains and time-frequency consistency as auxiliary tasks to improve the primary task of using only instance-level labels for time series classification. Furthermore, inspired by the homogeneous uncertainty in MTL, we derive a novel uncertainty loss function, which automatically adjusts the weights according to the degree of uncertainty of different tasks to optimize the learning and prediction process of the model. The proposed framework is evaluated on MTSC tasks, including human activity recognition (HAR), air writing, and gesture recognition. In addition, we create a human-drone interaction (HDI) dataset consisting of 20 subjects and conduct real-world experiments to evaluate the proposed framework. The extensive experiments conducted in various settings verify the effectiveness of the proposed framework.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/504a51ca5453e2de135e853b17a97e0b8bfb92e9" target='_blank'>Time Series Classification Based on Supervised Contrastive Learning and Homoscedastic Uncertainty.</a></td>
@@ -582,18 +594,6 @@
           <td>ArXiv</td>
           <td>0</td>
           <td>1</td>
-        </tr>
-
-        <tr id="Recently, self-supervised representation learning has been widely applied to various time series tasks (e.g., electric device classification). However, building models for large-scale time series classification remains challenging due to the high cost of labeling time series data, which requires specialized expertise. Additionally, many datasets consist solely of unlabeled data or contain only a small number of labeled samples. Existing solutions for traditional time series tasks are not directly applicable to modern complex temporal problems due to two unique characteristics: (i) long-term temporal dependencies and (ii) complex cross-channel interactions. To address these challenges, we propose TC-FrC, a self-supervised time series classification model that leverages seasonal-trend decomposition for data augmentation and incorporates contrastive losses based on both temporal features and the Fractional Fourier Transform (FRFT). Specifically, we: (i) design a sparse attention mechanism within the temporal contrastive module to enhance feature extraction and improve robustness in long-term time series data, (ii) introduce a seasonal-trend decomposition approach to mitigate inter-class feature confusion, and (iii) develop a cross-channel FRFT-based feature fusion module, which transforms contextual features from the time domain to the fractional domain. We extensively evaluate TC-FrC on seven publicly available datasets, including HAR, Sleep-EDF, and Epilepsy, among others. Experimental results demonstrate that our method outperforms state-of-the-art baselines across various evaluation metrics.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/b4b5ece55bb5565d1e5813ccb613b104a6697e81" target='_blank'>Self-Supervised Time Series Classification Method Based on FRFT Cross-Channel Fusion</a></td>
-          <td>
-            Zhongheng Sun, Yiyang Wang, Meihui Wang, Cuiling Jiang, Yongjing Wan
-          </td>
-          <td>2025-06-30</td>
-          <td>2025 International Joint Conference on Neural Networks (IJCNN)</td>
-          <td>0</td>
-          <td>3</td>
         </tr>
 
   </tbody>

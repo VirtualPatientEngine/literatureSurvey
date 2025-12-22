@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-12-15 06:13:33 UTC</i>
+  <i class="footer">This page was last updated on 2025-12-22 06:13:23 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -476,100 +476,88 @@
   </thead>
   <tbody>
 
-        <tr id="Graph deep learning methods have become popular tools to process collections of correlated time series. Unlike traditional multivariate forecasting methods, graph-based predictors leverage pairwise relationships by conditioning forecasts on graphs spanning the time series collection. The conditioning takes the form of architectural inductive biases on the forecasting architecture, resulting in a family of models called spatiotemporal graph neural networks. These biases allow for training global forecasting models on large collections of time series while localizing predictions w.r.t. each element in the set (nodes) by accounting for correlations among them (edges). Recent advances in graph neural networks and deep learning for time series forecasting make the adoption of such processing framework appealing and timely. However, most studies focus on refining existing architectures by exploiting modern deep-learning practices. Conversely, foundational and methodological aspects have not been subject to systematic investigation. To fill this void, this tutorial paper aims to introduce a comprehensive methodological framework formalizing the forecasting problem and providing design principles for graph-based predictors, as well as methods to assess their performance. In addition, together with an overview of the field, we provide design guidelines and best practices, as well as an in-depth discussion of open challenges and future directions.">
+        <tr id="Identifying the underlying directional relations from observational time series with nonlinear interactions and complex relational structures is key to a wide range of applications, yet remains a hard problem. In this work, we introduce a novel minimum predictive information regularization method to infer directional relations from time series, allowing deep learning models to discover nonlinear relations. Our method substantially outperforms other methods for learning nonlinear relations in synthetic datasets, and discovers the directional relations in a video game environment and a heart-rate vs. breath-rate dataset.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/ccea298edb788edf821aef58f0952c3e8debc25a" target='_blank'>Graph Deep Learning for Time Series Forecasting</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/5d7b27de313ee1335b76eec20aa79f43ca07b6c9" target='_blank'>Discovering Nonlinear Relations with Minimum Predictive Information Regularization</a></td>
           <td>
-            Andrea Cini, Ivan Marisca, Daniele Zambon, C. Alippi
+            Tailin Wu, Thomas Breuel, M. Skuhersky, Jan Kautz
           </td>
-          <td>2023-10-24</td>
-          <td>ACM Computing Surveys</td>
-          <td>26</td>
-          <td>53</td>
+          <td>2020-01-07</td>
+          <td>ArXiv</td>
+          <td>29</td>
+          <td>38</td>
         </tr>
 
-        <tr id="Graph neural networks (GNNs) have been widely applied in multi-variate time-series forecasting (MTSF) tasks because of their capability in capturing the correlations among different time-series. These graph-based learning approaches improve the forecasting performance by discovering and understanding the underlying graph structures, which represent the data correlation. When the explicit prior graph structures are not available, most existing works cannot guarantee the sparsity of the generated graphs that make the overall model computational expensive and less interpretable. In this work, we propose a decoupled training method, which includes a graph generating module and a GNNs forecasting module. First, we use Graphical Lasso (or GraphLASSO) to directly exploit the sparsity pattern from data to build graph structures in both static and time-varying cases. Second, we fit these graph structures and the input data into a Graph Convolutional Recurrent Network (GCRN) to train a forecasting model. The experimental results on three real-world datasets show that our novel approach has competitive performance against existing state-of-the-art forecasting algorithms while providing sparse, meaningful and explainable graph structures and reducing training time by approximately 40%. Our PyTorch implementation is publicly available at https://github.com/HySonLab/GraphLASSO">
+        <tr id="Many real-world applications involve longitudinal data, consisting of observations of several variables, where different subsets of variables are sampled at irregularly spaced time points. We introduce the Longitudinal Gaussian Process Latent Variable Model (L-GPLVM), a variant of the Gaussian Process Latent Variable Model, for learning compact representations of such data. L-GPLVM overcomes a key limitation of the Dynamic Gaussian Process Latent Variable Model and its variants, which rely on the assumption that the data are fully observed over all of the sampled time points. We describe an effective approach to learning the parameters of L-GPLVM from sparse observations, by coupling the dynamical model with a Multitask Gaussian Process model for sampling of the missing observations at each step of the gradient-based optimization of the variational lower bound. We further show the advantage of the Sparse Process Convolution framework to learn the latent representation of sparsely and irregularly sampled longitudinal data with minimal computational overhead relative to a standard Latent Variable Model. We demonstrated experiments with synthetic data as well as variants of MOCAP data with varying degrees of sparsity of observations that show that L-GPLVM substantially and consistently outperforms the state-of-the-art alternatives in recovering the missing observations even when the available data exhibits a high degree of sparsity. The compact representations of irregularly sampled and sparse longitudinal data can be used to perform a variety of machine learning tasks, including clustering, classification, and regression.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/ae010c11b07b251f5f1a1d51c439678961c92c8a" target='_blank'>Sparsity exploitation via discovering graphical models in multi-variate time-series forecasting</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/21d9204638a560bab937402bbfb51e9101be4cb4" target='_blank'>Dynamical Gaussian Process Latent Variable Model for Representation Learning from Longitudinal Data</a></td>
           <td>
-            Ngoc-Dung Do, T. Hy, D. Nguyen
+            Thanh Le, Vasant G Honavar
           </td>
-          <td>2023-06-29</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>10</td>
-        </tr>
-
-        <tr id="Time series forecasting lies at the core of important real-world applications in many fields of science and engineering. The abundance of large time series datasets that consist of complex patterns and long-term dependencies has led to the development of various neural network architectures. Graph neural network approaches, which jointly learn a graph structure based on the correlation of raw values of multivariate time series while forecasting, have recently seen great success. However, such solutions are often costly to train and difficult to scale. In this paper, we propose TimeGNN, a method that learns dynamic temporal graph representations that can capture the evolution of inter-series patterns along with the correlations of multiple series. TimeGNN achieves inference times 4 to 80 times faster than other state-of-the-art graph-based methods while achieving comparable forecasting performance">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/d9916caa8da69496ecc8e0b1c229c73a60d6f861" target='_blank'>TimeGNN: Temporal Dynamic Graph Learning for Time Series Forecasting</a></td>
-          <td>
-            Nancy R. Xu, Chrysoula Kosma, M. Vazirgiannis
-          </td>
-          <td>2023-07-27</td>
-          <td>ArXiv</td>
-          <td>11</td>
+          <td>2020-10-18</td>
+          <td>Proceedings of the 2020 ACM-IMS on Foundations of Data Science Conference</td>
+          <td>5</td>
           <td>57</td>
         </tr>
 
-        <tr id="Accurate forecasting of multivariate time series is an extensively studied subject in finance, transportation, and computer science. Fully mining the correlation and causation between the variables in a multivariate time series exhibits noticeable results in improving the performance of a time series model. Recently, some models have explored the dependencies between variables through end-to-end graph structure learning without the need for predefined graphs. However, current models do not incorporate the trade-off between efficiency and flexibility and lack the guidance of domain knowledge in the design of graph structure learning algorithms. This paper alleviates the above issues by proposing Balanced Graph Structure Learning for Forecasting (BGSLF), a novel deep learning model that joins graph structure learning and forecasting. Technically, BGSLF leverages the spatial information into convolutional operations and extracts temporal dynamics using the diffusion convolutional recurrent network. The proposed framework balance the trade-off between efficiency and flexibility by introducing Multi-Graph Generation Network (MGN) and Graph Selection Module. In addition, a method named Smooth Sparse Unit (SSU) is designed to sparse the learned graph structures, which conforms to the sparse spatial correlations in the real world. Extensive experiments on four real-world datasets demonstrate that our model achieves state-of-the-art performances with minor trainable parameters. Code will be made publicly available.">
+        <tr id="We propose a novel approach that enhances multivariate function approximation using learnable path signatures and Kolmogorov-Arnold networks (KANs). We enhance the learning capabilities of these networks by weighting the values obtained by KANs using learnable path signatures, which capture important geometric features of paths. This combination allows for a more comprehensive and flexible representation of sequential and temporal data. We demonstrate through studies that our SigKANs with learnable path signatures perform better than conventional methods across a range of function approximation challenges. By leveraging path signatures in neural networks, this method offers intriguing opportunities to enhance performance in time series analysis and time series forecasting, among other fields.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/cf803de5a63ec6893960af15756a8e4766c99e0d" target='_blank'>Balanced Graph Structure Learning for Multivariate Time Series Forecasting</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/cedc2a66d1ae94a5aaa575d6884f66a4549fb75e" target='_blank'>SigKAN: Signature-Weighted Kolmogorov-Arnold Networks for Time Series</a></td>
           <td>
-            Weijun Chen, Yanze Wang, Chengshuo Du, Zhenglong Jia, Feng Liu, Ran Chen
+            Hugo Inzirillo, R'emi Genet
           </td>
-          <td>2022-01-24</td>
+          <td>2024-06-25</td>
           <td>ArXiv</td>
-          <td>1</td>
-          <td>11</td>
+          <td>16</td>
+          <td>4</td>
         </tr>
 
-        <tr id="We study a recent class of models which uses graph neural networks (GNNs) to improve forecasting in multivariate time series. The core assumption behind these models is that there is a latent graph between the time series (nodes) that governs the evolution of the multivariate time series. By parameterizing a graph in a differentiable way, the models aim to improve forecasting quality. We compare four recent models of this class on the forecasting task. Further, we perform ablations to study their behavior under changing conditions, e.g., when disabling the graph-learning modules and providing the ground-truth relations instead. Based on our findings, we propose novel ways of combining the existing architectures.">
+        <tr id="Gaussian process latent variable models (GPLVM) are a ﬂexible and non-linear approach to dimensionality reduction, extending classical Gaussian processes to an unsupervised learning context. The Bayesian incarna-tion of the GPLVM [Titsias and Lawrence, 2010] uses a variational framework, where the posterior over latent variables is approxi-mated by a well-behaved variational family, a factorised Gaussian yielding a tractable lower bound. However, the non-factorisability of the lower bound prevents truly scalable inference. In this work, we study the doubly stochastic formulation of the Bayesian GPLVM model amenable with minibatch training. We show how this framework is compatible with diﬀerent latent variable formulations and perform experiments to compare a suite of models. Further, we demonstrate how we can train in the presence of massively missing data and obtain high-ﬁdelity reconstructions. We demonstrate the model’s performance by benchmark-ing against the canonical sparse GPLVM for high dimensional data examples. work contributes a scalable method of inference for Bayesian GPLVM models used for non-parametric, probabilistic dimensionality reduction. Unsupervised learning tasks involving high-dimensional data are ubiquitous in the modern world. Some concrete examples are single-cell RNA data, ﬁnancial time-series and medical records.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/0b85207ac9a9271850fe8c44f5e8c84d00ff3409" target='_blank'>A Study of Joint Graph Inference and Forecasting</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/127c32d205d662faa0dc893be0e01de38cc35350" target='_blank'>Generalised Gaussian Process Latent Variable Models (GPLVM) with Stochastic Variational Inference</a></td>
           <td>
-            Daniel Zügner, François-Xavier Aubet, Victor Garcia Satorras, Tim Januschowski, Stephan Günnemann, Jan Gasthaus
+            Vidhi Lalchand, Aditya Ravuri, Neil D. Lawrence
           </td>
-          <td>2021-09-10</td>
+          <td>2022-02-25</td>
           <td>ArXiv</td>
+          <td>6</td>
+          <td>70</td>
+        </tr>
+
+        <tr id="We consider the problem of inferring a latent function in a probabilistic model of data. When dependencies of the latent function are specified by a Gaussian process and the data likelihood is complex, efficient computation often involve Markov chain Monte Carlo sampling with limited applicability to large data sets. We extend some of these techniques to scale efficiently when the problem exhibits a sequential structure. We propose an approximation that enables sequential sampling of both latent variables and associated parameters. We demonstrate strong performance in growing-data settings that would otherwise be unfeasible with naive, non-sequential sampling.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/b6c0f8b4cd9144494e51d717b9ba7ad1e61171e5" target='_blank'>Sequential sampling of Gaussian process latent variable models</a></td>
+          <td>
+            Martin Tegner, Benjamin Bloem-Reddy, S. Roberts
+          </td>
+          <td>2018-07-13</td>
+          <td>ArXiv</td>
+          <td>2</td>
+          <td>55</td>
+        </tr>
+
+        <tr id="None">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/4a8daa364ec820577395deaa2710c2f5a754896e" target='_blank'>Sequential sampling of Gaussian latent variable models.</a></td>
+          <td>
+            Martin Tegner, Benjamin Bloem-Reddy, S. Roberts
+          </td>
+          <td>2018-07-13</td>
+          <td>arXiv: Machine Learning</td>
+          <td>4</td>
+          <td>55</td>
+        </tr>
+
+        <tr id="Gaussian process-based latent variable models are flexible and theoretically grounded tools for nonlinear dimension reduction, but generalizing to non-Gaussian data likelihoods within this nonlinear framework is statistically challenging. Here, we use random features to develop a family of nonlinear dimension reduction models that are easily extensible to non-Gaussian data likelihoods; we call these random feature latent variable models (RFLVMs). By approximating a nonlinear relationship between the latent space and the observations with a function that is linear with respect to random features, we induce closed-form gradients of the posterior distribution with respect to the latent variable. This allows the RFLVM framework to support computationally tractable nonlinear latent variable models for a variety of data likelihoods in the exponential family without specialized derivations. Our generalized RFLVMs produce results comparable with other state-of-the-art dimension reduction methods on diverse types of data, including neural spike train recordings, images, and text data.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/3bf8ca730d46c129015a0f02bf27df0e2643a0d9" target='_blank'>Latent variable modeling with random features</a></td>
+          <td>
+            Gregory W. Gundersen, M. Zhang, B. Engelhardt
+          </td>
+          <td>2020-06-19</td>
+          <td>ArXiv, DBLP, MAG</td>
           <td>12</td>
-          <td>50</td>
-        </tr>
-
-        <tr id="Multivariate time-series forecasting is a critical task for many applications, and graph time-series network is widely studied due to its capability to capture the spatial-temporal correlation simultaneously. However, most existing works focus more on learning with the explicit prior graph structure, while ignoring potential information from the implicit graph structure, yielding incomplete structure modeling. Some recent works attempts to learn the intrinsic or implicit graph structure directly, while lacking a way to combine explicit prior structure with implicit structure together. In this paper, we propose Regularized Graph Structure Learning (RGSL) model to incorporate both explicit prior structure and implicit structure together, and learn the forecasting deep networks along with the graph structure. RGSL consists of two innovative modules. First, we derive an implicit dense similarity matrix through node embedding, and learn the sparse graph structure using the Regularized Graph Generation (RGG) based on the Gumbel Softmax trick. Second, we propose a Laplacian Matrix Mixed-up Module (LM3) to fuse the explicit graph and implicit graph together. We conduct experiments on three real-word datasets. Results show that the proposed RGSL model outperforms existing graph forecasting algorithms with a notable margin, while learning meaningful graph structure simultaneously. Our code and models are made publicly available at https://github.com/alipay/RGSL.git.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/a092b7e51c21d41528ba49a339efaaf81d72ca7b" target='_blank'>Regularized Graph Structure Learning with Semantic Knowledge for Multi-variates Time-Series Forecasting</a></td>
-          <td>
-            Hongyuan Yu, Ting Li, Weichen Yu, Jianguo Li, Yan Huang, Liang Wang, A. Liu
-          </td>
-          <td>2022-07-01</td>
-          <td>DBLP, ArXiv</td>
-          <td>64</td>
-          <td>40</td>
-        </tr>
-
-        <tr id="Time series forecasting is an extensively studied subject in statistics, economics, and computer science. Exploration of the correlation and causation among the variables in a multivariate time series shows promise in enhancing the performance of a time series model. When using deep neural networks as forecasting models, we hypothesize that exploiting the pairwise information among multiple (multivariate) time series also improves their forecast. If an explicit graph structure is known, graph neural networks (GNNs) have been demonstrated as powerful tools to exploit the structure. In this work, we propose learning the structure simultaneously with the GNN if the graph is unknown. We cast the problem as learning a probabilistic graph model through optimizing the mean performance over the graph distribution. The distribution is parameterized by a neural network so that discrete graphs can be sampled differentiably through reparameterization. Empirical evaluations show that our method is simpler, more efficient, and better performing than a recently proposed bilevel learning approach for graph structure learning, as well as a broad array of forecasting models, either deep or non-deep learning based, and graph or non-graph based.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/401930b2dc738a5a67d136bc9a2d04461c5bf93a" target='_blank'>Discrete Graph Structure Learning for Forecasting Multiple Time Series</a></td>
-          <td>
-            Chao Shang, Jie Chen, J. Bi
-          </td>
-          <td>2021-01-18</td>
-          <td>ArXiv</td>
-          <td>321</td>
-          <td>40</td>
-        </tr>
-
-        <tr id="Sourced from multiple sensors and organized chronologically, Multivariate Time-Series (MTS) data involves crucial spatial-temporal dependencies. To capture these dependencies, Graph Neural Networks (GNNs) have emerged as powerful tools. As explicit graphs are not inherent to MTS data, graph generation becomes a critical first step in adapting GNNs to this domain. However, existing approaches often rely solely on the data itself for MTS graph generation, leaving them vulnerable to biases from small training datasets. This limitation hampers their ability to construct effective graphs, undermining the accurate modeling of underlying dependencies in MTS data and reducing GNN performance in this field. To address this challenge, we propose a novel framework, K-Link, leveraging the extensive universal knowledge encoded in Large Language Models (LLMs) to reduce biases for powered MTS graph generation. To harness the knowledge within LLMs, such as physical principles, we design and extract a \textit{Knowledge-Link graph} that captures universal knowledge of sensors and their linkage. To empower MTS graph generation with the knowledge-link graph, we further introduce a graph alignment module that transfers universal knowledge from the knowledge-link graph to the graph generated from MTS data. This enhances the MTS graph quality, ensuring effective representation learning for MTS data. Extensive experiments demonstrate the efficacy of K-Link for superior performance on various MTS tasks.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/ae4461275a4866bfeca93b23c9d05f9b734e1e91" target='_blank'>Graph Generation Powered with LLMs for Boosting Multivariate Time-Series Representation Learning</a></td>
-          <td>
-            Yucheng Wang, Min Wu, Ruibing Jin, Xiaoli Li, Lihua Xie, Zhenghua Chen
-          </td>
-          <td>2024-03-06</td>
-          <td>ArXiv</td>
-          <td>5</td>
-          <td>46</td>
+          <td>37</td>
         </tr>
 
   </tbody>
