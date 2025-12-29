@@ -11,7 +11,7 @@ hide:
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-12-22 06:13:24 UTC</i>
+  <i class="footer">This page was last updated on 2025-12-29 06:14:05 UTC</i>
   </p>
   
   <div class="note info" onclick="startIntro()">
@@ -87,7 +87,7 @@ hide:
           <td>2022-05-26</td>
           <td>J. Mach. Learn. Res.</td>
           <td>28</td>
-          <td>53</td>
+          <td>54</td>
         </tr>
     
         <tr id="Graph Neural Networks (GNN) have gained significant traction in the forecasting domain, especially for their capacity to simultaneously account for intra-series temporal correlations and inter-series relationships. This paper introduces a novel Hierarchical GNN (DeepHGNN) framework, explicitly designed for forecasting in complex hierarchical structures. The uniqueness of DeepHGNN lies in its innovative graph-based hierarchical interpolation and an end-to-end reconciliation mechanism. This approach ensures forecast accuracy and coherence across various hierarchical levels while sharing signals across them, addressing a key challenge in hierarchical forecasting. A critical insight in hierarchical time series is the variance in forecastability across levels, with upper levels typically presenting more predictable components. DeepHGNN capitalizes on this insight by pooling and leveraging knowledge from all hierarchy levels, thereby enhancing the overall forecast accuracy. Our comprehensive evaluation set against several state-of-the-art models confirm the superior performance of DeepHGNN. This research not only demonstrates DeepHGNN's effectiveness in achieving significantly improved forecast accuracy but also contributes to the understanding of graph-based methods in hierarchical time series forecasting.">
@@ -110,7 +110,7 @@ hide:
           </td>
           <td>2020-05-24</td>
           <td>Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining</td>
-          <td>1751</td>
+          <td>1762</td>
           <td>63</td>
         </tr>
     
@@ -122,7 +122,7 @@ hide:
           </td>
           <td>2021-01-18</td>
           <td>ArXiv</td>
-          <td>321</td>
+          <td>322</td>
           <td>40</td>
         </tr>
     

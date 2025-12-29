@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-12-22 06:13:34 UTC</i>
+  <i class="footer">This page was last updated on 2025-12-29 06:14:11 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -484,7 +484,7 @@
           </td>
           <td>2024-02-04</td>
           <td>ArXiv, DBLP</td>
-          <td>132</td>
+          <td>134</td>
           <td>78</td>
         </tr>
 
@@ -497,7 +497,7 @@
           <td>2024-02-26</td>
           <td>Trans. Mach. Learn. Res.</td>
           <td>29</td>
-          <td>6</td>
+          <td>7</td>
         </tr>
 
         <tr id="We present Timer-XL, a causal Transformer for unified time series forecasting. To uniformly predict multidimensional time series, we generalize next token prediction, predominantly adopted for 1D token sequences, to multivariate next token prediction. The paradigm formulates various forecasting tasks as a long-context prediction problem. We opt for decoder-only Transformers that capture causal dependencies from varying-length contexts for unified forecasting, making predictions on non-stationary univariate time series, multivariate series with complicated dynamics and correlations, as well as covariate-informed contexts that include exogenous variables. Technically, we propose a universal TimeAttention to capture fine-grained intra- and inter-series dependencies of flattened time series tokens (patches), which is further enhanced by deft position embedding for temporal causality and variable equivalence. Timer-XL achieves state-of-the-art performance across task-specific forecasting benchmarks through a unified approach. Based on large-scale pre-training, Timer-XL achieves state-of-the-art zero-shot performance, making it a promising architecture for pre-trained time series models. Code is available at this repository: https://github.com/thuml/Timer-XL.">
@@ -524,18 +524,6 @@
           <td>16</td>
         </tr>
 
-        <tr id="Real-world time series often exhibit strong non-stationarity, complex nonlinear dynamics, and behaviour expressed across multiple temporal scales, from rapid local fluctuations to slow-evolving long-range trends. However, many contemporary architectures impose rigid, fixed-scale structural priors -- such as patch-based tokenization, predefined receptive fields, or frozen backbone encoders -- which can over-regularize temporal dynamics and limit adaptability to abrupt high-magnitude events. To handle this, we introduce the \emph{Multi-scale Temporal Network} (MSTN), a hybrid neural architecture grounded in an \emph{Early Temporal Aggregation} principle. MSTN integrates three complementary components: (i) a multi-scale convolutional encoder that captures fine-grained local structure; (ii) a sequence modeling module that learns long-range dependencies through either recurrent or attention-based mechanisms; and (iii) a self-gated fusion stage incorporating squeeze-excitation and multi-head attention to dynamically modulate cross-scale representations. This design enables MSTN to flexibly model temporal patterns spanning milliseconds to extended horizons, while avoiding the computational burden typically associated with long-context models. Across extensive benchmarks covering forecasting, imputation, classification, and cross-dataset generalization, MSTN consistently delivers state-of-the-art performance, outperforming recent leading approaches including TIME-LLM, HiMTM, SOFTS, LLM4TS, TimesNet, and PatchTST, and establishing new best results on 24 out of 32 datasets. Despite its strong performance, MSTN remains lightweight and supports fast inference, making it well suited for deployment on edge devices and resource-constrained environments.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/f9cc63ff9ad7f0bebdbede55e0c9169e94183dad" target='_blank'>MSTN: Fast and Efficient Multivariate Time Series Prediction Model</a></td>
-          <td>
-            Sumit S Shevtekar, Chandresh Kumar Maurya, Gourab Sil
-          </td>
-          <td>2025-11-25</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>7</td>
-        </tr>
-
         <tr id="Time series analysis is crucial in fields like finance, transportation, and industry. However, traditional models often focus solely on temporal features, limiting their ability to capture underlying information. This paper proposes a novel time series multitask framework, called LTM, which integrates temporal features with textual descriptions to enhance analytical and predictive capabilities. LTM combines pre-trained time series model, large language model (LLM), and knowledge graph to tackle time series tasks, including forecasting, imputation, and anomaly detection. LTM achieves improved performance with a few trainable parameters. It is very efficient and practical. LTM encodes time series data into patches and enriches user-provided prompts using knowledge graphs to generate enhanced prompts. A novel feature fusion method embeds prompts into each patch encoding, which is processed by a frozen LLM, followed by a feature enhancement module and a time decoder module. During fine-tuning stage, cosine similarity between prompts and temporal patches is integrated into the loss function to boost performance. Experiments on benchmark datasets show that LTM significantly outperforms existing methods. It provides a robust and versatile solution for time series tasks.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/d35aaabc4a2169969171d5a0224adee44dabbb68" target='_blank'>A Time Series Multitask Framework Integrating a Large Language Model, Pre-Trained Time Series Model, and Knowledge Graph</a></td>
@@ -556,7 +544,7 @@
           </td>
           <td>2024-01-08</td>
           <td>ArXiv</td>
-          <td>30</td>
+          <td>32</td>
           <td>9</td>
         </tr>
 
