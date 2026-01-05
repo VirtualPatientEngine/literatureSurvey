@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2025-12-29 06:14:06 UTC</i>
+  <i class="footer">This page was last updated on 2026-01-05 06:15:34 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -476,6 +476,18 @@
   </thead>
   <tbody>
 
+        <tr id="Large Language Models (LLMs) have demonstrated effectiveness as zero-shot time series (TS) forecasters. The key challenge lies in tokenizing TS data into textual representations that align with LLMs'pre-trained knowledge. While existing work often relies on fine-tuning specialized modules to bridge this gap, a distinct, yet challenging, paradigm aims to leverage truly off-the-shelf LLMs without any fine-tuning whatsoever, relying solely on strategic tokenization of numerical sequences. The performance of these fully frozen models is acutely sensitive to the textual representation of the input data, as their parameters cannot adapt to distribution shifts. In this paper, we introduce a simple yet highly effective strategy to overcome this brittleness: injecting noise into the raw time series before tokenization. This non-invasive intervention acts as a form of inference-time augmentation, compelling the frozen LLM to extrapolate based on robust underlying temporal patterns rather than superficial numerical artifacts. We theoretically analyze this phenomenon and empirically validate its effectiveness across diverse benchmarks. Notably, to fully eliminate potential biases from data contamination during LLM pre-training, we introduce two novel TS datasets that fall outside all utilized LLMs'pre-training scopes, and consistently observe improved performance. This study provides a further step in directly leveraging off-the-shelf LLMs for time series forecasting.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/ec0fb28c022c77aa59d98607ee82d33b6a7ca359" target='_blank'>Enhancing Zero-Shot Time Series Forecasting in Off-the-Shelf LLMs via Noise Injection</a></td>
+          <td>
+            Xingyou Yin, Ceyao Zhang, Min Hu, Kai Chen
+          </td>
+          <td>2025-12-23</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+
         <tr id="We introduce Chronos, a simple yet effective framework for pretrained probabilistic time series models. Chronos tokenizes time series values using scaling and quantization into a fixed vocabulary and trains existing transformer-based language model architectures on these tokenized time series via the cross-entropy loss. We pretrained Chronos models based on the T5 family (ranging from 20M to 710M parameters) on a large collection of publicly available datasets, complemented by a synthetic dataset that we generated via Gaussian processes to improve generalization. In a comprehensive benchmark consisting of 42 datasets, and comprising both classical local models and deep learning methods, we show that Chronos models: (a) significantly outperform other methods on datasets that were part of the training corpus; and (b) have comparable and occasionally superior zero-shot performance on new datasets, relative to methods that were trained specifically on them. Our results demonstrate that Chronos models can leverage time series data from diverse domains to improve zero-shot accuracy on unseen forecasting tasks, positioning pretrained models as a viable tool to greatly simplify forecasting pipelines.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/02fa77e4f355198cb4270f6d4a07517bf09c46dd" target='_blank'>Chronos: Learning the Language of Time Series</a></td>
@@ -484,7 +496,7 @@
           </td>
           <td>2024-03-12</td>
           <td>ArXiv</td>
-          <td>437</td>
+          <td>447</td>
           <td>19</td>
         </tr>
 
@@ -520,7 +532,7 @@
           </td>
           <td>2024-02-04</td>
           <td>ArXiv</td>
-          <td>64</td>
+          <td>66</td>
           <td>78</td>
         </tr>
 
@@ -568,20 +580,8 @@
           </td>
           <td>2024-06-22</td>
           <td>ArXiv</td>
-          <td>154</td>
+          <td>155</td>
           <td>10</td>
-        </tr>
-
-        <tr id="Encoding time series into tokens and using language models for processing has been shown to substantially augment the models' ability to generalize to unseen tasks. However, existing language models for time series forecasting encounter several obstacles, including aliasing distortion and prolonged inference times, primarily due to the limitations of quantization processes and the computational demands of large models. This paper introduces Apollo-Forecast, a novel framework that tackles these challenges with two key innovations: the Anti-Aliasing Quantization Module (AAQM) and the Race Decoding (RD) technique. AAQM adeptly encodes sequences into tokens while mitigating high-frequency noise in the original signals, thus enhancing both signal fidelity and overall quantization efficiency. RD employs a draft model to enable parallel processing and results integration, which markedly accelerates the inference speed for long-term predictions, particularly in large-scale models. Extensive experiments on various real-world datasets show that Apollo-Forecast outperforms state-of-the-art methods by 35.41\% and 18.99\% in WQL and MASE metrics, respectively, in zero-shot scenarios. Furthermore, our method achieves a 1.9X-2.7X acceleration in inference speed over baseline methods.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/a09124813cb1d71da89d8e30719206c0668c5330" target='_blank'>Apollo-Forecast: Overcoming Aliasing and Inference Speed Challenges in Language Models for Time Series Forecasting</a></td>
-          <td>
-            Tianyi Yin, Jingwei Wang, Yunlong Ma, Han Wang, Chenze Wang, Yukai Zhao, Min Liu, Weiming Shen, Yufeng Chen
-          </td>
-          <td>2024-12-16</td>
-          <td>ArXiv</td>
-          <td>1</td>
-          <td>8</td>
         </tr>
 
   </tbody>
