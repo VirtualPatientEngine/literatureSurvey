@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-01-05 06:15:59 UTC</i>
+  <i class="footer">This page was last updated on 2026-01-12 06:15:05 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -524,6 +524,18 @@
           <td>100</td>
         </tr>
 
+        <tr id="This work proposes a novel and unified sparse recovery framework, termed the difference of convex Elastic Net (DCEN). This framework effectively balances strong sparsity promotion with solution stability, and is particularly suitable for high-dimensional variable selection involving highly correlated features. Built upon a difference-of-convex (DC) structure, DCEN employs two continuously tunable parameters to unify classical and state-of-the-art models--including Lasso, Elastic Net, Ridge, and $\ell_1-\alpha\ell_2$--as special cases. Theoretically, sufficient conditions for exact and stable recovery are established under the restricted isometry property (RIP), and a closed-form expression of the DCEN regularization proximal operator is derived. Moreover, two efficient optimization algorithms are developed based on the DC algorithm (DCA) and the alternating direction method of multipliers (ADMM). Within the Kurdyka-Lojasiewicz (KL) framework, the global convergence of DCA and its linear convergence rate are rigorously established. Furthermore, DCEN is extended to image reconstruction by incorporating total variation (TV) regularization, yielding the DCEN-TV model, which is efficiently solved via the Split Bregman method. Numerical experiments demonstrate that DCEN consistently outperforms state-of-the-art methods in sparse signal recovery, high-dimensional variable selection under strong collinearity, and Magnetic Resonance Imaging (MRI) image reconstruction, achieving superior recovery accuracy and robustness.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/9b624d57531375f0b790fea15a38fae7aba5d38d" target='_blank'>Difference-of-Convex Elastic Net for Compressed Sensing</a></td>
+          <td>
+            Lang Yu, Nanjing Huang
+          </td>
+          <td>2025-12-29</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+
         <tr id="High-dimensional sparse linear regression is a basic problem in machine learning and statistics. Consider a linear model $y = X\theta^\star + w$, where $y \in \mathbb{R}^n$ is the vector of observations, $X \in \mathbb{R}^{n \times d}$ is the covariate matrix and $w \in \mathbb{R}^n$ is an unknown noise vector. In many applications, the linear regression model is high-dimensional in nature, meaning that the number of observations $n$ may be substantially smaller than the number of covariates $d$. In these cases, it is common to assume that $\theta^\star$ is sparse, and the goal in sparse linear regression is to estimate this sparse $\theta^\star$, given $(X,y)$. 
 In this paper, we study a variant of the traditional sparse linear regression problem where each of the $n$ covariate vectors in $\mathbb{R}^d$ are individually projected by a random linear transformation to $\mathbb{R}^m$ with $m \ll d$. Such transformations are commonly applied in practice for computational savings in resources such as storage space, transmission bandwidth, and processing time. Our main result shows that one can estimate $\theta^\star$ with a low $\ell_2$-error, even with access to only these projected covariate vectors, under some mild assumptions on the problem instance. Our approach is based on solving a variant of the popular Lasso optimization problem. While the conditions (such as the restricted eigenvalue condition on $X$) for success of a Lasso formulation in estimating $\theta^\star$ are well-understood, we investigate conditions under which this variant of Lasso estimates $\theta^\star$. 
 As a simple consequence, our approach also provides a new way for estimating $\theta^\star$ in the traditional sparse linear regression problem setting, which operates (even) under a weaker assumption on the design matrix than previously known, albeit achieving a weaker convergence bound.">
@@ -559,19 +571,7 @@ As a simple consequence, our approach also provides a new way for estimating $\t
           <td>2017-03-23</td>
           <td>IEEE Transactions on Computational Imaging</td>
           <td>91</td>
-          <td>34</td>
-        </tr>
-
-        <tr id="We study the problem of learning a sparse linear regression vector under additional conditions on the structure of its sparsity pattern. This problem is relevant in machine learning, statistics and signal processing. It is well known that a linear regression can benefit from knowledge that the underlying regression vector is sparse. The combinatorial problem of selecting the nonzero components of this vector can be “relaxed” by regularizing the squared error with a convex penalty function like the ℓ1 norm. However, in many applications, additional conditions on the structure of the regression vector and its sparsity pattern are available. Incorporating this information into the learning method may lead to a significant decrease of the estimation error. In this paper, we present a family of convex penalty functions, which encode prior knowledge on the structure of the vector formed by the absolute values of the regression coefficients. This family subsumes the ℓ1 norm and is flexible enough to include different models of sparsity patterns, which are of practical and theoretical importance. We establish the basic properties of these penalty functions and discuss some examples where they can be computed explicitly. Moreover, we present a convergent optimization algorithm for solving regularized least squares with these penalty functions. Numerical simulations highlight the benefit of structured sparsity and the advantage offered by our approach over the Lasso method and other related methods.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/10d6de4fab447cbb4279a5206d5b2c276162c656" target='_blank'>Regularizers for structured sparsity</a></td>
-          <td>
-            C. Micchelli, Jean Morales, M. Pontil
-          </td>
-          <td>2010-10-04</td>
-          <td>Advances in Computational Mathematics</td>
-          <td>80</td>
-          <td>71</td>
+          <td>35</td>
         </tr>
 
         <tr id="We study the problem of learning a sparse linear regression vector under additional conditions on the structure of its sparsity pattern. This problem is relevant in machine learning, statistics and signal processing. It is well known that a linear regression can benefit from knowledge that the underlying regression vector is sparse. The combinatorial problem of selecting the nonzero components of this vector can be “relaxed” by regularizing the squared error with a convex penalty function like the ℓ1 norm. However, in many applications, additional conditions on the structure of the regression vector and its sparsity pattern are available. Incorporating this information into the learning method may lead to a significant decrease of the estimation error. In this paper, we present a family of convex penalty functions, which encode prior knowledge on the structure of the vector formed by the absolute values of the regression coefficients. This family subsumes the ℓ1 norm and is flexible enough to include different models of sparsity patterns, which are of practical and theoretical importance. We establish the basic properties of these penalty functions and discuss some examples where they can be computed explicitly. Moreover, we present a convergent optimization algorithm for solving regularized least squares with these penalty functions. Numerical simulations highlight the benefit of structured sparsity and the advantage offered by our approach over the Lasso method and other related methods.">
