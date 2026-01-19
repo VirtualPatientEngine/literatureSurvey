@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-01-12 06:14:52 UTC</i>
+  <i class="footer">This page was last updated on 2026-01-19 06:16:22 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -500,6 +500,18 @@
           <td>37</td>
         </tr>
 
+        <tr id="Identifying the governing equations of a nonlinear dynamical system is key to both understanding the physical features of the system and constructing an accurate model of the dynamics that generalizes well beyond the available data. Achieving this kind of interpretable system identification is even more difficult for partially observed systems. We propose a machine learning framework for discovering the governing equations of a dynamical system using only partial observations, combining an encoder for state reconstruction with a sparse symbolic model. The entire architecture is trained end-to-end by matching the higher-order symbolic time derivatives of the sparse symbolic model with finite difference estimates from the data. Our tests show that this method can successfully reconstruct the full system state and identify the equations of motion governing the underlying dynamics for a variety of ordinary differential equation (ODE) and partial differential equation (PDE) systems. Nonlinear dynamical systems are ubiquitous in nature and play an essential role in science, from providing models for the weather forecast to describing the chaotic behavior of plasma in nuclear reactors. This paper introduces an artificial intelligence framework that can learn the correct equations of motion for nonlinear systems from incomplete data, and opens up the door to applying interpretable machine learning techniques on a wide range of applications in the field of nonlinear dynamics.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/899995e30820d657b2e2feb791025cd6b2027e22" target='_blank'>Discovering sparse interpretable dynamics from partial observations</a></td>
+          <td>
+            Peter Y. Lu, Joan Ariño Bernad, M. Soljačić
+          </td>
+          <td>2021-07-22</td>
+          <td>Communications Physics</td>
+          <td>33</td>
+          <td>98</td>
+        </tr>
+
         <tr id="None">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/d2df6b9b2ee1bdef1834c343bb952182a7807bda" target='_blank'>PNAS Plus Significance Statements</a></td>
@@ -510,6 +522,18 @@
           <td>Proceedings of the National Academy of Sciences</td>
           <td>39</td>
           <td>13</td>
+        </tr>
+
+        <tr id="All physical laws are described as relationships between state variables that give a complete and non-redundant description of the relevant system dynamics. However, despite the prevalence of computing power and AI, the process of identifying the hidden state variables themselves has resisted automation. Most data-driven methods for modeling physical phenomena still assume that observed data streams already correspond to relevant state variables. A key challenge is to identify the possible sets of state variables from scratch, given only high-dimensional observational data. Here we propose a new principle for determining how many state variables an observed system is likely to have, and what these variables might be, directly from video streams. We demonstrate the effectiveness of this approach using video recordings of a variety of physical dynamical systems, ranging from elastic double pendulums to fire flames. Without any prior knowledge of the underlying physics, our algorithm discovers the intrinsic dimension of the observed dynamics and identifies candidate sets of state variables. We suggest that this approach could help catalyze the understanding, prediction and control of increasingly complex systems. Project website is at: https://www.cs.columbia.edu/~bchen/neural-state-variables">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/a0d7a5cfc804f90ba8ae80f8cf786d0ad7fe1d17" target='_blank'>Discovering State Variables Hidden in Experimental Data</a></td>
+          <td>
+            Boyuan Chen, Kuang Huang, Sunand Raghupathi, I. Chandratreya, Qi Du, Hod Lipson
+          </td>
+          <td>2021-12-20</td>
+          <td>ArXiv</td>
+          <td>19</td>
+          <td>74</td>
         </tr>
 
         <tr id="None">
@@ -545,32 +569,20 @@
           </td>
           <td>2020-01-13</td>
           <td>ArXiv</td>
-          <td>701</td>
+          <td>704</td>
           <td>27</td>
         </tr>
 
-        <tr id="None">
+        <tr id="Harnessing data to discover the underlying governing laws or equations that describe the behavior of complex physical systems can significantly advance our modeling, simulation and understanding of such systems in various science and engineering disciplines. This work introduces a novel approach called physics-informed neural network with sparse regression to discover governing partial differential equations from scarce and noisy data for nonlinear spatiotemporal systems. In particular, this discovery approach seamlessly integrates the strengths of deep neural networks for rich representation learning, physics embedding, automatic differentiation and sparse regression to approximate the solution of system variables, compute essential derivatives, as well as identify the key derivative terms and parameters that form the structure and explicit expression of the equations. The efficacy and robustness of this method are demonstrated, both numerically and experimentally, on discovering a variety of partial differential equation systems with different levels of data scarcity and noise accounting for different initial/boundary conditions. The resulting computational framework shows the potential for closed-form model discovery in practical applications where large and accurate datasets are intractable to capture. Recovery of underlying governing laws or equations describing the evolution of complex systems from data can be challenging if dataset is damaged or incomplete. The authors propose a learning approach which allows to discover governing partial differential equations from scarce and noisy data.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/68319dc9411509debfc993e74a1f193c430af8be" target='_blank'>Robust physics discovery via supervised and unsupervised pattern recognition using the Euler characteristic</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/e596988b1df3a0bc78bf72c0bfdb21c85eaab6c9" target='_blank'>Physics-informed learning of governing equations from scarce data</a></td>
           <td>
-            Zhiming Zhang, Yongming Liu
+            Zhao Chen, Yang Liu, Hao Sun
           </td>
-          <td>2021-10-15</td>
-          <td>ArXiv</td>
-          <td>3</td>
-          <td>6</td>
-        </tr>
-
-        <tr id="None">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/7bf1fbb35b2235b169ca07700a92608ee1564320" target='_blank'>Deep Learning of Biological Models from Data: Applications to ODE Models</a></td>
-          <td>
-            W. Su, Ching-Shan Chou, D. Xiu
-          </td>
-          <td>2021-01-16</td>
-          <td>Bulletin of Mathematical Biology</td>
-          <td>17</td>
-          <td>41</td>
+          <td>2020-05-05</td>
+          <td>Nature Communications</td>
+          <td>529</td>
+          <td>15</td>
         </tr>
 
   </tbody>
