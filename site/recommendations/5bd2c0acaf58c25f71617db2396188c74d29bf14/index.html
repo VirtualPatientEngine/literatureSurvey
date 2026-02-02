@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-01-26 06:15:17 UTC</i>
+  <i class="footer">This page was last updated on 2026-02-02 06:32:10 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -533,7 +533,7 @@
           <td>2022-03-15</td>
           <td>ACM Transactions on Knowledge Discovery from Data</td>
           <td>93</td>
-          <td>46</td>
+          <td>47</td>
         </tr>
 
         <tr id="Domain adaptation is challenging for time series classification due to the highly dynamic nature. This study tackles the most difficult subtask when both target labels and source data are inaccessible, namely, source-free domain adaptation. To reuse the classification backbone pre-trained on source data, time series reconstruction is a sound solution that aligns target and source time series by minimizing the reconstruction errors of both. However, simply fine-tuning the source pre-trained reconstruction model on target data may lose the learnt priori, and it struggles to accommodate domain varying temporal patterns in a single encoder-decoder. Therefore, this paper tries to disentangle the composition of domain transferability by using a compositional architecture for time series reconstruction. Here, the preceding component is a U-net frozen since pre-trained, the output of which during adaptation is the initial reconstruction of a given target time series, acting as a coarse step to prompt the subsequent finer adaptation. The following pipeline for finer adaptation includes two parallel branches: The source replay branch using a residual link to preserve the output of U-net, and the offset compensation branch that applies an additional autoencoder (AE) to further warp U-net's output. By deploying a learnable factor on either branch to scale their composition in the final output of reconstruction, the data transferability is disentangled and the learnt reconstructive capability from source data is retained. During inference, aside from the batch-level optimization in the training, we search at test time stability-aware rescaling of source replay branch to tolerate instance-wise variation. The experimental results show that such compositional architecture of time series reconstruction leads to SOTA performance on 3 widely used benchmarks.">
