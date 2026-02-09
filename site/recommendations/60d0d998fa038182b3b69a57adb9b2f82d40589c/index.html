@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-02-02 06:32:37 UTC</i>
+  <i class="footer">This page was last updated on 2026-02-09 06:34:25 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -496,7 +496,7 @@
           </td>
           <td>2019-04-20</td>
           <td>J. Comput. Phys.</td>
-          <td>132</td>
+          <td>133</td>
           <td>37</td>
         </tr>
 
@@ -508,7 +508,7 @@
           </td>
           <td>2021-07-22</td>
           <td>Communications Physics</td>
-          <td>35</td>
+          <td>36</td>
           <td>98</td>
         </tr>
 
@@ -536,6 +536,18 @@
           <td>74</td>
         </tr>
 
+        <tr id="Modeling complex spatiotemporal dynamics, particularly in far-from-equilibrium systems, remains a grand challenge in science. The governing partial differential equations (PDEs) for these systems are often intractable to derive from first principles, due to their inherent complexity, characterized by high-order derivatives and strong nonlinearities, coupled with incomplete physical knowledge. This has spurred the development of data-driven methods, yet these approaches face limitations: Purely data-driven models are often physically inconsistent and data-intensive, while existing physics-informed methods lack the structural capacity to represent complex operators or systematically integrate partial physical knowledge. Here, we propose a hierarchical physics-embedded learning framework that fundamentally advances both the forward spatiotemporal prediction and inverse discovery of physical laws from sparse and noisy data. The key innovation is a two-level architecture that mirrors the process of scientific discovery: the first level learns fundamental symbolic components of a PDE, while the second learns their governing combinations. This hierarchical decomposition not only reduces learning complexity but, more importantly, enables a structural integration of prior knowledge. Known physical laws are directly embedded into the models computational graph, guaranteeing physical consistency and improving data efficiency. By building the framework upon adaptive Fourier Neural Operators, we can effectively capture the non-local dependencies and high-order operators characteristic of dynamical systems. Additionally, by structurally decoupling known and unknown terms, the framework further enables interpretable discovery of underlying governing equations through symbolic regression, without presupposing functional forms.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/4a81f115aef5358f5e2112946e24ef2f9f298133" target='_blank'>Hierarchical Physics-Embedded Learning for Prediction and Discovery in Spatiotemporal Dynamical Systems</a></td>
+          <td>
+            Xizhe Wang, Xiaobin Song, Qingshan Jia, Hao Sun, Hongbo Zhao, Benben Jiang
+          </td>
+          <td>2025-10-29</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>3</td>
+        </tr>
+
         <tr id="None">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/606824bebf4e444fca9b988823883f1ec99f19ec" target='_blank'>A physics-informed operator regression framework for extracting data-driven continuum models</a></td>
@@ -546,31 +558,6 @@
           <td>ArXiv</td>
           <td>120</td>
           <td>19</td>
-        </tr>
-
-        <tr id="None">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/138138aeee75f8f5a6f2f22575bc4d0354138e5d" target='_blank'>Data-Driven Discovery of Coarse-Grained Equations</a></td>
-          <td>
-            Joseph Bakarji, D. Tartakovsky
-          </td>
-          <td>2020-01-30</td>
-          <td>J. Comput. Phys.</td>
-          <td>33</td>
-          <td>49</td>
-        </tr>
-
-        <tr id="
- In the context of science, the well-known adage “a picture is worth a thousand words” might well be “a model is worth a thousand datasets.” Scientific models, such as Newtonian physics or biological gene regulatory networks, are human-driven simplifications of complex phenomena that serve as surrogates for the countless experiments that validated the models. Recently, machine learning has been able to overcome the inaccuracies of approximate modeling by directly learning the entire set of nonlinear interactions from data. However, without any predetermined structure from the scientific basis behind the problem, machine learning approaches are flexible but data-expensive, requiring large databases of homogeneous labeled training data. A central challenge is reconciling data that is at odds with simplified models without requiring "big data". In this work demonstrate how a mathematical object, which we denote universal differential equations (UDEs), can be utilized as a theoretical underpinning to a diverse array of problems in scientific machine learning to yield efficient algorithms and generalized approaches. The UDE model augments scientific models with machine-learnable structures for scientifically-based learning. We show how UDEs can be utilized to discover previously unknown governing equations, accurately extrapolate beyond the original data, and accelerate model simulation, all in a time and data-efficient manner. This advance is coupled with open-source software that allows for training UDEs which incorporate physical constraints, delayed interactions, implicitly-defined events, and intrinsic stochasticity in the model. Our examples show how a diverse set of computationally-difficult modeling issues across scientific disciplines, from automatically discovering biological mechanisms to accelerating the training of physics-informed neural networks and large-eddy simulations, can all be transformed into UDE training problems that are efficiently solved by a single software methodology.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/696b388ee6221c6dbcfd647a06883b2bfee773d9" target='_blank'>Universal Differential Equations for Scientific Machine Learning</a></td>
-          <td>
-            Christopher Rackauckas, Yingbo Ma, Julius Martensen, Collin Warner, K. Zubov, R. Supekar, Dominic J. Skinner, A. Ramadhan
-          </td>
-          <td>2020-01-13</td>
-          <td>ArXiv</td>
-          <td>709</td>
-          <td>27</td>
         </tr>
 
   </tbody>
