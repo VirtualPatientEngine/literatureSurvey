@@ -11,7 +11,7 @@ hide:
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-02-09 06:34:03 UTC</i>
+  <i class="footer">This page was last updated on 2026-02-16 06:33:05 UTC</i>
   </p>
   
   <div class="note info" onclick="startIntro()">
@@ -110,7 +110,7 @@ hide:
           </td>
           <td>2020-05-24</td>
           <td>Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining</td>
-          <td>1830</td>
+          <td>1839</td>
           <td>65</td>
         </tr>
     
@@ -122,8 +122,20 @@ hide:
           </td>
           <td>2021-01-18</td>
           <td>ArXiv</td>
-          <td>330</td>
+          <td>332</td>
           <td>40</td>
+        </tr>
+    
+        <tr id="Graph neural networks (GNNs) have been widely applied in multi-variate time-series forecasting (MTSF) tasks because of their capability in capturing the correlations among different time-series. These graph-based learning approaches improve the forecasting performance by discovering and understanding the underlying graph structures, which represent the data correlation. When the explicit prior graph structures are not available, most existing works cannot guarantee the sparsity of the generated graphs that make the overall model computational expensive and less interpretable. In this work, we propose a decoupled training method, which includes a graph generating module and a GNNs forecasting module. First, we use Graphical Lasso (or GraphLASSO) to directly exploit the sparsity pattern from data to build graph structures in both static and time-varying cases. Second, we fit these graph structures and the input data into a Graph Convolutional Recurrent Network (GCRN) to train a forecasting model. The experimental results on three real-world datasets show that our novel approach has competitive performance against existing state-of-the-art forecasting algorithms while providing sparse, meaningful and explainable graph structures and reducing training time by approximately 40%. Our PyTorch implementation is publicly available at https://github.com/HySonLab/GraphLASSO">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/ae010c11b07b251f5f1a1d51c439678961c92c8a" target='_blank'>Sparsity exploitation via discovering graphical models in multi-variate time-series forecasting</a></td>
+          <td>
+            Ngoc-Dung Do, T. Hy, D. Nguyen
+          </td>
+          <td>2023-06-29</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>11</td>
         </tr>
     
   </tbody>
