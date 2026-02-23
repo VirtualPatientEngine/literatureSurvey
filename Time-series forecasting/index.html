@@ -1,0 +1,1878 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../Symbolic%20regression/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
+    
+    
+<title>Literature Survey (VPE)</title>
+
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+  <!-- Add scripts that need to run before here -->
+  <!-- Add jquery script -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <!-- Add data table libraries -->
+  <script src="https://cdn.datatables.net/2.0.1/js/dataTables.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.0.1/css/dataTables.dataTables.css">
+  <!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-2.29.1.min.js'></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.0.1/css/buttons.dataTables.css">
+  <!-- fixedColumns -->
+  <script src="https://cdn.datatables.net/fixedcolumns/5.0.0/js/dataTables.fixedColumns.js"></script>
+  <script src="https://cdn.datatables.net/fixedcolumns/5.0.0/js/fixedColumns.dataTables.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/5.0.0/css/fixedColumns.dataTables.css">
+  <!-- Already specified in mkdocs.yml -->
+  <!-- <link rel="stylesheet" href="../docs/custom.css"> -->
+  <script src="https://cdn.datatables.net/buttons/3.0.1/js/dataTables.buttons.js"></script>
+  <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.dataTables.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+  <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.html5.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/3.0.1/js/buttons.print.min.js"></script>
+  <!-- Google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Intro.js -->
+  <script src="https://cdn.jsdelivr.net/npm/intro.js@7.2.0/intro.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js@7.2.0/minified/introjs.min.css">
+
+
+  <!-- 
+      
+     -->
+  <!-- Add scripts that need to run afterwards here -->
+
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="black">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Literature Survey (VPE)" class="md-header__button md-logo" aria-label="Literature Survey (VPE)" data-md-component="logo">
+      
+  <img src="../assets/VPE.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Literature Survey (VPE)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Time-series forecasting
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="black"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="white" data-md-color-accent="black"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/VirtualPatientEngine/literatureSurvey" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    VPE/LiteratureSurvey
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Time-series forecasting
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Symbolic%20regression/" class="md-tabs__link">
+        
+  
+    
+  
+  Symbolic regression
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Literature Survey (VPE)" class="md-nav__button md-logo" aria-label="Literature Survey (VPE)" data-md-component="logo">
+      
+  <img src="../assets/VPE.png" alt="logo">
+
+    </a>
+    Literature Survey (VPE)
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/VirtualPatientEngine/literatureSurvey" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    VPE/LiteratureSurvey
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Time-series forecasting
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Symbolic%20regression/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Symbolic regression
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Time-series forecasting</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <p>
+  <i class="footer">This page was last updated on 2026-02-23 06:34:17 UTC</i>
+  </p>
+
+  <div class="note info" onclick="startIntro()">
+    <p>
+      <button type="button" class="buttons">
+        <div style="display: flex; align-items: center;">
+        Click here for a quick intro of the page! <i class="material-icons">help</i>
+        </div>
+      </button>
+    </p>
+  </div>
+
+  <!--
+  <div data-intro='Table of contents'>
+    <p>
+    <h3>Table of Contents</h3>
+      <a href="#plot1">1. Citations over time on Time-series forecasting</a><br>
+      <a href="#manually_curated_articles">2. Manually curated articles on Time-series forecasting</a><br>
+      <a href="#recommended_articles">3. Recommended articles on Time-series forecasting</a><br>
+    <p>
+  </div>
+
+  <div data-intro='Plot displaying number of citations over time 
+                  on the given topic based on recommended articles'>
+    <p>
+    <h3 id="plot1">1. Citations over time on Time-series forecasting</h3>
+      <div id='myDiv1'>
+      </div>
+    </p>
+  </div>
+  -->
+
+  <div data-intro='Manually curated articles on the given topic'>
+    <p>
+    <h3 id="manually_curated_articles">Manually curated articles on <i>Time-series forecasting</i></h3>
+    <table id="table1" class="display" style="width:100%">
+    <thead>
+      <tr>
+          <th data-intro='Click to view the abstract (if available)'>Abstract</th>
+          <th>Title</th>
+          <th>Authors</th>
+          <th>Publication Date</th>
+          <th>Journal/ Conference</th>
+          <th>Citation count</th>
+          <th data-intro='Highest h-index among the authors'>Highest h-index</th>
+          <th data-intro='Recommended articles extracted by considering
+                          only the given article'>
+              View recommendations
+              </th>
+      </tr>
+    </thead>
+    <tbody>
+
+        <tr id="Time series are the primary data type used to record dynamic system measurements and generated in great volume by both physical sensors and online processes (virtual sensors). Time series analytics is therefore crucial to unlocking the wealth of information implicit in available data. With the recent advancements in graph neural networks (GNNs), there has been a surge in GNN-based approaches for time series analysis. These approaches can explicitly model inter-temporal and inter-variable relationships, which traditional and other deep neural network-based methods struggle to do. In this survey, we provide a comprehensive review of graph neural networks for time series analysis (GNN4TS), encompassing four fundamental dimensions: forecasting, classification, anomaly detection, and imputation. Our aim is to guide designers and practitioners to understand, build applications, and advance research of GNN4TS. At first, we provide a comprehensive task-oriented taxonomy of GNN4TS. Then, we present and discuss representative research works and introduce mainstream applications of GNN4TS. A comprehensive discussion of potential future research directions completes the survey. This survey, for the first time, brings together a vast array of knowledge on GNN-based time series research, highlighting foundations, practical applications, and opportunities of graph neural networks for time series analysis.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/d3dbbd0f0de51b421a6220bd6480b8d2e99a88e9" target='_blank'>
+                A Survey on Graph Neural Networks for Time Series: Forecasting, Classification, Imputation, and Anomaly Detection
+                </a>
+              </td>
+          <td>
+            Ming Jin, Huan Yee Koh, Qingsong Wen, Daniele Zambon, C. Alippi, G. I. Webb, Irwin King, Shirui Pan
+          </td>
+          <td>2023-07-07</td>
+          <td>IEEE Transactions on Pattern Analysis and Machine Intelligence</td>
+          <td>380</td>
+          <td>54</td>
+
+            <td><a href='../recommendations/d3dbbd0f0de51b421a6220bd6480b8d2e99a88e9' target='_blank'>
+              <i class="material-icons">open_in_new</i></a>
+            </td>
+
+        </tr>
+
+        <tr id="In many domains, including healthcare, biology, and climate science, time series are irregularly sampled with varying time intervals between successive readouts and different subsets of variables (sensors) observed at different time points. Here, we introduce RAINDROP, a graph neural network that embeds irregularly sampled and multivariate time series while also learning the dynamics of sensors purely from observational data. RAINDROP represents every sample as a separate sensor graph and models time-varying dependencies between sensors with a novel message passing operator. It estimates the latent sensor graph structure and leverages the structure together with nearby observations to predict misaligned readouts. This model can be interpreted as a graph neural network that sends messages over graphs that are optimized for capturing time-varying dependencies among sensors. We use RAINDROP to classify time series and interpret temporal dynamics on three healthcare and human activity datasets. RAINDROP outperforms state-of-the-art methods by up to 11.4% (absolute F1-score points), including techniques that deal with irregular sampling using fixed discretization and set functions. RAINDROP shows superiority in diverse setups, including challenging leave-sensor-out settings.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/455bfc515eb279cc09023faa1f78c6efb61224ba" target='_blank'>
+                Graph-Guided Network for Irregularly Sampled Multivariate Time Series
+                </a>
+              </td>
+          <td>
+            Xiang Zhang, M. Zeman, Theodoros Tsiligkaridis, M. Zitnik
+          </td>
+          <td>2021-10-11</td>
+          <td>International Conference on Learning Representations, ArXiv</td>
+          <td>151</td>
+          <td>59</td>
+
+            <td><a href='../recommendations/455bfc515eb279cc09023faa1f78c6efb61224ba' target='_blank'>
+              <i class="material-icons">open_in_new</i></a>
+            </td>
+
+        </tr>
+
+        <tr id="Spatiotemporal graph neural networks have shown to be effective in time series forecasting applications, achieving better performance than standard univariate predictors in several settings. These architectures take advantage of a graph structure and relational inductive biases to learn a single (global) inductive model to predict any number of the input time series, each associated with a graph node. Despite the gain achieved in computational and data efficiency w.r.t. fitting a set of local models, relying on a single global model can be a limitation whenever some of the time series are generated by a different spatiotemporal stochastic process. The main objective of this paper is to understand the interplay between globality and locality in graph-based spatiotemporal forecasting, while contextually proposing a methodological framework to rationalize the practice of including trainable node embeddings in such architectures. We ascribe to trainable node embeddings the role of amortizing the learning of specialized components. Moreover, embeddings allow for 1) effectively combining the advantages of shared message-passing layers with node-specific parameters and 2) efficiently transferring the learned model to new node sets. Supported by strong empirical evidence, we provide insights and guidelines for specializing graph-based models to the dynamics of each time series and show how this aspect plays a crucial role in obtaining accurate predictions.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/e2a83369383aff37224170c1ae3d3870d5d9e419" target='_blank'>
+                Taming Local Effects in Graph-based Spatiotemporal Forecasting
+                </a>
+              </td>
+          <td>
+            Andrea Cini, Ivan Marisca, Daniele Zambon, C. Alippi
+          </td>
+          <td>2023-02-08</td>
+          <td>Neural Information Processing Systems, ArXiv</td>
+          <td>49</td>
+          <td>54</td>
+
+            <td><a href='../recommendations/e2a83369383aff37224170c1ae3d3870d5d9e419' target='_blank'>
+              <i class="material-icons">open_in_new</i></a>
+            </td>
+
+        </tr>
+
+        <tr id="Outstanding achievements of graph neural networks for spatiotemporal time series analysis show that relational constraints introduce an effective inductive bias into neural forecasting architectures. Often, however, the relational information characterizing the underlying data-generating process is unavailable and the practitioner is left with the problem of inferring from data which relational graph to use in the subsequent processing stages. We propose novel, principled - yet practical - probabilistic score-based methods that learn the relational dependencies as distributions over graphs while maximizing end-to-end the performance at task. The proposed graph learning framework is based on consolidated variance reduction techniques for Monte Carlo score-based gradient estimation, is theoretically grounded, and, as we show, effective in practice. In this paper, we focus on the time series forecasting problem and show that, by tailoring the gradient estimators to the graph learning problem, we are able to achieve state-of-the-art performance while controlling the sparsity of the learned graph and the computational scalability. We empirically assess the effectiveness of the proposed method on synthetic and real-world benchmarks, showing that the proposed solution can be used as a stand-alone graph identification procedure as well as a graph learning component of an end-to-end forecasting architecture.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/0d01d21137a5af9f04e4b16a55a0f732cb8a540b" target='_blank'>
+                Sparse Graph Learning from Spatiotemporal Time Series
+                </a>
+              </td>
+          <td>
+            Andrea Cini, Daniele Zambon, C. Alippi
+          </td>
+          <td>2022-05-26</td>
+          <td>J. Mach. Learn. Res., Journal of machine learning research</td>
+          <td>30</td>
+          <td>54</td>
+
+            <td><a href='../recommendations/0d01d21137a5af9f04e4b16a55a0f732cb8a540b' target='_blank'>
+              <i class="material-icons">open_in_new</i></a>
+            </td>
+
+        </tr>
+
+        <tr id="Graph deep learning methods have become popular tools to process collections of correlated time series. Unlike traditional multivariate forecasting methods, graph-based predictors leverage pairwise relationships by conditioning forecasts on graphs spanning the time series collection. The conditioning takes the form of architectural inductive biases on the forecasting architecture, resulting in a family of models called spatiotemporal graph neural networks. These biases allow for training global forecasting models on large collections of time series while localizing predictions w.r.t. each element in the set (nodes) by accounting for correlations among them (edges). Recent advances in graph neural networks and deep learning for time series forecasting make the adoption of such processing framework appealing and timely. However, most studies focus on refining existing architectures by exploiting modern deep-learning practices. Conversely, foundational and methodological aspects have not been subject to systematic investigation. To fill this void, this tutorial paper aims to introduce a comprehensive methodological framework formalizing the forecasting problem and providing design principles for graph-based predictors, as well as methods to assess their performance. In addition, together with an overview of the field, we provide design guidelines and best practices, as well as an in-depth discussion of open challenges and future directions.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/ccea298edb788edf821aef58f0952c3e8debc25a" target='_blank'>
+                Graph Deep Learning for Time Series Forecasting
+                </a>
+              </td>
+          <td>
+            Andrea Cini, Ivan Marisca, Daniele Zambon, C. Alippi
+          </td>
+          <td>2023-10-24</td>
+          <td>ACM Computing Surveys</td>
+          <td>35</td>
+          <td>54</td>
+
+            <td><a href='../recommendations/ccea298edb788edf821aef58f0952c3e8debc25a' target='_blank'>
+              <i class="material-icons">open_in_new</i></a>
+            </td>
+
+        </tr>
+
+        <tr id="By encoding time series as a string of numerical digits, we can frame time series forecasting as next-token prediction in text. Developing this approach, we find that large language models (LLMs) such as GPT-3 and LLaMA-2 can surprisingly zero-shot extrapolate time series at a level comparable to or exceeding the performance of purpose-built time series models trained on the downstream tasks. To facilitate this performance, we propose procedures for effectively tokenizing time series data and converting discrete distributions over tokens into highly flexible densities over continuous values. We argue the success of LLMs for time series stems from their ability to naturally represent multimodal distributions, in conjunction with biases for simplicity, and repetition, which align with the salient features in many time series, such as repeated seasonal trends. We also show how LLMs can naturally handle missing data without imputation through non-numerical text, accommodate textual side information, and answer questions to help explain predictions. While we find that increasing model size generally improves performance on time series, we show GPT-4 can perform worse than GPT-3 because of how it tokenizes numbers, and poor uncertainty calibration, which is likely the result of alignment interventions such as RLHF.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/123acfbccca0460171b6b06a4012dbb991cde55b" target='_blank'>
+                Large Language Models Are Zero-Shot Time Series Forecasters
+                </a>
+              </td>
+          <td>
+            Nate Gruver, Marc Finzi, Shikai Qiu, Andrew Gordon Wilson
+          </td>
+          <td>2023-10-11</td>
+          <td>Neural Information Processing Systems, ArXiv</td>
+          <td>624</td>
+          <td>18</td>
+
+            <td><a href='../recommendations/123acfbccca0460171b6b06a4012dbb991cde55b' target='_blank'>
+              <i class="material-icons">open_in_new</i></a>
+            </td>
+
+        </tr>
+
+        <tr id="Attention mechanisms have been widely used to capture long-range dependencies among nodes in Graph Transformers. Bottlenecked by the quadratic computational cost, attention mechanisms fail to scale in large graphs. Recent improvements in computational efficiency are mainly achieved by attention sparsification with random or heuristic-based graph subsampling, which falls short in data-dependent context reasoning. State space models (SSMs), such as Mamba, have gained prominence for their effectiveness and efficiency in modeling long-range dependencies in sequential data. However, adapting SSMs to non-sequential graph data presents a notable challenge. In this work, we introduce Graph-Mamba, the first attempt to enhance long-range context modeling in graph networks by integrating a Mamba block with the input-dependent node selection mechanism. Specifically, we formulate graph-centric node prioritization and permutation strategies to enhance context-aware reasoning, leading to a substantial improvement in predictive performance. Extensive experiments on ten benchmark datasets demonstrate that Graph-Mamba outperforms state-of-the-art methods in long-range graph prediction tasks, with a fraction of the computational cost in both FLOPs and GPU memory consumption. The code and models are publicly available at https://github.com/bowang-lab/Graph-Mamba.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/1df04f33a8ef313cc2067147dbb79c3ca7c5c99f" target='_blank'>
+                Graph-Mamba: Towards Long-Range Graph Sequence Modeling with Selective State Spaces
+                </a>
+              </td>
+          <td>
+            Chloe Wang, Oleksii Tsepa, Jun Ma, Bo Wang
+          </td>
+          <td>2024-02-01</td>
+          <td>ArXiv, arXiv.org</td>
+          <td>155</td>
+          <td>7</td>
+
+            <td><a href='../recommendations/1df04f33a8ef313cc2067147dbb79c3ca7c5c99f' target='_blank'>
+              <i class="material-icons">open_in_new</i></a>
+            </td>
+
+        </tr>
+
+        <tr id="Motivated by recent advances in large language models for Natural Language Processing (NLP), we design a time-series foundation model for forecasting whose out-of-the-box zero-shot performance on a variety of public datasets comes close to the accuracy of state-of-the-art supervised forecasting models for each individual dataset. Our model is based on pretraining a patched-decoder style attention model on a large time-series corpus, and can work well across different forecasting history lengths, prediction lengths and temporal granularities.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/f45f85fa1beaa795c24c4ff86f1f2deece72252f" target='_blank'>
+                A decoder-only foundation model for time-series forecasting
+                </a>
+              </td>
+          <td>
+            Abhimanyu Das, Weihao Kong, Rajat Sen, Yichen Zhou
+          </td>
+          <td>2023-10-14</td>
+          <td>ArXiv, DBLP</td>
+          <td>511</td>
+          <td>16</td>
+
+            <td><a href='../recommendations/f45f85fa1beaa795c24c4ff86f1f2deece72252f' target='_blank'>
+              <i class="material-icons">open_in_new</i></a>
+            </td>
+
+        </tr>
+
+        <tr id="Deep learning for time series forecasting has traditionally operated within a one-model-per-dataset framework, limiting its potential to leverage the game-changing impact of large pre-trained models. The concept of universal forecasting, emerging from pre-training on a vast collection of time series datasets, envisions a single Large Time Series Model capable of addressing diverse downstream forecasting tasks. However, constructing such a model poses unique challenges specific to time series data: i) cross-frequency learning, ii) accommodating an arbitrary number of variates for multivariate time series, and iii) addressing the varying distributional properties inherent in large-scale data. To address these challenges, we present novel enhancements to the conventional time series Transformer architecture, resulting in our proposed Masked Encoder-based Universal Time Series Forecasting Transformer (Moirai). Trained on our newly introduced Large-scale Open Time Series Archive (LOTSA) featuring over 27B observations across nine domains, Moirai achieves competitive or superior performance as a zero-shot forecaster when compared to full-shot models. Code, data, and model weights can be found at https://github.com/SalesforceAIResearch/uni2ts.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/4a111f7a3b56d0468f13104999844885157ef17d" target='_blank'>
+                Unified Training of Universal Time Series Forecasting Transformers
+                </a>
+              </td>
+          <td>
+            Gerald Woo, Chenghao Liu, Akshat Kumar, Caiming Xiong, Silvio Savarese, Doyen Sahoo
+          </td>
+          <td>2024-02-04</td>
+          <td>ArXiv, DBLP</td>
+          <td>442</td>
+          <td>35</td>
+
+            <td><a href='../recommendations/4a111f7a3b56d0468f13104999844885157ef17d' target='_blank'>
+              <i class="material-icons">open_in_new</i></a>
+            </td>
+
+        </tr>
+
+        <tr id="Time series forecasting holds significant importance in many real-world dynamic systems and has been extensively studied. Unlike natural language process (NLP) and computer vision (CV), where a single large model can tackle multiple tasks, models for time series forecasting are often specialized, necessitating distinct designs for different tasks and applications. While pre-trained foundation models have made impressive strides in NLP and CV, their development in time series domains has been constrained by data sparsity. Recent studies have revealed that large language models (LLMs) possess robust pattern recognition and reasoning abilities over complex sequences of tokens. However, the challenge remains in effectively aligning the modalities of time series data and natural language to leverage these capabilities. In this work, we present Time-LLM, a reprogramming framework to repurpose LLMs for general time series forecasting with the backbone language models kept intact. We begin by reprogramming the input time series with text prototypes before feeding it into the frozen LLM to align the two modalities. To augment the LLM's ability to reason with time series data, we propose Prompt-as-Prefix (PaP), which enriches the input context and directs the transformation of reprogrammed input patches. The transformed time series patches from the LLM are finally projected to obtain the forecasts. Our comprehensive evaluations demonstrate that Time-LLM is a powerful time series learner that outperforms state-of-the-art, specialized forecasting models. Moreover, Time-LLM excels in both few-shot and zero-shot learning scenarios.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/16f01c1b3ddd0b2abd5ddfe4fdb3f74767607277" target='_blank'>
+                Time-LLM: Time Series Forecasting by Reprogramming Large Language Models
+                </a>
+              </td>
+          <td>
+            Ming Jin, Shiyu Wang, Lintao Ma, Zhixuan Chu, James Y. Zhang, X. Shi, Pin-Yu Chen, Yuxuan Liang, Yuan-Fang Li, Shirui Pan, Qingsong Wen
+          </td>
+          <td>2023-10-03</td>
+          <td>International Conference on Learning Representations, ArXiv</td>
+          <td>781</td>
+          <td>14</td>
+
+            <td><a href='../recommendations/16f01c1b3ddd0b2abd5ddfe4fdb3f74767607277' target='_blank'>
+              <i class="material-icons">open_in_new</i></a>
+            </td>
+
+        </tr>
+
+        <tr id="Large pre-trained models excel in zero/few-shot learning for language and vision tasks but face challenges in multivariate time series (TS) forecasting due to diverse data characteristics. Consequently, recent research efforts have focused on developing pre-trained TS forecasting models. These models, whether built from scratch or adapted from large language models (LLMs), excel in zero/few-shot forecasting tasks. However, they are limited by slow performance, high computational demands, and neglect of cross-channel and exogenous correlations. To address this, we introduce Tiny Time Mixers (TTM), a compact model (starting from 1M parameters) with effective transfer learning capabilities, trained exclusively on public TS datasets. TTM, based on the light-weight TSMixer architecture, incorporates innovations like adaptive patching, diverse resolution sampling, and resolution prefix tuning to handle pre-training on varied dataset resolutions with minimal model capacity. Additionally, it employs multi-level modeling to capture channel correlations and infuse exogenous signals during fine-tuning. TTM outperforms existing popular benchmarks in zero/few-shot forecasting by (4-40%), while reducing computational requirements significantly. Moreover, TTMs are lightweight and can be executed even on CPU-only machines, enhancing usability and fostering wider adoption in resource-constrained environments. The model weights for reproducibility and research use are available at https://huggingface.co/ibm/ttm-research-r2/, while enterprise-use weights under the Apache license can be accessed as follows: the initial TTM-Q variant at https://huggingface.co/ibm-granite/granite-timeseries-ttm-r1, and the latest variants (TTM-B, TTM-E, TTM-A) weights are available at https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/e2e1f1b8e6c1b7f4f166e15b7c674945856a51b6" target='_blank'>
+                Tiny Time Mixers (TTMs): Fast Pre-trained Models for Enhanced Zero/Few-Shot Forecasting of Multivariate Time Series
+                </a>
+              </td>
+          <td>
+            Vijay Ekambaram, Arindam Jati, Nam H. Nguyen, Pankaj Dayama, Chandra Reddy, Wesley M. Gifford, Jayant Kalagnanam
+          </td>
+          <td>2024-01-08</td>
+          <td>Neural Information Processing Systems, ArXiv</td>
+          <td>101</td>
+          <td>5</td>
+
+            <td><a href='../recommendations/e2e1f1b8e6c1b7f4f166e15b7c674945856a51b6' target='_blank'>
+              <i class="material-icons">open_in_new</i></a>
+            </td>
+
+        </tr>
+
+        <tr id="Pre-training on time series poses a unique challenge due to the potential mismatch between pre-training and target domains, such as shifts in temporal dynamics, fast-evolving trends, and long-range and short-cyclic effects, which can lead to poor downstream performance. While domain adaptation methods can mitigate these shifts, most methods need examples directly from the target domain, making them suboptimal for pre-training. To address this challenge, methods need to accommodate target domains with different temporal dynamics and be capable of doing so without seeing any target examples during pre-training. Relative to other modalities, in time series, we expect that time-based and frequency-based representations of the same example are located close together in the time-frequency space. To this end, we posit that time-frequency consistency (TF-C) -- embedding a time-based neighborhood of an example close to its frequency-based neighborhood -- is desirable for pre-training. Motivated by TF-C, we define a decomposable pre-training model, where the self-supervised signal is provided by the distance between time and frequency components, each individually trained by contrastive estimation. We evaluate the new method on eight datasets, including electrodiagnostic testing, human activity recognition, mechanical fault detection, and physical status monitoring. Experiments against eight state-of-the-art methods show that TF-C outperforms baselines by 15.4% (F1 score) on average in one-to-one settings (e.g., fine-tuning an EEG-pretrained model on EMG data) and by 8.4% (precision) in challenging one-to-many settings (e.g., fine-tuning an EEG-pretrained model for either hand-gesture recognition or mechanical fault prediction), reflecting the breadth of scenarios that arise in real-world applications. Code and datasets: https://github.com/mims-harvard/TFC-pretraining.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/648d90b713997a771e2c49f02cd771e8b7b10b37" target='_blank'>
+                Self-Supervised Contrastive Pre-Training For Time Series via Time-Frequency Consistency
+                </a>
+              </td>
+          <td>
+            Xiang Zhang, Ziyuan Zhao, Theodoros Tsiligkaridis, M. Zitnik
+          </td>
+          <td>2022-06-17</td>
+          <td>Neural Information Processing Systems, ArXiv</td>
+          <td>424</td>
+          <td>59</td>
+
+            <td><a href='../recommendations/648d90b713997a771e2c49f02cd771e8b7b10b37' target='_blank'>
+              <i class="material-icons">open_in_new</i></a>
+            </td>
+
+        </tr>
+
+        <tr id="Unsupervised domain adaptation (UDA) enables the transfer of models trained on source domains to unlabeled target domains. However, transferring complex time series models presents challenges due to the dynamic temporal structure variations across domains. This leads to feature shifts in the time and frequency representations. Additionally, the label distributions of tasks in the source and target domains can differ significantly, posing difficulties in addressing label shifts and recognizing labels unique to the target domain. Effectively transferring complex time series models remains a formidable problem. We present Raincoat, the first model for both closed-set and universal domain adaptation on complex time series. Raincoat addresses feature and label shifts by considering both temporal and frequency features, aligning them across domains, and correcting for misalignments to facilitate the detection of private labels. Additionally, Raincoat improves transferability by identifying label shifts in target domains. Our experiments with 5 datasets and 13 state-of-the-art UDA methods demonstrate that Raincoat can improve transfer learning performance by up to 16.33% and can handle both closed-set and universal domain adaptation.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/5bd2c0acaf58c25f71617db2396188c74d29bf14" target='_blank'>
+                Domain Adaptation for Time Series Under Feature and Label Shifts
+                </a>
+              </td>
+          <td>
+            Huan He, Owen Queen, Teddy Koker, Consuelo Cuevas, Theodoros Tsiligkaridis, M. Zitnik
+          </td>
+          <td>2023-02-06</td>
+          <td>ArXiv, DBLP</td>
+          <td>109</td>
+          <td>59</td>
+
+            <td><a href='../recommendations/5bd2c0acaf58c25f71617db2396188c74d29bf14' target='_blank'>
+              <i class="material-icons">open_in_new</i></a>
+            </td>
+
+        </tr>
+
+        <tr id="None">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/c3c94ccc094dcf546e8e31c9a42506302e837524" target='_blank'>
+                AZ-whiteness test: a test for signal uncorrelation on spatio-temporal graphs
+                </a>
+              </td>
+          <td>
+            Daniele Zambon, C. Alippi
+          </td>
+          <td>None</td>
+          <td>DBLP</td>
+          <td>8</td>
+          <td>54</td>
+
+            <td><a href='../recommendations/c3c94ccc094dcf546e8e31c9a42506302e837524' target='_blank'>
+              <i class="material-icons">open_in_new</i></a>
+            </td>
+
+        </tr>
+
+        <tr id="State-space models constitute an effective modeling tool to describe multivariate time series and operate by maintaining an updated representation of the system state from which predictions are made. Within this framework, relational inductive biases, e.g., associated with functional dependencies existing among signals, are not explicitly exploited leaving unattended great opportunities for effective modeling approaches. The manuscript aims, for the first time, at filling this gap by matching state-space modeling and spatio-temporal data where the relational information, say the functional graph capturing latent dependencies, is learned directly from data and is allowed to change over time. Within a probabilistic formulation that accounts for the uncertainty in the data-generating process, an encoder-decoder architecture is proposed to learn the state-space model end-to-end on a downstream task. The proposed methodological framework generalizes several state-of-the-art methods and demonstrates to be effective in extracting meaningful relational information while achieving optimal forecasting performance in controlled environments.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/279cd637b7e38bba1dd8915b5ce68cbcacecbe68" target='_blank'>
+                Graph state-space models
+                </a>
+              </td>
+          <td>
+            Daniele Zambon, Andrea Cini, L. Livi, C. Alippi
+          </td>
+          <td>2023-01-04</td>
+          <td>ArXiv, arXiv.org</td>
+          <td>8</td>
+          <td>54</td>
+
+            <td><a href='../recommendations/279cd637b7e38bba1dd8915b5ce68cbcacecbe68' target='_blank'>
+              <i class="material-icons">open_in_new</i></a>
+            </td>
+
+        </tr>
+
+        <tr id="Although pre-trained transformers and reprogrammed text-based LLMs have shown strong performance on time series tasks, the best-performing architectures vary widely across tasks, with most models narrowly focused on specific areas, such as time series forecasting. Unifying predictive and generative time series tasks within a single model remains challenging. We introduce UniTS, a unified multi-task time series model that utilizes task tokenization to integrate predictive and generative tasks into a single framework. UniTS employs a modified transformer block to capture universal time series representations, enabling transferability from a heterogeneous, multi-domain pre-training dataset-characterized by diverse dynamic patterns, sampling rates, and temporal scales-to a wide range of downstream datasets with varied task specifications and data domains. Tested on 38 datasets across human activity sensors, healthcare, engineering, and finance, UniTS achieves superior performance compared to 12 forecasting models, 20 classification models, 18 anomaly detection models, and 16 imputation models, including adapted text-based LLMs. UniTS also demonstrates strong few-shot and prompt capabilities when applied to new domains and tasks. In single-task settings, UniTS outperforms competitive task-specialized time series models. Code and datasets are available at https://github.com/mims-harvard/UniTS.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/ff1f1cf9df8c413ec7345da7604ba28597da5b90" target='_blank'>
+                UniTS: A Unified Multi-Task Time Series Model
+                </a>
+              </td>
+          <td>
+            Shanghua Gao, Teddy Koker, Owen Queen, Thomas Hartvigsen, Theodoros Tsiligkaridis, M. Zitnik
+          </td>
+          <td>2024-02-29</td>
+          <td>Advances in Neural Information Processing Systems 37, Neural Information Processing Systems</td>
+          <td>80</td>
+          <td>59</td>
+
+            <td><a href='../recommendations/bcbcc2e1af8bcf6b07edf866be95116a8ed0bf91' target='_blank'>
+              <i class="material-icons">open_in_new</i></a>
+            </td>
+
+        </tr>
+
+    </tbody>
+    <tfoot>
+      <tr>
+          <th>Abstract</th>
+          <th>Title</th>
+          <th>Authors</th>
+          <th>Publication Date</th>
+          <th>Journal/ Conference</th>
+          <th>Citation count</th>
+          <th>Highest h-index</th>
+          <th>View recommendations</th>
+      </tr>
+    </tfoot>
+    </table>
+    </p>
+  </div>
+
+  <div data-intro='Recommended articles extracted by contrasting
+                  articles that are relevant against not relevant for Time-series forecasting'>
+    <p>
+    <h3 id="recommended_articles">Recommended articles on <i>Time-series forecasting</i></h3>
+    <table id="table2" class="display" style="width:100%">
+    <thead>
+      <tr>
+          <th>Abstract</th>
+          <th>Title</th>
+          <th>Authors</th>
+          <th>Publication Date</th>
+          <th>Journal/Conference</th>
+          <th>Citation count</th>
+          <th>Highest h-index</th>
+      </tr>
+    </thead>
+    <tbody>
+
+        <tr id="In machine learning, effective modeling requires a holistic consideration of how to encode inputs, make predictions (i.e., decoding), and train the model. However, in time-series forecasting, prior work has predominantly focused on encoder design, often treating prediction and training as separate or secondary concerns. In this paper, we propose TimePerceiver, a unified encoder-decoder forecasting framework that is tightly aligned with an effective training strategy. To be specific, we first generalize the forecasting task to include diverse temporal prediction objectives such as extrapolation, interpolation, and imputation. Since this generalization requires handling input and target segments that are arbitrarily positioned along the temporal axis, we design a novel encoder-decoder architecture that can flexibly perceive and adapt to these varying positions. For encoding, we introduce a set of latent bottleneck representations that can interact with all input segments to jointly capture temporal and cross-channel dependencies. For decoding, we leverage learnable queries corresponding to target timestamps to effectively retrieve relevant information. Extensive experiments demonstrate that our framework consistently and significantly outperforms prior state-of-the-art baselines across a wide range of benchmark datasets. The code is available at https://github.com/efficient-learning-lab/TimePerceiver.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/14449346f014b3d90a2765b8e18d04672e9661bf" target='_blank'>
+              TimePerceiver: An Encoder-Decoder Framework for Generalized Time-Series Forecasting
+              </a>
+            </td>
+          <td>
+            Jaebin Lee, Hankook Lee
+          </td>
+          <td>2025-12-27</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+
+        <tr id="Real-world multivariate time series can exhibit intricate multi-scale structures, including global trends, local periodicities, and non-stationary regimes, which makes long-horizon forecasting challenging. Although sparse Mixture-of-Experts (MoE) approaches improve scalability and specialization, they typically rely on homogeneous MLP experts that poorly capture the diverse temporal dynamics of time series data. We address these limitations with MoHETS, an encoder-only Transformer that integrates sparse Mixture-of-Heterogeneous-Experts (MoHE) layers. MoHE routes temporal patches to a small subset of expert networks, combining a shared depthwise-convolution expert for sequence-level continuity with routed Fourier-based experts for patch-level periodic structures. MoHETS further improves robustness to non-stationary dynamics by incorporating exogenous information via cross-attention over covariate patch embeddings. Finally, we replace parameter-heavy linear projection heads with a lightweight convolutional patch decoder, improving parameter efficiency, reducing training instability, and allowing a single model to generalize across arbitrary forecast horizons. We validate across seven multivariate benchmarks and multiple horizons, with MoHETS consistently achieving state-of-the-art performance, reducing the average MSE by $12\%$ compared to strong recent baselines, demonstrating effective heterogeneous specialization for long-term forecasting.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/16a6d4826ca05e107b5c435e57a203c5b19b852c" target='_blank'>
+              MoHETS: Long-term Time Series Forecasting with Mixture-of-Heterogeneous-Experts
+              </a>
+            </td>
+          <td>
+            Evandro S. Ortigossa, Guy Lutsker, Eran Segal
+          </td>
+          <td>2026-01-29</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>5</td>
+        </tr>
+
+        <tr id="None">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/05997458ba7d5ec3be6b2efe8ea1694ee14a17ce" target='_blank'>
+              Multi-view graph representing interactive learning network for time series forecasting
+              </a>
+            </td>
+          <td>
+            Guanshu Wang, Limin Liu, Bin Wu
+          </td>
+          <td>2026-01-18</td>
+          <td>Journal of Big Data</td>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+
+        <tr id="Transformer-based models have recently made significant advances in accurate time-series forecasting, but even these architectures struggle to scale efficiently while capturing long-term temporal dynamics. Mixture-of-Experts (MoE) layers are a proven solution to scaling problems in natural language processing. However, existing MoE approaches for time-series forecasting rely on token-wise routing mechanisms, which may fail to exploit the natural locality and continuity of temporal data. In this work, we introduce Seg-MoE, a sparse MoE design that routes and processes contiguous time-step segments rather than making independent expert decisions. Token segments allow each expert to model intra-segment interactions directly, naturally aligning with inherent temporal patterns. We integrate Seg-MoE layers into a time-series Transformer and evaluate it on multiple multivariate long-term forecasting benchmarks. Seg-MoE consistently achieves state-of-the-art forecasting accuracy across almost all prediction horizons, outperforming both dense Transformers and prior token-wise MoE models. Comprehensive ablation studies confirm that segment-level routing is the key factor driving these gains. Our results show that aligning the MoE routing granularity with the inherent structure of time series provides a powerful, yet previously underexplored, inductive bias, opening new avenues for conditionally sparse architectures in sequential data modeling.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/418739b9cb8284b04535c1fb313d9726f7c99036" target='_blank'>
+              Seg-MoE: Multi-Resolution Segment-wise Mixture-of-Experts for Time Series Forecasting Transformers
+              </a>
+            </td>
+          <td>
+            Evandro S. Ortigossa, Eran Segal
+          </td>
+          <td>2026-01-29</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>5</td>
+        </tr>
+
+        <tr id="Transformer-based models have shown strong performance in time-series forecasting by leveraging self-attention to model long-range temporal dependencies. However, their effectiveness depends critically on the quality and structure of input representations derived from raw multivariate time-series data, particularly as sequence length and data scale increase. This paper proposes a two-stage forecasting framework that explicitly separates local temporal representation learning from global dependency modelling. In the proposed approach, a convolutional neural network operates on fixed-length temporal patches to extract short-range temporal dynamics and non-linear feature interactions, producing compact patch-level token embeddings. Token-level self-attention is applied during representation learning to refine these embeddings, after which a Transformer encoder models inter-patch temporal dependencies to generate forecasts. The method is evaluated on a synthetic multivariate time-series dataset with controlled static and dynamic factors, using an extended sequence length and a larger number of samples. Experimental results demonstrate that the proposed framework consistently outperforms a convolutional baseline under increased temporal context and remains competitive with a strong patch-based Transformer model. These findings indicate that structured patch-level tokenization provides a scalable and effective representation for multivariate time-series forecasting, particularly when longer input sequences are considered.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/58461d3e54d54bf026d4488489a3f9091a4fca05" target='_blank'>
+              Patch-Level Tokenization with CNN Encoders and Attention for Improved Transformer Time-Series Forecasting
+              </a>
+            </td>
+          <td>
+            Saurish Nagrath, Saroj Kumar Panigrahy
+          </td>
+          <td>2026-01-18</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>12</td>
+        </tr>
+
+        <tr id="Time series forecasting in specialized domains is often constrained by limited data availability, where conventional models typically require large-scale datasets to effectively capture underlying temporal dynamics. To tackle this few-shot challenge, we propose LTSM-DIFF (Large-scale Temporal Sequential Memory with Diffusion), a novel learning framework that integrates the expressive power of large language models with the generative capability of diffusion models. Specifically, the LTSM module is fine-tuned and employed as a temporal memory mechanism, extracting rich sequential representations even under data-scarce conditions. These representations are then utilized as conditional guidance for a joint probability diffusion process, enabling refined modeling of complex temporal patterns. This design allows knowledge transfer from the language domain to time series tasks, substantially enhancing both generalization and robustness. Extensive experiments across diverse benchmarks demonstrate that LTSM-DIFF consistently achieves state-of-the-art performance in data-rich scenarios, while also delivering significant improvements in few-shot forecasting. Our work establishes a new paradigm for time series analysis under data scarcity.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/bd4aa5da89b6ee9fdbf68ef1e2a449f4c13b0244" target='_blank'>
+              Enhancing few-shot time series forecasting with LLM-guided diffusion
+              </a>
+            </td>
+          <td>
+            Haonan Shi, Dehua Shuai, Liming Wang, Xiyang Liu, Long Tian
+          </td>
+          <td>2026-01-19</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>2</td>
+        </tr>
+
+        <tr id="Time series forecasting remains a fundamental yet challenging task due to its inherent non-linear dynamics, inter-variable dependencies, and long-term temporal correlations. Existing approaches often struggle to jointly capture local temporal continuity and global contextual relationships, particularly under complex external influences. To overcome these limitations, we propose KALFormer, a knowledge-augmented attention learning transformer framework that integrates sequential modeling with external information fusion. KALFormer enhances spatiotemporal representation and contextual reasoning by integrating Long Short-Term Memory (LSTM) encoders, Transformer-based self-attention mechanisms, and knowledge-aware modules. Extensive experiments on six public benchmark datasets demonstrate that KALFormer achieves an average improvement of 8.4% in MSE and MAE compared with representative baseline models, highlighting its robustness, interpretability, and reliability for long-term time series forecasting. The source code is available at https://github.com/dxpython/KALFormer.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/ac919cce4397f750bb09bde27fb8912f6c7398ca" target='_blank'>
+              KALFormer: Knowledge-augmented attention learning for long-term time series forecasting with transformer
+              </a>
+            </td>
+          <td>
+            Xing Dong, Qianwei Yang, Wenbo Cheng, Yun Zhang
+          </td>
+          <td>2026-01-05</td>
+          <td>PLOS One</td>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+
+        <tr id="Recently, there has been great success in leveraging pre-trained large language models (LLMs) for time series analysis. The core idea lies in effectively aligning the modality between natural language and time series. However, the multi-scale structures of natural language and time series have not been fully considered, resulting in insufficient utilization of LLMs capabilities. To this end, we propose MSH-LLM, a Multi-Scale Hypergraph method that aligns Large Language Models for time series analysis. Specifically, a hyperedging mechanism is designed to enhance the multi-scale semantic information of time series semantic space. Then, a cross-modality alignment (CMA) module is introduced to align the modality between natural language and time series at different scales. In addition, a mixture of prompts (MoP) mechanism is introduced to provide contextual information and enhance the ability of LLMs to understand the multi-scale temporal patterns of time series. Experimental results on 27 real-world datasets across 5 different applications demonstrate that MSH-LLM achieves the state-of-the-art results.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/a1b5321d41a6c58ed8a1b3eae273a8e0a21322fd" target='_blank'>
+              Multi-scale hypergraph meets LLMs: Aligning large language models for time series analysis
+              </a>
+            </td>
+          <td>
+            Zongjiang Shang, Dongliang Cui, Binqing Wu, Ling Chen
+          </td>
+          <td>2026-02-04</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>7</td>
+        </tr>
+
+        <tr id="LLM-for-time series (TS) methods typically treat time shallowly, injecting positional or prompt-based cues once at the input of a largely frozen decoder, which limits temporal reasoning as this information degrades through the layers. We introduce Temporal-Prior Conditioning (TPC), which elevates time to a first-class modality that conditions the model at multiple depths. TPC attaches a small set of learnable time series tokens to the patch stream; at selected layers these tokens cross-attend to temporal embeddings derived from compact, human-readable temporal descriptors encoded by the same frozen LLM, then feed temporal context back via self-attention. This disentangles time series signal and temporal information while maintaining a low parameter budget. We show that by training only the cross-attention modules and explicitly disentangling time series signal and temporal information, TPC consistently outperforms both full fine-tuning and shallow conditioning strategies, achieving state-of-the-art performance in long-term forecasting across diverse datasets. Code available at: https://github.com/fil-mp/Deep_tpc">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/393d557921e86449e22253b44e6213e85175de40" target='_blank'>
+              Deep TPC: Temporal-Prior Conditioning for Time Series Forecasting
+              </a>
+            </td>
+          <td>
+            Filippos Bellos, NaveenJohn Premkumar, Yannis Avrithis, , Jason J. Corso
+          </td>
+          <td>2026-02-18</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>43</td>
+        </tr>
+
+        <tr id="Despite the prevalent assumption of uniform variable importance in long-term time series forecasting models, real world applications often exhibit asymmetric causal relationships and varying data acquisition costs. Specifically, cost-effective exogenous data (e.g., local weather) can unilaterally influence dynamics of endogenous variables, such as lake surface temperature. Exploiting these links enables more effective forecasts when exogenous inputs are readily available. Transformer-based models capture long-range dependencies but incur high computation and suffer from permutation invariance. Patch-based variants improve efficiency yet can miss local temporal patterns. To efficiently exploit informative signals across both the temporal dimension and relevant exogenous variables, this study proposes XLinear, a lightweight time series forecasting model built upon MultiLayer Perceptrons (MLPs). XLinear uses a global token derived from an endogenous variable as a pivotal hub for interacting with exogenous variables, and employs MLPs with sigmoid activation to extract both temporal patterns and variate-wise dependencies. Its prediction head then integrates these signals to forecast the endogenous series. We evaluate XLinear on seven standard benchmarks and five real-world datasets with exogenous inputs. Compared with state-of-the-art models, XLinear delivers superior accuracy and efficiency for both multivariate forecasts and univariate forecasts influenced by exogenous inputs.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/2c613ede62a995af17a9f0af634976e2e3c6a3de" target='_blank'>
+              XLinear: A Lightweight and Accurate MLP-Based Model for Long-Term Time Series Forecasting with Exogenous Inputs
+              </a>
+            </td>
+          <td>
+            Xinyang Chen, Huidong Jin, Yu Huang, Zaiwen Feng
+          </td>
+          <td>2026-01-14</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+
+        <tr id="Accurate network traffic forecasting is essential for the proactive management of modern communication systems, particularly for emerging satellite constellations. However, forecasting network traffic is a non-trivial task, as the data exhibit complex statistical properties such as self-similarity, spatial–temporal long-range dependence, and non-stationarity, which challenge even the recent surge of deep learning models like iTransformer and DLinear. To address these limitations, this paper proposes MDETST, a novel Transformer-based architecture designed to more effectively capture and disentangle these complex, multi-scale spatio-temporal dependencies. Recognizing the scarcity of public satellite data, we conduct a comprehensive evaluation on the large-scale CESNET-TIMESERIES24 dataset, a challenging real-world benchmark that shares the critical statistical properties of both satellite and terrestrial systems. Extensive experiments demonstrate that our proposed MDETST model achieves state-of-the-art performance, consistently and significantly outperforming strong baselines, especially in demanding long-term forecasting scenarios. This work provides a robust and effective solution for complex traffic forecasting, showing strong potential for application in both satellite and terrestrial network management.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/26e5ade91c63c4c75e6bd1d5400340850cbeec98" target='_blank'>
+              Robust Long-Term Spatial–Temporal Forecasting for Dynamic Networks: The MDETST Model
+              </a>
+            </td>
+          <td>
+            Wenjing Feng, Lanhao Li, Huichao Zhou, Bingshu Xie, Dawei Zhao, Yi Zhang, Feifei Wang
+          </td>
+          <td>2026-02-13</td>
+          <td>Mathematics</td>
+          <td>0</td>
+          <td>2</td>
+        </tr>
+
+        <tr id="Deep learning models have grown increasingly popular in time series applications. However, the large quantity of newly proposed architectures, together with often contradictory empirical results, makes it difficult to assess which components contribute significantly to final performance. We aim to make sense of the current design space of deep learning architectures for time series forecasting by discussing the design dimensions and trade-offs that can explain, often unexpected, observed results. This paper discusses the necessity of grounding model design on principles for forecasting groups of time series and how such principles can be applied to current models. In particular, we assess how concepts such as locality and globality apply to recent forecasting architectures. We show that accounting for these aspects can be more relevant for achieving accurate results than adopting specific sequence modeling layers and that simple, well-designed forecasting architectures can often match the state of the art. We discuss how overlooked implementation details in existing architectures (1) fundamentally change the class of the resulting forecasting method and (2) drastically affect the observed empirical results. Our results call for rethinking current faulty benchmarking practices and the need to focus on the foundational aspects of the forecasting problem when designing architectures. As a step in this direction, we propose an auxiliary forecasting model card, whose fields serve to characterize existing and new forecasting architectures based on key design choices.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/3d5afc3d09fee44c00586c23dc920b9cc8cfe013" target='_blank'>
+              What Matters in Deep Learning for Time Series Forecasting?
+              </a>
+            </td>
+          <td>
+            Valentina Moretti, Andrea Cini, Ivan Marisca, C. Alippi
+          </td>
+          <td>2025-12-27</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>54</td>
+        </tr>
+
+        <tr id="While generative modeling on time series facilitates more capable and flexible probabilistic forecasting, existing generative time series models do not address the multi-dimensional properties of time series data well. The prevalent architecture of Diffusion Transformers (DiT), which relies on simplistic conditioning controls and a single-stream Transformer backbone, tends to underutilize cross-variate dependencies in covariate-aware forecasting. Inspired by Multimodal Diffusion Transformers that integrate textual guidance into video generation, we propose Diffusion Transformers for Time Series (DiTS), a general-purpose architecture that frames endogenous and exogenous variates as distinct modalities. To better capture both inter-variate and intra-variate dependencies, we design a dual-stream Transformer block tailored for time-series data, comprising a Time Attention module for autoregressive modeling along the temporal dimension and a Variate Attention module for cross-variate modeling. Unlike the common approach for images, which flattens 2D token grids into 1D sequences, our design leverages the low-rank property inherent in multivariate dependencies, thereby reducing computational costs. Experiments show that DiTS achieves state-of-the-art performance across benchmarks, regardless of the presence of future exogenous variate observations, demonstrating unique generative forecasting strengths over traditional deterministic deep forecasting models.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/4bb1a1c87f561129cab3c135a2bf25cb51a4e774" target='_blank'>
+              DiTS: Multimodal Diffusion Transformers Are Time Series Forecasters
+              </a>
+            </td>
+          <td>
+            Haoran Zhang, Haixuan Liu, Yong Liu, Yunzhong Qiu, Yuxuan Wang, Jianmin Wang, Mingsheng Long
+          </td>
+          <td>2026-02-06</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>33</td>
+        </tr>
+
+        <tr id="Time series are highly valuable and rarely shareable across nodes, making federated learning a promising paradigm to leverage distributed temporal data. However, different sampling standards lead to diverse time granularities and variable sets across nodes, hindering classical federated learning. We propose PiXTime, a novel time series forecasting model designed for federated learning that enables effective prediction across nodes with multi-granularity and heterogeneous variable sets. PiXTime employs a personalized Patch Embedding to map node-specific granularity time series into token sequences of a unified dimension for processing by a subsequent shared model, and uses a global VE Table to align variable category semantics across nodes, thereby enhancing cross-node transferability. With a transformer-based shared model, PiXTime captures representations of auxiliary series with arbitrary numbers of variables and uses cross-attention to enhance the prediction of the target series. Experiments show PiXTime achieves state-of-the-art performance in federated settings and demonstrates superior performance on eight widely used real-world traditional benchmarks.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/691203a9308a7496683d4a5c65e53dcee90b171f" target='_blank'>
+              PiXTime: A Model for Federated Time Series Forecasting with Heterogeneous Data Structures Across Nodes
+              </a>
+            </td>
+          <td>
+            Yiming Zhou, Mingyue Cheng, Hao Wang, Enhong Chen
+          </td>
+          <td>2026-01-09</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>17</td>
+        </tr>
+
+        <tr id="Time series forecasting plays a critical role in decision-making across many real-world applications. Unlike data in vision and language domains, time series data is inherently tied to the evolution of underlying processes and can only accumulate as real-world time progresses, limiting the effectiveness of scale-driven pretraining alone. This time-bound constraint poses a challenge for enabling large language models (LLMs) to acquire forecasting capability, as existing approaches primarily rely on representation-level alignment or inference-time temporal modules rather than explicitly teaching forecasting behavior to the LLM. We propose T-LLM, a temporal distillation framework that equips general-purpose LLMs with time series forecasting capability by transferring predictive behavior from a lightweight temporal teacher during training. The teacher combines trend modeling and frequency-domain analysis to provide structured temporal supervision, and is removed entirely at inference, leaving the LLM as the sole forecasting model. Experiments on benchmark datasets and infectious disease forecasting tasks demonstrate that T-LLM consistently outperforms existing LLM-based forecasting methods under full-shot, few-shot, and zero-shot settings, while enabling a simple and efficient deployment pipeline.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/d18c885456dd6efe7088e671b8f7c76e6423090a" target='_blank'>
+              T-LLM: Teaching Large Language Models to Forecast Time Series via Temporal Distillation
+              </a>
+            </td>
+          <td>
+            Suhan Guo, Bingxu Wang, Shaodan Zhang, Furao Shen
+          </td>
+          <td>2026-02-02</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>5</td>
+        </tr>
+
+        <tr id="Learning time series foundation models has been shown to be a promising approach for zero-shot time series forecasting across diverse time series domains. Insofar as scaling has been a critical driver of performance of foundation models in other modalities such as language and vision, much recent work on time series foundation modeling has focused on scaling. This has resulted in time series foundation models with hundreds of millions of parameters that are, while performant, inefficient and expensive to use in practice. This paper describes a simple recipe for learning efficient foundation models for zero-shot time series forecasting that are orders of magnitude smaller. We show that large-scale transformers are not necessary: small hybrid models that interleave long convolution and linear RNN layers (in particular DeltaNet layers) can match the performance of larger transformer-based models while being more than a hundred times smaller. We also describe several data augmentation and inference strategies that further improve performance. This recipe results in Reverso, a family of efficient time series foundation models for zero-shot forecasting that significantly push the performance-efficiency Pareto frontier.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/acfde0be3bfbe38f108e0e2786e90b4597ab4a33" target='_blank'>
+              Reverso: Efficient Time Series Foundation Models for Zero-shot Forecasting
+              </a>
+            </td>
+          <td>
+            Xinghong Fu, Yanhong Li, Georgios Papaioannou, Yoon Kim
+          </td>
+          <td>2026-02-19</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>3</td>
+        </tr>
+
+        <tr id="Long-term multivariate time series forecasting (LTSF) plays a crucial role in various high-performance computing applications, including real-time energy grid management and large-scale traffic flow simulation. However, existing solutions face a dilemma: Transformer-based models suffer from quadratic complexity, limiting their scalability on long sequences, while linear State Space Models (SSMs) often struggle to distinguish valuable signals from high-frequency noise, leading to wasted state capacity. To bridge this gap, we propose ASGMamba, an efficient forecasting framework designed for resource-constrained supercomputing environments. ASGMamba integrates a lightweight Adaptive Spectral Gating (ASG) mechanism that dynamically filters noise based on local spectral energy, enabling the Mamba backbone to focus its state evolution on robust temporal dynamics. Furthermore, we introduce a hierarchical multi-scale architecture with variable-specific Node Embeddings to capture diverse physical characteristics. Extensive experiments on nine benchmarks demonstrate that ASGMamba achieves state-of-the-art accuracy. While keeping strictly $$\mathcal{O}(L)$$ complexity we significantly reduce the memory usage on long-horizon tasks, thus establishing ASGMamba as a scalable solution for high-throughput forecasting in resource limited environments.The code is available at https://github.com/hit636/ASGMamba">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/fbfe9f3f8759b921d0062b6cc29fdf2167d8b7d2" target='_blank'>
+              ASGMamba: Adaptive Spectral Gating Mamba for Multivariate Time Series Forecasting
+              </a>
+            </td>
+          <td>
+            Qianyang Li, Xingjun Zhang, Shaoxun Wang, Jia Wei, Yueqi Xing
+          </td>
+          <td>2026-02-02</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>7</td>
+        </tr>
+
+        <tr id="Accurate and efficient multivariate time series (MTS) analysis is increasingly critical for a wide range of intelligent applications. Within this realm, Transformers have emerged as the predominant architecture due to their strong ability to capture pairwise dependencies. However, Transformer-based models suffer from quadratic computational complexity and high memory overhead, limiting their scalability and practical deployment in long-term and large-scale MTS modeling. Recently, Mamba has emerged as a promising linear-time alternative with high expressiveness. Nevertheless, directly applying vanilla Mamba to MTS remains suboptimal due to three key limitations: (i) the lack of explicit cross-variate modeling, (ii) difficulty in disentangling the entangled intra-series temporal dynamics and inter-series interactions, and (iii) insufficient modeling of latent time-lag interaction effects. These issues constrain its effectiveness across diverse MTS tasks. To address these challenges, we propose DeMa, a dual-path delay-aware Mamba backbone. DeMa preserves Mamba's linear-complexity advantage while substantially improving its suitability for MTS settings. Specifically, DeMa introduces three key innovations: (i) it decomposes the MTS into intra-series temporal dynamics and inter-series interactions; (ii) it develops a temporal path with a Mamba-SSD module to capture long-range dynamics within each individual series, enabling series-independent, parallel computation; and (iii) it designs a variate path with a Mamba-DALA module that integrates delay-aware linear attention to model cross-variate dependencies. Extensive experiments on five representative tasks, long- and short-term forecasting, data imputation, anomaly detection, and series classification, demonstrate that DeMa achieves state-of-the-art performance while delivering remarkable computational efficiency.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/73cbbf2888f88a0a18c129fae9921dccbb7f60a0" target='_blank'>
+              DeMa: Dual-Path Delay-Aware Mamba for Efficient Multivariate Time Series Analysis
+              </a>
+            </td>
+          <td>
+            Rui An, Haohao Qu, Wenqi Fan, Xuequn Shang, Qing Li
+          </td>
+          <td>2026-01-09</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>12</td>
+        </tr>
+
+        <tr id="Recent Transformer- and MLP-based models have demonstrated strong performance in long-term time series forecasting, yet Transformers remain limited by their quadratic complexity and permutation-equivariant attention, while MLPs exhibit spectral bias. We propose HaKAN, a versatile model based on Kolmogorov-Arnold Networks (KANs), leveraging Hahn polynomial-based learnable activation functions and providing a lightweight and interpretable alternative for multivariate time series forecasting. Our model integrates channel independence, patching, a stack of Hahn-KAN blocks with residual connections, and a bottleneck structure comprised of two fully connected layers. The Hahn-KAN block consists of inter- and intra-patch KAN layers to effectively capture both global and local temporal patterns. Extensive experiments on various forecasting benchmarks demonstrate that our model consistently outperforms recent state-of-the-art methods, with ablation studies validating the effectiveness of its core components.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/c520bcb08c9572e50b92b9463e8b2a5fc73b2045" target='_blank'>
+              Time series forecasting with Hahn Kolmogorov-Arnold networks
+              </a>
+            </td>
+          <td>
+            Md Zahidul, Hasan A. Ben, Hamza Nizar Bouguila
+          </td>
+          <td>2026-01-25</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+
+        <tr id="Spatio-Temporal (ST) Foundation Models (STFMs) promise cross-dataset generalization, yet joint ST pretraining is computationally expensive and grapples with the heterogeneity of domain-specific spatial patterns. Substantially extending our preliminary conference version, we present FactoST-v2, an enhanced factorized framework redesigned for full weight transfer and arbitrary-length generalization. FactoST-v2 decouples universal temporal learning from domain-specific spatial adaptation. The first stage pretrains a minimalist encoder-only backbone using randomized sequence masking to capture invariant temporal dynamics, enabling probabilistic quantile prediction across variable horizons. The second stage employs a streamlined adapter to rapidly inject spatial awareness via meta adaptive learning and prompting. Comprehensive evaluations across diverse domains demonstrate that FactoST-v2 achieves state-of-the-art accuracy with linear efficiency - significantly outperforming existing foundation models in zero-shot and few-shot scenarios while rivaling domain-specific expert baselines. This factorized paradigm offers a practical, scalable path toward truly universal STFMs. Code is available at https://github.com/CityMind-Lab/FactoST.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/755e6d567d089818e1a0a7e9fd1e24c6f5dfe453" target='_blank'>
+              Learning to Factorize and Adapt: A Versatile Approach Toward Universal Spatio-Temporal Foundation Models
+              </a>
+            </td>
+          <td>
+            Siru Zhong, Junjie Qiu, Yangyu Wu, Yiqiu Liu, Yuanpeng He, Zhongwen Rao, Bin Yang, Chenjuan Guo, Hao Xu, Yuxuan Liang
+          </td>
+          <td>2026-01-17</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>39</td>
+        </tr>
+
+        <tr id="Foundation models pre-trained on large-scale source datasets are reshaping the traditional training paradigm for time series classification. However, existing time series foundation models primarily focus on forecasting tasks and often overlook classification-specific challenges, such as modeling interpretable shapelets that capture class-discriminative temporal features. To bridge this gap, we propose UniShape, a unified shape-aware foundation model designed for time series classification. UniShape incorporates a shape-aware adapter that adaptively aggregates multiscale discriminative subsequences (shapes) into class tokens, effectively selecting the most relevant subsequence scales to enhance model interpretability. Meanwhile, a prototype-based pretraining module is introduced to jointly learn instance- and shape-level representations, enabling the capture of transferable shape patterns. Pre-trained on a large-scale multi-domain time series dataset comprising 1.89 million samples, UniShape exhibits superior generalization across diverse target domains. Experiments on 128 UCR datasets and 30 additional time series datasets demonstrate that UniShape achieves state-of-the-art classification performance, with interpretability and ablation analyses further validating its effectiveness.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/a19c1a4dbb964e8b169af3d86ee0173e3d0f275f" target='_blank'>
+              A Unified Shape-Aware Foundation Model for Time Series Classification
+              </a>
+            </td>
+          <td>
+            Zhen Liu, Yucheng Wang, Boyuan Li, Junhao Zheng, Emadeldeen Eldele, Min Wu, Qianli Ma
+          </td>
+          <td>2026-01-10</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>14</td>
+        </tr>
+
+        <tr id="Current methods for multivariate time series forecasting can be classified into channel-dependent and channel-independent models. Channel-dependent models learn cross-channel features but often overfit the channel ordering, which hampers adaptation when channels are added or reordered. Channel-independent models treat each channel in isolation to increase flexibility, yet this neglects inter-channel dependencies and limits performance. To address these limitations, we propose \textbf{CPiRi}, a \textbf{channel permutation invariant (CPI)} framework that infers cross-channel structure from data rather than memorizing a fixed ordering, enabling deployment in settings with structural and distributional co-drift without retraining. CPiRi couples \textbf{spatio-temporal decoupling architecture} with \textbf{permutation-invariant regularization training strategy}: a frozen pretrained temporal encoder extracts high-quality temporal features, a lightweight spatial module learns content-driven inter-channel relations, while a channel shuffling strategy enforces CPI during training. We further \textbf{ground CPiRi in theory} by analyzing permutation equivariance in multivariate time series forecasting. Experiments on multiple benchmarks show state-of-the-art results. CPiRi remains stable when channel orders are shuffled and exhibits strong \textbf{inductive generalization} to unseen channels even when trained on \textbf{only half} of the channels, while maintaining \textbf{practical efficiency} on large-scale datasets. The source code is released at https://github.com/JasonStraka/CPiRi.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/9e75bef5771eb2450ec232fc890ab21e41778003" target='_blank'>
+              CPiRi: Channel Permutation-Invariant Relational Interaction for Multivariate Time Series Forecasting
+              </a>
+            </td>
+          <td>
+            Jiyuan Xu, Wenyu Zhang, Xin Jing, Shuai Chen, Shuai Zhang, Jiahao Nie
+          </td>
+          <td>2026-01-28</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>32</td>
+        </tr>
+
+        <tr id="While existing time series foundation models primarily rely on large-scale unimodal pretraining, they lack complementary modalities to enhance time series understanding. Building multimodal foundation models is a natural next step, but it faces key challenges: 1) lack of a unified multimodal pretraining paradigm and large-scale multimodal corpora for time series analysis; 2) how to effectively integrate heterogeneous modalities and enhance model generalization. To address these challenges, we take an early step toward multimodal foundation models for time series analysis. We first propose a multimodal pretraining paradigm that leverages time series with endogenous modalities (derived images and text) and exogenous knowledge (real-world news), providing a comprehensive multi-view perspective for time series analysis. To support this, we develop an automated data construction pipeline to curate MM-TS, the first large-scale multimodal time series dataset spanning six domains, with up to one billion points. Then we propose HORAI, a frequency-enhanced multimodal foundation model. It integrates two core components: the Frequency-enhanced Cross-Modality Encoder and the Time-Frequency Decoder, designed to effectively fuse multimodal features and enhance model generalization across modalities and domains. After pretraining on MM-TS, HORAI achieves state-of-the-art zero-shot performance on time series forecasting and anomaly detection tasks, demonstrating strong generalization.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/91e8e3c688818888778abac057f3d99f9c3dd1f4" target='_blank'>
+              Empowering Time Series Analysis with Large-Scale Multimodal Pretraining
+              </a>
+            </td>
+          <td>
+            Peng Chen, Siyuan Wang, Shiyan Hu, Xingjian Wu, Yang Shu, Zhongwen Rao, Meng Wang, Yijie Li, Bin Yang, Chenjuan Guo
+          </td>
+          <td>2026-02-05</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>39</td>
+        </tr>
+
+        <tr id="None">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/fb00a9d4c3ebde47848408f388b0947f6738ecce" target='_blank'>
+              LLM-driven hybrid architecture for multi-variate and multi-horizon forecasting of consumption patterns using graphs, recurrent units, and transformers
+              </a>
+            </td>
+          <td>
+            Ishpreet Kaur, Jatin Bedi, Ashutosh Aggarwal
+          </td>
+          <td>2026-01-31</td>
+          <td>Discover Computing</td>
+          <td>0</td>
+          <td>5</td>
+        </tr>
+
+        <tr id="Multivariate time series forecasting (MTSF) plays a vital role in numerous real-world applications, yet existing models remain constrained by their reliance on a limited historical context. This limitation prevents them from effectively capturing global periodic patterns that often span cycles significantly longer than the input horizon - despite such patterns carrying strong predictive signals. Naive solutions, such as extending the historical window, lead to severe drawbacks, including overfitting, prohibitive computational costs, and redundant information processing. To address these challenges, we introduce the Global Temporal Retriever (GTR), a lightweight and plug-and-play module designed to extend any forecasting model's temporal awareness beyond the immediate historical context. GTR maintains an adaptive global temporal embedding of the entire cycle and dynamically retrieves and aligns relevant global segments with the input sequence. By jointly modeling local and global dependencies through a 2D convolution and residual fusion, GTR effectively bridges short-term observations with long-term periodicity without altering the host model architecture. Extensive experiments on six real-world datasets demonstrate that GTR consistently delivers state-of-the-art performance across both short-term and long-term forecasting scenarios, while incurring minimal parameter and computational overhead. These results highlight GTR as an efficient and general solution for enhancing global periodicity modeling in MTSF tasks. Code is available at this repository: https://github.com/macovaseas/GTR.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/a9a2b922204dad77a5fe476d8e522aa66bd001e8" target='_blank'>
+              Enhancing Multivariate Time Series Forecasting with Global Temporal Retrieval
+              </a>
+            </td>
+          <td>
+            Fanpu Cao, Lu Dai, Jindong Han, Hui Xiong
+          </td>
+          <td>2026-02-11</td>
+          <td>ArXiv</td>
+          <td>1</td>
+          <td>17</td>
+        </tr>
+
+        <tr id="Time series forecasting can be viewed as a generative problem that requires both semantic understanding over contextual conditions and stochastic modeling of continuous temporal dynamics. Existing approaches typically rely on either autoregressive large language models (LLMs) for semantic context modeling or diffusion-like models for continuous probabilistic generation. However, neither method alone can adequately model both aspects simultaneously. In this work, we propose CoGenCast, a hybrid generative framework that couples pre-trained LLMs with flow-matching mechanism for effective time series forecasting. Specifically, we reconfigure pre-trained decoder-only LLMs into a native forecasting encoder-decoder backbone by modifying only the attention topology, enabling bidirectional context encoding and causal representation generation. Building on this, a flow-matching mechanism is further integrated to model temporal evolution, capturing continuous stochastic dynamics conditioned on the autoregressively generated representation. Notably, CoGenCast naturally supports multimodal forecasting and cross-domain unified training. Extensive experiments on multiple benchmarks show that CoGenCast consistently outperforms previous compared baselines. Code is available at https://github.com/liuyaguo/_CoGenCast.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/41a99dad6adfb3af696894cb6bc7cd820e7d29bf" target='_blank'>
+              CoGenCast: A Coupled Autoregressive-Flow Generative Framework for Time Series Forecasting
+              </a>
+            </td>
+          <td>
+            Yaguo Liu, Mingyue Cheng, Daoyu Wang, Xiaoyu Tao, Qi Liu
+          </td>
+          <td>2026-02-03</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>17</td>
+        </tr>
+
+        <tr id="Time series forecasting is crucial for the World Wide Web and represents a core technical challenge in ensuring the stable and efficient operation of modern web services, such as intelligent transportation and website throughput. However, we have found that existing methods typically employ a strategy of embedding each time step as an independent token. This paradigm introduces a fundamental information bottleneck when processing long sequences, the root cause of which is that independent token embedding destroys a crucial structure within the sequence - what we term as multi-offset temporal correlation. This refers to the fine-grained dependencies embedded within the sequence that span across different time steps, which is especially prevalent in regular Web data. To fundamentally address this issue, we propose a new perspective on time series embedding. We provide an upper bound on the approximate reconstruction performance of token embedding, which guides our design of a concise yet effective Multi-Offset Time Embedding method to mitigate the performance degradation caused by standard token embedding. Furthermore, our MOTE can be integrated into various existing models and serve as a universal building block. Based on this paradigm, we further design a novel forecasting architecture named Time-TK. This architecture first utilizes a Multi-Offset Interactive KAN to learn and represent specific temporal patterns among multiple offset sub-sequences. Subsequently, it employs an efficient Multi-Offset Temporal Interaction mechanism to effectively capture the complex dependencies between these sub-sequences, achieving global information integration. Extensive experiments on 14 real-world benchmark datasets, covering domains such as traffic flow and BTC/USDT throughput, demonstrate that Time-TK significantly outperforms all baseline models, achieving state-of-the-art forecasting accuracy.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/c36edc75a2bbbb20cd1b72407e263f9319775794" target='_blank'>
+              Time-TK: A Multi-Offset Temporal Interaction Framework Combining Transformer and Kolmogorov-Arnold Networks for Time Series Forecasting
+              </a>
+            </td>
+          <td>
+            Fan Zhang, Shiming Fan, Hua Wang
+          </td>
+          <td>2026-01-30</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>11</td>
+        </tr>
+
+        <tr id="Time series classification (TSC) is a core machine learning problem with broad applications. Recently there has been growing interest in repurposing large language models (LLMs) for TSC, motivated by their strong reasoning and generalization ability. Prior work has primarily focused on alignment strategies that explicitly map time series data into the textual domain; however, the choice of time series encoder architecture remains underexplored. In this work, we conduct an exploratory study of hybrid architectures that combine specialized time series encoders with a frozen LLM backbone. We evaluate a diverse set of encoder families, including Inception, convolutional, residual, transformer-based, and multilayer perceptron architectures, among which the Inception model is the only encoder architecture that consistently yields positive performance gains when integrated with an LLM backbone. Overall, this study highlights the impact of time series encoder choice in hybrid LLM architectures and points to Inception-based models as a promising direction for future LLM-driven time series learning.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/131a674723c40c7b85e82f6718fe132ac08b5875" target='_blank'>
+              An Exploratory Study to Repurpose LLMs to a Unified Architecture for Time Series Classification
+              </a>
+            </td>
+          <td>
+            Hansen He, Shuheng Li
+          </td>
+          <td>2026-01-15</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+
+        <tr id="Time series forecasting is important in many fields that require accurate predictions for decision-making. Patching techniques, commonly used and effective in time series modeling, help capture temporal dependencies by dividing the data into patches. However, existing patch-based methods fail to dynamically select patches and typically use all patches during the prediction process. In real-world time series, there are often low-quality issues during data collection, such as missing values, distribution shifts, anomalies and white noise, which may cause some patches to contain low-quality information, negatively impacting the prediction results. To address this issue, this study proposes a robust time series forecasting framework called SEER. Firstly, we propose an Augmented Embedding Module, which improves patch-wise representations using a Mixture-of-Experts (MoE) architecture and obtains series-wise token representations through a channel-adaptive perception mechanism. Secondly, we introduce a Learnable Patch Replacement Module, which enhances forecasting robustness and model accuracy through a two-stage process: 1) a dynamic filtering mechanism eliminates negative patch-wise tokens; 2) a replaced attention module substitutes the identified low-quality patches with global series-wise token, further refining their representations through a causal attention mechanism. Comprehensive experimental results demonstrate the SOTA performance of SEER.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/0fffa203b33009d13d3b7ae97662f8ede3f3b9d9" target='_blank'>
+              SEER: Transformer-based Robust Time Series Forecasting via Automated Patch Enhancement and Replacement
+              </a>
+            </td>
+          <td>
+            Xiangfei Qiu, Xvyuan Liu, Tianen Shen, Xingjian Wu, Hanyin Cheng, Bin Yang, Jilin Hu
+          </td>
+          <td>2026-01-31</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>22</td>
+        </tr>
+
+        <tr id="Irregular multivariate time series forecasting (IMTSF) is challenging due to non-uniform sampling and variable asynchronicity. These irregularities violate the equidistant assumptions of standard models, hindering local temporal modeling and rendering classical frequency-domain methods ineffective for capturing global periodic structures. To address this challenge, we propose TFMixer, a joint time-frequency modeling framework for IMTS forecasting. Specifically, TFMixer incorporates a Global Frequency Module that employs a learnable Non-Uniform Discrete Fourier Transform (NUDFT) to directly extract spectral representations from irregular timestamps. In parallel, the Local Time Module introduces a query-based patch mixing mechanism to adaptively aggregate informative temporal patches and alleviate information density imbalance. Finally, TFMixer fuses the time-domain and frequency-domain representations to generate forecasts and further leverages inverse NUDFT for explicit seasonal extrapolation. Extensive experiments on real-world datasets demonstrate the state--of-the-art performance of TFMixer.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/7b9b140ea85ed3738dc01476b325ac645668af2a" target='_blank'>
+              Bridging Time and Frequency: A Joint Modeling Framework for Irregular Multivariate Time Series Forecasting
+              </a>
+            </td>
+          <td>
+            Xiangfei Qiu, Kangjia Yan, Xvyuan Liu, Xingjian Wu, Jilin Hu
+          </td>
+          <td>2026-01-31</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>22</td>
+        </tr>
+
+        <tr id="None">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/f109d362ec773afe96823bf804278aae752a7320" target='_blank'>
+              Spatiotemporal memory probabilistic sparse transformer for traffic flow prediction
+              </a>
+            </td>
+          <td>
+            Linlong Chen, Qing-Hua Wu
+          </td>
+          <td>2025-12-26</td>
+          <td>Journal of King Saud University Computer and Information Sciences</td>
+          <td>0</td>
+          <td>4</td>
+        </tr>
+
+        <tr id="State Space Models (SSMs), particularly Mamba, have shown potential in long-term time series forecasting. However, existing Mamba-based architectures often struggle with datasets characterized by non-stationary patterns. A key observation from time series theory is that the statistical nature of inter-variable relationships differs fundamentally between the trend and seasonal components of a decomposed series. Trend relationships are often driven by a few common stochastic factors or long-run equilibria, suggesting that they reside on a lower-dimensional manifold. In contrast, seasonal relationships involve dynamic, high-dimensional interactions like phase shifts and amplitude co-movements, requiring more expressive modeling. In this paper, we propose DMamba, a novel forecasting model that explicitly aligns architectural complexity with this component-specific characteristic. DMamba employs seasonal-trend decomposition and processes the components with specialized, differentially complex modules: a variable-direction Mamba encoder captures the rich, cross-variable dynamics within the seasonal component, while a simple Multi-Layer Perceptron (MLP) suffices to learn from the lower-dimensional inter-variable relationships in the trend component. Extensive experiments on diverse datasets demonstrate that DMamba sets a new state-of-the-art (SOTA), consistently outperforming both recent Mamba-based architectures and leading decomposition-based models.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/54c6858c263afc2988625fe17acffff536553b46" target='_blank'>
+              DMamba: Decomposition-enhanced Mamba for Time Series Forecasting
+              </a>
+            </td>
+          <td>
+            Ruxuan Chen, Fang Sun
+          </td>
+          <td>2026-02-09</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+
+        <tr id="Time series forecasting (TSF) faces challenges in modeling complex intra-channel temporal dependencies and inter-channel correlations. Although recent research has highlighted the efficiency of linear architectures in capturing global trends, these models often struggle with non-linear signals. To address this gap, we conducted a systematic receptive field analysis of convolutional neural network (CNN) TSF models. We introduce the"individual receptive field"to uncover granular structural dependencies, revealing that convolutional layers act as feature extractors that mirror channel-wise attention while exhibiting superior robustness to non-linear fluctuations. Based on these insights, we propose ACFormer, an architecture designed to reconcile the efficiency of linear projections with the non-linear feature-extraction power of convolutions. ACFormer captures fine-grained information through a shared compression module, preserves temporal locality via gated attention, and reconstructs variable-specific temporal patterns using an independent patch expansion layer. Extensive experiments on multiple benchmark datasets demonstrate that ACFormer consistently achieves state-of-the-art performance, effectively mitigating the inherent drawbacks of linear models in capturing high-frequency components.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/fc72ec9bd1df954effb09590a7b9aacb19767949" target='_blank'>
+              ACFormer: Mitigating Non-linearity with Auto Convolutional Encoder for Time Series Forecasting
+              </a>
+            </td>
+          <td>
+            Gawon Lee, Hanbyeol Park, Minseop Kim, Dohee Kim, Hyerim Bae
+          </td>
+          <td>2026-01-28</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>5</td>
+        </tr>
+
+        <tr id="Accurate multivariate traffic flow forecasting is critical for intelligent transportation systems yet remains challenging due to the complex interplay of temporal dynamics and spatial interactions. While Transformer-based models have shown promise in capturing long-range temporal dependencies, most existing approaches compress multidimensional observations into flattened sequences—thereby neglecting explicit modeling of cross-dimensional (i.e., spatial or inter-variable) relationships, which are essential for capturing traffic propagation, network-wide congestion, and node-specific behaviors. To address this limitation, we propose TSAformer, a novel Transformer architecture that explicitly preserves and jointly models time and dimension as dual structural axes. TSAformer begins with a multimodal input embedding layer that encodes raw traffic values alongside temporal context (time-of-day and day-of-week) and node-specific positional features, ensuring rich semantic representation. The core of TSAformer is the Two-Stage Attention (TSA) module, which first models intra-dimensional temporal evolution via time-axis self-attention then captures inter-dimensional spatial interactions through a lightweight routing mechanism—avoiding quadratic complexity while enabling all-to-all cross-node communication. Built upon TSA, a hierarchical encoder–decoder (HED) structure further enhances forecasting by modeling traffic patterns across multiple temporal scales, from fine-grained fluctuations to macroscopic trends, and fusing predictions via cross-scale attention. Extensive experiments on three real-world traffic datasets—including urban road networks and highway systems—demonstrate that TSAformer consistently outperforms state-of-the-art baselines across short-term and long-term forecasting horizons. Notably, it achieves top-ranked performance in 36 out of 58 critical evaluation scenarios, including peak-hour and event-driven congestion prediction. By explicitly modeling both temporal and dimensional dependencies without structural compromise, TSAformer provides a scalable, interpretable, and high-performance solution for spatiotemporal traffic forecasting.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/18b7f9bfca77b573064bbd25985ad96928d79a98" target='_blank'>
+              TSAformer: A Traffic Flow Prediction Model Based on Cross-Dimensional Dependency Capture
+              </a>
+            </td>
+          <td>
+            Haoning Lv, Xi Chen, Weijie Xiu
+          </td>
+          <td>2026-01-04</td>
+          <td>Electronics</td>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+
+        <tr id="None">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/765c4dfe474bca71f5fde14359d8a7ffe73cbcc2" target='_blank'>
+              Pstanet: patchwise spectro-temporal analytic network for multivariate long-sequence time series forecasting
+              </a>
+            </td>
+          <td>
+            Chunru Dong, Wei Luo, Qiang Hua, Yong Zhang, Fen Zhang
+          </td>
+          <td>2026-01-01</td>
+          <td>International Journal of Machine Learning and Cybernetics</td>
+          <td>0</td>
+          <td>4</td>
+        </tr>
+
+        <tr id="The World Wide Web needs reliable predictive capabilities to respond to changes in user behavior and usage patterns. Time series forecasting (TSF) is a key means to achieve this goal. In recent years, the large language models (LLMs) for TSF (LLM4TSF) have achieved good performance. However, there is a significant difference between pretraining corpora and time series data, making it hard to guarantee forecasting quality when directly applying LLMs to TSF; fine-tuning LLMs can mitigate this issue, but often incurs substantial computational overhead. Thus, LLM4TSF faces a dual challenge of prediction performance and compute overhead. To address this, we aim to explore a method for improving the forecasting performance of LLM4TSF while freezing all LLM parameters to reduce computational overhead. Inspired by in-context learning (ICL), we propose LVICL. LVICL uses our vector-injected ICL to inject example information into a frozen LLM, eliciting its in-context learning ability and thereby enhancing its performance on the example-related task (i.e., TSF). Specifically, we first use the LLM together with a learnable context vector adapter to extract a context vector from multiple examples adaptively. This vector contains compressed, example-related information. Subsequently, during the forward pass, we inject this vector into every layer of the LLM to improve forecasting performance. Compared with conventional ICL that adds examples into the prompt, our vector-injected ICL does not increase prompt length; moreover, adaptively deriving a context vector from examples suppresses components harmful to forecasting, thereby improving model performance. Extensive experiments demonstrate the effectiveness of our approach.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/eb99d858656b9726004d9320966a2701db8d7afc" target='_blank'>
+              Enhancing Large Language Models for Time-Series Forecasting via Vector-Injected In-Context Learning
+              </a>
+            </td>
+          <td>
+            Jianqi Zhang, Jingyao Wang, Wenwen Qiang, Fanjiang Xu, Changwen Zheng
+          </td>
+          <td>2026-01-12</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>13</td>
+        </tr>
+
+        <tr id="Forecasting in power systems often involves multivariate time series with complex dependencies and strict privacy constraints across regions. Traditional forecasting methods require significant expert knowledge and struggle to generalize across diverse deployment scenarios. Recent advancements in pre-trained time series models offer new opportunities, but their zero-shot performance on domain-specific tasks remains limited. To address these challenges, we propose a novel MoE Encoder module that augments pretrained forecasting models by injecting a sparse mixture-of-experts layer between tokenization and encoding. This design enables two key capabilities: (1) trans forming multivariate forecasting into an expert-guided univariate task, allowing the model to effectively capture inter-variable relations, and (2) supporting localized training and lightweight parameter sharing in federated settings where raw data cannot be exchanged. Extensive experiments on public multivariate datasets demonstrate that MoE-Encoder significantly improves forecasting accuracy compared to strong baselines. We further simulate federated environments and show that transferring only MoE-Encoder parameters allows efficient adaptation to new regions, with minimal performance degradation. Our findings suggest that MoE-Encoder provides a scalable and privacy-aware extension to foundation time series models.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/9a92ffd46ac0278e9225ab8ddc2d27697fefefef" target='_blank'>
+              One-Shot Price Forecasting with Covariate-Guided Experts under Privacy Constraints
+              </a>
+            </td>
+          <td>
+            Renchu He, Yinliang Xu, Jinfeng Wang, Jeremy Watson, Jian Song
+          </td>
+          <td>2026-01-17</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>3</td>
+        </tr>
+
+        <tr id="Accurate traffic prediction in large cities such as Los Angeles is increasingly necessary as cities expand and more vehicles are added to the roads. Using the METR-LA dataset. Using the METR-LA dataset, this study proposes a hybrid deep learning architecture that combines time and space modeling techniques to improve the accuracy and scalability of traffic flow predictions. The dataset consists of multivariate time series data from 207 loop detectors that record traffic speeds every five minutes with very high resolution. This study evaluates five potential model configurations: Long Short-Term Memory (LSTM), Transformer-based TSFormer, a combination of LSTM and TSFormer, Spatio-Temporal Graph Convolutional Network (STGCN), and a model combining STGCN and TSFormer. The evaluation conducted using three performance metrics Mean Absolute Error (MAE), Mean Squared Error (MSE), and Root Mean Squared Error (RMSE) were used to assess how well each model captures complex temporal and spatial relationships. Our results show that the LSTM+TSFormer hybrid model consistently outperforms all other models across all criteria. This model has the lowest MAE (0.0624) and RMSE (0.1204), meaning it is better at learning patterns that occur over time and patterns that occur rapidly. STGCN-based models are quite good at capturing spatial dependencies, but their performance improves when combined with attention-based TSFormer modules. The hybrid models introduced in this study overcome major limitations, including the narrow receptive range of recurrent networks and the inflexible spatial structures assumed in graph-based methods. This work offers important perspectives for developing forecasting models that are not only accurate and scalable but also transparent and adaptable. Future work may explore dynamic graph construction and multimodal input integration to further enhance adaptability in real-world applications.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/56cb8aebccf8638089e52960a3e6f3b240c84cb1" target='_blank'>
+              Hybrid Deep Learning for Spatiotemporal Traffic Forecasting: Integrating LSTM, Transformer, and Graph Convolutional Networks on the METR-LA Dataset
+              </a>
+            </td>
+          <td>
+            Elviyani Mawarni, Aria Hendrawan
+          </td>
+          <td>2025-12-27</td>
+          <td>International Journal of Data Science</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+
+        <tr id="Multimodal time series forecasting is crucial in real-world applications, where decisions depend on both numerical data and contextual signals. The core challenge is to effectively combine temporal numerical patterns with the context embedded in other modalities, such as text. While most existing methods align textual features with time-series patterns one step at a time, they neglect the multiscale temporal influences of contextual information such as time-series cycles and dynamic shifts. This mismatch between local alignment and global textual context can be addressed by spectral decomposition, which separates time series into frequency components capturing both short-term changes and long-term trends. In this paper, we propose SpecTF, a simple yet effective framework that integrates the effect of textual data on time series in the frequency domain. Our method extracts textual embeddings, projects them into the frequency domain, and fuses them with the time series'spectral components using a lightweight cross-attention mechanism. This adaptively reweights frequency bands based on textual relevance before mapping the results back to the temporal domain for predictions. Experimental results demonstrate that SpecTF significantly outperforms state-of-the-art models across diverse multi-modal time series datasets while utilizing considerably fewer parameters. Code is available at https://github.com/hiepnh137/SpecTF.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/84af3767e4a2f76531013015dc6098b599e86052" target='_blank'>
+              Spectral Text Fusion: A Frequency-Aware Approach to Multimodal Time-Series Forecasting
+              </a>
+            </td>
+          <td>
+            Huu Hiep Nguyen, Minh Hoang Nguyen, Dung Nguyen, Hung Le
+          </td>
+          <td>2026-02-02</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>2</td>
+        </tr>
+
+        <tr id="Large language models (LLMs) have been introduced to time series forecasting (TSF) to incorporate contextual knowledge beyond numerical signals. However, existing studies question whether LLMs provide genuine benefits, often reporting comparable performance without LLMs. We show that such conclusions stem from limited evaluation settings and do not hold at scale. We conduct a large-scale study of LLM-based TSF (LLM4TSF) across 8 billion observations, 17 forecasting scenarios, 4 horizons, multiple alignment strategies, and both in-domain and out-of-domain settings. Our results demonstrate that \emph{LLM4TS indeed improves forecasting performance}, with especially large gains in cross-domain generalization. Pre-alignment outperforming post-alignment in over 90\% of tasks. Both pretrained knowledge and model architecture of LLMs contribute and play complementary roles: pretraining is critical under distribution shifts, while architecture excels at modeling complex temporal dynamics. Moreover, under large-scale mixed distributions, a fully intact LLM becomes indispensable, as confirmed by token-level routing analysis and prompt-based improvements. Overall, Our findings overturn prior negative assessments, establish clear conditions under which LLMs are not only useful, and provide practical guidance for effective model design. We release our code at https://github.com/EIT-NLP/LLM4TSF.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/a19f1d4c68b7aeca8ab7a1c631341fcd597e53fc" target='_blank'>
+              Rethinking the Role of LLMs in Time Series Forecasting
+              </a>
+            </td>
+          <td>
+            Xin Qiu, Junlong Tong, Yirong Sun, Yunpu Ma, Wei Zhang, Xiaoyu Shen
+          </td>
+          <td>2026-02-16</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>5</td>
+        </tr>
+
+        <tr id="Most time series foundation models are pretrained by directly predicting future observations, which often yields weakly structured latent representations that capture surface noise rather than coherent and predictable temporal dynamics. In this work, we introduce EIDOS, a foundation model family that shifts pretraining from future value prediction to latent-space predictive learning. We train a causal Transformer to predict the evolution of latent representations, encouraging the emergence of structured and temporally coherent latent states. To ensure stable targets for latent-space learning, we design a lightweight aggregation branch to construct target representations. EIDOS is optimized via a joint objective that integrates latent-space alignment, observational grounding to anchor representations to the input signal, and direct forecasting supervision. On the GIFT-Eval benchmark, EIDOS mitigates structural fragmentation in the representation space and achieves state-of-the-art performance. These results demonstrate that constraining models to learn predictable latent dynamics is a principled step toward more robust and reliable time series foundation models.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/d33658210ecf4125633b95667b31c54b733f7625" target='_blank'>
+              EIDOS: Latent-Space Predictive Learning for Time Series Foundation Models
+              </a>
+            </td>
+          <td>
+            Xinxing Zhou, Qingren Yao, Yiji Zhao, Chenghao Liu, Flora Salim, Xiaojie Yuan, Yanlong Wen, Ming Jin
+          </td>
+          <td>2026-02-15</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>3</td>
+        </tr>
+
+        <tr id="Time series prediction plays a pivotal role across diverse domains such as finance, healthcare, energy systems, and environmental modeling. However, existing approaches often struggle to balance efficiency, scalability, and accuracy, particularly when handling long-range dependencies and irregularly sampled data. To address these challenges, we propose MODE, a unified framework that integrates Low-Rank Neural Ordinary Differential Equations (Neural ODEs) with an Enhanced Mamba architecture. As illustrated in our framework, the input sequence is first transformed by a Linear Tokenization Layer and then processed through multiple Mamba Encoder blocks, each equipped with an Enhanced Mamba Layer that employs Causal Convolution, SiLU activation, and a Low-Rank Neural ODE enhancement to efficiently capture temporal dynamics. This low-rank formulation reduces computational overhead while maintaining expressive power. Furthermore, a segmented selective scanning mechanism, inspired by pseudo-ODE dynamics, adaptively focuses on salient subsequences to improve scalability and long-range sequence modeling. Extensive experiments on benchmark datasets demonstrate that MODE surpasses existing baselines in both predictive accuracy and computational efficiency. Overall, our contributions include: (1) a unified and efficient architecture for long-term time series modeling, (2) integration of Mamba's selective scanning with low-rank Neural ODEs for enhanced temporal representation, and (3) substantial improvements in efficiency and scalability enabled by low-rank approximation and dynamic selective scanning.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/96630be22e09cba1c5439412b9cdc0ddc4c25343" target='_blank'>
+              MODE: Efficient Time Series Prediction with Mamba Enhanced by Low-Rank Neural ODEs
+              </a>
+            </td>
+          <td>
+            Xingsheng Chen, Regina Zhang, Bo Gao, Xingwei He, Xiaofeng Liu, P. Lio, Kwok-Yan Lam, S. Yiu
+          </td>
+          <td>2026-01-01</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>6</td>
+        </tr>
+
+        <tr id="The recent surge in Time Series Foundation Models has rapidly advanced the field, yet the heterogeneous training setups across studies make it difficult to attribute improvements to architectural innovations versus data engineering. In this work, we investigate the potential of a standard patch Transformer, demonstrating that this generic architecture achieves state-of-the-art zero-shot forecasting performance using a straightforward training protocol. We conduct a comprehensive ablation study that covers model scaling, data composition, and training techniques to isolate the essential ingredients for high performance. Our findings identify the key drivers of performance, while confirming that the generic architecture itself demonstrates excellent scalability. By strictly controlling these variables, we provide comprehensive empirical results on model scaling across multiple dimensions. We release our open-source model and detailed findings to establish a transparent, reproducible baseline for future research.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/aff07e0c5f08b0f85dfe0087b5dfd13dd0d4e6cd" target='_blank'>
+              Revisiting the Generic Transformer: Deconstructing a Strong Baseline for Time Series Foundation Models
+              </a>
+            </td>
+          <td>
+            Yunshi Wen, Wesley M. Gifford, Chandra Reddy, Lam M. Nguyen, Jayant Kalagnanam, A. A. Julius
+          </td>
+          <td>2026-02-06</td>
+          <td>ArXiv</td>
+          <td>1</td>
+          <td>8</td>
+        </tr>
+
+        <tr id="The proliferation of Internet of Things (IoT) devices and distributed sensor networks has resulted in an explosion of time-series data, yet the utility of this data is frequently compromised by irregularities, such as missing observations, non-uniform sampling rates, and sensor failures. While Transformer-based architectures have established a new state-of-the-art in sequence modeling, standard implementations rely implicitly on fixed-interval discrete time steps, rendering them suboptimal for irregular temporal environments. Furthermore, long-horizon forecasting inherently involves accumulating errors, necessitating robust uncertainty quantification to support downstream decision-making processes. This paper introduces the Uncertainty-Calibrated Continuous Transformer (UCCT), a novel architecture designed to address these dual challenges simultaneously. We propose a continuous-time positional encoding mechanism that leverages the temporal timestamps directly, decoupling the model from the rigid index-based sequence assumption. Additionally, we integrate a probabilistic decoding head that outputs distributional parameters rather than point estimates, calibrated via a composite loss function balancing accuracy and aleatoric uncertainty estimation. Extensive experiments on real-world datasets, including energy consumption, meteorology, and healthcare telemetry, demonstrate that the proposed UCCT outperforms current deterministic and stochastic baselines. Specifically, the model achieves a reduction in Mean Squared Error by approximately 14% in scenarios with 50% missing data, while providing reliable confidence intervals that accurately capture the increasing variance over long forecast horizons.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/d2a685c384940dd38cfc6562ed3a68fd9ff51a1b" target='_blank'>
+              A Uncertainty-Calibrated Transformer for Long-Horizon Forecasting with Missing and Irregular Observations
+              </a>
+            </td>
+          <td>
+            Joseph Hernandez, Barbara Hall
+          </td>
+          <td>2025-12-30</td>
+          <td>Frontiers in Artificial Intelligence Research</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+
+    </tbody>
+    <tfoot>
+      <tr>
+          <th>Abstract</th>
+          <th>Title</th>
+          <th>Authors</th>
+          <th>Publication Date</th>
+          <th>Journal/Conference</th>
+          <th>Citation count</th>
+          <th>Highest h-index</th>
+      </tr>
+    </tfoot>
+    </table>
+    </p>
+  </div>
+
+</body>
+
+<script>
+
+  function create_author_list(author_list) {
+    let td_author_element = document.getElementById();
+    for (let i = 0; i < author_list.length; i++) {
+          // tdElements[i].innerHTML = greet(tdElements[i].innerHTML);
+          alert (author_list[i]);
+      }
+  }
+
+  var trace1 = {
+    x: ['2025', '2026'],
+    y: [0, 2],
+    name: 'Num of citations',
+    yaxis: 'y1',
+    type: 'scatter'
+  };
+
+  var data = [trace1];
+
+  var layout = {
+    yaxis: {
+      title: 'Num of citations',
+      }
+  };
+  Plotly.newPlot('myDiv1', data, layout);
+</script>
+<script>
+var dataTableOptions = {
+        initComplete: function () {
+        this.api()
+            .columns()
+            .every(function () {
+                let column = this;
+
+                // Create select element
+                let select = document.createElement('select');
+                select.add(new Option(''));
+                column.footer().replaceChildren(select);
+
+                // Apply listener for user change in value
+                select.addEventListener('change', function () {
+                    column
+                        .search(select.value, {exact: true})
+                        .draw();
+                });
+
+                // keep the width of the select element same as the column
+                select.style.width = '100%';
+
+                // Add list of options
+                column
+                    .data()
+                    .unique()
+                    .sort()
+                    .each(function (d, j) {
+                        select.add(new Option(d));
+                    });
+            });
+    },
+    scrollX: true,
+    scrollCollapse: true,
+    paging: true,
+    fixedColumns: true,
+    columnDefs: [
+        {"className": "dt-center", "targets": "_all"},
+        // set width for both columns 0 and 1 as 25%
+        { width: '7%', targets: 0 },
+        { width: '30%', targets: 1 },
+        { width: '25%', targets: 2 },
+        { width: '15%', targets: 4 }
+
+      ],
+    pageLength: 10,
+    layout: {
+        topStart: {
+            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+        }
+    }
+  }
+  new DataTable('#table1', dataTableOptions);
+  new DataTable('#table2', dataTableOptions);
+
+  var table1 = $('#table1').DataTable();
+  $('#table1 tbody').on('click', 'td:first-child', function () {
+    var tr = $(this).closest('tr');
+    var row = table1.row( tr );
+
+    var rowId = tr.attr('id');
+    // alert(rowId);
+
+    if (row.child.isShown()) {
+      // This row is already open - close it.
+      row.child.hide();
+      tr.removeClass('shown');
+      tr.find('td:first-child').html('<i class="material-icons">visibility_off</i>');
+    } else {
+      // Open row.
+      // row.child('foo').show();
+      tr.find('td:first-child').html('<i class="material-icons">visibility</i>');
+      var content = '<div class="child-row-content"><strong>Abstract:</strong> ' + rowId + '</div>';
+      row.child(content).show();
+      tr.addClass('shown');
+    }
+  });
+  var table2 = $('#table2').DataTable();
+  $('#table2 tbody').on('click', 'td:first-child', function () {
+    var tr = $(this).closest('tr');
+    var row = table2.row( tr );
+
+    var rowId = tr.attr('id');
+    // alert(rowId);
+
+    if (row.child.isShown()) {
+      // This row is already open - close it.
+      row.child.hide();
+      tr.removeClass('shown');
+      tr.find('td:first-child').html('<i class="material-icons">visibility_off</i>');
+    } else {
+      // Open row.
+      // row.child('foo').show();
+      var content = '<div class="child-row-content"><strong>Abstract:</strong> ' + rowId + '</div>';
+      row.child(content).show();
+      tr.addClass('shown');
+      tr.find('td:first-child').html('<i class="material-icons">visibility</i>');
+    }
+  });
+</script>
+<style>
+  .child-row-content {
+    text-align: justify;
+    text-justify: inter-word;
+    word-wrap: break-word; /* Ensure long words are broken */
+    white-space: normal; /* Ensure text wraps to the next line */
+    max-width: 100%; /* Ensure content does not exceed the table width */
+    padding: 10px; /* Optional: add some padding for better readability */
+    /* font size */
+    font-size: small;
+  }
+</style>
+</html>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top", "navigation.tabs"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+
+      <script src="../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      
+    
+<script>
+  // Execute intro.js when a button with id 'intro' is clicked
+  function startIntro(){
+      introJs().setOptions({
+          tooltipClass: 'customTooltip'
+      }).start();
+  }
+</script>
+<script>
+  
+
+  // new DataTable('#table1', {
+  //   order: [[5, 'desc']],
+  //   "columnDefs": [
+  //       {"className": "dt-center", "targets": "_all"},
+  //       { width: '30%', targets: 0 }
+  //     ],
+  //   pageLength: 10,
+  //   layout: {
+  //       topStart: {
+  //           buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+  //       }
+  //   }
+  // });
+
+  // new DataTable('#table2', {
+  //   order: [[3, 'desc']],
+  //   "columnDefs": [
+  //       {"className": "dt-center", "targets": "_all"},
+  //       { width: '30%', targets: 0 }
+  //     ],
+  //   pageLength: 10,
+  //   layout: {
+  //       topStart: {
+  //           buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+  //       }
+  //   }
+  // });
+  new DataTable('#table3', {
+    initComplete: function () {
+        this.api()
+            .columns()
+            .every(function () {
+                let column = this;
+ 
+                // Create select element
+                let select = document.createElement('select');
+                select.add(new Option(''));
+                column.footer().replaceChildren(select);
+ 
+                // Apply listener for user change in value
+                select.addEventListener('change', function () {
+                    column
+                        .search(select.value, {exact: true})
+                        .draw();
+                });
+
+                // keep the width of the select element same as the column
+                select.style.width = '100%';
+ 
+                // Add list of options
+                column
+                    .data()
+                    .unique()
+                    .sort()
+                    .each(function (d, j) {
+                        select.add(new Option(d));
+                    });
+            });
+    },
+    // order: [[3, 'desc']],
+    "columnDefs": [
+        {"className": "dt-center", "targets": "_all"},
+        { width: '30%', targets: 0 }
+      ],
+    pageLength: 10,
+    layout: {
+        topStart: {
+            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+        }
+    }
+  });
+  new DataTable('#table4', {
+    initComplete: function () {
+        this.api()
+            .columns()
+            .every(function () {
+                let column = this;
+ 
+                // Create select element
+                let select = document.createElement('select');
+                select.add(new Option(''));
+                column.footer().replaceChildren(select);
+ 
+                // Apply listener for user change in value
+                select.addEventListener('change', function () {
+                    column
+                        .search(select.value, {exact: true})
+                        .draw();
+                });
+
+                // keep the width of the select element same as the column
+                select.style.width = '100%';
+ 
+                // Add list of options
+                column
+                    .data()
+                    .unique()
+                    .sort()
+                    .each(function (d, j) {
+                        select.add(new Option(d));
+                    });
+            });
+    },
+    // order: [[3, 'desc']],
+    "columnDefs": [
+        {"className": "dt-center", "targets": "_all"},
+        { width: '30%', targets: 0 }
+      ],
+    pageLength: 10,
+    layout: {
+        topStart: {
+            buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
+        }
+    }
+  });
+</script>
+
+
+  </body>
+</html>

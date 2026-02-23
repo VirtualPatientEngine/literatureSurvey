@@ -1,0 +1,46 @@
+/* headings */
+h3 {
+    color: rgb(44,123,182);
+  }
+
+p {
+  color: rgb(0,0,0);
+  font-size: medium;
+}
+
+footer {
+  color: rgb(0,0,0);
+  font-size: small;
+}
+
+/*Table width and font size*/
+table{
+  table-layout: fixed;
+  width: 100%;
+  font-size: small;
+  align-items: center;
+  justify-content: center;
+}
+
+div {
+  font-size: medium;
+}
+
+th,
+td {
+  white-space: normal;
+}
+
+div.dataTables_wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
+tr td#tag:first-child {
+  /* background: url('https://datatables.net/examples/resources/details_open.png') no-repeat center center; */
+  cursor: pointer;
+}
+
+/* tr.shown td#tag:first-child {
+    background: url('https://datatables.net/examples/resources/details_close.png') no-repeat center center;
+} */
