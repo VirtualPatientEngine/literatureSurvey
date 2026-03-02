@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-02-23 06:33:47 UTC</i>
+  <i class="footer">This page was last updated on 2026-03-02 06:28:12 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -485,14 +485,14 @@
           <td>2024-09-20</td>
           <td>Applied Intelligence</td>
           <td>4</td>
-          <td>8</td>
+          <td>9</td>
         </tr>
 
         <tr id="Unsupervised domain adaptation (UDA) is becoming a prominent solution for the domain-shift problem in many time-series classification tasks. With sequence properties, time-series data contain both local and sequential features, and the domain shift exists in both features. However, conventional UDA methods usually cannot distinguish those two features but mix them into one variable for direct alignment, which harms the performance. To address this problem, we propose a novel virtual-label-based hierarchical domain adaptation (VLH-DA) approach for time-series classification. Specifically, we first slice the original time-series data and introduce virtual labels to represent the type of each slice (called local patterns). With the help of virtual labels, we decompose the end-to-end (i.e., signal to time-series label) time-series task into two parts, i.e., signal sequence to local pattern sequence and local pattern sequence to time-series label. By decomposing the complex time-series UDA task into two simpler subtasks, the local features and sequential features can be aligned separately, making it easier to mitigate distribution discrepancies. Experiments on four public time-series datasets demonstrate that our VLH-DA outperforms all state-of-the-art (SOTA) methods.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/ce35cf7a0f52d9b3e3d290287f46bf33c890336f" target='_blank'>A Virtual-Label-Based Hierarchical Domain Adaptation Method for Time-Series Classification</a></td>
           <td>
-            Wenmian Yang, Lizhi Cheng, Mohamed Ragab, Min Wu, Sinno Jialin Pan, Zhenghua Chen
+            Wenmian Yang, Lizhi Cheng, Mohamed Ragab, Min Wu, S. J. Pan, Zhenghua Chen
           </td>
           <td>2024-08-28</td>
           <td>IEEE Transactions on Neural Networks and Learning Systems</td>
@@ -521,7 +521,7 @@
           <td>2023-12-15</td>
           <td>Data Mining and Knowledge Discovery</td>
           <td>3</td>
-          <td>5</td>
+          <td>6</td>
         </tr>
 
         <tr id="Unsupervised domain adaptation methods aim at generalizing well on unlabeled test data that may have a different (shifted) distribution from the training data. Such methods are typically developed on image data, and their application to time series data is less explored. Existing works on time series domain adaptation suffer from inconsistencies in evaluation schemes, datasets, and backbone neural network architectures. Moreover, labeled target data are often used for model selection, which violates the fundamental assumption of unsupervised domain adaptation. To address these issues, we develop a benchmarking evaluation suite (AdaTime) to systematically and fairly evaluate different domain adaptation methods on time series data. Specifically, we standardize the backbone neural network architectures and benchmarking datasets, while also exploring more realistic model selection approaches that can work with no labeled data or just a few labeled samples. Our evaluation includes adapting state-of-the-art visual domain adaptation methods to time series data as well as the recent methods specifically developed for time series data. We conduct extensive experiments to evaluate 11 state-of-the-art methods on five representative datasets spanning 50 cross-domain scenarios. Our results suggest that with careful selection of hyper-parameters, visual domain adaptation methods are competitive with methods proposed for time series domain adaptation. In addition, we find that hyper-parameters could be selected based on realistic model selection approaches. Our work unveils practical insights for applying domain adaptation methods on time series data and builds a solid foundation for future works in the field. The code is available at github.com/emadeldeen24/AdaTime.">
@@ -540,12 +540,12 @@
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/eabb4552faf707c58739c464fd5c379dfa53b345" target='_blank'>Learning Compositional Transferability of Time Series for Source-Free Domain Adaptation</a></td>
           <td>
-            Hankang Sun, Guiming Li, Su Yang, Baoqi Li
+            Han Sun, Guimin Li, Su Yang, Baoqi Li
           </td>
           <td>2025-04-21</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>0</td>
+          <td>3</td>
         </tr>
 
         <tr id="Source-Free Domain Adaptation (SFDA) on time series data is a crucial task for real-world applications where labeled target data is unavailable and source data access is restricted due to privacy or storage limitations. Traditional domain adaptation methods rely on access to source data, which limits their practicality. SFDA circumvents this by adapting pre-trained source models using only unlabeled target domain samples. However, a major challenge in SFDA is the generation of accurate pseudo-labels for the target data, especially in time series contexts where temporal dynamics and complex inter-class similarities increase classification difficulty. Early pseudo-labels often contain substantial noise, leading to error accumulation and degraded adaptation performance. In this work, we propose a feature-structure guided pseudo-label refinement method to improve pseudo-label quality in SFDA for time series. Our approach constructs a similarity graph over target features that captures intrinsic temporal and contextual relationships. We then impose a local consistency constraint on predicted probability distributions to smooth predictions and reduce noisy labels. This calibration mechanism effectively mitigates overconfident but incorrect pseudo-label assignments, enhancing the robustness of self-training. Extensive experiments on multiple time series benchmarks demonstrate that our method consistently outperforms baseline SFDA approaches.">
@@ -557,7 +557,7 @@
           <td>2025-12-18</td>
           <td>None</td>
           <td>0</td>
-          <td>0</td>
+          <td>6</td>
         </tr>
 
         <tr id="Domain shift poses a fundamental challenge in time series analysis, where models trained on source domain often fail dramatically when applied in target domain with different yet similar distributions. While current unsupervised domain adaptation (UDA) methods attempt to align cross-domain feature distributions, they typically treat features as indivisible entities, ignoring their intrinsic compositions that govern domain adaptation. We introduce DARSD, a novel UDA framework with theoretical explainability that explicitly realizes UDA tasks from the perspective of representation space decomposition. Our core insight is that effective domain adaptation requires not just alignment, but principled disentanglement of transferable knowledge from mixed representations. DARSD consists of three synergistic components: (I) An adversarial learnable common invariant basis that projects original features into a domain-invariant subspace while preserving semantic content; (II) A prototypical pseudo-labeling mechanism that dynamically separates target features based on confidence, hindering error accumulation; (III) A hybrid contrastive optimization strategy that simultaneously enforces feature clustering and consistency while mitigating emerging distribution gaps. Comprehensive experiments conducted on four benchmarks (WISDM, HAR, HHAR, and MFD) demonstrate DARSD's superiority against 12 UDA algorithms, achieving optimal performance in 35 out of 53 scenarios and ranking first across all benchmarks.">
