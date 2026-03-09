@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-03-02 06:28:07 UTC</i>
+  <i class="footer">This page was last updated on 2026-03-09 06:30:43 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -485,7 +485,7 @@
           <td>2025-12-23</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>4</td>
+          <td>5</td>
         </tr>
 
         <tr id="We introduce Chronos, a simple yet effective framework for pretrained probabilistic time series models. Chronos tokenizes time series values using scaling and quantization into a fixed vocabulary and trains existing transformer-based language model architectures on these tokenized time series via the cross-entropy loss. We pretrained Chronos models based on the T5 family (ranging from 20M to 710M parameters) on a large collection of publicly available datasets, complemented by a synthetic dataset that we generated via Gaussian processes to improve generalization. In a comprehensive benchmark consisting of 42 datasets, and comprising both classical local models and deep learning methods, we show that Chronos models: (a) significantly outperform other methods on datasets that were part of the training corpus; and (b) have comparable and occasionally superior zero-shot performance on new datasets, relative to methods that were trained specifically on them. Our results demonstrate that Chronos models can leverage time series data from diverse domains to improve zero-shot accuracy on unseen forecasting tasks, positioning pretrained models as a viable tool to greatly simplify forecasting pipelines.">
@@ -496,8 +496,8 @@
           </td>
           <td>2024-03-12</td>
           <td>ArXiv</td>
-          <td>546</td>
-          <td>19</td>
+          <td>563</td>
+          <td>20</td>
         </tr>
 
         <tr id="Large Language Models (LLMs) have shown remarkable performance across diverse tasks without domain-specific training, fueling interest in their potential for time-series forecasting. While LLMs have shown potential in zero-shot forecasting through prompting alone, recent studies suggest that LLMs lack inherent effectiveness in forecasting. Given these conflicting findings, a rigorous validation is essential for drawing reliable conclusions. In this paper, we evaluate the effectiveness of LLMs as zero-shot forecasters compared to state-of-the-art domain-specific models. Our experiments show that LLM-based zero-shot forecasters often struggle to achieve high accuracy due to their sensitivity to noise, underperforming even simple domain-specific models. We have explored solutions to reduce LLMs' sensitivity to noise in the zero-shot setting, but improving their robustness remains a significant challenge. Our findings suggest that rather than emphasizing zero-shot forecasting, a more promising direction would be to focus on fine-tuning LLMs to better process numerical sequences. Our experimental code is available at https://github.com/junwoopark92/revisiting-LLMs-zeroshot-forecaster.">
@@ -532,7 +532,7 @@
           </td>
           <td>2024-02-04</td>
           <td>ArXiv</td>
-          <td>74</td>
+          <td>75</td>
           <td>79</td>
         </tr>
 
@@ -560,11 +560,11 @@
           <td>5</td>
         </tr>
 
-        <tr id="Using pre-trained large language models (LLMs) as the backbone for time series prediction has recently gained significant research interest. However, the effectiveness of LLM backbones in this domain remains a topic of debate. Based on thorough empirical analyses, we observe that training and testing LLM-based models on small datasets often leads to the Encoder and Decoder becoming overly adapted to the dataset, thereby obscuring the true predictive capabilities of the LLM backbone. To investigate the genuine potential of LLMs in time series prediction, we introduce three pre-training models with identical architectures but different pre-training strategies. Thereby, large-scale pre-training allows us to create unbiased Encoder and Decoder components tailored to the LLM backbone. Through controlled experiments, we evaluate the zero-shot and few-shot prediction performance of the LLM, offering insights into its capabilities. Extensive experiments reveal that although the LLM backbone demonstrates some promise, its forecasting performance is limited. Our source code is publicly available in the anonymous repository: https://anonymous.4open.science/r/LLM4TS-0B5C.">
+        <tr id="Using pre-trained large language models (LLMs) as a backbone for time series prediction has recently attracted growing research interest. Existing approaches typically split time series into patches, map them to the token space of LLMs via a Tokenizer, process the tokens through a frozen or fine-tuned LLM backbone, and then reconstruct numerical forecasts using a Detokenizer. However, the actual effectiveness of LLMs for time series forecasting remains under debate. We observe that when trained and evaluated on small datasets, these Tokenizer-Detokenizer pairs often overfit to the specific data distribution, thereby masking the intrinsic predictive capability of the LLM backbone. To investigate the inherent potential of LLMs in this context, we design three models with identical architectures but distinct pre-training strategies. By leveraging large-scale pre-training, we obtain more unbiased Tokenizer-Detokenizer pairs that are seamlessly integrated with the LLM backbone. Through controlled experiments, we evaluate the zero-shot and few-shot forecasting performance of the LLM, offering insights into its true capabilities. Our extensive experiments reveal that, although the LLM backbone shows some promise, its performance remains limited and does not consistently surpass that of models specifically trained on large-scale time series data. Our source code is publicly available in the repository: https://github.com/SiriZhang45/LLM4TS.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/a5a5e8483d34d7ba7978564dcb570fa4a5a72f41" target='_blank'>From Text to Time? Rethinking the Effectiveness of the Large Language Model for Time Series Forecasting</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/37939d0b853a1fcfd4abfe1dfba9980f1429f415" target='_blank'>From Tokenizer Bias to Backbone Capability: A Controlled Study of LLMs for Time Series Forecasting</a></td>
           <td>
-            Xinyu Zhang, Shanshan Feng, Xutao Li
+            Xinyu Zhang, Shanshan Feng, Xutao Li, Kenghong Lin, Fan Li, Pengfei Jia
           </td>
           <td>2025-04-09</td>
           <td>ArXiv</td>
@@ -580,7 +580,7 @@
           </td>
           <td>2026-02-16</td>
           <td>ArXiv</td>
-          <td>0</td>
+          <td>1</td>
           <td>5</td>
         </tr>
 

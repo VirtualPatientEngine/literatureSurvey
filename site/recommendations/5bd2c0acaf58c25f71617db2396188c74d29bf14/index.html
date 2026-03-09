@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-03-02 06:28:12 UTC</i>
+  <i class="footer">This page was last updated on 2026-03-09 06:30:52 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -484,7 +484,7 @@
           </td>
           <td>2024-09-20</td>
           <td>Applied Intelligence</td>
-          <td>4</td>
+          <td>5</td>
           <td>9</td>
         </tr>
 
@@ -520,7 +520,7 @@
           </td>
           <td>2023-12-15</td>
           <td>Data Mining and Knowledge Discovery</td>
-          <td>3</td>
+          <td>4</td>
           <td>6</td>
         </tr>
 
@@ -532,8 +532,8 @@
           </td>
           <td>2022-03-15</td>
           <td>ACM Transactions on Knowledge Discovery from Data</td>
-          <td>95</td>
-          <td>47</td>
+          <td>96</td>
+          <td>48</td>
         </tr>
 
         <tr id="Domain adaptation is challenging for time series classification due to the highly dynamic nature. This study tackles the most difficult subtask when both target labels and source data are inaccessible, namely, source-free domain adaptation. To reuse the classification backbone pre-trained on source data, time series reconstruction is a sound solution that aligns target and source time series by minimizing the reconstruction errors of both. However, simply fine-tuning the source pre-trained reconstruction model on target data may lose the learnt priori, and it struggles to accommodate domain varying temporal patterns in a single encoder-decoder. Therefore, this paper tries to disentangle the composition of domain transferability by using a compositional architecture for time series reconstruction. Here, the preceding component is a U-net frozen since pre-trained, the output of which during adaptation is the initial reconstruction of a given target time series, acting as a coarse step to prompt the subsequent finer adaptation. The following pipeline for finer adaptation includes two parallel branches: The source replay branch using a residual link to preserve the output of U-net, and the offset compensation branch that applies an additional autoencoder (AE) to further warp U-net's output. By deploying a learnable factor on either branch to scale their composition in the final output of reconstruction, the data transferability is disentangled and the learnt reconstructive capability from source data is retained. During inference, aside from the batch-level optimization in the training, we search at test time stability-aware rescaling of source replay branch to tolerate instance-wise variation. The experimental results show that such compositional architecture of time series reconstruction leads to SOTA performance on 3 widely used benchmarks.">
@@ -557,7 +557,7 @@
           <td>2025-12-18</td>
           <td>None</td>
           <td>0</td>
-          <td>6</td>
+          <td>7</td>
         </tr>
 
         <tr id="Domain shift poses a fundamental challenge in time series analysis, where models trained on source domain often fail dramatically when applied in target domain with different yet similar distributions. While current unsupervised domain adaptation (UDA) methods attempt to align cross-domain feature distributions, they typically treat features as indivisible entities, ignoring their intrinsic compositions that govern domain adaptation. We introduce DARSD, a novel UDA framework with theoretical explainability that explicitly realizes UDA tasks from the perspective of representation space decomposition. Our core insight is that effective domain adaptation requires not just alignment, but principled disentanglement of transferable knowledge from mixed representations. DARSD consists of three synergistic components: (I) An adversarial learnable common invariant basis that projects original features into a domain-invariant subspace while preserving semantic content; (II) A prototypical pseudo-labeling mechanism that dynamically separates target features based on confidence, hindering error accumulation; (III) A hybrid contrastive optimization strategy that simultaneously enforces feature clustering and consistency while mitigating emerging distribution gaps. Comprehensive experiments conducted on four benchmarks (WISDM, HAR, HHAR, and MFD) demonstrate DARSD's superiority against 12 UDA algorithms, achieving optimal performance in 35 out of 53 scenarios and ranking first across all benchmarks.">
@@ -569,7 +569,7 @@
           <td>2025-07-28</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>5</td>
+          <td>6</td>
         </tr>
 
         <tr id="Unsupervised domain adaptation (UDA) of time series aims to teach models to identify consistent patterns across various temporal scenarios, disregarding domain-specific differences, which can maintain their predictive accuracy and effectively adapt to new domains. However, existing UDA methods struggle to adequately extract and align both global and local features in time series data. To address this issue, we propose the Local-Global Representation Alignment framework (LogoRA), which employs a two-branch encoder–comprising a multi-scale convolutional branch and a patching transformer branch. The encoder enables the extraction of both local and global representations from time series. A fusion module is then introduced to integrate these representations, enhancing domain-invariant feature alignment from multi-scale perspectives. To achieve effective alignment, LogoRA employs strategies like invariant feature learning on the source domain, utilizing triplet loss for fine alignment and dynamic time warping-based feature alignment. Additionally, it reduces source-target domain gaps through adversarial training and per-class prototype alignment. Our evaluations on four time-series datasets demonstrate that LogoRA outperforms strong baselines by up to 12.52%, showcasing its superiority in time series UDA tasks.">

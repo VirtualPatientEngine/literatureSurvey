@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-03-02 06:28:08 UTC</i>
+  <i class="footer">This page was last updated on 2026-03-09 06:30:46 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -476,11 +476,11 @@
   </thead>
   <tbody>
 
-        <tr id="Using pre-trained large language models (LLMs) as the backbone for time series prediction has recently gained significant research interest. However, the effectiveness of LLM backbones in this domain remains a topic of debate. Based on thorough empirical analyses, we observe that training and testing LLM-based models on small datasets often leads to the Encoder and Decoder becoming overly adapted to the dataset, thereby obscuring the true predictive capabilities of the LLM backbone. To investigate the genuine potential of LLMs in time series prediction, we introduce three pre-training models with identical architectures but different pre-training strategies. Thereby, large-scale pre-training allows us to create unbiased Encoder and Decoder components tailored to the LLM backbone. Through controlled experiments, we evaluate the zero-shot and few-shot prediction performance of the LLM, offering insights into its capabilities. Extensive experiments reveal that although the LLM backbone demonstrates some promise, its forecasting performance is limited. Our source code is publicly available in the anonymous repository: https://anonymous.4open.science/r/LLM4TS-0B5C.">
+        <tr id="Using pre-trained large language models (LLMs) as a backbone for time series prediction has recently attracted growing research interest. Existing approaches typically split time series into patches, map them to the token space of LLMs via a Tokenizer, process the tokens through a frozen or fine-tuned LLM backbone, and then reconstruct numerical forecasts using a Detokenizer. However, the actual effectiveness of LLMs for time series forecasting remains under debate. We observe that when trained and evaluated on small datasets, these Tokenizer-Detokenizer pairs often overfit to the specific data distribution, thereby masking the intrinsic predictive capability of the LLM backbone. To investigate the inherent potential of LLMs in this context, we design three models with identical architectures but distinct pre-training strategies. By leveraging large-scale pre-training, we obtain more unbiased Tokenizer-Detokenizer pairs that are seamlessly integrated with the LLM backbone. Through controlled experiments, we evaluate the zero-shot and few-shot forecasting performance of the LLM, offering insights into its true capabilities. Our extensive experiments reveal that, although the LLM backbone shows some promise, its performance remains limited and does not consistently surpass that of models specifically trained on large-scale time series data. Our source code is publicly available in the repository: https://github.com/SiriZhang45/LLM4TS.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/a5a5e8483d34d7ba7978564dcb570fa4a5a72f41" target='_blank'>From Text to Time? Rethinking the Effectiveness of the Large Language Model for Time Series Forecasting</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/37939d0b853a1fcfd4abfe1dfba9980f1429f415" target='_blank'>From Tokenizer Bias to Backbone Capability: A Controlled Study of LLMs for Time Series Forecasting</a></td>
           <td>
-            Xinyu Zhang, Shanshan Feng, Xutao Li
+            Xinyu Zhang, Shanshan Feng, Xutao Li, Kenghong Lin, Fan Li, Pengfei Jia
           </td>
           <td>2025-04-09</td>
           <td>ArXiv</td>
@@ -508,7 +508,7 @@
           </td>
           <td>2023-10-12</td>
           <td>ArXiv</td>
-          <td>91</td>
+          <td>94</td>
           <td>43</td>
         </tr>
 
@@ -520,7 +520,7 @@
           </td>
           <td>2024-10-31</td>
           <td>ArXiv</td>
-          <td>18</td>
+          <td>20</td>
           <td>16</td>
         </tr>
 
@@ -544,7 +544,7 @@
           </td>
           <td>2024-06-22</td>
           <td>ArXiv</td>
-          <td>191</td>
+          <td>195</td>
           <td>11</td>
         </tr>
 
@@ -556,7 +556,7 @@
           </td>
           <td>2025-03-06</td>
           <td>ArXiv</td>
-          <td>17</td>
+          <td>19</td>
           <td>16</td>
         </tr>
 

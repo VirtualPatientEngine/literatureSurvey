@@ -11,7 +11,7 @@ hide:
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-03-02 06:28:13 UTC</i>
+  <i class="footer">This page was last updated on 2026-03-09 06:30:55 UTC</i>
   </p>
   
   <div class="note info" onclick="startIntro()">
@@ -50,7 +50,7 @@ hide:
           </td>
           <td>2018-01-31</td>
           <td>MAG, ArXiv, DBLP</td>
-          <td>138</td>
+          <td>139</td>
           <td>95</td>
         </tr>
     
@@ -75,7 +75,7 @@ hide:
           <td>2022-03-03</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>42</td>
+          <td>41</td>
         </tr>
     
         <tr id="Time series with long-term structure arise in a variety of contexts and capturing this temporal structure is a critical challenge in time series analysis for both inference and forecasting settings. Traditionally, state space models have been successful in providing uncertainty estimates of trajectories in the latent space. More recently, deep learning, attention-based approaches have achieved state of the art performance for sequence modeling, though often require large amounts of data and parameters to do so. We propose Stanza, a nonlinear, non-stationary state space model as an intermediate approach to fill the gap between traditional models and modern deep learning approaches for complex time series. Stanza strikes a balance between competitive forecasting accuracy and probabilistic, interpretable inference for highly structured time series. In particular, Stanza achieves forecasting accuracy competitive with deep LSTMs on real-world datasets, especially for multi-step ahead forecasting.">
@@ -87,7 +87,7 @@ hide:
           <td>2020-06-11</td>
           <td>ArXiv</td>
           <td>6</td>
-          <td>33</td>
+          <td>30</td>
         </tr>
     
         <tr id="Outstanding achievements of graph neural networks for spatiotemporal time series analysis show that relational constraints introduce an effective inductive bias into neural forecasting architectures. Often, however, the relational information characterizing the underlying data-generating process is unavailable and the practitioner is left with the problem of inferring from data which relational graph to use in the subsequent processing stages. We propose novel, principled - yet practical - probabilistic score-based methods that learn the relational dependencies as distributions over graphs while maximizing end-to-end the performance at task. The proposed graph learning framework is based on consolidated variance reduction techniques for Monte Carlo score-based gradient estimation, is theoretically grounded, and, as we show, effective in practice. In this paper, we focus on the time series forecasting problem and show that, by tailoring the gradient estimators to the graph learning problem, we are able to achieve state-of-the-art performance while controlling the sparsity of the learned graph and the computational scalability. We empirically assess the effectiveness of the proposed method on synthetic and real-world benchmarks, showing that the proposed solution can be used as a stand-alone graph identification procedure as well as a graph learning component of an end-to-end forecasting architecture.">

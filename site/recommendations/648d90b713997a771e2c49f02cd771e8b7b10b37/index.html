@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-03-02 06:28:11 UTC</i>
+  <i class="footer">This page was last updated on 2026-03-09 06:30:51 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -484,8 +484,8 @@
           </td>
           <td>2023-04-23</td>
           <td>Sensors (Basel, Switzerland)</td>
-          <td>78</td>
-          <td>85</td>
+          <td>79</td>
+          <td>86</td>
         </tr>
 
         <tr id="Recent advancements in time-series forecasting have highlighted the importance of frequency-domain modeling. However, deep learning models primarily operate in the time domain, limiting their ability to capture frequency-based patterns. Existing approaches normally introduce novel neural network architectures tailored to task-specific frequency properties, yet they often lack generalization and require extensive domain-specific adaptations. In this paper, we propose FAT, a novel pretraining framework that learns generalizable Frequency-Aware Time-series representations through self-supervised learning. The key idea of FAT is to pretrain any backbone model to directly extract generalizable frequency patterns from time-domain signals and encode them into robust representations-eliminating the need for architectural modifications or additional modules during inference. This is achieved via a frequency reformer that amplifies critical frequency components learned through self-supervision and enforces similarity between the original and frequency-reformed time-series representations produced by the encoder. In addition, recognizing that semantically equivalent time-series can exhibit different frequency expressions-analogous to how the same phrase is pronounced differently by different speakers-FAT introduces a Knowledge-Guided Frequency Reformer that unifies the expression of frequency patterns with the same underlying semantics and extends similarity constraints to frequency-invariant augmented samples to enhance robustness of learned representation. Experiments on 14 benchmark datasets across regression and classification tasks show that FAT consistently achieves state-of-the-art performance while maintaining robustness across diverse backbone models, significantly outperforming existing pretraining methods. Our code is available at https://github.com/JiaXiangfei/FAT.">
@@ -508,7 +508,7 @@
           </td>
           <td>2024-06-12</td>
           <td>Frontiers in Artificial Intelligence</td>
-          <td>6</td>
+          <td>7</td>
           <td>2</td>
         </tr>
 
@@ -545,7 +545,7 @@
           <td>2026-02-12</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>19</td>
+          <td>20</td>
         </tr>
 
         <tr id="In this study, we propose a novel framework for time-series representation learning that integrates a learnable masking-augmentation strategy into a contrastive learning framework. Time-series data pose challenges due to their temporal dependencies and feature-extraction complexities. To address these challenges, we introduce a masking-based reconstruction approach within a contrastive learning context, aiming to enhance the model’s ability to learn discriminative temporal features. Our method leverages self-supervised learning to effectively capture both global and local patterns by strategically masking segments of the time-series data and reconstructing them, which aids in revealing nuanced temporal dependencies. We utilize learnable masking as a dynamic augmentation technique, which enables the model to optimize contextual relationships in the data and extract meaningful representations that are both context-aware and robust. Extensive experiments were conducted on multiple time-series datasets, including SleepEDF-78, 20, UCI-HAR, achieving improvements of 2%, 2.55%, and 3.89% each and similar performance on Epilepsy in accuracy over baseline methods. Our results show significant performance gains compared to existing methods, highlighting the potential of our framework to advance the field of time-series analysis by improving the quality of learned representations and enhancing downstream task performance.">
@@ -569,7 +569,7 @@
           <td>2024-10-28</td>
           <td>Proceedings of the 32nd ACM International Conference on Multimedia</td>
           <td>5</td>
-          <td>6</td>
+          <td>7</td>
         </tr>
 
         <tr id="Time series classification (TSC) is crucial in numerous real-world applications, such as environmental monitoring, medical diagnosis, and posture recognition. TSC tasks require models to effectively capture discriminative information for accurate class identification. Although deep learning architectures excel at capturing temporal dependencies, they often suffer from high computational cost, sensitivity to noise perturbations, and susceptibility to overfitting on small-scale datasets. To address these challenges, we propose FAIM, a lightweight Frequency-Aware Interactive Mamba model. Specifically, we introduce an Adaptive Filtering Block (AFB) that leverages Fourier Transform to extract frequency-domain features from time series data. The AFB incorporates learnable adaptive thresholds to dynamically suppress noise and employs element-wise coupling of global and local semantic adaptive filtering, enabling in-depth modeling of the synergy among different frequency components. Furthermore, we design an Interactive Mamba Block (IMB) to facilitate efficient multi-granularity information interaction, balancing the extraction of fine-grained discriminative features and comprehensive global contextual information, thereby endowing FAIM with powerful and expressive representations for TSC tasks. Additionally, we incorporate a self-supervised pre-training mechanism to enhance FAIM's understanding of complex temporal patterns and improve its robustness across various domains and high-noise scenarios. Extensive experiments on multiple benchmarks demonstrate that FAIM consistently outperforms existing state-of-the-art (SOTA) methods, achieving a superior trade-off between accuracy and efficiency and exhibits outstanding performance.">
@@ -584,16 +584,16 @@
           <td>12</td>
         </tr>
 
-        <tr id="In recent years, contrastive learning (CL) frameworks have been widely applied to multivariate time series classification (MTSC) tasks. However, existing methods lack task-specific guidance, leading to limitations in fully capturing the complex dynamics and invariant representations in time series data. Motivated by the auxiliary tasks in multitask learning (MTL) and to fully utilize the rich frequency-domain information of time series data, we propose a novel time series classification framework, uncertainty-based time–frequency supervised CL (U-TFSCL). This framework uses SCL in the time and frequency domains and time–frequency consistency as auxiliary tasks to improve the primary task of using only instance-level labels for time series classification. Furthermore, inspired by the homogeneous uncertainty in MTL, we derive a novel uncertainty loss function, which automatically adjusts the weights according to the degree of uncertainty of different tasks to optimize the learning and prediction process of the model. The proposed framework is evaluated on MTSC tasks, including human activity recognition (HAR), air writing, and gesture recognition. In addition, we create a human–drone interaction (HDI) dataset consisting of 20 subjects and conduct real-world experiments to evaluate the proposed framework. The extensive experiments conducted in various settings verify the effectiveness of the proposed framework.">
+        <tr id="Contrastive learning has become a cornerstone for self-supervised time-series representation learning, yet its practical application is often hindered by the quadratic computational and memory complexity of the standard Information Noise-Contrastive Estimation (InfoNCE) loss function. This bottleneck severely limits the use of large batch sizes and complex hierarchical models, such as TS2Vec, which are crucial for learning high-quality representations. To address this fundamental limitation, we leverage a first-order Taylor expansion to approximate the InfoNCE loss. This approach circumvents the explicit computation of the full similarity matrix, effectively reducing the complexity to a manageable linear scale. We integrated our Taylor-approximated loss into the TS2Vec framework and evaluated its performance on the Human Activity Recognition (HAR) benchmark, from University of California, Irvine (UCI) Machine Learning Repository. Our experiments demonstrate a substantial improvement in efficiency—achieving up to a 7.3x speedup and an 8.5x reduction in peak memory usage—while maintaining classification accuracy and discriminative power highly comparable to the original, resource-intensive model. By mitigating the prohibitive costs of large-batch training, our work enables the deployment of powerful time-series models in resource-constrained settings, paving the way for broader applications in fields like biomedical signal processing and federated learning.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/504a51ca5453e2de135e853b17a97e0b8bfb92e9" target='_blank'>Time Series Classification Based on Supervised Contrastive Learning and Homoscedastic Uncertainty</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/6858c685095ff7eb2efb3e2be48a66878c8e2443" target='_blank'>Efficient Biomedical Time-series Contrastive Learning: Revisiting Taylor Expansion in Loss Optimization</a></td>
           <td>
-            Tao Zhang, Ke Li, Shaofan Wang
+            Yunho Jeong, Chanyu Moon, Jinmo Kim, Ji-Woong Choi
           </td>
-          <td>2025-09-24</td>
-          <td>IEEE Transactions on Neural Networks and Learning Systems</td>
+          <td>2025-10-14</td>
+          <td>2025 16th International Conference on Information and Communication Technology Convergence (ICTC)</td>
           <td>0</td>
-          <td>6</td>
+          <td>5</td>
         </tr>
 
   </tbody>
