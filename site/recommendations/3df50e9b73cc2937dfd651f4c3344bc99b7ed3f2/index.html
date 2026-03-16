@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-03-09 06:31:11 UTC</i>
+  <i class="footer">This page was last updated on 2026-03-16 06:42:13 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -475,18 +475,6 @@
     </tr>
   </thead>
   <tbody>
-
-        <tr id="This article introduces an advanced Koopman mode decomposition (KMD) technique—coined Featurized Koopman Mode Decomposition (FKMD)—that uses delay embedding and a learned Mahalanobis distance to enhance analysis and prediction of high-dimensional dynamical systems. The delay embedding expands the observation space to better capture underlying manifold structures, while the Mahalanobis distance adjusts observations based on the system’s dynamics. This aids in featurizing KMD in cases where good features are not a priori known. We show that FKMD improves predictions for a high-dimensional linear oscillator, a high-dimensional Lorenz attractor that is partially observed, and a cell signaling problem from cancer research.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/78f159b92f2f6689b738970dc1ce3a8641b2a534" target='_blank'>Featurizing Koopman mode decomposition for robust forecasting</a></td>
-          <td>
-            D. Aristoff, J. Copperman, Nathan Mankovich, Alexander E. Davies
-          </td>
-          <td>2023-12-14</td>
-          <td>The Journal of Chemical Physics</td>
-          <td>3</td>
-          <td>12</td>
-        </tr>
 
         <tr id="A common problem in time-series analysis is to predict dynamics with only scalar or partial observations of the underlying dynamical system. For data on a smooth compact manifold, Takens' theorem proves a time-delayed embedding of the partial state is diffeomorphic to the attractor, although for chaotic and highly nonlinear systems, learning these delay coordinate mappings is challenging. We utilize deep artificial neural networks (ANNs) to learn discrete time maps and continuous time flows of the partial state. Given training data for the full state, we also learn a reconstruction map. Thus, predictions of a time series can be made from the current state and several previous observations with embedding parameters determined from time-series analysis. The state space for time evolution is of comparable dimension to reduced order manifold models. These are advantages over recurrent neural network models, which require a high-dimensional internal state or additional memory terms and hyperparameters. We demonstrate the capacity of deep ANNs to predict chaotic behavior from a scalar observation on a manifold of dimension three via the Lorenz system. We also consider multivariate observations on the Kuramoto-Sivashinsky equation, where the observation dimension required for accurately reproducing dynamics increases with the manifold dimension via the spatial extent of the system.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
@@ -544,7 +532,7 @@
           </td>
           <td>2022-01-13</td>
           <td>Proceedings of the Royal Society A</td>
-          <td>112</td>
+          <td>113</td>
           <td>78</td>
         </tr>
 
@@ -572,16 +560,40 @@
           <td>96</td>
         </tr>
 
-        <tr id="We introduce the Anisotropic Self-Organizing Map (ASOM), a novel neural network-based approach for inferring hidden common drivers in nonlinear dynamical systems from observed time series. Grounded in topological theorems, our method integrates time-delay embedding, intrinsic dimension estimation, and a new anisotropic training scheme for Kohonen's self-organizing map, enabling the precise decomposition of attractor manifolds into autonomous and shared components of the dynamics. We validated ASOM through simulations involving chaotic maps, where two driven systems were influenced by a hidden nonlinear driver. The inferred time series showed a strong correlation with the actual hidden common driver, unlike the observed systems. We further compared our reconstruction performance against several established methods for identifying shared features in time series, including PCA, kernel PCA, ICA, dynamical component analysis, canonical correlation analysis, deep canonical correlation analysis, traditional self-organizing map, and recent recurrence-based approaches. Our results demonstrate ASOM's superior accuracy and robustness in recovering latent dynamics, providing a powerful tool for unsupervised learning of hidden causal structures in complex systems.">
+        <tr id="Many complex phenomena, from weather systems to heartbeat rhythm patterns, are effectively modeled as low-dimensional dynamical systems. Such systems may behave chaotically under certain conditions, and so the ability to detect chaos based on empirical measurement is an important step in characterizing and predicting these processes. Classifying a system as chaotic usually requires estimating its largest Lyapunov exponent, which quantifies the average rate of convergence or divergence of initially close trajectories in state space, and for which a positive value is generally accepted as an operational definition of chaos. Estimating the largest Lyapunov exponent from observations of a process is especially challenging in systems affected by dynamical noise, which is the case for many models of real-world processes, in particular models of biological systems. We describe a novel method for estimating the largest Lyapunov exponent from data, based on training Deep Learning models on synthetically generated trajectories, and demonstrate that this method yields accurate and noise-robust predictions given relatively short inputs and across a range of different dynamical systems. Our method is unique in that it can analyze tree-shaped data, a ubiquitous topology in biological settings, and specifically in dynamics over lineages of cells or organisms. We also characterize the types of input information extracted by our models for their predictions, allowing for a deeper understanding into the different ways by which chaos can be analyzed in different topologies.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/5fb83085a263b8b365eb0a83ef19775732407773" target='_blank'>Inference of hidden common driver dynamics by anisotropic self-organizing neural networks</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/9fb357e57624525f27224822502061cc8fb831e1" target='_blank'>Detecting chaos in lineage-trees: A deep learning approach</a></td>
           <td>
-            Zsigmond Benkő, Marcell Stippinger, Attila Bencze, F. Bazsó, András Telcs, Zoltán Somogyvári
+            H. Rappeport, Irit Levin Reisman, Naftali Tishby, N. Balaban
           </td>
-          <td>2025-09-01</td>
-          <td>Neural networks : the official journal of the International Neural Network Society</td>
-          <td>0</td>
-          <td>11</td>
+          <td>2021-06-08</td>
+          <td>ArXiv</td>
+          <td>5</td>
+          <td>57</td>
+        </tr>
+
+        <tr id="A generally applicable robust data-driven network modeling strategy offers rapid means to predict and control complex systems. We propose a universal method for data-driven modeling of complex nonlinear dynamics from time-resolved snapshot data without prior knowledge. Complex nonlinear dynamics govern many fields of science and engineering. Data-driven dynamic modeling often assumes a low-dimensional subspace or manifold for the state. We liberate ourselves from this assumption by proposing cluster-based network modeling (CNM) bridging machine learning, network science, and statistical physics. CNM describes short- and long-term behavior and is fully automatable, as it does not rely on application-specific knowledge. CNM is demonstrated for the Lorenz attractor, ECG heartbeat signals, Kolmogorov flow, and a high-dimensional actuated turbulent boundary layer. Even the notoriously difficult modeling benchmark of rare events in the Kolmogorov flow is solved. This automatable universal data-driven representation of complex nonlinear dynamics complements and expands network connectivity science and promises new fast-track avenues to understand, estimate, predict, and control complex systems in all scientific fields.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/b0c3d159c14b0488299269c3fd62da3b9f608709" target='_blank'>Cluster-based network modeling—From snapshots to complex dynamical systems</a></td>
+          <td>
+            Daniel Fernex, B. R. Noack, R. Semaan
+          </td>
+          <td>2021-06-01</td>
+          <td>Science Advances</td>
+          <td>74</td>
+          <td>53</td>
+        </tr>
+
+        <tr id="We propose a universal method for data-driven modeling of complex nonlinear dynamics from time-resolved snapshot data without prior knowledge. Complex nonlinear dynamics govern many fields of science and engineering. Data-driven dynamic modeling often assumes a low-dimensional subspace or manifold for the state. We liberate ourselves from this assumption by proposing cluster-based network modeling (CNM) bridging machine learning, network science, and statistical physics. CNM only assumes smoothness of the dynamics in the state space, robustly describes short- and long-term behavior and is fully automatable as it does not rely on application-specific knowledge. CNM is demonstrated for the Lorenz attractor, ECG heartbeat signals, Kolmogorov flow, and a high-dimensional actuated turbulent boundary layer. Even the notoriously difficult modeling benchmark of rare events in the Kolmogorov flow is solved. This automatable universal data-driven representation of complex nonlinear dynamics complements and expands network connectivity science and promises new fast-track avenues to understand, estimate, predict and control complex systems in all scientific fields.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/431ea60293afebbef92f45db017299dfe379fa1f" target='_blank'>Cluster-based network modeling -- automated robust modeling of complex dynamical systems</a></td>
+          <td>
+            Daniel Fernex, B. R. Noack, R. Semaan
+          </td>
+          <td>2020-10-30</td>
+          <td>arXiv: Data Analysis, Statistics and Probability</td>
+          <td>1</td>
+          <td>53</td>
         </tr>
 
   </tbody>
