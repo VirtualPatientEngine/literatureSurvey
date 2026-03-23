@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-03-16 06:42:01 UTC</i>
+  <i class="footer">This page was last updated on 2026-03-23 06:36:46 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -483,8 +483,8 @@
             Andreas Doerr, Christian Daniel, Martin Schiegg, D. Nguyen-Tuong, S. Schaal, Marc Toussaint, Sebastian Trimpe
           </td>
           <td>2018-01-31</td>
-          <td>ArXiv, DBLP, MAG</td>
-          <td>139</td>
+          <td>ArXiv, MAG, DBLP</td>
+          <td>141</td>
           <td>96</td>
         </tr>
 
@@ -524,6 +524,30 @@
           <td>30</td>
         </tr>
 
+        <tr id="Outstanding achievements of graph neural networks for spatiotemporal time series analysis show that relational constraints introduce an effective inductive bias into neural forecasting architectures. Often, however, the relational information characterizing the underlying data-generating process is unavailable and the practitioner is left with the problem of inferring from data which relational graph to use in the subsequent processing stages. We propose novel, principled - yet practical - probabilistic score-based methods that learn the relational dependencies as distributions over graphs while maximizing end-to-end the performance at task. The proposed graph learning framework is based on consolidated variance reduction techniques for Monte Carlo score-based gradient estimation, is theoretically grounded, and, as we show, effective in practice. In this paper, we focus on the time series forecasting problem and show that, by tailoring the gradient estimators to the graph learning problem, we are able to achieve state-of-the-art performance while controlling the sparsity of the learned graph and the computational scalability. We empirically assess the effectiveness of the proposed method on synthetic and real-world benchmarks, showing that the proposed solution can be used as a stand-alone graph identification procedure as well as a graph learning component of an end-to-end forecasting architecture.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/0d01d21137a5af9f04e4b16a55a0f732cb8a540b" target='_blank'>Sparse Graph Learning from Spatiotemporal Time Series</a></td>
+          <td>
+            Andrea Cini, Daniele Zambon, C. Alippi
+          </td>
+          <td>2022-05-26</td>
+          <td>J. Mach. Learn. Res.</td>
+          <td>30</td>
+          <td>55</td>
+        </tr>
+
+        <tr id="Forecasting the behaviour of complex dynamical systems such as interconnected sensor networks characterized by high-dimensional multivariate time series(MTS) is of paramount importance for making informed decisions and planning for the future in a broad spectrum of applications. Graph forecasting networks(GFNs) are well-suited for forecasting MTS data that exhibit spatio-temporal dependencies. However, most prior works of GFN-based methods on MTS forecasting rely on domain-expertise to model the nonlinear dynamics of the system, but neglect the potential to leverage the inherent relational-structural dependencies among time series variables underlying MTS data. On the other hand, contemporary works attempt to infer the relational structure of the complex dependencies between the variables and simultaneously learn the nonlinear dynamics of the interconnected system but neglect the possibility of incorporating domain-specific prior knowledge to improve forecast accuracy. To this end, we propose a hybrid architecture that combines explicit prior knowledge with implicit knowledge of the relational structure within the MTS data. It jointly learns intra-series temporal dependencies and inter-series spatial dependencies by encoding time-conditioned structural spatio-temporal inductive biases to provide more accurate and reliable forecasts. It also models the time-varying uncertainty of the multi-horizon forecasts to support decision-making by providing estimates of prediction uncertainty. The proposed architecture has shown promising results on multiple benchmark datasets and outperforms state-of-the-art forecasting methods by a significant margin. We report and discuss the ablation studies to validate our forecasting architecture.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/05cd3afc8208f1c0dd61b09a90f35dd42497e175" target='_blank'>Multi-Knowledge Fusion Network for Time Series Representation Learning</a></td>
+          <td>
+            Sakhinana Sagar Srinivas, Shivam Gupta, Krishna Sai Sudhir Aripirala, Venkataramana Runkana
+          </td>
+          <td>2024-08-22</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>8</td>
+        </tr>
+
         <tr id="Real-world dynamical systems often consist of multiple stochastic subsystems that interact with each other. Modeling and forecasting the behavior of such dynamics are generally not easy, due to the inherent hardness in understanding the complicated interactions and evolutions of their constituents. This paper introduces the relational state-space model (R-SSM), a sequential hierarchical latent variable model that makes use of graph neural networks (GNNs) to simulate the joint state transitions of multiple correlated objects. By letting GNNs cooperate with SSM, R-SSM provides a flexible way to incorporate relational information into the modeling of multi-object dynamics. We further suggest augmenting the model with normalizing flows instantiated for vertex-indexed random variables and propose two auxiliary contrastive objectives to facilitate the learning. The utility of R-SSM is empirically evaluated on synthetic and real time series datasets.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/7a1e5377b08489c2969f73c56efc557e34f578e1" target='_blank'>Relational State-Space Model for Stochastic Multi-Object Systems</a></td>
@@ -534,58 +558,6 @@
           <td>ArXiv</td>
           <td>8</td>
           <td>74</td>
-        </tr>
-
-        <tr id="Interactive systems are omnipresent across various domains, ranging from dynamic systems in physics to intricate societal dynamics. Relational inference aims to uncover implicit interactions between components based on observed system trajectories. Existing neural relational inference methods rely on fully connected graphs for message passing, leading to computational inefficiency and redundant message passing. While Transformer-based models excel in multivariate time series forecasting, their contextual attention mechanism disrupts the integrity and independence of dynamics in time-invariant relational inference. Besides, the implicit interactions should have non-trivial correlations with the attention coefficients, yet how to read out an explicit interaction graph from Transformer also still needs to be explored. In this study, we propose RIVA, a novel relational inference model with a variate attention mechanism. Unlike contextual attention in vanilla Transformer, which encodes multiple variables at the same time point as a single token, RIVA encodes entire dynamics. Furthermore, we incorporate the inferred graph structure as a mask in the causal attention, allowing each variable to effectively aggregate features from its neighbors and greatly enhancing the model's ability to capture complex interactions. Through extensive experimental evaluations, RIVA demonstrates superior performance in time-invariant continuous interaction inference and future state prediction, outperforming existing methods and providing highly accurate predictions in dynamic environments.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/cdd4e532084bbd68fd22c56f7abbec1ceaff28b1" target='_blank'>RIVA: Efficient relational inference with variate attention</a></td>
-          <td>
-            Ruizi Wu, Liming Pan, Linyuan Lu
-          </td>
-          <td>2025-06-01</td>
-          <td>Neural networks : the official journal of the International Neural Network Society</td>
-          <td>0</td>
-          <td>6</td>
-        </tr>
-
-        <tr id="
-
- Gaussian state space models have been used for decades as generative models of sequential data. They admit an intuitive probabilistic interpretation, have a simple functional form, and enjoy widespread adoption. We introduce a unified algorithm to efficiently learn a broad class of linear and non-linear state space models, including variants where the emission and transition distributions are modeled by deep neural networks. Our learning algorithm simultaneously learns a compiled inference network and the generative model, leveraging a structured variational approximation parameterized by recurrent neural networks to mimic the posterior distribution. We apply the learning algorithm to both synthetic and real-world datasets, demonstrating its scalability and versatility. We find that using the structured approximation to the posterior results in models with significantly higher held-out likelihood.
-
-">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/2af17f153e3fd71e15db9216b972aef222f46617" target='_blank'>Structured Inference Networks for Nonlinear State Space Models</a></td>
-          <td>
-            R. G. Krishnan, Uri Shalit, D. Sontag
-          </td>
-          <td>2016-09-30</td>
-          <td>ArXiv, DBLP, MAG</td>
-          <td>510</td>
-          <td>53</td>
-        </tr>
-
-        <tr id="Probabilistic inference in high-dimensional state-space models is computationally challenging. For many spatiotemporal systems, however, prior knowledge about the dependency structure of state variables is available. We leverage this structure to develop a computationally efficient approach to state estimation and learning in graph-structured state-space models with (partially) unknown dynamics and limited historical data. Building on recent methods that combine ideas from deep learning with principled inference in Gaussian Markov random fields (GMRF), we reformulate graph-structured state-space models as Deep GMRFs defined by simple spatial and temporal graph layers. This results in a flexible spatiotemporal prior that can be learned efficiently from a single time sequence via variational inference. Under linear Gaussian assumptions, we retain a closed-form posterior, which can be sampled efficiently using the conjugate gradient method, scaling favourably compared to classical Kalman filter based approaches">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/66173ff04bc062987a4395181001bf9b7c3eb21b" target='_blank'>Deep Gaussian Markov Random Fields for Graph-Structured Dynamical Systems</a></td>
-          <td>
-            Fiona Lippert, B. Kranstauber, E. E. V. Loon, Patrick Forr'e
-          </td>
-          <td>2023-06-14</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>25</td>
-        </tr>
-
-        <tr id="Many applications, e.g., healthcare, education, call for effective methods methods for constructing predictive models from high dimensional time series data where the relationship between variables can be complex and vary over time. In such settings, the underlying system undergoes a sequence of unobserved transitions among a finite set of hidden states. Furthermore, the relationships between the observed variables and their temporal dynamics may depend on the hidden state of the system. To further complicate matters, the hidden state sequences underlying the observed data from different individuals may not be aligned relative to a common frame of reference. Against this background, we consider the novel problem of jointly learning the state-dependent inter-variable relationships as well as the pattern of transitions between hidden states from multi-variate time series data. To solve this problem, we introduce the State-Regularized Vector Autoregressive Model (SrVARM) which combines a state-regularized recurrent neural network to learn the dynamics of transitions between discrete hidden states with an augmented autoregressive model which models the inter-variable dependencies in each state using a state-dependent directed acyclic graph (DAG). We propose an efficient algorithm for training SrVARM by leveraging a recently introduced reformulation of the combinatorial problem of optimizing the DAG structure with respect to a scoring function into a continuous optimization problem. We report results of extensive experiments with simulated data as well as a real-world benchmark that show that SrVARM outperforms state-of-the-art baselines in recovering the unobserved state transitions and discovering the state-dependent relationships among variables.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/4ddaa0ff15691ba148dd88c82b03547e9d2aa013" target='_blank'>SrVARM: State Regularized Vector Autoregressive Model for Joint Learning of Hidden State Transitions and State-Dependent Inter-Variable Dependencies from Multi-variate Time Series</a></td>
-          <td>
-            Tsung-Yu Hsieh, Yiwei Sun, Xianfeng Tang, Suhang Wang, Vasant G Honavar
-          </td>
-          <td>2021-04-19</td>
-          <td>Proceedings of the Web Conference 2021</td>
-          <td>9</td>
-          <td>57</td>
         </tr>
 
   </tbody>

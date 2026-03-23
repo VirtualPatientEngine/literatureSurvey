@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-03-16 06:41:57 UTC</i>
+  <i class="footer">This page was last updated on 2026-03-23 06:36:28 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -476,112 +476,112 @@
   </thead>
   <tbody>
 
-        <tr id="Large language models are strong sequence predictors, yet standard inference relies on immutable context histories. After making an error at generation step t, the model lacks an updatable memory mechanism that improves predictions for step t+1. We propose LLM-as-RNN, an inference-only framework that turns a frozen LLM into a recurrent predictor by representing its hidden state as natural-language memory. This state, implemented as a structured system-prompt summary, is updated at each timestep via feedback-driven text rewrites, enabling learning without parameter updates. Under a fixed token budget, LLM-as-RNN corrects errors and retains task-relevant patterns, effectively performing online learning through language. We evaluate the method on three sequential benchmarks in healthcare, meteorology, and finance across Llama, Gemma, and GPT model families. LLM-as-RNN significantly outperforms zero-shot, full-history, and MemPrompt baselines, improving predictive accuracy by 6.5% on average, while producing interpretable, human-readable learning traces absent in standard context accumulation.">
+        <tr id="We present TimeFound, an encoder-decoder transformer-based time series foundation model for out-of-the-box zero-shot forecasting. To handle time series data from various domains, TimeFound employs a multi-resolution patching strategy to capture complex temporal patterns at multiple scales. We pre-train our model with two sizes (200M and 710M parameters) on a large time-series corpus comprising both real-world and synthetic datasets. Over a collection of unseen datasets across diverse domains and forecasting horizons, our empirical evaluations suggest that TimeFound can achieve superior or competitive zero-shot forecasting performance, compared to state-of-the-art time series foundation models.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/c0654003dcefac0ab58afc9ee6de88afa548822e" target='_blank'>LLM-as-RNN: A Recurrent Language Model for Memory Updates and Sequence Prediction</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/cedf35c0b6ec1637367e228ffec07af0cfe03ce2" target='_blank'>TimeFound: A Foundation Model for Time Series Forecasting</a></td>
           <td>
-            Yuxing Lu, J. B. Tamo, Weichen Zhao, Nan Sun, Yishan Zhong, Wenqi Shi, Jinzhuo Wang, May D. Wang
+            Congxi Xiao, Jingbo Zhou, Yixiong Xiao, Xinjiang Lu, Le Zhang, Hui Xiong
           </td>
-          <td>2026-01-19</td>
+          <td>2025-03-06</td>
+          <td>ArXiv</td>
+          <td>3</td>
+          <td>11</td>
+        </tr>
+
+        <tr id="Over the past years, foundation models have caused a paradigm shift in machine learning due to their unprecedented capabilities for zero-shot and few-shot generalization. However, despite the success of foundation models in modalities such as natural language processing and computer vision, the development of foundation models for time series forecasting has lagged behind. We present Lag-Llama, a general-purpose foundation model for univariate probabilistic time series forecasting based on a decoder-only transformer architecture that uses lags as covariates. Lag-Llama is pretrained on a large corpus of diverse time series data from several domains, and demonstrates strong zero-shot generalization capabilities compared to a wide range of forecasting models on downstream datasets across domains. Moreover, when fine-tuned on relatively small fractions of such previously unseen datasets, Lag-Llama achieves state-of-the-art performance, outperforming prior deep learning approaches, emerging as the best general-purpose model on average. Lag-Llama serves as a strong contender to the current state-of-art in time series forecasting and paves the way for future advancements in foundation models tailored to time series data.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/7c9bb230946cf48a7b9de97fd0281f42fbc51d31" target='_blank'>Lag-Llama: Towards Foundation Models for Probabilistic Time Series Forecasting</a></td>
+          <td>
+            Kashif Rasul, Arjun Ashok, A. Williams, Arian Khorasani, George Adamopoulos, Rishika Bhagwatkar, Marin Bilovs, Hena Ghonia, N. Hassen, Anderson Schneider, Sahil Garg, Alexandre Drouin, Nicolas Chapados, Yuriy Nevmyvaka, I. Rish
+          </td>
+          <td>2023-10-12</td>
+          <td>ArXiv</td>
+          <td>97</td>
+          <td>43</td>
+        </tr>
+
+        <tr id="Motivated by the recent success of time-series foundation models for zero-shot forecasting, we present a methodology for $\textit{in-context fine-tuning}$ of a time-series foundation model. In particular, we design a pretrained foundation model that can be prompted (at inference time) with multiple time-series examples, in order to forecast a target time-series into the future. Our foundation model is specifically trained to utilize examples from multiple related time-series in its context window (in addition to the history of the target time-series) to help it adapt to the specific distribution of the target domain at inference time. We show that such a foundation model that uses in-context examples at inference time can obtain much better performance on popular forecasting benchmarks compared to supervised deep learning methods, statistical models, as well as other time-series foundation models. Interestingly, our in-context fine-tuning approach even rivals the performance of a foundation model that is explicitly fine-tuned on the target domain.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/1216a29c0beb36a2b621b59d36877edf05afcf8c" target='_blank'>In-Context Fine-Tuning for Time-Series Foundation Models</a></td>
+          <td>
+            Abhimanyu Das, Matthew Faw, Rajat Sen, Yichen Zhou
+          </td>
+          <td>2024-10-31</td>
+          <td>ArXiv</td>
+          <td>21</td>
+          <td>16</td>
+        </tr>
+
+        <tr id="Inspired by recent advances in large language models, foundation models have been developed for zero-shot time series forecasting, enabling prediction on datasets unseen during pretraining. These large-scale models, trained on vast collections of time series, learn generalizable representations for both point and probabilistic forecasting, reducing the need for task-specific architectures and manual tuning. In this work, we review the main architectures, pretraining strategies, and optimization methods used in such models, and study the effect of fine-tuning after pretraining to enhance their performance on specific datasets. Our empirical results show that fine-tuning generally improves zero-shot forecasting capabilities, especially for long-term horizons.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/24a6a0208b6c1059132e808c28ec4e6586517db3" target='_blank'>Modèles de Fondation et Ajustement : Vers une Nouvelle Génération de Modèles pour la Prévision des Séries Temporelles</a></td>
+          <td>
+            Morad Laglil, Emilie Devijver, É. Gaussier, Bertrand Pracca
+          </td>
+          <td>2025-11-27</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>6</td>
+        </tr>
+
+        <tr id="Large language models (LLMs) are being applied to time series forecasting. But are language models actually useful for time series? In a series of ablation studies on three recent and popular LLM-based time series forecasting methods, we find that removing the LLM component or replacing it with a basic attention layer does not degrade forecasting performance -- in most cases, the results even improve! We also find that despite their significant computational cost, pretrained LLMs do no better than models trained from scratch, do not represent the sequential dependencies in time series, and do not assist in few-shot settings. Additionally, we explore time series encoders and find that patching and attention structures perform similarly to LLM-based forecasters.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/df0d604b8e8e3b2947d9865d735f204c08635012" target='_blank'>Are Language Models Actually Useful for Time Series Forecasting?</a></td>
+          <td>
+            Mingtian Tan, Mike A. Merrill, Vinayak Gupta, Tim Althoff, Tom Hartvigsen
+          </td>
+          <td>2024-06-22</td>
+          <td>ArXiv</td>
+          <td>203</td>
+          <td>11</td>
+        </tr>
+
+        <tr id="Large Language Models (LLMs) and Foundation Models (FMs) have recently become prevalent for time series forecasting tasks. While fine-tuning LLMs enables domain adaptation, they often struggle to generalize across diverse and unseen datasets. Moreover, existing Time Series Foundation Models (TSFMs) still face challenges in handling non-stationary dynamics and distribution shifts, largely due to the lack of effective mechanisms for adaptation. To this end, we present TS-RAG, a retrieval-augmented generation framework for time series forecasting that enhances the generalization and interpretability of TSFMs. Specifically, TS-RAG leverages pre-trained time series encoders to retrieve semantically relevant segments from a dedicated knowledge base, enriching the contextual representation of the input query. Furthermore, we propose an Adaptive Retrieval Mixer (ARM) module that dynamically fuses the retrieved patterns with the TSFM's internal representation, improving forecasting accuracy without requiring task-specific fine-tuning. Thorough empirical studies on seven public benchmark datasets demonstrate that TS-RAG achieves state-of-the-art zero-shot forecasting performance, outperforming the existing TSFMs by up to 6.84% across diverse domains while also providing desirable interpretability. Our code and data are available at: https://github.com/UConn-DSIS/TS-RAG">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/b442c46df7878a07190b22a482c65c038ee943d1" target='_blank'>TS-RAG: Retrieval-Augmented Generation based Time Series Foundation Models are Stronger Zero-Shot Forecaster</a></td>
+          <td>
+            Kanghui Ning, Zijie Pan, Yu Liu, Yushan Jiang, James Zhang, Kashif Rasul, Anderson Schneider, Lintao Ma, Yuriy Nevmyvaka, Dongjin Song
+          </td>
+          <td>2025-03-06</td>
+          <td>ArXiv</td>
+          <td>21</td>
+          <td>16</td>
+        </tr>
+
+        <tr id="Inspired by recent advancements in large language models (LLMs) for Natural Language Processing (NLP), there has been a surge in research focused on developing foundational models for time series forecasting. One approach involves training LLM architectures on tokenized time series data using cross-entropy loss. Although this method has demonstrated promising results, cross-entropy loss is primarily designed for classification tasks and does not account for the distance between classes. To address this limitation, we propose using the Wasserstein loss for such architectures. To validate our approach, we fine-tuned a foundational time series model on $22$ zero-shot datasets, comparing the performance of cross-entropy loss with that of Wasserstein loss. Our results demonstrate that replacing cross-entropy loss with Wasserstein loss significantly improves point estimation.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/341fc8f00805b53471ae91bc2f7e1d5b4d281048" target='_blank'>Fine-Tuning a Time Series Foundation Model with Wasserstein Loss</a></td>
+          <td>
+            Andrei Chernov
+          </td>
+          <td>2024-09-18</td>
           <td>ArXiv</td>
           <td>1</td>
+          <td>1</td>
+        </tr>
+
+        <tr id="We present a joint forecasting framework for time series prediction that contrasts with traditional direct or recursive methods. This framework achieves state-of-the-art performance for our designed foundation model, YingLong, and reveals a novel scaling effect: longer outputs significantly enhance model accuracy due to delayed chain-of-thought reasoning in our non-causal approach. YingLong is a non-causal, bidirectional attention encoder-only transformer trained through masked token recovery, aligning more effectively with language understanding tasks than with generation tasks. Additionally, we boost performance by tackling output variance with a multi-input ensemble. We release four foundation models ranging from 6M to 300M parameters, demonstrating superior results in zero-shot tasks on the ETT and Weather datasets. YingLong achieves more than 60% best performance. To ensure generalizability, we assessed the models using the GIFT-Eval benchmark, which comprises 23 time series datasets across 7 domains. Yinglong significantly outperformed the best time-series foundation models, end-to-end trained models by 14% and 44% in rank respectively.The pretrained 300M model is available at https://huggingface.co/qcw1314/YingLong_300m">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/2e2c78b1db39de4aaa69454f61b9c856df7370df" target='_blank'>Output Scaling: YingLong-Delayed Chain of Thought in a Large Pretrained Time Series Forecasting Model</a></td>
+          <td>
+            Xue Wang, Tian Zhou, Jinyang Gao, Bolin Ding, Jingren Zhou
+          </td>
+          <td>2025-05-20</td>
+          <td>ArXiv</td>
+          <td>10</td>
           <td>13</td>
         </tr>
 
-        <tr id="None">
+        <tr id="Time-series prediction or forecasting is critical across many real-world dynamic systems, and recent studies have proposed using Large Language Models (LLMs) for this task due to their strong generalization capabilities and ability to perform well without extensive pre-training. However, their effectiveness in handling complex, noisy, and multivariate time-series data remains underexplored. To address this, we propose LLMPred which enhances LLM-based time-series prediction by converting time-series sequences into text and feeding them to LLMs for zero shot prediction along with two main data pre-processing techniques. First, we apply time-series sequence decomposition to facilitate accurate prediction on complex and noisy univariate sequences. Second, we extend this univariate prediction capability to multivariate data using a lightweight prompt-processing strategy. Extensive experiments with smaller LLMs such as Llama 2 7B, Llama 3.2 3B, GPT-4o-mini, and DeepSeek 7B demonstrate that LLMPred achieves competitive or superior performance compared to state-of-the-art baselines. Additionally, a thorough ablation study highlights the importance of the key components proposed in LLMPred.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/f077891fac140561d2951849b248cf36e2a7696e" target='_blank'>Sequence-to-Sequence Model with Attention for Time Series Classification</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/7c9d3c90d89cbf88a807ab896075af56f975b37c" target='_blank'>Univariate to Multivariate: LLMs as Zero-Shot Predictors for Time-Series Forecasting</a></td>
           <td>
-            Yujin Tang, Jianfeng Xu, Kazunori Matsumoto, C. Ono
+            Chamara Madarasingha, N. Sohrabi, Zahir Tari
           </td>
-          <td>2016-12-01</td>
-          <td>2016 IEEE 16th International Conference on Data Mining Workshops (ICDMW)</td>
-          <td>49</td>
-          <td>13</td>
-        </tr>
-
-        <tr id="We present a new approach to modeling sequential data: the deep equilibrium model (DEQ). Motivated by an observation that the hidden layers of many existing deep sequence models converge towards some fixed point, we propose the DEQ approach that directly finds these equilibrium points via root-finding. Such a method is equivalent to running an infinite depth (weight-tied) feedforward network, but has the notable advantage that we can analytically backpropagate through the equilibrium point using implicit differentiation. Using this approach, training and prediction in these networks require only constant memory, regardless of the effective “depth” of the network. We demonstrate how DEQs can be applied to two state-of-the-art deep sequence models: self-attention transformers and trellis networks. On large-scale language modeling tasks, such as the WikiText-103 benchmark, we show that DEQs 1) often improve performance over these state-of-the-art models (for similar parameter counts); 2) have similar computational requirements to existing models; and 3) vastly reduce memory consumption (often the bottleneck for training large sequence models), demonstrating an up-to 88% memory reduction in our experiments. The code is available at https://github.com/locuslab/deq.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/9a618cca0d2fc78db1be1aed70517401cb3f3859" target='_blank'>Deep Equilibrium Models</a></td>
-          <td>
-            Shaojie Bai, J. Z. Kolter, V. Koltun
-          </td>
-          <td>2019-09-01</td>
-          <td>ArXiv</td>
-          <td>810</td>
-          <td>113</td>
-        </tr>
-
-        <tr id=".">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/0fc229cfb6f79a6c5778b80ba78dd6584f921ab9" target='_blank'>An Efficient Streaming Non-Recurrent On-Device End-to-End Model with Improvements to Rare-Word Modeling</a></td>
-          <td>
-            Tara N. Sainath, Yanzhang He, A. Narayanan, Rami Botros, Ruoming Pang, David Rybach, Cyril Allauzen, Ehsan Variani, James Qin, Quoc-Nam Le-The, Shuo-yiin Chang, Bo Li, Anmol Gulati, Jiahui Yu, Chung-Cheng Chiu, D. Caseiro, Wei Li, Qiao Liang, Pat Rondon
-          </td>
-          <td>2021-08-30</td>
-          <td>DBLP</td>
-          <td>62</td>
-          <td>69</td>
-        </tr>
-
-        <tr id="Learning sequence data is important in machine learning fields, including speech recognition, natural language processing, and time series prediction. Various approaches have been put out in recent years to manage these jobs. Early models like the Recurrent Neural Network (RNN) were able to process sequential information but encountered vanishing and exploding gradients problems. These issues were eventually addressed with the introduction of the Long Short-Term Memory (LSTM) and the Gated Recurrent Unit (GRU), which enhanced the capacity to learn long-term dependencies. The proposal of the attention mechanisms further enhanced the GRUs performance and led the Transformer model to replace recurrence with attention, making training faster and more effective for large-scale data. Furthermore, BERT used pre-training and fine-tuning methods that brought a remarkable improvement in many NLP tasks. This paper reviews the development of these models, introduces the mechanisms of each model, compares their strengths and weaknesses, and finally discusses the challenges that still remain.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/b1356b54ac545c7f12c8cefe41e4efec9fd15002" target='_blank'>From RNNs to BERT: A Review of Neural Models for Sequence Learning</a></td>
-          <td>
-            Yuxuan Zhao
-          </td>
-          <td>2025-09-16</td>
-          <td>Theoretical and Natural Science</td>
-          <td>0</td>
-          <td>0</td>
-        </tr>
-
-        <tr id="A popular strategy to train recurrent neural networks (RNNs), known as ``teacher forcing'' takes the ground truth as input at each time step and makes the later predictions partly conditioned on those inputs. Such training strategy impairs their ability to learn rich distributions over entire sequences because the chosen inputs hinders the gradients back-propagating to all previous states in an end-to-end manner. We propose a fully differentiable training algorithm for RNNs to better capture long-term dependencies by recovering the probability of the whole sequence. The key idea is that at each time step, the network takes as input a ``bundle'' of similar words predicted at the previous step instead of a single ground truth. The representations of these similar words forms a convex hull, which can be taken as a kind of regularization to the input. Smoothing the inputs by this way makes the whole process trainable and differentiable. This design makes it possible for the model to explore more feasible combinations (possibly unseen sequences), and can be interpreted as a computationally efficient approximation to the beam search. Experiments on multiple sequence generation tasks yield performance improvements, especially in sequence-level metrics, such as BLUE or ROUGE-2.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/cdcf9fdf3d8f3d90717f8b68c45efdc6970d2544" target='_blank'>Alleviate Exposure Bias in Sequence Prediction \\ with Recurrent Neural Networks</a></td>
-          <td>
-            Liping Yuan, Jiangtao Feng, Xiaoqing Zheng, Xuanjing Huang
-          </td>
-          <td>2021-03-22</td>
+          <td>2025-06-03</td>
           <td>ArXiv</td>
           <td>1</td>
-          <td>70</td>
-        </tr>
-
-        <tr id="None">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/3bb63fdb4670745f8c97d8cad1a8a9603b1c16f5" target='_blank'>Convolutional Sequence Modeling Revisited</a></td>
-          <td>
-            Shaojie Bai, J. Z. Kolter, V. Koltun
-          </td>
-          <td>2018-02-12</td>
-          <td></td>
-          <td>73</td>
-          <td>113</td>
-        </tr>
-
-        <tr id="Although the Transformer has become the cornerstone of modern AI, its autoregressive inference suffers from a linearly growing KV Cache and a computational complexity of O(N^2 d), severely hindering its ability to process ultra-long sequences. To overcome this limitation, this paper introduces the TConstFormer architecture, building upon our previous work, TLinFormer. TConstFormer employs an innovative periodic state update mechanism to achieve a truly constant-size O(1) KV Cache. The computational complexity of this mechanism is also O(1) in an amortized sense: it performs purely constant-time computations for $k-1$ consecutive steps (e.g., $k=256$) and executes a single linear-time global information synchronization only on the $k$-th step. Theoretical calculations and experimental results demonstrate that TConstFormer exhibits an overwhelming advantage over baseline models in terms of speed, memory efficiency, and overall performance on long-text inference tasks. This breakthrough paves the way for efficient and robust streaming language model applications.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/d8b37cad947f258733249a5075419220652a6166" target='_blank'>From TLinFormer to TConstFormer: The Leap to Constant-Time Transformer Attention: Achieving O(1) Computation and O(1) KV Cache during Autoregressive Inference</a></td>
-          <td>
-            Zhongpan Tang
-          </td>
-          <td>2025-08-29</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>1</td>
-        </tr>
-
-        <tr id="Efficient modeling of long sequences of high-order data requires a more efficient architecture than Transformer. In this paper, we investigate two key aspects of extending linear recurrent models, especially those originally designed for language modeling, to high-order data (1D to ND): scanning strategies and attention-hybrid architectures. Empirical results suggest that scanning provides limited benefits, while attention-hybrid models yield promising results. Focusing on the latter, we further evaluate types of attention and find that tiled high-order sliding window attention (SWA) is efficient in both theory and practice. We term the resulting hybrid architecture of linear recurrence and high-order SWA as Efficient N-dimensional Attention (ENA). We then conduct several experiments to demonstrate its effectiveness. The intuition behind ENA is that linear recurrence compresses global information into a state, while SWA complements it by enforcing strict local modeling. Together, they form a simple framework that offers a promising and practical solution for ultra-long high-order data modeling.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/2a3db95fac9f7f33b8f3e2f562a79c1ca603a073" target='_blank'>ENA: Efficient N-dimensional Attention</a></td>
-          <td>
-            Yibo Zhong
-          </td>
-          <td>2025-08-16</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>4</td>
+          <td>15</td>
         </tr>
 
   </tbody>
