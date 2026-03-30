@@ -11,7 +11,7 @@ hide:
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-03-23 06:36:46 UTC</i>
+  <i class="footer">This page was last updated on 2026-03-30 06:47:57 UTC</i>
   </p>
   
   <div class="note info" onclick="startIntro()">
@@ -49,8 +49,8 @@ hide:
             Andreas Doerr, Christian Daniel, Martin Schiegg, D. Nguyen-Tuong, S. Schaal, Marc Toussaint, Sebastian Trimpe
           </td>
           <td>2018-01-31</td>
-          <td>ArXiv, MAG, DBLP</td>
-          <td>141</td>
+          <td>MAG, DBLP, ArXiv</td>
+          <td>143</td>
           <td>96</td>
         </tr>
     
@@ -87,7 +87,7 @@ hide:
           <td>2020-06-11</td>
           <td>ArXiv</td>
           <td>6</td>
-          <td>30</td>
+          <td>31</td>
         </tr>
     
         <tr id="Outstanding achievements of graph neural networks for spatiotemporal time series analysis show that relational constraints introduce an effective inductive bias into neural forecasting architectures. Often, however, the relational information characterizing the underlying data-generating process is unavailable and the practitioner is left with the problem of inferring from data which relational graph to use in the subsequent processing stages. We propose novel, principled - yet practical - probabilistic score-based methods that learn the relational dependencies as distributions over graphs while maximizing end-to-end the performance at task. The proposed graph learning framework is based on consolidated variance reduction techniques for Monte Carlo score-based gradient estimation, is theoretically grounded, and, as we show, effective in practice. In this paper, we focus on the time series forecasting problem and show that, by tailoring the gradient estimators to the graph learning problem, we are able to achieve state-of-the-art performance while controlling the sparsity of the learned graph and the computational scalability. We empirically assess the effectiveness of the proposed method on synthetic and real-world benchmarks, showing that the proposed solution can be used as a stand-alone graph identification procedure as well as a graph learning component of an end-to-end forecasting architecture.">
