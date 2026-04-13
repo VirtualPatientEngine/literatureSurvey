@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-04-06 06:48:53 UTC</i>
+  <i class="footer">This page was last updated on 2026-04-13 06:56:41 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -512,16 +512,16 @@
           <td>98</td>
         </tr>
 
-        <tr id="None">
+        <tr id="All physical laws are described as relationships between state variables that give a complete and non-redundant description of the relevant system dynamics. However, despite the prevalence of computing power and AI, the process of identifying the hidden state variables themselves has resisted automation. Most data-driven methods for modeling physical phenomena still assume that observed data streams already correspond to relevant state variables. A key challenge is to identify the possible sets of state variables from scratch, given only high-dimensional observational data. Here we propose a new principle for determining how many state variables an observed system is likely to have, and what these variables might be, directly from video streams. We demonstrate the effectiveness of this approach using video recordings of a variety of physical dynamical systems, ranging from elastic double pendulums to fire flames. Without any prior knowledge of the underlying physics, our algorithm discovers the intrinsic dimension of the observed dynamics and identifies candidate sets of state variables. We suggest that this approach could help catalyze the understanding, prediction and control of increasingly complex systems. Project website is at: https://www.cs.columbia.edu/~bchen/neural-state-variables">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/d2df6b9b2ee1bdef1834c343bb952182a7807bda" target='_blank'>PNAS Plus Significance Statements</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/a0d7a5cfc804f90ba8ae80f8cf786d0ad7fe1d17" target='_blank'>Discovering State Variables Hidden in Experimental Data</a></td>
           <td>
-            Ronald R Coifman, David A. Kessler, A. Goodkind
+            Boyuan Chen, Kuang Huang, Sunand Raghupathi, I. Chandratreya, Qi Du, Hod Lipson
           </td>
-          <td>2017-09-19</td>
-          <td>Proceedings of the National Academy of Sciences</td>
-          <td>39</td>
-          <td>13</td>
+          <td>2021-12-20</td>
+          <td>ArXiv</td>
+          <td>19</td>
+          <td>74</td>
         </tr>
 
         <tr id="Modeling complex spatiotemporal dynamics, particularly in far-from-equilibrium systems, remains a grand challenge in science. The governing partial differential equations (PDEs) for these systems are often intractable to derive from first principles, due to their inherent complexity, characterized by high-order derivatives and strong nonlinearities, coupled with incomplete physical knowledge. This has spurred the development of data-driven methods, yet these approaches face limitations: Purely data-driven models are often physically inconsistent and data-intensive, while existing physics-informed methods lack the structural capacity to represent complex operators or systematically integrate partial physical knowledge. Here, we propose a hierarchical physics-embedded learning framework that fundamentally advances both the forward spatiotemporal prediction and inverse discovery of physical laws from sparse and noisy data. The key innovation is a two-level architecture that mirrors the process of scientific discovery: the first level learns fundamental symbolic components of a PDE, while the second learns their governing combinations. This hierarchical decomposition not only reduces learning complexity but, more importantly, enables a structural integration of prior knowledge. Known physical laws are directly embedded into the models computational graph, guaranteeing physical consistency and improving data efficiency. By building the framework upon adaptive Fourier Neural Operators, we can effectively capture the non-local dependencies and high-order operators characteristic of dynamical systems. Additionally, by structurally decoupling known and unknown terms, the framework further enables interpretable discovery of underlying governing equations through symbolic regression, without presupposing functional forms.">
@@ -536,18 +536,6 @@
           <td>3</td>
         </tr>
 
-        <tr id="High-resolution reconstruction of flow-field data from low-resolution and noisy measurements is of interest due to the prevalence of such problems in experimental fluid mechanics, where the measurement data are in general sparse, incomplete and noisy. Deep-learning approaches have been shown suitable for such super-resolution tasks. However, a high number of high-resolution examples is needed, which may not be available for many cases. Moreover, the obtained predictions may lack in complying with the physical principles, e.g. mass and momentum conservation. Physics-informed deep learning provides frameworks for integrating data and physical laws for learning. In this study, we apply physics-informed neural networks (PINNs) for super-resolution of flow-field data both in time and space from a limited set of noisy measurements without having any high-resolution reference data. Our objective is to obtain a continuous solution of the problem, providing a physically-consistent prediction at any point in the solution domain. We demonstrate the applicability of PINNs for the super-resolution of flow-field data in time and space through three canonical cases: Burgers’ equation, two-dimensional vortex shedding behind a circular cylinder and the minimal turbulent channel flow. The robustness of the models is also investigated by adding synthetic Gaussian noise. Furthermore, we show the capabilities of PINNs to improve the resolution and reduce the noise in a real experimental dataset consisting of hot-wire-anemometry measurements. Our results show the adequate capabilities of PINNs in the context of data augmentation for experiments in fluid mechanics.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/ecf61b26615fc12f9edc4826dd81a23ac0d72f37" target='_blank'>Physics-informed deep-learning applications to experimental fluid mechanics</a></td>
-          <td>
-            Hamidreza Eivazi, Yuning Wang, R. Vinuesa
-          </td>
-          <td>2022-03-29</td>
-          <td>Measurement Science and Technology</td>
-          <td>72</td>
-          <td>40</td>
-        </tr>
-
         <tr id="The application of deep learning toward discovery of data-driven models requires careful application of inductive biases to obtain a description of physics which is both accurate and robust. We present here a framework for discovering continuum models from high fidelity molecular simulation data. Our approach applies a neural network parameterization of governing physics in modal space, allowing a characterization of differential operators while providing structure which may be used to impose biases related to symmetry, isotropy, and conservation form. We demonstrate the effectiveness of our framework for a variety of physics, including local and nonlocal diffusion processes and single and multiphase flows. For the flow physics we demonstrate this approach leads to a learned operator that generalizes to system characteristics not included in the training sets, such as variable particle sizes, densities, and concentration.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/606824bebf4e444fca9b988823883f1ec99f19ec" target='_blank'>A physics-informed operator regression framework for extracting data-driven continuum models</a></td>
@@ -558,6 +546,18 @@
           <td>ArXiv</td>
           <td>120</td>
           <td>19</td>
+        </tr>
+
+        <tr id="Statistical (machine learning) tools for equation discovery require large amounts of data that are typically computer generated rather than experimentally observed. Multiscale modeling and stochastic simulations are two areas where learning on simulated data can lead to such discovery. In both, the data are generated with a reliable but impractical model, e.g., molecular dynamics simulations, while a model on the scale of interest is uncertain, requiring phenomenological constitutive relations and ad-hoc approximations. We replace the human discovery of such models, which typically involves spatial/stochastic averaging or coarse-graining, with a machine-learning strategy based on sparse regression that can be executed in two modes. The first, direct equation-learning, discovers a differential operator from the whole dictionary. The second, constrained equation-learning, discovers only those terms in the differential operator that need to be discovered, i.e., learns closure approximations. We illustrate our approach by learning a deterministic equation that governs the spatiotemporal evolution of the probability density function of a system state whose dynamics are described by a nonlinear partial differential equation with random inputs. A series of examples demonstrates the accuracy, robustness, and limitations of our approach to equation discovery.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/138138aeee75f8f5a6f2f22575bc4d0354138e5d" target='_blank'>Data-Driven Discovery of Coarse-Grained Equations</a></td>
+          <td>
+            Joseph Bakarji, D. Tartakovsky
+          </td>
+          <td>2020-01-30</td>
+          <td>J. Comput. Phys.</td>
+          <td>33</td>
+          <td>49</td>
         </tr>
 
   </tbody>

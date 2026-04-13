@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-04-06 06:48:42 UTC</i>
+  <i class="footer">This page was last updated on 2026-04-13 06:56:23 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -524,18 +524,6 @@
           <td>6</td>
         </tr>
 
-        <tr id="Unsupervised domain adaptation methods aim at generalizing well on unlabeled test data that may have a different (shifted) distribution from the training data. Such methods are typically developed on image data, and their application to time series data is less explored. Existing works on time series domain adaptation suffer from inconsistencies in evaluation schemes, datasets, and backbone neural network architectures. Moreover, labeled target data are often used for model selection, which violates the fundamental assumption of unsupervised domain adaptation. To address these issues, we develop a benchmarking evaluation suite (AdaTime) to systematically and fairly evaluate different domain adaptation methods on time series data. Specifically, we standardize the backbone neural network architectures and benchmarking datasets, while also exploring more realistic model selection approaches that can work with no labeled data or just a few labeled samples. Our evaluation includes adapting state-of-the-art visual domain adaptation methods to time series data as well as the recent methods specifically developed for time series data. We conduct extensive experiments to evaluate 11 state-of-the-art methods on five representative datasets spanning 50 cross-domain scenarios. Our results suggest that with careful selection of hyper-parameters, visual domain adaptation methods are competitive with methods proposed for time series domain adaptation. In addition, we find that hyper-parameters could be selected based on realistic model selection approaches. Our work unveils practical insights for applying domain adaptation methods on time series data and builds a solid foundation for future works in the field. The code is available at github.com/emadeldeen24/AdaTime.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/4fce5494c4c00fbf0cabab2744d024d0f8039007" target='_blank'>ADATIME: A Benchmarking Suite for Domain Adaptation on Time Series Data</a></td>
-          <td>
-            Mohamed Ragab, Emadeldeen Eldele, Wee Ling Tan, Chuan-Sheng Foo, Zhenghua Chen, Min Wu, C. Kwoh, Xiaoli Li
-          </td>
-          <td>2022-03-15</td>
-          <td>ACM Transactions on Knowledge Discovery from Data</td>
-          <td>97</td>
-          <td>49</td>
-        </tr>
-
         <tr id="Domain adaptation is challenging for time series classification due to the highly dynamic nature. This study tackles the most difficult subtask when both target labels and source data are inaccessible, namely, source-free domain adaptation. To reuse the classification backbone pre-trained on source data, time series reconstruction is a sound solution that aligns target and source time series by minimizing the reconstruction errors of both. However, simply fine-tuning the source pre-trained reconstruction model on target data may lose the learnt priori, and it struggles to accommodate domain varying temporal patterns in a single encoder-decoder. Therefore, this paper tries to disentangle the composition of domain transferability by using a compositional architecture for time series reconstruction. Here, the preceding component is a U-net frozen since pre-trained, the output of which during adaptation is the initial reconstruction of a given target time series, acting as a coarse step to prompt the subsequent finer adaptation. The following pipeline for finer adaptation includes two parallel branches: The source replay branch using a residual link to preserve the output of U-net, and the offset compensation branch that applies an additional autoencoder (AE) to further warp U-net's output. By deploying a learnable factor on either branch to scale their composition in the final output of reconstruction, the data transferability is disentangled and the learnt reconstructive capability from source data is retained. During inference, aside from the batch-level optimization in the training, we search at test time stability-aware rescaling of source replay branch to tolerate instance-wise variation. The experimental results show that such compositional architecture of time series reconstruction leads to SOTA performance on 3 widely used benchmarks.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/eabb4552faf707c58739c464fd5c379dfa53b345" target='_blank'>Learning Compositional Transferability of Time Series for Source-Free Domain Adaptation</a></td>
@@ -581,7 +569,31 @@
           <td>2024-09-12</td>
           <td>IEEE Transactions on Knowledge and Data Engineering</td>
           <td>5</td>
-          <td>12</td>
+          <td>13</td>
+        </tr>
+
+        <tr id="Unlike images and natural language tokens, time series data is highly semantically sparse, resulting in labor-intensive label annotations. Unsupervised and Semi-supervised Domain Adaptation (UDA and SSDA) have demonstrated efficiency in addressing this issue by utilizing pre-labeled source data to train on unlabeled or partially labeled target data. However, in domain adaptation methods designed for downstream classification tasks, directly adapting labeled source samples with unlabelled target samples often results in similar distributions across various classes, thereby compromising the performance of the target classification task. To tackle this challenge, we proposed a Global-Local Alignment Domain Adaptation (GLA-DA) method for multivariate time series data. Data from two domains were initially encoded to align in an intermediate feature space adversarially, achieving Global Feature Alignment (GFA). Subsequently, GLA-DA leveraged the consistency between similarity-based and deep learning-based models to assign pseudo labels to unlabeled target data. This process aims to preserve differences among data with distinct labels by aligning the samples with the same class labels together, achieving Local Class Alignment (LCA). We implemented GLA-DA in both UDA and SSDA scenarios, showcasing its superiority over state-of-the-art methods through extensive experiments on various public datasets. Ablation experiments underscored the significance of key components within GLA-DA.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/89d5e78c21b502378b3cfeadc613d4cfe0046b31" target='_blank'>GLA-DA: Global-Local Alignment Domain Adaptation for Multivariate Time Series</a></td>
+          <td>
+            Gang Tu, Dan Li, Bingxin Lin, Zibin Zheng, See-Kiong Ng
+          </td>
+          <td>2024-10-09</td>
+          <td>ArXiv</td>
+          <td>1</td>
+          <td>3</td>
+        </tr>
+
+        <tr id="Domain generalization methods aim to learn models robust to domain shift with data from a limited number of source domains and without access to target domain samples during training. Popular domain alignment methods for domain generalization seek to extract domain-invariant features by minimizing the discrepancy between feature distributions across all domains, disregarding inter-domain relationships. In this paper, we instead propose a novel representation learning methodology that selectively enforces prediction consistency between source domains estimated to be closely-related. Specifically, we hypothesize that domains share different class-informative representations, so instead of aligning all domains which can cause negative transfer, we only regularize the discrepancy between closely-related domains. We apply our method to time-series classification tasks and conduct comprehensive experiments on three public real-world datasets. Our method significantly improves over the baseline and achieves better or competitive performance in comparison with state-of-the-art methods in terms of both accuracy and model calibration.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/4a1938c9fd3db160a34b8673afd6ba51f8c151f6" target='_blank'>Domain Generalization via Selective Consistency Regularization for Time Series Classification</a></td>
+          <td>
+            Wenyu Zhang, Mohamed Ragab, Chuan-Sheng Foo
+          </td>
+          <td>2022-06-16</td>
+          <td>2022 26th International Conference on Pattern Recognition (ICPR)</td>
+          <td>2</td>
+          <td>28</td>
         </tr>
 
   </tbody>

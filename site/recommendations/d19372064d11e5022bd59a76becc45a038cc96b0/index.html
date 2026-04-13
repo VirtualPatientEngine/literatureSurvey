@@ -139,7 +139,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              C3c94ccc094dcf546e8e31c9a42506302e837524
+              D19372064d11e5022bd59a76becc45a038cc96b0
             
           </span>
         </div>
@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-04-13 06:56:24 UTC</i>
+  <i class="footer">This page was last updated on 2026-04-13 06:56:26 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -460,7 +460,7 @@
 
   <p>
   <h3 data-intro='Recommendations for the article'>
-    Recommendations for the article <i>AZ-whiteness test: a test for signal uncorrelation on spatio-temporal graphs</i>
+    Recommendations for the article <i>Graph State-Space Models and Latent Relational Inference</i>
   </h3>
   <table id="table1" class="display wrap" style="width:100%">
   <thead>
@@ -476,88 +476,100 @@
   </thead>
   <tbody>
 
-        <tr id="We present the first whiteness test for graphs, i.e., a whiteness test for multivariate time series associated with the nodes of a dynamic graph. The statistical test aims at finding serial dependencies among close-in-time observations, as well as spatial dependencies among neighboring observations given the underlying graph. The proposed test is a spatio-temporal extension of traditional tests from the system identification literature and finds applications in similar, yet more general, application scenarios involving graph signals. The AZ-test is versatile, allowing the underlying graph to be dynamic, changing in topology and set of nodes, and weighted, thus accounting for connections of different strength, as is the case in many application scenarios like transportation networks and sensor grids. The asymptotic distribution -- as the number of graph edges or temporal observations increases -- is known, and does not assume identically distributed data. We validate the practical value of the test on both synthetic and real-world problems, and show how the test can be employed to assess the quality of spatio-temporal forecasting models by analyzing the prediction residuals appended to the graphs stream.">
+        <tr id="Multi-variate time series forecasting is an important problem with a wide range of applications. Recent works model the relations between time-series as graphs and have shown that propagating information over the relation graph can improve time series forecasting. However, in many cases, relational information is not available or is noisy and reliable. Moreover, most works ignore the underlying uncertainty of time-series both for structure learning and deriving the forecasts resulting in the structure not capturing the uncertainty resulting in forecast distributions with poor uncertainty estimates. We tackle this challenge and introduce STOIC, that leverages stochastic correlations between time-series to learn underlying structure between time-series and to provide well-calibrated and accurate forecasts. Over a wide-range of benchmark datasets STOIC provides around 16% more accurate and 14% better-calibrated forecasts. STOIC also shows better adaptation to noise in data during inference and captures important and useful relational information in various benchmarks.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/44a9610f927230a711176e4ad7008324abacd65b" target='_blank'>AZ-whiteness test: a test for uncorrelated noise on spatio-temporal graphs</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/7d4b412399f89c9cd66cffc4ab811b74172dcc63" target='_blank'>Learning Graph Structures and Uncertainty for Accurate and Calibrated Time-series Forecasting</a></td>
           <td>
-            Daniele Zambon, C. Alippi
+            Harshavardhan Kamarthi, Lingkai Kong, Alexander Rodriguez, Chao Zhang, B. Prakash
           </td>
-          <td>2022-04-23</td>
+          <td>2024-07-02</td>
+          <td>ArXiv</td>
+          <td>1</td>
+          <td>17</td>
+        </tr>
+
+        <tr id="Outstanding achievements of graph neural networks for spatiotemporal time series analysis show that relational constraints introduce an effective inductive bias into neural forecasting architectures. Often, however, the relational information characterizing the underlying data-generating process is unavailable and the practitioner is left with the problem of inferring from data which relational graph to use in the subsequent processing stages. We propose novel, principled - yet practical - probabilistic score-based methods that learn the relational dependencies as distributions over graphs while maximizing end-to-end the performance at task. The proposed graph learning framework is based on consolidated variance reduction techniques for Monte Carlo score-based gradient estimation, is theoretically grounded, and, as we show, effective in practice. In this paper, we focus on the time series forecasting problem and show that, by tailoring the gradient estimators to the graph learning problem, we are able to achieve state-of-the-art performance while controlling the sparsity of the learned graph and the computational scalability. We empirically assess the effectiveness of the proposed method on synthetic and real-world benchmarks, showing that the proposed solution can be used as a stand-alone graph identification procedure as well as a graph learning component of an end-to-end forecasting architecture.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/0d01d21137a5af9f04e4b16a55a0f732cb8a540b" target='_blank'>Sparse Graph Learning from Spatiotemporal Time Series</a></td>
+          <td>
+            Andrea Cini, Daniele Zambon, C. Alippi
+          </td>
+          <td>2022-05-26</td>
+          <td>J. Mach. Learn. Res.</td>
+          <td>30</td>
+          <td>55</td>
+        </tr>
+
+        <tr id="We introduce a new version of deep state-space models (DSSMs) that combines a recurrent neural network with a state-space framework to forecast time series data. The model estimates the observed series as functions of latent variables that evolve non-linearly through time. Due to the complexity and non-linearity inherent in DSSMs, previous works on DSSMs typically produced latent variables that are very difficult to interpret. Our paper focus on producing interpretable latent parameters with two key modifications. First, we simplify the predictive decoder by restricting the response variables to be a linear transformation of the latent variables plus some noise. Second, we utilize shrinkage priors on the latent variables to reduce redundancy and improve robustness. These changes make the latent variables much easier to understand and allow us to interpret the resulting latent variables as random effects in a linear mixed model. We show through two public benchmark datasets the resulting model improves forecasting performances.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/b5d92a67cb7adb40d982df2f6fb6c8669d34604b" target='_blank'>Interpretable Latent Variables in Deep State Space Models</a></td>
+          <td>
+            Haoxuan Wu, David S. Matteson, M. Wells
+          </td>
+          <td>2022-03-03</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>41</td>
+        </tr>
+
+        <tr id="Time series with long-term structure arise in a variety of contexts and capturing this temporal structure is a critical challenge in time series analysis for both inference and forecasting settings. Traditionally, state space models have been successful in providing uncertainty estimates of trajectories in the latent space. More recently, deep learning, attention-based approaches have achieved state of the art performance for sequence modeling, though often require large amounts of data and parameters to do so. We propose Stanza, a nonlinear, non-stationary state space model as an intermediate approach to fill the gap between traditional models and modern deep learning approaches for complex time series. Stanza strikes a balance between competitive forecasting accuracy and probabilistic, interpretable inference for highly structured time series. In particular, Stanza achieves forecasting accuracy competitive with deep LSTMs on real-world datasets, especially for multi-step ahead forecasting.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/9c619e58d073772ff298228d47afcab625c7f37a" target='_blank'>Stanza: A Nonlinear State Space Model for Probabilistic Inference in Non-Stationary Time Series</a></td>
+          <td>
+            Anna K. Yanchenko, S. Mukherjee
+          </td>
+          <td>2020-06-11</td>
           <td>ArXiv</td>
           <td>6</td>
-          <td>55</td>
+          <td>31</td>
         </tr>
 
-        <tr id="Time series are the primary data type used to record dynamic system measurements and generated in great volume by both physical sensors and online processes (virtual sensors). Time series analytics is therefore crucial to unlocking the wealth of information implicit in available data. With the recent advancements in graph neural networks (GNNs), there has been a surge in GNN-based approaches for time series analysis. These approaches can explicitly model inter-temporal and inter-variable relationships, which traditional and other deep neural network-based methods struggle to do. In this survey, we provide a comprehensive review of graph neural networks for time series analysis (GNN4TS), encompassing four fundamental dimensions: forecasting, classification, anomaly detection, and imputation. Our aim is to guide designers and practitioners to understand, build applications, and advance research of GNN4TS. At first, we provide a comprehensive task-oriented taxonomy of GNN4TS. Then, we present and discuss representative research works and introduce mainstream applications of GNN4TS. A comprehensive discussion of potential future research directions completes the survey. This survey, for the first time, brings together a vast array of knowledge on GNN-based time series research, highlighting foundations, practical applications, and opportunities of graph neural networks for time series analysis.">
+        <tr id="The recent advance in graph neural networks (GNNs) has inspired a few studies to leverage the dependencies of variables for time series prediction. Despite the promising results, existing GNN-based models cannot capture the global dynamic relations between variables owing to the inherent limitation of their graph learning module. Besides, multi-scale temporal information is usually ignored or simply concatenated in prior methods, resulting in inaccurate predictions. To overcome these limitations, we present CGMF, a Continuous Graph learning method for Multivariate time series Forecasting (CGMF). Our CGMF consists of a continuous graph module incorporating differential equations to capture the long-range intra- and inter-relations of the temporal embedding sequence. We also introduce a controlled differential equation-based fusion mechanism that efficiently exploits multi-scale representations to form continuous evolutional dynamics and learn rich relations and patterns shared across different scales. Comprehensive experiments demonstrate the effectiveness of our method for a variety of datasets.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/d3dbbd0f0de51b421a6220bd6480b8d2e99a88e9" target='_blank'>A Survey on Graph Neural Networks for Time Series: Forecasting, Classification, Imputation, and Anomaly Detection</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/cb0ae363a3997d8cceb90da7980196e90b0349b7" target='_blank'>Learning Dynamic Temporal Relations with Continuous Graph for Multivariate Time Series Forecasting (Student Abstract)</a></td>
           <td>
-            Ming Jin, Huan Yee Koh, Qingsong Wen, Daniele Zambon, C. Alippi, G. I. Webb, Irwin King, Shirui Pan
+            Zhiyuan Wang, Fan Zhou, Goce Trajcevski, Kunpeng Zhang, Ting Zhong
           </td>
-          <td>2023-07-07</td>
-          <td>IEEE Transactions on Pattern Analysis and Machine Intelligence</td>
-          <td>416</td>
-          <td>55</td>
+          <td>2023-06-26</td>
+          <td>DBLP</td>
+          <td>5</td>
+          <td>52</td>
         </tr>
 
-        <tr id="Spatio-temporal forecasting of future values of spatially correlated time series is important across many cyber-physical systems (CPS). Recent studies offer evidence that the use of graph neural networks to capture latent correlations between time series holds a potential for enhanced forecasting. However, most existing methods rely on predefined or self-learning graphs, which are either static or unintentionally dynamic, and thus cannot model the time-varying correlations that exhibit trends and periodicities caused by the regularity of the underlying processes in CPS. To tackle such limitation, we propose Time-aware Graph Structure Learning (TagSL), which extracts time-aware correlations among time series by measuring the interaction of node and time representations in high-dimensional spaces. Notably, we introduce time discrepancy learning that utilizes contrastive learning with distance-based regularization terms to constrain learned spatial correlations to a trend sequence. Additionally, we propose a periodic discriminant function to enable the capture of periodic changes from the state of nodes. Next, we present a Graph Convolution-based Gated Recurrent Unit (GCGRU) that jointly captures spatial and temporal dependencies while learning time-aware and node-specific patterns. Finally, we introduce a unified framework named Time-aware Graph Convolutional Recurrent Network (TGCRN), combining TagSL, and GCGRU in an encoder-decoder architecture for multi-step spatiotemporal forecasting. We report on experiments with TGCRN and popular existing approaches on five real-world datasets, thus providing evidence that TGCRN is capable of advancing the state-of-the-art. We also cover a detailed ablation study and visualization analysis, offering detailed insight into the effectiveness of time-aware structure learning.">
+        <tr id="Deep learning has achieved strong performance in Time Series Forecasting (TSF). However, we identify a critical representation paradox, termed Latent Chaos: models with accurate predictions often learn latent representations that are temporally disordered and lack continuity. We attribute this phenomenon to the dominant observation-space forecasting paradigm. Most TSF models minimize point-wise errors on noisy and partially observed data, which encourages shortcut solutions instead of the recovery of underlying system dynamics. To address this issue, we propose Latent Time Series Forecasting (LatentTSF), a novel paradigm that shifts TSF from observation regression to latent state prediction. Specifically, LatentTSF employs an AutoEncoder to project observations at each time step into a higher-dimensional latent state space. This expanded representation aims to capture underlying system variables and impose a smoother temporal structure. Forecasting is then performed entirely in the latent space, allowing the model to focus on learning structured temporal dynamics. Theoretical analysis demonstrates that our proposed latent objectives implicitly maximize mutual information between predicted latent states and ground-truth states and observations. Extensive experiments on widely-used benchmarks confirm that LatentTSF effectively mitigates latent chaos, achieving superior performance. Our code is available in https://github.com/Muyiiiii/LatentTSF.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/2e635d42e768aec7be29fbd203a605c1f011a44d" target='_blank'>Learning Time-Aware Graph Structures for Spatially Correlated Time Series Forecasting</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/14d9a2e298fce2ed77dbb3ede5a8ee2831c43d39" target='_blank'>From Observations to States: Latent Time Series Forecasting</a></td>
           <td>
-            Minbo Ma, Jilin Hu, Christian S. Jensen, Fei Teng, Peng Han, Zhiqiang Xu, Tian-Jie Li
+            Jie Yang, Yifan Hu, Yuante Li, Kexin Zhang, Kaize Ding, Philip S. Yu
           </td>
-          <td>2023-12-27</td>
-          <td>2024 IEEE 40th International Conference on Data Engineering (ICDE)</td>
-          <td>14</td>
-          <td>24</td>
-        </tr>
-
-        <tr id="Graph neural networks (GNNs) haven proven to be an indispensable approach in modeling complex data, in particular spatial temporal data, e.g., relating to sensor data given as time series with according spatial information. Although GNNs provide powerful modeling capabilities on such kind of data, they require adequate input data in terms of both signal and the underlying graph structures. However, typically the according graphs are not automatically available or even predefined, such that typically an ad hoc graph representation needs to be constructed. However, often the construction of the underlying graph structure is given insufficient attention. Therefore, this paper performs an in-depth analysis of several methods for constructing graphs from a set of sensors attributed with spatial information, i.e., geographical coordinates, or using their respective attached signal data. We apply a diverse set of standard methods for estimating groups and similarities between graph nodes as location-based as well as signal-driven approaches on multiple benchmark datasets for evaluation and assessment. Here, for both areas, we specifically include distance-based, clustering-based, as well as correlation-based approaches for estimating the relationships between nodes for subsequent graph construction. In addition, we consider two different GNN approaches, i.e., regression and forecasting in order to enable a broader experimental assessment. Typically, no predefined graph is given, such that (ad hoc) graph creation is necessary. Here, our results indicate the criticality of factoring in the crucial step of graph construction into GNN-based research on spatial temporal data. Overall, in our experimentation no single approach for graph construction emerged as a clear winner. However, in our analysis we are able to provide specific indications based on the obtained results, for a specific class of methods. Collectively, the findings highlight the need for researchers to carefully consider graph construction when employing GNNs in the analysis of spatial temporal data.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/8af9708e610256bd5f2315fc83b8c55cd1482901" target='_blank'>Graph construction on complex spatiotemporal data for enhancing graph neural network-based approaches</a></td>
-          <td>
-            Stefan Bloemheuvel, J. V. D. Hoogen, Martin Atzmueller
-          </td>
-          <td>2023-09-25</td>
-          <td>International Journal of Data Science and Analytics</td>
-          <td>21</td>
-          <td>7</td>
-        </tr>
-
-        <tr id="This article surveys heuristic-based and learning-based approaches for constructing adjacency matrices in Graph Neural Network (GNN)-based anomaly detection for multivariate time series (MTS). Effective adjacency matrix construction is crucial for GNN performance, enabling the model to capture dependencies between time series variables. Heuristic methods, like pairwise correlation, distance-based or dynamic time warping distances, offer simplicity but may struggle with complex relationships. Learning-based approaches, leveraging techniques such as attention mechanisms or graph learning layers, dynamically learn the graph structure from the data, potentially capturing more nuanced dependencies. This survey systematizes existing methods within both paradigms, comparing their strengths, weaknesses, computational complexities. Finally, it identifies open challenges and future research directions, focusing on improving computational time and accuracy of GNN-based anomaly detection using advanced graph construction techniques.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/01852c3a699f05f67726839f6753832694c5e3ee" target='_blank'>Graph Construction Approaches for Graph Neural Networks-Based Anomaly Detection in Time Series</a></td>
-          <td>
-            N. J. Mlyahilu, Evgenia Novikova
-          </td>
-          <td>2025-05-28</td>
-          <td>2025 XXVIII International Conference on Soft Computing and Measurements (SCM)</td>
-          <td>0</td>
-          <td>0</td>
-        </tr>
-
-        <tr id="The recovery of time-varying graph signals is a fundamental problem with numerous applications in sensor networks and forecasting in time series. Effectively capturing the spatiotemporal information in these signals is essential for the downstream tasks. Previous studies have used the smoothness of the temporal differences of such graph signals as an initial assumption. Nevertheless, this smoothness assumption could result in a degradation of performance in the corresponding application when the prior does not hold. In this work, we relax the requirement of this hypothesis by including a learning module. We propose a Time Graph Neural Network (TimeGNN) for the recovery of time-varying graph signals. Our algorithm uses an encoder-decoder architecture with a specialized loss composed of a mean squared error function and a Sobolev smoothness operator. TimeGNN shows competitive performance against previous methods in real datasets.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/a320892b1bc4ef98c47edf416d6921a64d0b4b77" target='_blank'>Time-Varying Signals Recovery Via Graph Neural Networks</a></td>
-          <td>
-            Jhon A. Castro-Correa, Jhony H. Giraldo, Anindya Mondal, M. Badiey, T. Bouwmans, Fragkiskos D. Malliaros
-          </td>
-          <td>2023-02-22</td>
-          <td>ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</td>
-          <td>14</td>
-          <td>44</td>
-        </tr>
-
-        <tr id="Modeling heterogeneous correlated time series requires the ability to learn hidden dynamic relationships between component time series with possibly varying periodicities and generative processes. To address this challenge, we formulate and evaluate a windowed variance-correlation metric (WVC) designed to quantify time-varying correlations between signals. This method directly recovers hidden relationships in an specified time interval as a weighted adjacency matrix, consequently inferring hidden dynamic graph structure. On simulated data, our method captures correlations that other methods miss. The proposed method expands the ability to learn dynamic graph structure between significantly different signals within a single cohesive dynamical graph model.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/4ecc89f9bb50e8b9feabc302da4a9bf5a9063e42" target='_blank'>Inferring Dynamic Hidden Graph Structure in Heterogeneous Correlated Time Series</a></td>
-          <td>
-            Jeshwanth Mohan, Bharath Ramsundar, Sandya Subramanian
-          </td>
-          <td>2025-12-01</td>
+          <td>2026-01-30</td>
           <td>ArXiv</td>
+          <td>1</td>
+          <td>5</td>
+        </tr>
+
+        <tr id="We study a recent class of models which uses graph neural networks (GNNs) to improve forecasting in multivariate time series. The core assumption behind these models is that there is a latent graph between the time series (nodes) that governs the evolution of the multivariate time series. By parameterizing a graph in a differentiable way, the models aim to improve forecasting quality. We compare four recent models of this class on the forecasting task. Further, we perform ablations to study their behavior under changing conditions, e.g., when disabling the graph-learning modules and providing the ground-truth relations instead. Based on our findings, we propose novel ways of combining the existing architectures.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/0b85207ac9a9271850fe8c44f5e8c84d00ff3409" target='_blank'>A Study of Joint Graph Inference and Forecasting</a></td>
+          <td>
+            Daniel Zügner, François-Xavier Aubet, Victor Garcia Satorras, Tim Januschowski, Stephan Günnemann, Jan Gasthaus
+          </td>
+          <td>2021-09-10</td>
+          <td>ArXiv</td>
+          <td>12</td>
+          <td>52</td>
+        </tr>
+
+        <tr id="None">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/07bba481ad5abc8e93a372fddeaa37cd626fd064" target='_blank'>Modelling Relational Time Series using Gaussian Embeddings</a></td>
+          <td>
+            Ludovic Dos Santos, A. Ziat, Ludovic Denoyer, Benjamin Piwowarski, P. Gallinari
+          </td>
+          <td>2016-11-03</td>
+          <td></td>
           <td>0</td>
-          <td>19</td>
+          <td>52</td>
         </tr>
 
   </tbody>
