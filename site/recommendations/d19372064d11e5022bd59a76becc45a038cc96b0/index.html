@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-04-13 06:56:26 UTC</i>
+  <i class="footer">This page was last updated on 2026-04-20 06:57:39 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -496,7 +496,7 @@
           </td>
           <td>2022-05-26</td>
           <td>J. Mach. Learn. Res.</td>
-          <td>30</td>
+          <td>31</td>
           <td>55</td>
         </tr>
 
@@ -536,6 +536,18 @@
           <td>52</td>
         </tr>
 
+        <tr id="Interactive systems are omnipresent across various domains, ranging from dynamic systems in physics to intricate societal dynamics. Relational inference aims to uncover implicit interactions between components based on observed system trajectories. Existing neural relational inference methods rely on fully connected graphs for message passing, leading to computational inefficiency and redundant message passing. While Transformer-based models excel in multivariate time series forecasting, their contextual attention mechanism disrupts the integrity and independence of dynamics in time-invariant relational inference. Besides, the implicit interactions should have non-trivial correlations with the attention coefficients, yet how to read out an explicit interaction graph from Transformer also still needs to be explored. In this study, we propose RIVA, a novel relational inference model with a variate attention mechanism. Unlike contextual attention in vanilla Transformer, which encodes multiple variables at the same time point as a single token, RIVA encodes entire dynamics. Furthermore, we incorporate the inferred graph structure as a mask in the causal attention, allowing each variable to effectively aggregate features from its neighbors and greatly enhancing the model's ability to capture complex interactions. Through extensive experimental evaluations, RIVA demonstrates superior performance in time-invariant continuous interaction inference and future state prediction, outperforming existing methods and providing highly accurate predictions in dynamic environments.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/cdd4e532084bbd68fd22c56f7abbec1ceaff28b1" target='_blank'>RIVA: Efficient relational inference with variate attention</a></td>
+          <td>
+            Ruizi Wu, Liming Pan, Linyuan Lu
+          </td>
+          <td>2025-06-01</td>
+          <td>Neural networks : the official journal of the International Neural Network Society</td>
+          <td>0</td>
+          <td>6</td>
+        </tr>
+
         <tr id="Deep learning has achieved strong performance in Time Series Forecasting (TSF). However, we identify a critical representation paradox, termed Latent Chaos: models with accurate predictions often learn latent representations that are temporally disordered and lack continuity. We attribute this phenomenon to the dominant observation-space forecasting paradigm. Most TSF models minimize point-wise errors on noisy and partially observed data, which encourages shortcut solutions instead of the recovery of underlying system dynamics. To address this issue, we propose Latent Time Series Forecasting (LatentTSF), a novel paradigm that shifts TSF from observation regression to latent state prediction. Specifically, LatentTSF employs an AutoEncoder to project observations at each time step into a higher-dimensional latent state space. This expanded representation aims to capture underlying system variables and impose a smoother temporal structure. Forecasting is then performed entirely in the latent space, allowing the model to focus on learning structured temporal dynamics. Theoretical analysis demonstrates that our proposed latent objectives implicitly maximize mutual information between predicted latent states and ground-truth states and observations. Extensive experiments on widely-used benchmarks confirm that LatentTSF effectively mitigates latent chaos, achieving superior performance. Our code is available in https://github.com/Muyiiiii/LatentTSF.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/14d9a2e298fce2ed77dbb3ede5a8ee2831c43d39" target='_blank'>From Observations to States: Latent Time Series Forecasting</a></td>
@@ -557,18 +569,6 @@
           <td>2021-09-10</td>
           <td>ArXiv</td>
           <td>12</td>
-          <td>52</td>
-        </tr>
-
-        <tr id="None">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/07bba481ad5abc8e93a372fddeaa37cd626fd064" target='_blank'>Modelling Relational Time Series using Gaussian Embeddings</a></td>
-          <td>
-            Ludovic Dos Santos, A. Ziat, Ludovic Denoyer, Benjamin Piwowarski, P. Gallinari
-          </td>
-          <td>2016-11-03</td>
-          <td></td>
-          <td>0</td>
           <td>52</td>
         </tr>
 
