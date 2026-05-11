@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-05-04 07:14:51 UTC</i>
+  <i class="footer">This page was last updated on 2026-05-11 07:26:52 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -536,6 +536,18 @@
           <td>52</td>
         </tr>
 
+        <tr id="Interactive systems are omnipresent across various domains, ranging from dynamic systems in physics to intricate societal dynamics. Relational inference aims to uncover implicit interactions between components based on observed system trajectories. Existing neural relational inference methods rely on fully connected graphs for message passing, leading to computational inefficiency and redundant message passing. While Transformer-based models excel in multivariate time series forecasting, their contextual attention mechanism disrupts the integrity and independence of dynamics in time-invariant relational inference. Besides, the implicit interactions should have non-trivial correlations with the attention coefficients, yet how to read out an explicit interaction graph from Transformer also still needs to be explored. In this study, we propose RIVA, a novel relational inference model with a variate attention mechanism. Unlike contextual attention in vanilla Transformer, which encodes multiple variables at the same time point as a single token, RIVA encodes entire dynamics. Furthermore, we incorporate the inferred graph structure as a mask in the causal attention, allowing each variable to effectively aggregate features from its neighbors and greatly enhancing the model's ability to capture complex interactions. Through extensive experimental evaluations, RIVA demonstrates superior performance in time-invariant continuous interaction inference and future state prediction, outperforming existing methods and providing highly accurate predictions in dynamic environments.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/cdd4e532084bbd68fd22c56f7abbec1ceaff28b1" target='_blank'>RIVA: Efficient relational inference with variate attention</a></td>
+          <td>
+            Ruizi Wu, Liming Pan, Linyuan Lu
+          </td>
+          <td>2025-06-01</td>
+          <td>Neural networks : the official journal of the International Neural Network Society</td>
+          <td>0</td>
+          <td>6</td>
+        </tr>
+
         <tr id="Deep learning has achieved strong performance in Time Series Forecasting (TSF). However, we identify a critical representation paradox, termed Latent Chaos: models with accurate predictions often learn latent representations that are temporally disordered and lack continuity. We attribute this phenomenon to the dominant observation-space forecasting paradigm. Most TSF models minimize point-wise errors on noisy and partially observed data, which encourages shortcut solutions instead of the recovery of underlying system dynamics. To address this issue, we propose Latent Time Series Forecasting (LatentTSF), a novel paradigm that shifts TSF from observation regression to latent state prediction. Specifically, LatentTSF employs an AutoEncoder to project observations at each time step into a higher-dimensional latent state space. This expanded representation aims to capture underlying system variables and impose a smoother temporal structure. Forecasting is then performed entirely in the latent space, allowing the model to focus on learning structured temporal dynamics. Theoretical analysis demonstrates that our proposed latent objectives implicitly maximize mutual information between predicted latent states and ground-truth states and observations. Extensive experiments on widely-used benchmarks confirm that LatentTSF effectively mitigates latent chaos, achieving superior performance. Our code is available in https://github.com/Muyiiiii/LatentTSF.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/14d9a2e298fce2ed77dbb3ede5a8ee2831c43d39" target='_blank'>From Observations to States: Latent Time Series Forecasting</a></td>
@@ -558,18 +570,6 @@
           <td>ArXiv</td>
           <td>12</td>
           <td>52</td>
-        </tr>
-
-        <tr id="Forecasting the behaviour of complex dynamical systems such as interconnected sensor networks characterized by high-dimensional multivariate time series(MTS) is of paramount importance for making informed decisions and planning for the future in a broad spectrum of applications. Graph forecasting networks(GFNs) are well-suited for forecasting MTS data that exhibit spatio-temporal dependencies. However, most prior works of GFN-based methods on MTS forecasting rely on domain-expertise to model the nonlinear dynamics of the system, but neglect the potential to leverage the inherent relational-structural dependencies among time series variables underlying MTS data. On the other hand, contemporary works attempt to infer the relational structure of the complex dependencies between the variables and simultaneously learn the nonlinear dynamics of the interconnected system but neglect the possibility of incorporating domain-specific prior knowledge to improve forecast accuracy. To this end, we propose a hybrid architecture that combines explicit prior knowledge with implicit knowledge of the relational structure within the MTS data. It jointly learns intra-series temporal dependencies and inter-series spatial dependencies by encoding time-conditioned structural spatio-temporal inductive biases to provide more accurate and reliable forecasts. It also models the time-varying uncertainty of the multi-horizon forecasts to support decision-making by providing estimates of prediction uncertainty. The proposed architecture has shown promising results on multiple benchmark datasets and outperforms state-of-the-art forecasting methods by a significant margin. We report and discuss the ablation studies to validate our forecasting architecture.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/05cd3afc8208f1c0dd61b09a90f35dd42497e175" target='_blank'>Multi-Knowledge Fusion Network for Time Series Representation Learning</a></td>
-          <td>
-            Sakhinana Sagar Srinivas, Shivam Gupta, Krishna Sai Sudhir Aripirala, Venkataramana Runkana
-          </td>
-          <td>2024-08-22</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>8</td>
         </tr>
 
   </tbody>

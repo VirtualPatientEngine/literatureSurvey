@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-05-04 07:15:12 UTC</i>
+  <i class="footer">This page was last updated on 2026-05-11 07:27:09 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -484,8 +484,8 @@
           </td>
           <td>2021-07-05</td>
           <td>Royal Society Open Science</td>
-          <td>113</td>
-          <td>33</td>
+          <td>114</td>
+          <td>34</td>
         </tr>
 
         <tr id="Sparse model identification enables nonlinear dynamical system discovery from data. However, the control of false discoveries for sparse model identification is challenging, especially in the low-data and high-noise limit. In this paper, we perform a theoretical study on ensemble sparse model discovery, which shows empirical success in terms of accuracy and robustness to noise. In particular, we analyse the bootstrapping-based sequential thresholding least-squares estimator. We show that this bootstrapping-based ensembling technique can perform a provably correct variable selection procedure with an exponential convergence rate of the error rate. In addition, we show that the ensemble sparse model discovery method can perform computationally efficient uncertainty estimation, compared to expensive Bayesian uncertainty quantification methods via MCMC. We demonstrate the convergence properties and connection to uncertainty quantification in various numerical studies on synthetic sparse linear regression and sparse model discovery. The experiments on sparse linear regression support that the bootstrapping-based sequential thresholding least-squares method has better performance for sparse variable selection compared to LASSO, thresholding least-squares, and bootstrapping-based LASSO. In the sparse model discovery experiment, we show that the bootstrapping-based sequential thresholding least-squares method can provide valid uncertainty quantification, converging to a delta measure centered around the true value with increased sample sizes. Finally, we highlight the improved robustness to hyperparameter selection under shifting noise and sparsity levels of the bootstrapping-based sequential thresholding least-squares method compared to other sparse regression methods.">
@@ -524,6 +524,19 @@
           <td>2</td>
         </tr>
 
+        <tr id="
+ Data-driven discovery of model equations is a powerful approach to understanding the behaviour of dynamical systems in many scientific fields. In particular, the ability to learn mathematical models from data would benefit systems biology, where the complex nature of these systems often makes a bottom up approach to modelling unfeasible. In recent years, sparse estimation techniques have gained prominence in system identification, primarily using parametric paradigms to efficiently capture system dynamics with minimal model complexity. In particular, the Sindy algorithm has successfully used sparsity to estimate nonlinear systems by extracting from a library of functions only a few key terms needed to capture the dynamics of these systems. However, parametric models often fall short in accurately representing certain nonlinearities inherent in complex systems. To address this limitation, we introduce a novel framework that integrates sparse parametric estimation with nonparametric techniques. It captures nonlinearities that Sindy cannot describe without requiring a priori information about their functional form. That is, without expanding the library of functions to include the one that is trying to be discovered. We illustrate our approach on several examples related to estimation of complex biological phenomena.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/9ef9251ab2ae000357c2466c784b8adb91e8a5fe" target='_blank'>Sparse and nonparametric estimation of equations governing dynamical systems with applications to biology</a></td>
+          <td>
+            G. Pillonetto, A. Giaretta, A. Aravkin, M. Bisiacco, T. Elston
+          </td>
+          <td>2025-11-01</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>76</td>
+        </tr>
+
         <tr id="Discovering nonlinear differential equations from empirical data is a significant challenge, often requiring manual parameter tuning. This paper introduces a machine learning method integrating denoising techniques, sparse regression, and bootstrap confidence intervals, which shows consistent accuracy in identifying 3D dynamical systems with moderate data size and high signal quality. Discovering nonlinear differential equations that describe system dynamics from empirical data is a fundamental challenge in contemporary science. While current methods can identify such equations, they often require extensive manual hyperparameter tuning, limiting their applicability. Here, we propose a methodology to identify dynamical laws by integrating denoising techniques to smooth the signal, sparse regression to identify the relevant parameters, and bootstrap confidence intervals to quantify the uncertainty of the estimates. We evaluate our method on well-known ordinary differential equations with an ensemble of random initial conditions, time series of increasing length, and varying signal-to-noise ratios. Our algorithm consistently identifies three-dimensional systems, given moderately-sized time series and high levels of signal quality relative to background noise. By accurately discovering dynamical systems automatically, our methodology has the potential to impact the understanding of complex systems, especially in fields where data are abundant, but developing mathematical models demands considerable effort.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/1f18c5206491626d36c2271aaf491dbc945f6247" target='_blank'>Automatically discovering ordinary differential equations from data with sparse regression</a></td>
@@ -546,19 +559,6 @@
           <td>ArXiv</td>
           <td>2</td>
           <td>2</td>
-        </tr>
-
-        <tr id="
- Data-driven discovery of model equations is a powerful approach to understanding the behaviour of dynamical systems in many scientific fields. In particular, the ability to learn mathematical models from data would benefit systems biology, where the complex nature of these systems often makes a bottom up approach to modelling unfeasible. In recent years, sparse estimation techniques have gained prominence in system identification, primarily using parametric paradigms to efficiently capture system dynamics with minimal model complexity. In particular, the Sindy algorithm has successfully used sparsity to estimate nonlinear systems by extracting from a library of functions only a few key terms needed to capture the dynamics of these systems. However, parametric models often fall short in accurately representing certain nonlinearities inherent in complex systems. To address this limitation, we introduce a novel framework that integrates sparse parametric estimation with nonparametric techniques. It captures nonlinearities that Sindy cannot describe without requiring a priori information about their functional form. That is, without expanding the library of functions to include the one that is trying to be discovered. We illustrate our approach on several examples related to estimation of complex biological phenomena.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/9ef9251ab2ae000357c2466c784b8adb91e8a5fe" target='_blank'>Sparse and nonparametric estimation of equations governing dynamical systems with applications to biology</a></td>
-          <td>
-            G. Pillonetto, A. Giaretta, A. Aravkin, M. Bisiacco, T. Elston
-          </td>
-          <td>2025-11-01</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>76</td>
         </tr>
 
         <tr id="Sparse Identification of Nonlinear Dynamics (SINDy) is a data-driven algorithm for interpretability mod-eling. SINDy has a strong ability to learn dynamical systems from time series data. Sparse Identification of Nonlinear Dynamics (SINDy) can extract equations from data, but its performance will degrade when data has noise or sparse. In order to deal with this case, the idea of Monte Carlo Markov Chain (MCMC) is introduced, which is used to optimally select models. The SINDy with MCMC (MCMC-SINDy) can comprehensively discover model structures by employing random samples in data space. Simulation results show that MCMC-SINDy is more robust than SINDy with 1 % -15 % levels of noise or sparse 0.5. These results are promising for the discovery of governing equations for complex systems in neuroscience, power grids, epidemiology, finance or ecology, where governing equations have remained elusive. mportantly, compared to existing machine learning methods, the accuracy of modeling using MCMC SINDy is higher.">
