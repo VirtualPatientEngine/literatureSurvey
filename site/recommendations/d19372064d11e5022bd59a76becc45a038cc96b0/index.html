@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-05-11 07:26:52 UTC</i>
+  <i class="footer">This page was last updated on 2026-05-18 07:38:23 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -496,7 +496,7 @@
           </td>
           <td>2022-05-26</td>
           <td>J. Mach. Learn. Res.</td>
-          <td>32</td>
+          <td>33</td>
           <td>55</td>
         </tr>
 
@@ -532,8 +532,8 @@
           </td>
           <td>2023-06-26</td>
           <td>DBLP</td>
-          <td>5</td>
-          <td>52</td>
+          <td>6</td>
+          <td>53</td>
         </tr>
 
         <tr id="Interactive systems are omnipresent across various domains, ranging from dynamic systems in physics to intricate societal dynamics. Relational inference aims to uncover implicit interactions between components based on observed system trajectories. Existing neural relational inference methods rely on fully connected graphs for message passing, leading to computational inefficiency and redundant message passing. While Transformer-based models excel in multivariate time series forecasting, their contextual attention mechanism disrupts the integrity and independence of dynamics in time-invariant relational inference. Besides, the implicit interactions should have non-trivial correlations with the attention coefficients, yet how to read out an explicit interaction graph from Transformer also still needs to be explored. In this study, we propose RIVA, a novel relational inference model with a variate attention mechanism. Unlike contextual attention in vanilla Transformer, which encodes multiple variables at the same time point as a single token, RIVA encodes entire dynamics. Furthermore, we incorporate the inferred graph structure as a mask in the causal attention, allowing each variable to effectively aggregate features from its neighbors and greatly enhancing the model's ability to capture complex interactions. Through extensive experimental evaluations, RIVA demonstrates superior performance in time-invariant continuous interaction inference and future state prediction, outperforming existing methods and providing highly accurate predictions in dynamic environments.">
@@ -544,11 +544,11 @@
           </td>
           <td>2025-06-01</td>
           <td>Neural networks : the official journal of the International Neural Network Society</td>
-          <td>0</td>
+          <td>1</td>
           <td>6</td>
         </tr>
 
-        <tr id="Deep learning has achieved strong performance in Time Series Forecasting (TSF). However, we identify a critical representation paradox, termed Latent Chaos: models with accurate predictions often learn latent representations that are temporally disordered and lack continuity. We attribute this phenomenon to the dominant observation-space forecasting paradigm. Most TSF models minimize point-wise errors on noisy and partially observed data, which encourages shortcut solutions instead of the recovery of underlying system dynamics. To address this issue, we propose Latent Time Series Forecasting (LatentTSF), a novel paradigm that shifts TSF from observation regression to latent state prediction. Specifically, LatentTSF employs an AutoEncoder to project observations at each time step into a higher-dimensional latent state space. This expanded representation aims to capture underlying system variables and impose a smoother temporal structure. Forecasting is then performed entirely in the latent space, allowing the model to focus on learning structured temporal dynamics. Theoretical analysis demonstrates that our proposed latent objectives implicitly maximize mutual information between predicted latent states and ground-truth states and observations. Extensive experiments on widely-used benchmarks confirm that LatentTSF effectively mitigates latent chaos, achieving superior performance. Our code is available in https://github.com/Muyiiiii/LatentTSF.">
+        <tr id="Deep learning has achieved strong performance in Time Series Forecasting (TSF). However, we identify a critical representation paradox, termed Latent Chaos: models with accurate predictions often learn latent representations that are temporally disordered and lack continuity. We attribute this to the dominant observation-space forecasting paradigm, where minimizing point-wise errors on noisy and partially observed data encourages shortcut solutions instead of the recovery of underlying system dynamics. To address this, we propose Latent Time Series Forecasting (LatentTSF), a paradigm that shifts TSF from observation regression to latent state prediction. LatentTSF employs an AutoEncoder to project each observation into a learned latent state space and performs forecasting entirely in this space, allowing the model to focus on learning structured temporal dynamics. We provide an information-theoretic analysis showing that the latent objectives can be motivated as surrogates for maximizing mutual information between predicted and ground-truth latent states and future observations. Extensive experiments on widely-used benchmarks confirm that LatentTSF effectively mitigates latent chaos, yielding consistent improvements in both forecasting accuracy and representation quality. Our code is available at https://github.com/Muyiiiii/LatentTSF.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/14d9a2e298fce2ed77dbb3ede5a8ee2831c43d39" target='_blank'>From Observations to States: Latent Time Series Forecasting</a></td>
           <td>
