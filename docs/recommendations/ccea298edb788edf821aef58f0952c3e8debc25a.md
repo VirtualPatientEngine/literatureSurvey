@@ -11,7 +11,7 @@ hide:
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-06-08 07:58:47 UTC</i>
+  <i class="footer">This page was last updated on 2026-06-15 08:17:37 UTC</i>
   </p>
   
   <div class="note info" onclick="startIntro()">
@@ -75,7 +75,7 @@ hide:
           <td>2023-07-27</td>
           <td>ArXiv</td>
           <td>21</td>
-          <td>58</td>
+          <td>59</td>
         </tr>
     
         <tr id="Outstanding achievements of graph neural networks for spatiotemporal time series analysis show that relational constraints introduce an effective inductive bias into neural forecasting architectures. Often, however, the relational information characterizing the underlying data-generating process is unavailable and the practitioner is left with the problem of inferring from data which relational graph to use in the subsequent processing stages. We propose novel, principled - yet practical - probabilistic score-based methods that learn the relational dependencies as distributions over graphs while maximizing end-to-end the performance at task. The proposed graph learning framework is based on consolidated variance reduction techniques for Monte Carlo score-based gradient estimation, is theoretically grounded, and, as we show, effective in practice. In this paper, we focus on the time series forecasting problem and show that, by tailoring the gradient estimators to the graph learning problem, we are able to achieve state-of-the-art performance while controlling the sparsity of the learned graph and the computational scalability. We empirically assess the effectiveness of the proposed method on synthetic and real-world benchmarks, showing that the proposed solution can be used as a stand-alone graph identification procedure as well as a graph learning component of an end-to-end forecasting architecture.">
@@ -86,7 +86,7 @@ hide:
           </td>
           <td>2022-05-26</td>
           <td>J. Mach. Learn. Res.</td>
-          <td>34</td>
+          <td>35</td>
           <td>56</td>
         </tr>
     
@@ -110,7 +110,7 @@ hide:
           </td>
           <td>2020-05-24</td>
           <td>Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining</td>
-          <td>2069</td>
+          <td>2082</td>
           <td>66</td>
         </tr>
     
@@ -122,7 +122,7 @@ hide:
           </td>
           <td>2021-01-18</td>
           <td>ArXiv</td>
-          <td>363</td>
+          <td>368</td>
           <td>40</td>
         </tr>
     
