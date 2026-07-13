@@ -11,7 +11,7 @@ hide:
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-07-06 07:45:39 UTC</i>
+  <i class="footer">This page was last updated on 2026-07-13 07:18:32 UTC</i>
   </p>
   
   <div class="note info" onclick="startIntro()">
@@ -63,7 +63,7 @@ hide:
           <td>2024-05-28</td>
           <td>ArXiv</td>
           <td>5</td>
-          <td>7</td>
+          <td>8</td>
         </tr>
     
         <tr id="Time series forecasting lies at the core of important real-world applications in many fields of science and engineering. The abundance of large time series datasets that consist of complex patterns and long-term dependencies has led to the development of various neural network architectures. Graph neural network approaches, which jointly learn a graph structure based on the correlation of raw values of multivariate time series while forecasting, have recently seen great success. However, such solutions are often costly to train and difficult to scale. In this paper, we propose TimeGNN, a method that learns dynamic temporal graph representations that can capture the evolution of inter-series patterns along with the correlations of multiple series. TimeGNN achieves inference times 4 to 80 times faster than other state-of-the-art graph-based methods while achieving comparable forecasting performance">
@@ -98,7 +98,7 @@ hide:
           </td>
           <td>2024-05-29</td>
           <td>ArXiv</td>
-          <td>7</td>
+          <td>8</td>
           <td>6</td>
         </tr>
     
@@ -110,7 +110,7 @@ hide:
           </td>
           <td>2020-05-24</td>
           <td>Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining</td>
-          <td>2135</td>
+          <td>2151</td>
           <td>66</td>
         </tr>
     
@@ -122,7 +122,7 @@ hide:
           </td>
           <td>2021-01-18</td>
           <td>ArXiv</td>
-          <td>371</td>
+          <td>376</td>
           <td>40</td>
         </tr>
     
