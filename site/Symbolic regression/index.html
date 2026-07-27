@@ -451,7 +451,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-07-20 07:17:47 UTC</i>
+  <i class="footer">This page was last updated on 2026-07-27 07:20:34 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -516,7 +516,7 @@
           </td>
           <td>2015-09-11</td>
           <td>Proceedings of the National Academy of Sciences, Proceedings of the National Academy of Sciences of the United States of America</td>
-          <td>5205</td>
+          <td>5223</td>
           <td>80</td>
 
             <td><a href='../recommendations/5d150cec2775f9bc863760448f14104cc8f42368' target='_blank'>
@@ -556,7 +556,7 @@
           </td>
           <td>2019-03-29</td>
           <td>Proceedings of the National Academy of Sciences of the United States of America</td>
-          <td>1023</td>
+          <td>1031</td>
           <td>80</td>
 
             <td><a href='../recommendations/3c9961153493370500020c81527b3548c96f81e0' target='_blank'>
@@ -576,7 +576,7 @@
           </td>
           <td>2016-08-18</td>
           <td>Nature Communications</td>
-          <td>645</td>
+          <td>648</td>
           <td>80</td>
 
             <td><a href='../recommendations/3df50e9b73cc2937dfd651f4c3344bc99b7ed3f2' target='_blank'>
@@ -616,7 +616,7 @@
           </td>
           <td>2016-05-26</td>
           <td>IEEE Transactions on Molecular, Biological and Multi-Scale Communications, IEEE Transactions on Molecular Biological and Multi-Scale Communications</td>
-          <td>429</td>
+          <td>430</td>
           <td>80</td>
 
             <td><a href='../recommendations/06a0ba437d41a7c82c08a9636a4438c1b5031378' target='_blank'>
@@ -636,7 +636,7 @@
           </td>
           <td>2020-04-05</td>
           <td>Proceedings. Mathematical, Physical, and Engineering Sciences, Proceedings of the Royal Society A</td>
-          <td>369</td>
+          <td>374</td>
           <td>80</td>
 
             <td><a href='../recommendations/4971f9abd024e40fbbdff2e9492745b68a6bca01' target='_blank'>
@@ -716,7 +716,7 @@
           </td>
           <td>2016-09-21</td>
           <td>Science Advances</td>
-          <td>1708</td>
+          <td>1710</td>
           <td>80</td>
 
             <td><a href='../recommendations/0acd117521ef5aafb09fed02ab415523b330b058' target='_blank'>
@@ -736,7 +736,7 @@
           </td>
           <td>2021-11-22</td>
           <td>Proceedings. Mathematical, Physical, and Engineering Sciences, Proceedings of the Royal Society A</td>
-          <td>370</td>
+          <td>373</td>
           <td>80</td>
 
             <td><a href='../recommendations/883547fdbd88552328a6615ec620f96e39c57018' target='_blank'>
@@ -910,21 +910,6 @@
           <td>17</td>
         </tr>
 
-        <tr id="Identifying stochastic dynamical systems from observational data remains a major challenge in applied mathematics and engineering, particularly when complex systems are influenced by random perturbations and incomplete empirical information. This comprehensive review aims to examine state-of-the-art data-driven methods for discovering governing equations, estimating parameters, and predicting the behavior of stochastic dynamical systems. The review systematically analyzes key methodological approaches, including Sparse Identification of Nonlinear Dynamics (SINDy), Dynamic Mode Decomposition (DMD) and its extensions, Koopman operator theory, neural ordinary differential equations, and Bayesian inference. Each approach is evaluated in terms of its theoretical foundations, computational requirements, robustness to noise, and applicability to different classes of stochastic systems. Drawing on numerical experiments and real-world case studies, the findings show that no single method consistently outperforms others across all scenarios. Instead, hybrid approaches that integrate physics-informed constraints with machine learning demonstrate the strongest potential for advancing data-driven system identification. The review concludes that future research should address real-time identification, uncertainty quantification, and the integration of multi-fidelity data sources to improve the reliability and scalability of stochastic system modeling. This work contributes a comprehensive framework for guiding researchers and practitioners in selecting and implementing appropriate identification methods for stochastic dynamical systems.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/c3861ddd1ef94e0580a1602cee651497acac7a3e" target='_blank'>
-              Data-Driven Identification of Stochastic Dynamical Systems
-              </a>
-            </td>
-          <td>
-            Rishav Jha, Kameshwar Sahani, S. K. Sahani, R. Raj, D. Sah
-          </td>
-          <td>2026-05-23</td>
-          <td>African Multidisciplinary Journal of Sciences and Artificial Intelligence</td>
-          <td>0</td>
-          <td>9</td>
-        </tr>
-
         <tr id="Discovering governing equations directly from observational data is a key step towards interpretable scientific machine learning. Current data-driven approaches typically operate on a single dataset, inherently limiting their performance when faced with restricted observations. In practice, multiple datasets are often available for the same physical system, distinguished only by distinct initial conditions or boundary configurations. Here, we present a competitive optimization framework designed to discover shared partial differential equations (PDEs) from multi-source datasets, termed MCO-PDE. The framework first trains independent neural surrogates for each data source, and then employs a soft-competitive weighting mechanism to dynamically assess dataset credibility and aggregate a consensus global coefficient. Integrated with a genetic algorithm for structural search, this approach simultaneously identifies the functional forms and parameters of the governing laws. We demonstrate that fusing as few as 50 observations per dataset across seven cases recovers canonical equations with high accuracy. The framework inherently handles two- and three-dimensional domains characterized by irregular boundaries and heterogeneous coefficients, and successfully extracts physically meaningful laws from real-world wave-tank experiments. Overall, this work establishes a promising route for automated scientific discovery via heterogeneous data fusion.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/f16c9fb00d413117c855db9cbc24323392f75f44" target='_blank'>
@@ -938,6 +923,21 @@
           <td>ArXiv</td>
           <td>0</td>
           <td>19</td>
+        </tr>
+
+        <tr id="Symbolic discovery of governing equations from data is limited not only by algorithm design and data volume, but by the geometry of the attractor: what the long-run dynamics allow to be recovered. Using a within-system design on Lorenz-84, where one forcing parameter drives fixed-point, limit-cycle, and chaotic regimes while the governing equations and library stay fixed, we show that a single number, $\lambda_{\min}(M)$, the smallest eigenvalue of the invariant-measure moment matrix, sets the identifiability ceiling for both sparse regression (SINDy) and evolutionary symbolic regression (PySR). Derived from the Birkhoff ergodic theorem and obtained from a short reference trajectory before any run, $\lambda_{\min}(M)$ measures how fully the attractor covers function space: where it vanishes, recovery is impossible for any algorithm, sparse or combinatorial alike; as it grows, both algorithms improve. Chaos raises $\lambda_{\min}(M)$ by spreading the attractor, but also enlarges it and amplifies noise; because noise enters SINDy's regression bottleneck linearly and PySR's discrimination channel superlinearly, the same transition can push the two methods in opposite directions, so deeper chaos is not uniformly better. Parameter-free mechanistic scores from this framework transfer without refitting to a held-out Lorenz-96 system, confirming mechanism rather than curve-fitting; a criterion read from the equations predicts when added chaos will not improve conditioning. We also introduce Soft F1, a coefficient-weighted structural metric that resolves performance differences invisible to binary-success and predictive scores. The first question of discovery is then not which algorithm, but what the attractor permits.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/ac06acf8d71a1a342604d962c73f53a43c9f8235" target='_blank'>
+              Attractor Geometry Determines the Identifiability Limits of System Discovery
+              </a>
+            </td>
+          <td>
+            Matteo Gallo, Fabio Anselmi, Paolo Lazzari
+          </td>
+          <td>2026-07-20</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>4</td>
         </tr>
 
         <tr id="Extracting interpretable, localized physical mechanisms from complex spatiotemporal data is a foundational challenge across physics, biology, and engineering, but has remained out of reach on real measurements. The central obstacle is obtaining high-quality gradients of data via numerical differentiation, which amplifies noise, diverges for high-order equations, and falters on irregular geometries, limiting the scope of existing approaches to clean simulations of low-order systems. Here, we present weak dominant balance, a derivative-free framework that projects governing equations into a weak (integral) formulation, offloading differentiation onto smooth analytical test functions and leaving the data untouched. The method sustains accurate regime identification under severe noise where existing approaches categorically fail, delivers the first data-driven decomposition of a third-order partial differential equation applied to turbulent duct flow, and produces matching decompositions across direct numerical simulation and particle-image velocimetry measurements of a wavy channel flow, uncovering a previously uncharacterized dynamical regime. Weak dominant balance brings mechanism-level analysis out of simulation and onto measured data, and opens complex physical systems to direct, equation-grounded interpretation.">
@@ -970,21 +970,6 @@
           <td>3</td>
         </tr>
 
-        <tr id="Discovering the governing equations of a dynamical system from observed trajectories provides deeper insight into its structure than mere prediction of future states. We present a data-driven approach to model discovery based on complex-valued product-unit networks, in which each unit represents a complex monomial and the network output is a sparse linear combination of such monomials. In contrast to established library-based methods such as SINDy, our approach does not require a predefined set of candidate functions: the relevant monomials, including those with fractional or negative exponents, are learned directly from data. Across four chaotic benchmark systems (Lorenz63, Lorenz84, the Four-Wing attractor, and a fractional variant of Lorenz63), we recover the exact governing equations in 90% of trials for the first three systems, and in 70-90% of trials for the fractional case, using at least 3000 training points. Applied to real-world human-gait accelerometer signals, the model produced stable trajectories with bounded prediction errors, corresponding to an RMSE of approximately 12-14% of the signal amplitude range over a test horizon three times longer than the training interval, demonstrating its potential for high-dimensional systems in which analytic equations are unavailable.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/d0c0bcb5c947ad8152d92a1043690c47fab12f4d" target='_blank'>
-              Model discovery for dynamical systems with complex-valued product units
-              </a>
-            </td>
-          <td>
-            Martin Brückmann, B. Dellen, Uwe Jaekel
-          </td>
-          <td>2026-05-26</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>2</td>
-        </tr>
-
         <tr id="The data-driven discovery of governing equations for dynamical systems has emerged as a transformative paradigm, enabling the extraction of interpretable and generalizable models from observational data. While modern techniques have advanced this field, traditional subset regression remains a foundational yet underutilized tool due to its reliance on uncorrelated residuals, a requirement often violated by time-series data. In this work, we revisit subset regression to identify dynamical systems governed by ordinary differential equations (ODEs), partial differential equations (PDEs), and differential algebraic equations (DAEs). We propose subset regression with known number of active features (sub-KNAFE), a user-determined sparsity mechanism that flexibly adapts to various complex nonlinear systems, while retaining the computational efficiency and inherent interpretability of traditional subset regression. We integrate sub-KNAFE with the SINDy framework, overcoming the limitation of subset regression in dynamical system identification. Numerical tests across a range of signal-to-noise ratios and dataset sizes demonstrate sub-KNAFE's superior noise robustness and data efficiency. Practical utility for sub-KNAFE is validated on two real-world datasets: the classic Lynx-Hare ecological population data and the ISO New England power system dataset, demonstrating its strong potential for practical deployment in scientific discovery and engineering applications.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/94e8f5ef8f56d8e4107e0589a8ef847c02395f8a" target='_blank'>
@@ -1000,21 +985,6 @@
           <td>16</td>
         </tr>
 
-        <tr id="Symbolic Regression (SR) is a powerful technique for discovering analytical mathematical expressions that describe observed numerical data. Traditionally, SR models work on data in tabular form, imposing a purely functional mapping without considering the underlying spatio-temporal dependencies or the governing physical laws. Such approaches are ill-suited for physical problems, where data evolves dynamically across time and space and is governed by ordinary/partial differential equations (ODEs/PDEs). Moreover, as SR are commonly measured by their ability to obtain generalized equations from a relatively small amount of data, representing the data efficiently plays a central role in the performance of such models. In this study, we propose a simple yet powerful solver-agnostic approach for SR fitting by using a dual representation — one that preserves explainability, while the other is physically informed. Our main novelty lies in combining the standard tabular representation with a graph-based spatio-temporal representation in a unified SR fitting framework that can enhance existing SR solvers without modifying their internal search mechanism. Namely, the method uses both tabular and graph-based data representation, where nodes in the graph are associated with spatio-temporal coordinates and dynamic state variables, while edges encode spatial or temporal dependencies. This approach allows for the direct generation of differential equations that describe the underlying physical system by implicitly incorporating spatio-temporal patterns and constraints. Benchmarks across multiple synthetic datasets originated from functional, ordinary/partial different equations (O/PDE), integral, and delayed ODE, demonstrate the ability of the proposed method to recover governing equations with high accuracy, even in noisy settings, improving a wide range of SR out-of-the box. These results indicate that enriching SR with graph-based spatio-temporal structure provides a practical pathway toward more robust and physically consistent equation discovery. At the same time, the current framework assumes that a meaningful spatio-temporal neighborhood structure can be constructed and is validated primarily on controlled synthetic benchmark systems.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/f8a96157561599a309735e429c538cf4d563fa1e" target='_blank'>
-              Moving from table to graph in physics-informed spatio-temporal symbolic regression
-              </a>
-            </td>
-          <td>
-            Teddy Lazebnik, Alexander Liberzon
-          </td>
-          <td>2026-05-23</td>
-          <td>Scientific Reports</td>
-          <td>0</td>
-          <td>6</td>
-        </tr>
-
         <tr id="Discovering governing equations directly from observational data remains a fundamental challenge in science and engineering, particularly when measurements are noisy, high-dimensional, or multi-scale. Existing approaches often cast equation discovery as a regression problem that selects candidate terms to fit observed trajectories, which can limit structural stability and identifiability under realistic data conditions. We propose a structured operator-learning framework that reformulates equation discovery as a constrained dynamical inference problem integrating spectral decomposition, physics-guided sparse projection, and cross-view consistency regularization within a unified architecture. By decomposing dynamics into scale-resolved components and enforcing invariance across perturbed observations, the framework promotes stable and interpretable equation recovery. Here, we show that the method consistently identifies compact governing equations while maintaining strong long-horizon predictive accuracy across canonical nonlinear systems and representative industrial processes, even under noisy and distribution-shifted data.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/9bd27a5da93e580971234f2f435500656747fd7d" target='_blank'>
@@ -1028,36 +998,6 @@
           <td>Nature communications</td>
           <td>0</td>
           <td>14</td>
-        </tr>
-
-        <tr id="Quasi-potential is a crucial concept in stochastic systems as it characterizes long-term behavior and estimates transition rates between states. Quasi-potential is a part of the orthogonal decomposition of the deterministic vector field (drift) driving the dynamics. Yet, its computation is often obtained via a challenging functional minimization problem. This paper brings together two different areas, combining a machine learning-based sparse identification technique with an instanton-action minimization method to determine the quasi-potential. Concretely, the so-called sparse identification of non-linear dynamics (SINDy) was applied to the most likely trajectory (instanton) in a stochastic system to learn the drift’s orthogonal decomposition. This hybrid framework that combines instanton-based minimization with the SINDy results in approximated analytical expressions for both the quasi-potential and the orthogonal component, even at points outside the instanton path. The orthogonal component, in particular, is important as it serves as a correction to the exponential decay of transition rates and exit times. This paper offers an effective and cost-efficient procedure for determining the quasi-potential in comparison with existing methods. We implemented the proposed approach in 2- and 3-D systems, covering various types of potential landscapes and attractors.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/f69e96ae965ce23b6b3ddfa73fb4a7d132028e25" target='_blank'>
-              Quasi-potential of stochastic dynamics via instanton-guided sparse identification
-              </a>
-            </td>
-          <td>
-            Leonardo de Souza Grigorio, Mnerh Alqahtani
-          </td>
-          <td>2026-05-26</td>
-          <td>Journal of Physics A: Mathematical and Theoretical</td>
-          <td>0</td>
-          <td>2</td>
-        </tr>
-
-        <tr id="We propose KO-PDE-IDENT, a data-driven framework for identifying parsimonious partial differential equations (PDEs) with false discovery rate (FDR) control. PDE discovery from noisy observations is often hindered by extreme multicollinearity among candidate terms, which causes typical sparse-regression methods to select spurious terms. To address this problem, KO-PDE-IDENT initially mines a support set of potential candidate terms via model-X knockoff filters with finite-sample FDR control, then refines and ranks the surviving PDE alternatives. The framework integrates three components. First, knockoff feature statistics are constructed by coupling $\ell_{0}$-constrained adaptive best-subset selection with SHapley Additive exPlanations (SHAP), yielding an effective and computationally efficient difference statistic. Second, a recursive feature elimination (RFE) procedure removes terms whose marginal contributions are dispensable and assesses statistical necessity through knockoff-perturbed hypothesis testing. Third, the final model selection is formulated as a multi-criteria decision-making (MCDM) problem, where the optimal governing equation is the alternative that best balances a wide range of criteria such as predictive accuracy, model complexity and coefficient uncertainty. We evaluate KO-PDE-IDENT on five canonical PDEs under severe noise corruption. Empirical results show that our framework can exactly recover the true PDE structure, eliminating false discoveries while retaining all true underlying terms, with low coefficient estimation error.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/78767b43fc85cc3a8494b1ff0080b5afdd0be151" target='_blank'>
-              Data-driven sparse identification of governing PDEs via knockoff filters and multi-criteria trade-offs
-              </a>
-            </td>
-          <td>
-            Pongpisit Thanasutives, Naichang Ke, Y. Kawahara
-          </td>
-          <td>2026-05-26</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>24</td>
         </tr>
 
         <tr id="Symbolic regression (SR) offers a route to scientific discovery by converting observations into interpretable governing equations. However, despite its promise, its reliability degrades sharply when spatiotemporal measurements are sparse, noisy, or physically incomplete, as commonly occurring in practice. Data enrichment (DE) has been shown to be able to mitigate this limitation, yet additional samples can mislead equation discovery unless they preserve the physical structure of the target system. Such implication of DE requires narrow domain expertise as well as technical fluidity, highly limiting its practical usefulness. In this study, we introduce a physics-guided latent diffusion framework for DE for down the line SR models. The proposed framework combines a variational autoencoder, a conditional latent diffusion model, and a physics-informed residual corrector to complete sparse observations with synthetic fields constrained by governing relations. We evaluate the approach on heat conduction, incompressible Navier-Stokes flow, and a moving single-mass Newtonian gravitational potential, using GPLearn, DEAP, and PySR as downstream SR backends. Our results reveal that physics-corrected enrichment consistently improves recovery in sparse regimes across physical dynamics and SR models. These results show that generative enrichment can strengthen equation discovery without additional domain expertise.">
@@ -1118,6 +1058,21 @@
           <td>bioRxiv</td>
           <td>0</td>
           <td>61</td>
+        </tr>
+
+        <tr id="Discovering the governing equations of a physical system from data is a central goal across the sciences, yet in most experiments only a few states are accessible while the rest stay hidden. Existing approaches treat this partial observability as an obstacle to be removed by first reconstructing the hidden state -- a step that is ill-posed under noise and that discards the physical constraints, such as energy conservation, that the true dynamics obey. We show that for conservative (Hamiltonian) systems no reconstruction is needed: projecting the dynamics onto the measured coordinates yields a memory kernel that we prove to be a lossless positive-real rational matrix, whose poles are the hidden natural frequencies and whose positive-semidefinite residues encode the couplings. The governing equation -- and the underlying Hamiltonian -- can therefore be read directly from the autocorrelation of the measured signal, with guarantees of uniqueness and physical passivity, and without neural networks. We validate the approach on linear, nonlinear, and chaotic systems under realistic noise. By recovering interpretable equations of motion that conserve energy by construction from partial measurements, the method offers a common tool for problems spanning mechanics, fluid and plasma physics, and beyond.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/e8dcd185c4c6a39a6efb02974433e12c94c4730a" target='_blank'>
+              Positive-Real Identification of Sparse Mori-Hamiltonians from Partial Observations
+              </a>
+            </td>
+          <td>
+            Mohammad A. Ayoubi
+          </td>
+          <td>2026-06-13</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>2</td>
         </tr>
 
         <tr id="A Bayesian computational framework for parsimonious inference in stochastic nonlinear dynamical systems is presented. This framework enables the concurrent estimation of system states, time-varying parameters, time-invariant parameters, and the optimal sparsity structure of the model parameters. Because differential equation-based models are often simplified mechanistic or phenomenological representations, robust inference from noisy measurement data requires explicit treatment of model error and uncertainty. Model error and time-varying parameters can be represented as random processes, enabling inference while making minimal assumptions about the underlying sources of discrepancy and variability. Adopting stochastic differential equation representations affords the model significant flexibility, but can also render it susceptible to overfitting during statistical inversion, where the inferred model may track noise rather than the underlying signal. To alleviate the effects of overfitting and to enable the discovery of the optimal sparse representation of the time-invariant parameters, a Bayesian sparse learning algorithm is embedded within the framework. This sparse learning framework adopts an approximate hierarchical Bayesian setting defined by a series of semi-analytical expressions. The model structure inference framework is validated using a stochastic compartmental model for tracking and forecasting active cases of an infectious disease. Compartmental models describe population-level infectious disease dynamics through interactions among population fractions grouped by disease state. Mathematically, such models consist of a system of coupled ordinary differential equations. This example adopts an expressive compartmental model that includes multiple possible interactions between disease states, motivated by early uncertainty surrounding COVID-19 reinfection dynamics and their implications for long-term epidemic forecasting. The sparse learning exercise permits the inference of a priori unknown epidemiological dynamics from simulated public health data, discovering the nested compartmental model that optimizes the trade-off between average data-fit and model complexity. It is shown that inducing sparsity among the model parameters eliminates redundant interactions between compartments, equivalently revealing the optimal coupling structure between differential equations.">
@@ -1195,6 +1150,21 @@
           <td>19</td>
         </tr>
 
+        <tr id="None">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/10b3cc563d2846c6dd43184322c167ba0e755a36" target='_blank'>
+              A novel data-driven model predictive controller for nonlinear dynamical systems based on Runge-Kutta sparse identification
+              </a>
+            </td>
+          <td>
+            Kemal Uçak
+          </td>
+          <td>2026-07-01</td>
+          <td>Neural Computing and Applications</td>
+          <td>0</td>
+          <td>11</td>
+        </tr>
+
         <tr id="Standard continuous-depth models, such as Neural Ordinary Differential Equations (NODEs), offer significant advantages in modeling physical systems by learning continuous vector fields rather than discrete temporal steps. However, when applied to complex dynamical systems, standard NODEs frequently struggle with highly nonlinear dynamics. This paper investigates the Frequency-domain Neural ODE (FNODE), an architecture that projects continuous temporal dynamics into the frequency domain using the Fast Fourier Transform (FFT). By operating in the frequency domain, the model provides better generalization to the dynamical system. The architecture is empirically evaluated against discrete models, specifically Gated Recurrent Units (GRUs) and Long Short-Term Memory (LSTMs), and other continuous-depth variants, including Augmented Neural ODE (ANODE), across four distinct dynamical systems: the Lotka-Volterra model, the forced Duffing oscillator, the Van der Pol oscillator, and the Lorenz system. To rigorously assess generalization and robustness, curriculum and ensemble learning are used to evaluate the model's convergence by estimating confidence intervals across different ensemble models. The empirical results demonstrate that the FNODE architecture achieves better generalization while exhibiting remarkable convergence stability.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/08687e591fadafe5fb76bf06f5db2c76b29882ac" target='_blank'>
@@ -1238,21 +1208,6 @@
           <td>ArXiv</td>
           <td>0</td>
           <td>17</td>
-        </tr>
-
-        <tr id="We present a dynamic subspace approach for efficiently approximating large-scale systems by learning time-continuous trajectories on the Grassmannian manifold. By parameterizing a low-dimensional basis as a geodesic path, the method allows for adaptive tracking of evolving physics. Our approach decouples the geometric drift of the subspace from the intrinsic state evolution. This avoids the typical rank inflation required by static low-dimensional approximation methods to maintain accuracy, effectively breaking the Kolmogorov barrier in transport-dominated phenomena. To ensure scalability for high-dimensional data, the optimization is performed in a reduced feature space, rendering the computational cost independent of the large original state dimension. Numerical results for a 1D transport equation and a large-scale turbulent airfoil wake demonstrate that this dynamic subspace approach achieves higher accuracy than static linear approximations at equivalent ranks, positioning it as a robust and scalable method for the low-rank modeling of complex, non-stationary dynamical systems.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/9030634ec107db71cfa65b0ca536ae994a3b8903" target='_blank'>
-              A Dynamic Subspace Approach for Low-rank Approximation of Large-scale Nonlinear Systems
-              </a>
-            </td>
-          <td>
-            J. Dechant, R. Geelen, Shane A. McQuarrie, Johann Guilleminot
-          </td>
-          <td>2026-05-25</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>6</td>
         </tr>
 
         <tr id="Identifying latent dynamical systems from noisy, high-dimensional measurements is a central problem at the intersection of representation learning, system identification, and scientific discovery. We present DYSCO, a multi-view temporal contrastive learning algorithm that jointly recovers latent trajectories and the governing dynamics from such observations, by leveraging multiple independent noisy views of the same underlying process to disentangle signal from noise. By parameterizing the dynamics in a structured functional basis, our framework further enables symbolic recovery of the governing equations within an affine gauge. We offer theoretical guarantees for strong identification up to an affine indeterminacy, extending prior identifiability results to the realistic setting of noisy nonlinear observations. Empirically, we demonstrate accurate recovery of both latent trajectories and flow fields across a diverse set of dynamical regimes (e.g., chaotic, oscillatory, and metastable) under both Gaussian and Poisson observation noise, the latter being particularly relevant for neural recordings.">
@@ -1375,6 +1330,36 @@
           <td>4</td>
         </tr>
 
+        <tr id="Inverse problems governed by partial differential equations (PDEs) are central to computational mechanics and are commonly solved by adjoint-based optimization, while physics-informed neural networks (PINNs) have emerged as a flexible alternative. Their relative performance remains difficult to assess because the two approaches are often compared under different formulations, parameterizations, optimizers, and regularization choices. We present a fair comparison of adjoint optimization and PINNs for PDE-constrained inverse problems. From a common abstract formulation, we instantiate both methods on identical domains, governing equations, observation models, and regularization terms, while matching the optimizer, unknown parameterization, and arithmetic precision wherever applicable. The benchmarks include unsteady Burgers, noisy Darcy permeability inversion, three-dimensional Allen--Cahn reaction identification, and unsteady Navier--Stokes viscosity identification. The results show that the representation of the unknown largely determines the preferred method: grid-based fields favor the discrete adjoint, whereas neural representations are native to PINNs and relevant for closure and constitutive modeling. For time-dependent problems, adjoint inversion can be dominated by trajectory storage and differentiation, while PINNs provide satisfactory reconstructions at lower cost. A PINN-warm-started adjoint strategy then recovers adjoint-level accuracy at substantially reduced cost.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/d45611ec6c8ef616676ecbb1851bf6a398a23967" target='_blank'>
+              Adjoint Method versus Physics-Informed Neural Networks in PDE-Constrained Inverse Problems
+              </a>
+            </td>
+          <td>
+            Zhen Zhang, Alessandro Alla, G. Karniadakis
+          </td>
+          <td>2026-06-10</td>
+          <td>ArXiv</td>
+          <td>1</td>
+          <td>14</td>
+        </tr>
+
+        <tr id="Many equations arising in science currently cannot be solved by available analytical techniques and are therefore solved numerically, without yielding explicit symbolic expressions. Existing symbolic regression approaches can recover symbolic expressions, but require training data obtained from the underlying process, rather than the governing equation alone. We propose the Symbolic Equation Solver (SES), a framework that formulates equation solving as an optimization problem over differentiable symbolic models. SES constructs its objective from the equation together with initial or boundary conditions, eliminating the need for paired input-output data. The learned model is expressed in explicit symbolic form, enabling further analysis. We evaluate SES on representative algebraic and differential equations, including a system of algebraic equations, an equation with transcendental terms, an ordinary differential equation, and partial differential equations with different initial or boundary conditions. Across these settings, SES recovers compact symbolic expressions that match the corresponding analytical solutions.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/288bde9907c654f0646a5c9948ed1372222f4c27" target='_blank'>
+              A Data-Free Symbolic Regression Approach for Solving Equations
+              </a>
+            </td>
+          <td>
+            S. Garmaev, Vinay Sharma, Olga Fink
+          </td>
+          <td>2026-06-05</td>
+          <td>ArXiv</td>
+          <td>1</td>
+          <td>3</td>
+        </tr>
+
         <tr id="None">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/dc1a67251ef17279c823e89712df71f16eb7de5f" target='_blank'>
@@ -1390,19 +1375,19 @@
           <td>3</td>
         </tr>
 
-        <tr id="When learning dynamical systems from data, embedding physical structure can constrain the solution space and improve generalization, but many physics-informed models assume access to the full system state. This limits their use in partially observed settings, where some state variables are completely unobserved and must be inferred without direct supervision. Here, we present neural Hamiltonian ordinary differential equations (NHODE), a framework that combines Hamiltonian neural networks (HNNs) with neural ordinary differential equations (neural ODEs) to learn partially observed dynamical systems from data. The Hamiltonian structure enforces energy conservation by construction, while the neural ODE framework enables a flexible training procedure that allows the loss to be defined only on observed variables. We also incorporate additional physical constraints through symmetry-aware coordinate transformations and separable energy formulations. The framework is evaluated on systems of increasing complexity, from linear and nonlinear mass-spring systems to the chaotic three-body problem. Across all examples, increasing the amount of embedded physical structure improves the accuracy and long-horizon stability of the predictions. Even in the most challenging regimes, the NHODE framework captures both observed and latent dynamics, whereas purely data-driven baselines become unstable.">
+        <tr id="We present in this paper a framework for the identification of control-affine reduced-order models (ROMs). The proposed method utilizes autoencoders (AEs) to transform the high-dimensional states, and potentially the high-dimensional inputs, into reduced latent ones suitable for control-affine state-space dynamics. This is achieved by simultaneous training of the AE and the state-space model. In addition, we extend the discrete ROM formulation to a sequence-based model, which processes state and input histories to improve prediction accuracy while preserving the control-affine structure. We motivate our framework by applying feedback linearization to the derived models, and we present guidelines for its efficient use. The proposed framework is assessed on two numerical examples and its performance is compared to a baseline model, where the AE identifies a latent space with linear state-space dynamics. The assessment involves evaluating the prediction accuracy of the ROM on test data and its effectiveness in controlling the system to a desired state or trajectory.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/34a7779489a071f04f94e2944ec27860d52942e6" target='_blank'>
-              Learning partially observed systems with neural Hamiltonian ordinary differential equations
+          <td><a href="https://www.semanticscholar.org/paper/21cd3fb519caa7a42d473c68e2b326dcec8bb5bb" target='_blank'>
+              Learning Control-Affine Reduced-Order Models via Autoencoders
               </a>
             </td>
           <td>
-            Sunniva Meltzer, Sølve Eidnes, Alexander J. Stasik
+            A. Mjalled, Martin Monnigmann
           </td>
-          <td>2026-05-22</td>
+          <td>2026-06-03</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>9</td>
+          <td>6</td>
         </tr>
 
         <tr id="Extreme events -- such as earthquakes and coronal mass ejections -- are common in many chaotic dynamical systems, yet are difficult to characterize and predict due to the subtle instability mechanisms that drive them. In this work, we develop an interpretable technique that reveals the underlying mechanisms behind extreme events and uses them to build data-driven forecasts and intuitive event suppression controllers. In particular, we utilize the covariance balancing reduction using adjoint snapshots (CoBRAS) method to identify linear oblique projections that best capture the sensitivity of a quantity of interest and reconstruct the original state. Importantly, we bypass the need for cumbersome adjoint calculations, instead using backpropagation via modern automatically differentiable numerical frameworks. To accommodate spatially localized events, we also introduce a new variant of CoBRAS to obtain local sensitivity-balanced projections. We demonstrate the utility of this approach to characterize extreme events across a diverse set of challenging systems, including turbulent bursts of energy dissipation in the 2D Kolmogorov Flow, spontaneous synchronization in networks of coupled FitzHugh-Nagumo oscillators, and the localized formation of ocean rogue waves from a modified nonlinear Schr\"odinger equation. For each example, we show that our simple forecast models accurately predict extreme events and that the underlying mechanisms may be used to design control laws to prevent these events. Finally, we demonstrate that by learning a neural network surrogate model of the dynamics directly from data, we may extend this approach to experimental systems and systems that are not natively written in an automatically differentiable programming language.">
@@ -1420,19 +1405,34 @@
           <td>80</td>
         </tr>
 
-        <tr id="Ordinary differential equation models of biochemical reactions are often formulated as stoichiometric systems in which the dynamics arise from a collection of interacting processes. A central challenge is that the functional form of each process is rarely known a priori and may be difficult to infer from data. We propose biochemically informed neural ordinary differential equations (BINODEs), a neural-ODE framework that retains the stoichiometric structure of mechanistic models while representing individual processes by neural networks. In BINODEs, the outputs of neural network processes (NNPs) are mapped to state derivatives through a linear layer analogous to a stoichiometric matrix. This architecture allows biological side information, such as process-specific inputs, sign constraints, and monotonicity assumptions, to be built directly into the model. We characterize the approximation properties of NNPs for several standard biochemical rate laws and show that the proposed framework recovers both trajectories and process-level structure in Monod, Lotka–Volterra, pharmacokinetic, and ultradian endocrine models. These results suggest that BINODEs offer a useful compromise between mechanistic interpretability and data-driven flexibility for modeling partially known biochemical or biological dynamical systems.">
+        <tr id="Inferring the forces that drive a dynamical system from partial observations is a fundamental challenge across physics, particularly when distinct underlying mechanisms produce similar observable dynamics. Here we show that the effective muscular forcing underlying avian respiratory dynamics can be reconstructed from measurements of air-sac pressure alone. Using an interpretable learning framework based on Kolmogorov-Arnold networks, we infer the governing equations of the system directly from data and uncover a nontrivial structure in the underlying forcing that is not apparent from the pressure signal, which instead suggests a relaxation-like oscillation. The reconstructed dynamics predict a two-phase activation pattern within each respiratory cycle, which we independently validate through electromyographic recordings of expiratory muscles. These results demonstrate that data-driven reconstruction of dynamical laws can reveal hidden physical structure and provide access to unobserved driving variables, establishing a general route to infer latent forces in partially observed dynamical systems.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/297d723b190f721ed9197239ccd588e9deb9049a" target='_blank'>
-              Learning dynamical systems with biochemically informed neural ordinary differential equations
+          <td><a href="https://www.semanticscholar.org/paper/85e7429622c9d33f1c053a27b2bfb733c90a9ca6" target='_blank'>
+              Inferring hidden forcing in a biological oscillator using Kolmogorov-Arnold networks
               </a>
             </td>
           <td>
-            Luis L. Fonseca, Reinhard C. Laubenbacher, Lucas Böttcher
+            J. Szereszewski, F. Fainstein, Leandro E. Fernandez, G. Mindlin
           </td>
-          <td>2026-05-22</td>
-          <td>bioRxiv</td>
+          <td>2026-06-07</td>
+          <td>ArXiv</td>
           <td>0</td>
-          <td>7</td>
+          <td>32</td>
+        </tr>
+
+        <tr id="Monitoring electromechanical oscillations is crucial for maintaining the stability of modern power systems, particularly in the presence of increasing penetrations of inverter-based resources (IBRs), which introduce new dynamic behaviors. In this work, we propose a hierarchical multiscale framework based on the SINDy-SENDAI algorithm to characterize the transient dynamics captured by wide-area measurements. The proposed deep learning architecture robustly separates low- and high-frequency components embedded in sensor data and incorporates a Sparse Identification of Nonlinear Dynamical Systems (SINDy) module in the latent space to identify parsimonious governing equations. In contrast to conventional deep learning approaches that often produce black-box models with limited interpretability, the proposed framework learns an explicit dynamical representation, enabling physical interpretation, stability assessment, and forecasting of electromechanical oscillations. Given the societal importance of modern power systems, the proposed approach is specifically designed to satisfy key requirements for practical deployment, namely robustness, interpretability, and stable performance under diverse operating conditions. The framework is first validated on the two-area Kundur test system using conventional modal analysis as ground truth and subsequently demonstrated on two real-world datasets: the 2016 Iberian oscillatory event and the 2021 ambient measurements from the southern Italian power grid. The results show that SINDy-SENDAI consistently outperforms the state-of-the-art Hankel-DMD method and that the learned latent dynamics are sufficiently informative to accurately reconstruct and predict the behavior of the full system in the original state space.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/5ae1a6d8f3469ccbaa022a51581d8391d0048bb0" target='_blank'>
+              Data-Driven Discovery of Multiscale Power System Oscillation Governing Equations Using SINDy-SENDAI
+              </a>
+            </td>
+          <td>
+            Andrea Pomarico, Y. Bao, L. Marš, Salvatore Gao, Tessitore Giorgio Maria, Alberto Giannuzzi, J. Berizzi, Nathan Kutz
+          </td>
+          <td>2026-07-03</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>14</td>
         </tr>
 
         <tr id="Parameter estimation in nonlinear dynamical systems from observational data is a fundamental inverse problem with applications in many disciplines. In practice, this is further complicated by the fact that observations are often noisy, sparse, and available only for a subset of the state variables. Furthermore, the initial condition (IC) may be unknown or inaccurate, causing further complications for chaotic systems with sensitive dependence on initial conditions. In this work, we develop a data-assimilation-augmented optimization framework for parameter estimation in ordinary differential equations using partial state observations. The method introduces a nudged system driven by the available observed component and estimates the unknown parameters by minimizing a cost functional, defined as a time-delayed mismatch between the observations and the corresponding observed component of the nudged solution over the admissible parameter space. Since the nudged system can be arbitrarily initialized, this approach eliminates the dependence on accurate IC. Using the Lorenz-63 system as a test case, we establish theoretical results showing synchronization of the nudged solution under parameter agreement, stability under parameter mismatch, and well-posedness of the data-to-parameter inverse map under suitable nondegeneracy conditions. Structural&practical identifiability, and Sobol sensitivity analyses are incorporated to assess which parameters can be reliably estimated from the observations. Numerical experiments in both chaotic and non-chaotic regimes show that this framework accurately recovers parameters from noisy partial observations. Comparisons with an on-the-fly parameter learning method and with Bayesian MCMC estimation demonstrate that the proposed method remains accurate under partial observations and higher noise levels while requiring substantially lower computational cost.">
@@ -1465,6 +1465,21 @@
           <td>5</td>
         </tr>
 
+        <tr id="Efficient parametric transient prediction at unseen parameter values and under new operating conditions remains challenging because repeated high-fidelity simulations are computationally prohibitive. Existing data-driven surrogates and parametric reduced-order models perform well within sampled ranges but often lose reliability beyond them. This study proposes a physics-guided spectral parametric reduced-order modeling framework for controlled dynamical systems. Parameter-dependent reduced spectral operators are identified from transient snapshots using Dynamic Mode Decomposition with control, separating intrinsic dynamics from external control effects. After physics-guided parameter transformation, aligned spectral quantities and reduced operator components are propagated across parameter conditions using Secondary Dynamic Mode Decomposition, with linear and radial basis function regressions as baselines. Baseline regularization and nondimensional time mapping improve robustness. Validation uses a mechanical transmission system, a Helium-Xenon closed Brayton cycle, and a Karman vortex street, covering linear transient, nonlinear transient, and nonlinear periodic dynamics. For the mechanical and Brayton systems, system-level multivariable responses at unseen parameter values and under new operating conditions are predicted with relative norm errors below 1%. For the vortex-street system, nondimensional time mapping preserves dominant vortex-shedding structures across Reynolds numbers. Further analyses compare the framework with an LSTM surrogate and assess extrapolation confidence using an auxiliary error-prediction model. Overall, the framework extends parametric reduced-order modeling from in-domain approximation toward extrapolative transient prediction of controlled dynamical systems under unseen conditions.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/b7edefc8ce8dcdce82c8483243ea6a69eaddd64e" target='_blank'>
+              Physics-Guided Spectral Parametric Reduced-Order Modeling for Transient Prediction of Controlled Dynamical Systems
+              </a>
+            </td>
+          <td>
+            Ao Zhang, Tianmin Zhang, A. Cammi, Xiang Wang
+          </td>
+          <td>2026-07-20</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>39</td>
+        </tr>
+
         <tr id="None">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/b2c0850f8564d21ebc6023cd3f3ff62eec5347f1" target='_blank'>
@@ -1480,21 +1495,6 @@
           <td>6</td>
         </tr>
 
-        <tr id="Reconstructing continuous state trajectories of chaotic dynamical systems from sparse, noisy observations remains a fundamental open problem in nonlinear science. We introduce the Physics-Informed Diffusion Model with Dormand-Prince Integration (PIDM-DP), which embeds a fully differentiable 5th-order Dormand-Prince (DP-RK45) ODE integrator directly into the reverse sampling loop of a Denoising Diffusion Probabilistic Model (DDPM). At each denoising step, physics residuals are back-propagated via automatic differentiation, constraining every generated trajectory to satisfy the system's governing equations to 5th-order accuracy. A linear-scheduled guidance mechanism that ramps the physics weight from zero at high noise levels to its full value near the clean-data limit prevents the gradient explosions that cause naive physics-informed approaches to fail on stiff systems with Jacobian eigenvalues of order $O(10^3)$. Evaluated across five benchmark systems of increasing complexity 3D Lorenz, 3D R\"ossler, 5D Hyperchaotic, 20D Lorenz-96, and the stiff 3D Rabinovich-Fabrikant at 10% observation density with additive Gaussian noise ($\sigma=0.05$), PIDM-DP achieves reconstruction RMSE improvements of up to $15.4\times$ over an unconstrained diffusion baseline and decisively outperforms the Ensemble Kalman Filter on stiff systems where ensemble covariance collapses. On the Rabinovich-Fabrikant out-of-distribution benchmark, PIDM-DP attains RMSE $0.1097 \pm 0.0269$ versus $0.9443 \pm 0.5288$ (unconstrained diffusion, $8.6\times$ worse) and $0.3561 \pm 0.3040$ (EnKF, $3.2\times$ worse), with $p<0.001$ in paired Wilcoxon tests ($N = 30$). Topological validation via the Rosenstein Lyapunov estimator confirms that PIDM-DP preserves the chaotic invariant measure.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/3949e42e1cc8122cb48de271aa259e005552c139" target='_blank'>
-              PIDM-DP: Physics-Informed Diffusion with Dormand-Prince Integration for Chaotic System Identification and State Reconstruction across Multiple Dynamical Regimes
-              </a>
-            </td>
-          <td>
-            S. Dabral
-          </td>
-          <td>2026-05-26</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>0</td>
-        </tr>
-
         <tr id="We propose a Koopman-enhanced physics-informed neural network (K--PINN) framework for parameter inference and forecasting in nonlinear epidemic models. This method combines Koopman operator theory and physics-informed learning. It maps epidemic states into a latent observable space where the dynamics evolve approximately linearly while satisfying the governing epidemic equations through automatic differentiation. This integration improves interpretability, parameter identifiability, and long-term predictive stability. We apply the proposed framework to a normalized SEIRSD epidemic model and evaluate it using synthetic monkeypox (Mpox) data and real-world datasets from Germany, Morocco, and Sweden for the SARS-CoV-2 virus. Synthetic trajectories are generated using a structure-preserving, nonstandard finite difference scheme to ensure reliable training data. Numerical results demonstrate that K--PINN achieves more accurate parameter estimation, trajectory reconstruction, and long-term forecasting than classical PINNs and Koopman-EDMD approaches. These results suggest that K--PINN is an effective machine learning framework for epidemic modeling that can be extended to more complex systems.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/a250436ce61d3b04d26ef09879181b7f1f744963" target='_blank'>
@@ -1508,21 +1508,6 @@
           <td>ArXiv</td>
           <td>0</td>
           <td>14</td>
-        </tr>
-
-        <tr id="This paper introduces a Physics-Informed Compressed Sensing (PICS) framework for high-fidelity condition monitoring of rotating machinery in Industrial Internet of Things (IIoT) environments. Classical compressed sensing methods rely solely on generic signal priors like sparsity, often producing reconstructions that are mathematically plausible but physically in-consistent, especially in low-measurement or high-noise regimes. Our proposed method fundamentally enhances the reconstruction process by embedding the governing differential equations of rotor dynamics directly into the optimization problem as a regularizer. This is achieved by introducing a "physics-residual" penalty term that forces the reconstructed signal to conform to the system’s known Lagrangian dynamics. We validate our framework using simulated data from a Jeffcott rotor model under various fault conditions, including mass unbalance and stiffness asymmetry. Experimental results demonstrate that our PICS approach significantly outperforms standard compressed sensing in both reconstruction accuracy (up to a 10 dB SNR improvement) and downstream fault diagnosis, especially at compression ratios below 30%. This work paves the way for more robust and data-efficient monitoring systems that reduce communication overhead in critical IIoT applications.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/208ad2fec07fe3e2a83f269dde894dbbc09eff81" target='_blank'>
-              Physics-Informed Compressed Sensing: Incorporating Rotor Dynamic Equations for High-Fidelity State Estimation from Sub-Nyquist Samples
-              </a>
-            </td>
-          <td>
-            Arian Sardari
-          </td>
-          <td>2026-05-24</td>
-          <td>ICC 2026 - IEEE International Conference on Communications</td>
-          <td>0</td>
-          <td>0</td>
         </tr>
 
         <tr id="Reduced-order models (ROMs) are widely employed to describe complex system dynamics when simulations with full-order models (FOMs) are computationally prohibitive. This study presents POD–AS–PRS, a novel model-reduction framework based on the active subspaces (AS) technique, which performs dimensionality reduction in both the state and parameter spaces, enabling efficient and high-fidelity approximations of quantities of interest (QoI). The approach employs proper orthogonal decomposition (POD) to extract low-dimensional coefficients from computational fluid dynamics (CFD) snapshots, which are inputs to a residual neural network (ResNet) with linear layers to learn their nonlinear mapping to QoI. Reverse-mode automatic differentiation (AD) is utilized to compute gradients with respect to the coefficients, enabling AS analysis to identify influential modes by shifting the analysis to the POD coefficient space, thereby achieving a dual-stage dimensionality reduction driven by QoI sensitivity rather than modal energy. A surrogate model is subsequently constructed using a polynomial response surface (PRS) based on AS-derived active variables, retaining only the highly influential POD coefficients to ensure accurate and efficient QoI reconstruction. The framework is validated on periodic and chaotic bluff-body flows, demonstrating high accuracy with few influential parameters, while AD-based gradients achieve a two-order-of-magnitude speed-up over finite-difference approximations. Sensitivity analysis further reveals that the influential coefficients are not necessarily proportional to modal energy, highlighting the critical flow structures. Consequently, POD–AS–PRS identifies a low-dimensional manifold of sensitivity-dominant parameters that govern the QoI, elucidating the essential flow structures and their coupling with control parameters, thereby enabling efficient and accurate QoI reconstruction.">
@@ -1570,7 +1555,7 @@
 
   var trace1 = {
     x: ['2025', '2026'],
-    y: [0, 3],
+    y: [0, 5],
     name: 'Num of citations',
     yaxis: 'y1',
     type: 'scatter'
