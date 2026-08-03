@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-07-27 07:20:20 UTC</i>
+  <i class="footer">This page was last updated on 2026-08-03 07:19:21 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -520,8 +520,20 @@
           </td>
           <td>2020-01-31</td>
           <td>IEEE Robotics and Automation Letters</td>
-          <td>33</td>
+          <td>34</td>
           <td>28</td>
+        </tr>
+
+        <tr id="The Sparse Identification of Nonlinear Dynamics (SINDy) method yields compact and interpretable models that preserve physical system properties, offering a superior alternative to black-box models. This work proposes a computationally efficient Model Predictive Control (MPC) algorithm for SINDy models. The algorithm employs a successively obtained online linear Taylor approximation of the model for future prediction, while the full SINDy model captures past dynamics. As a result, the nonlinear MPC problem is reformulated as a tractable quadratic program. The implementation covers three discretization schemes: the first-order Euler and the simplified and full fourth-order Runge–Kutta. Simulation benchmarks for population dynamics and aircraft models show that the algorithm achieves performance comparable to nonlinear MPC with significantly lower complexity, enabling real-time use.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/8e1287623ea202d1165de7ea4de37ff9c3652401" target='_blank'>Computationally Efficient Predictive Control Using SINDy Models</a></td>
+          <td>
+            M. Lawryńczuk, A. Samek
+          </td>
+          <td>2026-06-08</td>
+          <td>Electronics</td>
+          <td>0</td>
+          <td>20</td>
         </tr>
 
         <tr id="System identification, the process of deriving mathematical models of dynamical systems from observed input-output data, has undergone a paradigm shift with the advent of learning-based methods. Addressing the intricate challenges of data-driven discovery in nonlinear dynamical systems, these methods have garnered significant attention. Among them, Sparse Identification of Nonlinear Dynamics (SINDy) has emerged as a transformative approach, distilling complex dynamical behaviors into interpretable linear combinations of basis functions. However, SINDy’s reliance on domain-specific expertise to construct its foundational ‘library’ of basis functions limits its adaptability and universality. In this work, we introduce a nonlinear system identification framework LeARN that transcends the need for prior domain knowledge by learning the library of basis functions directly from data. To enhance adaptability to evolving system dynamics under varying noise conditions, we employ a novel meta-learning-based system identification approach that utilizes a light-weight Deep Neural Network (DNN) to dynamically refine these basis functions. This not only captures intricate system behaviors but also adapts effectively to new dynamical regimes. We validate our framework on the Neural Fly dataset, showcasing its robust adaptation and generalization capabilities. Despite its simplicity, our LeARN achieves competitive dynamical error performance to SINDy. This work presents a step towards autonomous discovery of dynamical systems, paving the way for a future where machine learning uncovers the governing principles of complex systems without requiring extensive domain-specific interventions.">
@@ -544,7 +556,7 @@
           </td>
           <td>2020-04-05</td>
           <td>Proceedings. Mathematical, Physical, and Engineering Sciences</td>
-          <td>374</td>
+          <td>378</td>
           <td>80</td>
         </tr>
 
@@ -570,18 +582,6 @@
           <td>ArXiv</td>
           <td>3</td>
           <td>3</td>
-        </tr>
-
-        <tr id="Learning governing equations from data is central to understanding the behavior of physical systems across diverse scientific disciplines, including physics, biology, and engineering. The Sindy algorithm has proven effective in leveraging sparsity to identify concise models of nonlinear dynamical systems. In this paper, we extend sparsity-driven approaches to real-time learning by integrating a cornerstone algorithm from control theory -- the Kalman filter (KF). The resulting Sindy Kalman Filter (SKF) unifies both frameworks by treating unknown system parameters as state variables, enabling real-time inference of complex, time-varying nonlinear models unattainable by either method alone. Furthermore, SKF enhances KF parameter identification strategies, particularly via look-ahead error, significantly simplifying the estimation of sparsity levels, variance parameters, and switching instants. We validate SKF on a chaotic Lorenz system with drifting or switching parameters and demonstrate its effectiveness in the real-time identification of a sparse nonlinear aircraft model built from real flight data.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/d50f61ec047a0a24e2085fc8043077c49a8cfb95" target='_blank'>On-line learning of dynamic systems: sparse regression meets Kalman filtering</a></td>
-          <td>
-            G. Pillonetto, Akram Yazdani, A. Aravkin
-          </td>
-          <td>2025-11-14</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>79</td>
         </tr>
 
   </tbody>

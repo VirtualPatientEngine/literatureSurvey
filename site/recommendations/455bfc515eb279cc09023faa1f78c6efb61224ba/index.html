@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-07-27 07:19:48 UTC</i>
+  <i class="footer">This page was last updated on 2026-08-03 07:18:49 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -488,6 +488,18 @@
           <td>6</td>
         </tr>
 
+        <tr id="Abstract Background Irregularly sampled data, as a common data structure in the medical field, is frequently observed in emergency clinical datasets. It poses problems such as unequal sampling time intervals and frequencies, making it difficult to align the data without losing information for input into models. Meanwhile, due to information loss in the dataset, it is also difficult for the model to effectively analyze the overall data variation and predict the complex and dynamic conditions of emergency patients in the future. Objective This study aimed to address the impact of issues such as missing values and irregularly sampled time intervals on prediction results. This paper proposes a method that converts time-series data into a graph network structure and develops a prediction model for graph data to better support complex tasks. Methods In this paper, feature channels and measurement times in time-series data are constructed as nodes, and feature measurements at time points are constructed as edge weights. The point feature space and edge weight space are extracted by a graph convolutional neural network and a gated convolutional attention mechanism network, respectively, and feature fusion is carried out under the action of the learnable head. Results The proposed method was tested on 4 datasets and compared with both irregularly sampled time-series predictors and state-of-the-art methods for complete data. In addition, a dedicated analysis was conducted leveraging data from 5 key clinical treatment phases. In single-target classification and single-target regression tasks, the method proposed in this study outperforms other comparative methods in most experiments (accuracy=0.74‐0.88, area under the curve=0.70‐0.87, and mean absolute error=0.038‐0.061). Meanwhile, this study constructs clinical phenotypes during patients’ hospitalization as multitarget prediction tasks, and the proposed model also outperforms comparative methods in multitarget classification tasks (mean accuracy=0.75‐0.91 and mean area under the curve=0.70‐0.75). Ablation experiments verify the effectiveness of fusion between the node feature space and the edge feature space. The interpretability analysis of time points identifies key features that require focused attention for patients across different target tasks and time periods. Conclusions The proposed model can effectively analyze medical data with missing values and uneven sampling. It achieves high prediction accuracy in both regression prediction tasks and classification tasks. The graph network-based model structure endows the model with better interpretability, enabling effective exploration of factors that trigger changes.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/1a6603fa7496992db0fd12abd025a770498ac6d3" target='_blank'>Graph Network Feature Space Fusion for Predicting Irregularly Sampled Medical Time-Series Data: Deep Learning Model Development and Validation Study</a></td>
+          <td>
+            Tianle Hong, Zedong Ren, Junfei Fang, Shichao Quan, Jingye Pan, Yezhi Lin
+          </td>
+          <td>2026-07-03</td>
+          <td>JMIR Medical Informatics</td>
+          <td>0</td>
+          <td>7</td>
+        </tr>
+
         <tr id="Real-world applications often involve irregular time series, for which the time intervals between successive observations are non-uniform. Irregularity across multiple features in a multi-variate time series further results in a different subset of features at any given time (i.e., asynchronicity). Existing pre-training schemes for time-series, however, often assume regularity of time series and make no special treatment of irregularity. We argue that such irregularity offers insight about domain property of the data—for example, frequency of hospital visits may signal patient health condition—that can guide representation learning. In this work, we propose PrimeNet to learn a self-supervised representation for irregular multivariate time-series. Specifically, we design a time sensitive contrastive learning and data reconstruction task to pre-train a model. Irregular time-series exhibits considerable variations in sampling density over time. Hence, our triplet generation strategy follows the density of the original data points, preserving its native irregularity. Moreover, the sampling density variation over time makes data reconstruction difficult for different regions. Therefore, we design a data masking technique that always masks a constant time duration to accommodate reconstruction for regions of different sampling density. We learn with these tasks using unlabeled data to build a pre-trained model and fine-tune on a downstream task with limited labeled data, in contrast with existing fully supervised approach for irregular time-series, requiring large amounts of labeled data. Experiment results show that PrimeNet significantly outperforms state-of-the-art methods on naturally irregular and asynchronous data from Healthcare and IoT applications for several downstream tasks, including classification, interpolation, and regression.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/70e5e9bd353d1b1e54b4eebd3a67b58026a13dff" target='_blank'>PrimeNet: Pre-training for Irregular Multivariate Time Series</a></td>
@@ -496,7 +508,7 @@
           </td>
           <td>2023-06-26</td>
           <td>DBLP</td>
-          <td>43</td>
+          <td>44</td>
           <td>18</td>
         </tr>
 
@@ -558,18 +570,6 @@
           <td>ArXiv</td>
           <td>0</td>
           <td>16</td>
-        </tr>
-
-        <tr id="Irregularly sampled time series are increasingly prevalent, particularly in medical domains. While various specialized methods have been developed to handle these irregularities, effectively modeling their complex dynamics and pronounced sparsity remains a challenge. This paper introduces a novel perspective by converting irregularly sampled time series into line graph images, then utilizing powerful pre-trained vision transformers for time series classification in the same way as image classification. This method not only largely simplifies specialized algorithm designs but also presents the potential to serve as a universal framework for time series modeling. Remarkably, despite its simplicity, our approach outperforms state-of-the-art specialized algorithms on several popular healthcare and human activity datasets. Especially in the rigorous leave-sensors-out setting where a portion of variables is omitted during testing, our method exhibits strong robustness against varying degrees of missing observations, achieving an impressive improvement of 42.8% in absolute F1 score points over leading specialized baselines even with half the variables masked. Code and data are available at https://github.com/Leezekun/ViTST">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/3f4bd6e35eca865b0226f1bc0da9fc5f0dc948a8" target='_blank'>Time Series as Images: Vision Transformer for Irregularly Sampled Time Series</a></td>
-          <td>
-            Zekun Li, SHIYANG LI, Xifeng Yan
-          </td>
-          <td>2023-03-01</td>
-          <td>ArXiv</td>
-          <td>130</td>
-          <td>70</td>
         </tr>
 
         <tr id="Irregularly sampled time series are increasingly prevalent, particularly in medical domains. While various specialized methods have been developed to handle these irregularities, effectively modeling their complex dynamics and pronounced sparsity remains a challenge. This paper introduces a novel perspective by converting irregularly sampled time series into line graph images, then utilizing powerful pre-trained vision transformers for time series classification in the same way as image classification. This method not only largely simplifies specialized algorithm designs but also presents the potential to serve as a universal framework for time series modeling. Remarkably, despite its simplicity, our approach outperforms state-of-the-art specialized algorithms on several popular healthcare and human activity datasets. Especially in the rigorous leave-sensors-out setting where a portion of variables is omitted during testing, our method exhibits strong robustness against varying degrees of missing observations, achieving an impressive improvement of 42.8% in absolute F1 score points over leading specialized baselines even with half the variables masked. Code and data are available at https://github.com/Leezekun/ViTST">
