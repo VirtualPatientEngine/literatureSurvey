@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-08-17 06:17:55 UTC</i>
+  <i class="footer">This page was last updated on 2026-08-24 06:20:20 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -496,7 +496,7 @@
           </td>
           <td>2023-07-07</td>
           <td>IEEE Transactions on Pattern Analysis and Machine Intelligence</td>
-          <td>524</td>
+          <td>530</td>
           <td>56</td>
         </tr>
 
@@ -520,8 +520,20 @@
           </td>
           <td>2023-09-25</td>
           <td>International Journal of Data Science and Analytics</td>
-          <td>25</td>
+          <td>26</td>
           <td>8</td>
+        </tr>
+
+        <tr id="Modeling multivariate time series by representing them as graphs, where individual series act as nodes and pairwise temporal corre- lations serve as edges, has gained significant traction. Recent advances in Graph Neural Networks (GNNs) have demonstrated strong perfor- mance by assuming a static graph topology and aggregating information from neighboring series. In this work, we investigate the representa- tional power of GNNs for forecasting under both static and dynamic settings (i.e., when pairwise correlations evolve drastically over time) and identify critical limitations in current architectures. To formalize this, we first propose Temporal Correlation Volatility (TCV), a model- agnostic metric designed to quantify the distributional evolution of these latent structures. We establish a clear connection between TCV and performance degradation, demonstrating that many popular models, including Transformers, generalize poorly in high-TCV settings and are often outperformed by simple structure-agnostic baselines. To address these limitations, we propose Graph Layer for Inference in Dynamic En- vironments (GLIDE), a novel GNN layer enhanced by two theoretically grounded design mechanisms: (D1) Path-based Message Passing, which captures path-based neighborhoods and (D2) Static and Dynamic Propagation Separation, which identifies optimal dynamics via local static approximation. These components significantly improve learning under dynamic topology while preserving robustness in static scenarios. Ex- tensive experiments on synthetic and real-world benchmarks show that GLIDE improves average performance by up to 45.6% across static and dynamic settings, with the largest gain reaching 85.7%. The source code is available at https://github.com/ChenS676/GLIDE.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/c8b50aae335188e3031eaf074c25c8a10ef57b4c" target='_blank'>When GNNs Fail: Quantifying and Overcoming Temporal Correlation Volatility in Time Series</a></td>
+          <td>
+            Chen Shao, Yue Wang, Zhenyi Zhu, Zhanbo Huang, Tobias Käfer, Zonghan Wu, Danai Koutra
+          </td>
+          <td>2026-08-07</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>40</td>
         </tr>
 
         <tr id="This article surveys heuristic-based and learning-based approaches for constructing adjacency matrices in Graph Neural Network (GNN)-based anomaly detection for multivariate time series (MTS). Effective adjacency matrix construction is crucial for GNN performance, enabling the model to capture dependencies between time series variables. Heuristic methods, like pairwise correlation, distance-based or dynamic time warping distances, offer simplicity but may struggle with complex relationships. Learning-based approaches, leveraging techniques such as attention mechanisms or graph learning layers, dynamically learn the graph structure from the data, potentially capturing more nuanced dependencies. This survey systematizes existing methods within both paradigms, comparing their strengths, weaknesses, computational complexities. Finally, it identifies open challenges and future research directions, focusing on improving computational time and accuracy of GNN-based anomaly detection using advanced graph construction techniques.">
@@ -532,7 +544,7 @@
           </td>
           <td>2025-05-28</td>
           <td>2025 XXVIII International Conference on Soft Computing and Measurements (SCM)</td>
-          <td>1</td>
+          <td>2</td>
           <td>1</td>
         </tr>
 
@@ -546,18 +558,6 @@
           <td>ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</td>
           <td>14</td>
           <td>44</td>
-        </tr>
-
-        <tr id="Modeling heterogeneous correlated time series requires the ability to learn hidden dynamic relationships between component time series with possibly varying periodicities and generative processes. To address this challenge, we formulate and evaluate a windowed variance-correlation metric (WVC) designed to quantify time-varying correlations between signals. This method directly recovers hidden relationships in an specified time interval as a weighted adjacency matrix, consequently inferring hidden dynamic graph structure. On simulated data, our method captures correlations that other methods miss. The proposed method expands the ability to learn dynamic graph structure between significantly different signals within a single cohesive dynamical graph model.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/4ecc89f9bb50e8b9feabc302da4a9bf5a9063e42" target='_blank'>Inferring Dynamic Hidden Graph Structure in Heterogeneous Correlated Time Series</a></td>
-          <td>
-            Jeshwanth Mohan, Bharath Ramsundar, Sandya Subramanian
-          </td>
-          <td>2025-12-01</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>19</td>
         </tr>
 
   </tbody>

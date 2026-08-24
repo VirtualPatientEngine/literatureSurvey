@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-08-17 06:18:19 UTC</i>
+  <i class="footer">This page was last updated on 2026-08-24 06:20:31 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -476,112 +476,112 @@
   </thead>
   <tbody>
 
-        <tr id="Significance Understanding dynamic constraints and balances in nature has facilitated rapid development of knowledge and enabled technology, including aircraft, combustion engines, satellites, and electrical power. This work develops a novel framework to discover governing equations underlying a dynamical system simply from data measurements, leveraging advances in sparsity techniques and machine learning. The resulting models are parsimonious, balancing model complexity with descriptive ability while avoiding overfitting. There are many critical data-driven problems, such as understanding cognition from neural recordings, inferring climate patterns, determining stability of financial markets, predicting and suppressing the spread of disease, and controlling turbulence for greener transportation and energy. With abundant data and elusive laws, data-driven discovery of dynamics will continue to play an important role in these efforts. Extracting governing equations from data is a central challenge in many diverse areas of science and engineering. Data are abundant whereas models often remain elusive, as in climate science, neuroscience, ecology, finance, and epidemiology, to name only a few examples. In this work, we combine sparsity-promoting techniques and machine learning with nonlinear dynamical systems to discover governing equations from noisy measurement data. The only assumption about the structure of the model is that there are only a few important terms that govern the dynamics, so that the equations are sparse in the space of possible functions; this assumption holds for many physical systems in an appropriate basis. In particular, we use sparse regression to determine the fewest terms in the dynamic governing equations required to accurately represent the data. This results in parsimonious models that balance accuracy with model complexity to avoid overfitting. We demonstrate the algorithm on a wide range of problems, from simple canonical systems, including linear and nonlinear oscillators and the chaotic Lorenz system, to the fluid vortex shedding behind an obstacle. The fluid example illustrates the ability of this method to discover the underlying dynamics of a system that took experts in the community nearly 30 years to resolve. We also show that this method generalizes to parameterized systems and systems that are time-varying or have external forcing.">
+        <tr id="Estimating governing equations from observed time-series data is crucial for understanding dynamical systems. From the perspective of system comprehension, the demand for accurate estimation and interpretable results has been particularly emphasized. Herein, we propose a novel data-driven method for estimating the governing equations of dynamical systems based on machine learning with high accuracy and interpretability. The proposed method enhances the estimation accuracy for dynamical systems using sparse modeling by incorporating physical constraints derived from Hamiltonian mechanics. Unlike conventional approaches used for estimating governing equations for dynamical systems, we employ a sparse representation of Hamiltonian, allowing for the estimation. Using noisy observational data, the proposed method demonstrates a capability to achieve accurate parameter estimation and extraction of essential nonlinear terms. In addition, it is shown that estimations based on energy conservation principles exhibit superior accuracy in long-term predictions. These results collectively indicate that the proposed method accurately estimates dynamical systems while maintaining interpretability.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/5d150cec2775f9bc863760448f14104cc8f42368" target='_blank'>Discovering governing equations from data by sparse identification of nonlinear dynamical systems</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/18c6dbc4e20d80b81497e8c444e6f9a9ee1acf36" target='_blank'>Sparse Estimation for Hamiltonian Mechanics</a></td>
           <td>
-            S. Brunton, J. Proctor, J. Kutz
+            Yuya Note, Masahito Watanabe, Hiroaki Yoshimura, Takaharu Yaguchi, Toshiaki Omori
           </td>
-          <td>2015-09-11</td>
-          <td>Proceedings of the National Academy of Sciences</td>
-          <td>5324</td>
-          <td>80</td>
-        </tr>
-
-        <tr id="Harnessing data to discover the underlying governing laws or equations that describe the behavior of complex physical systems can significantly advance our modeling, simulation and understanding of such systems in various science and engineering disciplines. This work introduces a novel approach called physics-informed neural network with sparse regression to discover governing partial differential equations from scarce and noisy data for nonlinear spatiotemporal systems. In particular, this discovery approach seamlessly integrates the strengths of deep neural networks for rich representation learning, physics embedding, automatic differentiation and sparse regression to approximate the solution of system variables, compute essential derivatives, as well as identify the key derivative terms and parameters that form the structure and explicit expression of the equations. The efficacy and robustness of this method are demonstrated, both numerically and experimentally, on discovering a variety of partial differential equation systems with different levels of data scarcity and noise accounting for different initial/boundary conditions. The resulting computational framework shows the potential for closed-form model discovery in practical applications where large and accurate datasets are intractable to capture. Recovery of underlying governing laws or equations describing the evolution of complex systems from data can be challenging if dataset is damaged or incomplete. The authors propose a learning approach which allows to discover governing partial differential equations from scarce and noisy data.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/e596988b1df3a0bc78bf72c0bfdb21c85eaab6c9" target='_blank'>Physics-informed learning of governing equations from scarce data</a></td>
-          <td>
-            Zhao Chen, Yang Liu, Hao Sun
-          </td>
-          <td>2020-05-05</td>
-          <td>Nature Communications</td>
-          <td>674</td>
-          <td>15</td>
-        </tr>
-
-        <tr id="None">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/e2acd4a2bc6af5deb02f542846766868e3f1b180" target='_blank'>Deep learning of physical laws from scarce data</a></td>
-          <td>
-            Zhao Chen, Yang Liu, Hao Sun
-          </td>
-          <td>2020-05-05</td>
-          <td>ArXiv</td>
-          <td>19</td>
-          <td>15</td>
-        </tr>
-
-        <tr id="Many physical systems are governed by differential equations, yet accurately identifying these equations from noisy or limited data remains a significant challenge. This study applies Sparse Identification of Nonlinear Dynamics (SINDy) and Physics-Informed Neural Networks (PINNs) to recover underlying physical laws from data, with methods generalizable across a range of systems. Two test cases were examined: a damped oscillator (ODE) and one-dimensional heat diffusion (PDE).Ground-truth data were generated by numerically solving the governing equations under specified spatial and temporal domains, initial conditions, and physical parameters. Controlled noise was added to simulate real-world measurement uncertainty. Models were trained on noisy data using gradient-based optimization, with convergence evaluated through training and validation loss as well as physical consistency metrics. Results were visualized via trajectory comparisons, coefficient estimates, and error evolution. SINDy successfully recovered governing dynamics for both systems under noisy conditions. For the heat equation, the estimated diffusion coefficient closely matched the true value, with a bootstrap mean of $\check{\text{k} } = 0.200046$ and a 95% confidence interval of [0.199493, 0.200070], demonstrating strong accuracy and stability. In contrast, PINNs showed systematic underestimation of parameters and variability across random seeds, even when loss convergence was achieved. These findings suggest that sparse regression offers robust and interpretable equation discovery, while PINNs are better suited for solution reconstruction when guided by known physical structure.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/97a726d812a600f43aff730db936bdbd5149c184" target='_blank'>Data-Driven Discovery of Governing Physical Laws Using Scientific Machine Learning</a></td>
-          <td>
-            Grace Yao
-          </td>
-          <td>2026-06-24</td>
-          <td>2026 23rd International Joint Conference on Computer Science and Software Engineering (JCSSE)</td>
+          <td>2024-03-25</td>
+          <td>Mathematics</td>
           <td>0</td>
-          <td>6</td>
+          <td>12</td>
         </tr>
 
-        <tr id="None">
+        <tr id="Machine learning has become a powerful tool for discovering governing laws of dynamical systems from data. However, most existing approaches degrade severely when observations are sparse, noisy, or irregularly sampled. In this work, we address the problem of learning symbolic representations of nonlinear Hamiltonian dynamical systems under extreme data scarcity by explicitly incorporating physical structure into the learning architecture. We introduce Adaptable Symplectic Recurrent Neural Networks (ASRNNs), a parameter-cognizant, structure-preserving model that combines Hamiltonian learning with symplectic recurrent integration, avoiding time derivative estimation, and enabling stable learning under noise. We demonstrate that ASRNNs can accurately predict long-term dynamics even when each training trajectory consists of only two irregularly spaced time points, possibly corrupted by correlated noise. Leveraging ASRNNs as structure-preserving data generators, we further enable symbolic discovery using independent regression methods (SINDy and PySR), recovering exact symbolic equations for polynomial systems and consistent polynomial approximations for non-polynomial Hamiltonians. Our results show that such architectures can provide a robust pathway to interpretable discovery of Hamiltonian dynamics from sparse and noisy data.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/3b44db6efdb3999b65be446114afb04720e572cc" target='_blank'>Modeling of dynamical systems through deep learning</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/99f690565578223aea8734223923ab89beb70fdc" target='_blank'>Machine Learning Hamiltonian Dynamical Systems with Sparse and Noisy Data</a></td>
           <td>
-            P. Rajendra, V. Brahmajirao
+            Vedanta Thapar, Abhinav Gupta
           </td>
-          <td>2020-11-22</td>
-          <td>Biophysical Reviews</td>
-          <td>75</td>
+          <td>2026-04-19</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>2</td>
+        </tr>
+
+        <tr id="We introduce Sparse Symplectically Integrated Neural Networks (SSINNs), a novel model for learning Hamiltonian dynamical systems from data. SSINNs combine fourth-order symplectic integration with a learned parameterization of the Hamiltonian obtained using sparse regression through a mathematically elegant function space. This allows for interpretable models that incorporate symplectic inductive biases and have low memory requirements. We evaluate SSINNs on four classical Hamiltonian dynamical problems: the Henon-Heiles system, nonlinearly coupled oscillators, a multi-particle mass-spring system, and a pendulum system. Our results demonstrate promise in both system prediction and conservation of energy, outperforming the current state-of-the-art black-box prediction techniques by an order of magnitude. Further, SSINNs successfully converge to true governing equations from highly limited and noisy data, demonstrating potential applicability in the discovery of new physical governing equations.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/767e50c134f136784aeee75b1448c947e19bf6ad" target='_blank'>Sparse Symplectically Integrated Neural Networks</a></td>
+          <td>
+            Daniel M. DiPietro, S. Xiong, Bo Zhu
+          </td>
+          <td>2020-06-10</td>
+          <td>ArXiv</td>
+          <td>36</td>
+          <td>20</td>
+        </tr>
+
+        <tr id="Physics-informed machine learning (PIML) has emerged as a promising alternative to classical methods for predicting dynamical systems, offering faster and more generalizable solutions. However, existing models, including recurrent neural networks (RNNs), transformers, and neural operators, face challenges such as long-time integration, long-range dependencies, chaotic dynamics, and extrapolation, to name a few. To this end, this paper introduces state-space models implemented in Mamba for accurate and efficient dynamical system operator learning. Mamba addresses the limitations of existing architectures by dynamically capturing long-range dependencies and enhancing computational efficiency through reparameterization techniques. To extensively test Mamba and compare against another 11 baselines, we introduce several strict extrapolation testbeds that go beyond the standard interpolation benchmarks. We demonstrate Mamba's superior performance in both interpolation and challenging extrapolation tasks. Mamba consistently ranks among the top models while maintaining the lowest computational cost and exceptional extrapolation capabilities. Moreover, we demonstrate the good performance of Mamba for a real-world application in quantitative systems pharmacology for assessing the efficacy of drugs in tumor growth under limited data scenarios. Taken together, our findings highlight Mamba's potential as a powerful tool for advancing scientific machine learning in dynamical systems modeling. (The code will be available at https://github.com/zheyuanhu01/State_Space_Model_Neural_Operator upon acceptance.).">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/19c447fcac9bc805aff7bbeec6e4f8bb2993e403" target='_blank'>State-space models are accurate and efficient neural operators for dynamical systems</a></td>
+          <td>
+            Zheyuan Hu, Nazanin Ahmadi Daryakenari, Qianli Shen, Kenji Kawaguchi, G. Karniadakis
+          </td>
+          <td>2024-09-05</td>
+          <td>Neural networks : the official journal of the International Neural Network Society</td>
+          <td>38</td>
+          <td>145</td>
+        </tr>
+
+        <tr id="When learning dynamical systems from data, embedding physical structure can constrain the solution space and improve generalization, but many physics-informed models assume access to the full system state. This limits their use in partially observed settings, where some state variables are completely unobserved and must be inferred without direct supervision. Here, we present neural Hamiltonian ordinary differential equations (NHODE), a framework that combines Hamiltonian neural networks (HNNs) with neural ordinary differential equations (neural ODEs) to learn partially observed dynamical systems from data. The Hamiltonian structure enforces energy conservation by construction, while the neural ODE framework enables a flexible training procedure that allows the loss to be defined only on observed variables. We also incorporate additional physical constraints through symmetry-aware coordinate transformations and separable energy formulations. The framework is evaluated on systems of increasing complexity, from linear and nonlinear mass-spring systems to the chaotic three-body problem. Across all examples, increasing the amount of embedded physical structure improves the accuracy and long-horizon stability of the predictions. Even in the most challenging regimes, the NHODE framework captures both observed and latent dynamics, whereas purely data-driven baselines become unstable.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/34a7779489a071f04f94e2944ec27860d52942e6" target='_blank'>Learning partially observed systems with neural Hamiltonian ordinary differential equations</a></td>
+          <td>
+            Sunniva Meltzer, Sølve Eidnes, Alexander J. Stasik
+          </td>
+          <td>2026-05-22</td>
+          <td>ArXiv</td>
+          <td>0</td>
+          <td>9</td>
+        </tr>
+
+        <tr id="Hamiltonian systems describe a broad class of dynamical systems governed by Hamiltonian functions, which encode the total energy and dictate the evolution of the system. Data-driven approaches, such as symbolic regression and neural network-based methods, provide a means to learn the governing equations of dynamical systems directly from observational data of Hamiltonian systems. However, these methods often struggle to accurately capture complex Hamiltonian functions while preserving energy conservation. To overcome this limitation, we propose the Finite Expression Method for learning Hamiltonian Systems (H-FEX), a symbolic learning method that introduces novel interaction nodes designed to capture intricate interaction terms effectively. Our experiments, including those on highly stiff dynamical systems, demonstrate that H-FEX can recover Hamiltonian functions of complex systems that accurately capture system dynamics and preserve energy over long time horizons. These findings highlight the potential of H-FEX as a powerful framework for discovering closed-form expressions of complex dynamical systems.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/74c1712cfe66685945bfdf24e722a151391a5cb7" target='_blank'>H-FEX: A Symbolic Learning Method for Hamiltonian Systems</a></td>
+          <td>
+            Jasen Lai, Senwei Liang, Chunmei Wang
+          </td>
+          <td>2025-06-25</td>
+          <td>Neural networks : the official journal of the International Neural Network Society</td>
+          <td>1</td>
+          <td>2</td>
+        </tr>
+
+        <tr id="This review discusses Operator Inference, a nonintrusive reduced modeling approach that incorporates physical governing equations by defining a structured polynomial form for the reduced model, and then learns the corresponding reduced operators from simulated training data. The polynomial model form of Operator Inference is sufficiently expressive to cover a wide range of nonlinear dynamics found in fluid mechanics and other fields of science and engineering, while still providing efficient reduced model computations. The learning steps of Operator Inference are rooted in classical projection-based model reduction; thus, some of the rich theory of model reduction can be applied to models learned with Operator Inference. This connection to projection-based model reduction theory offers a pathway toward deriving error estimates and gaining insights to improve predictions. Furthermore, through formulations of Operator Inference that preserve Hamiltonian and other structures, important physical properties such as energy conservation can be guaranteed in the predictions of the reduced model beyond the training horizon. This review illustrates key computational steps of Operator Inference through a large-scale combustion example. Expected final online publication date for the Annual Review of Fluid Mechanics, Volume 56 is January 2024. Please see http://www.annualreviews.org/page/journal/pubdates for revised estimates.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/8a0e0f738f295f12430cb4a7fe2df341417e7971" target='_blank'>Learning Nonlinear Reduced Models from Data with Operator Inference</a></td>
+          <td>
+            Boris Kramer, B. Peherstorfer, Karen Willcox
+          </td>
+          <td>2023-11-01</td>
+          <td>Annual Review of Fluid Mechanics</td>
+          <td>164</td>
+          <td>30</td>
+        </tr>
+
+        <tr id="Learning dynamical systems through operator-theoretic representations provides a powerful framework for analyzing complex dynamics, as spectral quantities such as eigenvalues and invariant structures encode characteristic time scales and long-term behavior. However, dynamical operators are typically estimated independently for each system, preventing the discovery of shared structure across related dynamics. To address this limitation, we posit that related dynamical systems lie near a low-dimensional manifold in spectral operator space. Based on this hypothesis, we introduce DOODL (Dynamical OperatOr Dictionary Learning), a framework that learns a dictionary of characteristic spectral dynamics whose combinations approximate this manifold and yield compact, interpretable embeddings of individual systems. Beyond representation learning, DOODL enables fast and interpretable operator estimation from short and partially observed trajectories by constraining the estimation to the learned operator manifold. Experiments on metastable Langevin dynamics and turbulent plasma simulations demonstrate that DOODL scales to highly complex multiscale regimes while capturing characteristic spectral structure governing the dynamics rather than merely fitting trajectories, achieving errors one to two orders of magnitude lower than independent operator estimation methods in challenging low-data regimes.">
+          <td id="tag"><i class="material-icons">visibility_off</i></td>
+          <td><a href="https://www.semanticscholar.org/paper/1c7e50b0f36bdc9bb163a8b0fcbe5a21dd96eba9" target='_blank'>Geometric Dictionary Learning of Dynamical Systems with Optimal Transport</a></td>
+          <td>
+            Thibaut Germain, Sami Chemlal, Rémi Flamary, Vladimir Kostic, Karim Lounici
+          </td>
+          <td>2026-05-18</td>
+          <td>ArXiv</td>
+          <td>0</td>
           <td>4</td>
         </tr>
 
-        <tr id="Sparse identification of nonlinear dynamics (SINDy) has been widely used to discover the governing equations of a dynamical system from data. It uses sparse regression techniques to identify parsimonious models of unknown systems from a library of candidate functions. Therefore, it relies on the assumption that the dynamics are sparsely represented in the coordinate system used. To address this limitation, one seeks a coordinate transformation that provides reduced coordinates capable of reconstructing the original system. Recently, SINDy autoencoders have extended this idea by combining sparse model discovery with autoencoder architectures to learn simplified latent coordinates together with parsimonious governing equations. A central challenge in this framework is robustness to measurement error. Inspired by noise-separating neural network structures, we incorporate a noise-separation module into the SINDy autoencoder architecture, thereby improving robustness and enabling more reliable identification of noisy dynamical systems. Numerical experiments on the Lorenz system show that the proposed method recovers interpretable latent dynamics and accurately estimates the measurement noise from noisy observations.">
+        <tr id="Reasoning about the physical world requires models that are endowed with the right inductive biases to learn the underlying dynamics. Recent works improve generalization for predicting trajectories by learning the Hamiltonian or Lagrangian of a system rather than the differential equations directly. While these methods encode the constraints of the systems using generalized coordinates, we show that embedding the system into Cartesian coordinates and enforcing the constraints explicitly with Lagrange multipliers dramatically simplifies the learning problem. We introduce a series of challenging chaotic and extended-body systems, including systems with N-pendulums, spring coupling, magnetic fields, rigid rotors, and gyroscopes, to push the limits of current approaches. Our experiments show that Cartesian coordinates with explicit constraints lead to a 100x improvement in accuracy and data efficiency.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/398545516a8aaff1532dd323eb54024e2f3f0c25" target='_blank'>A Robust SINDy Autoencoder for Noisy Dynamical System Identification</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/b639d2c614219f3de1e6a21091a1ad8d443916e8" target='_blank'>Simplifying Hamiltonian and Lagrangian Neural Networks via Explicit Constraints</a></td>
           <td>
-            Kai Ding
+            Marc Finzi, K. Wang, A. Wilson
           </td>
-          <td>2026-04-06</td>
+          <td>2020-10-26</td>
           <td>ArXiv</td>
-          <td>0</td>
-          <td>1</td>
-        </tr>
-
-        <tr id="Scientists have historically relied on mathematical models based on differential equations to relate system inputs -- forces, fluxes, or heat sources -- to outputs, such as displacement, velocity, concentration, and temperature. These models rely on deep domain knowledge to determine the form of the governing differential equation, which is then calibrated with data by solving an inverse problem. In recent years, the field of Scientific Machine Learning has introduced a variety of alternative modeling strategies for physical systems. A method called Sparse Identification of Nonlinear Dynamics learns the governing equation as a sparse linear combination of terms in a user-defined library. Neural Ordinary Differential Equations construct the governing equation by taking in the state and its derivatives at the input layer of a neural network. Entirely foregoing the modeling framework of differential equations, neural operators directly learn a non-linear mapping between the system inputs and outputs. From inverse problems to neural operators, all of these modeling strategies can be conceptualized as data-driven machinery to predict a system's response over a range of inputs. It is then natural to wonder how exactly these various strategies relate to each other, and whether they can be neatly taxonomized. Drawing from the philosophical literature on scientific models, we argue that many model types have a common structure, differing only in the assumed model class of the input-output relation they define. Connecting to philosophical ideas on mechanism, and arguing that data from physical systems arises from solutions to parsimonious differential equations, we propose that only certain models are capable of mechanism discovery, and thus generalization. Our analysis is intended to unite apparently disparate modeling strategies and provide insight into their appropriate use cases.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/66c0e77cb8b2348249742ed055b740e851457732" target='_blank'>From inverse problems to neural operators: prediction, mechanism, and generalization of data-driven models</a></td>
-          <td>
-            Conor Rowan
-          </td>
-          <td>2026-06-08</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>3</td>
-        </tr>
-
-        <tr id="Governing equations provide compact descriptions of physical systems, yet the variables in which they are simple are often hidden in high-dimensional measurements. This challenge is sharper for forced systems, whose responses depend on both intrinsic dynamics and time-dependent inputs. Here we introduce FLARE, a forced latent autoencoder for response equations that learns compact response coordinates, identifies sparse input-dependent latent dynamics and decodes equation rollouts to full responses. By estimating latent dimension from data and separating state estimation from external forcing, FLARE enables forecasts to be initialized from past responses and driven by prescribed future inputs. Across known dynamical systems, application-scale forced responses and visual observations, FLARE recovers compact forced dynamics and predicts long-horizon high-dimensional responses under inputs not used for training. By turning learned coordinates into a dynamical interface, FLARE extends equation discovery to systems whose effective states are hidden within complex observations, providing a route for interpretable modelling and prediction of high-dimensional responses in forced dynamical systems.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/7bf00f1e2707fffde6e8e5c0d9c6bc482aeaddd7" target='_blank'>Discovering Latent Response Laws in Forced Physical Systems</a></td>
-          <td>
-            Yi Zhu, Su Chen, Xiaojun Li, Xiuli Du
-          </td>
-          <td>2026-07-09</td>
-          <td>ArXiv</td>
-          <td>0</td>
-          <td>6</td>
-        </tr>
-
-        <tr id="Recent progress in autoencoder-based sparse identification of nonlinear dynamics (SINDy) under ℓ1 constraints allows joint discoveries of governing equations and latent coordinate systems from spatio-temporal data, including simulated video frames. However, it is challenging for ℓ1-based sparse inference to perform correct identification for real data due to the noisy measurements and often limited sample sizes. To address the data-driven discovery of physics in the low-data and high-noise regimes, we propose Bayesian SINDy autoencoders, which incorporate a hierarchical Bayesian Spike-and-slab Gaussian Lasso prior. Bayesian SINDy autoencoder enables the joint discovery of governing equations and coordinate systems with uncertainty estimate. To resolve the challenging computational tractability of the Bayesian hierarchical setting, we adapt an adaptive empirical Bayesian method with Stochastic Gradient Langevin Dynamics (SGLD) which gives a computationally tractable way of Bayesian posterior sampling within our framework. Bayesian SINDy autoencoder achieves better physics discovery with lower data and fewer training epochs, along with valid uncertainty quantification suggested by the experimental studies. The Bayesian SINDy autoencoder can be applied to real video data, withaccurate physics discovery which correctly identifies the governing equation and provides a close estimate for standard physics constants like gravity g, for example, in videos of a pendulum.">
-          <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/ea1d48d41a95a8547506f807a1307a37ec05356e" target='_blank'>Bayesian autoencoders for data-driven discovery of coordinates, governing equations and fundamental constants</a></td>
-          <td>
-            Liyao (Mars) Gao, J. Kutz
-          </td>
-          <td>2022-11-19</td>
-          <td>Proceedings of the Royal Society A</td>
-          <td>38</td>
-          <td>34</td>
+          <td>164</td>
+          <td>63</td>
         </tr>
 
   </tbody>
