@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-09-28 06:42:22 UTC</i>
+  <i class="footer">This page was last updated on 2026-10-05 06:44:54 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -484,15 +484,15 @@
           </td>
           <td>2024-10-14</td>
           <td>ArXiv</td>
-          <td>195</td>
-          <td>36</td>
+          <td>213</td>
+          <td>38</td>
         </tr>
 
         <tr id="We present TimeFound, an encoder-decoder transformer-based time series foundation model for out-of-the-box zero-shot forecasting. To handle time series data from various domains, TimeFound employs a multi-resolution patching strategy to capture complex temporal patterns at multiple scales. We pre-train our model with two sizes (200M and 710M parameters) on a large time-series corpus comprising both real-world and synthetic datasets. Over a collection of unseen datasets across diverse domains and forecasting horizons, our empirical evaluations suggest that TimeFound can achieve superior or competitive zero-shot forecasting performance, compared to state-of-the-art time series foundation models.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/cedf35c0b6ec1637367e228ffec07af0cfe03ce2" target='_blank'>TimeFound: A Foundation Model for Time Series Forecasting</a></td>
           <td>
-            Congxi Xiao, Jingbo Zhou, Yixiong Xiao, Xinjiang Lu, L. Zhang, Hui Xiong
+            Congxi Xiao, Jing-Bo Zhou, Yixiong Xiao, Xinjiang Lu, L. Zhang, Hui Xiong
           </td>
           <td>2025-03-06</td>
           <td>ArXiv</td>
@@ -508,8 +508,8 @@
           </td>
           <td>2026-02-06</td>
           <td>ArXiv</td>
-          <td>6</td>
-          <td>8</td>
+          <td>9</td>
+          <td>9</td>
         </tr>
 
         <tr id="Deep learning for time series forecasting has seen significant advancements over the past decades. However, despite the success of large-scale pre-training in language and vision domains, pre-trained time series models remain limited in scale and operate at a high cost, hindering the development of larger capable forecasting models in real-world applications. In response, we introduce Time-MoE, a scalable and unified architecture designed to pre-train larger, more capable forecasting foundation models while reducing inference costs. By leveraging a sparse mixture-of-experts (MoE) design, Time-MoE enhances computational efficiency by activating only a subset of networks for each prediction, reducing computational load while maintaining high model capacity. This allows Time-MoE to scale effectively without a corresponding increase in inference costs. Time-MoE comprises a family of decoder-only transformer models that operate in an auto-regressive manner and support flexible forecasting horizons with varying input context lengths. We pre-trained these models on our newly introduced large-scale data Time-300B, which spans over 9 domains and encompassing over 300 billion time points. For the first time, we scaled a time series foundation model up to 2.4 billion parameters, achieving significantly improved forecasting precision. Our results validate the applicability of scaling laws for training tokens and model size in the context of time series forecasting. Compared to dense models with the same number of activated parameters or equivalent computation budgets, our models consistently outperform them by large margin. These advancements position Time-MoE as a state-of-the-art solution for tackling real-world time series forecasting challenges with superior capability, efficiency, and flexibility.">
@@ -520,44 +520,44 @@
           </td>
           <td>2024-09-24</td>
           <td>ArXiv</td>
-          <td>383</td>
-          <td>12</td>
+          <td>400</td>
+          <td>14</td>
         </tr>
 
         <tr id="With the growing availability of multi-domain time series data, there is an increasing demand for general forecasting models pre-trained on multi-source datasets to support diverse downstream prediction scenarios. Existing time series foundation models primarily focus on scaling up pre-training datasets and model sizes to enhance generalization performance. In this paper, we take a different approach by addressing two critical aspects of general forecasting models: (1) how to derive unified representations from heterogeneous multi-domain time series data, and (2) how to effectively capture domain-specific features to enable adaptive transfer across various downstream scenarios. To address the first aspect, we propose Decomposed Frequency Learning as the pre-training task, which leverages frequency-based masking and reconstruction to decompose coupled semantic information in time series, resulting in unified representations across domains. For the second aspect, we introduce the Time Series Register, which captures domain-specific representations during pre-training and enhances adaptive transferability to downstream tasks. Our model achieves the state-of-the-art forecasting performance on seven real-world benchmarks, demonstrating remarkable few-shot and zero-shot capabilities.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/39e0e964d6ba714584c6fd58e170fc36370da6a6" target='_blank'>Towards a General Time Series Forecasting Model with Unified Representation and Adaptive Transfer</a></td>
           <td>
-            Yihang Wang, Yuying Qiu, Peng Chen, Kai Zhao, Yang Shu, Zhong-Wen Rao, Lu-Jia Pan, Bin Yang, Chenjuan Guo
+            Yihang Wang, Yuying Qiu, Peng Chen, Kai Zhao, Yang Shu, Zhong-Wen Rao, Lu-Jia Pan, Bin Yang, Chen-Juan Guo
           </td>
           <td>2024-05-24</td>
           <td>ArXiv, DBLP</td>
-          <td>44</td>
-          <td>43</td>
+          <td>46</td>
+          <td>46</td>
         </tr>
 
         <tr id="We introduce Chronos, a simple yet effective framework for pretrained probabilistic time series models. Chronos tokenizes time series values using scaling and quantization into a fixed vocabulary and trains existing transformer-based language model architectures on these tokenized time series via the cross-entropy loss. We pretrained Chronos models based on the T5 family (ranging from 20M to 710M parameters) on a large collection of publicly available datasets, complemented by a synthetic dataset that we generated via Gaussian processes to improve generalization. In a comprehensive benchmark consisting of 42 datasets, and comprising both classical local models and deep learning methods, we show that Chronos models: (a) significantly outperform other methods on datasets that were part of the training corpus; and (b) have comparable and occasionally superior zero-shot performance on new datasets, relative to methods that were trained specifically on them. Our results demonstrate that Chronos models can leverage time series data from diverse domains to improve zero-shot accuracy on unseen forecasting tasks, positioning pretrained models as a viable tool to greatly simplify forecasting pipelines.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/02fa77e4f355198cb4270f6d4a07517bf09c46dd" target='_blank'>Chronos: Learning the Language of Time Series</a></td>
           <td>
-            Abdul Fatir Ansari, Lorenzo Stella, A. Türkmen, Xiyuan Zhang, Pedro Mercado, Huibin Shen, Oleksandr Shchur, Syama Sundar Rangapuram, , Shubham Kapoor, Jasper Zschiegner, D. Maddix, Hao Wang, Michael W. Mahoney, Kari Torkkola, Andrew Gordon Wilson, Michael Bohlke-Schneider, Bernie Wang
+            Abdul Fatir Ansari, Lorenzo Stella, A. Türkmen, Xi-Yuan Zhang, Pedro Mercado, Huibin Shen, Oleksandr Shchur, Syama Sundar Rangapuram, , Shubham Kapoor, Jasper Zschiegner, D. Maddix, Hao Wang, Michael W. Mahoney, Kari Torkkola, Andrew Gordon Wilson, Michael Bohlke-Schneider, Bernie Wang
           </td>
           <td>2024-03-12</td>
           <td>ArXiv</td>
-          <td>1067</td>
-          <td>20</td>
+          <td>1112</td>
+          <td>21</td>
         </tr>
 
         <tr id="Deep learning has contributed remarkably to the advancement of time series analysis. Still, deep models can encounter performance bottlenecks in real-world data-scarce scenarios, which can be concealed due to the performance saturation with small models on current benchmarks. Meanwhile, large models have demonstrated great powers in these scenarios through large-scale pre-training. Continuous progress has been achieved with the emergence of large language models, exhibiting unprecedented abilities such as few-shot generalization, scalability, and task generality, which are however absent in small deep models. To change the status quo of training scenario-specific small models from scratch, this paper aims at the early development of large time series models (LTSM). During pre-training, we curate large-scale datasets with up to 1 billion time points, unify heterogeneous time series into single-series sequence (S3) format, and develop the GPT-style architecture toward LTSMs. To meet diverse application needs, we convert forecasting, imputation, and anomaly detection of time series into a unified generative task. The outcome of this study is a Time Series Transformer (Timer), which is generative pre-trained by next token prediction and adapted to various downstream tasks with promising capabilities as an LTSM. Code and datasets are available at: https://github.com/thuml/Large-Time-Series-Model.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/73f58b90697f957832f5090946894480849dea3a" target='_blank'>Timer: Generative Pre-trained Transformers Are Large Time Series Models</a></td>
           <td>
-            Yong Liu, Haoran Zhang, Chenyu Li, Xiang-Dong Huang, Jian-Min Wang, Mingsheng Long
+            Yong Liu, Haoran Zhang, Chenyu Li, Xiang-Dong Huang, Jian-Min Wang, Ming-Sheng Long
           </td>
           <td>2024-02-04</td>
           <td>ArXiv, DBLP</td>
-          <td>275</td>
-          <td>82</td>
+          <td>295</td>
+          <td>84</td>
         </tr>
 
         <tr id="Existing time series foundation models (TSFMs), often based on transformer variants, lack adaptability to different sampling rates, struggle with generalization across varying context and target lengths, and are computationally inefficient. We introduce FlowState, a novel TSFM architecture that achieves sampling-rate-equivariant forecasting through a unified design that pairs a state space model (SSM) encoder with a functional basis decoder (FBD). This design enables continuous-time modeling and dynamic time-scale adjustment, allowing FlowState to inherently generalize across all possible temporal resolutions, and dynamically adjust the forecasting horizons without retraining. We further propose an efficient pretraining strategy that improves robustness and accelerates training. Despite being one of the smallest TSFMs, FlowState achieves state-of-the-art results on the widely used GIFT-Eval benchmark, while demonstrating superior adaptability to unseen sampling rates. Our detailed analyses confirm the effectiveness of its components, and we demonstrate its unique ability to adapt to varying input sampling rates.">
@@ -568,8 +568,8 @@
           </td>
           <td>2025-08-07</td>
           <td>ArXiv</td>
-          <td>3</td>
-          <td>43</td>
+          <td>7</td>
+          <td>41</td>
         </tr>
 
   </tbody>

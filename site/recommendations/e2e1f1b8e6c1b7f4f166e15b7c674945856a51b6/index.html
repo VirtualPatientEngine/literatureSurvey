@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-09-28 06:42:29 UTC</i>
+  <i class="footer">This page was last updated on 2026-10-05 06:44:56 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -484,32 +484,32 @@
           </td>
           <td>2026-02-19</td>
           <td>ArXiv</td>
-          <td>9</td>
-          <td>6</td>
+          <td>12</td>
+          <td>7</td>
         </tr>
 
         <tr id="Pretrained time series foundation models (TSFMs) have enabled zero-shot forecasting on unseen target series. However, existing TSFMs often incur high computational cost and provide limited support for diverse variable types, often failing to account for covariates that exogenously influence target variability. To address these challenges, we propose CITRAS-FM, a tiny 7M-parameter TSFM that supports univariate, multivariate, and covariate-informed zero-shot forecasting with real-time CPU inference. Built on a patch-based, decoder-only Transformer, CITRAS-FM introduces Shifted Attention into the cross-variate module to effectively exploit known covariates accessible throughout the forecast horizon. Moreover, to enable covariate-aware pretraining despite the scarcity of covariate-rich corpora, we propose CovSynth, which synthesizes realistic covariates from decomposed components of target series. Experiments on fev-bench, spanning 100 tasks across various settings, demonstrate that CITRAS-FM achieves state-of-the-art zero-shot accuracy among sub-10M TSFMs while delivering sub-0.1-second CPU inference, offering a strong balance between forecasting accuracy and real-time deployability.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/58cd26d6d271126cfc21a066698b3a646177e77a" target='_blank'>CITRAS-FM: Tiny Time Series Foundation Model for Covariate-Informed Zero-Shot Forecasting</a></td>
           <td>
-            Yosuke Yamaguchi, Issei Suemitsu, Yuki Kajihara, Wenpeng Wei
+            Yosuke Yamaguchi, Issei Suemitsu, Yuki Kajihara, Wen-Peng Wei
           </td>
           <td>2026-06-09</td>
           <td>ArXiv</td>
           <td>1</td>
-          <td>5</td>
+          <td>6</td>
         </tr>
 
         <tr id="Time series foundation models have demonstrated strong performance in zero-shot learning, making them well-suited for predicting rapidly evolving patterns in real-world applications where relevant training data are scarce. However, most of these models rely on the Transformer architecture, which incurs quadratic complexity as input length increases. To address this, we introduce TSMamba, a linear-complexity foundation model for time series forecasting built on the Mamba architecture. The model captures temporal dependencies through both forward and backward Mamba encoders, achieving high prediction accuracy. To reduce reliance on large datasets and lower training costs, TSMamba employs a two-stage transfer learning process that leverages pretrained Mamba LLMs, allowing effective time series modeling with a moderate training set. In the first stage, the forward and backward backbones are optimized via patch-wise autoregressive prediction; in the second stage, the model trains a prediction head and refines other components for long-term forecasting. While the backbone assumes channel independence to manage varying channel numbers across datasets, a channel-wise compressed attention module is introduced to capture cross-channel dependencies during fine-tuning on specific multivariate datasets. Experiments show that TSMamba's zero-shot performance is comparable to state-of-the-art time series foundation models, despite using significantly less training data. It also achieves competitive or superior full-shot performance compared to task-specific prediction models. The code will be made publicly available.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/30abc3fad3c88886c189e216c8414b18c396c6bd" target='_blank'>A Mamba Foundation Model for Time Series Forecasting</a></td>
           <td>
-            Hao-Yuan Ma, Yushu Chen, Wenlai Zhao, Jinzhe Yang, Ying-Sheng Ji, Xinghua Xu, Xiaozhu Liu, Hao Jing, Shengzhuo Liu, Guangwen Yang
+            Hao-Yuan Ma, Yushu Chen, Wenlai Zhao, Jinzhe Yang, Ying-Sheng Ji, Xing-Hua Xu, Xiaozhu Liu, Hao Jing, Shengzhuo Liu, Guangwen Yang
           </td>
           <td>2024-11-05</td>
           <td>ArXiv</td>
-          <td>19</td>
-          <td>9</td>
+          <td>20</td>
+          <td>10</td>
         </tr>
 
         <tr id="Foundation models have emerged as a promising approach in time series forecasting (TSF). Existing approaches either repurpose large language models (LLMs) or build large-scale time series datasets to develop TSF foundation models for universal forecasting. However, these methods face challenges due to the severe cross-domain gap or in-domain heterogeneity. This paper explores a new road to building a TSF foundation model from rich, high-quality natural images. Our key insight is that a visual masked autoencoder, pre-trained on the ImageNet dataset, can naturally be a numeric series forecaster. By reformulating TSF as an image reconstruction task, we bridge the gap between image pre-training and TSF downstream tasks. Surprisingly, without further adaptation in the time series domain, the proposed VisionTS could achieve better zero-shot forecast performance than existing TSF foundation models. With fine-tuning for one epoch, VisionTS could further improve the forecasting and achieve state-of-the-art performance in most cases. Extensive experiments reveal intrinsic similarities between images and real-world time series, suggesting that visual models may offer a"free lunch"for TSF and highlight the potential for future cross-modality research. Our code is publicly available at https://github.com/Keytoyze/VisionTS.">
@@ -520,19 +520,19 @@
           </td>
           <td>2024-08-30</td>
           <td>ArXiv</td>
-          <td>104</td>
-          <td>13</td>
+          <td>107</td>
+          <td>15</td>
         </tr>
 
         <tr id="The rapid advancement of time series foundation models (TSFMs) has been propelled by migrating architectures from language models. While existing TSFMs demonstrate impressive performance, their direct adoption of cross-domain architectures constrains effective capture of multiscale temporal dependencies inherent to time series data. This limitation becomes particularly pronounced during zero-shot transfer across datasets with divergent underlying patterns and sampling strategies. To address these challenges, we propose Hierarchical Interleaved Block Attention (HIBA) which employs hierarchical inter- and intra-block sparse attention to effectively capture multi-scale dependencies. Intra-block attention facilitates local information exchange, and inter-block attention operates across blocks to capture global temporal pattern interaction and dynamic evolution. Leveraging the HIBA architecture, we introduce Xihe, a scalable TSFM family spanning from an ultra-efficient 9.5M parameter configuration to high-capacity 1.5B variant. Evaluated on the comprehensive GIFT-Eval benchmark, our most compact Xihe-tiny model (9.5M) surpasses the majority of contemporary TSFMs, demonstrating remarkable parameter efficiency. More impressively, Xihe-max (1.5B) establishes new state-of-the-art zero-shot performance, surpassing previous best results by a substantial margin. This consistent performance excellence across the entire parameter spectrum provides compelling evidence for the exceptional generalization capabilities and architectural superiority of HIBA.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/238191c6982ad1063e3b0c72c5538682eebcba53" target='_blank'>Xihe: Scalable Zero-Shot Time Series Learner Via Hierarchical Interleaved Block Attention</a></td>
           <td>
-            Yinbo Sun, Yuchen Fang, Zhibo Zhu, Jia Li, Yu Liu, Qiwen Deng, Jun Zhou, Han Yu, Xingyu Lu, Lin-Tao Ma
+            Yinbo Sun, Yu-Chen Fang, Zhibo Zhu, Jia Li, Yu Liu, Qiwen Deng, Jun Zhou, Han Yu, Xing-Yu Lu, Lin-Tao Ma
           </td>
           <td>2025-10-20</td>
           <td>ArXiv</td>
-          <td>5</td>
+          <td>7</td>
           <td>8</td>
         </tr>
 
@@ -540,7 +540,7 @@
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/cedf35c0b6ec1637367e228ffec07af0cfe03ce2" target='_blank'>TimeFound: A Foundation Model for Time Series Forecasting</a></td>
           <td>
-            Congxi Xiao, Jingbo Zhou, Yixiong Xiao, Xinjiang Lu, L. Zhang, Hui Xiong
+            Congxi Xiao, Jing-Bo Zhou, Yixiong Xiao, Xinjiang Lu, L. Zhang, Hui Xiong
           </td>
           <td>2025-03-06</td>
           <td>ArXiv</td>
@@ -557,7 +557,7 @@
           <td>2025-12-23</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>6</td>
+          <td>7</td>
         </tr>
 
         <tr id="The diversity of time series applications and scarcity of domain-specific data highlight the need for time-series models with strong few-shot learning capabilities. In this work, we propose a novel training scheme and a transformer-based architecture, collectively referred to as TimePFN, for multivariate time-series (MTS) forecasting. TimePFN is based on the concept of Prior-data Fitted Networks (PFN), which aims to approximate Bayesian inference. Our approach consists of (1) generating synthetic MTS data through diverse Gaussian process kernels and the linear coregionalization method, and (2) a novel MTS architecture capable of utilizing both temporal and cross-channel dependencies across all input patches. We evaluate TimePFN on several benchmark datasets and demonstrate that it outperforms the existing state-of-the-art models for MTS forecasting in both zero-shot and few-shot settings. Notably, fine-tuning TimePFN with as few as 500 data points nearly matches full dataset training error, and even 50 data points yield competitive results. We also find that TimePFN exhibits strong univariate forecasting performance, attesting to its generalization ability. Overall, this work unlocks the power of synthetic data priors for MTS forecasting and facilitates strong zero- and few-shot forecasting performance.">
@@ -569,19 +569,19 @@
           <td>2025-02-22</td>
           <td>ArXiv, DBLP</td>
           <td>45</td>
-          <td>40</td>
+          <td>42</td>
         </tr>
 
         <tr id="While Next-Token Prediction (NTP) has unified LLM pretraining, its adaptation to unbounded, continuous time series (TS) remains open. To bridge the gap, we introduce UniTok, a universal tokenizer that transforms TS into discrete tokens, and UniTok-FM, a foundation model pretrained via NTP on these tokens. UniTok-FM is a general-purpose foundation model that supports zero-shot and prompt-boosted forecasting, as well as few-shot generation and classification via training-free in-context inference--a capability not achieved by prior works. Technically, UniTok is a vector-quantized autoencoder incorporating prefix normalization for scale stabilization, a progressive-resolution causal architecture for encoding and decoding, and a structure-preserving reconstruction loss for training. UniTok-FM adopts an off-the-shelf LLM architecture without TS-specific modifications. Instead of pretraining on isolated TS, it performs NTP on context windows formed by multiple series with similar patterns, aiming to capture their shared dynamics. Experiments on forecasting, generation, and classification show that a single unified UniTok-FM consistently outperforms statistical and supervised baselines, achieves competitive performance with task-specific foundation models, and uniquely enables training-free in-context inference across tasks.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/fbbaa3cd42d31ad8383d01e27bb35d9399007f5a" target='_blank'>Time Series as Language: A Universal Tokenizer for General-Purpose Time Series Foundation Models</a></td>
           <td>
-            Yunhao Zhang, Rui Qi, Jiale Zheng, Jian-Feng Zhang, Lujia Pan, Junchi Yan
+            Yunhao Zhang, Rui Qi, Jiale Zheng, Jian-Feng Zhang, Lujia Pan, Jun-Chi Yan
           </td>
           <td>2026-05-31</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>8</td>
+          <td>9</td>
         </tr>
 
   </tbody>

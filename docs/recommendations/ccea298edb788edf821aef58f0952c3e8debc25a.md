@@ -11,7 +11,7 @@ hide:
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-09-28 06:42:19 UTC</i>
+  <i class="footer">This page was last updated on 2026-10-05 06:44:51 UTC</i>
   </p>
   
   <div class="note info" onclick="startIntro()">
@@ -51,7 +51,7 @@ hide:
           <td>2022-01-24</td>
           <td>ArXiv</td>
           <td>1</td>
-          <td>11</td>
+          <td>12</td>
         </tr>
     
         <tr id="The challenge of effectively learning inter-series correlations for multivariate time series forecasting remains a substantial and unresolved problem. Traditional deep learning models, which are largely dependent on the Transformer paradigm for modeling long sequences, often fail to integrate information from multiple time series into a coherent and universally applicable model. To bridge this gap, our paper presents ForecastGrapher, a framework reconceptualizes multivariate time series forecasting as a node regression task, providing a unique avenue for capturing the intricate temporal dynamics and inter-series correlations. Our approach is underpinned by three pivotal steps: firstly, generating custom node embeddings to reflect the temporal variations within each series; secondly, constructing an adaptive adjacency matrix to encode the inter-series correlations; and thirdly, augmenting the GNNs' expressive power by diversifying the node feature distribution. To enhance this expressive power, we introduce the Group Feature Convolution GNN (GFC-GNN). This model employs a learnable scaler to segment node features into multiple groups and applies one-dimensional convolutions with different kernel lengths to each group prior to the aggregation phase. Consequently, the GFC-GNN method enriches the diversity of node feature distribution in a fully end-to-end fashion. Through extensive experiments and ablation studies, we show that ForecastGrapher surpasses strong baselines and leading published techniques in the domain of multivariate time series forecasting.">
@@ -63,7 +63,7 @@ hide:
           <td>2024-05-28</td>
           <td>ArXiv</td>
           <td>6</td>
-          <td>8</td>
+          <td>9</td>
         </tr>
     
         <tr id="Time series forecasting lies at the core of important real-world applications in many fields of science and engineering. The abundance of large time series datasets that consist of complex patterns and long-term dependencies has led to the development of various neural network architectures. Graph neural network approaches, which jointly learn a graph structure based on the correlation of raw values of multivariate time series while forecasting, have recently seen great success. However, such solutions are often costly to train and difficult to scale. In this paper, we propose TimeGNN, a method that learns dynamic temporal graph representations that can capture the evolution of inter-series patterns along with the correlations of multiple series. TimeGNN achieves inference times 4 to 80 times faster than other state-of-the-art graph-based methods while achieving comparable forecasting performance">
@@ -87,7 +87,7 @@ hide:
           <td>2022-05-26</td>
           <td>J. Mach. Learn. Res.</td>
           <td>38</td>
-          <td>56</td>
+          <td>57</td>
         </tr>
     
         <tr id="Graph Neural Networks (GNN) have gained significant traction in the forecasting domain, especially for their capacity to simultaneously account for intra-series temporal correlations and inter-series relationships. This paper introduces a novel Hierarchical GNN (DeepHGNN) framework, explicitly designed for forecasting in complex hierarchical structures. The uniqueness of DeepHGNN lies in its innovative graph-based hierarchical interpolation and an end-to-end reconciliation mechanism. This approach ensures forecast accuracy and coherence across various hierarchical levels while sharing signals across them, addressing a key challenge in hierarchical forecasting. A critical insight in hierarchical time series is the variance in forecastability across levels, with upper levels typically presenting more predictable components. DeepHGNN capitalizes on this insight by pooling and leveraging knowledge from all hierarchy levels, thereby enhancing the overall forecast accuracy. Our comprehensive evaluation set against several state-of-the-art models confirm the superior performance of DeepHGNN. This research not only demonstrates DeepHGNN's effectiveness in achieving significantly improved forecast accuracy but also contributes to the understanding of graph-based methods in hierarchical time series forecasting.">
@@ -110,7 +110,7 @@ hide:
           </td>
           <td>2020-05-24</td>
           <td>Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining</td>
-          <td>2336</td>
+          <td>2349</td>
           <td>66</td>
         </tr>
     
@@ -122,8 +122,8 @@ hide:
           </td>
           <td>2021-01-18</td>
           <td>ArXiv</td>
-          <td>395</td>
-          <td>40</td>
+          <td>398</td>
+          <td>41</td>
         </tr>
     
   </tbody>

@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-09-28 06:42:18 UTC</i>
+  <i class="footer">This page was last updated on 2026-10-05 06:44:49 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -485,14 +485,14 @@
           <td>2024-12-14</td>
           <td>Proceedings : ... IEEE International Conference on Big Data. IEEE International Conference on Big Data</td>
           <td>2</td>
-          <td>6</td>
+          <td>7</td>
         </tr>
 
         <tr id="Abstract Background Irregularly sampled data, as a common data structure in the medical field, is frequently observed in emergency clinical datasets. It poses problems such as unequal sampling time intervals and frequencies, making it difficult to align the data without losing information for input into models. Meanwhile, due to information loss in the dataset, it is also difficult for the model to effectively analyze the overall data variation and predict the complex and dynamic conditions of emergency patients in the future. Objective This study aimed to address the impact of issues such as missing values and irregularly sampled time intervals on prediction results. This paper proposes a method that converts time-series data into a graph network structure and develops a prediction model for graph data to better support complex tasks. Methods In this paper, feature channels and measurement times in time-series data are constructed as nodes, and feature measurements at time points are constructed as edge weights. The point feature space and edge weight space are extracted by a graph convolutional neural network and a gated convolutional attention mechanism network, respectively, and feature fusion is carried out under the action of the learnable head. Results The proposed method was tested on 4 datasets and compared with both irregularly sampled time-series predictors and state-of-the-art methods for complete data. In addition, a dedicated analysis was conducted leveraging data from 5 key clinical treatment phases. In single-target classification and single-target regression tasks, the method proposed in this study outperforms other comparative methods in most experiments (accuracy=0.74‐0.88, area under the curve=0.70‐0.87, and mean absolute error=0.038‐0.061). Meanwhile, this study constructs clinical phenotypes during patients’ hospitalization as multitarget prediction tasks, and the proposed model also outperforms comparative methods in multitarget classification tasks (mean accuracy=0.75‐0.91 and mean area under the curve=0.70‐0.75). Ablation experiments verify the effectiveness of fusion between the node feature space and the edge feature space. The interpretability analysis of time points identifies key features that require focused attention for patients across different target tasks and time periods. Conclusions The proposed model can effectively analyze medical data with missing values and uneven sampling. It achieves high prediction accuracy in both regression prediction tasks and classification tasks. The graph network-based model structure endows the model with better interpretability, enabling effective exploration of factors that trigger changes.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/1a6603fa7496992db0fd12abd025a770498ac6d3" target='_blank'>Graph Network Feature Space Fusion for Predicting Irregularly Sampled Medical Time-Series Data: Deep Learning Model Development and Validation Study</a></td>
           <td>
-            Tianle Hong, Zedong Ren, Jun-Fei Fang, Shichao Quan, Jing-Ye Pan, Ye-Zhi Lin
+            Tian-Le Hong, Ze-Dong Ren, Jun-Fei Fang, Shichao Quan, Jing-Ye Pan, Ye-Zhi Lin
           </td>
           <td>2026-07-03</td>
           <td>JMIR Medical Informatics</td>
@@ -509,7 +509,7 @@
           <td>2023-06-26</td>
           <td>DBLP</td>
           <td>47</td>
-          <td>18</td>
+          <td>19</td>
         </tr>
 
         <tr id="Healthcare data, such as Intensive Care Unit (ICU) records, comprise heterogeneous multivariate time series sampled at irregular intervals with pervasive missingness. However, clinical applications demand predictive models that are both accurate and interpretable. We present our Graph Attention-based Relational Learning for Intensive Care (GARLIC) model, a novel neural network architecture that imputes missing data through a learnable exponential-decay encoder, captures inter-sensor dependencies via time-lagged summary graphs, and fuses global patterns with cross-dimensional sequential attention. All attention weights and graph edges are learned end-to-end to serve as built-in observation-, signal-, and edge-level explanations. To reconcile auxiliary reconstruction and primary classification objectives, we developed an alternating decoupled optimization scheme that stabilizes training. On three ICU benchmarks (PhysioNet 2012&2019, MIMIC-III), GARLIC sets the new state of the art in outcome prediction, significantly improving AUROC and AUPRC over best-performing baselines at comparable computational cost. Ablation studies confirm the contribution of each module, and feature-removal trials validate the fidelity of importance attribution through a monotonic performance drop (full>top 50%>random 50%>bottom 50%). Real-time case studies demonstrate actionable risk warnings with transparent explanations, marking a significant advance toward accurate, explainable deep learning for irregularly sampled ICU time series data. Moreover, we demonstrated \proposed{}'s superiority in data imputation and classification on various time-series datasets beyond the ICU domain, showing its generalizability and applicability to broader tasks.">
@@ -520,7 +520,7 @@
           </td>
           <td>2026-08-11</td>
           <td>ArXiv</td>
-          <td>1</td>
+          <td>3</td>
           <td>4</td>
         </tr>
 
@@ -545,7 +545,7 @@
           <td>2026-02-16</td>
           <td>Health Information Science and Systems</td>
           <td>1</td>
-          <td>14</td>
+          <td>15</td>
         </tr>
 
         <tr id="Multivariate time series (MTS) data are vital for various applications, particularly in machine learning tasks. However, challenges such as sensor failures can result in irregular and misaligned data with missing values, thereby complicating their analysis. While recent advancements use graph neural networks (GNNs) to manage these Irregular Multivariate Time Series (IMTS) data, they generally require a reliable graph structure, either pre-existing or inferred from adequate data to properly capture node correlations. This poses a challenge in applications where IMTS data are often streamed and waiting for future data to estimate a suitable graph structure becomes impractical. To overcome this, we introduce a dynamic GNN model suited for streaming characteristics of IMTS data, incorporating an instance-attention mechanism that dynamically learns and updates graph edge weights for realtime analysis. We also tailor strategies for high-frequency and low-frequency data to enhance prediction accuracy. Empirical results on real-world datasets demonstrate the superiority of our proposed model in both classification and imputation tasks.">
@@ -557,7 +557,7 @@
           <td>2025-01-13</td>
           <td>Frontiers of Computer Science</td>
           <td>5</td>
-          <td>9</td>
+          <td>10</td>
         </tr>
 
         <tr id="Irregular Medical Time Series play a critical role in the clinical domain to better understand the patient's condition. However, inherent irregularity arising from heterogeneous sampling rates, asynchronous observations, and variable gaps poses key challenges for reliable modeling. Existing methods often distort temporal sampling irregularity and missingness patterns while failing to capture variable decay irregularity, resulting in suboptimal representations. To address these limitations, we introduce DBGL, Decay-Aware Bipartite Graph Learning for Irregular Medical Time Series. DBGL first introduces a patient-variable bipartite graph that simultaneously captures irregular sampling patterns without artificial alignment and adaptively models variable relationships for temporal sampling irregularity modeling, enhancing representation learning. To model variable decay irregularity, DBGL designs a novel node-specific temporal decay encoding mechanism that captures each variable's decay rates based on sampling interval, yielding a more accurate and faithful representation of irregular temporal dynamics. We evaluate the performance of DBGL on four publicly available datasets, and the results show that DBGL outperforms all baselines.">
@@ -569,7 +569,7 @@
           <td>2026-04-12</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>12</td>
+          <td>13</td>
         </tr>
 
         <tr id="Prevalent in many real-world settings such as healthcare, irregular time series are challenging to formulate predictions from. It is difficult to infer the value of a feature at any given time when observations are sporadic, as it could take on a range of values depending on when it was last observed. To characterize this uncertainty we present EDICT, a strategy that learns an evidential distribution over irregular time series in continuous time. This distribution enables well-calibrated and flexible inference of partially observed features at any time of interest, while expanding uncertainty temporally for sparse, irregular observations. We demonstrate that EDICT attains competitive performance on challenging time series classification tasks and enabling uncertainty-guided inference when encountering noisy data.">

@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-09-28 06:42:20 UTC</i>
+  <i class="footer">This page was last updated on 2026-10-05 06:44:52 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -485,7 +485,7 @@
           <td>2025-12-23</td>
           <td>ArXiv</td>
           <td>0</td>
-          <td>6</td>
+          <td>7</td>
         </tr>
 
         <tr id="Using pre-trained large language models (LLMs) as a backbone for time series prediction has recently attracted growing research interest. Existing approaches typically split time series into patches, map them to the token space of LLMs via a Tokenizer, process the tokens through a frozen or fine-tuned LLM backbone, and then reconstruct numerical forecasts using a Detokenizer. However, the actual effectiveness of LLMs for time series forecasting remains under debate. We observe that when trained and evaluated on small datasets, the Tokenizer–Detokenizer components often overfit to the specific data distribution, thereby masking the intrinsic predictive capability of the LLM backbone. To investigate the inherent potential of LLMs in this context, we design three models with identical architectures but distinct pre-training strategies. By leveraging large-scale pre-training, we obtain more unbiased Tokenizer–Detokenizer pairs that are seamlessly integrated with the LLM backbone. Through controlled experiments, we evaluate the zero-shot and few-shot forecasting performance of the LLM, offering insights into its true capabilities. Our extensive experiments reveal that, although the LLM backbone shows some promise, its performance remains limited and does not consistently surpass that of models specifically trained on large-scale time series data. Our source code is publicly available in the repository: https://github.com/SiriZhang45/LLM4TS.">
@@ -497,19 +497,19 @@
           <td>2025-04-09</td>
           <td>Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.1</td>
           <td>2</td>
-          <td>14</td>
+          <td>15</td>
         </tr>
 
         <tr id="We introduce Chronos, a simple yet effective framework for pretrained probabilistic time series models. Chronos tokenizes time series values using scaling and quantization into a fixed vocabulary and trains existing transformer-based language model architectures on these tokenized time series via the cross-entropy loss. We pretrained Chronos models based on the T5 family (ranging from 20M to 710M parameters) on a large collection of publicly available datasets, complemented by a synthetic dataset that we generated via Gaussian processes to improve generalization. In a comprehensive benchmark consisting of 42 datasets, and comprising both classical local models and deep learning methods, we show that Chronos models: (a) significantly outperform other methods on datasets that were part of the training corpus; and (b) have comparable and occasionally superior zero-shot performance on new datasets, relative to methods that were trained specifically on them. Our results demonstrate that Chronos models can leverage time series data from diverse domains to improve zero-shot accuracy on unseen forecasting tasks, positioning pretrained models as a viable tool to greatly simplify forecasting pipelines.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/02fa77e4f355198cb4270f6d4a07517bf09c46dd" target='_blank'>Chronos: Learning the Language of Time Series</a></td>
           <td>
-            Abdul Fatir Ansari, Lorenzo Stella, A. Türkmen, Xiyuan Zhang, Pedro Mercado, Huibin Shen, Oleksandr Shchur, Syama Sundar Rangapuram, , Shubham Kapoor, Jasper Zschiegner, D. Maddix, Hao Wang, Michael W. Mahoney, Kari Torkkola, Andrew Gordon Wilson, Michael Bohlke-Schneider, Bernie Wang
+            Abdul Fatir Ansari, Lorenzo Stella, A. Türkmen, Xi-Yuan Zhang, Pedro Mercado, Huibin Shen, Oleksandr Shchur, Syama Sundar Rangapuram, , Shubham Kapoor, Jasper Zschiegner, D. Maddix, Hao Wang, Michael W. Mahoney, Kari Torkkola, Andrew Gordon Wilson, Michael Bohlke-Schneider, Bernie Wang
           </td>
           <td>2024-03-12</td>
           <td>ArXiv</td>
-          <td>1067</td>
-          <td>20</td>
+          <td>1112</td>
+          <td>21</td>
         </tr>
 
         <tr id="Large Language Models (LLMs) have shown remarkable performance across diverse tasks without domain-specific training, fueling interest in their potential for time-series forecasting. While LLMs have shown potential in zero-shot forecasting through prompting alone, recent studies suggest that LLMs lack inherent effectiveness in forecasting. Given these conflicting findings, a rigorous validation is essential for drawing reliable conclusions. In this paper, we evaluate the effectiveness of LLMs as zero-shot forecasters compared to state-of-the-art domain-specific models. Our experiments show that LLM-based zero-shot forecasters often struggle to achieve high accuracy due to their sensitivity to noise, underperforming even simple domain-specific models. We have explored solutions to reduce LLMs' sensitivity to noise in the zero-shot setting, but improving their robustness remains a significant challenge. Our findings suggest that rather than emphasizing zero-shot forecasting, a more promising direction would be to focus on fine-tuning LLMs to better process numerical sequences. Our experimental code is available at https://github.com/junwoopark92/revisiting-LLMs-zeroshot-forecaster.">
@@ -520,32 +520,32 @@
           </td>
           <td>2025-05-31</td>
           <td>ArXiv</td>
+          <td>15</td>
           <td>14</td>
-          <td>11</td>
         </tr>
 
         <tr id="Time series prediction poses a significant challenge in statistics and artificial intelligence, drawing considerable attention and sparking extensive research. The complexity of patterns within such data makes it challenging for many models to learn effectively. Additionally, the limited availability of time series data hinders the use of high-capacity models like deep neural networks, which are prone to overfitting with sparse data. To overcome this limitation, simpler models such as ARIMA or SARIMA are often employed, proving effective despite their straightforward nature. Another data category with similarities to time series is textual data, where neural network models have recently shown promise. In this realm, models pretrained for specific tasks and fine-tuned for others have demonstrated excellent results even with limited data or computational resources. This study addresses the time series prediction challenge by introducing llama-time, leveraging the capabilities of the llama 2 language model. Through fine-tuning for time series prediction, our approach yields favorable results on previously unseen data. Consequently, our model functions as a zero-shot learner, proficient in predicting various time series data without prior exposure or assumptions about underlying patterns.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/c0c71b303f8a6f4fb209fbf9bc56e65595233f5f" target='_blank'>Llama-Time: Fine-Tuning a Large Language Model for Advanced Time Series Prediction</a></td>
           <td>
-            Sina Aghakhani, Guiping Hu
+            Sina Aghakhani, Gui-Ping Hu
           </td>
           <td>2024-06-22</td>
           <td>2024 IEEE International Conference on Service Operations and Logistics, and Informatics (SOLI)</td>
           <td>1</td>
-          <td>2</td>
+          <td>3</td>
         </tr>
 
         <tr id="Foundation models of time series have not been fully developed due to the limited availability of time series corpora and the underexploration of scalable pre-training. Based on the similar sequential formulation of time series and natural language, increasing research demonstrates the feasibility of leveraging large language models (LLM) for time series. Nevertheless, the inherent autoregressive property and decoder-only architecture of LLMs have not been fully considered, resulting in insufficient utilization of LLM abilities. To fully revitalize the general-purpose token transition and multi-step generation capability of large language models, we propose AutoTimes to repurpose LLMs as autoregressive time series forecasters, which projects time series into the embedding space of language tokens and autoregressively generates future predictions with arbitrary lengths. Compatible with any decoder-only LLMs, the consequent forecaster exhibits the flexibility of the lookback length and scalability with larger LLMs. Further, we formulate time series as prompts, extending the context for prediction beyond the lookback window, termed in-context forecasting. By introducing LLM-embedded textual timestamps, AutoTimes can utilize chronological information to align multivariate time series. Empirically, AutoTimes achieves state-of-the-art with 0.1% trainable parameters and over $5\times$ training/inference speedup compared to advanced LLM-based forecasters. Code is available at this repository: https://github.com/thuml/AutoTimes.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/d488445bb2bf6719bc48a4d39bd906116274abda" target='_blank'>AutoTimes: Autoregressive Time Series Forecasters via Large Language Models</a></td>
           <td>
-            Yong Liu, Guo Qin, Xiang-Dong Huang, Jian-Min Wang, Mingsheng Long
+            Yong Liu, Guo Qin, Xiang-Dong Huang, Jian-Min Wang, Ming-Sheng Long
           </td>
           <td>2024-02-04</td>
           <td>ArXiv</td>
-          <td>136</td>
-          <td>82</td>
+          <td>137</td>
+          <td>84</td>
         </tr>
 
         <tr id="While large language models (LLMs) have demonstrated remarkable potential in time series forecasting, their practical deployment remains constrained by excessive computational demands and memory footprints. Existing LLM-based methods typically suffer from three critical limitations: (1) inefficient parameter utilization in handling numerical time series patterns; (2) modality misalignment between continuous temporal signals and discrete text embeddings; and (3) inflexibility for real-time expert knowledge integration. We present small but mighty enhancing time series (SMETimes), the first systematic investigation of small language models with sub-3B parameters (SLM) for efficient and accurate time series forecasting. Our method centers on three key innovations: (1) a statistically enhanced prompt structure that bridges numerical time series with textual semantics through descriptive statistical features; (2) an adaptive fusion embedding structure that aligns temporal patterns with language model token spaces through learnable parameters; and (3) a dynamic mixture-of-experts structure enabled by SLMs’ computational efficiency, adaptively combining base predictions with domain-specific models. Extensive evaluations across seven benchmark datasets (ETTh1/2, ETTm1/2, Weather, Solar, ECL) demonstrate that our 3B-parameter SLM achieves state-of-the-art performance on five primary datasets while maintaining 3.8×\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\times$$\end{document} faster training and 5.2×\documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$$\times$$\end{document} lower memory consumption compared to 7B-parameter LLM baselines. In particular, the proposed model exhibits better learning capabilities, achieving 12.3% lower MSE than conventional LLM. Ablation studies validate that our statistically enhanced prompt structure and adaptive fusion embedding structure contribute, respectively, to the reduction of 15.7% and 18.2% errors in long-horizon forecasting tasks. By redefining the efficiency-accuracy trade-off landscape, this work establishes SLMs as viable alternatives to resource-intensive LLMs for practical time series forecasting. The code and models are available at https://github.com/xiyan1234567/SMETimes.">
@@ -557,7 +557,7 @@
           <td>2025-03-05</td>
           <td>The Journal of Supercomputing</td>
           <td>7</td>
-          <td>12</td>
+          <td>13</td>
         </tr>
 
         <tr id="This research examines the use of Large Language Models (LLMs) in predicting time series, with a specific focus on the LLMTIME model. Despite the established effectiveness of LLMs in tasks such as text generation, language translation, and sentiment analysis, this study highlights the key challenges that large language models encounter in the context of time series prediction. We assess the performance of LLMTIME across multiple datasets and introduce classical almost periodic functions as time series to gauge its effectiveness. The empirical results indicate that while large language models can perform well in zero-shot forecasting for certain datasets, their predictive accuracy diminishes notably when confronted with diverse time series data and traditional signals. The primary finding of this study is that the predictive capacity of LLMTIME, similar to other LLMs, significantly deteriorates when dealing with time series data that contain both periodic and trend components, as well as when the signal comprises complex frequency components.">
@@ -576,12 +576,12 @@
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/a19f1d4c68b7aeca8ab7a1c631341fcd597e53fc" target='_blank'>Rethinking the Role of LLMs in Time Series Forecasting</a></td>
           <td>
-            Xin Qiu, Jun-Long Tong, Yi-Rong Sun, Yunpu Ma, Wei Zhang, Xiao-Yu Shen
+            Xin Qiu, Jun-Long Tong, Yi-Rong Sun, Yun-Pu Ma, Wei Zhang, Xiao-Yu Shen
           </td>
           <td>2026-02-16</td>
           <td>ArXiv</td>
           <td>3</td>
-          <td>7</td>
+          <td>9</td>
         </tr>
 
   </tbody>
