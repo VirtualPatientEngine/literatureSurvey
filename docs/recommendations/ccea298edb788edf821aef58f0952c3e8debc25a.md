@@ -11,7 +11,7 @@ hide:
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-10-19 06:38:49 UTC</i>
+  <i class="footer">This page was last updated on 2026-11-02 06:25:14 UTC</i>
   </p>
   
   <div class="note info" onclick="startIntro()">
@@ -63,7 +63,7 @@ hide:
           <td>2024-05-28</td>
           <td>ArXiv</td>
           <td>7</td>
-          <td>9</td>
+          <td>10</td>
         </tr>
     
         <tr id="Time series forecasting lies at the core of important real-world applications in many fields of science and engineering. The abundance of large time series datasets that consist of complex patterns and long-term dependencies has led to the development of various neural network architectures. Graph neural network approaches, which jointly learn a graph structure based on the correlation of raw values of multivariate time series while forecasting, have recently seen great success. However, such solutions are often costly to train and difficult to scale. In this paper, we propose TimeGNN, a method that learns dynamic temporal graph representations that can capture the evolution of inter-series patterns along with the correlations of multiple series. TimeGNN achieves inference times 4 to 80 times faster than other state-of-the-art graph-based methods while achieving comparable forecasting performance">
@@ -74,8 +74,8 @@ hide:
           </td>
           <td>2023-07-27</td>
           <td>ArXiv</td>
-          <td>23</td>
-          <td>58</td>
+          <td>24</td>
+          <td>59</td>
         </tr>
     
         <tr id="Outstanding achievements of graph neural networks for spatiotemporal time series analysis show that relational constraints introduce an effective inductive bias into neural forecasting architectures. Often, however, the relational information characterizing the underlying data-generating process is unavailable and the practitioner is left with the problem of inferring from data which relational graph to use in the subsequent processing stages. We propose novel, principled - yet practical - probabilistic score-based methods that learn the relational dependencies as distributions over graphs while maximizing end-to-end the performance at task. The proposed graph learning framework is based on consolidated variance reduction techniques for Monte Carlo score-based gradient estimation, is theoretically grounded, and, as we show, effective in practice. In this paper, we focus on the time series forecasting problem and show that, by tailoring the gradient estimators to the graph learning problem, we are able to achieve state-of-the-art performance while controlling the sparsity of the learned graph and the computational scalability. We empirically assess the effectiveness of the proposed method on synthetic and real-world benchmarks, showing that the proposed solution can be used as a stand-alone graph identification procedure as well as a graph learning component of an end-to-end forecasting architecture.">
@@ -86,7 +86,7 @@ hide:
           </td>
           <td>2022-05-26</td>
           <td>J. Mach. Learn. Res.</td>
-          <td>38</td>
+          <td>42</td>
           <td>57</td>
         </tr>
     
@@ -98,7 +98,7 @@ hide:
           </td>
           <td>2024-05-29</td>
           <td>ArXiv</td>
-          <td>9</td>
+          <td>10</td>
           <td>6</td>
         </tr>
     
@@ -106,11 +106,11 @@ hide:
           <td id="tag"><i class="material-icons">visibility_off</i></td>
           <td><a href="https://www.semanticscholar.org/paper/75e924bd79d27a23f3f93d9b1ab62a779505c8d2" target='_blank'>Connecting the Dots: Multivariate Time Series Forecasting with Graph Neural Networks</a></td>
           <td>
-            Zonghan Wu, Shirui Pan, Guodong Long, Jing Jiang, Xiao-Jun Chang, Cheng-Qi Zhang
+            Zong-Han Wu, Shirui Pan, Guodong Long, Jing Jiang, Xiao-Jun Chang, Cheng-Qi Zhang
           </td>
           <td>2020-05-24</td>
           <td>Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining</td>
-          <td>2394</td>
+          <td>2448</td>
           <td>66</td>
         </tr>
     
@@ -122,7 +122,7 @@ hide:
           </td>
           <td>2021-01-18</td>
           <td>ArXiv</td>
-          <td>404</td>
+          <td>412</td>
           <td>41</td>
         </tr>
     
