@@ -445,7 +445,7 @@
 
 <body>
   <p>
-  <i class="footer">This page was last updated on 2026-11-02 06:25:44 UTC</i>
+  <i class="footer">This page was last updated on 2026-11-09 06:26:27 UTC</i>
   </p>
 
   <div class="note info" onclick="startIntro()">
@@ -484,7 +484,7 @@
           </td>
           <td>2024-01-09</td>
           <td>Communications Physics</td>
-          <td>49</td>
+          <td>50</td>
           <td>8</td>
         </tr>
 
@@ -497,7 +497,7 @@
           </td>
           <td>2025-03-08</td>
           <td>ArXiv</td>
-          <td>1</td>
+          <td>2</td>
           <td>11</td>
         </tr>
 
@@ -509,7 +509,7 @@
           </td>
           <td>2015-09-11</td>
           <td>Proceedings of the National Academy of Sciences</td>
-          <td>5725</td>
+          <td>5777</td>
           <td>83</td>
         </tr>
 
@@ -533,7 +533,7 @@
           </td>
           <td>2021-11-12</td>
           <td>J. Open Source Softw.</td>
-          <td>264</td>
+          <td>268</td>
           <td>83</td>
         </tr>
 
@@ -549,9 +549,9 @@
           <td>39</td>
         </tr>
 
-        <tr id="Discovering governing equations from observational data remains a fundamental challenge in scientific modeling, particularly when the underlying mathematical structure is unknown. Traditional sparse identification methods like SINDy excel at discovering parsimonious models but require researchers to specify candidate basis functions a priori, a limitation that often leads to model failure when critical terms are omitted or when systems exhibit unconventional dynamics. Purely symbolic regression approaches offer unlimited flexibility but struggle with noise sensitivity and frequently produce overly complex, unstable equations. We present AutoSINDy, a hybrid Discovery-then-Solve framework that combines the exploratory power of symbolic regression with the robust sparsity-promoting capabilities of SINDy. Our method operates in three stages: (1) PySR-based symbolic regression discovers candidate functional forms from bootstrapped data chunks; (2) a curation pipeline decomposes, expands, and filters these expressions using collinearity analysis to construct a minimal yet comprehensive library; and (3) SINDy identifies sparse governing equations from this custom-tailored library. Extensive experiments across canonical nonlinear systems demonstrate that AutoSINDy consistently recovers ground-truth equations even under high observational noise, achieving a ground-truth recovery rate of 92.8% across all trials. Compared with standard SINDy using enriched libraries and standalone symbolic regression, AutoSINDy achieves higher predictive accuracy, superior generalization to unseen trajectories, and substantially lower symbolic complexity.">
+        <tr id="Discovering governing equations from observational data remains a fundamental challenge in scientific modeling, particularly when the underlying mathematical structure is unknown. Traditional sparse identification methods like SINDy excel at discovering parsimonious models but require researchers to specify candidate basis functions a priori, a limitation that often leads to model failure when critical terms are omitted. We present AutoSINDy, a hybrid Discovery-then-Solve framework that combines the exploratory power of symbolic regression with the robust sparsity-promoting capabilities of SINDy. Our method operates in three stages: (1) PySR-based symbolic regression discovers candidate functional forms from random subsets of the data; (2) a curation pipeline decomposes, expands, and filters these expressions using collinearity analysis to construct a minimal yet comprehensive library; and (3) the weak form of SINDy identifies sparse governing equations from this custom-tailored library. Extensive experiments across six canonical nonlinear systems, with noise of up to 20% of each variable's standard deviation, demonstrate that AutoSINDy achieves a recovery rate (new-trajectory R^2>0.99) of 89.7% across all trials, against at most 45.0% for the baselines, and 67.5% at the highest noise level. Compared with standard SINDy using enriched libraries, its weak form, and standalone symbolic regression, AutoSINDy achieves higher predictive accuracy, superior generalization to unseen trajectories, and equations close to the ground-truth complexity. These results show that AutoSINDy identifies correct governing terms without prior domain knowledge, automating the feature-engineering bottleneck in system identification and offering a pathway for discovering complex dynamics in biological and physical systems where the mathematical form is unknown.">
           <td id="tag"><i class="material-icons">visibility_off</i></td>
-          <td><a href="https://www.semanticscholar.org/paper/2343a7bbb3c3a840c830389cecaff1aec06215e2" target='_blank'>Discovery of Nonlinear Dynamics with Automated Basis Function Generation</a></td>
+          <td><a href="https://www.semanticscholar.org/paper/c135508ba9462ac5c3d8098dd5845d4397975ff8" target='_blank'>AutoSINDy: Discovery of Nonlinear Dynamics with Automated Library Construction</a></td>
           <td>
             Mohammad Amin Basiri, Charles D. Nicholson
           </td>
@@ -569,7 +569,7 @@
           </td>
           <td>2020-05-05</td>
           <td>Nature Communications</td>
-          <td>736</td>
+          <td>743</td>
           <td>16</td>
         </tr>
 
@@ -582,7 +582,7 @@
           <td>2025-05-27</td>
           <td>Physical review. E</td>
           <td>4</td>
-          <td>17</td>
+          <td>18</td>
         </tr>
 
         <tr id="PySINDy is a Python package for the discovery of governing dynamical systems models from data. In particular, PySINDy provides tools for applying the sparse identification of nonlinear dynamics (SINDy) (Brunton et al. 2016) approach to model discovery. In this work we provide a brief description of the mathematical underpinnings of SINDy, an overview and demonstration of the features implemented in PySINDy (with code examples), practical advice for users, and a list of potential extensions to PySINDy. Software is available at this https URL.">
